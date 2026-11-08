@@ -148,8 +148,9 @@ code {
 }
 
 /* ---------- maths ---------- */
-mjx-container { font-size: 1.06em; max-width: 100%; overflow-x: auto; overflow-y: hidden; }
+mjx-container { font-size: 1.06em; display: inline-block; max-width: 100%; overflow-x: auto; overflow-y: hidden; }
 mjx-container[display="true"] {
+  display: block;
   padding: 4px 0;
   margin: 14px 0;
 }
