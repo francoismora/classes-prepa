@@ -8,6 +8,8 @@ lang: fr
 baseurl: "/classes-prepa"
 url: "https://francoismora.github.io/classes-prepa"
 
+permalink: pretty        # chaque page .md génère un dossier .../index.html (URLs avec / final)
+
 markdown: kramdown
 kramdown:
   input: GFM            # les _ intra-mot ne sont pas des emphases : $a_0$ passe intact
