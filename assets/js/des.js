@@ -189,32 +189,32 @@
     { nom: "Partie entière seule (ex. du cours)",
       A: [1, -1, 1, 1],
       groups: [{ Q: [1, 0, 1], p: 1 }],
-      latex: "\\frac{X^3+X^2-X+1}{X^2+1}",
+      latex: "\\frac{X^3+X^2-X+1}{X^2+1}", plain: "(X³+X²−X+1)/(X²+1)",
       xmin: -3, xmax: 3 },
     { nom: "Pôles simples (ex. du cours)",
       A: [0, 0, 0, 1],
       groups: [{ Q: [-1, 1], p: 1 }, { Q: [-2, 1], p: 1 }, { Q: [1, 1], p: 1 }],
-      latex: "\\frac{X^3}{(X-1)(X-2)(X+1)}",
+      latex: "\\frac{X^3}{(X-1)(X-2)(X+1)}", plain: "X³/((X−1)(X−2)(X+1))",
       xmin: -3, xmax: 3 },
     { nom: "Pôle multiple d'ordre 3 (ex. du cours)",
       A: [0, 0, 0, 1],
       groups: [{ Q: [-1, 1], p: 3 }, { Q: [1, 1], p: 1 }],
-      latex: "\\frac{X^3}{(X-1)^3(X+1)}",
+      latex: "\\frac{X^3}{(X-1)^3(X+1)}", plain: "X³/((X−1)³(X+1))",
       xmin: -3, xmax: 3 },
     { nom: "Pôle réel + facteur quadratique (ex. du cours)",
       A: [1, 0, 1],
       groups: [{ Q: [-1, 1], p: 1 }, { Q: [1, -1, 1], p: 3 }],
-      latex: "\\frac{X^2+1}{(X-1)(X^2-X+1)^3}",
+      latex: "\\frac{X^2+1}{(X-1)(X^2-X+1)^3}", plain: "(X²+1)/((X−1)(X²−X+1)³)",
       xmin: -2, xmax: 4 },
     { nom: "Facteurs quadratiques conjugués : 1/(X^4+1) (ex. du cours)",
       A: [1],
       groups: [{ Q: [1, Math.SQRT2, 1], p: 1 }, { Q: [1, -Math.SQRT2, 1], p: 1 }],
-      latex: "\\frac{1}{X^4+1}",
+      latex: "\\frac{1}{X^4+1}", plain: "1/(X⁴+1)",
       xmin: -2.5, xmax: 2.5 },
     { nom: "Partie entière + pôles (ex. du cours)",
       A: [0, 0, 0, 0, 1],
       groups: [{ Q: [-2, 1], p: 1 }, { Q: [2, 1, 1], p: 1 }],
-      latex: "\\frac{X^4}{(X-2)(X^2+X+2)}",
+      latex: "\\frac{X^4}{(X-2)(X^2+X+2)}", plain: "X⁴/((X−2)(X²+X+2))",
       xmin: -3, xmax: 5 }
   ];
 
@@ -273,17 +273,29 @@
 
       var xs = [], yf = [], ye = [], ya = [];
       var pas = (ex.xmax - ex.xmin) / NB;
+      var exclCourbe = (ex.xmax - ex.xmin) * 0.025; /* 2,5 % de la fenêtre autour de chaque pôle */
+      var exclErr = (ex.xmax - ex.xmin) * 0.01;
       for (var k = 0; k <= NB; k++) {
         var x = ex.xmin + pas * k;
         var fx = peval(ex.A, x) / peval(dec.B, x);
-        var skip = false;
-        poles.forEach(function (pl) { if (Math.abs(x - pl.a) < pas * 1.5) skip = true; });
+        var skipC = false, skipE = false;
+        poles.forEach(function (pl) {
+          if (Math.abs(x - pl.a) < exclCourbe) skipC = true;
+          if (Math.abs(x - pl.a) < exclErr) skipE = true;
+        });
         xs.push(x);
-        yf.push(skip ? NaN : fx);
-        var e = Math.abs(fx - desEval(dec, x));
-        ye.push((!skip && isFinite(e) && e > 1e-14) ? e : NaN);
+        yf.push(skipC ? NaN : fx);
+        var e = Math.abs(fx - desEval(dec, x)) / (Math.abs(fx) + 1); /* erreur relative */
+        ye.push((!skipE && isFinite(e) && e > 1e-14) ? e : NaN);
         ya.push(pdeg(dec.E) >= 1 ? peval(dec.E, x) : NaN);
       }
+      /* axe y lisible : quantiles 2 % / 98 % des valeurs retenues */
+      var ys = yf.filter(function (v) { return isFinite(v); }).sort(function (a, b) { return a - b; });
+      var ylo = ys.length ? ys[Math.floor(0.02 * ys.length)] : -1;
+      var yhi = ys.length ? ys[Math.min(ys.length - 1, Math.floor(0.98 * ys.length))] : 1;
+      if (yhi - ylo < 1e-6) { ylo -= 1; yhi += 1; }
+      var marge = 0.05 * (yhi - ylo);
+      var ylim = [ylo - marge, yhi + marge];
 
       var traces = [
         { x: xs, y: yf, name: "f(x)", mode: "lines", line: { color: "#1f5fa8", width: 3 } }
@@ -305,23 +317,23 @@
       Plotly.react(plotP, traces, {
         autosize: true,
         margin: { t: 58, r: 20, b: 42, l: 55 },
-        title: { text: "$F(X) = " + ex.latex + "$ et ses pôles", y: 0.97 },
+        title: { text: "F(X) = " + ex.plain + " — pôles en rouge", y: 0.97 },
         hovermode: "x unified",
         legend: { orientation: "h", y: 1.02 },
         shapes: shapes, annotations: annot,
         xaxis: { title: "x", zeroline: true },
-        yaxis: { title: "y", zeroline: true }
+        yaxis: { title: "y", zeroline: true, range: ylim }
       }, config);
 
       Plotly.react(plotE, [
-        { x: xs, y: ye, name: "|f(x) − décomposition(x)|", mode: "lines", line: { color: "#7a4fa3", width: 2 } }
+        { x: xs, y: ye, name: "erreur relative", mode: "lines", line: { color: "#7a4fa3", width: 2 } }
       ], {
         autosize: true,
         margin: { t: 30, r: 20, b: 42, l: 70 },
-        title: "Vérification : erreur |f(x) − (E + éléments simples)(x)| (échelle log)",
+        title: "Vérification : erreur relative |f(x) − décomposition(x)| / (|f(x)| + 1) (échelle log)",
         hovermode: "x unified",
         xaxis: { title: "x", zeroline: true },
-        yaxis: { type: "log", title: "|erreur|", zeroline: false }
+        yaxis: { type: "log", title: "erreur relative", zeroline: false }
       }, config);
     }
 
