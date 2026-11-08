@@ -184,7 +184,7 @@ ol.enonces ol { list-style-type: lower-alpha; margin-top: 6px; }
   margin-bottom: 12px;
   font-size: 0.95rem;
 }
-.composant .controles label { font-weight: 600; color: #555; display: flex; align-items: center; gap: 8px; }
+.composant .controles label { font-weight: 600; color: #555; display: flex; align-items: center; gap: 8px; max-width: 100%; flex-wrap: wrap; }
 .composant select {
   font: inherit;
   padding: 4px 8px;
@@ -192,6 +192,7 @@ ol.enonces ol { list-style-type: lower-alpha; margin-top: 6px; }
   border-radius: 6px;
   background: #fff;
   max-width: 100%;
+  min-width: 0;
 }
 .composant input[type="range"] { accent-color: var(--accent); width: 180px; }
 .composant .valeur-n { font-weight: 700; color: var(--accent); min-width: 4ch; white-space: nowrap; }
