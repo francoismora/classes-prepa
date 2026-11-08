@@ -164,8 +164,11 @@ mjx-container[display="true"] {
 }
 
 /* ---------- tableaux ---------- */
-table { border-collapse: collapse; margin: 18px auto; font-size: 0.98rem; }
-th, td { border: 1px solid #d8d2c2; padding: 6px 14px; text-align: center; }
+/* display:block + overflow-x:auto : un tableau trop large scrolle horizontalement
+   au lieu de déborder la page (mobile) */
+table { display: block; max-width: 100%; overflow-x: auto; border-collapse: collapse; margin: 18px auto; font-size: 0.98rem; }
+table > thead, table > tbody { display: table; width: 100%; }
+th, td { border: 1px solid #d8d2c2; padding: 6px 14px; text-align: center; white-space: nowrap; }
 th { background: #f4f1e8; }
 
 /* ---------- listes d'énoncés ---------- */
@@ -220,4 +223,8 @@ blockquote { border-left: 3px solid var(--bord); margin: 16px 0; padding: 4px 18
   body { font-size: 17px; }
   .site-nav { width: 100%; margin-top: 6px; }
   .site-nav a { margin-left: 0; margin-right: 16px; }
+  .composant { padding: 14px 14px 10px; }
+  .composant .controles { flex-direction: column; align-items: flex-start; gap: 8px; }
+  .composant input[type="range"] { width: 100%; max-width: 260px; }
+  h1 { font-size: 1.6rem; }
 }

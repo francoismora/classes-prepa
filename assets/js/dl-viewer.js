@@ -117,6 +117,7 @@
         { x: xs, y: ydl, name: "DL d’ordre " + state.n, mode: "lines",
           line: { color: "#b02a2a", width: 2.5, dash: "dash" } }
       ], {
+        autosize: true,
         margin: { t: 58, r: 20, b: 42, l: 55 },
         title: { text: state.nom + "  et son DL d’ordre " + state.n + " en 0", y: 0.97 },
         hovermode: "x unified",
@@ -129,6 +130,7 @@
         { x: xs, y: ye, name: "|f(x) − P_" + state.n + "(x)|", mode: "lines",
           line: { color: "#7a4fa3", width: 2 } }
       ], {
+        autosize: true,
         margin: { t: 30, r: 20, b: 42, l: 70 },
         title: "Erreur |f(x) − P_" + state.n + "(x)| (échelle log)",
         hovermode: "x unified",
@@ -147,7 +149,19 @@
       render();
     });
 
+    /* Garde les graphiques à la largeur réelle du conteneur (mobile / resize). */
+    function resizePlots() {
+      [plotP, plotE].forEach(function (el) {
+        if (el && el.classList && el.classList.contains("js-plotly-plot")) {
+          try { Plotly.Plots.resize(el); } catch (e) {}
+        }
+      });
+    }
+    window.addEventListener("resize", resizePlots);
+
     render();
+    setTimeout(resizePlots, 0);
+    setTimeout(resizePlots, 500);
   }
 
   window.Composants["dl-viewer"] = composant;
