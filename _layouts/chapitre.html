@@ -1,0 +1,22 @@
+---
+layout: default
+---
+<nav class="ariane">
+  <a href="{{ site.baseurl }}/cours/">Cours</a>
+  <span class="sep">/</span>
+  <a href="{{ site.baseurl }}/cours/{{ page.matiere_slug }}/">{{ page.matiere }}</a>
+  <span class="sep">/</span>
+  <a href="{{ site.baseurl }}/cours/{{ page.matiere_slug }}/{{ page.niveau_slug }}/">{{ page.niveau }}</a>
+  {% if page.partie %}<span class="sep">/</span> {{ page.partie }}{% endif %}
+</nav>
+<article class="chapitre">
+  <header class="chapitre-header">
+    <p class="chapitre-num">Chapitre {{ page.numero }}</p>
+    <h1>{{ page.title }}</h1>
+    <p class="meta">
+      {{ page.matiere }} · {{ page.niveau }}{% if page.partie %} · {{ page.partie }}{% endif %}
+      — transcrit d'après les scans <code>{{ page.source }}</code> ({{ page.pages }} pages)
+    </p>
+  </header>
+  {{ content }}
+</article>

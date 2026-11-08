@@ -1,0 +1,23 @@
+# Site GitHub Pages — transcription des cours de prépa (1993–1995)
+# Publication : Settings → Pages → Branch `main`, Folder `/docs`
+title: "Prépa — Cours de CPGE"
+description: "Transcription moderne des cours de Math Sup / Math Spé (1993–1995) : mathématiques, physique, chimie. Équations rendues par MathJax."
+lang: fr
+
+# Site servi sous https://francoismora.github.io/prepa/ (dépôt github.com/francoismora/prepa)
+baseurl: "/prepa"
+url: "https://francoismora.github.io/prepa"
+
+markdown: kramdown
+kramdown:
+  input: GFM            # les _ intra-mot ne sont pas des emphases : $a_0$ passe intact
+  parse_block_html: true
+  math_engine: mathjax  # rendu client par MathJax (voir _includes/head.html)
+highlighter: none
+
+plugins: []             # aucun plugin tiers : compatible avec la whitelist GitHub Pages
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor/

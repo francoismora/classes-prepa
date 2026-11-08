@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'fr' }}">
+<head>
+  {% include head.html %}
+  {% if page.interactif %}{% include interactif.html %}{% endif %}
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+      <nav class="site-nav">
+        <a href="{{ site.baseurl }}/">Accueil</a>
+        <a href="{{ site.baseurl }}/cours/">Cours</a>
+      </nav>
+    </div>
+  </header>
+  <main class="page-content">
+    <div class="wrap">
+      {{ content }}
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>Transcription des cours de CPGE scientifiques (1993–1995). Les scans originaux (.jpg) restent la source de vérité dans ce dépôt ; ce site en est la version relue et composée.</p>
+    </div>
+  </footer>
+</body>
+</html>

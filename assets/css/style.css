@@ -1,0 +1,223 @@
+:root {
+  --texte: #1c2430;
+  --fond: #fdfcf8;
+  --accent: #8a1f2d;
+  --def: #1f5fa8;
+  --prop: #1e7a46;
+  --ex: #5d6470;
+  --contre: #b02a2a;
+  --rem: #a86400;
+  --lien: #1f5fa8;
+  --bord: #e6e1d4;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--fond);
+  color: var(--texte);
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, "Times New Roman", serif;
+  font-size: 18px;
+  line-height: 1.68;
+}
+
+.wrap { max-width: 880px; margin: 0 auto; padding: 0 26px; }
+
+/* ---------- en-tête / pied ---------- */
+.site-header {
+  background: #ffffff;
+  border-bottom: 1px solid var(--bord);
+  padding: 16px 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.site-header .wrap { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; }
+.site-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--accent);
+  text-decoration: none;
+}
+.site-nav a { margin-left: 20px; color: var(--lien); text-decoration: none; font-size: 1rem; }
+.site-nav a:hover { text-decoration: underline; }
+
+.page-content { padding: 34px 0 60px; }
+
+.site-footer {
+  border-top: 1px solid var(--bord);
+  background: #fff;
+  padding: 18px 0 30px;
+  color: #777;
+  font-size: 0.9rem;
+}
+
+/* ---------- titres ---------- */
+h1 { font-size: 2rem; line-height: 1.2; margin: 0.4em 0 0.5em; }
+h2 {
+  font-size: 1.5rem;
+  margin: 2.1em 0 0.6em;
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--bord);
+}
+h3 { font-size: 1.2rem; margin: 1.7em 0 0.4em; }
+h4 { font-size: 1.05rem; margin: 1.4em 0 0.3em; }
+
+a { color: var(--lien); }
+
+code {
+  background: #f3f0e8;
+  border: 1px solid var(--bord);
+  border-radius: 4px;
+  padding: 1px 6px;
+  font-size: 0.88em;
+}
+
+/* ---------- fil d'ariane / en-tête de chapitre ---------- */
+.ariane { font-size: 0.92rem; color: #888; margin-bottom: 6px; }
+.ariane a { color: #888; text-decoration: none; }
+.ariane a:hover { color: var(--lien); text-decoration: underline; }
+.ariane .sep { margin: 0 6px; }
+
+.chapitre-header { border-bottom: 3px double var(--bord); padding-bottom: 14px; margin-bottom: 26px; }
+.chapitre-num {
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.8rem;
+  color: var(--accent);
+  margin: 0 0 2px;
+}
+.chapitre-header h1 { margin: 0 0 6px; }
+.chapitre-header .meta { color: #777; font-size: 0.95rem; margin: 0; }
+
+/* ---------- blocs de cours ---------- */
+.bloc {
+  border-left: 4px solid #999;
+  background: #ffffff;
+  border-radius: 0 10px 10px 0;
+  box-shadow: 0 1px 4px rgba(30, 25, 10, 0.07);
+  padding: 12px 20px 14px;
+  margin: 20px 0;
+}
+.bloc .bloc-titre {
+  display: block;
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+.bloc.definition { border-color: var(--def); }
+.bloc.definition .bloc-titre { color: var(--def); }
+.bloc.propriete, .bloc.theoreme { border-color: var(--prop); }
+.bloc.propriete .bloc-titre, .bloc.theoreme .bloc-titre { color: var(--prop); }
+.bloc.exemple { border-color: var(--ex); }
+.bloc.exemple .bloc-titre { color: var(--ex); }
+.bloc.contre-exemple { border-color: var(--contre); }
+.bloc.contre-exemple .bloc-titre { color: var(--contre); }
+.bloc.remarque { border-color: var(--rem); background: #fffdf6; }
+.bloc.remarque .bloc-titre { color: var(--rem); }
+
+.bloc p:last-child { margin-bottom: 0; }
+
+/* démonstrations repliables */
+details.demo {
+  margin: 10px 0 18px;
+  background: #fbfaf6;
+  border: 1px solid var(--bord);
+  border-radius: 8px;
+  padding: 8px 16px;
+}
+details.demo summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: #555;
+  font-size: 0.95rem;
+  letter-spacing: 0.03em;
+}
+details.demo summary:hover { color: var(--accent); }
+details.demo[open] summary { margin-bottom: 8px; color: var(--accent); }
+
+/* formule encadrée (les " encadrés rouges " du manuscrit) */
+.formule {
+  background: #fff;
+  border: 1.5px solid var(--accent);
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(138, 31, 45, 0.08);
+  padding: 14px 20px;
+  margin: 20px auto;
+  max-width: 640px;
+  text-align: center;
+}
+
+/* ---------- maths ---------- */
+mjx-container { font-size: 1.06em; }
+mjx-container[display="true"] {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 4px 0;
+  margin: 14px 0;
+}
+
+/* ---------- tableaux ---------- */
+table { border-collapse: collapse; margin: 18px auto; font-size: 0.98rem; }
+th, td { border: 1px solid #d8d2c2; padding: 6px 14px; text-align: center; }
+th { background: #f4f1e8; }
+
+/* ---------- listes d'énoncés ---------- */
+ol.enonces > li { margin-bottom: 10px; }
+ol.enonces ol { list-style-type: lower-alpha; margin-top: 6px; }
+
+/* ---------- composants interactifs ---------- */
+.composant {
+  background: #ffffff;
+  border: 1px solid var(--bord);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(30, 25, 10, 0.07);
+  padding: 18px 20px 14px;
+  margin: 24px 0;
+}
+.composant .controles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 28px;
+  align-items: center;
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+}
+.composant .controles label { font-weight: 600; color: #555; display: flex; align-items: center; gap: 8px; }
+.composant select {
+  font: inherit;
+  padding: 4px 8px;
+  border: 1px solid var(--bord);
+  border-radius: 6px;
+  background: #fff;
+}
+.composant input[type="range"] { accent-color: var(--accent); width: 180px; }
+.composant .valeur-n { font-weight: 700; color: var(--accent); min-width: 4ch; }
+.composant .plot { width: 100%; }
+.composant .formule-dl {
+  margin: 10px 0 14px;
+  padding: 10px 14px;
+  background: #fbf7ef;
+  border: 1px dashed #d9c9a8;
+  border-radius: 8px;
+  text-align: center;
+  overflow-x: auto;
+  font-size: 1.05rem;
+}
+.composant .composant-erreur { color: var(--contre); }
+
+/* ---------- misc ---------- */
+hr { border: none; border-top: 1px solid var(--bord); margin: 34px 0; }
+blockquote { border-left: 3px solid var(--bord); margin: 16px 0; padding: 4px 18px; color: #555; }
+
+@media (max-width: 640px) {
+  body { font-size: 17px; }
+  .site-nav { width: 100%; margin-top: 6px; }
+  .site-nav a { margin-left: 0; margin-right: 16px; }
+}
