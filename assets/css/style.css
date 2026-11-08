@@ -41,6 +41,7 @@ body {
   z-index: 10;
 }
 .site-header .wrap { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; }
+.site-brand { display: flex; flex-direction: column; }
 .site-title {
   font-size: 1.25rem;
   font-weight: 700;
@@ -48,6 +49,7 @@ body {
   color: var(--accent);
   text-decoration: none;
 }
+.site-sub { font-size: 0.82rem; color: #8a8578; letter-spacing: 0.02em; }
 .site-nav a { margin-left: 20px; color: var(--lien); text-decoration: none; font-size: 1rem; }
 .site-nav a:hover { text-decoration: underline; }
 

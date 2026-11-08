@@ -740,9 +740,3 @@ asymptotique de $x_n$ quand $n \to +\infty$ (on donnera une précision en $1/n^4
 </ol>
 
 </div>
-
----
-
-*Note de transcription : le cours (pages 1–16) et les énoncés de la feuille n° 16
-(pages 17–18) sont retranscrits ci-dessus. Les corrigés manuscrits des exercices
-(pages 19–40, brouillons) ne sont pas repris dans cette version.*

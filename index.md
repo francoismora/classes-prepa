@@ -5,7 +5,7 @@ title: Accueil
 
 # Cours de prépa scientifiques
 
-Cours de **Math Sup** et **Math Spé** en **mathématiques**, **physique** et **chimie**.
+Cours de **Math Sup** et **Math Spé** (1993–1995) en **mathématiques**, **physique** et **chimie**.
 
 ## Parcours
 
