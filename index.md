@@ -11,14 +11,20 @@ Cours de **Math Sup** et **Math Spé** (1993–1995) en **mathématiques**, **ph
 
 | Matière | Niveaux | Chapitres transcrits |
 |---|---|---|
-| [Mathématiques]({{ site.baseurl }}/cours/math/) | Math Sup, Math Spé | 1 — *Développements limités* (Math Sup, Analyse) |
+| [Mathématiques]({{ site.baseurl }}/cours/math/) | Math Sup, Math Spé | 2 — *Développements limités*, *Intégrale de Riemann* (Math Sup, Analyse) |
 | Physique | Math Sup, Math Spé | — (à venir) |
 | Chimie | Math Sup, Math Spé | — (à venir) |
 
-## Chapitre disponible
+## Chapitres disponibles
 
 - **Math Sup · Analyse — [Chapitre 8 : Développements limités]({{ site.baseurl }}/cours/math/math-sup/analyse/08-developpements-limites/)**
   définition et unicité, formule de Taylor-Young, opérations sur les DL
   (somme, produit, quotient, composée, primitive, dérivée), applications aux
   limites, équivalents et études locales, DL à l'infini et branches infinies,
   feuille d'exercices.
+- **Math Sup · Analyse — [Chapitre 9 : Intégrale de Riemann]({{ site.baseurl }}/cours/math/math-sup/analyse/09-integrale-de-riemann/)**
+  subdivisions et sommes de Darboux, définition de l'intégrale, classes de
+  fonctions intégrables, positivité et théorème de la moyenne, sommes de
+  Riemann (visualisation interactive), primitives, calcul intégral
+  (intégration par parties, changement de variable), formule de Taylor avec
+  reste intégral, feuille d'exercices.
