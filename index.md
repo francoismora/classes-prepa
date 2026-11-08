@@ -11,7 +11,7 @@ Cours de **Math Sup** et **Math Spé** (1993–1995) en **mathématiques**, **ph
 
 | Matière | Niveaux | Chapitres transcrits |
 |---|---|---|
-| [Mathématiques]({{ site.baseurl }}/cours/math/) | Math Sup, Math Spé | 2 — *Développements limités*, *Intégrale de Riemann* (Math Sup, Analyse) |
+| [Mathématiques]({{ site.baseurl }}/cours/math/) | Math Sup, Math Spé | 3 — *Développements limités*, *Intégrale de Riemann*, *Fonctions rationnelles* (Math Sup, Analyse) |
 | Physique | Math Sup, Math Spé | — (à venir) |
 | Chimie | Math Sup, Math Spé | — (à venir) |
 
@@ -28,3 +28,9 @@ Cours de **Math Sup** et **Math Spé** (1993–1995) en **mathématiques**, **ph
   Riemann (visualisation interactive), primitives, calcul intégral
   (intégration par parties, changement de variable), formule de Taylor avec
   reste intégral, feuille d'exercices.
+- **Math Sup · Analyse — [Chapitre 10 : Fonctions rationnelles]({{ site.baseurl }}/cours/math/math-sup/analyse/10-fonctions-rationnelles/)**
+  construction du corps $\mathbb{K}(X)$, degré, fonctions rationnelles,
+  zéros et pôles, partie entière, lemmes et théorème de décomposition en
+  éléments simples, décompositions dans $\mathbb{C}(X)$ et $\mathbb{R}(X)$
+  (parties polaires, pôles simples/multiples, facteurs quadratiques conjugués),
+  décomposition calculée en direct (composant interactif), feuille d'exercices.
