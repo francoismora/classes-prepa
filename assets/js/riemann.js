@@ -18,12 +18,12 @@
   var ECH = 16; /* échantillons par intervalle pour les sommes de Darboux */
 
   var FONCTIONS = {
-    "x^2":             { f: function (x) { return x * x; },               exact: 1 / 3,        exactLatex: "\\frac{1}{3}" },
-    "\\sqrt{x}":       { f: function (x) { return Math.sqrt(x); },        exact: 2 / 3,        exactLatex: "\\frac{2}{3}" },
-    "\\sin(\\pi x)":  { f: function (x) { return Math.sin(Math.PI * x); }, exact: 2 / Math.PI, exactLatex: "\\frac{2}{\\pi}" },
-    "e^x":             { f: function (x) { return Math.exp(x); },         exact: Math.E - 1,   exactLatex: "e - 1" },
-    "\\frac{1}{1+x}":  { f: function (x) { return 1 / (1 + x); },         exact: Math.LN2,     exactLatex: "\\ln 2" },
-    "|x-\\frac{1}{2}|": { f: function (x) { return Math.abs(x - 0.5); }, exact: 0.25,        exactLatex: "\\frac{1}{4}" }
+    "x^2":             { label: "x²",        f: function (x) { return x * x; },               exact: 1 / 3,        exactLatex: "\\frac{1}{3}",  exactTexte: "1/3" },
+    "\\sqrt{x}":       { label: "√x",        f: function (x) { return Math.sqrt(x); },        exact: 2 / 3,        exactLatex: "\\frac{2}{3}",  exactTexte: "2/3" },
+    "\\sin(\\pi x)":  { label: "sin(πx)",   f: function (x) { return Math.sin(Math.PI * x); }, exact: 2 / Math.PI, exactLatex: "\\frac{2}{\\pi}", exactTexte: "2/π" },
+    "e^x":             { label: "e^x",       f: function (x) { return Math.exp(x); },         exact: Math.E - 1,   exactLatex: "e - 1",       exactTexte: "e − 1" },
+    "\\frac{1}{1+x}":  { label: "1/(1+x)",   f: function (x) { return 1 / (1 + x); },         exact: Math.LN2,     exactLatex: "\\ln 2",      exactTexte: "ln 2" },
+    "|x-\\frac{1}{2}|": { label: "|x−½|",     f: function (x) { return Math.abs(x - 0.5); }, exact: 0.25,        exactLatex: "\\frac{1}{4}",  exactTexte: "1/4" }
   };
 
   /* Méthodes : chaque méthode renvoie, pour l'intervalle i (0-based) de la
@@ -90,8 +90,7 @@
 
   function fmt(x) {
     if (!isFinite(x)) return "—";
-    var s = x.toPrecision(10);
-    return s;
+    return x.toPrecision(6);
   }
 
   function composant(el) {
@@ -108,7 +107,7 @@
       '<div class="controles">' +
         '<label>Fonction ' +
           '<select class="sel-fonction">' +
-            nomsF.map(function (n) { return "<option>" + n + "</option>"; }).join("") +
+            nomsF.map(function (n) { return '<option value="' + n + '">' + FONCTIONS[n].label + "</option>"; }).join("") +
           "</select>" +
         "</label>" +
         '<label>Méthode ' +
@@ -173,12 +172,12 @@
         { x: xs, y: yf, name: "f(x)", mode: "lines", line: { color: "#1f5fa8", width: 3 } },
         { x: xr, y: yr, name: "rectangles (n = " + n + ")", type: "bar",
           marker: { color: "rgba(176, 42, 42, 0.55)" }, width: dx * 0.96, hoverinfo: "x+y" },
-        { x: [A, B], y: [I, I], name: "∫₀¹ f = " + F.exactLatex, mode: "lines",
+        { x: [A, B], y: [I, I], name: "∫₀¹ f = " + F.exactTexte, mode: "lines",
           line: { color: "#2a7a2a", width: 2, dash: "dot" } }
       ], {
         autosize: true,
         margin: { t: 58, r: 20, b: 42, l: 55 },
-        title: { text: "$y = " + state.nom + "$ sur $[0,1]$, somme de Riemann à $n = " + n + "$ intervalles", y: 0.97 },
+        title: { text: "y = " + F.label + " sur [0,1] — somme de Riemann à n = " + n + " intervalles", y: 0.97 },
         hovermode: "x unified",
         legend: { orientation: "h", y: 1.02 },
         xaxis: { title: "x", range: [A - 0.03, B + 0.03], zeroline: true },
