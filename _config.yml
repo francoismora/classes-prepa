@@ -4,9 +4,9 @@ title: "Prépa — Cours de CPGE"
 description: "Transcription moderne des cours de Math Sup / Math Spé (1993–1995) : mathématiques, physique, chimie. Équations rendues par MathJax."
 lang: fr
 
-# Site servi sous https://francoismora.github.io/prepa/ (dépôt github.com/francoismora/prepa)
-baseurl: "/prepa"
-url: "https://francoismora.github.io/prepa"
+# Site servi sous https://francoismora.github.io/classes-prepa/ (dépôt github.com/francoismora/classes-prepa)
+baseurl: "/classes-prepa"
+url: "https://francoismora.github.io/classes-prepa"
 
 markdown: kramdown
 kramdown:
