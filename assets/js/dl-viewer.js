@@ -17,7 +17,7 @@
   /* Écrit un coefficient sous forme de fraction "simple" p/q quand c'est possible. */
   function rat(c) {
     if (Math.abs(c - Math.round(c)) < 1e-12) return String(Math.round(c));
-    for (var q = 2; q <= 2520; q++) {
+    for (var q = 2; q <= 362880; q++) { /* 9! : couvre 1/k! jusqu'à k=9 */
       var p = Math.round(c * q);
       if (Math.abs(c - p / q) < 1e-12) {
         return (p < 0 ? "-" : "") + "\\frac{" + Math.abs(p) + "}{" + q + "}";
@@ -117,10 +117,10 @@
         { x: xs, y: ydl, name: "DL d’ordre " + state.n, mode: "lines",
           line: { color: "#b02a2a", width: 2.5, dash: "dash" } }
       ], {
-        margin: { t: 34, r: 20, b: 42, l: 55 },
-        title: state.nom + "  et son DL d’ordre " + state.n + " en 0",
+        margin: { t: 58, r: 20, b: 42, l: 55 },
+        title: { text: state.nom + "  et son DL d’ordre " + state.n + " en 0", y: 0.97 },
         hovermode: "x unified",
-        legend: { orientation: "h", y: 1.18 },
+        legend: { orientation: "h", y: 1.02 },
         xaxis: { title: "x", zeroline: true },
         yaxis: { title: "y", zeroline: true }
       }, config);
