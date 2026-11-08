@@ -219,8 +219,9 @@ Toute fonction **continue** sur $[a, b]$ est intégrable.
 <span class="bloc-titre">Démonstration (théorème de Heine)</span>
 
 $f$ continue sur le segment $[a, b]$ y est **uniformément continue** :
-$\forall \varepsilon > 0,\ \exists \alpha > 0,\ \forall x, y \in [a, b],\quad
-|x - y| < \alpha \Rightarrow |f(x) - f(y)| \leq \dfrac{\varepsilon}{b-a}$.
+
+$$\forall \varepsilon > 0,\ \exists \alpha > 0,\ \forall x, y \in [a, b],\quad
+|x - y| < \alpha \Rightarrow |f(x) - f(y)| \leq \dfrac{\varepsilon}{b-a}$$
 Prenons une subdivision $\sigma$ dont tous les intervalles sont de longueur
 $< \alpha$ : alors $M_i - m_i \leq \dfrac{\varepsilon}{b-a}$ pour tout $i$, donc
 
