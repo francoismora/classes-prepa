@@ -65,8 +65,8 @@ $$\sin x = x - \frac{x^3}{6} + \mathrm{o}(x^3)$$
 
 </div>
 
-<details class="demo" markdown="1">
-<summary>Démonstration</summary>
+<div class="bloc demo" markdown="1">
+<span class="bloc-titre">Démonstration</span>
 
 Si $f$ admet un DL d'ordre $0$ en $a$ : $f(x) = P(x-a) + \mathrm{o}(1)$ avec $P$ constante,
 égale à $a_0$. Mais $f(a) = P(0) = a_0$, et $\lim_{x\to a} f(x) = a_0$ car
@@ -94,7 +94,7 @@ $$
 
 et la formule reste valable en $x = a$ : $f$ admet un DL d'ordre $1$ en $a$.
 
-</details>
+</div>
 
 <div class="bloc contre-exemple" markdown="1">
 
@@ -124,8 +124,8 @@ Si $f$ admet un DL d'ordre $n$ en $a$, alors le polynôme $P$ est **unique**.
 
 </div>
 
-<details class="demo" markdown="1">
-<summary>Démonstration</summary>
+<div class="bloc demo" markdown="1">
+<span class="bloc-titre">Démonstration</span>
 
 Supposons $f(x) = P(x-a) + (x-a)^n\varepsilon(x) = Q(x-a) + (x-a)^n\eta(x)$ avec
 $P = \sum_{k=0}^{n} a_k X^k$ et $Q = \sum_{k=0}^{n} b_k X^k$.
@@ -149,7 +149,7 @@ Par passage à la limite quand $x \to a$ : $a_{k+1} = b_{k+1}$.
 
 La propriété est donc récurrente pour $0 \leq k \leq n$ : $P = Q$.
 
-</details>
+</div>
 
 <div class="bloc definition" markdown="1">
 
@@ -178,8 +178,8 @@ $$
 
 </div>
 
-<details class="demo" markdown="1">
-<summary>Démonstration</summary>
+<div class="bloc demo" markdown="1">
+<span class="bloc-titre">Démonstration</span>
 
 **Changement de variable.** Si $f$ est définie sur $I$ et
 $\forall x \in I,\ f(x) = P(x-a) + \varepsilon(x)(x-a)^n$, alors $g$ est définie sur
@@ -193,7 +193,7 @@ $\eta(x) = (-1)^n\varepsilon(-x) \xrightarrow[x\to 0]{} 0$. Par unicité du DL,
 $\forall x \in I,\ P(x) = P(-x)$ : $P(X)$ et $P(-X)$ ont une infinité de racines
 communes, donc $P$ est pair. Le cas impair est analogue.
 
-</details>
+</div>
 
 <div class="bloc remarque" markdown="1">
 
@@ -277,8 +277,8 @@ de partie régulière $P + Q$.
 
 </div>
 
-<details class="demo" markdown="1">
-<summary>Démonstration</summary>
+<div class="bloc demo" markdown="1">
+<span class="bloc-titre">Démonstration</span>
 
 $\forall x \in V(0),\ f(x) = P(x) + x^n\varepsilon(x)$ et
 $\forall x \in V'(0),\ g(x) = Q(x) + x^n\eta(x)$. Alors, pour $x \in V \cap V'$ :
@@ -289,7 +289,7 @@ $$
 
 avec $\deg(P+Q) \leq n$ et $\theta(x) = \varepsilon(x)+\eta(x) \xrightarrow[x\to 0]{} 0$.
 
-</details>
+</div>
 
 ### 2) Produit
 
@@ -303,8 +303,8 @@ les termes de degré $\leq n$** dans le produit $P \times Q$.
 
 </div>
 
-<details class="demo" markdown="1">
-<summary>Démonstration</summary>
+<div class="bloc demo" markdown="1">
+<span class="bloc-titre">Démonstration</span>
 
 $$
 f(x)g(x) = P(x)Q(x) + x^n\Big(\varepsilon(x)Q(x) + \eta(x)P(x) + x^n\varepsilon(x)\eta(x)\Big)
@@ -314,7 +314,7 @@ En écrivant $P Q (X) = \sum_{k=0}^{n} a_k X^k + R(X)$ avec
 $R(X) = X^n \sum_{k > n} a_k X^{k-n}$, le reste est bien de la forme $x^n\theta(x)$
 avec $\theta(x) \to 0$.
 
-</details>
+</div>
 
 <div class="bloc exemple" markdown="1">
 
@@ -342,8 +342,8 @@ tronqué à l'ordre $n$.
 
 </div>
 
-<details class="demo" markdown="1">
-<summary>Démonstration (esquisse)</summary>
+<div class="bloc demo" markdown="1">
+<span class="bloc-titre">Démonstration (esquisse)</span>
 
 $Q(0) = g(0) \neq 0$ et $g$ ne s'annule pas sur un voisinage de $0$ (car $g$ est
 continue, puisqu'elle admet un DL d'ordre $0$). On écrit la division de $P$ par $Q$ :
@@ -354,7 +354,7 @@ $$
 = T(x) + x^n\theta(x), \qquad \theta(x) \xrightarrow[x\to 0]{} 0
 $$
 
-</details>
+</div>
 
 <div class="bloc exemple" markdown="1">
 
@@ -379,8 +379,8 @@ alors $g \circ f$ admet un DL d'ordre $n$ en $0$.
 
 </div>
 
-<details class="demo" markdown="1">
-<summary>Démonstration (esquisse) et écriture pratique</summary>
+<div class="bloc demo" markdown="1">
+<span class="bloc-titre">Démonstration (esquisse) et écriture pratique</span>
 
 $f$ est définie sur un voisinage $V$ de $0$ et continue en $0$, donc $f(V)$ contient
 un voisinage de $a_0$. Avec
@@ -402,7 +402,7 @@ conserve que les monômes de degré $\leq n$. **Écriture pratique** en tableau 
 | $\vdots$ | $\vdots$ |
 | $b_n(f(x)-a_0)^n$ | $b_n a_1^n x^n$ |
 
-</details>
+</div>
 
 <div class="bloc exemple" markdown="1">
 
@@ -450,8 +450,8 @@ $$
 
 </div>
 
-<details class="demo" markdown="1">
-<summary>Démonstration (esquisse)</summary>
+<div class="bloc demo" markdown="1">
+<span class="bloc-titre">Démonstration (esquisse)</span>
 
 Posons $\varphi(x) = f(x) - f(0) - b_0 x - \dots - \dfrac{b_n}{n+1}x^{n+1}$. Alors
 $\varphi'(x) = f'(x) - b_0 - b_1 x - \dots - b_n x^n = x^n\varepsilon(x)$ avec
@@ -459,7 +459,7 @@ $\varepsilon(x) \to 0$. Pour $|x| < \alpha$ assez petit, $|\varphi'(x)| \leq \va
 par l'inégalité des accroissements finis, $|\varphi(x)| \leq \varepsilon \dfrac{|x|^{n+1}}{n+1}$,
 d'où $\varphi(x) = \mathrm{o}(x^{n+1})$.
 
-</details>
+</div>
 
 <div class="bloc exemple" markdown="1">
 
@@ -590,15 +590,15 @@ $f''(a) = 0$ et $f'''(a) \neq 0$.
 
 </div>
 
-<details class="demo" markdown="1">
-<summary>Démonstration</summary>
+<div class="bloc demo" markdown="1">
+<span class="bloc-titre">Démonstration</span>
 
 $f$ de classe $\mathcal{C}^2$ admet un DL d'ordre 2 en $a$ :
 $f(x) = f(a) + f'(a)(x-a) + \dfrac{f''(a)}{2}(x-a)^2 + \mathrm{o}\big((x-a)^2\big)$.
 Si $f''(a) \neq 0$, d'après l'étude de position ci-dessus, $\Gamma$ reste du même côté
 de sa tangente au voisinage de $a$ : pas de point d'inflexion.
 
-</details>
+</div>
 
 **d) Convexité — concavité** (si $f$ est de classe $\mathcal{C}^2$). Le signe de
 $a_2 = \dfrac{f''(a)}{2}$ donne le sens de concavité de $f$ au voisinage de $a$ :

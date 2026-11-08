@@ -124,23 +124,9 @@ code {
 
 .bloc p:last-child { margin-bottom: 0; }
 
-/* démonstrations repliables */
-details.demo {
-  margin: 10px 0 18px;
-  background: #fbfaf6;
-  border: 1px solid var(--bord);
-  border-radius: 8px;
-  padding: 8px 16px;
-}
-details.demo summary {
-  cursor: pointer;
-  font-weight: 600;
-  color: #555;
-  font-size: 0.95rem;
-  letter-spacing: 0.03em;
-}
-details.demo summary:hover { color: var(--accent); }
-details.demo[open] summary { margin-bottom: 8px; color: var(--accent); }
+/* démonstrations */
+.bloc.demo { border-color: #8a8f98; background: #f7f8fa; }
+.bloc.demo .bloc-titre { color: #555; }
 
 /* formule encadrée (les " encadrés rouges " du manuscrit) */
 .formule {
