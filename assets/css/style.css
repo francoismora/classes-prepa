@@ -15,6 +15,11 @@
 
 html { scroll-behavior: smooth; }
 
+/* Sécurité anti-débordement horizontal : les conteneurs larges (équations display
+   mjx-container, tableaux, formules) ont leur propre overflow-x:auto et scrollent
+   en interne ; la page elle-même ne doit jamais déborder. */
+html, body { overflow-x: clip; }
+
 body {
   margin: 0;
   background: var(--fond);
