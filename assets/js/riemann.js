@@ -30,23 +30,23 @@
    * subdivision régulière à n intervalles, la liste des points où évaluer f
    * pour la somme (1 point pour Riemann, ECH+1 pour Darboux min/max). */
   var METHODES = {
-    "gauche": { label: "rectangles à gauche ($\\lambda_i = x_{i-1}$)",
+    "gauche": { label: "rectangles à gauche",
       tag: function (i, n) { return [i / n]; },
       tagLatex: "\\lambda_i = x_{i-1} = \\frac{i}{n}" },
-    "droite": { label: "rectangles à droite ($\\lambda_i = x_i$)",
+    "droite": { label: "rectangles à droite",
       tag: function (i, n) { return [(i + 1) / n]; },
       tagLatex: "\\lambda_i = x_i = \\frac{i+1}{n}" },
-    "milieu": { label: "rectangles au point milieu ($\\lambda_i = \\frac{x_{i-1}+x_i}{2}$)",
+    "milieu": { label: "rectangles au point milieu",
       tag: function (i, n) { return [(i + 0.5) / n]; },
       tagLatex: "\\lambda_i = \\frac{x_{i-1}+x_i}{2} = \\frac{2i+1}{2n}" },
-    "min": { label: "somme de Darboux inférieure $s(\\sigma_n)$",
+    "min": { label: "Darboux inférieure",
       tag: function (i, n) {
         var pts = [], x0 = i / n, dx = 1 / n;
         for (var j = 0; j <= ECH; j++) pts.push(x0 + dx * j / ECH);
         return pts;
       },
       tagLatex: "m_i = \\min_{[x_{i-1},x_i]} f" },
-    "max": { label: "somme de Darboux supérieure $S(\\sigma_n)$",
+    "max": { label: "Darboux supérieure",
       tag: function (i, n) {
         var pts = [], x0 = i / n, dx = 1 / n;
         for (var j = 0; j <= ECH; j++) pts.push(x0 + dx * j / ECH);
