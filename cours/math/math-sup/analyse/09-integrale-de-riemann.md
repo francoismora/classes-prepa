@@ -221,7 +221,7 @@ Toute fonction **continue** sur $[a, b]$ est intégrable.
 $f$ continue sur le segment $[a, b]$ y est **uniformément continue** :
 
 $$\forall \varepsilon > 0,\ \exists \alpha > 0,\ \forall x, y \in [a, b],\quad
-|x - y| < \alpha \Rightarrow |f(x) - f(y)| \leq \dfrac{\varepsilon}{b-a}$$
+&#124;x - y&#124; < \alpha \Rightarrow &#124;f(x) - f(y)&#124; \leq \dfrac{\varepsilon}{b-a}$$
 Prenons une subdivision $\sigma$ dont tous les intervalles sont de longueur
 $< \alpha$ : alors $M_i - m_i \leq \dfrac{\varepsilon}{b-a}$ pour tout $i$, donc
 
@@ -272,7 +272,7 @@ $\displaystyle\int_a^b f \leq \int_a^b g$.
 
 <span class="bloc-titre">Proposition 2 (majorations)</span>
 
-$$\left| \int_a^b f \right| \leq \int_a^b |f| \leq (b-a)\, \sup_{x \in [a,b]} |f(x)|$$
+$$\left&#124; \int_a^b f \right&#124; \leq \int_a^b &#124;f&#124; \leq (b-a)\, \sup_{x \in [a,b]} &#124;f(x)&#124;$$
 
 </div>
 
@@ -457,7 +457,7 @@ $$g : x \longmapsto \int_c^x f(t)\, \mathrm{d}t$$
 est bien définie et **continue** sur $[a, b]$. Si de plus $f$ est bornée sur
 $[a, b]$ ($&#124;f&#124; \leq M$), alors $g$ est $M$-lipschitzienne :
 
-$$\forall x, y \in [a, b],\quad |g(x) - g(y)| \leq M\, |x - y|$$
+$$\forall x, y \in [a, b],\quad &#124;g(x) - g(y)&#124; \leq M\, &#124;x - y&#124;$$
 
 </div>
 

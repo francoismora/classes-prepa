@@ -21,7 +21,7 @@ $\leq$ est une relation d'ordre total dans $\mathbb{R}$, à valeurs absolues.
 
 <span class="bloc-titre">Définition (valeur absolue)</span>
 
-$$|x| = \max\big(\{x, -x\}\big)$$
+$$&#124;x&#124; = \max\big(\{x, -x\}\big)$$
 
 ($x$ et $-x$ sont comparables : $&#92;&#123;x&#92;&#125; \cup &#92;&#123;-x&#92;&#125;$ admet un plus grand élément.)
 
@@ -31,7 +31,7 @@ $$|x| = \max\big(\{x, -x\}\big)$$
 
 <span class="bloc-titre">Inégalité triangulaire</span>
 
-$$\big||x| - |y|\big| \leq |x + y| \leq |x| + |y|$$
+$$\big&#124;&#124;x&#124; - &#124;y&#124;\big&#124; \leq &#124;x + y&#124; \leq &#124;x&#124; + &#124;y&#124;$$
 
 </div>
 
@@ -217,7 +217,7 @@ Soit $X = &#92;&#123;u_n \mid n \in \mathbb{N}&#92;&#125; \subset \mathbb{R}$. O
 
 Soit $l \in \mathbb{R}$. La suite $(u_n)$ **converge vers $l$** (on note $u_n \to l$) si
 
-$$\forall \varepsilon > 0,\ \exists N \in \mathbb{N},\ \forall n \geq N,\quad |u_n - l| \leq \varepsilon$$
+$$\forall \varepsilon > 0,\ \exists N \in \mathbb{N},\ \forall n \geq N,\quad &#124;u_n - l&#124; \leq \varepsilon$$
 
 Si $(u_n)$ ne converge pas, on dit que $(u_n)$ **diverge**.
 
@@ -246,8 +246,8 @@ Si $(u_n)$ converge vers $l$, alors $l$ s'appelle **limite** de $(u_n)$ et elle 
 
 Supposons que $(u_n) \to l$ et $(u_n) \to l'$. Alors
 
-$$\forall \varepsilon > 0,\ \exists N_1 \in \mathbb{N},\ \forall n \geq N_1,\ |u_n - l| \leq \varepsilon$$
-$$\forall \varepsilon > 0,\ \exists N_2 \in \mathbb{N},\ \forall n \geq N_2,\ |u_n - l'| \leq \varepsilon$$
+$$\forall \varepsilon > 0,\ \exists N_1 \in \mathbb{N},\ \forall n \geq N_1,\ &#124;u_n - l&#124; \leq \varepsilon$$
+$$\forall \varepsilon > 0,\ \exists N_2 \in \mathbb{N},\ \forall n \geq N_2,\ &#124;u_n - l'&#124; \leq \varepsilon$$
 
 et $&#124;l - l'&#124; \leq &#124;u_n - l&#124; + &#124;u_n - l'&#124;$. Soit $\varepsilon > 0$ : pour $n \geq \max(N_1, N_2)$, $&#124;l - l'&#124; \leq 2\varepsilon$. Donc $\forall \varepsilon > 0,\ &#124;l-l'&#124; \leq 2\varepsilon$, ce qui n'est possible que si $l = l'$ (sinon, pour $\varepsilon = \dfrac{&#124;l-l'&#124;}{4}$, ce serait faux). Donc $l = l'$.
 
@@ -307,7 +307,7 @@ $$u_n + v_n \to l + l', \qquad u_n v_n \to l l', \qquad \lambda u_n \to \lambda 
 
 a) $\forall \varepsilon > 0,\ \exists N_1 \in \mathbb{N},\ \forall n \geq N_1,\ &#124;u_n - l&#124; \leq \varepsilon$ et $\forall \varepsilon > 0,\ \exists N_2 \in \mathbb{N},\ \forall n \geq N_2,\ &#124;v_n - l'&#124; \leq \varepsilon$. Alors
 
-$$|u_n + v_n - l - l'| \leq |u_n - l| + |v_n - l'|$$
+$$&#124;u_n + v_n - l - l'&#124; \leq &#124;u_n - l&#124; + &#124;v_n - l'&#124;$$
 
 Donc pour $n \geq \max(N_1, N_2)$ : $&#124;u_n + v_n - (l+l')&#124; \leq \varepsilon$, d'où $(u_n + v_n) \to l + l'$.
 
@@ -322,7 +322,7 @@ Si $u_n \to 0$ et $(v_n)$ bornée : $\exists M \in \mathbb{R},\ \forall i \in \m
 
 Si $l \neq 0$ : $\forall \varepsilon > 0,\ \exists N \in \mathbb{N},\ \forall n \geq N,\ &#124;u_n - l&#124; \leq \varepsilon$. Pour $\varepsilon = \dfrac{&#124;l&#124;}{2}$ : $\forall n \geq N_0,\ -\dfrac{&#124;l&#124;}{2} \leq u_n - l \leq \dfrac{&#124;l&#124;}{2}$, donc $0 < \dfrac{&#124;l&#124;}{2} \leq &#124;u_n&#124; \leq \dfrac{3&#124;l&#124;}{2}$ ; ainsi $u_n > 0$ (en valeur absolue non nul) pour $n \geq N_0 = n_0$. Pour $l \neq 0$ :
 
-$$\left|\frac{1}{u_n} - \frac{1}{l}\right| = \frac{|l - u_n|}{|l u_n|}$$
+$$\left&#124;\frac{1}{u_n} - \frac{1}{l}\right&#124; = \frac{&#124;l - u_n&#124;}{&#124;l u_n&#124;}$$
 
 Soit $n$ tel que $\forall n \geq n_1,\ &#124;u_n - l&#124; \leq \dfrac{1}{2}\varepsilon$ ; alors pour $n \geq \max(n_0, n_1)$ : $\left&#124;\dfrac{1}{u_n} - \dfrac{1}{l}\right&#124; \leq \varepsilon$.
 
@@ -784,7 +784,7 @@ $u&#95;{2n+2} = (f \circ f)(u&#95;{2n})$ et $f \circ f$ est croissante sur $I$ ;
 
 Une **suite complexe** est une application de $\mathbb{N}$ dans $\mathbb{C}$. La suite $(z_n)$ **converge vers $l$** si
 
-$$\forall \varepsilon > 0,\ \exists N \in \mathbb{N},\ \forall n \geq N,\quad |z_n - l| \leq \varepsilon$$
+$$\forall \varepsilon > 0,\ \exists N \in \mathbb{N},\ \forall n \geq N,\quad &#124;z_n - l&#124; \leq \varepsilon$$
 
 </div>
 
@@ -803,13 +803,13 @@ Si $z_n = x_n + i y_n$ et $l = l_1 + i l_2$, alors $(z_n) \to l$ si et seulement
 
 Si $z_n \to l$ : $\forall \varepsilon > 0,\ \exists N \in \mathbb{N},\ \forall n \geq N,\ &#124;z_n - l&#124; \leq \varepsilon$. Or
 
-$$|x_n - l_1| = \big|\mathrm{Re}(z_n - l)\big| \leq |z_n - l|, \qquad |y_n - l_2| = \big|\mathrm{Im}(z_n - l)\big| \leq |z_n - l|$$
+$$&#124;x_n - l_1&#124; = \big&#124;\mathrm{Re}(z_n - l)\big&#124; \leq &#124;z_n - l&#124;, \qquad &#124;y_n - l_2&#124; = \big&#124;\mathrm{Im}(z_n - l)\big&#124; \leq &#124;z_n - l&#124;$$
 
 donc $\forall \varepsilon > 0,\ \exists N \in \mathbb{N},\ \forall n \geq N,\ &#124;x_n - l_1&#124; \leq \varepsilon$ et $&#124;y_n - l_2&#124; \leq \varepsilon$.
 
 Réciproquement, si $x_n \to l_1$ et $y_n \to l_2$ : soit $\varepsilon > 0$ ; $\exists N_1 \in \mathbb{N},\ \forall n \geq N_1,\ &#124;x_n - l_1&#124; \leq \dfrac{\varepsilon}{\sqrt{2}}$ et $\exists N_2 \in \mathbb{N},\ \forall n \geq N_2,\ &#124;y_n - l_2&#124; \leq \dfrac{\varepsilon}{\sqrt{2}}$. Pour $N = \max(N_1, N_2)$ et $n \geq N$ :
 
-$$|z_n - l|^2 \leq \frac{\varepsilon^2}{2} + \frac{\varepsilon^2}{2} = \varepsilon^2$$
+$$&#124;z_n - l&#124;^2 \leq \frac{\varepsilon^2}{2} + \frac{\varepsilon^2}{2} = \varepsilon^2$$
 
 donc $\forall n \geq N,\ &#124;z_n - l&#124; \leq \varepsilon$.
 
@@ -1041,7 +1041,7 @@ est une **bijection**.
 </ol>
 </li>
 <li>Montrer que :
-$$\left| \sum_{i=1}^{n} a_i b_i \right| \leq \left( \sum_{i=1}^{n} |a_i| \right)\!\left( \sum_{i=1}^{n} |b_i| \right) \leq n \left( \sup_{1 \leq i \leq n} |a_i| \right)\!\left( \sup_{1 \leq i \leq n} |b_i| \right)$$
+$$\left&#124; \sum_{i=1}^{n} a_i b_i \right&#124; \leq \left( \sum_{i=1}^{n} &#124;a_i&#124; \right)\!\left( \sum_{i=1}^{n} &#124;b_i&#124; \right) \leq n \left( \sup_{1 \leq i \leq n} &#124;a_i&#124; \right)\!\left( \sup_{1 \leq i \leq n} &#124;b_i&#124; \right)$$
 et que $&#124;\sup_I f - \sup_I g&#124; \leq \sup_I &#124;f - g&#124;$ si $f$ et $g$ sont bornées sur $I$.</li>
 <li>Déterminer $\inf(A)$ et $\sup(A)$ pour les parties $A$ suivantes :
 <ol>
@@ -1061,7 +1061,7 @@ $$E(x) + E\!\left(x + \frac{1}{n}\right) + E\!\left(x + \frac{2}{n}\right) + \do
 <li>Démontrer que $\sqrt[3]{20 + 14\sqrt{2}} + \sqrt[3]{20 - 14\sqrt{2}}$ est rationnel.</li>
 <li>Calculer $S = \sqrt{2}&#92;&#44;\sqrt[4]{7 + 4\sqrt{3}} + \sqrt{2}&#92;&#44;\sqrt[4]{7 - 4\sqrt{3}}$.</li>
 <li>Soit $n \in \mathbb{N}^&#42;$ et $x_i \in [-1, 1]$ ($1 \leq i \leq n$) tels que $x_1 + x_2 + \dots + x_n = 0$. Montrer que
-$$\left| x_1 + 2x_2 + \dots + n x_n \right| \leq E\!\left(\frac{n^2}{4}\right)$$</li>
+$$\left&#124; x_1 + 2x_2 + \dots + n x_n \right&#124; \leq E\!\left(\frac{n^2}{4}\right)$$</li>
 </ol>
 
 </div>
@@ -1120,9 +1120,9 @@ $$v_n = \frac{u_1 + u_2 + \cdots + u_n}{n}$$
 </ol>
 </li>
 <li>Montrer que $(u_n)$ admet une valeur d'adhérence $a$ si et seulement si
-$$\forall \varepsilon > 0,\ \forall N \in \mathbb{N},\ \exists n \geq N,\quad |u_n - a| \leq \varepsilon$$</li>
+$$\forall \varepsilon > 0,\ \forall N \in \mathbb{N},\ \exists n \geq N,\quad &#124;u_n - a&#124; \leq \varepsilon$$</li>
 <li>Suites de Cauchy : on dit que $(u_n)$ est une suite de Cauchy si elle vérifie :
-$$\forall \varepsilon > 0,\ \exists N \in \mathbb{N},\ \forall p \geq N,\ \forall q \geq N,\quad |u_p - u_q| \leq \varepsilon$$
+$$\forall \varepsilon > 0,\ \exists N \in \mathbb{N},\ \forall p \geq N,\ \forall q \geq N,\quad &#124;u_p - u_q&#124; \leq \varepsilon$$
 <ol>
 <li>montrer que si $(u_n)$ est convergente, c'est une suite de Cauchy ;</li>
 <li>montrer qu'une suite de Cauchy est bornée ;</li>

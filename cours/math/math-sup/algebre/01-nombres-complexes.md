@@ -131,7 +131,7 @@ D'où $z \in \mathbb{R} \Leftrightarrow z = \overline{z}$ ; si $z \in i\mathbb{R
 
 La quantité $N(z) = a^2 + b^2$ est dans $\mathbb{R}^+$. On appelle **module** de $z$ la quantité notée
 
-$$|z| = \sqrt{N(z)}$$
+$$&#124;z&#124; = \sqrt{N(z)}$$
 
 </div>
 
@@ -153,7 +153,7 @@ $$|z| = \sqrt{N(z)}$$
 
 <span class="bloc-titre">Propriété</span>
 
-$$|\mathrm{Re}(z)| \leq |z| \quad \text{et} \quad |\mathrm{Im}(z)| \leq |z|$$
+$$&#124;\mathrm{Re}(z)&#124; \leq &#124;z&#124; \quad \text{et} \quad &#124;\mathrm{Im}(z)&#124; \leq &#124;z&#124;$$
 
 car $&#124;z&#124;^2 = \mathrm{Re}(z)^2 + \mathrm{Im}(z)^2$, avec égalité si $z \in \mathbb{R}$.
 
@@ -165,7 +165,7 @@ Il y a égalité si $&#124;\mathrm{Re}(z)&#124; = &#124;z&#124;$ et $&#124;\math
 
 <span class="bloc-titre">Inégalité triangulaire</span>
 
-$$|z + z'| \leq |z| + |z'|$$
+$$&#124;z + z'&#124; \leq &#124;z&#124; + &#124;z'&#124;$$
 
 et il y a égalité si et seulement si $z$ ou $z'$ est nul, ou bien $z' = \lambda z$ avec $\lambda \in \mathbb{R}&#95;+$.
 
@@ -174,9 +174,9 @@ et il y a égalité si et seulement si $z$ ou $z'$ est nul, ou bien $z' = \lambd
 <div class="bloc demo" markdown="1">
 <span class="bloc-titre">Démonstration</span>
 
-$$|z+z'|^2 = (z+z')(\overline{z}+\overline{z'}) = |z|^2 + |z'|^2 + z'\overline{z} + z\overline{z'} = |z|^2 + |z'|^2 + 2\,\mathrm{Re}(z'\overline{z})$$
+$$&#124;z+z'&#124;^2 = (z+z')(\overline{z}+\overline{z'}) = &#124;z&#124;^2 + &#124;z'&#124;^2 + z'\overline{z} + z\overline{z'} = &#124;z&#124;^2 + &#124;z'&#124;^2 + 2\,\mathrm{Re}(z'\overline{z})$$
 
-$$(|z|+|z'|)^2 = |z|^2 + |z'|^2 + 2|z|\,|z'|$$
+$$(&#124;z&#124;+&#124;z'&#124;)^2 = &#124;z&#124;^2 + &#124;z'&#124;^2 + 2&#124;z&#124;\,&#124;z'&#124;$$
 
 D'où $&#124;z&#124; \geq &#124;\mathrm{Re}(z)&#124; \geq \mathrm{Re}(z)$, on a $&#124;z+z'&#124;^2 \leq (&#124;z&#124;+&#124;z'&#124;)^2$, soit $&#124;z+z'&#124; \leq &#124;z&#124; + &#124;z'&#124;$.
 
@@ -188,7 +188,7 @@ Il y a égalité si et seulement si $z = 0$ ou $z' = \mu z$ avec $\mu \in \mathb
 
 **Réciproque** : si $z = 0$ ou $z' = 0$ ; si $z' = \mu z$ avec $\mu \in \mathbb{R}&#95;+$,
 
-$$|z+z'| = |z|\,|1+\mu| = |z|(1+\mu) \ \text{car } \mu \geq 0, = |z| + |\mu z| = |z| + |z'|$$
+$$&#124;z+z'&#124; = &#124;z&#124;\,&#124;1+\mu&#124; = &#124;z&#124;(1+\mu) \ \text{car } \mu \geq 0, = &#124;z&#124; + &#124;\mu z&#124; = &#124;z&#124; + &#124;z'&#124;$$
 
 </div>
 
@@ -196,7 +196,7 @@ $$|z+z'| = |z|\,|1+\mu| = |z|(1+\mu) \ \text{car } \mu \geq 0, = |z| + |\mu z| =
 
 <span class="bloc-titre">Propriété</span>
 
-$$|z - z'| \geq \big||z| - |z'|\big|, \qquad |z + z'| \geq \big||z| - |z'|\big|$$
+$$&#124;z - z'&#124; \geq \big&#124;&#124;z&#124; - &#124;z'&#124;\big&#124;, \qquad &#124;z + z'&#124; \geq \big&#124;&#124;z&#124; - &#124;z'&#124;\big&#124;$$
 
 </div>
 
@@ -233,7 +233,7 @@ On appelle **argument** de $z \neq 0$ l'angle $(\overrightarrow{Ox}, \overrighta
 
 - $\mathrm{Re}(z) = OM\cos\theta = &#124;z&#124;\cos\theta$ et $\mathrm{Im}(z) = &#124;z&#124;\sin\theta$, d'où
 
-$$z = |z|(\cos\theta + i\sin\theta) = |z|\,e^{i\theta}$$
+$$z = &#124;z&#124;(\cos\theta + i\sin\theta) = &#124;z&#124;\,e^{i\theta}$$
 
 $&#124;z&#124;&#92;&#44;e^{i\theta}$ est l'**écriture trigonométrique** de $z$ ; elle est **unique**, car si $z = r e^{i\alpha}$ avec $r > 0$, alors $&#124;z&#124; = r$ et $\alpha = \mathrm{Arg}&#92;&#44;z$ $[2\pi]$.
 
@@ -257,7 +257,7 @@ $&#124;z&#124;&#92;&#44;e^{i\theta}$ est l'**écriture trigonométrique** de $z$
 <div class="bloc demo" markdown="1">
 <span class="bloc-titre">Démonstration</span>
 
-$$\mathrm{Arg}(zz') = \mathrm{Arg}\big(|z|e^{i\theta} \cdot |z'|e^{i\theta'}\big) = \mathrm{Arg}\big(|zz'|\,e^{i(\theta+\theta')}\big)$$
+$$\mathrm{Arg}(zz') = \mathrm{Arg}\big(&#124;z&#124;e^{i\theta} \cdot &#124;z'&#124;e^{i\theta'}\big) = \mathrm{Arg}\big(&#124;zz'&#124;\,e^{i(\theta+\theta')}\big)$$
 
 d'après l'unicité de la forme trigonométrique : $\mathrm{Arg}(zz') = \theta + \theta' = \mathrm{Arg}(z) + \mathrm{Arg}(z')$.
 
@@ -273,7 +273,7 @@ De plus $-z = -&#124;z&#124;e^{i\theta} = &#124;z&#124;e^{i\pi}e^{i\theta} = &#1
 
 Soit $z \in \mathbb{C}$ tel que $&#124;z&#124; = 1$. Alors $z \neq 0$ et $z = &#124;z&#124;e^{i\theta} = e^{i\theta}$ ; réciproquement, tout $e^{i\theta}$ est de module $1$ :
 
-$$U = \{z \in \mathbb{C} \mid |z| = 1\} = \{e^{i\theta} \mid \theta \in [0, 2\pi[\}$$
+$$U = \{z \in \mathbb{C} \mid &#124;z&#124; = 1\} = \{e^{i\theta} \mid \theta \in [0, 2\pi[\}$$
 
 </div>
 
@@ -359,7 +359,7 @@ Tout complexe non nul admet exactement $n$ racines $n$-ièmes distinctes.
 
 Soit $u \neq 0$, $u = r'e^{i\alpha}$ avec $r' > 0$. Alors
 
-$$u^n = z \Leftrightarrow r'^n e^{in\alpha} = |z|e^{i\theta} \Leftrightarrow \begin{cases} r'^n = |z| \\ n\alpha = \theta \ [2\pi] \end{cases} \Leftrightarrow \begin{cases} r' = \sqrt[n]{|z|} \\ \alpha = \dfrac{\theta}{n} + \dfrac{2k\pi}{n},\ k \in \mathbb{Z} \end{cases}$$
+$$u^n = z \Leftrightarrow r'^n e^{in\alpha} = &#124;z&#124;e^{i\theta} \Leftrightarrow \begin{cases} r'^n = &#124;z&#124; \\ n\alpha = \theta \ [2\pi] \end{cases} \Leftrightarrow \begin{cases} r' = \sqrt[n]{&#124;z&#124;} \\ \alpha = \dfrac{\theta}{n} + \dfrac{2k\pi}{n},\ k \in \mathbb{Z} \end{cases}$$
 
 Si $u$ est racine $n$-ième, $u$ est de la forme
 $u = &#124;z&#124;^{\frac{1}{n}} e^{i\left(\frac{\theta}{n} + \frac{2k\pi}{n}\right)}$, $k \in \mathbb{Z}$ ; réciproquement, les
@@ -374,7 +374,7 @@ donc $u_k \neq u&#95;{k'}$ pour $0 \leq k \neq k' \leq n-1$ : on a $n$ racines d
 D'après l'équivalence ci-dessus, si $u$ est racine $n$-ième, $u$ est de la forme
 $&#124;z&#124;^{1/n} e^{i(\frac{\theta}{n} + \frac{2k\pi}{n})} = u_k$, $k \in \mathbb{Z}$. En écrivant $q = \left\lfloor \dfrac{k}{n} \right\rfloor$ (donc $q \leq \dfrac{k}{n} < q+1$) et $k = qn + r$ avec $0 \leq r \leq n-1$ :
 
-$$u_k = |z|^{\frac{1}{n}} e^{i\left(\frac{\theta}{n} + \frac{2(qn+r)\pi}{n}\right)} = |z|^{\frac{1}{n}} e^{i\left(\frac{\theta}{n} + \frac{2r\pi}{n} + 2q\pi\right)} = |z|^{\frac{1}{n}} e^{i(\frac{\theta}{n} + \frac{2r\pi}{n})} = u_r$$
+$$u_k = &#124;z&#124;^{\frac{1}{n}} e^{i\left(\frac{\theta}{n} + \frac{2(qn+r)\pi}{n}\right)} = &#124;z&#124;^{\frac{1}{n}} e^{i\left(\frac{\theta}{n} + \frac{2r\pi}{n} + 2q\pi\right)} = &#124;z&#124;^{\frac{1}{n}} e^{i(\frac{\theta}{n} + \frac{2r\pi}{n})} = u_r$$
 
 d'où $u_k \in &#92;&#123;u_0, u_1, \dots, u&#95;{n-1}&#92;&#125;$.
 
@@ -574,7 +574,7 @@ $$Z = \frac{z + z'}{1 + zz'} \in \mathbb{R}$$</li>
 $$C_n = 1 + \cos x + \cos 2x + \dots + \cos nx$$
 $$\Sigma_n = 1 + \binom{n}{1}\cos x + \binom{n}{2}\cos 2x + \dots + \binom{n}{n}\cos nx$$</li>
 <li value="7">Soit $u$ une racine carrée de $z\overline{z'}$. Démontrer que :
-$$|z| + |z'| = \left|\frac{z+z'}{2} - u\right| + \left|\frac{z+z'}{2} + u\right|$$</li>
+$$&#124;z&#124; + &#124;z'&#124; = \left&#124;\frac{z+z'}{2} - u\right&#124; + \left&#124;\frac{z+z'}{2} + u\right&#124;$$</li>
 <li>Résoudre les équations :
 $$(4+2i)z^2 - 2(3+2i)z + 2 - i = 0$$
 $$z^6 - (3-2i)z^3 + (2-2i) = 0$$</li>

@@ -468,7 +468,7 @@ $f(A) = \mathbb{N}$ mais $f^{-1}(f(A)) = \mathbb{Z}$, donc $A \neq f^{-1}(f(A))$
 
 Si $A \subset E$, on peut définir l'application appelée **restriction** de $f$ à $A$ :
 
-$$f_{|A} : A \to F, \qquad x \mapsto f(x)$$
+$$f_{&#124;A} : A \to F, \qquad x \mapsto f(x)$$
 
 </div>
 

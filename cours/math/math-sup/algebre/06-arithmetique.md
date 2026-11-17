@@ -402,7 +402,7 @@ $$(2 \times 178 + 5k,\ -11 \times 178 - 27k), \qquad k \in \mathbb{Z}$$
 
 Soit $(a_1, \dots, a_n) \in \mathbb{Z}^n$. Alors $a_1\mathbb{Z} \cap a_2\mathbb{Z} \cap \dots \cap a_n\mathbb{Z}$ est un sous-groupe de $\mathbb{Z}$ de la forme $m\mathbb{Z}$ ; $m$ est défini au signe près et $&#124;m&#124;$ est le plus petit multiple commun positif des $a_i$. On appelle $&#124;m&#124;$ le **ppcm** des $a_i$, noté
 
-$$|m| = a_1 \vee a_2 \vee \dots \vee a_n = \operatorname{ppcm}(a_1, \dots, a_n)$$
+$$&#124;m&#124; = a_1 \vee a_2 \vee \dots \vee a_n = \operatorname{ppcm}(a_1, \dots, a_n)$$
 
 </div>
 

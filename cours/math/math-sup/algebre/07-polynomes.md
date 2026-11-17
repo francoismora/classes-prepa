@@ -1185,7 +1185,7 @@ complexes non réelles ($\forall i$, $1 \leq i \leq p$, $\beta_i \neq
 
 $$P = a_n (X-\alpha_1)\cdots(X-\alpha_k)(X-\beta_1)(X-\overline{\beta_1})\cdots(X-\beta_p)(X-\overline{\beta_p})$$
 
-$$P = a_n (X-\alpha_1)\cdots(X-\alpha_k)\big(X^2 - 2\,\mathrm{Re}(\beta_1)X + |\beta_1|^2\big)\cdots\big(X^2 - 2\,\mathrm{Re}(\beta_p)X + |\beta_p|^2\big)$$
+$$P = a_n (X-\alpha_1)\cdots(X-\alpha_k)\big(X^2 - 2\,\mathrm{Re}(\beta_1)X + &#124;\beta_1&#124;^2\big)\cdots\big(X^2 - 2\,\mathrm{Re}(\beta_p)X + &#124;\beta_p&#124;^2\big)$$
 
 Ceci est une décomposition en facteurs irréductibles dans $\mathbb{R}[X]$,
 car les $X^2 - 2&#92;&#44;\mathrm{Re}(\beta_i)X + &#124;\beta_i&#124;^2$ ont un $\Delta < 0$
@@ -1806,7 +1806,7 @@ $$Q = P - P(a) - \frac{1}{6}(X-a)\Big(P''(a) + P'(a) + 4P'\Big(\frac{X+a}{2}\Big
 <li>Soit $a, b, c$ les racines dans $\mathbb{C}$ de $x^3 - 5x^2 + 4x - 1 = 0$. Calculer $S = a^2b^2 + b^2c^2 + c^2a^2$.</li>
 <li>Résoudre $x^4 + 12x - 5 = 0$ sachant que la somme de deux des racines est $2$.</li>
 <li>Soit $z$ une racine complexe de $P = \sum&#95;{k=0}^{n} a_k X^k$ ; montrer que
-$$|z| \leq \max\!\left(1,\ \sum_{k=0}^{n-1} \frac{a_k}{a_n}\right)$$
+$$&#124;z&#124; \leq \max\!\left(1,\ \sum_{k=0}^{n-1} \frac{a_k}{a_n}\right)$$
 </li>
 <li>Soit $f(x) = \arctan(x)$.
 <ol>

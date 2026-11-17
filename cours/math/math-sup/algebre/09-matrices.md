@@ -1386,7 +1386,7 @@ sont de la forme $aI$ ($a \in \mathbb{K}$).</li>
 <li>Soit $M = \begin{pmatrix} 3 & -4 & -2 \\ 4 & -7 & -4 \\ -5 & 10 & 6 \end{pmatrix}$. Montrer que $M$ est la matrice d'un projecteur dont on précisera l'image et la direction.</li>
 <li>Soit $M = \dfrac{1}{2}\begin{pmatrix} -1 & 2 & 1 \\ -1 & 0 & 1 \\ 1 & 2 & -1 \end{pmatrix}$. Montrer que $M$ est la matrice d'une symétrie dont on précisera les sous-espaces associés.</li>
 <li>Soit $A \in \mathcal{M}&#95;n(\mathbb{C})$ de terme général $a&#95;{ij}$. On suppose que, pour tout $i$ tel que $1 \leq i \leq n$,
-$$|a_{ii}| > \sum_{\substack{1 \leq j \leq n \\ j \neq i}} |a_{ij}|$$
+$$&#124;a_{ii}&#124; > \sum_{\substack{1 \leq j \leq n \\ j \neq i}} &#124;a_{ij}&#124;$$
 Montrer que $A$ est inversible.</li>
 </ol>
 
