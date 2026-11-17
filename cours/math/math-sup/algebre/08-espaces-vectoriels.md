@@ -515,7 +515,7 @@ des vecteurs de $A$.
 <div class="bloc demo" markdown="1">
 <span class="bloc-titre">Démonstration</span>
 
-Soit $F = \Big&#92;&#123; \sum&#95;{i \in I} \lambda_i x_i &#92;&#59;\Big/&#92;&#59; (x_i)&#95;{i \in I} \in A^I,\ (\lambda_i)&#95;{i \in I} \in \mathbb{K}^{(I)} \Big&#92;&#125;$.
+Soit $F = \Big&#92;&#123; \sum&#95;{i \in I} \lambda_i x_i &#92;&#59;/&#92;&#59; (x_i)&#95;{i \in I} \in A^I,\ (\lambda_i)&#95;{i \in I} \in \mathbb{K}^{(I)} \Big&#92;&#125;$.
 $F$ contient $A$ (pour $x \in A$, $x = 1 \cdot x$) ; $F$ est un s.e.v. de $E$ : soit
 $x \in F$, $x = \sum&#95;{i \in I} \lambda_i x_i$ avec $x_i \in A$ ; soit $y \in F$,
 $y = \sum&#95;{i \in I} \mu_i x_i$ ; pour tout $\lambda \in \mathbb{K}$ :
