@@ -49,7 +49,7 @@ La relation $\mid$ est réflexive, transitive, mais **non antisymétrique**.
 
 <span class="bloc-titre">Démonstration</span>
 
-Si $a \mid b$ et $b \mid a$ : $b = ay$ et $a = bx$, donc $b = xy\\,b$. Si $b = 0$, alors $a = b = 0$ ; si $b \neq 0$, $xy = 1$, donc $x = y = \varepsilon$ avec $\varepsilon \in \\{-1, 1\\}$ : $a$ et $b$ sont égaux au signe près.
+Si $a \mid b$ et $b \mid a$ : $b = ay$ et $a = bx$, donc $b = xy&#92;&#44;b$. Si $b = 0$, alors $a = b = 0$ ; si $b \neq 0$, $xy = 1$, donc $x = y = \varepsilon$ avec $\varepsilon \in &#92;&#123;-1, 1&#92;&#125;$ : $a$ et $b$ sont égaux au signe près.
 
 </div>
 
@@ -85,7 +85,7 @@ $$a = bq + r, \qquad 0 \leq r < b$$
 
 $$a = b(-q) - r = b(-q - 1) + (b - r), \qquad 0 < b - r < b$$
 
-et le couple $(-q - 1,\\, b - r)$ convient.
+et le couple $(-q - 1,&#92;&#44; b - r)$ convient.
 
 </div>
 
@@ -129,7 +129,7 @@ Si $d\mathbb{Z} = d'\mathbb{Z}$, alors $d \in d'\mathbb{Z}$ donc $d' \mid d$, et
 
 <span class="bloc-titre">Remarque</span>
 
-Le pgcd de $a_1, \dots, a_n$ est le **plus grand diviseur commun au sens de la divisibilité** : si $d = \operatorname{pgcd}(a_1, \dots, a_n)$ et si $d'$ divise les $a_i$ pour tout $i \in \\{1, \dots, n\\}$, alors $d' \mid d$.
+Le pgcd de $a_1, \dots, a_n$ est le **plus grand diviseur commun au sens de la divisibilité** : si $d = \operatorname{pgcd}(a_1, \dots, a_n)$ et si $d'$ divise les $a_i$ pour tout $i \in &#92;&#123;1, \dots, n&#92;&#125;$, alors $d' \mid d$.
 
 </div>
 
@@ -137,7 +137,7 @@ Le pgcd de $a_1, \dots, a_n$ est le **plus grand diviseur commun au sens de la d
 
 <span class="bloc-titre">Démonstration</span>
 
-Posons $\Delta = \operatorname{pgcd}(a_1, \dots, a_n)$ et $\delta = \operatorname{pgcd}(a_2, \dots, a_n)$. On a $\Delta\mathbb{Z} = a_1\mathbb{Z} + \dots + a_n\mathbb{Z}$. Chaque $a_i$ s'écrit $a_i = 0 + \dots + a_i \times 1 + \dots + 0 \in \Delta\mathbb{Z}$, donc $\Delta \mid a_i$ : $\Delta$ est un diviseur commun. D'autre part $\Delta = \sum&#95;{i=1}^{n} u_i a_i$ avec $u_i \in \mathbb{Z}$ ; si $d' \mid a_i$ pour tout $i$, alors $d' \mid \sum u_i a_i = \Delta$. Enfin, si $a_1 = 0$ : $\Delta\mathbb{Z} = \\{0\\} + a_2\mathbb{Z} + \dots + a_n\mathbb{Z} = \delta\mathbb{Z}$, donc $\Delta = \delta$ au signe près ; on se ramène ainsi à des nombres positifs non nuls.
+Posons $\Delta = \operatorname{pgcd}(a_1, \dots, a_n)$ et $\delta = \operatorname{pgcd}(a_2, \dots, a_n)$. On a $\Delta\mathbb{Z} = a_1\mathbb{Z} + \dots + a_n\mathbb{Z}$. Chaque $a_i$ s'écrit $a_i = 0 + \dots + a_i \times 1 + \dots + 0 \in \Delta\mathbb{Z}$, donc $\Delta \mid a_i$ : $\Delta$ est un diviseur commun. D'autre part $\Delta = \sum&#95;{i=1}^{n} u_i a_i$ avec $u_i \in \mathbb{Z}$ ; si $d' \mid a_i$ pour tout $i$, alors $d' \mid \sum u_i a_i = \Delta$. Enfin, si $a_1 = 0$ : $\Delta\mathbb{Z} = &#92;&#123;0&#92;&#125; + a_2\mathbb{Z} + \dots + a_n\mathbb{Z} = \delta\mathbb{Z}$, donc $\Delta = \delta$ au signe près ; on se ramène ainsi à des nombres positifs non nuls.
 
 </div>
 
@@ -357,14 +357,14 @@ Récurrence $H_k$ : $a_1 \cdots a_k \mid a$. Si $H_k$ est vrai ($1 \leq k \leq n
 
 <span class="bloc-titre">Théorème</span>
 
-Soit $(a, b, c) \in (\mathbb{Z} \setminus \\{0\\})^3$ et l'équation
+Soit $(a, b, c) \in (\mathbb{Z} \setminus &#92;&#123;0&#92;&#125;)^3$ et l'équation
 
 $$(1) \qquad ax + by = c$$
 
 Posons $d = a \wedge b$, $a = da'$, $b = db'$.
 
 - **1er cas** : si $d \nmid c$, l'équation (1) n'a **pas de solution** ;
-- **2e cas** : si $d \mid c$, en posant $c = dc'$, (1) équivaut à $a'x + b'y = c'$ avec $a' \wedge b' = 1$ ; si $(u_0, v_0) \in \mathbb{Z}^2$ vérifie $u_0 a' + v_0 b' = 1$ (Bézout), alors $(x_0, y_0) = (c'u_0,\\, c'v_0)$ est une solution particulière de (1), et les solutions de (1) sont
+- **2e cas** : si $d \mid c$, en posant $c = dc'$, (1) équivaut à $a'x + b'y = c'$ avec $a' \wedge b' = 1$ ; si $(u_0, v_0) \in \mathbb{Z}^2$ vérifie $u_0 a' + v_0 b' = 1$ (Bézout), alors $(x_0, y_0) = (c'u_0,&#92;&#44; c'v_0)$ est une solution particulière de (1), et les solutions de (1) sont
 
 $$\big\{(x_0 + kb',\ y_0 - ka') \mid k \in \mathbb{Z}\big\}$$
 
@@ -374,7 +374,7 @@ $$\big\{(x_0 + kb',\ y_0 - ka') \mid k \in \mathbb{Z}\big\}$$
 
 <span class="bloc-titre">Démonstration</span>
 
-L'équation (1) s'écrit $d(a'x + b'y) = c$ : si $d \nmid c$, elle n'a pas de solution. Si $d \mid c$, posons $c = dc'$ : (1) équivaut à $a'x + b'y = c'$, avec $a' \wedge b' = 1$. D'après Bézout, il existe $(u_0, v_0) \in \mathbb{Z}^2$ tel que $u_0 a' + v_0 b' = 1$ ; alors $(c'u_0, c'v_0)$ est solution de (1). Si $(x, y)$ est une autre solution : $a'x + b'y = a'x_0 + b'y_0$, donc $a'(x - x_0) = b'(y_0 - y)$ ; comme $a' \wedge b' = 1$, on a $a' \mid (y_0 - y)$ : il existe $k \in \mathbb{Z}$ tel que $y = y_0 - ka'$, et alors $x = x_0 + kb'$. Réciproquement, les couples $(x_0 + kb',\\, y_0 - ka')$ sont bien solutions de (1).
+L'équation (1) s'écrit $d(a'x + b'y) = c$ : si $d \nmid c$, elle n'a pas de solution. Si $d \mid c$, posons $c = dc'$ : (1) équivaut à $a'x + b'y = c'$, avec $a' \wedge b' = 1$. D'après Bézout, il existe $(u_0, v_0) \in \mathbb{Z}^2$ tel que $u_0 a' + v_0 b' = 1$ ; alors $(c'u_0, c'v_0)$ est solution de (1). Si $(x, y)$ est une autre solution : $a'x + b'y = a'x_0 + b'y_0$, donc $a'(x - x_0) = b'(y_0 - y)$ ; comme $a' \wedge b' = 1$, on a $a' \mid (y_0 - y)$ : il existe $k \in \mathbb{Z}$ tel que $y = y_0 - ka'$, et alors $x = x_0 + kb'$. Réciproquement, les couples $(x_0 + kb',&#92;&#44; y_0 - ka')$ sont bien solutions de (1).
 
 </div>
 
@@ -410,7 +410,7 @@ $$|m| = a_1 \vee a_2 \vee \dots \vee a_n = \operatorname{ppcm}(a_1, \dots, a_n)$
 
 <span class="bloc-titre">Démonstration</span>
 
-$m\mathbb{Z} \subset a_i\mathbb{Z}$ donc $m \in a_i\mathbb{Z}$, c'est-à-dire $a_i \mid m$ : $m$ est un multiple commun. Si $m'$ est un autre multiple commun (positif) des $a_i$, alors $a_i \mid m'$ pour tout $i \in \\{1, \dots, n\\}$, donc $m' \in a_i\mathbb{Z}$ pour tout $i$, d'où $m' \in m\mathbb{Z}$ et $m \mid m'$.
+$m\mathbb{Z} \subset a_i\mathbb{Z}$ donc $m \in a_i\mathbb{Z}$, c'est-à-dire $a_i \mid m$ : $m$ est un multiple commun. Si $m'$ est un autre multiple commun (positif) des $a_i$, alors $a_i \mid m'$ pour tout $i \in &#92;&#123;1, \dots, n&#92;&#125;$, donc $m' \in a_i\mathbb{Z}$ pour tout $i$, d'où $m' \in m\mathbb{Z}$ et $m \mid m'$.
 
 </div>
 
@@ -434,7 +434,7 @@ $$a \vee b = a'b'd \qquad \text{et} \qquad (a \vee b)(a \wedge b) = ab$$
 
 <span class="bloc-titre">Démonstration</span>
 
-Posons $m = a'b'd = ab' = a'b$ : donc $a \mid m$ et $b \mid m$, $m$ est un multiple commun. Si $M$ est un autre multiple commun, $M = ax = by$ avec $x, y \in \mathbb{Z}$ ; comme $a = da'$ et $b = db'$, $da'x = db'y$ donc $b' \mid a'x$ ; or $b' \wedge a' = 1$, donc $b' \mid x$ : $x = b'x'$ et $M = a'b'd\\,x' = m\\,x'$, d'où $m \mid M$ : $m$ est le plus petit multiple commun positif.
+Posons $m = a'b'd = ab' = a'b$ : donc $a \mid m$ et $b \mid m$, $m$ est un multiple commun. Si $M$ est un autre multiple commun, $M = ax = by$ avec $x, y \in \mathbb{Z}$ ; comme $a = da'$ et $b = db'$, $da'x = db'y$ donc $b' \mid a'x$ ; or $b' \wedge a' = 1$, donc $b' \mid x$ : $x = b'x'$ et $M = a'b'd&#92;&#44;x' = m&#92;&#44;x'$, d'où $m \mid M$ : $m$ est le plus petit multiple commun positif.
 
 </div>
 
@@ -536,7 +536,7 @@ L'ensemble $\mathcal{P}$ des nombres premiers est **infini**.
 
 <span class="bloc-titre">Démonstration</span>
 
-Supposons $\mathcal{P}$ fini, $\mathcal{P} = \\{p_1, \dots, p_k\\}$, et posons $x = 1 + p_1 p_2 \cdots p_k$. Alors $x \geq 2$, donc $x$ admet un diviseur premier $p \in \mathcal{P}$ ; il existe $i \in \\{1, \dots, k\\}$ tel que $p = p_i$. Mais $p_i \mid x$ et $p_i \mid p_1 p_2 \cdots p_k$, donc $p_i \mid 1$ : impossible.
+Supposons $\mathcal{P}$ fini, $\mathcal{P} = &#92;&#123;p_1, \dots, p_k&#92;&#125;$, et posons $x = 1 + p_1 p_2 \cdots p_k$. Alors $x \geq 2$, donc $x$ admet un diviseur premier $p \in \mathcal{P}$ ; il existe $i \in &#92;&#123;1, \dots, k&#92;&#125;$ tel que $p = p_i$. Mais $p_i \mid x$ et $p_i \mid p_1 p_2 \cdots p_k$, donc $p_i \mid 1$ : impossible.
 
 </div>
 
@@ -576,7 +576,7 @@ Si $p$ ne divise aucun des $a_i$, alors $p$ est premier séparément avec $a_1, 
 
 <span class="bloc-titre">Corollaire</span>
 
-Si $p$ premier divise $p_1 p_2 \cdots p_n$ où les $p_i$ sont premiers ($1 \leq i \leq n$), alors il existe $i \in \\{1, \dots, n\\}$ tel que $p = p_i$.
+Si $p$ premier divise $p_1 p_2 \cdots p_n$ où les $p_i$ sont premiers ($1 \leq i \leq n$), alors il existe $i \in &#92;&#123;1, \dots, n&#92;&#125;$ tel que $p = p_i$.
 
 </div>
 
@@ -594,11 +594,11 @@ $p$ divise l'un des facteurs $p_i$ (propriété 5) ; comme $p_i$ est premier et 
 
 <span class="bloc-titre">Théorème de décomposition en facteurs premiers</span>
 
-Tout $n \in \mathbb{Z} \setminus \\{0, 1, -1\\}$ s'écrit de manière **unique**
+Tout $n \in \mathbb{Z} \setminus &#92;&#123;0, 1, -1&#92;&#125;$ s'écrit de manière **unique**
 
 $$n = \varepsilon\, p_1^{\alpha_1} p_2^{\alpha_2} \cdots p_k^{\alpha_k}$$
 
-avec $\varepsilon \in \\{+1, -1\\}$, $p_i \in \mathcal{P}$ deux à deux distincts et $\alpha_i \geq 1$.
+avec $\varepsilon \in &#92;&#123;+1, -1&#92;&#125;$, $p_i \in \mathcal{P}$ deux à deux distincts et $\alpha_i \geq 1$.
 
 </div>
 
@@ -606,7 +606,7 @@ avec $\varepsilon \in \\{+1, -1\\}$, $p_i \in \mathcal{P}$ deux à deux distinct
 
 <span class="bloc-titre">Démonstration</span>
 
-**Unicité.** Supposons $n = \varepsilon p_1^{\alpha_1} \cdots p_k^{\alpha_k} = \varepsilon' q_1^{\beta_1} \cdots q_l^{\beta_l}$ ; alors $\varepsilon = \varepsilon' = \operatorname{sgn}(n)$. Posons $P = \\{p_1, \dots, p_k\\}$ et $Q = \\{q_1, \dots, q_l\\}$. Pour $p_i \in P$ : $p_i \mid p_1^{\alpha_1} \cdots p_k^{\alpha_k}$ (car $\alpha_i \geq 1$), donc $p_i \mid q_1^{\beta_1} \cdots q_l^{\beta_l}$ ; d'après le corollaire ci-dessus, il existe $j$ tel que $p_i = q_j \in Q$ : $P \subset Q$. En échangeant les rôles de $P$ et $Q$, on a de même $Q \subset P$, donc $P = Q$. Imposons $p_1 < p_2 < \dots < p_k$ et $q_1 < q_2 < \dots < q_l$ : alors $p_1 = q_1$, $p_2 = q_2$, \dots, $p_k = q_k$. Supposons $\beta_i > \alpha_i$ pour un $i$ : en divisant l'égalité $p_1^{\alpha_1} \cdots p_k^{\alpha_k} = p_1^{\beta_1} \cdots p_k^{\beta_k}$ par $p_i^{\alpha_i}$, on voit que $p_i$ divise le produit des $p_j^{\alpha_j}$, $j \neq i$, avec $p_i - \alpha_j \geq 1$... impossible d'après le corollaire, car $p_i$ est distinct des $p_j$, $j \neq i$. Donc $\beta_i \leq \alpha_i$ ; en échangeant les rôles de $\alpha$ et $\beta$, on a de même $\alpha_i \leq \beta_i$ ; ainsi $\alpha_i = \beta_i$.
+**Unicité.** Supposons $n = \varepsilon p_1^{\alpha_1} \cdots p_k^{\alpha_k} = \varepsilon' q_1^{\beta_1} \cdots q_l^{\beta_l}$ ; alors $\varepsilon = \varepsilon' = \operatorname{sgn}(n)$. Posons $P = &#92;&#123;p_1, \dots, p_k&#92;&#125;$ et $Q = &#92;&#123;q_1, \dots, q_l&#92;&#125;$. Pour $p_i \in P$ : $p_i \mid p_1^{\alpha_1} \cdots p_k^{\alpha_k}$ (car $\alpha_i \geq 1$), donc $p_i \mid q_1^{\beta_1} \cdots q_l^{\beta_l}$ ; d'après le corollaire ci-dessus, il existe $j$ tel que $p_i = q_j \in Q$ : $P \subset Q$. En échangeant les rôles de $P$ et $Q$, on a de même $Q \subset P$, donc $P = Q$. Imposons $p_1 < p_2 < \dots < p_k$ et $q_1 < q_2 < \dots < q_l$ : alors $p_1 = q_1$, $p_2 = q_2$, \dots, $p_k = q_k$. Supposons $\beta_i > \alpha_i$ pour un $i$ : en divisant l'égalité $p_1^{\alpha_1} \cdots p_k^{\alpha_k} = p_1^{\beta_1} \cdots p_k^{\beta_k}$ par $p_i^{\alpha_i}$, on voit que $p_i$ divise le produit des $p_j^{\alpha_j}$, $j \neq i$, avec $p_i - \alpha_j \geq 1$... impossible d'après le corollaire, car $p_i$ est distinct des $p_j$, $j \neq i$. Donc $\beta_i \leq \alpha_i$ ; en échangeant les rôles de $\alpha$ et $\beta$, on a de même $\alpha_i \leq \beta_i$ ; ainsi $\alpha_i = \beta_i$.
 
 **Existence.** Récurrence pour $n \geq 1$ : $H_2$ est vrai ($2 = 2^1$). Supposons $H_n$. Premier cas : $n+1$ est premier, $n+1 = (n+1)^1$. Deuxième cas : $n+1$ n'est pas premier, $(n+1) = qr$ avec $q, r$ diviseurs stricts, $2 \leq q, r \leq n$ ; d'après $H_n$, $q = p_1^{\alpha_1} \cdots p_k^{\alpha_k}$ et $r = q_1^{\beta_1} \cdots q_l^{\beta_l}$ ; le produit $qr$ est de la forme voulue en regroupant les puissances des nombres premiers apparaissant dans les deux décompositions.
 
@@ -682,7 +682,7 @@ La congruence modulo $n$ est une **relation d'équivalence**.
 
 <span class="bloc-titre">Exemple — les trois classes modulo 3</span>
 
-Les classes modulo $3$ sont $\overline{0} = \\{\dots, -6, -3, 0, 3, 6, \dots\\}$, $\overline{1} = \\{\dots, -5, -2, 1, 4, 7, \dots\\}$ et $\overline{2} = \\{\dots, -4, -1, 2, 5, 8, \dots\\}$.
+Les classes modulo $3$ sont $\overline{0} = &#92;&#123;\dots, -6, -3, 0, 3, 6, \dots&#92;&#125;$, $\overline{1} = &#92;&#123;\dots, -5, -2, 1, 4, 7, \dots&#92;&#125;$ et $\overline{2} = &#92;&#123;\dots, -4, -1, 2, 5, 8, \dots&#92;&#125;$.
 
 </div>
 
@@ -734,7 +734,7 @@ Il faut s'assurer que $\overline{a} + \overline{b}$ et $\overline{a} \times \ove
 
 - $(\mathbb{Z}/n\mathbb{Z}, +)$ est un groupe commutatif : élément neutre $\overline{0}$ ($\overline{0} + \overline{x} = \overline{0 + x} = \overline{x}$) ; loi commutative ; loi associative car $\overline{x + (y + z)} = \overline{(x + y) + z}$ ; symétrique de $\overline{x}$ : $\overline{n - x}$ car $\overline{n - x} + \overline{x} = \overline{n - x + x} = \overline{0}$ ;
 - $(\mathbb{Z}/n\mathbb{Z}, \times)$ est un monïde commutatif : élément neutre $\overline{1}$, loi commutative et associative ;
-- $\times$ est distributive sur $+$ : $\overline{x}\\,(\overline{y} + \overline{z}) = \overline{x(y+z)} = \overline{xy + xz} = \overline{x}\\,\overline{y} + \overline{x}\\,\overline{z}$.
+- $\times$ est distributive sur $+$ : $\overline{x}&#92;&#44;(\overline{y} + \overline{z}) = \overline{x(y+z)} = \overline{xy + xz} = \overline{x}&#92;&#44;\overline{y} + \overline{x}&#92;&#44;\overline{z}$.
 
 </div>
 
@@ -780,7 +780,7 @@ $(\mathbb{Z}/n\mathbb{Z}, +)$ est un **groupe cyclique d'ordre $n$** ; ses gén�
 
 <span class="bloc-titre">Démonstration</span>
 
-$\mathbb{Z}/n\mathbb{Z} = \\{\overline{0}, \overline{1}, \dots, \overline{n-1}\\}$ est engendré par $\overline{1}$ (notation additive). Soit $q \in \mathbb{Z}$ et $\overline{q}$ sa classe ; posons $d = q \wedge n$, $n = n'd$ et $q = dq'$ avec $q' \wedge n' = 1$. Alors
+$\mathbb{Z}/n\mathbb{Z} = &#92;&#123;\overline{0}, \overline{1}, \dots, \overline{n-1}&#92;&#125;$ est engendré par $\overline{1}$ (notation additive). Soit $q \in \mathbb{Z}$ et $\overline{q}$ sa classe ; posons $d = q \wedge n$, $n = n'd$ et $q = dq'$ avec $q' \wedge n' = 1$. Alors
 
 $$k\overline{q} = \overline{0} \iff \overline{kq} = \overline{0} \iff n \mid kq \iff n' \mid q'k \iff n' \mid k$$
 
@@ -800,7 +800,7 @@ Les inversibles de $\mathbb{Z}/n\mathbb{Z}$ sont les générateurs de $(\mathbb{
 
 <span class="bloc-titre">Démonstration</span>
 
-Si $q \wedge n = 1$, d'après Bézout on peut écrire $qu + nv = 1$ avec $u, v \in \mathbb{Z}$ ; dans $\mathbb{Z}/n\mathbb{Z}$ : $\overline{1} = \overline{q}\\,\overline{u} + \overline{n}\\,\overline{v} = \overline{q}\\,\overline{u}$, donc $\overline{q}$ est inversible d'inverse $\overline{u}$. Réciproquement, si $\overline{q}$ est inversible, il existe $u \in \mathbb{Z}$ tel que $\overline{q}\\,\overline{u} = \overline{1}$, donc $n \mid (1 - qu)$ : $1 - qu = nk$ avec $k \in \mathbb{Z}$, d'où $1 = qu + nk$ et $q \wedge n = 1$.
+Si $q \wedge n = 1$, d'après Bézout on peut écrire $qu + nv = 1$ avec $u, v \in \mathbb{Z}$ ; dans $\mathbb{Z}/n\mathbb{Z}$ : $\overline{1} = \overline{q}&#92;&#44;\overline{u} + \overline{n}&#92;&#44;\overline{v} = \overline{q}&#92;&#44;\overline{u}$, donc $\overline{q}$ est inversible d'inverse $\overline{u}$. Réciproquement, si $\overline{q}$ est inversible, il existe $u \in \mathbb{Z}$ tel que $\overline{q}&#92;&#44;\overline{u} = \overline{1}$, donc $n \mid (1 - qu)$ : $1 - qu = nk$ avec $k \in \mathbb{Z}$, d'où $1 = qu + nk$ et $q \wedge n = 1$.
 
 </div>
 
@@ -818,7 +818,7 @@ $\mathbb{Z}/n\mathbb{Z}$ est un **corps** si et seulement si $n$ est premier.
 
 Si $n$ est premier : soit $\overline{q} \neq \overline{0}$ ; alors $n \nmid q$, et comme $n$ est premier, $q \wedge n = 1$ ; donc $\overline{q}$ est inversible. Tout élément non nul de $\mathbb{Z}/n\mathbb{Z}$ est inversible : c'est un corps.
 
-Si $n$ n'est pas premier : $n = qr$ avec $2 \leq q \leq n$, $2 \leq r \leq n$ (en fait $q, r < n$) ; alors $\overline{0} = \overline{q}\\,\overline{r}$ dans $\mathbb{Z}/n\mathbb{Z}$, avec $\overline{q} \neq \overline{0}$ et $\overline{r} \neq \overline{0}$ (car $0 < q < n$ et $0 < r < n$) : $\mathbb{Z}/n\mathbb{Z}$ n'est pas intègre, donc pas un corps.
+Si $n$ n'est pas premier : $n = qr$ avec $2 \leq q \leq n$, $2 \leq r \leq n$ (en fait $q, r < n$) ; alors $\overline{0} = \overline{q}&#92;&#44;\overline{r}$ dans $\mathbb{Z}/n\mathbb{Z}$, avec $\overline{q} \neq \overline{0}$ et $\overline{r} \neq \overline{0}$ (car $0 < q < n$ et $0 < r < n$) : $\mathbb{Z}/n\mathbb{Z}$ n'est pas intègre, donc pas un corps.
 
 </div>
 
@@ -846,11 +846,11 @@ Si $G$ est un groupe cyclique d'ordre $n$ ($n \geq 2$), alors $G$ est isomorphe 
 
 <span class="bloc-titre">Démonstration</span>
 
-Écrivons $G = \\{1, a, \dots, a^{n-1}\\}$ et définissons $\varphi : \mathbb{Z}/n\mathbb{Z} \to G$ par $\varphi(\overline{i}) = a^i$. Si $i \equiv q \pmod{n}$, c'est-à-dire $i = q + kn$ avec $k \in \mathbb{Z}$, alors $a^i = a^{q + kn} = a^q (a^n)^k = a^q$ car $a$ est d'ordre $n$ : $\varphi$ est bien définie ($\varphi(\overline{q})$ est strictement indépendant du choix du représentant). C'est un morphisme de groupes :
+Écrivons $G = &#92;&#123;1, a, \dots, a^{n-1}&#92;&#125;$ et définissons $\varphi : \mathbb{Z}/n\mathbb{Z} \to G$ par $\varphi(\overline{i}) = a^i$. Si $i \equiv q \pmod{n}$, c'est-à-dire $i = q + kn$ avec $k \in \mathbb{Z}$, alors $a^i = a^{q + kn} = a^q (a^n)^k = a^q$ car $a$ est d'ordre $n$ : $\varphi$ est bien définie ($\varphi(\overline{q})$ est strictement indépendant du choix du représentant). C'est un morphisme de groupes :
 
 $$\varphi(\overline{i} + \overline{q}) = \varphi(\overline{i + q}) = a^{i+q} = a^i a^q = \varphi(\overline{i})\,\varphi(\overline{q})$$
 
-Injectivité : soit $\overline{q} \in \ker \varphi$, c'est-à-dire $a^q = 1$ ; or $n \mid q$ car $a$ est d'ordre $n$, donc $\overline{q} = \overline{0}$ et $\ker \varphi = \\{\overline{0}\\}$. Enfin $\varphi$ est bijective car $\operatorname{Card} \mathbb{Z}/n\mathbb{Z} = \operatorname{Card} G = n$ : c'est un isomorphisme de $\mathbb{Z}/n\mathbb{Z}$ sur $G$.
+Injectivité : soit $\overline{q} \in \ker \varphi$, c'est-à-dire $a^q = 1$ ; or $n \mid q$ car $a$ est d'ordre $n$, donc $\overline{q} = \overline{0}$ et $\ker \varphi = &#92;&#123;\overline{0}&#92;&#125;$. Enfin $\varphi$ est bijective car $\operatorname{Card} \mathbb{Z}/n\mathbb{Z} = \operatorname{Card} G = n$ : c'est un isomorphisme de $\mathbb{Z}/n\mathbb{Z}$ sur $G$.
 
 </div>
 
@@ -977,7 +977,7 @@ donc $173 \equiv 2 \pmod{9}$.
 
 **La division euclidienne**
 
-- $\forall (a, b) \in \mathbb{Z} \times (\mathbb{N} \setminus \\{0\\})$ : $a = bq + r$ avec $q, r \in \mathbb{Z}$ et $0 \leq r < b$ ;
+- $\forall (a, b) \in \mathbb{Z} \times (\mathbb{N} \setminus &#92;&#123;0&#92;&#125;)$ : $a = bq + r$ avec $q, r \in \mathbb{Z}$ et $0 \leq r < b$ ;
 - si $(a, b) \in \mathbb{Z} \times \mathbb{N}$ et $d \in \mathbb{Z}$ : $a = bq + r$ entraîne $ad = (bd)q + rd$ ;
 - $a = bq + r$ avec $r = 0 \iff b \mid a$.
 
@@ -1013,7 +1013,7 @@ donc $173 \equiv 2 \pmod{9}$.
 - $\mathcal{P}$ est infini ;
 - $x \wedge p = 1$ avec $p \in \mathcal{P}$ $\iff$ $p \nmid x$ ;
 - si $p \in \mathcal{P}$ divise $a_1 \times \dots \times a_n$, alors $p$ divise l'un des $a_i$ ;
-- $\forall n \in \mathbb{Z} \setminus \\{0, -1, 1\\}$ : $n = \varepsilon\\, p_1^{\alpha_1} p_2^{\alpha_2} \cdots p_k^{\alpha_k}$ avec $\alpha_i > 0$, $p_i \in \mathcal{P}$, $\varepsilon \in \\{-1, +1\\}$.
+- $\forall n \in \mathbb{Z} \setminus &#92;&#123;0, -1, 1&#92;&#125;$ : $n = \varepsilon&#92;&#44; p_1^{\alpha_1} p_2^{\alpha_2} \cdots p_k^{\alpha_k}$ avec $\alpha_i > 0$, $p_i \in \mathcal{P}$, $\varepsilon \in &#92;&#123;-1, +1&#92;&#125;$.
 
 **Congruences**
 
@@ -1036,16 +1036,16 @@ donc $173 \equiv 2 \pmod{9}$.
 <li>Trouver tous les entiers naturels $n < 144$ tels que $n \wedge 144 = 18$.</li>
 <li>Résoudre dans $\mathbb{Z}^2$ les systèmes :
 <ol>
-<li>$\begin{cases} x + y = 224 \\\ x \wedge y = 16 \end{cases}$</li>
-<li>$\begin{cases} x - y = 84 \\\ x \wedge y = 12 \end{cases}$</li>
-<li>$\begin{cases} xy = 9072 \\\ x \wedge y = 18 \end{cases}$</li>
+<li>$\begin{cases} x + y = 224 \\ x \wedge y = 16 \end{cases}$</li>
+<li>$\begin{cases} x - y = 84 \\ x \wedge y = 12 \end{cases}$</li>
+<li>$\begin{cases} xy = 9072 \\ x \wedge y = 18 \end{cases}$</li>
 </ol>
 </li>
 <li>Calculer $a^n \wedge b^n$.</li>
 <li>Montrer que $a_1 \wedge a_2 \wedge \dots \wedge a_n = r_1 \wedge r_2 \wedge \dots \wedge r&#95;{n-1} \wedge a_n$, où les $r_i$ sont les restes respectifs de la division euclidienne de $a_i$ par $a_n$. Application : trouver le pgcd de $(350,\ 375,\ 275,\ 100)$.</li>
 <li>Trouver $n$ sachant que les restes de la division euclidienne de $4373$ et $826$ par $n$ sont respectivement $8$ et $7$.</li>
 <li>Soit $G$ un groupe fini et $a$ un élément d'ordre $n$. Montrer que $a^d$ est d'ordre $\dfrac{n}{n \wedge d}$. En déduire les sous-groupes d'un groupe d'ordre $p$ premier.</li>
-<li>Soit $F$ et $H$ deux sous-groupes d'un groupe $G$, d'ordres respectifs $r$ et $s$. Montrer que si $r \wedge s = 1$ alors $F \cap H = \\{e\\}$. On suppose de plus $G$ abélien : montrer que si $x$ est d'ordre $r$ et $y$ d'ordre $s$, alors $xy$ est d'ordre $rs$. Contre-exemple si $r$ et $s$ ne sont pas premiers entre eux.</li>
+<li>Soit $F$ et $H$ deux sous-groupes d'un groupe $G$, d'ordres respectifs $r$ et $s$. Montrer que si $r \wedge s = 1$ alors $F \cap H = &#92;&#123;e&#92;&#125;$. On suppose de plus $G$ abélien : montrer que si $x$ est d'ordre $r$ et $y$ d'ordre $s$, alors $xy$ est d'ordre $rs$. Contre-exemple si $r$ et $s$ ne sont pas premiers entre eux.</li>
 <li>Résoudre
 $$\begin{cases} x + y = 10 \\ x \vee y = 21 \end{cases} \qquad \text{et} \qquad \begin{cases} x \wedge y = 24 \\ x \vee y = 2160 \end{cases}$$</li>
 <li>Montrer que si $p$ est un nombre premier, alors $p \mid \dbinom{p}{k}$ pour $1 \leq k \leq p-1$.</li>
@@ -1094,14 +1094,14 @@ $$\begin{cases} x \equiv 4 \ [7] \\ x \equiv 9 \ [11] \end{cases} \qquad \text{e
 
 <span class="bloc-titre">Technique arithmétique</span>
 
-- si $d = a \wedge b$ : on écrit $a = d\\,a'$, $b = d\\,b'$ avec $a' \wedge b' = 1$ ;
+- si $d = a \wedge b$ : on écrit $a = d&#92;&#44;a'$, $b = d&#92;&#44;b'$ avec $a' \wedge b' = 1$ ;
 - si $a$ est d'ordre $r$ : $a^n = 1 \Leftrightarrow r \mid n$ (et en particulier $a^n = 1 \Rightarrow r \mid n$) ;
 - pour une CNS (condition nécessaire et suffisante) : distinguer les deux cas $\Rightarrow$ et $\Leftarrow$ ; au passé $\Leftrightarrow$ ; réécrire à chaque étape que l'on a l'équivalence ;
-- pour montrer que $a, b$ sont premiers entre eux : montrer $u\\,a + v\\,b = 1$ (Bézout), ou bien $a, b \mid 1$, ou raisonner par l'absurde (contraposée) ;
-- pour montrer que $a \mid b$ : montrer que $b \in a\\,\mathbb{Z}$ ;
+- pour montrer que $a, b$ sont premiers entre eux : montrer $u&#92;&#44;a + v&#92;&#44;b = 1$ (Bézout), ou bien $a, b \mid 1$, ou raisonner par l'absurde (contraposée) ;
+- pour montrer que $a \mid b$ : montrer que $b \in a&#92;&#44;\mathbb{Z}$ ;
 - pour simplifier des puissances en congruence : trouver $n$ tel que $a^n \equiv 1$ et faire la division euclidienne de la puissance par $n$ ;
 - pour montrer que $a \mid b$ : montrer que $b \equiv 0 \ [a]$, ou que les facteurs de $a$ divisent $b$ ;
-- $a\\,x \equiv b \ [n]$ : soit $a$ est inversible, soit méthode généralisée ;
+- $a&#92;&#44;x \equiv b \ [n]$ : soit $a$ est inversible, soit méthode généralisée ;
 - pour trouver le reste de la division par 3 : ajouter les chiffres du nombre.
 
 </div>
@@ -1128,7 +1128,7 @@ $$F_n = \frac{1}{\sqrt{5}}\big(\alpha^n - \beta^n\big), \qquad \alpha = \frac{1+
 Montrer que $F&#95;{k+1} \geq \alpha^{k-1}$ et en déduire que $k - 1 \leq 5\log&#95;{10} b$ (le nombre d'étapes de l'algorithme d'Euclide est majoré par 5 fois le nombre de chiffres de l'écriture décimale de $b$).</li>
 <li>**Coefficients de Bézout.** On introduit, pour $i \leq k$, les quantités $u_i$ et $v_i$ définies par $u_0 = v_1 := 1$, $u_1 = v_0 := 0$ et la formule de récurrence
 $$\begin{cases} u_{i+1} = u_{i-1} - q_i\, u_i \\ v_{i+1} = v_{i-1} - q_i\, v_i \end{cases}$$
-Montrer que, pour tout $i \geq 0$, $r_i = u_i\\, a + v_i\\, b$, et que $\operatorname{pgcd}(a, b) = u_k\\, a + v_k\\, b$.</li>
+Montrer que, pour tout $i \geq 0$, $r_i = u_i&#92;&#44; a + v_i&#92;&#44; b$, et que $\operatorname{pgcd}(a, b) = u_k&#92;&#44; a + v_k&#92;&#44; b$.</li>
 </ol>
 
 </div>

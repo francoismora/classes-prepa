@@ -21,7 +21,7 @@ Dans tout ce cours, $\mathbb{K}$ désigne un corps commutatif (en fait, on consi
 
 <span class="bloc-titre">Définition 1 (suite presque nulle)</span>
 
-Soit $(a_n)&#95;{n \in \mathbb{N}}$ une suite d'éléments de $\mathbb{K}$. On dit que $(a_n)$ est **presque nulle** si $\\{n \in \mathbb{N} \mid a_n \neq 0\\}$ est fini (ou vide).
+Soit $(a_n)&#95;{n \in \mathbb{N}}$ une suite d'éléments de $\mathbb{K}$. On dit que $(a_n)$ est **presque nulle** si $&#92;&#123;n \in \mathbb{N} \mid a_n \neq 0&#92;&#125;$ est fini (ou vide).
 
 </div>
 
@@ -48,7 +48,7 @@ $(0, 1, 0, \dots, 0) \in \mathbb{K}[X]$.
 Soit $P = (a_n)&#95;{n \in \mathbb{N}}$ un polynôme.
 
 - si $P = 0$, c'est-à-dire si $\forall n \in \mathbb{N},\ a_n = 0$, on pose $\deg(P) = -\infty$ (noté $\deg(0) = -\infty$) ;
-- sinon, $\\{n \in \mathbb{N} \mid a_n \neq 0\\}$ est une partie de $\mathbb{N}$ non vide (car $P \neq 0$) : elle admet un plus grand élément, appelé **degré de $P$** ; elle admet aussi un plus petit élément, appelé **valuation de $P$**.
+- sinon, $&#92;&#123;n \in \mathbb{N} \mid a_n \neq 0&#92;&#125;$ est une partie de $\mathbb{N}$ non vide (car $P \neq 0$) : elle admet un plus grand élément, appelé **degré de $P$** ; elle admet aussi un plus petit élément, appelé **valuation de $P$**.
 
 Si $p = \deg P$, alors $a_p$ s'appelle le **coefficient dominant** de $P$.
 
@@ -98,7 +98,7 @@ $+$ et $\times$ sont des lois internes de $\mathbb{K}[X]$, et $(\mathbb{K}[X], +
 
 <span class="bloc-titre">Démonstration</span>
 
-Soit $A = \\{n \in \mathbb{N} \mid c_n \neq 0\\}$.
+Soit $A = &#92;&#123;n \in \mathbb{N} \mid c_n \neq 0&#92;&#125;$.
 
 - si $P = 0$ : $P + Q = Q \in \mathbb{K}[X]$ ;
 - supposons $P$ et $Q$ non nuls, $p = \deg P$, $q = \deg Q \in \mathbb{N}$. Soit $n > \max(p, q)$ : alors $a_n = 0 = b_n = c_n$. $A$ est vide, ou bien majoré par $\max(p, q)$, donc vide ou fini : $P + Q \in \mathbb{K}[X]$.
@@ -106,7 +106,7 @@ Soit $A = \\{n \in \mathbb{N} \mid c_n \neq 0\\}$.
 Pour le produit :
 
 - si $P = 0$ ou $Q = 0$ : $\forall n \in \mathbb{N},\ d_n = 0$, donc $PQ = 0 \in \mathbb{K}[X]$ ;
-- si $P$ et $Q$ sont non nuls, soit $n > \deg P + \deg Q$ : $d_n = \sum&#95;{k=0}^{n} a_k b&#95;{n-k}$. Si $k > p$, $a_k = 0$ ; si $k \leq p$, alors $n - k \geq n - p > q$ donc $b&#95;{n-k} = 0$. Dans tous les cas $d_n = 0$, et $D = \\{n \in \mathbb{N} \mid d_n \neq 0\\}$ est soit vide soit majoré par $p + q$ : donc $PQ \in \mathbb{K}[X]$.
+- si $P$ et $Q$ sont non nuls, soit $n > \deg P + \deg Q$ : $d_n = \sum&#95;{k=0}^{n} a_k b&#95;{n-k}$. Si $k > p$, $a_k = 0$ ; si $k \leq p$, alors $n - k \geq n - p > q$ donc $b&#95;{n-k} = 0$. Dans tous les cas $d_n = 0$, et $D = &#92;&#123;n \in \mathbb{N} \mid d_n \neq 0&#92;&#125;$ est soit vide soit majoré par $p + q$ : donc $PQ \in \mathbb{K}[X]$.
 
 $(\mathbb{K}[X], +)$ est un groupe, c'est un sous-groupe de $(\mathbb{K}^{\mathbb{N}}, +)$.
 
@@ -186,7 +186,7 @@ et l'écriture est **unique**.
 
 $\sum&#95;{k \in \mathbb{N}} a_k X^k$ désigne la somme finie $S = 0$ si $P = 0$, et sinon $S = \sum&#95;{k=0}^{\deg P} a_k X^k$ si $P \neq 0$ : c'est bien une somme finie de polynômes.
 
-- si $P = 0$ : $P = \sum&#95;{k \in \mathbb{N}} 0\\, X^k$ ;
+- si $P = 0$ : $P = \sum&#95;{k \in \mathbb{N}} 0&#92;&#44; X^k$ ;
 - si $P \neq 0$, soit $p = \deg P$ :
 
 $$P = (a_0, a_1, \dots, a_p, 0, \dots) = (a_0, 0, \dots) + a_1 (0, 1, 0, \dots) + \dots + a_p (\underbrace{0, \dots, 0}_{p \text{ zéros}}, 1, 0, \dots) = a_0 X^0 + a_1 X^1 + \dots + a_p X^p$$
@@ -471,10 +471,10 @@ $\mathbb{K}[X]$ est un **anneau principal**.
 
 - $\mathbb{K}[X]$ est un anneau commutatif intègre ;
 - soit $I$ un idéal de $\mathbb{K}[X]$ :
-  - si $I = \\{0\\}$, alors $I = 0\\,\mathbb{K}[X]$ ;
-  - si $I \neq \\{0\\}$, posons $d = \\{\deg P \mid P \in I \setminus \\{0\\}\\} \subset \mathbb{N}$ : $d$ est non vide car $I \neq \\{0\\}$, donc admet un plus petit élément $d_0$ ; soit $B \in I$ de degré $d_0$. Alors $B\\,\mathbb{K}[X] \subset I$ ($I$ est un idéal). Soit $A \in I$ : $A = BQ + R$ avec $\deg R < \deg B$ (cas $B \neq 0$). Comme $A \in I$ et $BQ \in I$, on a $A - BQ \in I$ ($(I, +)$ est un groupe), donc $R \in I$. Si $R \neq 0$, alors $\deg R \in d$ et $\deg R < d_0$, ce qui est impossible : donc $R = 0$ et $A \in B\\,\mathbb{K}[X]$.
+  - si $I = &#92;&#123;0&#92;&#125;$, alors $I = 0&#92;&#44;\mathbb{K}[X]$ ;
+  - si $I \neq &#92;&#123;0&#92;&#125;$, posons $d = &#92;&#123;\deg P \mid P \in I \setminus &#92;&#123;0&#92;&#125;&#92;&#125; \subset \mathbb{N}$ : $d$ est non vide car $I \neq &#92;&#123;0&#92;&#125;$, donc admet un plus petit élément $d_0$ ; soit $B \in I$ de degré $d_0$. Alors $B&#92;&#44;\mathbb{K}[X] \subset I$ ($I$ est un idéal). Soit $A \in I$ : $A = BQ + R$ avec $\deg R < \deg B$ (cas $B \neq 0$). Comme $A \in I$ et $BQ \in I$, on a $A - BQ \in I$ ($(I, +)$ est un groupe), donc $R \in I$. Si $R \neq 0$, alors $\deg R \in d$ et $\deg R < d_0$, ce qui est impossible : donc $R = 0$ et $A \in B&#92;&#44;\mathbb{K}[X]$.
 
-Ainsi $I = B\\,\mathbb{K}[X]$ : tout idéal de $\mathbb{K}[X]$ est principal.
+Ainsi $I = B&#92;&#44;\mathbb{K}[X]$ : tout idéal de $\mathbb{K}[X]$ est principal.
 
 </div>
 
@@ -508,9 +508,9 @@ Si on impose que $D$ soit unitaire, alors $D$ est unique, et on l'appelle **le P
 
 <span class="bloc-titre">Démonstration ($D$ est un plus grand diviseur commun)</span>
 
-$D\\,\mathbb{K}[X] = P_1\mathbb{K}[X] + \dots + P_n\mathbb{K}[X]$, donc $P_i \in D\\,\mathbb{K}[X]$ : $P_i = D \times Q$ avec $Q \in \mathbb{K}[X]$, donc $D \mid P_i$.
+$D&#92;&#44;\mathbb{K}[X] = P_1\mathbb{K}[X] + \dots + P_n\mathbb{K}[X]$, donc $P_i \in D&#92;&#44;\mathbb{K}[X]$ : $P_i = D \times Q$ avec $Q \in \mathbb{K}[X]$, donc $D \mid P_i$.
 
-Si $D'$ est un diviseur commun des $P_i$, alors $P_i = Q_i D'$. Mais $D \in D\\,\mathbb{K}[X]$, d'où
+Si $D'$ est un diviseur commun des $P_i$, alors $P_i = Q_i D'$. Mais $D \in D&#92;&#44;\mathbb{K}[X]$, d'où
 
 $$D = P_1 R_1 + P_2 R_2 + \dots + P_n R_n = D'(Q_1 R_1 + Q_2 R_2 + \dots + Q_n R_n), \qquad R_i \in \mathbb{K}[X]$$
 
@@ -724,7 +724,7 @@ Soit $(P_1, \dots, P_n) \in \mathbb{K}[X]^n$. Alors
 
 $$P_1 \mathbb{K}[X] \cap P_2 \mathbb{K}[X] \cap \dots \cap P_n \mathbb{K}[X]$$
 
-est un idéal de $\mathbb{K}[X]$, comme intersection d'idéaux, donc de la forme $M\\,\mathbb{K}[X]$ ($\mathbb{K}[X]$ est principal). $M$ est défini à une constante non nulle près. $M$ est un multiple commun des $P_i$, et c'est un plus petit multiple (pour la relation $\mid$) : on dit que c'est un **PPCM** de $(P_1, \dots, P_n)$. Si $M \neq 0$, il existe un unique PPCM unitaire, et on l'appelle **le PPCM** de $(P_1, \dots, P_n)$.
+est un idéal de $\mathbb{K}[X]$, comme intersection d'idéaux, donc de la forme $M&#92;&#44;\mathbb{K}[X]$ ($\mathbb{K}[X]$ est principal). $M$ est défini à une constante non nulle près. $M$ est un multiple commun des $P_i$, et c'est un plus petit multiple (pour la relation $\mid$) : on dit que c'est un **PPCM** de $(P_1, \dots, P_n)$. Si $M \neq 0$, il existe un unique PPCM unitaire, et on l'appelle **le PPCM** de $(P_1, \dots, P_n)$.
 
 </div>
 
@@ -732,9 +732,9 @@ est un idéal de $\mathbb{K}[X]$, comme intersection d'idéaux, donc de la forme
 
 <span class="bloc-titre">Démonstration</span>
 
-$M$ est multiple commun des $P_i$ : $P_i\\,\mathbb{K}[X] \subset M\\,\mathbb{K}[X]$, donc $M \in P_i\\,\mathbb{K}[X]$, donc $P_i \mid M$.
+$M$ est multiple commun des $P_i$ : $P_i&#92;&#44;\mathbb{K}[X] \subset M&#92;&#44;\mathbb{K}[X]$, donc $M \in P_i&#92;&#44;\mathbb{K}[X]$, donc $P_i \mid M$.
 
-Si $M'$ est un multiple commun des $P_i$, alors $P_i \mid M'$, $M' = Q_i P_i$ pour tout $i$, donc $M' \in \bigcap_i P_i\\,\mathbb{K}[X] = M\\,\mathbb{K}[X]$ : ainsi $M \mid M'$.
+Si $M'$ est un multiple commun des $P_i$, alors $P_i \mid M'$, $M' = Q_i P_i$ pour tout $i$, donc $M' \in \bigcap_i P_i&#92;&#44;\mathbb{K}[X] = M&#92;&#44;\mathbb{K}[X]$ : ainsi $M \mid M'$.
 
 </div>
 
@@ -883,7 +883,7 @@ Tout polynôme $P$ de degré $\geq 1$ admet un diviseur irréductible.
 
 <span class="bloc-titre">Démonstration (unicité de la décomposition)</span>
 
-Écrivons $P = \alpha P_1^{\alpha_1} \cdots P_n^{\alpha_n} = \beta Q_1^{\beta_1} \cdots Q_p^{\beta_p}$. Le coefficient dominant de $P$ donne $\alpha = \beta$ (unicité). Posons $\Phi = \\{P_i,\ i = 1, \dots, n\\}$ et $\Psi = \\{Q_j,\ j = 1, \dots, p\\}$. Soit $P_i \in \Phi$ : $P_i$ divise le produit des $Q_j^{\beta_j}$, donc (corollaire de la proposition 2) $P_i$ est égal à l'un des $Q_j$ : ainsi $\Phi \subset \Psi$ ; par symétrie, $\Psi \subset \Phi$, donc $\Phi = \Psi$. En posant $p = n$ et en renumérotant les $Q_j$, on peut supposer $Q_i = P_i$ pour $i = 1, \dots, n$, d'où
+Écrivons $P = \alpha P_1^{\alpha_1} \cdots P_n^{\alpha_n} = \beta Q_1^{\beta_1} \cdots Q_p^{\beta_p}$. Le coefficient dominant de $P$ donne $\alpha = \beta$ (unicité). Posons $\Phi = &#92;&#123;P_i,\ i = 1, \dots, n&#92;&#125;$ et $\Psi = &#92;&#123;Q_j,\ j = 1, \dots, p&#92;&#125;$. Soit $P_i \in \Phi$ : $P_i$ divise le produit des $Q_j^{\beta_j}$, donc (corollaire de la proposition 2) $P_i$ est égal à l'un des $Q_j$ : ainsi $\Phi \subset \Psi$ ; par symétrie, $\Psi \subset \Phi$, donc $\Phi = \Psi$. En posant $p = n$ et en renumérotant les $Q_j$, on peut supposer $Q_i = P_i$ pour $i = 1, \dots, n$, d'où
 
 $$P_1^{\alpha_1} \cdots P_n^{\alpha_n} = P_1^{\beta_1} \cdots P_n^{\beta_n}$$
 
@@ -980,7 +980,7 @@ nulle) ; on confond $R$ et $\widetilde{R}$. Alors, pour tout $x$ :
 $$\widetilde{P}(x) = (x-a)\,\widetilde{Q}(x) + \widetilde{R}$$
 
 En particulier, en $x = a$ :
-$\widetilde{P}(a) = (a-a)\\,\widetilde{Q}(a) + \widetilde{R}(a)
+$\widetilde{P}(a) = (a-a)&#92;&#44;\widetilde{Q}(a) + \widetilde{R}(a)
 = \widetilde{R}(a) = R$.
 
 </div>
@@ -1081,11 +1081,11 @@ $\varphi : K[X] \to \mathcal{P}$, $P \mapsto \widetilde{P}$ est un
 
 Il faut montrer que $\varphi$ est injective ; $\varphi$ est un morphisme de
 groupes de $(K[X], +)$ dans $(\mathcal{P}, +)$. On a
-$\operatorname{Ker}\varphi = \varphi^{-1}(\\{\widetilde{0}\\})$ ; il faut montrer
-que $\operatorname{Ker}\varphi = \\{0&#95;{K[X]}\\}$. Soit $P \in \operatorname{Ker}\varphi$ :
+$\operatorname{Ker}\varphi = \varphi^{-1}(&#92;&#123;\widetilde{0}&#92;&#125;)$ ; il faut montrer
+que $\operatorname{Ker}\varphi = &#92;&#123;0&#95;{K[X]}&#92;&#125;$. Soit $P \in \operatorname{Ker}\varphi$ :
 $\forall x \in K$, $\widetilde{P}(x) = 0$, donc tout $x$ de $K$ est racine de
 $P$ : $P$ admet une infinité de racines, or $P = 0$ (car si $\deg P = n \neq 0$,
-$P$ admet au plus $n$ racines). Donc $\operatorname{Ker}\varphi = \\{0&#95;{K[X]}\\}$ :
+$P$ admet au plus $n$ racines). Donc $\operatorname{Ker}\varphi = &#92;&#123;0&#95;{K[X]}&#92;&#125;$ :
 $\varphi$ est injective.
 
 </div>
@@ -1188,12 +1188,12 @@ $$P = a_n (X-\alpha_1)\cdots(X-\alpha_k)(X-\beta_1)(X-\overline{\beta_1})\cdots(
 $$P = a_n (X-\alpha_1)\cdots(X-\alpha_k)\big(X^2 - 2\,\mathrm{Re}(\beta_1)X + |\beta_1|^2\big)\cdots\big(X^2 - 2\,\mathrm{Re}(\beta_p)X + |\beta_p|^2\big)$$
 
 Ceci est une décomposition en facteurs irréductibles dans $\mathbb{R}[X]$,
-car les $X^2 - 2\\,\mathrm{Re}(\beta_i)X + |\beta_i|^2$ ont un $\Delta < 0$
-(leur discriminant vaut $4\\,\mathrm{Re}(\beta_i)^2 - 4|\beta_i|^2
-= -4(\mathrm{Im}\\,\beta_i)^2 < 0$). Si $P \neq 0$ est irréductible, la
+car les $X^2 - 2&#92;&#44;\mathrm{Re}(\beta_i)X + |\beta_i|^2$ ont un $\Delta < 0$
+(leur discriminant vaut $4&#92;&#44;\mathrm{Re}(\beta_i)^2 - 4|\beta_i|^2
+= -4(\mathrm{Im}&#92;&#44;\beta_i)^2 < 0$). Si $P \neq 0$ est irréductible, la
 décomposition ci-dessus admet un seul terme, donc $P$ est de la forme
 $X - \alpha_i$, $\alpha_i \in \mathbb{R}$, ou
-$X^2 - 2\\,\mathrm{Re}(\beta_i)X + |\beta_i|^2$, $\beta_i \in \mathbb{C}\setminus\mathbb{R}$ :
+$X^2 - 2&#92;&#44;\mathrm{Re}(\beta_i)X + |\beta_i|^2$, $\beta_i \in \mathbb{C}\setminus\mathbb{R}$ :
 $P$ est bien de la forme annoncée.
 
 <div class="bloc remarque" markdown="1">
@@ -1291,7 +1291,7 @@ $$\Big(\sum_{k=0}^{n} a_k x^k\Big)' = \sum_{k=1}^{n} k a_k x^{k-1} = \sum_{k=0}^
 
 On définit de même la dérivée $k$-ième de $P$ : pour tout $k \geq 1$,
 $P^{(k)}(X)$ a pour coefficients
-$\big((n+1)(n+2)\cdots(n+k)\\,a&#95;{n+k}\big)&#95;{n \in \mathbb{N}}$ :
+$\big((n+1)(n+2)\cdots(n+k)&#92;&#44;a&#95;{n+k}\big)&#95;{n \in \mathbb{N}}$ :
 
 $$P^{(k)}(X) = \sum_{n=0}^{\infty} (n+k)(n+k-1)\cdots(n+1)\,a_{n+k}\,X^n$$
 
@@ -1302,7 +1302,7 @@ $$P^{(k)}(X) = \sum_{n=0}^{\infty} (n+k)(n+k-1)\cdots(n+1)\,a_{n+k}\,X^n$$
 <span class="bloc-titre">Théorème (formule de Taylor)</span>
 
 Soit $P \in K[X]$ avec $\deg P = n \neq 0$. On suppose que
-$\mathrm{car}\\,K = 0$. Alors, pour tout $a \in K$ :
+$\mathrm{car}&#92;&#44;K = 0$. Alors, pour tout $a \in K$ :
 
 $$P(X) = \widetilde{P}(a) + \widetilde{P'}(a)(X-a) + \dots + \frac{\widetilde{P^{(n)}}(a)}{n!}(X-a)^n$$
 
@@ -1311,7 +1311,7 @@ $$P(X) = \widetilde{P}(a) + \widetilde{P'}(a)(X-a) + \dots + \frac{\widetilde{P^
 <div class="bloc demo" markdown="1">
 <span class="bloc-titre">Démonstration</span>
 
-**1er cas : $a = 0$.** $P^{(k)}$ a pour coefficient constant $k!\\,a_k$, donc
+**1er cas : $a = 0$.** $P^{(k)}$ a pour coefficient constant $k!&#92;&#44;a_k$, donc
 
 $$\sum_{k=0}^{n} \frac{P^{(k)}(0)}{k!}X^k = \sum_{k=0}^{n} a_k X^k = P(X)$$
 
@@ -1371,7 +1371,7 @@ d'ordre 2.
 
 Une racine d'ordre 1 sera dite **simple**, d'ordre $> 1$ **multiple**.
 
-Dans la suite de ce §5, on suppose que $\mathrm{car}\\,K = 0$.
+Dans la suite de ce §5, on suppose que $\mathrm{car}&#92;&#44;K = 0$.
 
 </div>
 
@@ -1428,7 +1428,7 @@ $$\widetilde{P}(a) + X\,\widetilde{P'}(a) + \dots + \frac{X^{k-1}}{(k-1)!}\,\wid
 c'est-à-dire si et seulement si
 $\widetilde{P}(a) = \widetilde{P'}(a) = \dots = \widetilde{P^{(k-1)}}(a) = 0$.
 
-Si $(X-a)^k \mid P$, on a $P = Q\\,(X-a)^k$ ; $(X-a)^{k+1} \nmid P$ si et
+Si $(X-a)^k \mid P$, on a $P = Q&#92;&#44;(X-a)^k$ ; $(X-a)^{k+1} \nmid P$ si et
 seulement si $\widetilde{Q}(a) \neq 0$, si et seulement si
 $\widetilde{P^{(k)}}(a) \neq 0$.
 
@@ -1497,7 +1497,7 @@ $\Delta = 27q^2 + 4p^3 = 0$.
 ### 6) Relations coefficients — racines
 
 Dans ce §, on considère un polynôme **scindé** $P$ de degré $n \geq 1$
-($\mathrm{car}\\,K = 0$ : pour $P$ de degré $n \geq 1$, $P$ admet exactement $n$
+($\mathrm{car}&#92;&#44;K = 0$ : pour $P$ de degré $n \geq 1$, $P$ admet exactement $n$
 racines, en comptant celles-ci avec leur ordre de multiplicité). Si $P$ est
 unitaire :
 
@@ -1574,7 +1574,7 @@ x_1 x_2 \cdots x_n = (-1)^n \dfrac{a_0}{a_n}
 
 Si $n = 2$, on retrouve : $x_1, x_2$ solutions de $aX^2 + bX + c$ si et
 seulement si
-$\begin{cases} x_1 + x_2 = -\dfrac{b}{a} \\\ x_1 x_2 = \dfrac{c}{a} \end{cases}$
+$\begin{cases} x_1 + x_2 = -\dfrac{b}{a} \\ x_1 x_2 = \dfrac{c}{a} \end{cases}$
 
 </div>
 
@@ -1616,8 +1616,8 @@ $R'-R = r_0 + r_1 X + \dots$, donc
 $X^{h+1}(R'-R) = r_0 X^{h+1} + r_1 X^{h+2} + \dots$ est de valuation
 $\geq h+1$. Or
 $\deg\big(B(Q-Q')\big) = \deg B + \deg(Q-Q')$ et
-$\mathrm{val}\big(B(Q-Q')\big) = \mathrm{val}\\,B + \mathrm{val}(Q-Q')
-= \mathrm{val}(Q-Q')$ (car $B(0) \neq 0$, donc $\mathrm{val}\\,B = 0$),
+$\mathrm{val}\big(B(Q-Q')\big) = \mathrm{val}&#92;&#44;B + \mathrm{val}(Q-Q')
+= \mathrm{val}(Q-Q')$ (car $B(0) \neq 0$, donc $\mathrm{val}&#92;&#44;B = 0$),
 donc $\mathrm{val}\big(B(Q-Q')\big) \leq \deg(Q-Q') \leq h$ (car $Q - Q'$
 non nul, sinon $R = R'$). Si
 $Q-Q' = a_p X^p + \dots + a_q X^q$ avec $a_p \neq 0$, $a_q \neq 0$ et
@@ -1710,7 +1710,7 @@ $$\begin{pmatrix}
 = \begin{pmatrix} b_1 \\ \vdots \\ b_n \end{pmatrix}$$
 
 On reconnaît $\det V \neq 0$ (matrice de **Vandermonde**) : c'est un système
-de Cramer, donc $\exists!\\,P$ tel que $\forall i$, $P(a_i) = b_i$.
+de Cramer, donc $\exists!&#92;&#44;P$ tel que $\forall i$, $P(a_i) = b_i$.
 
 2) L'application
 $\varphi : K&#95;{n-1}[X] \to K^n$, $P \mapsto \big(P(a_1), \dots, P(a_n)\big)$
@@ -1724,7 +1724,7 @@ est **linéaire**, et **injective** d'après l'unicité : c'est donc un
 *1ère version.* $\forall i$, $P(a_i) = b_i$. Posons $L_i$ (de Lagrange) :
 $\forall j$, $L_i(a_j) = \delta&#95;{ij}$ ; pour $i$ fixé,
 $\lambda = \prod&#95;{j \neq i} \frac{X-a_j}{a_i-a_j}$ et $L_i(a_i) = 1$. Donc,
-pour tout $i \in \\{1, \dots, n\\}$ :
+pour tout $i \in &#92;&#123;1, \dots, n&#92;&#125;$ :
 
 $$L_i(X) = \prod_{j \neq i} \frac{X-a_j}{a_i-a_j}$$
 
@@ -1732,7 +1732,7 @@ et
 
 $$P = \sum_{i=1}^{n} P(a_i)\, L_i$$
 
-*2ème version.* Pour tout $i \in \\{1, \dots, n\\}$, soit
+*2ème version.* Pour tout $i \in &#92;&#123;1, \dots, n&#92;&#125;$, soit
 $\varphi_i : K&#95;{n-1}[X] \to K$, $P \mapsto \varphi_i(P) = P(a_i)$ ;
 $\varphi_i \in (K&#95;{n-1}[X])^&#42;$. Le théorème de la **base duale** annonce que
 $(\varphi_1, \dots, \varphi_n)$ est une base de $(K&#95;{n-1}[X])^&#42;$ : si
@@ -1819,7 +1819,7 @@ $$|z| \leq \max\!\left(1,\ \sum_{k=0}^{n-1} \frac{a_k}{a_n}\right)$$
 </li>
 <li>Montrer que pour tout polynôme $P$ de $\mathbb{R}[X]$, $P(X) - X$ divise $P(P(X)) - X$.</li>
 <li>Montrer que $P = 1 + X + X^2 + 2X^3$ est irréductible dans $\mathbb{Q}[X]$. (On montrera d'abord qu'il suffit de démontrer pour cela que $P$ n'admet pas de racine dans $\mathbb{Q}$.)</li>
-<li>Trouver tous les polynômes $P$ de $\mathbb{C}[X]$ qui vérifient $P(X^2) = P(X)\\,P(X+1)$. On pourra montrer que si $a$ est racine de $P$, alors $a - 1$ aussi, ainsi que toutes les puissances de $2$ de $a$. On en déduira alors que les seules racines possibles de $P$ sont $0$, $1$, $-j$ et $-j^2$.</li>
+<li>Trouver tous les polynômes $P$ de $\mathbb{C}[X]$ qui vérifient $P(X^2) = P(X)&#92;&#44;P(X+1)$. On pourra montrer que si $a$ est racine de $P$, alors $a - 1$ aussi, ainsi que toutes les puissances de $2$ de $a$. On en déduira alors que les seules racines possibles de $P$ sont $0$, $1$, $-j$ et $-j^2$.</li>
 </ol>
 
 </div>
@@ -1839,7 +1839,7 @@ $$\sum_{0 \leq i,\, j \leq n} \iff \sum_{0 \leq j \leq i \leq n} \iff \sum_{0 \l
 - $$\sum_{k=1}^{n} k\,k! = (n+1)! - 1$$
 - $$\sum_{0 \leq i,\, j \leq n} i\,j = \left(\sum_{i=0}^{n} i\right)\!\left(\sum_{j=0}^{n} j\right)$$
 - $$X^a - 1 \wedge X^b - 1 = X^{a \wedge b} - 1$$
-- si $A = QB + R$ et $P = Q'B + R'$ sont deux divisions euclidiennes par le même polynôme $B$, alors $A + P = B\\,(Q + Q') + (R + R')$, avec
+- si $A = QB + R$ et $P = Q'B + R'$ sont deux divisions euclidiennes par le même polynôme $B$, alors $A + P = B&#92;&#44;(Q + Q') + (R + R')$, avec
 $$\deg(R + R') \leq \max(\deg R,\ \deg R') \leq \deg B$$
 - si $P \mid P'$, alors $P = \lambda (X-a)^n$, avec $\lambda \in \mathbb{K}^&#42;$.
 

@@ -17,8 +17,8 @@ pages: 26
 
 - Un **ensemble** est formé d'éléments distincts ; on écrit $a \in A$ (« $A$ ensemble, $a$ élément »).
 - **Écriture** :
-  - en extension : $E = \\{1, 2, 4, 6\\}$ ;
-  - en compréhension : $E = \\{x \mid P(x)\\}$, par exemple $\\{-1, 1\\} = \\{x \in \mathbb{Z} \mid |x| = 1\\}$.
+  - en extension : $E = &#92;&#123;1, 2, 4, 6&#92;&#125;$ ;
+  - en compréhension : $E = &#92;&#123;x \mid P(x)&#92;&#125;$, par exemple $&#92;&#123;-1, 1&#92;&#125; = &#92;&#123;x \in \mathbb{Z} \mid |x| = 1&#92;&#125;$.
 - **Quantificateurs** :
   - $\exists z \in E,\ P(z)$ : il existe un élément de $E$ qui vérifie la propriété $P$ ;
   - $\forall x \in E,\ P(x)$ : pour tout $x$ de $E$, $x$ vérifie la propriété $P$.
@@ -45,7 +45,7 @@ Les parties forment un ensemble noté $\mathcal{P}(E)$ :
 
 $$A \subset E \iff A \in \mathcal{P}(E)$$
 
-(exemple : si $E = \varnothing$, alors $\mathcal{P}(E) = \\{\varnothing\\}$).
+(exemple : si $E = \varnothing$, alors $\mathcal{P}(E) = &#92;&#123;\varnothing&#92;&#125;$).
 
 </div>
 
@@ -55,10 +55,10 @@ $$A \subset E \iff A \in \mathcal{P}(E)$$
 
 <span class="bloc-titre">Définition</span>
 
-- $A \cup B = \\{x \mid x \in A \text{ ou } x \in B\\}$ : c'est un ensemble ;
-- $A \cap B = \\{x \mid x \in A \text{ et } x \in B\\}$ : c'est un ensemble ; $A \cap B$ est une partie de $A$ et de $B$ ;
-- $E \setminus A = \\{x \in E \mid x \notin A\\}$ (complémentaire de $A$, noté aussi $\overline{A}$ ou $\complement_E A$) ;
-- $A \setminus B = \\{x \in A \mid x \notin B\\}$ : partie de $A$.
+- $A \cup B = &#92;&#123;x \mid x \in A \text{ ou } x \in B&#92;&#125;$ : c'est un ensemble ;
+- $A \cap B = &#92;&#123;x \mid x \in A \text{ et } x \in B&#92;&#125;$ : c'est un ensemble ; $A \cap B$ est une partie de $A$ et de $B$ ;
+- $E \setminus A = &#92;&#123;x \in E \mid x \notin A&#92;&#125;$ (complémentaire de $A$, noté aussi $\overline{A}$ ou $\complement_E A$) ;
+- $A \setminus B = &#92;&#123;x \in A \mid x \notin B&#92;&#125;$ : partie de $A$.
 
 </div>
 
@@ -127,7 +127,7 @@ Une **application** $f$ de $E$ vers $F$ associe à chaque élément de $E$ un **
 
 $$f : E \to F, \qquad x \mapsto f(x)$$
 
-Le **graphe** de $f$ est l'ensemble $\\{(x, f(x)) \mid x \in E\\} \subset E \times F$.
+Le **graphe** de $f$ est l'ensemble $&#92;&#123;(x, f(x)) \mid x \in E&#92;&#125; \subset E \times F$.
 
 </div>
 
@@ -145,14 +145,14 @@ $$\varphi_A : E \to \{0, 1\}, \qquad x \mapsto \begin{cases} 1 & \text{si } x \i
 
 <span class="bloc-titre">Théorème</span>
 
-Toute application $f : E \to \\{0, 1\\}$ est l'application caractéristique d'une seule partie de $E$.
+Toute application $f : E \to &#92;&#123;0, 1&#92;&#125;$ est l'application caractéristique d'une seule partie de $E$.
 
 </div>
 
 <div class="bloc demo" markdown="1">
 <span class="bloc-titre">Démonstration</span>
 
-Posons $A = \\{x \in E \mid f(x) = 1\\}$ : $A$ est définie de façon unique. On vérifie que $f = \varphi_A$ :
+Posons $A = &#92;&#123;x \in E \mid f(x) = 1&#92;&#125;$ : $A$ est définie de façon unique. On vérifie que $f = \varphi_A$ :
 si $x \in A$, $f(x) = 1 = \varphi_A(x)$ (donc $f$ et $\varphi_A$ coïncident sur $A$) ; si $x \notin A$,
 $\varphi_A(x) = 0$ et $f(x) = 0$ (car $f(x) = 1$ entraînerait $x \in A$). Ainsi,
 $\forall x \in E$, $\varphi_A(x) = f(x)$ : $\varphi_A$ et $f$ coïncident partout, donc $\varphi_A = f$.
@@ -166,7 +166,7 @@ $\forall x \in E$, $\varphi_A(x) = f(x)$ : $\varphi_A$ et $f$ coïncident partou
 - $\varphi&#95;{A \cap B} = \varphi_A \times \varphi_B$ ;
 - $\varphi&#95;{A \cup B} = \varphi_A + \varphi_B - \varphi_A \times \varphi_B$ ;
 - $\varphi&#95;{\overline{A}} = 1 - \varphi_A$ ;
-- $\varphi&#95;{A \setminus B} = \varphi_A\\,(1 - \varphi_B)$.
+- $\varphi&#95;{A \setminus B} = \varphi_A&#92;&#44;(1 - \varphi_B)$.
 
 Ces formules se lisent sur la table de valeurs :
 
@@ -370,8 +370,8 @@ c'est une partie de $F$.
 - Soient $A, B \subset E$ et $x \in f(A) \cap f(B)$ : $x = f(a) = f(b)$ avec $a \in A$, $b \in B$ ;
   si $f$ est injective, $a = b$ donc $a \in A \cap B$, d'où $f(A) \cap f(B) \subset f(A \cap B)$.
 - Réciproque : supposons $\forall A, B \in \mathcal{P}(E)$, $f(A \cap B) = f(A) \cap f(B)$.
-  Si $A = \\{x_1\\}$ et $B = \\{x_2\\}$ avec $x_1 \neq x_2$, alors $A \cap B = \varnothing$, donc
-  $f(A) \cap f(B) = \\{f(x_1)\\} \cap \\{f(x_2)\\} = \varnothing$ d'après l'hypothèse,
+  Si $A = &#92;&#123;x_1&#92;&#125;$ et $B = &#92;&#123;x_2&#92;&#125;$ avec $x_1 \neq x_2$, alors $A \cap B = \varnothing$, donc
+  $f(A) \cap f(B) = &#92;&#123;f(x_1)&#92;&#125; \cap &#92;&#123;f(x_2)&#92;&#125; = \varnothing$ d'après l'hypothèse,
   c'est-à-dire $f(x_1) \neq f(x_2)$ : $f$ est injective.
 
 </div>
@@ -637,7 +637,7 @@ On appelle **ensemble quotient**, noté $E/\mathcal{R}$, l'ensemble des classes 
 <span class="bloc-titre">Exemple</span>
 
 Sur l'ensemble $E$ des mots, $\mathcal{R}$ : $x \mathcal{R} y$ si $x$ et $y$ ont le même nombre de lettres : c'est une relation d'équivalence. Les classes sont les $C_n$ (mots de $n$ lettres : par exemple $C_3$ contient « eau », « lac », $C_4$ contient « math », « note », $C_5$ contient « bulle », $C_7$ contient « physique »...), et
-$E/\mathcal{R} = \\{C_3, C_4, C_5, C_7\\}$.
+$E/\mathcal{R} = &#92;&#123;C_3, C_4, C_5, C_7&#92;&#125;$.
 
 </div>
 
@@ -776,11 +776,11 @@ $$\forall x \in A,\ a \leq x \Rightarrow x = a \qquad (\text{resp. } \forall x \
 
 <span class="bloc-titre">Exemple</span>
 
-$E = \\{a, b, c, d\\}$, et $\mathcal{P}(E)$ muni de l'inclusion :
+$E = &#92;&#123;a, b, c, d&#92;&#125;$, et $\mathcal{P}(E)$ muni de l'inclusion :
 
 $$\mathcal{P}(E) = \{\{a\}, \{b\}, \{c\}, \{d\}, \{a,b\}, \{a,c\}, \{a,d\}, \{b,c\}, \dots\}$$
 
-Le seul élément maximal est $\\{a, b, c, d\\} = E$ ; si $M$ est un minorant de $\mathcal{P}(E)$, alors $M \subset \\{a\\}$, $M \subset \\{b\\}$, $M \subset \\{c\\}$, $M \subset \\{d\\}$, donc $M = \varnothing$ : le seul élément minimal est $\varnothing$, et $\inf \mathcal{P}(E) = \varnothing$.
+Le seul élément maximal est $&#92;&#123;a, b, c, d&#92;&#125; = E$ ; si $M$ est un minorant de $\mathcal{P}(E)$, alors $M \subset &#92;&#123;a&#92;&#125;$, $M \subset &#92;&#123;b&#92;&#125;$, $M \subset &#92;&#123;c&#92;&#125;$, $M \subset &#92;&#123;d&#92;&#125;$, donc $M = \varnothing$ : le seul élément minimal est $\varnothing$, et $\inf \mathcal{P}(E) = \varnothing$.
 
 </div>
 
@@ -824,12 +824,12 @@ $$f(A \cap f^{-1}(B)) = f(A) \cap B$$</li>
 <li>Soit $A$ et $B$ deux parties d'un ensemble $E$ et $f$ l'application :
 $$\mathcal{P}(E) \to \mathcal{P}(A) \times \mathcal{P}(B), \qquad X \mapsto (X \cap A,\ X \cap B)$$
 Trouver une CNS portant sur $A$ et $B$ pour que $f$ soit injective, puis pour que $f$ soit surjective. Expliciter $f^{-1}$ lorsque $f$ est bijective.</li>
-<li>Montrer que dans $\mathbb{R}^2$, la relation $\mathcal{R}$ définie par $(x, y)\\,\mathcal{R}\\,(x', y')$ ssi $xy = x'y'$ est une relation d'équivalence et interpréter géométriquement l'ensemble quotient.</li>
+<li>Montrer que dans $\mathbb{R}^2$, la relation $\mathcal{R}$ définie par $(x, y)&#92;&#44;\mathcal{R}&#92;&#44;(x', y')$ ssi $xy = x'y'$ est une relation d'équivalence et interpréter géométriquement l'ensemble quotient.</li>
 <li>Soit $E$ le demi-plan complexe constitué des nombres $a + ib$ tels que $b > 0$. On définit la relation $\mathcal{R}$ par :
 $$(z\,\mathcal{R}\,z') \iff \left(\exists t \in \mathbb{R},\ z' = \frac{z \cos t - \sin t}{z \sin t + \cos t}\right)$$
 <ol>
 <li>Montrer que $\mathcal{R}$ est bien définie sur $E$, et que c'est une relation d'équivalence.</li>
-<li>Montrer que $(z\\,\mathcal{R}\\,z') \iff \left|\dfrac{z - i}{z + i}\right| = \left|\dfrac{z' - i}{z' + i}\right|$. Traduire géométriquement cette propriété et trouver les classes d'équivalence modulo $\mathcal{R}$.</li>
+<li>Montrer que $(z&#92;&#44;\mathcal{R}&#92;&#44;z') \iff \left|\dfrac{z - i}{z + i}\right| = \left|\dfrac{z' - i}{z' + i}\right|$. Traduire géométriquement cette propriété et trouver les classes d'équivalence modulo $\mathcal{R}$.</li>
 </ol>
 </li>
 <li>Soit $E$ un ensemble ordonné et $A \subset E$ tels que $A$ admette une borne supérieure dans $E$. Soit $x \in E$. Étudier les 4 implications suivantes dans le cas d'un ordre partiel ou total :
@@ -838,7 +838,7 @@ $$(\sup A \geq x) \underset{?}{\Leftarrow} (\exists a \in A,\ a \geq x) \qquad (
 $$\sup(A \cup B) = \sup(\sup A, \sup B), \qquad \inf(A \cup B) = \inf(\inf A, \inf B)$$
 $$\sup(A \cap B) \leq \inf(\sup A, \sup B), \qquad \inf(A \cap B) \geq \sup(\inf A, \inf B)$$
 Prouver qu'il peut y avoir des inégalités strictes dans les deux dernières inégalités, même pour un ordre total.</li>
-<li>Soit $A = \left\\{ \dfrac{1}{p} + \dfrac{1}{q^2},\ p, q \in \mathbb{N}^&#42; \right\\}$.
+<li>Soit $A = \left&#92;&#123; \dfrac{1}{p} + \dfrac{1}{q^2},\ p, q \in \mathbb{N}^&#42; \right&#92;&#125;$.
 <ol>
 <li>Étudier l'existence et calculer éventuellement $\sup A$, $\inf A$, ppe $A$, pge $A$.</li>
 <li>A-t-on $1/3 \in A$ ? $1/4 \in A$ ?</li>

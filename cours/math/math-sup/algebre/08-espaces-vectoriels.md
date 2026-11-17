@@ -56,13 +56,13 @@ Soit $E$ un ensemble. On dit que $(E, +, \times, \cdot)$ est une **$\mathbb{K}$-
 
 - $\mathbb{K}$ est toujours un $\mathbb{K}$-e.v. en prenant pour $\cdot$ la loi $\times$ du corps ;
 - $\mathbb{C}$ est un $\mathbb{R}$-e.v., une $\mathbb{R}$-algèbre commutative :
-  $\lambda(a + ib) = \lambda a + i\\,\lambda b$ ;
+  $\lambda(a + ib) = \lambda a + i&#92;&#44;\lambda b$ ;
 - $\mathbb{K}[X]$ est une algèbre commutative :
   $(\mathbb{K}[X], +, \times)$ est un anneau commutatif, et en définissant
   $\lambda \cdot P = (\lambda a_n)&#95;{n \in \mathbb{N}}$ si $P = (a_n)&#95;{n \in \mathbb{N}}$, on a
   $(\lambda + \mu) \cdot P = \big((\lambda + \mu) a_n\big)&#95;{n \in \mathbb{N}}
   = (\lambda a_n)&#95;{n \in \mathbb{N}} + (\mu a_n)&#95;{n \in \mathbb{N}} = \lambda \cdot P + \mu \cdot P$.
-  De même, pour le produit, avec $d_n = \sum&#95;{i=0}^{n} a_i\\, b&#95;{n-i}$ :
+  De même, pour le produit, avec $d_n = \sum&#95;{i=0}^{n} a_i&#92;&#44; b&#95;{n-i}$ :
 
 $$\lambda \cdot (PQ) = \Big( \sum_{i=0}^{n} (\lambda a_i)\, b_{n-i} \Big)_{n \in \mathbb{N}}
 = (\lambda P)\, Q = \Big( \sum_{i=0}^{n} a_i\, (\lambda b_{n-i}) \Big)_{n \in \mathbb{N}}$$
@@ -169,9 +169,9 @@ est encore une C.L., et elle vaut $\sum&#95;{i \in I} (\lambda_i + \mu_i) \cdot 
 <div class="bloc demo" markdown="1">
 <span class="bloc-titre">Démonstration</span>
 
-Posons $D_i = \lambda_i + \mu_i$. Alors $I&#95;\lambda = \\{i \mid \lambda_i \neq 0\\}$ est
-vide ou fini, $I&#95;\mu = \\{i \mid \mu_i \neq 0\\}$ de même, donc
-$J = \\{i \mid D_i \neq 0\\}$ est vide ou fini et $J \subset I&#95;\lambda \cup I&#95;\mu$ ;
+Posons $D_i = \lambda_i + \mu_i$. Alors $I&#95;\lambda = &#92;&#123;i \mid \lambda_i \neq 0&#92;&#125;$ est
+vide ou fini, $I&#95;\mu = &#92;&#123;i \mid \mu_i \neq 0&#92;&#125;$ de même, donc
+$J = &#92;&#123;i \mid D_i \neq 0&#92;&#125;$ est vide ou fini et $J \subset I&#95;\lambda \cup I&#95;\mu$ ;
 ainsi $\sum&#95;{i \in I} (\lambda_i + \mu_i) x_i$ est une C.L. des $x_i$. De plus
 $(\lambda_i + \mu_i) \cdot x_i = \lambda_i x_i + \mu_i x_i$ et, comme la somme est finie :
 
@@ -244,10 +244,10 @@ alors $\lambda \cdot x + y \in A$.
 
 <span class="bloc-titre">Exemples</span>
 
-- $A = \\{(x, y, z) \in \mathbb{R}^3 \mid x + 2y + 3z = 0\\}$ : oui ;
-- $B = \\{(x, y, z) \in \mathbb{R}^3 \mid x^2 + y^2 + z^2 = 1\\}$ : non, car $0_E \notin B$ ;
-- $C = \\{(x, y, z) \in \mathbb{R}^3 \mid z \neq 0\\}$ : non, car $(C, +)$ n'est pas un groupe ;
-- $D = \\{aX^3 + bX^2 + cX + d\\}$ : oui.
+- $A = &#92;&#123;(x, y, z) \in \mathbb{R}^3 \mid x + 2y + 3z = 0&#92;&#125;$ : oui ;
+- $B = &#92;&#123;(x, y, z) \in \mathbb{R}^3 \mid x^2 + y^2 + z^2 = 1&#92;&#125;$ : non, car $0_E \notin B$ ;
+- $C = &#92;&#123;(x, y, z) \in \mathbb{R}^3 \mid z \neq 0&#92;&#125;$ : non, car $(C, +)$ n'est pas un groupe ;
+- $D = &#92;&#123;aX^3 + bX^2 + cX + d&#92;&#125;$ : oui.
 
 </div>
 
@@ -307,7 +307,7 @@ donc $\lambda x + y \in F$. De plus $0_E = 0 + \dots + 0 \in F$.
 
 Exemple : dans $\mathbb{C}$ (ou $\mathbb{H}$) considéré comme $\mathbb{R}$-e.v., avec
 $F_1 = \mathbb{R}$, $F_2 = i\mathbb{R}$, $F_3 = j\mathbb{R}$ :
-$F_1 + F_2 + F_3 = \\{a + ib + jc \mid (a, b, c) \in \mathbb{R}^3\\}$ ; on n'a pas
+$F_1 + F_2 + F_3 = &#92;&#123;a + ib + jc \mid (a, b, c) \in \mathbb{R}^3&#92;&#125;$ ; on n'a pas
 unicité de l'écriture :
 $j = 0 \times 1 + 0 \times i + 1 \times j = -\frac{1}{2} \times 1 + \frac{\sqrt{3}}{2} \times i + 0 \times j$.
 
@@ -349,7 +349,7 @@ $\Rightarrow$ clair.
 
 $\Leftarrow$ Supposons $x \in F$ s'écrit $\sum&#95;{i \in I} x_i = \sum&#95;{i \in I} y_i$. Alors
 $0 = \sum&#95;{i \in I} (x_i - y_i)$ et $x_i - y_i \in F_i$ ; comme l'écriture de $0$ est
-unique, $\forall i \in \\{1, \dots, n\\}$, $x_i = y_i$.cqfd
+unique, $\forall i \in &#92;&#123;1, \dots, n&#92;&#125;$, $x_i = y_i$.cqfd
 
 </div>
 
@@ -358,7 +358,7 @@ unique, $\forall i \in \\{1, \dots, n\\}$, $x_i = y_i$.cqfd
 <span class="bloc-titre">Propriété</span>
 
 $F_1$ et $F_2$ sont en somme directe si et seulement si
-$F_1 \cap F_2 = \\{0\\}$.
+$F_1 \cap F_2 = &#92;&#123;0&#92;&#125;$.
 
 </div>
 
@@ -366,7 +366,7 @@ $F_1 \cap F_2 = \\{0\\}$.
 <span class="bloc-titre">Démonstration</span>
 
 Supposons $0 = x_1 + x_2$ avec $x_1 \in F_1$ et $x_2 \in F_2$. Alors
-$x_1 = -x_2 \in F_2$, donc $x_1 \in F_1 \cap F_2 = \\{0\\}$, d'où $x_1 = 0_E$
+$x_1 = -x_2 \in F_2$, donc $x_1 \in F_1 \cap F_2 = &#92;&#123;0&#92;&#125;$, d'où $x_1 = 0_E$
 et $x_2 = 0_E$ : l'écriture de $0$ est unique.
 
 $\Rightarrow$ soit $x \in F_1 \cap F_2$ : $x - x = 0$ ; comme l'écriture de $0$ est
@@ -378,9 +378,9 @@ unique, $x = -x = 0$.
 
 <span class="bloc-titre">Exemple</span>
 
-$I = \\{f : \mathbb{R} \to \mathbb{R} \mid f \text{ impaire}\\}$ et
-$P = \\{f : \mathbb{R} \to \mathbb{R} \mid f \text{ paire}\\}$ sont deux s.e.v. de
-$\mathbb{R}^{\mathbb{R}}$ et $I \cap P = \\{0\\}$ (la fonction nulle) : on a
+$I = &#92;&#123;f : \mathbb{R} \to \mathbb{R} \mid f \text{ impaire}&#92;&#125;$ et
+$P = &#92;&#123;f : \mathbb{R} \to \mathbb{R} \mid f \text{ paire}&#92;&#125;$ sont deux s.e.v. de
+$\mathbb{R}^{\mathbb{R}}$ et $I \cap P = &#92;&#123;0&#92;&#125;$ (la fonction nulle) : on a
 
 $$I \oplus P = \mathbb{R}^{\mathbb{R}}$$
 
@@ -447,7 +447,7 @@ $E_1, \dots, E_n$ sont en somme directe si et seulement si
 
 $$E_k \cap (E_{k+1} + \dots + E_n) = \{0\} \qquad \text{pour } 1 \leq k \leq n-1$$
 
-(en particulier $E&#95;{n-1} \cap E_n = \\{0\\}$).
+(en particulier $E&#95;{n-1} \cap E_n = &#92;&#123;0&#92;&#125;$).
 
 </div>
 
@@ -459,11 +459,11 @@ Soit $x \in E_k \cap (E&#95;{k+1} + \dots + E_n)$ : $x = x_k = x&#95;{k+1} + \do
 $x_i \in E_i$. Alors
 $0 + 0 + \dots + 0 - x_k + x&#95;{k+1} + \dots + x_n = 0$,
 d'où $\forall i$, $x_i = 0$, donc $x = x_k = 0$. Ainsi
-$\forall n-1 \geq k \geq 1$, $E_k \cap (E&#95;{k+1} + \dots + E_n) = \\{0\\}$.
+$\forall n-1 \geq k \geq 1$, $E_k \cap (E&#95;{k+1} + \dots + E_n) = &#92;&#123;0&#92;&#125;$.
 
 $\Leftarrow$ Supposons $0 = x_1 + x_2 + \dots + x_n$. Alors
 $-x_1 = x_2 + \dots + x_n$, donc
-$-x_1 \in E_1 \cap (E_2 + \dots + E_n) = \\{0\\}$, d'où $x_1 = 0$. On suppose démontré
+$-x_1 \in E_1 \cap (E_2 + \dots + E_n) = &#92;&#123;0&#92;&#125;$, d'où $x_1 = 0$. On suppose démontré
 que $x_1 = \dots = x_k = 0$ pour $1 \leq k \leq n - 2$ :
 $x&#95;{k+1} + x&#95;{k+2} + \dots + x_n = 0$, donc
 $-x&#95;{k+1} \in E&#95;{k+1} \cap (E&#95;{k+2} + \dots + E_n)$, d'où $x&#95;{k+1} = 0$.
@@ -480,7 +480,7 @@ et l'écriture est unique.
 
 Soit $A$ une partie de $E$. Il existe un **plus petit sous-espace vectoriel** de $E$
 (au sens de $\subset$) qui contient $A$, et c'est
-$\bigcap&#95;{\substack{H \text{ s.e.v. de } E \\\ A \subset H}} H$. On le note $\mathrm{Vect}(A)$.
+$\bigcap&#95;{\substack{H \text{ s.e.v. de } E \\ A \subset H}} H$. On le note $\mathrm{Vect}(A)$.
 
 </div>
 
@@ -488,7 +488,7 @@ $\bigcap&#95;{\substack{H \text{ s.e.v. de } E \\\ A \subset H}} H$. On le note 
 
 <span class="bloc-titre">Remarque</span>
 
-Si $A = \varnothing$, $\mathrm{Vect}(A) = \\{0_E\\}$ ; si $A$ est un s.e.v. de $E$,
+Si $A = \varnothing$, $\mathrm{Vect}(A) = &#92;&#123;0_E&#92;&#125;$ ; si $A$ est un s.e.v. de $E$,
 $\mathrm{Vect}(A) = A$.
 
 </div>
@@ -497,7 +497,7 @@ $\mathrm{Vect}(A) = A$.
 <span class="bloc-titre">Démonstration</span>
 
 $E$ est un e.v. sur $\mathbb{K}$ ;
-$\mathcal{R} = \\{H \mid H \text{ s.e.v. de } E \text{ et } A \subset H\\}$ est non vide.
+$\mathcal{R} = &#92;&#123;H \mid H \text{ s.e.v. de } E \text{ et } A \subset H&#92;&#125;$ est non vide.
 On pose $F = \bigcap&#95;{H \in \mathcal{R}} H$ ; pour tout $H$ s.e.v. contenant $A$,
 $H \in \mathcal{R}$ donc $F \subset H$ : $F$ est le plus petit s.e.v. contenant $A$.
 
@@ -515,7 +515,7 @@ des vecteurs de $A$.
 <div class="bloc demo" markdown="1">
 <span class="bloc-titre">Démonstration</span>
 
-Soit $F = \Big\\{ \sum&#95;{i \in I} \lambda_i x_i \\;/\\; (x_i)&#95;{i \in I} \in A^I,\ (\lambda_i)&#95;{i \in I} \in \mathbb{K}^{(I)} \Big\\}$.
+Soit $F = \Big&#92;&#123; \sum&#95;{i \in I} \lambda_i x_i &#92;&#59;\Big/&#92;&#59; (x_i)&#95;{i \in I} \in A^I,\ (\lambda_i)&#95;{i \in I} \in \mathbb{K}^{(I)} \Big&#92;&#125;$.
 $F$ contient $A$ (pour $x \in A$, $x = 1 \cdot x$) ; $F$ est un s.e.v. de $E$ : soit
 $x \in F$, $x = \sum&#95;{i \in I} \lambda_i x_i$ avec $x_i \in A$ ; soit $y \in F$,
 $y = \sum&#95;{i \in I} \mu_i x_i$ ; pour tout $\lambda \in \mathbb{K}$ :
@@ -551,7 +551,7 @@ $S \subset F$. D'où $S = \mathrm{Vect}(U)$.
 <span class="bloc-titre">Définition</span>
 
 On appelle **sous-espace engendré par une famille** $\mathcal{F}$ de vecteurs de $E$
-le sous-espace $\mathrm{Vect}(A)$ avec $A = \\{x_i \mid x_i \in \mathcal{F}\\}$, et on le
+le sous-espace $\mathrm{Vect}(A)$ avec $A = &#92;&#123;x_i \mid x_i \in \mathcal{F}&#92;&#125;$, et on le
 note $\mathrm{Vect}(\mathcal{F})$.
 
 </div>
@@ -560,12 +560,12 @@ note $\mathrm{Vect}(\mathcal{F})$.
 
 <span class="bloc-titre">Exemples</span>
 
-- $\mathbb{Q}(\sqrt{2}) = \\{a + b\sqrt{2} \mid (a, b) \in \mathbb{Q}^2\\}$ est un s.e.v.
+- $\mathbb{Q}(\sqrt{2}) = &#92;&#123;a + b\sqrt{2} \mid (a, b) \in \mathbb{Q}^2&#92;&#125;$ est un s.e.v.
   de $\mathbb{R}$ considéré comme $\mathbb{Q}$-e.v. ;
-  $\mathrm{Vect}(\mathbb{Q}[\sqrt{2}]) = \mathrm{Vect}(\\{1, \sqrt{2}\\})$, et
-  $\mathbb{Q}(\sqrt{2}) = \mathrm{Vect}(\\{1, \sqrt{2}\\})$.
-- Dans $\mathbb{R}^2$ : $\mathrm{Vect}(\\{u\\}) = \\{\lambda u \mid \lambda \in \mathbb{R}\\}$
-  (une droite vectorielle) ; $\mathrm{Vect}(\\{u, v\\}) = \mathrm{Vect}(\\{u\\})$ si $u$
+  $\mathrm{Vect}(\mathbb{Q}[\sqrt{2}]) = \mathrm{Vect}(&#92;&#123;1, \sqrt{2}&#92;&#125;)$, et
+  $\mathbb{Q}(\sqrt{2}) = \mathrm{Vect}(&#92;&#123;1, \sqrt{2}&#92;&#125;)$.
+- Dans $\mathbb{R}^2$ : $\mathrm{Vect}(&#92;&#123;u&#92;&#125;) = &#92;&#123;\lambda u \mid \lambda \in \mathbb{R}&#92;&#125;$
+  (une droite vectorielle) ; $\mathrm{Vect}(&#92;&#123;u, v&#92;&#125;) = \mathrm{Vect}(&#92;&#123;u&#92;&#125;)$ si $u$
   et $v$ sont colinéaires ($u \neq 0$), et $\mathbb{R}^2$ sinon.
 
 </div>
@@ -606,7 +606,7 @@ Si on a ①, écrivons $x = \sum&#95;{i \in I} \mu_i x_i$ et $\sum&#95;{i \in I}
 $0 + x = x = \sum \mu_i x_i = \sum (\mu_i + \lambda_i) x_i$. Pour l'unicité de
 l'écriture de $x$ : $\forall i \in I$, $\mu_i = \mu_i + \lambda_i$, donc
 $\forall i \in I$, $\lambda_i = 0$. Si on a ② et $x = \sum \lambda_i x_i = \sum \mu_i x_i$,
-alors $0 = \sum (\lambda_i - \mu_i) x_i = \sum 0 \\, x_i$.
+alors $0 = \sum (\lambda_i - \mu_i) x_i = \sum 0 &#92;&#44; x_i$.
 
 </div>
 
@@ -731,9 +731,9 @@ sont libres.
 <span class="bloc-titre">Démonstration</span>
 
 $\Rightarrow$ déjà vu. $\Leftarrow$ si toutes les sous-familles sont libres :
-$\forall\\, 0_E = \sum&#95;{i \in I} \lambda_i x_i$ avec $\mathcal{F} = (x_i)&#95;{i \in I}$ et
+$\forall&#92;&#44; 0_E = \sum&#95;{i \in I} \lambda_i x_i$ avec $\mathcal{F} = (x_i)&#95;{i \in I}$ et
 $(\lambda_i)&#95;{i \in I} \in \mathbb{K}^{(I)}$. Soit
-$\mathcal{F}' = \\{x_i \mid \lambda_i \neq 0\\}$ ; $\mathcal{F}'$ est finie ou vide.
+$\mathcal{F}' = &#92;&#123;x_i \mid \lambda_i \neq 0&#92;&#125;$ ; $\mathcal{F}'$ est finie ou vide.
 Si $\mathcal{F}'$ est non vide, c'est une sous-famille de $\mathcal{F}$,
 $\mathcal{F}' = (x_i)&#95;{i \in J}$ avec $J \subset I$, et
 $\sum&#95;{j \in J} \lambda_j x_j = 0$ ; or $\mathcal{F}'$ est libre par hypothèse
@@ -937,7 +937,7 @@ selon $x_i$.
 
 <span class="bloc-titre">Exemples</span>
 
-- Dans $\mathbb{R}^2$, $B = \\{(1, 0), (0, 1)\\}$ est une base. Tout vecteur s'écrit
+- Dans $\mathbb{R}^2$, $B = &#92;&#123;(1, 0), (0, 1)&#92;&#125;$ est une base. Tout vecteur s'écrit
   $v = \binom{x}{y} = x \binom{1}{0} + y \binom{0}{1}$ ; $x$ et $y$ sont les
   coordonnées.
 - Base de $\mathbb{R}^n$ : $e_i = (0, \dots, 1, \dots, 0)$ (avec $1$ en $i$-ème
@@ -994,11 +994,11 @@ est génératrice minimale.
 
 $\Leftarrow$ si $\mathcal{F}$ est génératrice minimale : supposons $\mathcal{F}$ liée ;
 il existe $x&#95;{i_0} \in \mathcal{F}$ C.L. des autres :
-$x&#95;{i_0} = \sum&#95;{\substack{i \in I \\\ i \neq i_0}} \lambda_i x_i$. Alors
-$\mathcal{F}' = (x_i)&#95;{i \in I \setminus \\{i_0\\}}$ est une sous-famille stricte de
+$x&#95;{i_0} = \sum&#95;{\substack{i \in I \\ i \neq i_0}} \lambda_i x_i$. Alors
+$\mathcal{F}' = (x_i)&#95;{i \in I \setminus &#92;&#123;i_0&#92;&#125;}$ est une sous-famille stricte de
 $\mathcal{F}$, et elle est génératrice : car tout $x$ de $E$ s'écrit
 $x = \sum&#95;{i \in I} \mu_i x_i$ ($\mathcal{F}$ génératrice)
-$= \sum&#95;{i \in I \setminus \\{i_0\\}} \mu_i x_i + \mu&#95;{i_0} \sum&#95;{i \neq i_0} \lambda_i x_i$,
+$= \sum&#95;{i \in I \setminus &#92;&#123;i_0&#92;&#125;} \mu_i x_i + \mu&#95;{i_0} \sum&#95;{i \neq i_0} \lambda_i x_i$,
 donc $x \in \mathrm{Vect}(\mathcal{F}')$ et $E = \mathrm{Vect}(\mathcal{F}')$.
 
 Conclusion : si ($\mathcal{F}$ est liée), $\mathcal{F}$ n'est pas génératrice minimale ;
@@ -1206,9 +1206,9 @@ $u(\lambda x + y) = \lambda u(x) + u(y) \in H'$.
 
 <span class="bloc-titre">Définitions (image, noyau)</span>
 
-- $u(E)$ est un s.e.v. de $F$, appelé **image** de $u$, et noté $\mathrm{Im}\\, u$ ;
-- $u^{-1}(\\{0_F\\})$ est un s.e.v. de $E$, appelé **noyau** de $u$, et noté
-  $\mathrm{Ker}\\, u$.
+- $u(E)$ est un s.e.v. de $F$, appelé **image** de $u$, et noté $\mathrm{Im}&#92;&#44; u$ ;
+- $u^{-1}(&#92;&#123;0_F&#92;&#125;)$ est un s.e.v. de $E$, appelé **noyau** de $u$, et noté
+  $\mathrm{Ker}&#92;&#44; u$.
 
 </div>
 
@@ -1216,8 +1216,8 @@ $u(\lambda x + y) = \lambda u(x) + u(y) \in H'$.
 
 <span class="bloc-titre">Propriété</span>
 
-- $u$ est **injective** si et seulement si $\mathrm{Ker}\\, u = \\{0_E\\}$ ;
-- $u$ est **surjective** si et seulement si $\mathrm{Im}\\, u = F$.
+- $u$ est **injective** si et seulement si $\mathrm{Ker}&#92;&#44; u = &#92;&#123;0_E&#92;&#125;$ ;
+- $u$ est **surjective** si et seulement si $\mathrm{Im}&#92;&#44; u = F$.
 
 </div>
 
@@ -1305,7 +1305,7 @@ Soit $u \in \mathcal{L}(E, F)$ ; si $\exists \mathcal{B}$ base de $E$ telle que 
 
 $u(\mathcal{B})$ est une base de $F$. $\operatorname{Vect}(u(\mathcal{B})) = \operatorname{Im} u$ car $\mathcal{B}$ est une base de $E$ ; $\operatorname{Vect}(u(\mathcal{B})) = F$ car $u(\mathcal{B})$ est une base de $F$. Donc $\operatorname{Im} u = F$ : $u$ est surjective.
 
-Soit $x \in \operatorname{Ker} u$ ; écrivons $\mathcal{B} = (x_i)&#95;{i \in I}$, $x = \sum&#95;{i \in I} \lambda_i x_i$. Alors $u(x) = 0 = \sum&#95;{i \in I} \lambda_i u(x_i)$ ; or $(u(x_i))&#95;{i \in I}$ est une base de $F$, donc libre, donc $\forall i,\ \lambda_i = 0$, d'où $x = 0$. Ainsi $\operatorname{Ker} u = \\{0_E\\}$ : $u$ est injective.
+Soit $x \in \operatorname{Ker} u$ ; écrivons $\mathcal{B} = (x_i)&#95;{i \in I}$, $x = \sum&#95;{i \in I} \lambda_i x_i$. Alors $u(x) = 0 = \sum&#95;{i \in I} \lambda_i u(x_i)$ ; or $(u(x_i))&#95;{i \in I}$ est une base de $F$, donc libre, donc $\forall i,\ \lambda_i = 0$, d'où $x = 0$. Ainsi $\operatorname{Ker} u = &#92;&#123;0_E&#92;&#125;$ : $u$ est injective.
 
 </div>
 
@@ -1426,7 +1426,7 @@ Ce cardinal est appelé **dimension** de $E$ et noté $\dim E$.
 
 <span class="bloc-titre">Démonstration (existence d'une base)</span>
 
-Soit $\mathcal{G} = (x_i)&#95;{i \in I}$ une famille génératrice finie de $E$. Soit $A = \\{k \in \mathbb{N} \mid \text{une famille de } k \text{ vecteurs de } \mathcal{G} \text{ est génératrice}\\}$. $A$ est une partie de $\mathbb{N}$, non vide ; soit $p$ son plus petit élément. Soit $\mathcal{B}$ une sous-famille de $\mathcal{G}$ de $p$ vecteurs génératrice : $\mathcal{B}$ est une famille génératrice minimale par définition de $p$, d'où $\mathcal{B}$ est une base et son cardinal est fini.
+Soit $\mathcal{G} = (x_i)&#95;{i \in I}$ une famille génératrice finie de $E$. Soit $A = &#92;&#123;k \in \mathbb{N} \mid \text{une famille de } k \text{ vecteurs de } \mathcal{G} \text{ est génératrice}&#92;&#125;$. $A$ est une partie de $\mathbb{N}$, non vide ; soit $p$ son plus petit élément. Soit $\mathcal{B}$ une sous-famille de $\mathcal{G}$ de $p$ vecteurs génératrice : $\mathcal{B}$ est une famille génératrice minimale par définition de $p$, d'où $\mathcal{B}$ est une base et son cardinal est fini.
 
 **Lemme.** Si $\mathcal{B}$ est une base de $n$ vecteurs et $\mathcal{F}$ une famille libre, alors $\mathcal{F}$ est de cardinal fini et $\operatorname{card} \mathcal{F} \leq n$. En effet, si $\mathcal{F}$ admettait au moins $n+1$ vecteurs, une sous-famille de $n+1$ vecteurs serait combinaison linéaire des $n$ vecteurs de la base, donc liée, donc $\mathcal{F}$ serait liée — absurde.
 
@@ -1488,7 +1488,7 @@ Une famille génératrice de $n$ vecteurs (d'un espace vectoriel $E$ de dimensio
 
 <span class="bloc-titre">Démonstration</span>
 
-Soit $\mathcal{F}$ génératrice ; si $\mathcal{F}$ admet au plus $n-1$ vecteurs ($n \geq 1$), alors soit $\mathcal{B}$ une base de $E$ ($n$ vecteurs) : les $n$ vecteurs de cette base sont combinaisons linéaires des $n-1$ vecteurs de $\mathcal{F}$ (qui est génératrice), donc $\mathcal{B}$ est liée — impossible car $\mathcal{B}$ est une base. Donc $\mathcal{F}$ admet au moins $n$ vecteurs (si $n = 0$, $E = \\{0\\}$ et le théorème s'applique). Du corollaire : une famille génératrice de $n$ vecteurs est minimale (car une famille strictement à moins de $n$ vecteurs n'est pas génératrice), donc c'est une base.
+Soit $\mathcal{F}$ génératrice ; si $\mathcal{F}$ admet au plus $n-1$ vecteurs ($n \geq 1$), alors soit $\mathcal{B}$ une base de $E$ ($n$ vecteurs) : les $n$ vecteurs de cette base sont combinaisons linéaires des $n-1$ vecteurs de $\mathcal{F}$ (qui est génératrice), donc $\mathcal{B}$ est liée — impossible car $\mathcal{B}$ est une base. Donc $\mathcal{F}$ admet au moins $n$ vecteurs (si $n = 0$, $E = &#92;&#123;0&#92;&#125;$ et le théorème s'applique). Du corollaire : une famille génératrice de $n$ vecteurs est minimale (car une famille strictement à moins de $n$ vecteurs n'est pas génératrice), donc c'est une base.
 
 </div>
 
@@ -1504,7 +1504,7 @@ Soit $E$ de dimension $n$, $\mathcal{B} = (e_1, \dots, e_n)$ une base de $E$, et
 
 <span class="bloc-titre">Démonstration</span>
 
-$\mathcal{F} = (x_1, \dots, x_p)$ ; $\mathcal{F}$ libre donc $p \leq n$. Si $p = n$, $\mathcal{F}$ est une base. Supposons $p < n$. Il existe $i \in \\{1, \dots, n\\}$ tel que $e_i \notin \operatorname{Vect}(\mathcal{F})$ (sinon les vecteurs $e_i$ seraient combinaisons linéaires des $p$ vecteurs de $\mathcal{F}$, et formeraient une famille liée car $p < n$, ce qui est impossible car $\mathcal{B}$ est libre). Alors $(x_1, \dots, x_p, e&#95;{p+1})$ est libre. Premier cas : $p+1 = n$, alors $\mathcal{F}'$ est une base. Deuxième cas : $p+1 < n$, il existe $j \in \mathcal{B}$ tel que $e_j \notin \operatorname{Vect}(\mathcal{F}')$ ; supposons que $e_j = e&#95;{p+2}$ ; alors $(x_1, \dots, x_p, e&#95;{p+1}, e&#95;{p+2})$ est libre. Au bout de $n - p$ étapes, on a une famille $(x_1, \dots, x_p, e&#95;{p+1}, e&#95;{p+2}, \dots, e&#95;{p+(n-p)})$ libre de $n$ vecteurs, donc c'est une base.
+$\mathcal{F} = (x_1, \dots, x_p)$ ; $\mathcal{F}$ libre donc $p \leq n$. Si $p = n$, $\mathcal{F}$ est une base. Supposons $p < n$. Il existe $i \in &#92;&#123;1, \dots, n&#92;&#125;$ tel que $e_i \notin \operatorname{Vect}(\mathcal{F})$ (sinon les vecteurs $e_i$ seraient combinaisons linéaires des $p$ vecteurs de $\mathcal{F}$, et formeraient une famille liée car $p < n$, ce qui est impossible car $\mathcal{B}$ est libre). Alors $(x_1, \dots, x_p, e&#95;{p+1})$ est libre. Premier cas : $p+1 = n$, alors $\mathcal{F}'$ est une base. Deuxième cas : $p+1 < n$, il existe $j \in \mathcal{B}$ tel que $e_j \notin \operatorname{Vect}(\mathcal{F}')$ ; supposons que $e_j = e&#95;{p+2}$ ; alors $(x_1, \dots, x_p, e&#95;{p+1}, e&#95;{p+2})$ est libre. Au bout de $n - p$ étapes, on a une famille $(x_1, \dots, x_p, e&#95;{p+1}, e&#95;{p+2}, \dots, e&#95;{p+(n-p)})$ libre de $n$ vecteurs, donc c'est une base.
 
 </div>
 
@@ -1516,7 +1516,7 @@ Dans $\mathbb{R}^4$, $\mathcal{B}$ base canonique. $\mathcal{F} = \big((1,0,1,0)
 
 $$\operatorname{Vect} \mathcal{F} = \{(a+b, b, a+b, 0) \mid a, b \in \mathbb{R}\} = \{(c, b, c, 0) \mid b, c \in \mathbb{R}\}$$
 
-$V = \operatorname{Vect}(\mathcal{F}, e_4) = \\{(c, b, c, d) \mid b, c, d \in \mathbb{R}\\}$ ; $e_3 \notin V$ ; $(\mathcal{F}, e_3, e_4)$ est une base de $\mathbb{R}^4$.
+$V = \operatorname{Vect}(\mathcal{F}, e_4) = &#92;&#123;(c, b, c, d) \mid b, c, d \in \mathbb{R}&#92;&#125;$ ; $e_3 \notin V$ ; $(\mathcal{F}, e_3, e_4)$ est une base de $\mathbb{R}^4$.
 
 </div>
 
@@ -1616,7 +1616,7 @@ Si $\dim E = n$ et $F$ est un sous-espace vectoriel de $E$, alors $F$ admet un s
 
 Soit $\mathcal{B} = (e_1, \dots, e_n)$ une base de $E$ et $\mathcal{F} = (f_1, \dots, f_p)$ une base de $F$. On complète $\mathcal{F}$ en une base de $E$ en puisant dans $\mathcal{B}$ : $\mathcal{B}' = (f_1, \dots, f_p, e&#95;{p+1}, \dots, e_n)$ quitte à renuméroter. Soit $G = \operatorname{Vect}(e&#95;{p+1}, \dots, e_n)$.
 
-$F \cap G = \\{0\\}$ : si $x = \sum&#95;{i \leq p} \lambda_i f_i = \sum&#95;{i > p} \lambda_i e_i$, alors $\sum&#95;{i \leq p} \lambda_i f_i - \sum&#95;{i > p} \lambda_i e_i = 0$, et comme $\mathcal{B}'$ est libre, tous les coefficients sont nuls, donc $x = 0$.
+$F \cap G = &#92;&#123;0&#92;&#125;$ : si $x = \sum&#95;{i \leq p} \lambda_i f_i = \sum&#95;{i > p} \lambda_i e_i$, alors $\sum&#95;{i \leq p} \lambda_i f_i - \sum&#95;{i > p} \lambda_i e_i = 0$, et comme $\mathcal{B}'$ est libre, tous les coefficients sont nuls, donc $x = 0$.
 
 $F + G = E$ : $\dim(F + G) = \dim F + \dim G = p + (n - p) = n = \dim E$, donc $F \oplus G = E$.
 
@@ -1654,7 +1654,7 @@ Le rang de $\mathcal{F}$ est égal à l'ordre maximum des familles libres de $\m
 
 <span class="bloc-titre">Démonstration</span>
 
-Soit $p = \operatorname{rg} \mathcal{F}$. Soit $A = \\{k \in \mathbb{N} \mid \mathcal{F} \text{ contient une sous-famille libre de } k \text{ vecteurs}\\}$. Si $p = 0$, $\operatorname{Vect} \mathcal{F} = \\{0_E\\}$, donc $\mathcal{F} = \varnothing$ ou $\mathcal{F} = \\{0_E\\}$, et $A = \\{0\\}$, $\max A = 0$. Si $p \geq 1$, $A$ contient $0$ et est majorée par $p$ : $\dim \operatorname{Vect} \mathcal{F} = p$, donc $\operatorname{Vect} \mathcal{F}$ admet une base de $p$ vecteurs et toute famille libre de $\operatorname{Vect} \mathcal{F}$ a au plus $p$ vecteurs. Soit le plus grand élément de $A$ : c'est $p$, car une base de $\operatorname{Vect} \mathcal{F}$ est une famille libre de $p$ vecteurs de $\mathcal{F}$. Donc $\operatorname{rg} \mathcal{F} = p = \max A$.
+Soit $p = \operatorname{rg} \mathcal{F}$. Soit $A = &#92;&#123;k \in \mathbb{N} \mid \mathcal{F} \text{ contient une sous-famille libre de } k \text{ vecteurs}&#92;&#125;$. Si $p = 0$, $\operatorname{Vect} \mathcal{F} = &#92;&#123;0_E&#92;&#125;$, donc $\mathcal{F} = \varnothing$ ou $\mathcal{F} = &#92;&#123;0_E&#92;&#125;$, et $A = &#92;&#123;0&#92;&#125;$, $\max A = 0$. Si $p \geq 1$, $A$ contient $0$ et est majorée par $p$ : $\dim \operatorname{Vect} \mathcal{F} = p$, donc $\operatorname{Vect} \mathcal{F}$ admet une base de $p$ vecteurs et toute famille libre de $\operatorname{Vect} \mathcal{F}$ a au plus $p$ vecteurs. Soit le plus grand élément de $A$ : c'est $p$, car une base de $\operatorname{Vect} \mathcal{F}$ est une famille libre de $p$ vecteurs de $\mathcal{F}$. Donc $\operatorname{rg} \mathcal{F} = p = \max A$.
 
 </div>
 
@@ -1745,7 +1745,7 @@ Si $G$ est un supplémentaire de $\operatorname{Ker} u$, alors $G$ est isomorphe
 
 <span class="bloc-titre">Démonstration</span>
 
-Si $\dim E = n$, on connaît l'existence d'un tel supplémentaire. Soit $\varphi : G \to \operatorname{Im} u$, $x \mapsto u(x)$ ; $\varphi$ est linéaire. $\operatorname{Ker} \varphi = \operatorname{Ker} u \cap G = \\{0_E\\}$ car $G$ est supplémentaire de $\operatorname{Ker} u$. $\varphi$ est surjective : si $y \in \operatorname{Im} u$, $y = u(x)$ avec $x \in E$ ; or $x = x_1 + x_2$ avec $x_1 \in G$, $x_2 \in \operatorname{Ker} u$ ($E = G \oplus \operatorname{Ker} u$) ; $y = u(x_1) + u(x_2) = u(x_1)$ avec $x_1 \in G$, donc $\varphi$ est surjective.
+Si $\dim E = n$, on connaît l'existence d'un tel supplémentaire. Soit $\varphi : G \to \operatorname{Im} u$, $x \mapsto u(x)$ ; $\varphi$ est linéaire. $\operatorname{Ker} \varphi = \operatorname{Ker} u \cap G = &#92;&#123;0_E&#92;&#125;$ car $G$ est supplémentaire de $\operatorname{Ker} u$. $\varphi$ est surjective : si $y \in \operatorname{Im} u$, $y = u(x)$ avec $x \in E$ ; or $x = x_1 + x_2$ avec $x_1 \in G$, $x_2 \in \operatorname{Ker} u$ ($E = G \oplus \operatorname{Ker} u$) ; $y = u(x_1) + u(x_2) = u(x_1)$ avec $x_1 \in G$, donc $\varphi$ est surjective.
 
 </div>
 
@@ -1794,11 +1794,11 @@ $(x_1^n)$ et $(n x_1^n)$ sont non proportionnelles, donc forment une base, et
 
 $$E = \big\{\big(\lambda x_1^n + \mu n x_1^n\big)_n \mid \lambda, \mu \in \mathbb{C}\big\}$$
 
-Soit maintenant $a, b \in \mathbb{R}$, $b \neq 0$. $F = \\{(u_n)&#95;n \in \mathbb{R}^{\mathbb{N}} \mid u&#95;{n+2} = a u&#95;{n+1} + b u_n\\}$ est un sous-espace vectoriel de $\mathbb{R}^{\mathbb{N}}$ (vu comme $\mathbb{R}$-espace vectoriel) de dimension $2$. $x^2 = ax + b$.
+Soit maintenant $a, b \in \mathbb{R}$, $b \neq 0$. $F = &#92;&#123;(u_n)&#95;n \in \mathbb{R}^{\mathbb{N}} \mid u&#95;{n+2} = a u&#95;{n+1} + b u_n&#92;&#125;$ est un sous-espace vectoriel de $\mathbb{R}^{\mathbb{N}}$ (vu comme $\mathbb{R}$-espace vectoriel) de dimension $2$. $x^2 = ax + b$.
 
-- si $\Delta > 0$ : $x_1$ et $x_2$ racines réelles distinctes, $F = \\{(\lambda x_1^n + \mu x_2^n)&#95;n \mid \lambda, \mu \in \mathbb{R}\\}$ ;
-- si $\Delta = 0$ : $x_1$ racine double, $F = \\{((\lambda + n\mu) x_1^n)&#95;n \mid \lambda, \mu \in \mathbb{R}\\}$ ;
-- si $\Delta < 0$ : $x_1, \overline{x_1} \in \mathbb{C} \setminus \mathbb{R}$ racines de (1). $E = \\{(u_n)&#95;n \in \mathbb{C}^{\mathbb{N}} \mid u&#95;{n+2} = a u&#95;{n+1} + b u_n\\} = \\{(\lambda x_1^n + \mu \overline{x_1}^n)&#95;n \mid \lambda, \mu \in \mathbb{C}\\}$. Posons $u_n = \dfrac{x_1^n + \overline{x_1}^n}{2}$ et $v_n = \dfrac{x_1^n - \overline{x_1}^n}{2i}$ : $x_1^n = u_n + i v_n$, $\overline{x_1}^n = u_n - i v_n$. Tout élément de $E$ est combinaison linéaire de $(x_1^n)&#95;n$ et $(\overline{x_1}^n)&#95;n$, donc de $(u_n)$ et $(v_n)$ : $E \subset \operatorname{Vect}((u_n), (v_n))$ et réciproquement $\operatorname{Vect}((u_n), (v_n)) \subset \operatorname{Vect}((x_1^n), (\overline{x_1}^n)) = E$. $((u_n), (v_n))$ est une base. $u_n = \mathrm{Re}(x_1^n)$ et $v_n = \mathrm{Im}(x_1^n)$ ; $(u_n)$ et $(v_n)$ sont des suites réelles. $\lambda (u_n)&#95;n + \mu (v_n)&#95;n \in \mathbb{R}^{\mathbb{N}} \iff \forall n,\ \overline{\lambda} u_n + \overline{\mu} v_n = \lambda u_n + \mu v_n \iff \overline{\lambda} = \lambda$ et $\overline{\mu} = \mu$ car $((u_n), (v_n))$ est libre. Donc
+- si $\Delta > 0$ : $x_1$ et $x_2$ racines réelles distinctes, $F = &#92;&#123;(\lambda x_1^n + \mu x_2^n)&#95;n \mid \lambda, \mu \in \mathbb{R}&#92;&#125;$ ;
+- si $\Delta = 0$ : $x_1$ racine double, $F = &#92;&#123;((\lambda + n\mu) x_1^n)&#95;n \mid \lambda, \mu \in \mathbb{R}&#92;&#125;$ ;
+- si $\Delta < 0$ : $x_1, \overline{x_1} \in \mathbb{C} \setminus \mathbb{R}$ racines de (1). $E = &#92;&#123;(u_n)&#95;n \in \mathbb{C}^{\mathbb{N}} \mid u&#95;{n+2} = a u&#95;{n+1} + b u_n&#92;&#125; = &#92;&#123;(\lambda x_1^n + \mu \overline{x_1}^n)&#95;n \mid \lambda, \mu \in \mathbb{C}&#92;&#125;$. Posons $u_n = \dfrac{x_1^n + \overline{x_1}^n}{2}$ et $v_n = \dfrac{x_1^n - \overline{x_1}^n}{2i}$ : $x_1^n = u_n + i v_n$, $\overline{x_1}^n = u_n - i v_n$. Tout élément de $E$ est combinaison linéaire de $(x_1^n)&#95;n$ et $(\overline{x_1}^n)&#95;n$, donc de $(u_n)$ et $(v_n)$ : $E \subset \operatorname{Vect}((u_n), (v_n))$ et réciproquement $\operatorname{Vect}((u_n), (v_n)) \subset \operatorname{Vect}((x_1^n), (\overline{x_1}^n)) = E$. $((u_n), (v_n))$ est une base. $u_n = \mathrm{Re}(x_1^n)$ et $v_n = \mathrm{Im}(x_1^n)$ ; $(u_n)$ et $(v_n)$ sont des suites réelles. $\lambda (u_n)&#95;n + \mu (v_n)&#95;n \in \mathbb{R}^{\mathbb{N}} \iff \forall n,\ \overline{\lambda} u_n + \overline{\mu} v_n = \lambda u_n + \mu v_n \iff \overline{\lambda} = \lambda$ et $\overline{\mu} = \mu$ car $((u_n), (v_n))$ est libre. Donc
 
 $$F = \{\lambda (u_n)_n + \mu (v_n)_n \mid \lambda, \mu \in \mathbb{R}\}$$
 
@@ -1808,11 +1808,11 @@ $$F = \{\lambda (u_n)_n + \mu (v_n)_n \mid \lambda, \mu \in \mathbb{R}\}$$
 
 <span class="bloc-titre">À retenir</span>
 
-Pour $F = \\{(u_n)&#95;n \in \mathbb{R}^{\mathbb{N}} \mid u&#95;{n+2} = a u&#95;{n+1} + b u_n\\}$ ($b \neq 0$), avec $x^2 - ax - b = 0$ de discriminant $\Delta$ :
+Pour $F = &#92;&#123;(u_n)&#95;n \in \mathbb{R}^{\mathbb{N}} \mid u&#95;{n+2} = a u&#95;{n+1} + b u_n&#92;&#125;$ ($b \neq 0$), avec $x^2 - ax - b = 0$ de discriminant $\Delta$ :
 
-- si $\Delta > 0$ : $F = \\{\lambda x_1^n + \mu x_2^n \mid \lambda, \mu \in \mathbb{R}\\}$ ;
-- si $\Delta = 0$ : $F = \\{(\lambda + n\mu) x_1^n \mid \lambda, \mu \in \mathbb{R}\\}$ ;
-- si $\Delta < 0$ et $x_1 = \rho e^{i\theta}$ solution de $x^2 - ax - b = 0$ : $F = \\{(( \lambda \cos n\theta + \mu \sin n\theta) \rho^n)&#95;n \mid \lambda, \mu \in \mathbb{R}\\}$.
+- si $\Delta > 0$ : $F = &#92;&#123;\lambda x_1^n + \mu x_2^n \mid \lambda, \mu \in \mathbb{R}&#92;&#125;$ ;
+- si $\Delta = 0$ : $F = &#92;&#123;(\lambda + n\mu) x_1^n \mid \lambda, \mu \in \mathbb{R}&#92;&#125;$ ;
+- si $\Delta < 0$ et $x_1 = \rho e^{i\theta}$ solution de $x^2 - ax - b = 0$ : $F = &#92;&#123;(( \lambda \cos n\theta + \mu \sin n\theta) \rho^n)&#95;n \mid \lambda, \mu \in \mathbb{R}&#92;&#125;$.
 
 </div>
 
@@ -1910,7 +1910,7 @@ $p \in \mathcal{L}(E)$ est un projecteur si et seulement si $p \circ p = p$, et 
 
 <span class="bloc-titre">Démonstration</span>
 
-On a déjà vu que $\operatorname{Ker} p \cap \operatorname{Im} p = \\{0\\}$ : soit $x \in \operatorname{Ker} p \cap \operatorname{Im} p$, $x = p(y)$ avec $y \in E$ ; $p(x) = 0$, donc $p \circ p(y) = 0 = p(y) = x$ (car $p \circ p = p$). $\operatorname{Im} p$ et $\operatorname{Ker} p$ sont donc en somme directe, et $x = x - p(x) + p(x)$ avec $p(x - p(x)) = p(x) - p \circ p(x) = p(x) - p(x) = 0$, donc $E = \operatorname{Ker} p \oplus \operatorname{Im} p$. Soit $\tilde{p}$ la projection sur $\operatorname{Im} p$ parallèlement à $\operatorname{Ker} p$ ; la décomposition de $x$ selon $\operatorname{Im} p$ et $\operatorname{Ker} p$ est $x = p(x) + (x - p(x))$, donc $\tilde{p}(x) = p(x)$, d'où $p = \tilde{p}$ : $p$ est bien la projection sur $\operatorname{Im} p$ parallèlement à $\operatorname{Ker} p$.
+On a déjà vu que $\operatorname{Ker} p \cap \operatorname{Im} p = &#92;&#123;0&#92;&#125;$ : soit $x \in \operatorname{Ker} p \cap \operatorname{Im} p$, $x = p(y)$ avec $y \in E$ ; $p(x) = 0$, donc $p \circ p(y) = 0 = p(y) = x$ (car $p \circ p = p$). $\operatorname{Im} p$ et $\operatorname{Ker} p$ sont donc en somme directe, et $x = x - p(x) + p(x)$ avec $p(x - p(x)) = p(x) - p \circ p(x) = p(x) - p(x) = 0$, donc $E = \operatorname{Ker} p \oplus \operatorname{Im} p$. Soit $\tilde{p}$ la projection sur $\operatorname{Im} p$ parallèlement à $\operatorname{Ker} p$ ; la décomposition de $x$ selon $\operatorname{Im} p$ et $\operatorname{Ker} p$ est $x = p(x) + (x - p(x))$, donc $\tilde{p}(x) = p(x)$, d'où $p = \tilde{p}$ : $p$ est bien la projection sur $\operatorname{Im} p$ parallèlement à $\operatorname{Ker} p$.
 
 </div>
 
@@ -2054,7 +2054,7 @@ $H$ sous-espace vectoriel de $E$ : $H$ est un hyperplan de $E$ si et seulement s
 
 <span class="bloc-titre">Démonstration</span>
 
-$\Rightarrow$ Si $H = \operatorname{Ker} u^&#42;$ avec $u^&#42; \neq 0$ : $\dim H = \dim \operatorname{Ker} u^&#42; = n - \operatorname{rg} u^&#42;$. Or $\operatorname{Im} u^&#42; \subset \mathbb{K}$, donc $\operatorname{rg} u^&#42; \leq 1$ ; si $\operatorname{rg} u^&#42; = 0$, $\operatorname{Im} u^&#42; = \\{0\\}$ et $u^&#42; = 0$, impossible. Donc $\operatorname{rg} u^&#42; = 1$ et $\dim H = n - 1$ : $H$ est un hyperplan.
+$\Rightarrow$ Si $H = \operatorname{Ker} u^&#42;$ avec $u^&#42; \neq 0$ : $\dim H = \dim \operatorname{Ker} u^&#42; = n - \operatorname{rg} u^&#42;$. Or $\operatorname{Im} u^&#42; \subset \mathbb{K}$, donc $\operatorname{rg} u^&#42; \leq 1$ ; si $\operatorname{rg} u^&#42; = 0$, $\operatorname{Im} u^&#42; = &#92;&#123;0&#92;&#125;$ et $u^&#42; = 0$, impossible. Donc $\operatorname{rg} u^&#42; = 1$ et $\dim H = n - 1$ : $H$ est un hyperplan.
 
 $\Leftarrow$ Soit $H$ un hyperplan : soit $\mathcal{B} = (e_1, \dots, e&#95;{n-1})$ une base de $H$ ($\dim H = n - 1$). Complétons $\mathcal{B}$ en une base de $E$ : $(e_1, \dots, e_n)$. Définissons $u^&#42;$ par $u^&#42;(e_i) = 0$ pour $i = 1, \dots, n-1$ et $u^&#42;(e_n) = 1$. J'ai déterminé l'image d'une base, donc une forme linéaire $u^&#42;$. Alors
 
@@ -2113,7 +2113,7 @@ $$\forall (x_i)_{i \in I} \in A^I,\ \forall (\lambda_i)_{i \in I} \in \mathbb{K}
 
 $$\lambda(x_0 + k x_1) + \mu(x_0 + k' x_1) = (\lambda + \mu) x_0 + (\lambda k + \mu k') x_1 = x_0 + k'' x_1 \in A$$
 
-- $A = \\{(u_n)&#95;n \in \mathbb{R}^{\mathbb{N}} \mid u&#95;{n+1} = 2u_n + a\\}$, $a \in \mathbb{R}$.
+- $A = &#92;&#123;(u_n)&#95;n \in \mathbb{R}^{\mathbb{N}} \mid u&#95;{n+1} = 2u_n + a&#92;&#125;$, $a \in \mathbb{R}$.
 
 </div>
 
@@ -2121,7 +2121,7 @@ $$\lambda(x_0 + k x_1) + \mu(x_0 + k' x_1) = (\lambda + \mu) x_0 + (\lambda k + 
 
 <span class="bloc-titre">Définition</span>
 
-Soit $A$ un sous-espace affine non vide et $x_0 \in A$. $E_0 = \\{x - x_0 \mid x \in A\\}$ est un sous-espace vectoriel de $E$, indépendant du choix de $x_0$, appelé **espace directeur** de $A$.
+Soit $A$ un sous-espace affine non vide et $x_0 \in A$. $E_0 = &#92;&#123;x - x_0 \mid x \in A&#92;&#125;$ est un sous-espace vectoriel de $E$, indépendant du choix de $x_0$, appelé **espace directeur** de $A$.
 
 </div>
 
@@ -2129,7 +2129,7 @@ Soit $A$ un sous-espace affine non vide et $x_0 \in A$. $E_0 = \\{x - x_0 \mid x
 
 <span class="bloc-titre">Démonstration</span>
 
-Soit $x_1 \in A$, $E_1 = \\{x - x_1 \mid x \in A\\}$. Si $y = x - x_0 \in E_0$ (avec $x \in A$), alors $x - x_0 + x_1 = 1 \cdot x + (-1) \cdot x_0 + 1 \cdot x_1 \in A$ (barycentre, car $1 - 1 + 1 = 1$), donc $y = (x - x_0 + x_1) - x_1 \in E_1$ : ainsi $E_0 \subset E_1$. En échangeant les rôles de $x_1$ et $x_0$, on a de même $E_1 \subset E_0$ ; donc $E_0 = E_1$ : l'espace directeur ne dépend pas du choix de $x_0$.
+Soit $x_1 \in A$, $E_1 = &#92;&#123;x - x_1 \mid x \in A&#92;&#125;$. Si $y = x - x_0 \in E_0$ (avec $x \in A$), alors $x - x_0 + x_1 = 1 \cdot x + (-1) \cdot x_0 + 1 \cdot x_1 \in A$ (barycentre, car $1 - 1 + 1 = 1$), donc $y = (x - x_0 + x_1) - x_1 \in E_1$ : ainsi $E_0 \subset E_1$. En échangeant les rôles de $x_1$ et $x_0$, on a de même $E_1 \subset E_0$ ; donc $E_0 = E_1$ : l'espace directeur ne dépend pas du choix de $x_0$.
 
 Montrons que $E_0$ est un sous-espace vectoriel : soient $x, y \in A$ et $\lambda \in \mathbb{K}$ ; $\lambda(x - x_0) + (y - x_0) = \lambda x + (1 - \lambda) y - x_0$, et $\lambda x + (1 - \lambda) y \in A$ (barycentre, car $\lambda + (1 - \lambda) = 1$), donc $\lambda(x - x_0) + (y - x_0) \in E_0$. Donc $E_0$ est un sous-espace vectoriel.
 
@@ -2139,7 +2139,7 @@ Montrons que $E_0$ est un sous-espace vectoriel : soient $x, y \in A$ et $\lambd
 
 <span class="bloc-titre">Propriété</span>
 
-Si $A$ est non vide, son espace directeur est $E_0 = \\{x - y \mid x, y \in A\\}$.
+Si $A$ est non vide, son espace directeur est $E_0 = &#92;&#123;x - y \mid x, y \in A&#92;&#125;$.
 
 </div>
 
@@ -2147,7 +2147,7 @@ Si $A$ est non vide, son espace directeur est $E_0 = \\{x - y \mid x, y \in A\\}
 
 <span class="bloc-titre">Démonstration</span>
 
-Soit $x_0 \in A$ ; l'espace directeur de $A$ est $E_0 = \\{x - x_0 \mid x \in A\\}$. Posons $F = \\{x - y \mid x, y \in A\\}$. $E_0 \subset F$ (prendre $y = x_0$). Réciproquement, si $z \in F$, $z = x - y$ avec $x, y \in A$, alors $z = (x - x_0) - (y - x_0) \in E_0$ car $E_0$ est un sous-espace vectoriel. Donc $F = E_0$.
+Soit $x_0 \in A$ ; l'espace directeur de $A$ est $E_0 = &#92;&#123;x - x_0 \mid x \in A&#92;&#125;$. Posons $F = &#92;&#123;x - y \mid x, y \in A&#92;&#125;$. $E_0 \subset F$ (prendre $y = x_0$). Réciproquement, si $z \in F$, $z = x - y$ avec $x, y \in A$, alors $z = (x - x_0) - (y - x_0) \in E_0$ car $E_0$ est un sous-espace vectoriel. Donc $F = E_0$.
 
 </div>
 
@@ -2163,11 +2163,11 @@ Soit $V$ un sous-espace vectoriel de $E$ et $x_0 \in E$ : il existe un unique so
 
 <span class="bloc-titre">Démonstration</span>
 
-Si $A$ existe, d'après ce qui précède $V = \\{x - x_0 \mid x \in A\\}$, donc $A = \\{x_0 + y \mid y \in V\\}$ : unicité. Réciproquement, posons $A = x_0 + V$. $x_0 \in A$ (car $0 \in V$). Soit $(x_i)&#95;{i \in I}$ une famille de vecteurs de $A$ et $(\lambda_i)&#95;{i \in I}$ une famille de scalaires telle que $\sum \lambda_i = 1$. $x_i \in A$, donc $x_i = x_0 + y_i$ avec $y_i \in V$. Alors
+Si $A$ existe, d'après ce qui précède $V = &#92;&#123;x - x_0 \mid x \in A&#92;&#125;$, donc $A = &#92;&#123;x_0 + y \mid y \in V&#92;&#125;$ : unicité. Réciproquement, posons $A = x_0 + V$. $x_0 \in A$ (car $0 \in V$). Soit $(x_i)&#95;{i \in I}$ une famille de vecteurs de $A$ et $(\lambda_i)&#95;{i \in I}$ une famille de scalaires telle que $\sum \lambda_i = 1$. $x_i \in A$, donc $x_i = x_0 + y_i$ avec $y_i \in V$. Alors
 
 $$\sum_{i \in I} \lambda_i x_i = x_0 + \sum_{i \in I} \lambda_i y_i \in A$$
 
-car $\sum \lambda_i y_i \in V$ ($V$ est un sous-espace vectoriel). Donc $A$ est un sous-espace affine non vide, de sous-espace directeur $\\{x - x_0 \mid x \in A\\} = V$.
+car $\sum \lambda_i y_i \in V$ ($V$ est un sous-espace vectoriel). Donc $A$ est un sous-espace affine non vide, de sous-espace directeur $&#92;&#123;x - x_0 \mid x \in A&#92;&#125; = V$.
 
 </div>
 
@@ -2175,7 +2175,7 @@ car $\sum \lambda_i y_i \in V$ ($V$ est un sous-espace vectoriel). Donc $A$ est 
 
 <span class="bloc-titre">Exemple</span>
 
-$V = \\{(u_n)&#95;n \in \mathbb{R}^{\mathbb{N}} \mid u&#95;{n+1} = u_n + u&#95;{n-1},\ n \geq 1\\}$ est un sous-espace vectoriel de $\mathbb{R}^{\mathbb{N}}$ ; pour $x_0 = (1/n)&#95;n$, $A = x_0 + V$ est l'unique sous-espace affine contenant $x_0$ de direction $V$.
+$V = &#92;&#123;(u_n)&#95;n \in \mathbb{R}^{\mathbb{N}} \mid u&#95;{n+1} = u_n + u&#95;{n-1},\ n \geq 1&#92;&#125;$ est un sous-espace vectoriel de $\mathbb{R}^{\mathbb{N}}$ ; pour $x_0 = (1/n)&#95;n$, $A = x_0 + V$ est l'unique sous-espace affine contenant $x_0$ de direction $V$.
 
 </div>
 
@@ -2211,7 +2211,7 @@ Si $V_1$ et $V_2$ sont deux sous-espaces vectoriels supplémentaires, alors $A_1
 
 <span class="bloc-titre">Démonstration</span>
 
-$A_1 \neq \varnothing$ (de même $A_2$) ; soient $x_1 \in A_1$, $x_2 \in A_2$. $x_1 - x_2 \in E = V_1 \oplus V_2$, donc $x_1 - x_2 = y_1 + y_2$ avec $y_1 \in V_1$, $y_2 \in V_2$. Alors $y = x_1 - y_1 = x_2 + y_2 \in A_1 \cap A_2$ (car $x_1 + V_1 = A_1$, $x_2 + V_2 = A_2$). D'après la propriété précédente, $A_1 \cap A_2$ admet pour espace directeur $V_1 \cap V_2 = \\{0\\}$ ; donc $A_1 \cap A_2 = \\{y\\} + \\{0\\} = \\{y\\}$.
+$A_1 \neq \varnothing$ (de même $A_2$) ; soient $x_1 \in A_1$, $x_2 \in A_2$. $x_1 - x_2 \in E = V_1 \oplus V_2$, donc $x_1 - x_2 = y_1 + y_2$ avec $y_1 \in V_1$, $y_2 \in V_2$. Alors $y = x_1 - y_1 = x_2 + y_2 \in A_1 \cap A_2$ (car $x_1 + V_1 = A_1$, $x_2 + V_2 = A_2$). D'après la propriété précédente, $A_1 \cap A_2$ admet pour espace directeur $V_1 \cap V_2 = &#92;&#123;0&#92;&#125;$ ; donc $A_1 \cap A_2 = &#92;&#123;y&#92;&#125; + &#92;&#123;0&#92;&#125; = &#92;&#123;y&#92;&#125;$.
 
 </div>
 
@@ -2233,7 +2233,7 @@ Si $A$ est un sous-espace affine non vide et si $V$ son espace directeur est de 
 
 <span class="bloc-titre">Exemple</span>
 
-Dans $\mathbb{R}^3$, $H = \\{(x, y, z) \mid x + y + z = a\\}$ est un hyperplan affine, de direction l'hyperplan vectoriel $x + y + z = 0$.
+Dans $\mathbb{R}^3$, $H = &#92;&#123;(x, y, z) \mid x + y + z = a&#92;&#125;$ est un hyperplan affine, de direction l'hyperplan vectoriel $x + y + z = 0$.
 
 </div>
 
@@ -2249,11 +2249,11 @@ L'équation d'un hyperplan affine est $u^&#42;(x) = a$ avec $a \in \mathbb{K}$, 
 
 <span class="bloc-titre">Démonstration</span>
 
-**Lemme.** Si $u^&#42;$ est une forme linéaire et $a \in \mathbb{K}$, soit $A = \\{x \in E \mid u^&#42;(x) = a\\}$. Si $u^&#42; = 0$ : si $a = 0$, $A = E$ ; si $a \neq 0$, $A = \varnothing$. Si $u^&#42; \neq 0$ : d'abord $A \neq \varnothing$ car $\operatorname{rg} u^&#42; = 1$, $\operatorname{Im} u^&#42; = \mathbb{K}$, donc $\exists b \in E$ tel que $u^&#42;(b) = a$ ; alors
+**Lemme.** Si $u^&#42;$ est une forme linéaire et $a \in \mathbb{K}$, soit $A = &#92;&#123;x \in E \mid u^&#42;(x) = a&#92;&#125;$. Si $u^&#42; = 0$ : si $a = 0$, $A = E$ ; si $a \neq 0$, $A = \varnothing$. Si $u^&#42; \neq 0$ : d'abord $A \neq \varnothing$ car $\operatorname{rg} u^&#42; = 1$, $\operatorname{Im} u^&#42; = \mathbb{K}$, donc $\exists b \in E$ tel que $u^&#42;(b) = a$ ; alors
 
 $$A = \{x \in E \mid u^*(x) = u^*(b)\} = \{x \in E \mid x - b \in \operatorname{Ker} u^*\} = b + \operatorname{Ker} u^*$$
 
-sea affine de direction $\operatorname{Ker} u^&#42;$. Si $\dim E = n$ et $u^&#42; \neq 0$ : $A = \\{x \in E \mid u^&#42;(x) = a\\}$ est un sous-espace affine de direction l'hyperplan vectoriel $\operatorname{Ker} u^&#42;$, d'équation $u^&#42;(x) = 0$. Donc $A$ est un hyperplan affine.
+sea affine de direction $\operatorname{Ker} u^&#42;$. Si $\dim E = n$ et $u^&#42; \neq 0$ : $A = &#92;&#123;x \in E \mid u^&#42;(x) = a&#92;&#125;$ est un sous-espace affine de direction l'hyperplan vectoriel $\operatorname{Ker} u^&#42;$, d'équation $u^&#42;(x) = 0$. Donc $A$ est un hyperplan affine.
 
 Réciproque : si $A$ est un hyperplan affine, $A = b + H$ avec $H$ hyperplan vectoriel. $H$ admet une équation $u^&#42;(x) = 0$, $u^&#42; \in E^&#42;$, $u^&#42; \neq 0$. Alors $x \in A \iff x - b \in H \iff u^&#42;(x - b) = 0 \iff u^&#42;(x) = u^&#42;(b)$. Donc $A$ admet une équation $u^&#42;(x) = a$ avec $a = u^&#42;(b)$.
 
@@ -2265,9 +2265,9 @@ Réciproque : si $A$ est un hyperplan affine, $A = b + H$ avec $H$ hyperplan vec
 
 <span class="bloc-titre">Exemple 1</span>
 
-Soit $u \in \mathcal{L}(E, F)$, $y \in F$, $A_y = \\{x \in E \mid u(x) = y\\}$. Si $y \notin \operatorname{Im} u$, $A_y = \varnothing$. Si $y \in \operatorname{Im} u$ : $y = u(x_0)$, alors $A_y = \\{x \in E \mid u(x) = u(x_0)\\} = x_0 + \operatorname{Ker} u$. $A_y$ est le sous-espace affine contenant $x_0$ d'espace directeur $\operatorname{Ker} u$.
+Soit $u \in \mathcal{L}(E, F)$, $y \in F$, $A_y = &#92;&#123;x \in E \mid u(x) = y&#92;&#125;$. Si $y \notin \operatorname{Im} u$, $A_y = \varnothing$. Si $y \in \operatorname{Im} u$ : $y = u(x_0)$, alors $A_y = &#92;&#123;x \in E \mid u(x) = u(x_0)&#92;&#125; = x_0 + \operatorname{Ker} u$. $A_y$ est le sous-espace affine contenant $x_0$ d'espace directeur $\operatorname{Ker} u$.
 
-**Conclusion** : si $u \in \mathcal{L}(E, F)$ et $y \in F$, alors $A = \\{x \in E \mid u(x) = y\\}$ est soit vide (si $y \notin \operatorname{Im} u$), soit c'est un sous-espace affine de direction $\operatorname{Ker} u$.
+**Conclusion** : si $u \in \mathcal{L}(E, F)$ et $y \in F$, alors $A = &#92;&#123;x \in E \mid u(x) = y&#92;&#125;$ est soit vide (si $y \notin \operatorname{Im} u$), soit c'est un sous-espace affine de direction $\operatorname{Ker} u$.
 
 </div>
 
@@ -2275,7 +2275,7 @@ Soit $u \in \mathcal{L}(E, F)$, $y \in F$, $A_y = \\{x \in E \mid u(x) = y\\}$. 
 
 <span class="bloc-titre">Exemple 2</span>
 
-$A = \\{(u_n)&#95;n \in \mathbb{C}^{\mathbb{N}} \mid u&#95;{n+2} = a u&#95;{n+1} + b u_n + c\\}$. Soient $u^0, u^1, \dots, u^k \in A$ et $\lambda_0, \dots, \lambda_k \in \mathbb{K}$ tels que $\sum&#95;{i=0}^{k} \lambda_i = 1$. Alors
+$A = &#92;&#123;(u_n)&#95;n \in \mathbb{C}^{\mathbb{N}} \mid u&#95;{n+2} = a u&#95;{n+1} + b u_n + c&#92;&#125;$. Soient $u^0, u^1, \dots, u^k \in A$ et $\lambda_0, \dots, \lambda_k \in \mathbb{K}$ tels que $\sum&#95;{i=0}^{k} \lambda_i = 1$. Alors
 
 $$\Big(\sum_{i=0}^{k} \lambda_i u^i\Big)_{n+2} = \sum_{i=0}^{k} \lambda_i u^i_{n+2} = \sum_{i=0}^{k} \lambda_i \big(a u^i_{n+1} + b u^i_n + c\big) = a\Big(\sum_{i=0}^{k} \lambda_i u^i\Big)_{n+1} + b\Big(\sum_{i=0}^{k} \lambda_i u^i\Big)_n + c$$
 
@@ -2287,7 +2287,7 @@ donc $\big(\sum&#95;{i=0}^{k} \lambda_i u^i\big) \in A$ : $A$ est un sous-espace
 
 <span class="bloc-titre">Exemple 2 (suite) — espace directeur et direction</span>
 
-$V = \\{(u_n - u^0_n)&#95;n \mid (u_n), (u^0_n) \in A\\} = \\{(v_n)&#95;n \mid v&#95;{n+2} = a v&#95;{n+1} + b v_n\\}$ : c'est un sous-espace vectoriel de dimension $2$ ($b \neq 0$), c'est l'espace directeur de $A$.
+$V = &#92;&#123;(u_n - u^0_n)&#95;n \mid (u_n), (u^0_n) \in A&#92;&#125; = &#92;&#123;(v_n)&#95;n \mid v&#95;{n+2} = a v&#95;{n+1} + b v_n&#92;&#125;$ : c'est un sous-espace vectoriel de dimension $2$ ($b \neq 0$), c'est l'espace directeur de $A$.
 
 Cherchons un élément de $A$, suite constante : $(u_n) = (u)&#95;n \in A$ ssi $u = au + bu + c$, c'est-à-dire $u(1 - a - b) = c$.
 
@@ -2321,7 +2321,7 @@ On dit que $A$ et $A'$, deux sous-espaces affines non vides, sont **parallèles*
 
 <span class="bloc-titre">Propriété</span>
 
-Tout plan qui contient $D$ a une équation de la forme $\alpha(x + y + z) + \beta(z - 2) = 0$, où $D : \\{x + y + z = 2,\ z = 0\\}$.
+Tout plan qui contient $D$ a une équation de la forme $\alpha(x + y + z) + \beta(z - 2) = 0$, où $D : &#92;&#123;x + y + z = 2,\ z = 0&#92;&#125;$.
 
 </div>
 
@@ -2337,11 +2337,11 @@ Tout plan qui contient $D$ a une équation de la forme $\alpha(x + y + z) + \bet
 <li>Soit $E = \mathbb{R}&#95;+^&#42; \times \mathbb{R}$ muni des lois $+$ et $\cdot$ définies ci-dessous. Montrer que $(E, +, \cdot)$ est un $\mathbb{R}$-espace vectoriel.
 $$(a, b) + (c, d) = (ac, b + d) \qquad \lambda(a, b) = (a^\lambda, \lambda b)$$</li>
 <li>Dans $\mathbb{R}^3$ muni des lois usuelles, les ensembles suivants sont-ils des sous-espaces vectoriels ?
-$A = \\{x + 2y + 3z \mid (x, y, z) \in \mathbb{R}^3\\}$, $B = \\{(x, y, z) \mid x^2 + y^2 + z^2 = 1\\}$, $C = \\{(x, y, z) \mid x \geq 0\\}$.</li>
+$A = &#92;&#123;x + 2y + 3z \mid (x, y, z) \in \mathbb{R}^3&#92;&#125;$, $B = &#92;&#123;(x, y, z) \mid x^2 + y^2 + z^2 = 1&#92;&#125;$, $C = &#92;&#123;(x, y, z) \mid x \geq 0&#92;&#125;$.</li>
 <li>Soit $E = \mathbb{R}^n$ muni des lois usuelles. Les ensembles suivants sont-ils des sous-espaces vectoriels ?
-$A = \\{(x_1, \dots, x_n) \mid x_1 = x_n = 0\\}$, $B = \\{(x_1, \dots, x_n) \mid x_1 = 0 \text{ ou } x_2 = 0\\}$, $C = \\{(x_1, \dots, x_n) \mid x_1 = 0\\}$.</li>
+$A = &#92;&#123;(x_1, \dots, x_n) \mid x_1 = x_n = 0&#92;&#125;$, $B = &#92;&#123;(x_1, \dots, x_n) \mid x_1 = 0 \text{ ou } x_2 = 0&#92;&#125;$, $C = &#92;&#123;(x_1, \dots, x_n) \mid x_1 = 0&#92;&#125;$.</li>
 <li>Soit $E = \mathbb{R}^{\mathbb{R}}$. Les ensembles suivants sont-ils des sous-espaces de $E$ ?
-$A = \\{\text{trinômes du second degré}\\}$, $B = \\{f \mid f(1) = 2f(0)\\}$, $C = \\{f \mid f(1) - f(0) = 1\\}$, $D = \\{f \mid \forall x \in \mathbb{R},\ f(1 - x) = f(x)\\}$, $E = \\{f \mid f \text{ bornée sur } \mathbb{R}\\}$, $F = \\{f \mid f \text{ est } \mathcal{C}^\infty \text{ sur } \mathbb{R}\\}$, $G = \\{f \mid f \text{ tend vers } 0 \text{ en } +\infty\\}$, $H = \\{f \mid f \text{ continue par morceaux sur } \mathbb{R}\\}$.</li>
+$A = &#92;&#123;\text{trinômes du second degré}&#92;&#125;$, $B = &#92;&#123;f \mid f(1) = 2f(0)&#92;&#125;$, $C = &#92;&#123;f \mid f(1) - f(0) = 1&#92;&#125;$, $D = &#92;&#123;f \mid \forall x \in \mathbb{R},\ f(1 - x) = f(x)&#92;&#125;$, $E = &#92;&#123;f \mid f \text{ bornée sur } \mathbb{R}&#92;&#125;$, $F = &#92;&#123;f \mid f \text{ est } \mathcal{C}^\infty \text{ sur } \mathbb{R}&#92;&#125;$, $G = &#92;&#123;f \mid f \text{ tend vers } 0 \text{ en } +\infty&#92;&#125;$, $H = &#92;&#123;f \mid f \text{ continue par morceaux sur } \mathbb{R}&#92;&#125;$.</li>
 <li>Soit $A$, $B$, $C$ trois sous-espaces d'un $\mathbb{K}$-espace vectoriel $E$ tels que $A \cap B = A \cap C$, $A + B = A + C$ et $B \subset C$. Montrer que $B = C$.</li>
 <li>Soit $A$, $B$, $C$ trois sous-espaces d'un $\mathbb{K}$-espace vectoriel $E$. Montrer l'équivalence :
 $$\{A \cap B = \{0\},\ (A + B) \cap C = \{0\}\} \iff \{A \cap C = \{0\},\ (A + C) \cap B = \{0\}\}$$</li>
@@ -2368,7 +2368,7 @@ $a = (1, 1, 1, 1)$, $b = (0, 1, 2, -1)$, $c = (1, 0, 1, -2)$, $d = (2, 1, 0, -1)
 <li value="13">Montrer que dans $\mathbb{R}^{\mathbb{R}}$, la famille suivante de fonctions est libre : $F = (f_a)&#95;{a \in \mathbb{R}}$ avec $f_a(x) = e^{ax}$.</li>
 <li value="14">Montrer que dans $E = \mathbb{R}^{\mathbb{R}}$, pour tout $(p, q) \in \mathbb{R}^2$, la famille $(f, g, h)$ avec $f(x) = \sin(x)$, $g(x) = \cos(p + x)$ et $h(x) = \sin(x + q)$ est liée.</li>
 <li value="15">Soit $E = \mathbb{R}^{\mathbb{N}}$ l'ensemble des suites réelles. Soit $S_x = (x^n)&#95;{n \in \mathbb{N}}$ pour $x$ réel. Montrer que $(S_x)&#95;{x > 0}$ est une famille libre de $E$.</li>
-<li value="16">Soit $V$ la partie de $\mathbb{R}^4$ définie par $V = \\{(x_1, x_2, x_3, x_4) \in \mathbb{R}^4 \mid x_1 = x_2 - 2x_3 \text{ et } x_3 = 2x_4\\}$. Montrer que $V$ est un sous-espace vectoriel de $E$ et trouver une base de $V$.</li>
+<li value="16">Soit $V$ la partie de $\mathbb{R}^4$ définie par $V = &#92;&#123;(x_1, x_2, x_3, x_4) \in \mathbb{R}^4 \mid x_1 = x_2 - 2x_3 \text{ et } x_3 = 2x_4&#92;&#125;$. Montrer que $V$ est un sous-espace vectoriel de $E$ et trouver une base de $V$.</li>
 </ol>
 
 **Applications linéaires.**

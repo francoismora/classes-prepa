@@ -174,7 +174,7 @@ est la **fonction rationnelle** associée à $F$.
 
 <span class="bloc-titre">Proposition</span>
 
-L'application $\mathbb{K}(X) \to \\{\text{fonctions rationnelles}\\}$, qui à $F$
+L'application $\mathbb{K}(X) \to &#92;&#123;\text{fonctions rationnelles}&#92;&#125;$, qui à $F$
 associe la fonction rationnelle $\varphi$ ci-dessus, est une **bijection**.
 
 </div>
@@ -360,7 +360,7 @@ $$\sum_{j=1}^{\alpha_i} \frac{B_{ij}}{(X - a_i)^j}$$
 
 ### 2) Recherche pratique des parties polaires
 
-**a) Pôle simple.** Soit $F = \dfrac{A}{B}$ avec $B = (X-a)\\, C$ et $C(a) \neq 0$.
+**a) Pôle simple.** Soit $F = \dfrac{A}{B}$ avec $B = (X-a)&#92;&#44; C$ et $C(a) \neq 0$.
 Alors la partie polaire relative à $a$ est $\dfrac{\alpha}{X - a}$ avec
 
 $$\alpha = \frac{A(a)}{C(a)} = \frac{A(a)}{B'(a)}$$
@@ -377,7 +377,7 @@ $$\frac{X^3}{(X-1)(X-2)(X+1)}
 
 </div>
 
-**b) Pôle multiple d'ordre $p \geq 2$.** Soit $B = (X-a)^p\\, C$ avec
+**b) Pôle multiple d'ordre $p \geq 2$.** Soit $B = (X-a)^p&#92;&#44; C$ avec
 $C(a) \neq 0$. On pose $y = X - a$ et on effectue la **division suivant les
 puissances croissantes à l'ordre $p-1$** de $A(Y + a)$ par $C(Y + a)$ :
 
@@ -449,17 +449,17 @@ $$\frac{1}{X^4+1}
 
 **Pôle de la forme $X^2+pX+q$.** Soit $P = X^2+pX+q$ (avec $p^2-4q<0$) et
 $\alpha \in \mathbb{C} \setminus \mathbb{R}$ une racine de $P$. Si
-$F = \dfrac{A}{P\\, C}$ avec $C(\alpha) \neq 0$, on écrit
+$F = \dfrac{A}{P&#92;&#44; C}$ avec $C(\alpha) \neq 0$, on écrit
 
 $$\frac{A}{P C} = \frac{aX + b}{P} + \frac{D}{C}$$
 
 En évaluant en $\alpha$ : $\dfrac{A(\alpha)}{C(\alpha)} = a\alpha + b$,
 écriture **unique** avec $a, b \in \mathbb{R}$ puisque $\alpha \notin \mathbb{R}$.
-On utilise $\alpha + \bar\alpha = 2\\,\mathrm{Re}(\alpha) = -p$ et
+On utilise $\alpha + \bar\alpha = 2&#92;&#44;\mathrm{Re}(\alpha) = -p$ et
 $\alpha\bar\alpha = q$.
 
 **Cas d'un facteur $(X^2+pX+q)^n$, $n \geq 2$.** Si
-$F = \dfrac{A}{(X^2+pX+q)^n\\, C}$ avec $C \wedge P = 1$, alors
+$F = \dfrac{A}{(X^2+pX+q)^n&#92;&#44; C}$ avec $C \wedge P = 1$, alors
 
 $$F = \frac{a_1 X + b_1}{X^2+pX+q} + \dots + \frac{a_n X + b_n}{(X^2+pX+q)^n} + \frac{D}{C}$$
 

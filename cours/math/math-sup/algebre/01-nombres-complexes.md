@@ -72,7 +72,7 @@ $\mathbb{C}$, c'est $\mathbb{R}^2$ muni de ces deux lois.
 
 ### 2) Immersion de $\mathbb{R}$
 
-Graphiquement, $\\{(x, 0) \mid x \in \mathbb{R}\\} \overset{\sim}{=} \mathbb{R}$ (cas isomorphe).
+Graphiquement, $&#92;&#123;(x, 0) \mid x \in \mathbb{R}&#92;&#125; \overset{\sim}{=} \mathbb{R}$ (cas isomorphe).
 
 Soit $i = (0, 1)$ et $(a, b) = (a, 0) + (0, b) \to (a, 0) + (0, 1) \times (b, 0)$. On écrit $(a, b) = a + ib$.
 
@@ -141,9 +141,9 @@ $$|z| = \sqrt{N(z)}$$
 
 - $|z \cdot z'| = |z| \cdot |z'|$ ;
 - $|z \cdot z'|^2 = |z|^2 \cdot |z'|^2$ ;
-- $N(z) = z\\,\overline{z}$, soit $|z|^2 = z\\,\overline{z}$ ;
+- $N(z) = z&#92;&#44;\overline{z}$, soit $|z|^2 = z&#92;&#44;\overline{z}$ ;
 - $|z| = 0 \Leftrightarrow z = 0$ ;
-- tout complexe non nul a un inverse dans $\mathbb{C}$, car $\dfrac{z\\,\overline{z}}{|z|^2} = 1$, d'où $\dfrac{\overline{z}}{|z|^2} = \dfrac{a - ib}{a^2 + b^2}$ est l'inverse de $z$ ;
+- tout complexe non nul a un inverse dans $\mathbb{C}$, car $\dfrac{z&#92;&#44;\overline{z}}{|z|^2} = 1$, d'où $\dfrac{\overline{z}}{|z|^2} = \dfrac{a - ib}{a^2 + b^2}$ est l'inverse de $z$ ;
 - $|z^{-1}| = |z|^{-1}$ ;
 - $|\overline{z}| = |z|$.
 
@@ -182,7 +182,7 @@ D'où $|z| \geq |\mathrm{Re}(z)| \geq \mathrm{Re}(z)$, on a $|z+z'|^2 \leq (|z|+
 
 **Cas d'égalité** : $|z+z'|^2 = (|z|+|z'|)^2$ si et seulement si $|z'\overline{z}| = \mathrm{Re}(z'\overline{z})$, soit $|z'\overline{z}| = |\mathrm{Re}(z'\overline{z})|$, donc $z'\overline{z} \in \mathbb{R}$, avec $z'\overline{z} = \lambda |z|^2$, $\lambda \in \mathbb{R}$.
 
-Si $z \neq 0$, $z' = \dfrac{\lambda}{|z|^2}\\,z = \mu z$ avec $\mu \in \mathbb{R}$. De plus $z'\overline{z} = \mu|z|^2$ et $|\mu|\\,|z|^2 = \mathrm{Re}(\mu|z|^2) = \mu|z|^2$ ; comme $z \neq 0$, $|\mu| = \mu$, donc $\mu \in \mathbb{R}&#95;+$.
+Si $z \neq 0$, $z' = \dfrac{\lambda}{|z|^2}&#92;&#44;z = \mu z$ avec $\mu \in \mathbb{R}$. De plus $z'\overline{z} = \mu|z|^2$ et $|\mu|&#92;&#44;|z|^2 = \mathrm{Re}(\mu|z|^2) = \mu|z|^2$ ; comme $z \neq 0$, $|\mu| = \mu$, donc $\mu \in \mathbb{R}&#95;+$.
 
 Il y a égalité si et seulement si $z = 0$ ou $z' = \mu z$ avec $\mu \in \mathbb{R}&#95;+$.
 
@@ -235,12 +235,12 @@ On appelle **argument** de $z \neq 0$ l'angle $(\overrightarrow{Ox}, \overrighta
 
 $$z = |z|(\cos\theta + i\sin\theta) = |z|\,e^{i\theta}$$
 
-$|z|\\,e^{i\theta}$ est l'**écriture trigonométrique** de $z$ ; elle est **unique**, car si $z = r e^{i\alpha}$ avec $r > 0$, alors $|z| = r$ et $\alpha = \mathrm{Arg}\\,z$ $[2\pi]$.
+$|z|&#92;&#44;e^{i\theta}$ est l'**écriture trigonométrique** de $z$ ; elle est **unique**, car si $z = r e^{i\alpha}$ avec $r > 0$, alors $|z| = r$ et $\alpha = \mathrm{Arg}&#92;&#44;z$ $[2\pi]$.
 
 - $e^{i\theta} = 1$ si et seulement si $\theta = 0$ $[2\pi]$ ;
 - $e^{i\theta} = e^{i\theta'}$ si et seulement si $e^{i(\theta-\theta')} = 1$, soit $\theta - \theta' = 0$ $[2\pi]$, donc $\theta = \theta'$ $[2\pi]$.
 
-**Application** : si $z = r e^{i\alpha}$ avec $r > 0$, de $|z| = |r e^{i\alpha}| = |r|\\,|e^{i\alpha}| = |r| = r$, alors $z = |z|e^{i\theta} = |z|e^{i\alpha}$ avec $\theta = \mathrm{Arg}\\,z$ ; pour $z \neq 0$, $|z| > 0$, donc $e^{i\theta} = e^{i\alpha}$, d'où $e^{i(\theta-\alpha)} = 1$, et $\theta - \alpha = 0$ $[2\pi]$ : $\theta = \alpha$ $[2\pi]$.
+**Application** : si $z = r e^{i\alpha}$ avec $r > 0$, de $|z| = |r e^{i\alpha}| = |r|&#92;&#44;|e^{i\alpha}| = |r| = r$, alors $z = |z|e^{i\theta} = |z|e^{i\alpha}$ avec $\theta = \mathrm{Arg}&#92;&#44;z$ ; pour $z \neq 0$, $|z| > 0$, donc $e^{i\theta} = e^{i\alpha}$, d'où $e^{i(\theta-\alpha)} = 1$, et $\theta - \alpha = 0$ $[2\pi]$ : $\theta = \alpha$ $[2\pi]$.
 
 </div>
 
@@ -248,9 +248,9 @@ $|z|\\,e^{i\theta}$ est l'**écriture trigonométrique** de $z$ ; elle est **uni
 
 <span class="bloc-titre">Propriétés</span>
 
-- $\mathrm{Arg}(z z') = \mathrm{Arg}\\,z + \mathrm{Arg}\\,z'$ $[2\pi]$ ;
-- $\mathrm{Arg}(z^{-1}) = -\mathrm{Arg}\\,z$ ;
-- $\mathrm{Arg}(-z) = \pi + \mathrm{Arg}\\,z$.
+- $\mathrm{Arg}(z z') = \mathrm{Arg}&#92;&#44;z + \mathrm{Arg}&#92;&#44;z'$ $[2\pi]$ ;
+- $\mathrm{Arg}(z^{-1}) = -\mathrm{Arg}&#92;&#44;z$ ;
+- $\mathrm{Arg}(-z) = \pi + \mathrm{Arg}&#92;&#44;z$.
 
 </div>
 
@@ -376,11 +376,11 @@ $|z|^{1/n} e^{i(\frac{\theta}{n} + \frac{2k\pi}{n})} = u_k$, $k \in \mathbb{Z}$.
 
 $$u_k = |z|^{\frac{1}{n}} e^{i\left(\frac{\theta}{n} + \frac{2(qn+r)\pi}{n}\right)} = |z|^{\frac{1}{n}} e^{i\left(\frac{\theta}{n} + \frac{2r\pi}{n} + 2q\pi\right)} = |z|^{\frac{1}{n}} e^{i(\frac{\theta}{n} + \frac{2r\pi}{n})} = u_r$$
 
-d'où $u_k \in \\{u_0, u_1, \dots, u&#95;{n-1}\\}$.
+d'où $u_k \in &#92;&#123;u_0, u_1, \dots, u&#95;{n-1}&#92;&#125;$.
 
 </div>
 
-**Conclusion** : $\\{u_0, u_1, \dots, u&#95;{n-1}\\}$ sont les $n$ racines $n$-ièmes de $z$.
+**Conclusion** : $&#92;&#123;u_0, u_1, \dots, u&#95;{n-1}&#92;&#125;$ sont les $n$ racines $n$-ièmes de $z$.
 
 <div class="bloc propriete" markdown="1">
 
@@ -396,7 +396,7 @@ $$\{z_0\omega^k,\ 0 \leq k \leq n-1\} = \{z_0,\ z_0\omega,\ z_0\omega^2,\ \dots,
 <div class="bloc demo" markdown="1">
 <span class="bloc-titre">Démonstration</span>
 
-Car $(z_0\omega^k)^n = z_0^n\\,\omega^{kn} = z$ ; de plus elles sont distinctes, et on a $n$ racines d'une équation de degré $n$ : ce sont toutes les racines.
+Car $(z_0\omega^k)^n = z_0^n&#92;&#44;\omega^{kn} = z$ ; de plus elles sont distinctes, et on a $n$ racines d'une équation de degré $n$ : ce sont toutes les racines.
 
 </div>
 
@@ -441,7 +441,7 @@ où $\Delta = b^2 - 4ac$. Soit $\delta$ une racine carrée de $\Delta$ ($\delta^
 
 $$T = a\left(z + \frac{b}{2a} - \frac{\delta}{2a}\right)\left(z + \frac{b}{2a} + \frac{\delta}{2a}\right)$$
 
-Les racines sont $\left\\{-\dfrac{b+\delta}{2a},\ -\dfrac{b-\delta}{2a}\right\\}$.
+Les racines sont $\left&#92;&#123;-\dfrac{b+\delta}{2a},\ -\dfrac{b-\delta}{2a}\right&#92;&#125;$.
 
 <div class="bloc remarque" markdown="1">
 
@@ -480,10 +480,10 @@ Ajouter un complexe $b$ revient à faire subir à $M(z)$ la **translation** de v
 
 ### 3) Multiplication par un scalaire
 
-Soit $z \mapsto z' = az$ avec $a \neq 0$ ; on écrit $a = |a|e^{i\theta}$ avec $\theta = \mathrm{Arg}\\,a$.
+Soit $z \mapsto z' = az$ avec $a \neq 0$ ; on écrit $a = |a|e^{i\theta}$ avec $\theta = \mathrm{Arg}&#92;&#44;a$.
 
 - si $z = 0$, alors $z' = 0$ ;
-- si $z \neq 0$, $z = |z|e^{i\alpha}$, donc $z' = az = |a|\\,|z|\\,e^{i(\alpha+\theta)}$, soit $|z'| = |a|\\,|z|$ et $\mathrm{Arg}\\,z' = \alpha + \theta$ $[2\pi]$.
+- si $z \neq 0$, $z = |z|e^{i\alpha}$, donc $z' = az = |a|&#92;&#44;|z|&#92;&#44;e^{i(\alpha+\theta)}$, soit $|z'| = |a|&#92;&#44;|z|$ et $\mathrm{Arg}&#92;&#44;z' = \alpha + \theta$ $[2\pi]$.
 
 <div class="bloc propriete" markdown="1">
 
@@ -508,7 +508,7 @@ $$Z' = z' - \omega = az + b - (a\omega + b) = a(z - \omega) = aZ$$
 
 <span class="bloc-titre">Propriété</span>
 
-Si $a \neq 1$, effectuer la transformation $z \mapsto az + b$ revient à faire subir à $M(z)$ la similitude $s\big(\Omega, |a|, \mathrm{Arg}\\,a\big)$, où $\Omega$ est l'unique point invariant.
+Si $a \neq 1$, effectuer la transformation $z \mapsto az + b$ revient à faire subir à $M(z)$ la similitude $s\big(\Omega, |a|, \mathrm{Arg}&#92;&#44;a\big)$, où $\Omega$ est l'unique point invariant.
 
 </div>
 
@@ -523,7 +523,7 @@ Le point invariant $\Omega$ a pour affixe
 
 $$\omega = j\omega - 7 \Leftrightarrow \omega(1 - j) = -7 \Leftrightarrow \omega = \frac{7}{j-1} = \frac{7}{3}(\overline{j} - 1)$$
 
-La transformation $z \mapsto jz - 7$ est la rotation $\mathrm{Rot}\\!\left(\Omega, \dfrac{2\pi}{3}\right)$.
+La transformation $z \mapsto jz - 7$ est la rotation $\mathrm{Rot}&#92;&#33;\left(\Omega, \dfrac{2\pi}{3}\right)$.
 
 </div>
 
@@ -613,7 +613,7 @@ Expliquer alors la méthode de résolution de (1).</li>
 <ol>
 <li>Montrer que si $\Delta > 0$, il y a une racine réelle et 2 complexes ; on donnera son expression algébrique.</li>
 <li>Si $\Delta = 0$, il y a 2 racines réelles dont 1 double — donner les expressions.</li>
-<li>Si $\Delta < 0$, il y a 3 racines réelles, que l'on exprimera en fonction de $\rho$ et $\theta$ avec $a = \rho\\, e^{i\theta}$, $\rho \in \mathbb{R}&#95;+$. Comment détermine-t-on $\rho$ et $\theta$ ?</li>
+<li>Si $\Delta < 0$, il y a 3 racines réelles, que l'on exprimera en fonction de $\rho$ et $\theta$ avec $a = \rho&#92;&#44; e^{i\theta}$, $\rho \in \mathbb{R}&#95;+$. Comment détermine-t-on $\rho$ et $\theta$ ?</li>
 </ol>
 </li>
 <li>Expliquer comment ramener l'équation suivante à une équation du type (1) :

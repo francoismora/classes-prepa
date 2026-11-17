@@ -44,11 +44,11 @@ Il existe un ensemble $\mathbb{N}$ non vide qui vérifie :
 
 $\mathbb{N}$ est non vide et $\mathbb{N} \subset \mathbb{N}$, donc $\mathbb{N}$ admet un ppe d'après $A_1$ ; on le note $0$.
 
-Quels que soient $x, y \in \mathbb{N}$, on a $\\{x, y\\} \subset \mathbb{N}$, donc $\\{x, y\\}$ admet un ppe : si c'est $x$, alors $x \leq y$, sinon c'est $y$ et $y \leq x$. Ainsi $\mathbb{N}$ est totalement ordonné.
+Quels que soient $x, y \in \mathbb{N}$, on a $&#92;&#123;x, y&#92;&#125; \subset \mathbb{N}$, donc $&#92;&#123;x, y&#92;&#125;$ admet un ppe : si c'est $x$, alors $x \leq y$, sinon c'est $y$ et $y \leq x$. Ainsi $\mathbb{N}$ est totalement ordonné.
 
-Soit $a \in \mathbb{N}$ et posons $E_a^+ = \\{x \in \mathbb{N} \mid x > a\\}$. Si $E_a^+$ était vide, on aurait $x \leq a$ pour tout $x \in \mathbb{N}$ (car $\mathbb{N}$ est totalement ordonné), et $a$ serait un pge de $\mathbb{N}$, ce qui contredit $A_3$. Donc $E_a^+$ est non vide et admet un ppe $a^+$ d'après $A_1$. De plus $]a, a^+[ \cap \mathbb{N} = \varnothing$ : car si $b \in \mathbb{N}$ vérifiait $a < b < a^+$, alors $b \in E_a^+$ donc $b \geq a^+$, absurde.
+Soit $a \in \mathbb{N}$ et posons $E_a^+ = &#92;&#123;x \in \mathbb{N} \mid x > a&#92;&#125;$. Si $E_a^+$ était vide, on aurait $x \leq a$ pour tout $x \in \mathbb{N}$ (car $\mathbb{N}$ est totalement ordonné), et $a$ serait un pge de $\mathbb{N}$, ce qui contredit $A_3$. Donc $E_a^+$ est non vide et admet un ppe $a^+$ d'après $A_1$. De plus $]a, a^+[ \cap \mathbb{N} = \varnothing$ : car si $b \in \mathbb{N}$ vérifiait $a < b < a^+$, alors $b \in E_a^+$ donc $b \geq a^+$, absurde.
 
-Posons $E_a^- = \\{x \in \mathbb{N} \mid x < a\\}$. Si $a$ est non nul, alors $a \neq 0$ (car $0$ est le ppe de $\mathbb{N}$), donc $E_a^-$ est non vide ; elle est majorée par $a$, donc elle admet un pge $a^-$ d'après $A_2$. Alors $]a^-, a[ \cap \mathbb{N} = \varnothing$ par caractérisation du pge.
+Posons $E_a^- = &#92;&#123;x \in \mathbb{N} \mid x < a&#92;&#125;$. Si $a$ est non nul, alors $a \neq 0$ (car $0$ est le ppe de $\mathbb{N}$), donc $E_a^-$ est non vide ; elle est majorée par $a$, donc elle admet un pge $a^-$ d'après $A_2$. Alors $]a^-, a[ \cap \mathbb{N} = \varnothing$ par caractérisation du pge.
 
 </div>
 
@@ -91,7 +91,7 @@ Si $P(n)$ est un **prédicat** tel que $P(0)$ est vrai et $P(n) \Rightarrow P(n+
 
 <span class="bloc-titre">Démonstration</span>
 
-Soit $A = \\{n \in \mathbb{N} \mid P(n) \text{ est vrai}\\}$. $A$ contient $0$ ; si $n \in A$, alors $P(n)$ est vrai, donc $P(n+1)$ est vrai, donc $n+1 \in A$ : ainsi $A = \mathbb{N}$ d'après le théorème.
+Soit $A = &#92;&#123;n \in \mathbb{N} \mid P(n) \text{ est vrai}&#92;&#125;$. $A$ contient $0$ ; si $n \in A$, alors $P(n)$ est vrai, donc $P(n+1)$ est vrai, donc $n+1 \in A$ : ainsi $A = \mathbb{N}$ d'après le théorème.
 
 </div>
 
@@ -194,9 +194,9 @@ $q$ s'appelle le **quotient** et $r$ le **reste** de la division euclidienne de 
 
 <span class="bloc-titre">Démonstration</span>
 
-**Unicité.** Supposons qu'il existe un couple $(q, r)$ tel que $a = bq + r$ avec $0 \leq r < b$. Alors $bq \leq a = bq + r < b(q+1)$. Posons $E_a = \\{m \in \mathbb{N} \mid bm \leq a\\}$ : on a $q \in E_a$ et $q + 1 \notin E_a$, donc $q$ est le pge de $E_a$ ; $q$ est donc unique, et alors $r = a - bq$ est unique.
+**Unicité.** Supposons qu'il existe un couple $(q, r)$ tel que $a = bq + r$ avec $0 \leq r < b$. Alors $bq \leq a = bq + r < b(q+1)$. Posons $E_a = &#92;&#123;m \in \mathbb{N} \mid bm \leq a&#92;&#125;$ : on a $q \in E_a$ et $q + 1 \notin E_a$, donc $q$ est le pge de $E_a$ ; $q$ est donc unique, et alors $r = a - bq$ est unique.
 
-**Existence.** Soit $E_a = \\{n \in \mathbb{N} \mid bn \leq a\\}$. On a $0 \in E_a$, donc $E_a$ est non vide, et elle est majorée par $a$ : elle admet donc un pge $q$ d'après $A_2$. Posons $r = a - bq$. On a bien $a = bq + r$ ; comme $q \in E_a$, $bq \leq a$ donc $r \geq 0$ ; et $q + 1 \notin E_a$ puisque $q$ est le pge de $E_a$, donc $(q+1)b > a$, c'est-à-dire $qb + b > a$, d'où $b > r$ : ainsi $0 \leq r < b$.
+**Existence.** Soit $E_a = &#92;&#123;n \in \mathbb{N} \mid bn \leq a&#92;&#125;$. On a $0 \in E_a$, donc $E_a$ est non vide, et elle est majorée par $a$ : elle admet donc un pge $q$ d'après $A_2$. Posons $r = a - bq$. On a bien $a = bq + r$ ; comme $q \in E_a$, $bq \leq a$ donc $r \geq 0$ ; et $q + 1 \notin E_a$ puisque $q$ est le pge de $E_a$, donc $(q+1)b > a$, c'est-à-dire $qb + b > a$, d'où $b > r$ : ainsi $0 \leq r < b$.
 
 </div>
 
@@ -224,7 +224,7 @@ Si $b \mid a$ : $a = bq$ avec $q \in \mathbb{N}$, et $a = bq + 0$ avec $0 \leq 0
 
 <span class="bloc-titre">Définition</span>
 
-Un ensemble $E$ est **fini** s'il existe une bijection avec un ensemble $\mathbb{N}&#95;n = \\{0, 1, \dots, n-1\\}$. On admet que $n$ est unique et on l'appelle le **cardinal** de $E$, noté $\mathrm{Card}\\,E = n$ (par convention, $\mathrm{Card}\\,\varnothing = 0$).
+Un ensemble $E$ est **fini** s'il existe une bijection avec un ensemble $\mathbb{N}&#95;n = &#92;&#123;0, 1, \dots, n-1&#92;&#125;$. On admet que $n$ est unique et on l'appelle le **cardinal** de $E$, noté $\mathrm{Card}&#92;&#44;E = n$ (par convention, $\mathrm{Card}&#92;&#44;\varnothing = 0$).
 
 </div>
 
@@ -252,8 +252,8 @@ $$\mathrm{Card}(A \times B) = \mathrm{Card}\,A \times \mathrm{Card}\,B$$
 
 <span class="bloc-titre">Propriété 1</span>
 
-- si $\mathrm{Card}\\,E = n$ et si $f : E \to F$ est **injective**, alors $\mathrm{Card}\\,F \geq n$ ;
-- si $\mathrm{Card}\\,F = n$ et si $f : E \to F$ est **injective**, alors $\mathrm{Card}\\,E \leq n$.
+- si $\mathrm{Card}&#92;&#44;E = n$ et si $f : E \to F$ est **injective**, alors $\mathrm{Card}&#92;&#44;F \geq n$ ;
+- si $\mathrm{Card}&#92;&#44;F = n$ et si $f : E \to F$ est **injective**, alors $\mathrm{Card}&#92;&#44;E \leq n$.
 
 </div>
 
@@ -261,7 +261,7 @@ $$\mathrm{Card}(A \times B) = \mathrm{Card}\,A \times \mathrm{Card}\,B$$
 
 <span class="bloc-titre">Démonstration</span>
 
-Écrivons $E = \\{a_0, a_1, \dots, a&#95;{n-1}\\}$ ; si $f$ est injective, $F$ contient $\\{f(a_0), f(a_1), \dots, f(a&#95;{n-1})\\}$, qui a $n$ éléments distincts, donc $F$ contient au moins $n$ éléments : $\mathrm{Card}\\,F \geq n$. Si de plus $\mathrm{Card}\\,F = n$, alors $\mathrm{Card}\\,E \leq \mathrm{Card}\\,F = n$.
+Écrivons $E = &#92;&#123;a_0, a_1, \dots, a&#95;{n-1}&#92;&#125;$ ; si $f$ est injective, $F$ contient $&#92;&#123;f(a_0), f(a_1), \dots, f(a&#95;{n-1})&#92;&#125;$, qui a $n$ éléments distincts, donc $F$ contient au moins $n$ éléments : $\mathrm{Card}&#92;&#44;F \geq n$. Si de plus $\mathrm{Card}&#92;&#44;F = n$, alors $\mathrm{Card}&#92;&#44;E \leq \mathrm{Card}&#92;&#44;F = n$.
 
 </div>
 
@@ -269,8 +269,8 @@ $$\mathrm{Card}(A \times B) = \mathrm{Card}\,A \times \mathrm{Card}\,B$$
 
 <span class="bloc-titre">Propriété 2</span>
 
-- si $\mathrm{Card}\\,E = n$ et si $f : E \to F$ est **surjective**, alors $\mathrm{Card}\\,F \leq n$ ;
-- si $\mathrm{Card}\\,F = n$ et si $f : E \to F$ est **surjective**, alors $\mathrm{Card}\\,E \geq n$.
+- si $\mathrm{Card}&#92;&#44;E = n$ et si $f : E \to F$ est **surjective**, alors $\mathrm{Card}&#92;&#44;F \leq n$ ;
+- si $\mathrm{Card}&#92;&#44;F = n$ et si $f : E \to F$ est **surjective**, alors $\mathrm{Card}&#92;&#44;E \geq n$.
 
 </div>
 
@@ -278,7 +278,7 @@ $$\mathrm{Card}(A \times B) = \mathrm{Card}\,A \times \mathrm{Card}\,B$$
 
 <span class="bloc-titre">Démonstration</span>
 
-Si $f$ est surjective, $f(E) = F = \\{f(a_i) \mid i \in \mathbb{N}&#95;n\\}$, donc $F$ a au plus $n$ éléments : $\mathrm{Card}\\,F \leq n$. Si de plus $\mathrm{Card}\\,F = n$, alors $\mathrm{Card}\\,E \geq n$ (sinon on aurait $\mathrm{Card}\\,F \leq \mathrm{Card}\\,E < n$, contradiction).
+Si $f$ est surjective, $f(E) = F = &#92;&#123;f(a_i) \mid i \in \mathbb{N}&#95;n&#92;&#125;$, donc $F$ a au plus $n$ éléments : $\mathrm{Card}&#92;&#44;F \leq n$. Si de plus $\mathrm{Card}&#92;&#44;F = n$, alors $\mathrm{Card}&#92;&#44;E \geq n$ (sinon on aurait $\mathrm{Card}&#92;&#44;F \leq \mathrm{Card}&#92;&#44;E < n$, contradiction).
 
 </div>
 
@@ -286,7 +286,7 @@ Si $f$ est surjective, $f(E) = F = \\{f(a_i) \mid i \in \mathbb{N}&#95;n\\}$, do
 
 <span class="bloc-titre">Propriété 3</span>
 
-Si $\mathrm{Card}\\,E = n$ et si $f : E \to F$ est **bijective**, alors $\mathrm{Card}\\,F = n$.
+Si $\mathrm{Card}&#92;&#44;E = n$ et si $f : E \to F$ est **bijective**, alors $\mathrm{Card}&#92;&#44;F = n$.
 
 </div>
 
@@ -302,7 +302,7 @@ a) c'est la propriété 1 et la propriété 2 ; b) on applique le résultat à $
 
 <span class="bloc-titre">Propriété 4</span>
 
-Si $\mathrm{Card}\\,E = n = \mathrm{Card}\\,F$ et si $f : E \to F$ est **injective** (resp. **surjective**), alors $f$ est **bijective**.
+Si $\mathrm{Card}&#92;&#44;E = n = \mathrm{Card}&#92;&#44;F$ et si $f : E \to F$ est **injective** (resp. **surjective**), alors $f$ est **bijective**.
 
 </div>
 
@@ -310,8 +310,8 @@ Si $\mathrm{Card}\\,E = n = \mathrm{Card}\\,F$ et si $f : E \to F$ est **injecti
 
 <span class="bloc-titre">Démonstration</span>
 
-- Si $f$ est injective : écrivons $E = \\{a_0, \dots, a&#95;{n-1}\\}$ ; alors $f(E) = \\{f(a_0), \dots, f(a&#95;{n-1})\\}$ et $\mathrm{Card}\\,f(E) = n$. Or $\mathrm{Card}\\,F = n$ et $f(E) \subset F$, donc $f(E) = F$ : $f$ est surjective, donc bijective.
-- Si $f$ est surjective : $f(E) = F = \\{f(a_i) \mid i \in \mathbb{N}&#95;n\\}$ et $\mathrm{Card}\\,F = n$ ; donc on a $n$ éléments de la forme $f(a_i)$, d'où $a_i \neq a_j \Rightarrow f(a_i) \neq f(a_j)$ (sinon $\\{f(a_i) \mid i \in \mathbb{N}&#95;n\\}$ aurait au plus $n-1$ éléments) : $f$ est injective.
+- Si $f$ est injective : écrivons $E = &#92;&#123;a_0, \dots, a&#95;{n-1}&#92;&#125;$ ; alors $f(E) = &#92;&#123;f(a_0), \dots, f(a&#95;{n-1})&#92;&#125;$ et $\mathrm{Card}&#92;&#44;f(E) = n$. Or $\mathrm{Card}&#92;&#44;F = n$ et $f(E) \subset F$, donc $f(E) = F$ : $f$ est surjective, donc bijective.
+- Si $f$ est surjective : $f(E) = F = &#92;&#123;f(a_i) \mid i \in \mathbb{N}&#95;n&#92;&#125;$ et $\mathrm{Card}&#92;&#44;F = n$ ; donc on a $n$ éléments de la forme $f(a_i)$, d'où $a_i \neq a_j \Rightarrow f(a_i) \neq f(a_j)$ (sinon $&#92;&#123;f(a_i) \mid i \in \mathbb{N}&#95;n&#92;&#125;$ aurait au plus $n-1$ éléments) : $f$ est injective.
 
 </div>
 
@@ -319,7 +319,7 @@ Si $\mathrm{Card}\\,E = n = \mathrm{Card}\\,F$ et si $f : E \to F$ est **injecti
 
 <span class="bloc-titre">Propriété 5</span>
 
-Si $\mathrm{Card}\\,E = n$ et $\mathrm{Card}\\,F = m$, alors il y a $m^n$ applications de $E$ vers $F$ :
+Si $\mathrm{Card}&#92;&#44;E = n$ et $\mathrm{Card}&#92;&#44;F = m$, alors il y a $m^n$ applications de $E$ vers $F$ :
 
 $$\mathrm{Card}\,\mathcal{F}(E, F) = m^n$$
 
@@ -355,7 +355,7 @@ Par définition : $f(a_1)$ peut être choisi de $m$ façons, $f(a_2)$ de $m-1$ f
 
 <span class="bloc-titre">Corollaire</span>
 
-Il y a $n!$ bijections de $E$ vers $F$ (car une bijection de $E$ vers $F$ est une injection, et réciproquement puisque $\mathrm{Card}\\,E = \mathrm{Card}\\,F$).
+Il y a $n!$ bijections de $E$ vers $F$ (car une bijection de $E$ vers $F$ est une injection, et réciproquement puisque $\mathrm{Card}&#92;&#44;E = \mathrm{Card}&#92;&#44;F$).
 
 </div>
 
@@ -365,9 +365,9 @@ Il y a $n!$ bijections de $E$ vers $F$ (car une bijection de $E$ vers $F$ est un
 
 <span class="bloc-titre">Propriétés</span>
 
-**a)** Si $\mathrm{Card}\\,E = n$, alors $\mathrm{Card}\\,\mathcal{P}(E) = 2^n$.
+**a)** Si $\mathrm{Card}&#92;&#44;E = n$, alors $\mathrm{Card}&#92;&#44;\mathcal{P}(E) = 2^n$.
 
-**b)** Si $\mathrm{Card}\\,E = n$ et $p \leq n$, il y a $C_n^p$ parties de $E$ de cardinal $p$, avec
+**b)** Si $\mathrm{Card}&#92;&#44;E = n$ et $p \leq n$, il y a $C_n^p$ parties de $E$ de cardinal $p$, avec
 
 $$C_n^p = \frac{n!}{p!\,(n-p)!} = \frac{n(n-1)\cdots(n-p+1)}{p!}$$
 
@@ -377,9 +377,9 @@ $$C_n^p = \frac{n!}{p!\,(n-p)!} = \frac{n(n-1)\cdots(n-p+1)}{p!}$$
 
 <span class="bloc-titre">Démonstration</span>
 
-**a)** Se donner une partie de $E$, c'est se donner son application caractéristique, c'est-à-dire une application de $E$ vers $\\{0, 1\\}$ ; il y en a $2^n$ d'après la propriété 5.
+**a)** Se donner une partie de $E$, c'est se donner son application caractéristique, c'est-à-dire une application de $E$ vers $&#92;&#123;0, 1&#92;&#125;$ ; il y en a $2^n$ d'après la propriété 5.
 
-**b)** Si je me donne une partie de cardinal $p$, $P = \\{a_1, \dots, a_p\\}$, et l'injection $i : \\{1, \dots, p\\} \to E$ telle que $i(\mathbb{N}&#95;p) = P$, alors toute autre injection $f : \mathbb{N}&#95;p \to E$ d'image $P$ s'écrit $f = i \circ g$, où $g = i^{-1} \circ f$ est une bijection de $\mathbb{N}&#95;p$ (par composition) ; réciproquement, si $g$ est une bijection de $\mathbb{N}&#95;p \to \mathbb{N}&#95;p$, alors $i \circ g$ est une injection de $\mathbb{N}&#95;p \to E$ d'image $P$.
+**b)** Si je me donne une partie de cardinal $p$, $P = &#92;&#123;a_1, \dots, a_p&#92;&#125;$, et l'injection $i : &#92;&#123;1, \dots, p&#92;&#125; \to E$ telle que $i(\mathbb{N}&#95;p) = P$, alors toute autre injection $f : \mathbb{N}&#95;p \to E$ d'image $P$ s'écrit $f = i \circ g$, où $g = i^{-1} \circ f$ est une bijection de $\mathbb{N}&#95;p$ (par composition) ; réciproquement, si $g$ est une bijection de $\mathbb{N}&#95;p \to \mathbb{N}&#95;p$, alors $i \circ g$ est une injection de $\mathbb{N}&#95;p \to E$ d'image $P$.
 
 Ainsi, **à une partie $P$ de cardinal $p$ correspondent exactement $p!$ injections de $\mathbb{N}&#95;p$ dans $E$ d'image $P$** (il y a $p!$ bijections de $\mathbb{N}&#95;p$). Or il y a $n(n-1)\cdots(n-p+1)$ injections de $\mathbb{N}&#95;p \to E$ (propriété 6), donc il y a
 
@@ -419,7 +419,7 @@ parties de cardinal $p$.
 
 $$\mathrm{Card}\{P \mid \mathrm{Card}\,P = p\} = \mathrm{Card}\{P \mid \mathrm{Card}\,P = n-p\}$$
 
-- Soit $a \in E$. Je cherche les parties de $E$ de cardinal $p+1$. À une telle partie $A$ : si $A$ contient $a$, il reste à choisir $p$ éléments de $E \setminus \\{a\\}$, ce qui peut se faire de $C_n^p$ façons ; si $A$ ne contient pas $a$, il y a $C_n^{p+1}$ façons de la choisir. Au total, il y a $C&#95;{n+1}^{p+1} = C_n^p + C_n^{p+1}$ parties à $p+1$ éléments de $E$.
+- Soit $a \in E$. Je cherche les parties de $E$ de cardinal $p+1$. À une telle partie $A$ : si $A$ contient $a$, il reste à choisir $p$ éléments de $E \setminus &#92;&#123;a&#92;&#125;$, ce qui peut se faire de $C_n^p$ façons ; si $A$ ne contient pas $a$, il y a $C_n^{p+1}$ façons de la choisir. Au total, il y a $C&#95;{n+1}^{p+1} = C_n^p + C_n^{p+1}$ parties à $p+1$ éléments de $E$.
 
 </div>
 
@@ -507,7 +507,7 @@ $$\alpha = \frac{1-\sqrt{5}}{2}, \qquad \beta = \frac{1+\sqrt{5}}{2}$$
 <ol>
 <li>Montrer que $\forall n \in \mathbb{N}$, $F_n = \dfrac{\sqrt{5}}{5}\big(\beta^{n+1} - \alpha^{n+1}\big)$.</li>
 <li>Montrer que $\forall n \in \mathbb{N}$, $F_n = C_n^0 + C&#95;{n-1}^1 + \cdots + \dots$</li>
-<li>Soit $G_n$ le nombre de parties (y compris le vide) de $\\{1, \dots, n\\}$ ne contenant pas deux entiers consécutifs. Montrer que $\forall n \geq 2$, $G_n = G&#95;{n-1} + G&#95;{n-2}$, puis que $G_n = F&#95;{n+1}$.</li>
+<li>Soit $G_n$ le nombre de parties (y compris le vide) de $&#92;&#123;1, \dots, n&#92;&#125;$ ne contenant pas deux entiers consécutifs. Montrer que $\forall n \geq 2$, $G_n = G&#95;{n-1} + G&#95;{n-2}$, puis que $G_n = F&#95;{n+1}$.</li>
 </ol>
 </li>
 <li>Résoudre dans $\mathbb{N}^&#42; \times \mathbb{N}^&#42;$ l'équation $x^y = y^x$.</li>
