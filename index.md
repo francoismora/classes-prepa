@@ -11,7 +11,7 @@ Cours de **Math Sup** et **Math Spé** (1993–1995) en **mathématiques**, **ph
 
 | Matière | Niveaux | Chapitres transcrits |
 |---|---|---|
-| [Mathématiques]({{ site.baseurl }}/cours/math/) | Math Sup, Math Spé | 13 — *Algèbre* (10 chapitres) et *Analyse* (3 chapitres), Math Sup |
+| [Mathématiques]({{ site.baseurl }}/cours/math/) | Math Sup, Math Spé | 14 — *Algèbre* (10 chapitres) et *Analyse* (4 chapitres), Math Sup |
 | Physique | Math Sup, Math Spé | — (à venir) |
 | Chimie | Math Sup, Math Spé | — (à venir) |
 
@@ -68,6 +68,13 @@ Cours de **Math Sup** et **Math Spé** (1993–1995) en **mathématiques**, **ph
   calculs, comatrice, Vandermonde, matrices par blocs, polynôme
   caractéristique), orientation, systèmes linéaires (Cramer, Gauss), feuille
   d'exercices (énoncés).
+- **Math Sup · Analyse — [Chapitre 1 : Suites]({{ site.baseurl }}/cours/math/math-sup/analyse/01-suites/)**
+  propriétés de $\mathbb{R}$ (ordre, borne supérieure, archimédien, partie entière),
+  généralités sur les suites, convergence et limites, théorèmes des gendarmes et des
+  suites monotones, suites adjacentes et segments emboîtés, suites extraites et valeurs
+  d'adhérence (Bolzano-Weierstrass), suites récurrentes $u_{n+1}=f(u_n)$, suites
+  complexes, notions sur les séries, approximation et écriture décimales des réels,
+  feuilles d'exercices et TD (énoncés).
 - **Math Sup · Analyse — [Chapitre 8 : Développements limités]({{ site.baseurl }}/cours/math/math-sup/analyse/08-developpements-limites/)**
   définition et unicité, formule de Taylor-Young, opérations sur les DL
   (somme, produit, quotient, composée, primitive, dérivée), applications aux
