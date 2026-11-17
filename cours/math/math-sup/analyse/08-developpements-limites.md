@@ -76,7 +76,7 @@ Réciproquement, si $f$ est continue en $a$ :
 $f(x) = f(a) + \big(f(x)-f(a)\big) = f(a) + \varepsilon(x)$ avec
 $\varepsilon(x) = f(x) - f(a) \to 0$, donc $f$ admet un DL d'ordre $0$ en $a$.
 
-Si $f$ admet un DL d'ordre $1$ en $a$ : $f(x) = a_0 + a_1(x-a) + (x-a)\,\varepsilon(x)$.
+Si $f$ admet un DL d'ordre $1$ en $a$ : $f(x) = a_0 + a_1(x-a) + (x-a)\\,\varepsilon(x)$.
 $f$ admet un DL d'ordre $0$, donc $f(a) = a_0$. Pour $x \neq a$ :
 
 $$
@@ -156,7 +156,7 @@ La propriété est donc récurrente pour $0 \leq k \leq n$ : $P = Q$.
 <span class="bloc-titre">Définition</span>
 
 On appelle **partie régulière** du DL la quantité $P(x-a)$, et **partie
-complémentaire** la quantité $(x-a)^n\,\varepsilon(x)$.
+complémentaire** la quantité $(x-a)^n\\,\varepsilon(x)$.
 
 On appelle **partie principale** du DL la quantité $a_p (x-a)^p$, où
 $p = \operatorname{val}(P)$ pour $P \neq 0$. Si $P \neq 0$ :
@@ -183,8 +183,8 @@ $$
 
 **Changement de variable.** Si $f$ est définie sur $I$ et
 $\forall x \in I,\ f(x) = P(x-a) + \varepsilon(x)(x-a)^n$, alors $g$ est définie sur
-$J = I - a = \{x - a \mid x \in I\}$ et, pour $y \in J$ :
-$g(y) = P(y) + \varepsilon(y+a)\,y^n = P(y) + \eta(y)\,y^n$ avec
+$J = I - a = \\{x - a \mid x \in I\\}$ et, pour $y \in J$ :
+$g(y) = P(y) + \varepsilon(y+a)\\,y^n = P(y) + \eta(y)\\,y^n$ avec
 $\eta(y) = \varepsilon(y+a) \xrightarrow[y\to 0]{} 0$ par composition de limites.
 
 **Parité.** Soit $I$ un intervalle centré et $\forall x \in I,\ f(x) = P(x) + x^n\varepsilon(x)$.
@@ -249,7 +249,7 @@ e^x &= 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \dots + \frac{x^n}{n!} + \mathr
 \end{aligned}
 $$
 
-avec $\left(\dfrac{1}{1+x}\right)^{(n)} = \dfrac{(-1)^n\, n!}{(1+x)^{n+1}}$.
+avec $\left(\dfrac{1}{1+x}\right)^{(n)} = \dfrac{(-1)^n\\, n!}{(1+x)^{n+1}}$.
 
 </div>
 
@@ -347,7 +347,7 @@ tronqué à l'ordre $n$.
 
 $Q(0) = g(0) \neq 0$ et $g$ ne s'annule pas sur un voisinage de $0$ (car $g$ est
 continue, puisqu'elle admet un DL d'ordre $0$). On écrit la division de $P$ par $Q$ :
-$P = Q\,T + X^{n+1} R$, d'où
+$P = Q\\,T + X^{n+1} R$, d'où
 
 $$
 \left(\frac{f}{g}\right)(x) = \frac{Q(x)T(x) + x^{n+1}R(x) + x^n\varepsilon(x)}{Q(x) + x^n\eta(x)}
@@ -455,7 +455,7 @@ $$
 
 Posons $\varphi(x) = f(x) - f(0) - b_0 x - \dots - \dfrac{b_n}{n+1}x^{n+1}$. Alors
 $\varphi'(x) = f'(x) - b_0 - b_1 x - \dots - b_n x^n = x^n\varepsilon(x)$ avec
-$\varepsilon(x) \to 0$. Pour $|x| < \alpha$ assez petit, $|\varphi'(x)| \leq \varepsilon\,|x|^n$ ;
+$\varepsilon(x) \to 0$. Pour $|x| < \alpha$ assez petit, $|\varphi'(x)| \leq \varepsilon\\,|x|^n$ ;
 par l'inégalité des accroissements finis, $|\varphi(x)| \leq \varepsilon \dfrac{|x|^{n+1}}{n+1}$,
 d'où $\varphi(x) = \mathrm{o}(x^{n+1})$.
 
@@ -616,15 +616,15 @@ $f''$ étant continue,
 <span class="bloc-titre">Définition</span>
 
 On dit que $f$, définie au voisinage de $+\infty$, admet un **DL à l'infini d'ordre $n$**
-si $g(x) = f\!\left(\dfrac{1}{x}\right)$ admet un DL d'ordre $n$ au voisinage de $0$.
-Sa partie régulière est alors $P\!\left(\dfrac{1}{x}\right)$, où $P$ est la partie
+si $g(x) = f\\!\left(\dfrac{1}{x}\right)$ admet un DL d'ordre $n$ au voisinage de $0$.
+Sa partie régulière est alors $P\\!\left(\dfrac{1}{x}\right)$, où $P$ est la partie
 régulière du DL de $g$.
 
 </div>
 
 <div class="bloc exemple" markdown="1">
 
-<span class="bloc-titre">Exemple — $\ln\!\left(1 + \frac{1}{x}\right)$ en $+\infty$</span>
+<span class="bloc-titre">Exemple — $\ln\\!\left(1 + \frac{1}{x}\right)$ en $+\infty$</span>
 
 Avec $y = \dfrac{1}{x}$ et $\ln(1+y) = y - \dfrac{y^2}{2} + \dfrac{y^3}{3} + \mathrm{o}(y^3)$ :
 
@@ -666,8 +666,8 @@ $$
 f(x) = g(y) = \frac{\frac{3}{y^2}+1}{\frac{1}{y}-1} = \frac{3+y^2}{y(1-y)} = \frac{1}{y}\big(3 + 3y + 4y^2 + \mathrm{o}(y^2)\big)
 $$
 
-donc $f(x) = x\left(3 + \dfrac{3}{x} + \dfrac{4}{x^2} + \mathrm{o}\!\left(\dfrac{1}{x^2}\right)\right)
-= 3x + 3 + \dfrac{4}{x} + \mathrm{o}\!\left(\dfrac{1}{x}\right)$.
+donc $f(x) = x\left(3 + \dfrac{3}{x} + \dfrac{4}{x^2} + \mathrm{o}\\!\left(\dfrac{1}{x^2}\right)\right)
+= 3x + 3 + \dfrac{4}{x} + \mathrm{o}\\!\left(\dfrac{1}{x}\right)$.
 
 $f$ admet donc pour asymptote la droite $(D) : y = 3x + 3$ ; en $+\infty$, $\Gamma$ est
 au-dessus de $(D)$ (signe de $a_2 = 4 > 0$), et en $-\infty$ au-dessous.
@@ -685,8 +685,8 @@ au-dessus de $(D)$ (signe de $a_2 = 4 > 0$), et en $-\infty$ au-dessous.
 <ol class="enonces">
 <li>
 <ol>
-<li>$f(x) = \ln(1+x)\,\dfrac{x^2}{1-x}$, ordre 6 au voisinage de 0</li>
-<li>$f(x) = \ln(x)\,\dfrac{(1-x)^2}{2-x}$, ordre 6 au voisinage de 1</li>
+<li>$f(x) = \ln(1+x)\\,\dfrac{x^2}{1-x}$, ordre 6 au voisinage de 0</li>
+<li>$f(x) = \ln(x)\\,\dfrac{(1-x)^2}{2-x}$, ordre 6 au voisinage de 1</li>
 <li>$f(x) = \dfrac{\sin x + 1 + x}{\cos x + e^x}$, ordre 3 au voisinage de 0</li>
 <li>$f(x) = \dfrac{\sin x + x}{x(\cos x + e^x)}$, ordre 3 au voisinage de 0</li>
 <li>$f(x) = \sin(\tan x)$, ordre 5 au voisinage de 0</li>
@@ -696,7 +696,7 @@ au-dessus de $(D)$ (signe de $a_2 = 4 > 0$), et en $-\infty$ au-dessous.
 <li>$f(x) = \dfrac{x}{1+x}$, ordre 4 au voisinage de $-\dfrac{1}{2}$</li>
 <li>$f(x) = (\tan x)^{\cos 2x}$, ordre 4 au voisinage de $\dfrac{\pi}{4}$</li>
 <li>$f(x) = (\cos x)^{\frac{1}{\sin^2 x}}$, ordre 4 au voisinage de 0</li>
-<li>$f(x) = \arcsin\!\left(\dfrac{e^x}{2}\right)$, ordre 5 au voisinage de 0</li>
+<li>$f(x) = \arcsin\\!\left(\dfrac{e^x}{2}\right)$, ordre 5 au voisinage de 0</li>
 <li>$f(x) = \arctan\sqrt{\dfrac{1+x}{3+x}}$, ordre 3 au voisinage de $+\infty$</li>
 </ol>
 </li>
@@ -704,7 +704,7 @@ au-dessus de $(D)$ (signe de $a_2 = 4 > 0$), et en $-\infty$ au-dessous.
 <ol>
 <li>$f(x) = \dfrac{\sin x \sqrt{1+x+\ln(1+x)}}{\sin x - x}$, $a = 0$</li>
 <li>$f(x) = \sqrt{x^2+x+1} + \sqrt{4x^2+3x+2} - \sqrt{9x^2-2x+6}$, $a = +\infty$</li>
-<li>$f(x) = x^2\left(1+\dfrac{1}{x}\right)^{x} - e\,x^3 \ln\!\left(1+\dfrac{1}{x}\right)$, $a = +\infty$</li>
+<li>$f(x) = x^2\left(1+\dfrac{1}{x}\right)^{x} - e\\,x^3 \ln\\!\left(1+\dfrac{1}{x}\right)$, $a = +\infty$</li>
 <li>$f(x) = \left(\dfrac{\sin x}{x}\right)^{\frac{1}{\sin x}}$, $a = 0$</li>
 <li>$f(x) = \left(\dfrac{\ln(1+x)}{\ln x}\right)^{x\ln x}$, $a = +\infty$</li>
 <li>$f(x) = \dfrac{\sin(\ln x) - \sqrt{\ln(\sin(\pi x/2))}}{x-1}$, $a = 1$</li>
@@ -714,7 +714,7 @@ au-dessus de $(D)$ (signe de $a_2 = 4 > 0$), et en $-\infty$ au-dessous.
 <ol>
 <li>$f(x) = x\sqrt{1+\dfrac{1}{x}}$</li>
 <li>$f(x) = x^2 \ln\left|\dfrac{1+x}{x}\right|$</li>
-<li>$f(x) = (x-1)\,e^{\frac{1}{x^2-3x+2}}$</li>
+<li>$f(x) = (x-1)\\,e^{\frac{1}{x^2-3x+2}}$</li>
 <li>$f(x) = x^3\left(e^{1/x} - \cos\frac{1}{x}\right)$</li>
 </ol>
 </li>
@@ -722,7 +722,7 @@ au-dessus de $(D)$ (signe de $a_2 = 4 > 0$), et en $-\infty$ au-dessous.
 <ol>
 <li>$f(x) = \dfrac{1}{x}\left(e^{\sin x} - 1\right)$ au voisinage de 0</li>
 <li>$f(x) = x^{3/2}\ln x$ au voisinage de 1 (position par rapport à la tangente et à la parabole $y = x^2 - x$)</li>
-<li>$f(x) = \sqrt{x(x+2)}\,e^{1/x}$ (branches infinies soigneusement étudiées)</li>
+<li>$f(x) = \sqrt{x(x+2)}\\,e^{1/x}$ (branches infinies soigneusement étudiées)</li>
 <li>$f(x) = \dfrac{x^2}{\sqrt{2(x^4 - 2x^2 + 2)}}$</li>
 <li>$f(x) = \dfrac{1}{\ln(1+x)} - \dfrac{1}{x}$</li>
 </ol>

@@ -128,7 +128,7 @@ $(\mathcal{M}&#95;{n,p}(\mathbb{K}), +, \cdot)$ est un **espace vectoriel** sur 
 
 $\dim \mathcal{M}&#95;{n,p}(\mathbb{K}) = np$.
 
-Soit $E&#95;{ij}$ la matrice dont tous les coefficients sont nuls, sauf celui d'indice $(i,j)$ qui vaut $1$ : $(E&#95;{ij})&#95;{kl} = \delta&#95;{ik}\,\delta&#95;{jl}$. On note $\delta_i^j$ (symbole de Kronecker), ou $\delta&#95;{ij}$ :
+Soit $E&#95;{ij}$ la matrice dont tous les coefficients sont nuls, sauf celui d'indice $(i,j)$ qui vaut $1$ : $(E&#95;{ij})&#95;{kl} = \delta&#95;{ik}\\,\delta&#95;{jl}$. On note $\delta_i^j$ (symbole de Kronecker), ou $\delta&#95;{ij}$ :
 
 $$\delta_i^j = \begin{cases} 0 & \text{si } i \neq j \\ 1 & \text{si } i = j \end{cases}$$
 
@@ -172,7 +172,7 @@ $$\lambda u(e_j) + v(e_j) = \sum_{i=1}^{n} (\lambda a_{ij} + b_{ij})\, f_i$$
 
 donc $c&#95;{ij} = \lambda a&#95;{ij} + b&#95;{ij}$, c'est-à-dire $C = \lambda A + B$ : $\varphi(\lambda u + v) = \lambda\varphi(u) + \varphi(v)$.
 
-Si $\varphi(u) = 0$ : $\forall j,\ u(e_j) = \sum_i 0\, f_i = 0$, et comme $\mathcal{e}$ est une base, $u = 0$ : $\varphi$ est injective. Enfin, en posant $u(e_j) = \sum_i a&#95;{ij} f_i$ (ce qui définit une unique application linéaire), on a $\mathrm{Mat}&#95;{\mathcal{e},\mathcal{f}}(u) = A$ : $\varphi$ est surjective.
+Si $\varphi(u) = 0$ : $\forall j,\ u(e_j) = \sum_i 0\\, f_i = 0$, et comme $\mathcal{e}$ est une base, $u = 0$ : $\varphi$ est injective. Enfin, en posant $u(e_j) = \sum_i a&#95;{ij} f_i$ (ce qui définit une unique application linéaire), on a $\mathrm{Mat}&#95;{\mathcal{e},\mathcal{f}}(u) = A$ : $\varphi$ est surjective.
 
 </div>
 
@@ -194,7 +194,7 @@ Montrons que $\mathrm{Mat}&#95;{\mathcal{g},\mathcal{e}}(u \circ v) = (c&#95;{ij
 
 $$c_{ij} = \sum_{k=1}^{n} a_{ik}\, b_{kj}$$
 
-En effet $u(v(e_j)) = u\big(\sum_k b&#95;{kj} f_k\big) = \sum_k b&#95;{kj}\, u(f_k) = \sum_k \sum_i b&#95;{kj} a&#95;{ik}\, g_i = \sum_i \big(\sum_k a&#95;{ik} b&#95;{kj}\big) g_i$.
+En effet $u(v(e_j)) = u\big(\sum_k b&#95;{kj} f_k\big) = \sum_k b&#95;{kj}\\, u(f_k) = \sum_k \sum_i b&#95;{kj} a&#95;{ik}\\, g_i = \sum_i \big(\sum_k a&#95;{ik} b&#95;{kj}\big) g_i$.
 
 <div class="bloc definition" markdown="1">
 
@@ -236,7 +236,7 @@ On retrouve ces propriétés sur les matrices grâce à l'isomorphisme $\varphi$
 
 <span class="bloc-titre">Propriété</span>
 
-Soit $u \in \mathcal{L}(E,F)$ de matrice $A$ relativement aux bases $\mathcal{e}$ et $\mathcal{f}$. Soit $x \in E$, $X = \begin{pmatrix} x_1 \\ \vdots \\ x_p \end{pmatrix}$ et $Y = \begin{pmatrix} y_1 \\ \vdots \\ y_n \end{pmatrix}$ ; alors
+Soit $u \in \mathcal{L}(E,F)$ de matrice $A$ relativement aux bases $\mathcal{e}$ et $\mathcal{f}$. Soit $x \in E$, $X = \begin{pmatrix} x_1 \\\ \vdots \\\ x_p \end{pmatrix}$ et $Y = \begin{pmatrix} y_1 \\\ \vdots \\\ y_n \end{pmatrix}$ ; alors
 
 $$Y = AX$$
 
@@ -258,8 +258,8 @@ d'où l'unicité de l'écriture $Y = AX$.
 
 <span class="bloc-titre">Exemples</span>
 
-- $u : (x,y,z) \mapsto (x+y,\ z,\ x+z)$, de matrice $A = \begin{pmatrix} 1 & 1 & 0 \\ 0 & 0 & 1 \\ 1 & 0 & 1 \end{pmatrix}$ : pour $X = \begin{pmatrix} x \\ y \\ z \end{pmatrix}$, on a $AX = \begin{pmatrix} x+y \\ z \\ x+z \end{pmatrix}$ ;
-- $u : (x,y,z) \mapsto (2x+y,\ x+y+z,\ 3z)$, de matrice $A = \begin{pmatrix} 2 & 1 & 0 \\ 1 & 1 & 1 \\ 0 & 0 & 3 \end{pmatrix}$ : $AX = \begin{pmatrix} 2x+y \\ x+y+z \\ 3z \end{pmatrix}$.
+- $u : (x,y,z) \mapsto (x+y,\ z,\ x+z)$, de matrice $A = \begin{pmatrix} 1 & 1 & 0 \\\ 0 & 0 & 1 \\\ 1 & 0 & 1 \end{pmatrix}$ : pour $X = \begin{pmatrix} x \\\ y \\\ z \end{pmatrix}$, on a $AX = \begin{pmatrix} x+y \\\ z \\\ x+z \end{pmatrix}$ ;
+- $u : (x,y,z) \mapsto (2x+y,\ x+y+z,\ 3z)$, de matrice $A = \begin{pmatrix} 2 & 1 & 0 \\\ 1 & 1 & 1 \\\ 0 & 0 & 3 \end{pmatrix}$ : $AX = \begin{pmatrix} 2x+y \\\ x+y+z \\\ 3z \end{pmatrix}$.
 
 </div>
 
@@ -311,11 +311,11 @@ $${}^t({}^t A) = A, \qquad {}^t(AB) = {}^t B\, {}^t A$$
 
 <span class="bloc-titre">Démonstration</span>
 
-$AB$ a pour terme général $c&#95;{ij} = \sum&#95;{k=1}^{n} a&#95;{ik} b&#95;{kj}$ ; ${}^t(AB)$ a pour terme général $(c&#95;{ji})&#95;{1 \leq i \leq q,\ 1 \leq j \leq n}$ et $c&#95;{ji} = \sum_k a&#95;{jk} b&#95;{ki}$. Si $D = {}^t(AB)$, on a $d&#95;{ji} = c&#95;{ji}$. Par ailleurs ${}^t B$ a pour terme général $(b&#95;{kj})$ et ${}^t A$ a pour terme général $(a&#95;{ij})$, donc le terme général $e&#95;{ij}$ de ${}^t B\, {}^t A$ vaut
+$AB$ a pour terme général $c&#95;{ij} = \sum&#95;{k=1}^{n} a&#95;{ik} b&#95;{kj}$ ; ${}^t(AB)$ a pour terme général $(c&#95;{ji})&#95;{1 \leq i \leq q,\ 1 \leq j \leq n}$ et $c&#95;{ji} = \sum_k a&#95;{jk} b&#95;{ki}$. Si $D = {}^t(AB)$, on a $d&#95;{ji} = c&#95;{ji}$. Par ailleurs ${}^t B$ a pour terme général $(b&#95;{kj})$ et ${}^t A$ a pour terme général $(a&#95;{ij})$, donc le terme général $e&#95;{ij}$ de ${}^t B\\, {}^t A$ vaut
 
 $$e_{ij} = \sum_{k=1}^{n} ({}^t B)_{ik} ({}^t A)_{kj} = \sum_{k=1}^{n} b_{ki} a_{jk} = d_{ij}$$
 
-d'où ${}^t(AB) = {}^t B\, {}^t A$.
+d'où ${}^t(AB) = {}^t B\\, {}^t A$.
 
 </div>
 
@@ -361,7 +361,7 @@ $$I = I_n = \begin{pmatrix} 1 & 0 & \cdots & 0 \\ 0 & 1 & \ddots & \vdots \\ \vd
 
 est élément neutre. On a $\lambda(AB) = (\lambda A)B = A(\lambda B)$ : c'est une algèbre.
 
-**Attention** : $\mathcal{M}&#95;n(\mathbb{K})$ n'est **pas intègre** : pour $A = \begin{pmatrix} 0 & 1 \\ 0 & 0 \end{pmatrix}$, on a $A^2 = 0$ avec $A \neq 0$ ; l'algèbre est non commutative.
+**Attention** : $\mathcal{M}&#95;n(\mathbb{K})$ n'est **pas intègre** : pour $A = \begin{pmatrix} 0 & 1 \\\ 0 & 0 \end{pmatrix}$, on a $A^2 = 0$ avec $A \neq 0$ ; l'algèbre est non commutative.
 
 </div>
 
@@ -427,7 +427,7 @@ Si $AB = I_n$, alors $A$ et $B$ sont inversibles et $B = A^{-1}$.
 
 <span class="bloc-titre">Exemple</span>
 
-CNS pour que $\begin{pmatrix} a & b \\ c & d \end{pmatrix} \in \mathcal{M}&#95;2(\mathbb{K})$ soit inversible : $A$ inversible $\Leftrightarrow$ $(x,y) \mapsto (ax + by,\ cx + dy)$ est bijective.
+CNS pour que $\begin{pmatrix} a & b \\\ c & d \end{pmatrix} \in \mathcal{M}&#95;2(\mathbb{K})$ soit inversible : $A$ inversible $\Leftrightarrow$ $(x,y) \mapsto (ax + by,\ cx + dy)$ est bijective.
 
 </div>
 
@@ -445,7 +445,7 @@ $${}^t(A^{-1}) = ({}^t A)^{-1}$$
 
 <span class="bloc-titre">Démonstration</span>
 
-${}^t A\, {}^t(A^{-1}) = {}^t(A^{-1}A) = {}^t I_n = I_n$ ; donc ${}^t A$ est inversible et ${}^t(A^{-1}) = ({}^t A)^{-1}$. Ou bien : ${}^t A$ est inversible, donc ${}^t({}^t A) = A$ est inversible d'après la première étape, car $A$ est inversible.
+${}^t A\\, {}^t(A^{-1}) = {}^t(A^{-1}A) = {}^t I_n = I_n$ ; donc ${}^t A$ est inversible et ${}^t(A^{-1}) = ({}^t A)^{-1}$. Ou bien : ${}^t A$ est inversible, donc ${}^t({}^t A) = A$ est inversible d'après la première étape, car $A$ est inversible.
 
 </div>
 
@@ -756,7 +756,7 @@ Soit $A = \mathrm{Mat}&#95;{\mathcal{e}}(\mathcal{F}) = \mathrm{Mat}&#95;{\mathc
 
 $$u(v_j) = \sum_i a_{ij}\, u(e_i) = \sum_i a_{ij} e'_i = w_j$$
 
-donc $u(\mathrm{Vect}\,\mathcal{F}) = \mathrm{Vect}\, u(\mathcal{F}) = \mathrm{Vect}\,\mathcal{F}'$ : $\mathrm{Vect}\,\mathcal{F}$ et $\mathrm{Vect}\,\mathcal{F}'$ sont isomorphes, d'où $\mathrm{rg}\,\mathcal{F} = \mathrm{rg}\,\mathcal{F}'$.
+donc $u(\mathrm{Vect}\\,\mathcal{F}) = \mathrm{Vect}\\, u(\mathcal{F}) = \mathrm{Vect}\\,\mathcal{F}'$ : $\mathrm{Vect}\\,\mathcal{F}$ et $\mathrm{Vect}\\,\mathcal{F}'$ sont isomorphes, d'où $\mathrm{rg}\\,\mathcal{F} = \mathrm{rg}\\,\mathcal{F}'$.
 
 </div>
 
@@ -780,7 +780,7 @@ Le rang d'une application linéaire $u \in \mathcal{L}(E,F)$ est égal au rang d
 
 <span class="bloc-titre">Démonstration</span>
 
-Soit $A$ une matrice de $u$ relativement à une base $(\mathcal{e}, \mathcal{f})$ ; $\mathrm{rg}(A) = \mathrm{rg}(v_1, \dots, v_p)$ où $(v_1, \dots, v_p)$ engendre $\mathrm{Im}\, u$ ; donc $\mathrm{rg}(A) = \dim \mathrm{Vect}\, \mathrm{Im}\, u = \mathrm{rg}(u)$.
+Soit $A$ une matrice de $u$ relativement à une base $(\mathcal{e}, \mathcal{f})$ ; $\mathrm{rg}(A) = \mathrm{rg}(v_1, \dots, v_p)$ où $(v_1, \dots, v_p)$ engendre $\mathrm{Im}\\, u$ ; donc $\mathrm{rg}(A) = \dim \mathrm{Vect}\\, \mathrm{Im}\\, u = \mathrm{rg}(u)$.
 
 </div>
 
@@ -919,7 +919,7 @@ $$\mathcal{F} \text{ est libre} \iff \mathrm{rg}(A) = p \iff \text{il existe une
 
 **Sens direct.** Soit $A'$ une sous-matrice carrée d'ordre $p$ de $A$ ; en échangeant des lignes, on se ramène à une matrice $B$ dont les $p$ premières lignes forment $A'$ (les opérations élémentaires conservent le rang) : $\mathrm{rg}(B) = \mathrm{rg}(A)$ et $\mathrm{rg}(B) = \mathrm{rg}(A')$. Si $A'$ est inversible, $\mathrm{rg}(A) = p$. Soit $(v_1, \dots, v_p)$ la famille ; si $x = \sum&#95;{j=1}^{p} \lambda_j v_j = 0$, alors $x = \sum_j \lambda_j \big(\sum_i b&#95;{ij} e_i\big) = \sum_i \big(\sum_j \lambda_j b&#95;{ij}\big) e_i$, donc $\forall i \leq p,\ \sum_j \lambda_j b&#95;{ij} = 0$ ; comme $A'$ est inversible (famille libre), $\forall j \leq p,\ \lambda_j = 0$ : $(v_1, \dots, v_p)$ est libre et $\mathrm{rg}(A) = p$.
 
-**Réciproque.** On suppose $\mathcal{F}$ libre ; donc $p \leq n$. Complétons $\mathcal{F}$ en une base de $E$ en ajoutant $n - p$ vecteurs : $\mathcal{b} = (v_1, \dots, v_p, e'&#95;{p+1}, \dots, e'&#95;n)$ est une base de $E$. Soit $B = \mathrm{Mat}&#95;{\mathcal{e}'}(\mathcal{b})$ ; $B$ s'obtient à partir de $A$ par échanges de lignes et s'écrit par blocs $\begin{pmatrix} A'' & 0 \\ &#42; & I&#95;{n-p} \end{pmatrix}$, puis, par opérations sur les lignes, $\begin{pmatrix} A'' & 0 \\ 0 & I&#95;{n-p} \end{pmatrix}$. Comme $\mathcal{b}$ est une base, $\mathrm{rg}(B) = n$, donc $\mathrm{rg}(A'') = p$ : les vecteurs colonnes de $A''$ forment une famille libre de $\mathrm{Vect}(e'&#95;1, \dots, e'&#95;p)$, qui est de dimension $p$ ; $A''$ est inversible (matrice d'une base) et c'est une sous-matrice carrée inversible d'ordre $p$ de $A$.
+**Réciproque.** On suppose $\mathcal{F}$ libre ; donc $p \leq n$. Complétons $\mathcal{F}$ en une base de $E$ en ajoutant $n - p$ vecteurs : $\mathcal{b} = (v_1, \dots, v_p, e'&#95;{p+1}, \dots, e'&#95;n)$ est une base de $E$. Soit $B = \mathrm{Mat}&#95;{\mathcal{e}'}(\mathcal{b})$ ; $B$ s'obtient à partir de $A$ par échanges de lignes et s'écrit par blocs $\begin{pmatrix} A'' & 0 \\\ &#42; & I&#95;{n-p} \end{pmatrix}$, puis, par opérations sur les lignes, $\begin{pmatrix} A'' & 0 \\\ 0 & I&#95;{n-p} \end{pmatrix}$. Comme $\mathcal{b}$ est une base, $\mathrm{rg}(B) = n$, donc $\mathrm{rg}(A'') = p$ : les vecteurs colonnes de $A''$ forment une famille libre de $\mathrm{Vect}(e'&#95;1, \dots, e'&#95;p)$, qui est de dimension $p$ ; $A''$ est inversible (matrice d'une base) et c'est une sous-matrice carrée inversible d'ordre $p$ de $A$.
 
 </div>
 
@@ -935,7 +935,7 @@ Le rang d'une matrice $A$ est égal à l'**ordre maximum de ses sous-matrices ca
 
 <span class="bloc-titre">Démonstration</span>
 
-Soit $J = \{ k \mid \exists$ une sous-matrice carrée d'ordre $k$ de $A$ inversible $\}$. Si $A = 0$ : $\mathrm{rg}(A) = 0$ et il n'existe pas de sous-matrice inversible. Si $A \neq 0$ : $J$ est non vide (si $a&#95;{ij} \neq 0$, alors $[a&#95;{ij}]$ est inversible d'ordre $1$) et $J$ est majoré par $\min(n, p)$. Soit $r = \max J$, et soit $A'$ une sous-matrice carrée d'ordre $r$ inversible, fondée sur les vecteurs colonnes $(v_1, \dots, v_r)$ ; $(v_1, \dots, v_r)$ est libre (proposition précédente). Soit $\mathcal{F}$ la famille de tous les vecteurs colonnes de $A$. Si l'on pouvait adjoindre un $(r+1)$-ième vecteur $v$ de $\mathcal{F}$, la famille $(v_1, \dots, v_r, v)$ ne serait pas libre, sinon $A$ admettrait une sous-matrice carrée inversible d'ordre $r+1$ (impossible) ; d'après la proposition précédente, $v \in \mathrm{Vect}(v_1, \dots, v_r)$ ; donc $(v_1, \dots, v_r)$ est génératrice de $\mathrm{Vect}\,\mathcal{F}$ ; ainsi $\mathrm{rg}\,\mathcal{F} = r$.
+Soit $J = \\{ k \mid \exists$ une sous-matrice carrée d'ordre $k$ de $A$ inversible $\\}$. Si $A = 0$ : $\mathrm{rg}(A) = 0$ et il n'existe pas de sous-matrice inversible. Si $A \neq 0$ : $J$ est non vide (si $a&#95;{ij} \neq 0$, alors $[a&#95;{ij}]$ est inversible d'ordre $1$) et $J$ est majoré par $\min(n, p)$. Soit $r = \max J$, et soit $A'$ une sous-matrice carrée d'ordre $r$ inversible, fondée sur les vecteurs colonnes $(v_1, \dots, v_r)$ ; $(v_1, \dots, v_r)$ est libre (proposition précédente). Soit $\mathcal{F}$ la famille de tous les vecteurs colonnes de $A$. Si l'on pouvait adjoindre un $(r+1)$-ième vecteur $v$ de $\mathcal{F}$, la famille $(v_1, \dots, v_r, v)$ ne serait pas libre, sinon $A$ admettrait une sous-matrice carrée inversible d'ordre $r+1$ (impossible) ; d'après la proposition précédente, $v \in \mathrm{Vect}(v_1, \dots, v_r)$ ; donc $(v_1, \dots, v_r)$ est génératrice de $\mathrm{Vect}\\,\mathcal{F}$ ; ainsi $\mathrm{rg}\\,\mathcal{F} = r$.
 
 </div>
 
@@ -1011,7 +1011,7 @@ C'est une **relation d'équivalence** sur $\mathcal{M}&#95;{n,p}(\mathbb{K})$.
 
 <span class="bloc-titre">Démonstration</span>
 
-$A \sim A$ : $A = I_n A I_p$ ; si $A = QBP$ alors $B = Q^{-1} A P^{-1}$ ($B \sim A$) ; si $A = QBP$ et $B = Q' C P'$ alors $A = (QQ')\, C\, (P'P)$ (transitivité).
+$A \sim A$ : $A = I_n A I_p$ ; si $A = QBP$ alors $B = Q^{-1} A P^{-1}$ ($B \sim A$) ; si $A = QBP$ et $B = Q' C P'$ alors $A = (QQ')\\, C\\, (P'P)$ (transitivité).
 
 </div>
 
@@ -1047,7 +1047,7 @@ $$J_r = \begin{pmatrix} I_r & 0 \\ 0 & 0 \end{pmatrix}$$
 
 <span class="bloc-titre">Démonstration</span>
 
-Soit $u$ l'application linéaire de matrice $A$ relativement à un couple de bases $(\mathcal{e}, \mathcal{f})$ (par exemple $E = \mathbb{K}^p$ et la base canonique). Soit $(\mathcal{e}'&#95;1, \dots, \mathcal{e}'&#95;p)$ une base de $E$ telle que $u(\mathcal{e}'&#95;i) = 0$ pour $i > r$ ; alors $u(\mathcal{e}'&#95;1), \dots, u(\mathcal{e}'&#95;p)$ engendre $\mathrm{Im}\, u$, et comme $\dim \mathrm{Im}\, u = r$, $(u(\mathcal{e}'&#95;1), \dots, u(\mathcal{e}'&#95;r))$ est une base de $\mathrm{Im}\, u$. Complétons en une base de $F$ : $\mathcal{f}' = (u(\mathcal{e}'&#95;1), \dots, u(\mathcal{e}'&#95;r), f'&#95;{r+1}, \dots, f'&#95;n)$. Dans les bases $\mathcal{e}'$ et $\mathcal{f}'$, la matrice de $u$ est
+Soit $u$ l'application linéaire de matrice $A$ relativement à un couple de bases $(\mathcal{e}, \mathcal{f})$ (par exemple $E = \mathbb{K}^p$ et la base canonique). Soit $(\mathcal{e}'&#95;1, \dots, \mathcal{e}'&#95;p)$ une base de $E$ telle que $u(\mathcal{e}'&#95;i) = 0$ pour $i > r$ ; alors $u(\mathcal{e}'&#95;1), \dots, u(\mathcal{e}'&#95;p)$ engendre $\mathrm{Im}\\, u$, et comme $\dim \mathrm{Im}\\, u = r$, $(u(\mathcal{e}'&#95;1), \dots, u(\mathcal{e}'&#95;r))$ est une base de $\mathrm{Im}\\, u$. Complétons en une base de $F$ : $\mathcal{f}' = (u(\mathcal{e}'&#95;1), \dots, u(\mathcal{e}'&#95;r), f'&#95;{r+1}, \dots, f'&#95;n)$. Dans les bases $\mathcal{e}'$ et $\mathcal{f}'$, la matrice de $u$ est
 
 $$\mathrm{Mat}_{\mathcal{e}',\mathcal{f}'}(u) = \begin{pmatrix} I_r & 0 \\ 0 & 0 \end{pmatrix} = J_r$$
 
@@ -1067,7 +1067,7 @@ Deux matrices sont équivalentes **si et seulement si** elles ont même rang.
 
 <span class="bloc-titre">Démonstration</span>
 
-$\Rightarrow$ Si $A \sim B$ : $A = QBP$ avec $Q \in \mathrm{GL}&#95;n(\mathbb{K})$, $P \in \mathrm{GL}&#95;p(\mathbb{K})$ inversibles. Soient $u$, $v$ de matrices $A$, $B$ ; alors $\mathrm{Im}\, u = Q(\mathrm{Im}\, v)$ et $Q$ est un isomorphisme, donc $\dim \mathrm{Im}\, u = \dim \mathrm{Im}\, v = r$, d'où $\mathrm{rg}(A) = \mathrm{rg}(u) = \mathrm{rg}(v) = \mathrm{rg}(B)$.
+$\Rightarrow$ Si $A \sim B$ : $A = QBP$ avec $Q \in \mathrm{GL}&#95;n(\mathbb{K})$, $P \in \mathrm{GL}&#95;p(\mathbb{K})$ inversibles. Soient $u$, $v$ de matrices $A$, $B$ ; alors $\mathrm{Im}\\, u = Q(\mathrm{Im}\\, v)$ et $Q$ est un isomorphisme, donc $\dim \mathrm{Im}\\, u = \dim \mathrm{Im}\\, v = r$, d'où $\mathrm{rg}(A) = \mathrm{rg}(u) = \mathrm{rg}(v) = \mathrm{rg}(B)$.
 
 $\Leftarrow$ Si $\mathrm{rg}(A) = \mathrm{rg}(B) = r$, on a $A \sim J_r$ et $B \sim J_r$, donc $A \sim B$.
 
@@ -1163,7 +1163,7 @@ $X$ est appelé **vecteur propre** de $A$.
 
 <span class="bloc-titre">Remarque</span>
 
-Si $A$ est considérée comme $\mathrm{Mat}&#95;{\mathcal{e}}(u)$ avec $u \in \mathcal{L}(E)$ : si $\lambda$ est valeur propre de $A$ et $X = \begin{pmatrix} x_1 \\ \vdots \\ x_n \end{pmatrix}$, alors $X$ est vecteur propre de $A$ si et seulement si $x = \sum&#95;{i=1}^{n} x_i e_i$ est vecteur propre de $u$.
+Si $A$ est considérée comme $\mathrm{Mat}&#95;{\mathcal{e}}(u)$ avec $u \in \mathcal{L}(E)$ : si $\lambda$ est valeur propre de $A$ et $X = \begin{pmatrix} x_1 \\\ \vdots \\\ x_n \end{pmatrix}$, alors $X$ est vecteur propre de $A$ si et seulement si $x = \sum&#95;{i=1}^{n} x_i e_i$ est vecteur propre de $u$.
 
 </div>
 
@@ -1175,7 +1175,7 @@ Diagonaliser (c'est-à-dire trouver une base de vecteurs propres) de
 
 $$A = \begin{pmatrix} -2 & 0 & 0 \\ 5 & 4 & 3 \\ 0 & 0 & -2 \end{pmatrix}$$
 
-Pour $X = \begin{pmatrix} x \\ y \\ z \end{pmatrix}$ :
+Pour $X = \begin{pmatrix} x \\\ y \\\ z \end{pmatrix}$ :
 
 $$AX = \begin{pmatrix} -2 & 0 & 0 \\ 5 & 4 & 3 \\ 0 & 0 & -2 \end{pmatrix} \begin{pmatrix} x \\ y \\ z \end{pmatrix} = \begin{pmatrix} -2x \\ 5x + 4y + 3z \\ -2z \end{pmatrix}$$
 
@@ -1183,13 +1183,13 @@ $$AX = \begin{pmatrix} -2 & 0 & 0 \\ 5 & 4 & 3 \\ 0 & 0 & -2 \end{pmatrix} \begi
 
 ### 4) Diagonalisation d'un endomorphisme
 
-Soit $E$ un $\mathbb{K}$-espace vectoriel de dimension finie et $u \in \mathcal{L}(E)$. Pour une valeur propre $\lambda$ de $u$, on note $E&#95;\lambda = \ker(u - \lambda\,\mathrm{Id})$ le **sous-espace propre** associé.
+Soit $E$ un $\mathbb{K}$-espace vectoriel de dimension finie et $u \in \mathcal{L}(E)$. Pour une valeur propre $\lambda$ de $u$, on note $E&#95;\lambda = \ker(u - \lambda\\,\mathrm{Id})$ le **sous-espace propre** associé.
 
 <div class="bloc exemple" markdown="1">
 
 <span class="bloc-titre">Exemple — matrice diagonalisable</span>
 
-Soit $u$ un endomorphisme de $\mathbb{R}^3$, de matrice $A$ dans la base canonique. La recherche des vecteurs propres donne deux valeurs propres : $\lambda = -2$, avec $\dim E&#95;{-2} = 2$, et $\lambda = 4$, avec $\dim E_4 = 1$ (et $A u_3 = 4\,u_3$ pour $u_3 \in E_4$).
+Soit $u$ un endomorphisme de $\mathbb{R}^3$, de matrice $A$ dans la base canonique. La recherche des vecteurs propres donne deux valeurs propres : $\lambda = -2$, avec $\dim E&#95;{-2} = 2$, et $\lambda = 4$, avec $\dim E_4 = 1$ (et $A u_3 = 4\\,u_3$ pour $u_3 \in E_4$).
 
 Des vecteurs propres $u_1, u_2 \in E&#95;{-2}$ et $u_3 \in E_4$ forment une base $(u_1, u_2, u_3)$ de $\mathbb{R}^3$. La matrice de $u$ dans cette base est
 
@@ -1220,14 +1220,14 @@ $$E_{\lambda_1} \oplus E_{\lambda_2} \oplus \dots \oplus E_{\lambda_p} \subset E
 
 Montrons par récurrence sur $k$ que $E&#95;{\lambda_1} + \dots + E&#95;{\lambda_k}$ est une somme directe.
 
-- Si $x \in E&#95;{\lambda_i} \cap E&#95;{\lambda_j}$ avec $i \neq j$ : $u(x) = \lambda_i x = \lambda_j x$, donc $(\lambda_i - \lambda_j)\,x = 0$ ; comme $\lambda_i \neq \lambda_j$, on a $x = 0$. Ainsi $E&#95;{\lambda_i} \cap E&#95;{\lambda_j} = \{0\}$.
+- Si $x \in E&#95;{\lambda_i} \cap E&#95;{\lambda_j}$ avec $i \neq j$ : $u(x) = \lambda_i x = \lambda_j x$, donc $(\lambda_i - \lambda_j)\\,x = 0$ ; comme $\lambda_i \neq \lambda_j$, on a $x = 0$. Ainsi $E&#95;{\lambda_i} \cap E&#95;{\lambda_j} = \\{0\\}$.
 - **Hérédité** : supposons $E&#95;{\lambda_1} \oplus \dots \oplus E&#95;{\lambda_k}$ somme directe, et soit
 $$x \in E_{\lambda_{k+1}} \cap \big(E_{\lambda_1} \oplus \dots \oplus E_{\lambda_k}\big)$$
 Écrivons $x = x_1 + \dots + x_k$ avec $x_i \in E&#95;{\lambda_i}$. Alors
 $$u(x) = \lambda_{k+1}\, x = \lambda_{k+1} x_1 + \dots + \lambda_{k+1} x_k$$
 mais aussi $u(x) = \lambda_1 x_1 + \dots + \lambda_k x_k$. Par différence :
 $$(\lambda_1 - \lambda_{k+1})\,x_1 + \dots + (\lambda_k - \lambda_{k+1})\,x_k = 0$$
-Par hypothèse de récurrence (somme directe), chaque terme de cette somme est nul : $(\lambda_i - \lambda&#95;{k+1})\,x_i = 0$, et comme $\lambda_i \neq \lambda&#95;{k+1}$, on obtient $x_i = 0$ pour tout $i$, donc $x = 0$.
+Par hypothèse de récurrence (somme directe), chaque terme de cette somme est nul : $(\lambda_i - \lambda&#95;{k+1})\\,x_i = 0$, et comme $\lambda_i \neq \lambda&#95;{k+1}$, on obtient $x_i = 0$ pour tout $i$, donc $x = 0$.
 
 Conclusion : $E&#95;{\lambda_1}, \dots, E&#95;{\lambda_p}$ sont en somme directe.
 
@@ -1271,7 +1271,7 @@ $$f : \mathbb{R}_3[X] \to \mathbb{R}_1[X], \qquad P \mapsto P'(X+1) - P'(X-1)$$<
 
 <ol class="enonces" start="4">
 <li>Déterminer l'ensemble des matrices $A$ de $\mathcal{M}&#95;2(\mathbb{R})$ vérifiant $A^2 = A$.</li>
-<li>Soit une matrice $A$ de $\mathcal{M}&#95;2(\mathbb{R})$. Soit $F = \{M \in \mathcal{M}&#95;2(\mathbb{R}) \mid AM = MA\}$.
+<li>Soit une matrice $A$ de $\mathcal{M}&#95;2(\mathbb{R})$. Soit $F = \\{M \in \mathcal{M}&#95;2(\mathbb{R}) \mid AM = MA\\}$.
 <ol>
 <li>Montrer que $F$ est un sous-espace vectoriel de $\mathcal{M}&#95;2(\mathbb{R})$.</li>
 <li>Montrer que si $A \neq \lambda I$ ($I$ matrice identité), $(I, A)$ est une base de $F$.</li>
@@ -1284,8 +1284,8 @@ $$f : \mathbb{R}_3[X] \to \mathbb{R}_1[X], \qquad P \mapsto P'(X+1) - P'(X-1)$$<
 $$A = \begin{pmatrix} \operatorname{ch} x & \operatorname{sh} x \\ \operatorname{sh} x & \operatorname{ch} x \end{pmatrix}$$</li>
 <li>Calculer les puissances des matrices suivantes :
 <ol>
-<li>$A = \begin{pmatrix} 1 & 1 & 1 \\ 0 & 1 & 1 \\ 0 & 0 & 1 \end{pmatrix}$ ;</li>
-<li>$B = \begin{pmatrix} 0 & 1 & 1 \\ 1 & 0 & 1 \\ 1 & 1 & 0 \end{pmatrix}$ ;</li>
+<li>$A = \begin{pmatrix} 1 & 1 & 1 \\\ 0 & 1 & 1 \\\ 0 & 0 & 1 \end{pmatrix}$ ;</li>
+<li>$B = \begin{pmatrix} 0 & 1 & 1 \\\ 1 & 0 & 1 \\\ 1 & 1 & 0 \end{pmatrix}$ ;</li>
 <li>$(aI + bB)^n$ pour $a, b \in \mathbb{C}$.</li>
 </ol>
 </li>
@@ -1345,8 +1345,8 @@ C = \begin{pmatrix} 0 & -1 & 2 & -2 \\ -7 & -7 & 2 & -8 \\ 0 & 4 & -6 & 6 \\ 2 &
 <ol class="enonces" start="17">
 <li>Montrer que les matrices suivantes sont diagonalisables :
 <ol>
-<li>$A = \begin{pmatrix} -1 & 0 & 2 \\ 0 & 0 & 1 \\ 0 & -1 & 1 \end{pmatrix}$ dans $\mathcal{M}&#95;3(\mathbb{C})$ ;</li>
-<li>$B = \begin{pmatrix} a & 0 & b \\ 0 & a+b & 0 \\ b & 0 & a \end{pmatrix}$ ;</li>
+<li>$A = \begin{pmatrix} -1 & 0 & 2 \\\ 0 & 0 & 1 \\\ 0 & -1 & 1 \end{pmatrix}$ dans $\mathcal{M}&#95;3(\mathbb{C})$ ;</li>
+<li>$B = \begin{pmatrix} a & 0 & b \\\ 0 & a+b & 0 \\\ b & 0 & a \end{pmatrix}$ ;</li>
 <li>en déduire l'expression des suites définies par la donnée de $u_0, v_0, w_0$ et les relations de récurrence :
 $$\begin{cases} u_{n+1} = 2u_n + w_n \\ v_{n+1} = 3v_n \\ w_{n+1} = u_n + 2w_n \end{cases}$$</li>
 </ol>
@@ -1357,7 +1357,7 @@ $$\begin{cases} u_{n+1} = 2u_n + w_n \\ v_{n+1} = 3v_n \\ w_{n+1} = u_n + 2w_n \
 
 <ol class="enonces" start="18">
 <li>Trouver toutes les matrices $A, B \in \mathcal{M}&#95;n(\mathbb{R})$ qui vérifient $AB - BA = I$.</li>
-<li>Soit $A$ et $B \in \mathcal{M}&#95;n(\mathbb{R})$ et $c \in \mathbb{R}$. Résoudre $cX + \operatorname{Tr}(X)\,A = B$.</li>
+<li>Soit $A$ et $B \in \mathcal{M}&#95;n(\mathbb{R})$ et $c \in \mathbb{R}$. Résoudre $cX + \operatorname{Tr}(X)\\,A = B$.</li>
 <li>Soit $p$ un projecteur d'un espace vectoriel de dimension $n$. Montrer que toute matrice de $p$ est semblable à une matrice de la forme
 $$\begin{pmatrix} 1 & & & 0 \\ & \ddots & & \\ & & 1 & \\ 0 & & & 0 \end{pmatrix}$$
 ($r$ coefficients égaux à $1$ sur la diagonale, les autres nuls). En déduire $\operatorname{tr}(p) = \operatorname{rg}(p)$.</li>
@@ -1377,14 +1377,14 @@ $$B = \begin{pmatrix} 0 & -I_p \\ I_p & 0 \end{pmatrix}$$</li>
 <li>Dans $\mathcal{M}&#95;n(\mathbb{K})$, calculer $E&#95;{ij}E&#95;{kl}$ et en déduire que les seules matrices $A$ telles que
 $$\forall M \in \mathcal{M}_n(\mathbb{K}), \quad AM = MA$$
 sont de la forme $aI$ ($a \in \mathbb{K}$).</li>
-<li>Soit $M = \begin{pmatrix} 0 & 1 & 1 \\ 1 & 0 & 1 \\ 1 & 1 & 0 \end{pmatrix}$.
+<li>Soit $M = \begin{pmatrix} 0 & 1 & 1 \\\ 1 & 0 & 1 \\\ 1 & 1 & 0 \end{pmatrix}$.
 <ol>
 <li>Trouver $P \in \mathbb{R}&#95;2[X]$ tel que $P(M) = 0$.</li>
 <li>En déduire $M^n$ en fonction de $M$ et $I$ (utiliser la division euclidienne de $X^n$ par $P$).</li>
 </ol>
 </li>
-<li>Soit $M = \begin{pmatrix} 3 & -4 & -2 \\ 4 & -7 & -4 \\ -5 & 10 & 6 \end{pmatrix}$. Montrer que $M$ est la matrice d'un projecteur dont on précisera l'image et la direction.</li>
-<li>Soit $M = \dfrac{1}{2}\begin{pmatrix} -1 & 2 & 1 \\ -1 & 0 & 1 \\ 1 & 2 & -1 \end{pmatrix}$. Montrer que $M$ est la matrice d'une symétrie dont on précisera les sous-espaces associés.</li>
+<li>Soit $M = \begin{pmatrix} 3 & -4 & -2 \\\ 4 & -7 & -4 \\\ -5 & 10 & 6 \end{pmatrix}$. Montrer que $M$ est la matrice d'un projecteur dont on précisera l'image et la direction.</li>
+<li>Soit $M = \dfrac{1}{2}\begin{pmatrix} -1 & 2 & 1 \\\ -1 & 0 & 1 \\\ 1 & 2 & -1 \end{pmatrix}$. Montrer que $M$ est la matrice d'une symétrie dont on précisera les sous-espaces associés.</li>
 <li>Soit $A \in \mathcal{M}&#95;n(\mathbb{C})$ de terme général $a&#95;{ij}$. On suppose que, pour tout $i$ tel que $1 \leq i \leq n$,
 $$|a_{ii}| > \sum_{\substack{1 \leq j \leq n \\ j \neq i}} |a_{ij}|$$
 Montrer que $A$ est inversible.</li>

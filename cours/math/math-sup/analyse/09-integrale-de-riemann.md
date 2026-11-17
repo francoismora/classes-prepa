@@ -108,7 +108,7 @@ $$I = \int_a^b f(x)\, \mathrm{d}x = \int_a^b f$$
 - si $a = b$ : $\displaystyle\int_a^a f = 0$ ;
 - si $a > b$ : $\displaystyle\int_a^b f = -\int_b^a f$ ;
 - si $f$ est constante égale à $c$ sur $[a, b]$ :
-  $\displaystyle\int_a^b c\,\mathrm{d}x = c\,(b-a)$
+  $\displaystyle\int_a^b c\\,\mathrm{d}x = c\\,(b-a)$
   (car alors $m_i = M_i = c$ pour tout $i$, donc $s(\sigma, f) = S(\sigma, f) = b-a$).
 
 </div>
@@ -184,7 +184,7 @@ $$\int_a^c f = \int_a^b f + \int_b^c f$$
 
 Toute fonction **en escalier** sur $[a, b]$ est intégrable. Plus précisément, si
 $f$ est constante égale à $\lambda_i$ sur chaque intervalle ouvert
-$\,]x&#95;{i-1}, x_i[$ d'une subdivision $\sigma = (x_0, \dots, x_n)$ de $[a, b]$,
+$\\,]x&#95;{i-1}, x_i[$ d'une subdivision $\sigma = (x_0, \dots, x_n)$ de $[a, b]$,
 alors
 
 $$\int_a^b f = \sum_{i=1}^{n} \lambda_i\, (x_i - x_{i-1})$$
@@ -246,7 +246,7 @@ Toute fonction **continue par morceaux** sur $[a, b]$ est intégrable.
 
 Si $f$ est continue par morceaux, il existe une subdivision
 $\sigma = (x_0, \dots, x_n)$ telle que $f$ soit continue sur chaque
-$\,]x&#95;{i-1}, x_i[$. En prolongeant $f$ par continuité aux points $x_i$, on
+$\\,]x&#95;{i-1}, x_i[$. En prolongeant $f$ par continuité aux points $x_i$, on
 écrit $f = g + h$ où $g$ est continue sur $[a, b]$ et $h$ en escalier (nulle
 sur chaque $]x&#95;{i-1}, x_i[$). Alors $g$ et $h$ sont intégrables, donc $f$ aussi.
 
@@ -318,7 +318,7 @@ $$\int_a^b f(x)\, g(x)\, \mathrm{d}x = f(c) \int_a^b g(x)\, \mathrm{d}x$$
 <span class="bloc-titre">Démonstration</span>
 
 Posons $m = \min&#95;{[a,b]} f$ et $M = \max&#95;{[a,b]} f$ (atteints car $f$ continue sur
-le segment $[a, b]$). Si $g \geq 0$ : $m\, g \leq f g \leq M\, g$, donc par
+le segment $[a, b]$). Si $g \geq 0$ : $m\\, g \leq f g \leq M\\, g$, donc par
 positivité
 
 $$m \int_a^b g \leq \int_a^b f g \leq M \int_a^b g$$
@@ -365,7 +365,7 @@ $$S(\sigma, \lambda, f) = \sum_{i=1}^{n} (x_i - x_{i-1})\, f(\lambda_i)$$
 <span class="bloc-titre">Cas d'une subdivision régulière</span>
 
 La subdivision régulière à $n$ intervalles de $[a, b]$ est
-$\sigma_n = (x_0, \dots, x_n)$ avec $x_i = a + i\,\dfrac{b-a}{n}$. Pour une suite
+$\sigma_n = (x_0, \dots, x_n)$ avec $x_i = a + i\\,\dfrac{b-a}{n}$. Pour une suite
 de points de taguage $\lambda_i^{(n)} \in [x&#95;{i-1}, x_i]$, la somme de Riemann
 vaut
 
@@ -444,7 +444,7 @@ convergence de l'erreur $|S_n - \int_0^1 f|$.
 
 ## VII. Intégrale fonction de la borne supérieure — primitives
 
-### 1) Étude de $x \mapsto \int_c^x f(t)\, \mathrm{d}t$
+### 1) Étude de $x \mapsto \int_c^x f(t)\\, \mathrm{d}t$
 
 <div class="bloc propriete" markdown="1">
 
@@ -469,7 +469,7 @@ $g$ est bien définie car $[c, x]$ et $[x, c]$ sont contenus dans $[a, b]$.
 Quels que soient $x, y \in [a, b]$, Chasles donne
 $g(x) - g(y) = \int_y^x f$, d'où
 $|g(x) - g(y)| = \left|\int_y^x f\right| \leq \left|\int_y^x |f|\right|
-\leq M\,|x - y|$.
+\leq M\\,|x - y|$.
 
 </div>
 
@@ -536,7 +536,7 @@ $$F(x) = \int_a^x f(t)\, \mathrm{d}t$$
 
 <span class="bloc-titre">Démonstration</span>
 
-D'après la proposition 2 ci-dessus, $F : x \mapsto \int_a^x f(t)\,\mathrm{d}t$
+D'après la proposition 2 ci-dessus, $F : x \mapsto \int_a^x f(t)\\,\mathrm{d}t$
 est de classe $\mathcal{C}^1$ sur $I$, avec $F' = f$ : c'est une primitive de
 $f$, et $F(a) = 0$. Si $G$ est une autre primitive de $f$ nulle en $a$, alors
 $(G - F)' = f - f = 0$ sur $I$, donc $G - F$ est constante ; comme elle
@@ -563,7 +563,7 @@ $$\int_a^b f(x)\, \mathrm{d}x = F(b) - F(a) = \Big[ F \Big]_a^b$$
 
 <span class="bloc-titre">Démonstration</span>
 
-$F$ s'écrit $F = c + \int_a^x f(t)\,\mathrm{d}t$ (proposition 1 du VII), donc
+$F$ s'écrit $F = c + \int_a^x f(t)\\,\mathrm{d}t$ (proposition 1 du VII), donc
 
 $$F(b) - F(a) = \int_a^b f(t)\, \mathrm{d}t$$
 
@@ -619,7 +619,7 @@ $F \circ \varphi$ est $\mathcal{C}^1$ sur $[\alpha, \beta]$ et
 $$(F \circ \varphi)'(t) = F'\big(\varphi(t)\big)\, \varphi'(t)
 = f\big(\varphi(t)\big)\, \varphi'(t)$$
 
-donc $F \circ \varphi$ est une primitive de $(f \circ \varphi)\, \varphi'$, et
+donc $F \circ \varphi$ est une primitive de $(f \circ \varphi)\\, \varphi'$, et
 
 $$\int_\alpha^\beta (f \circ \varphi)(t)\, \varphi'(t)\, \mathrm{d}t
 = \Big[ F \circ \varphi \Big]_\alpha^\beta
@@ -636,7 +636,7 @@ $$\int_\alpha^\beta (f \circ \varphi)(t)\, \varphi'(t)\, \mathrm{d}t
 - si $f$ est **impaire** et intégrable sur $[-a, a]$ :
   $\displaystyle\int&#95;{-a}^{a} f = 0$ ;
 - si $f$ est **$T$-périodique** et intégrable sur une période :
-  $\displaystyle\int_a^{a+T} f(t)\, \mathrm{d}t = \int_0^T f(t)\, \mathrm{d}t$
+  $\displaystyle\int_a^{a+T} f(t)\\, \mathrm{d}t = \int_0^T f(t)\\, \mathrm{d}t$
   pour tout $a$.
 
 </div>
@@ -659,11 +659,11 @@ $$f(b) = \sum_{k=0}^{n} \frac{f^{(k)}(a)}{k!}\, (b-a)^k
 <span class="bloc-titre">Démonstration (récurrence sur $n$)</span>
 
 - **Initialisation ($n = 0$)** : si $f$ est $\mathcal{C}^1$,
-  $\int_a^b f'(t)\,\mathrm{d}t = f(b) - f(a)$ (formule fondamentale).
+  $\int_a^b f'(t)\\,\mathrm{d}t = f(b) - f(a)$ (formule fondamentale).
 - **Hérédité** : supposons la propriété vraie au rang $n$ pour $f$ de classe
   $\mathcal{C}^{n+1}$, et prenons $f$ de classe $\mathcal{C}^{n+2}$. Une intégration
   par parties avec $u(t) = \dfrac{(b-t)^n}{n!}$ et
-  $\mathrm{d}v = f^{(n+1)}(t)\,\mathrm{d}t$ donne
+  $\mathrm{d}v = f^{(n+1)}(t)\\,\mathrm{d}t$ donne
 
 $$\int_a^b \frac{(b-t)^n}{n!} f^{(n+1)}(t)\, \mathrm{d}t
 = \frac{(b-a)^{n+1}}{(n+1)!}\, f^{(n+1)}(a)
@@ -689,7 +689,7 @@ $$f(b) = \sum_{k=0}^{n} \frac{f^{(k)}(a)}{k!}\, (b-a)^k
 <span class="bloc-titre">Démonstration</span>
 
 On applique le théorème de la moyenne à
-$\int_a^b \dfrac{(b-t)^n}{n!} f^{(n+1)}(t)\,\mathrm{d}t$ : la fonction
+$\int_a^b \dfrac{(b-t)^n}{n!} f^{(n+1)}(t)\\,\mathrm{d}t$ : la fonction
 $t \mapsto \dfrac{(b-t)^n}{n!}$ est continue et de signe constant (positive) sur
 $[a, b]$, donc il existe $c \in [a, b]$ avec
 
@@ -711,59 +711,59 @@ $$\int_a^b \frac{(b-t)^n}{n!} f^{(n+1)}(t)\, \mathrm{d}t
 <li>Soit $a < b < c < d$ et $f$ intégrable sur $[a, d]$. Montrer que :
 $$\int_a^b f + \int_b^c f + \int_c^d f + \int_d^a f = 0$$</li>
 <li>Soit $f$ continue sur $[a, b]$ telle que $\int_a^b f^2 = \int_a^b f^3 = \int_a^b f^4$. Montrer que $f$ est constante, égale à $0$ ou à $1$.</li>
-<li>Soit $f$ continue sur $[a, b]$ telle que, pour tout $k \in \{0, 1, \dots, n\}$,
-$\int_a^b t^k f(t)\, \mathrm{d}t = 0$. Montrer que $f$ admet au moins $n+1$ zéros dans $[a, b]$.</li>
+<li>Soit $f$ continue sur $[a, b]$ telle que, pour tout $k \in \\{0, 1, \dots, n\\}$,
+$\int_a^b t^k f(t)\\, \mathrm{d}t = 0$. Montrer que $f$ admet au moins $n+1$ zéros dans $[a, b]$.</li>
 <li>
 <ol>
 <li>Montrer que si $(f_n)&#95;{n \in \mathbb{N}}$ est une suite de fonctions intégrables qui convergent uniformément vers $f$ sur $[a, b]$, alors $f$ est intégrable et
 $$\lim_{n \to +\infty} \int_a^b f_n(t)\, \mathrm{d}t = \int_a^b f(t)\, \mathrm{d}t$$</li>
-<li>On pose $f_n(t) = 2nt\, e^{-nt^2}$. Calculer
-$\lim&#95;{n \to +\infty} \int_0^1 f_n(t)\, \mathrm{d}t$ et
+<li>On pose $f_n(t) = 2nt\\, e^{-nt^2}$. Calculer
+$\lim&#95;{n \to +\infty} \int_0^1 f_n(t)\\, \mathrm{d}t$ et
 $\int_0^1 \left( \lim&#95;{n \to +\infty} f_n(t) \right) \mathrm{d}t$. Que peut-on dire de cette suite de fonctions ?</li>
 </ol>
 </li>
 <li>Soit $f$ définie par $f(x) = 2x \sin\frac{1}{x} - \cos\frac{1}{x}$ pour $x \neq 0$ et $f(0) = 0$. Montrer que $f$ n'est pas continue en $0$ mais admet des primitives sur $\mathbb{R}$.</li>
-<li>Étudier la limite en $0$ de $f : x \mapsto \int_x^{3x} \frac{\cos t}{t}\, \mathrm{d}t$.</li>
+<li>Étudier la limite en $0$ de $f : x \mapsto \int_x^{3x} \frac{\cos t}{t}\\, \mathrm{d}t$.</li>
 <li>On pose $f(x) = \int&#95;{x - 1/x}^{x + 1/x} \frac{\mathrm{d}t}{\arctan^2 t}$. Quel est le domaine de définition de $f$ ? Quelle est la limite en $+\infty$ de $f$ ?</li>
 <li>Étudier et tracer le graphe de :
 <ol>
-<li>$f : x \mapsto \int_x^{x^2} e^{-t^2}\, \mathrm{d}t$ ;</li>
+<li>$f : x \mapsto \int_x^{x^2} e^{-t^2}\\, \mathrm{d}t$ ;</li>
 <li>$f : x \mapsto \int_x^{x^2} \frac{\mathrm{d}t}{1 + \ln t}$.</li>
 </ol>
 </li>
 <li>
 <ol>
 <li>Soit $a > 0$. Soit $f$ une application vérifiant
-$\forall x \in \mathbb{R},\ f(x) = \frac{1}{2a} \int&#95;{x-a}^{x+a} f(t)\, \mathrm{d}t$.
+$\forall x \in \mathbb{R},\ f(x) = \frac{1}{2a} \int&#95;{x-a}^{x+a} f(t)\\, \mathrm{d}t$.
 Montrer que $f$ est définie sur $\mathbb{R}$ et $\mathcal{C}^\infty$ sur $\mathbb{R}$.</li>
 <li>En déduire les applications vérifiant
-$\forall a > 0,\ \forall x \in \mathbb{R},\ f(x) = \frac{1}{2a} \int&#95;{x-a}^{x+a} f(t)\, \mathrm{d}t$.</li>
+$\forall a > 0,\ \forall x \in \mathbb{R},\ f(x) = \frac{1}{2a} \int&#95;{x-a}^{x+a} f(t)\\, \mathrm{d}t$.</li>
 </ol>
 </li>
-<li>On pose $f(x) = \int_x^{x+1} \frac{\sin(xt)}{t}\, \mathrm{d}t$. Quel est le domaine de définition de $f$ ? Quelle est la limite en $+\infty$ de $f$, en $0$ ? $f$ est-elle prolongeable par continuité et, si oui, est-elle dérivable en $0$ ?</li>
+<li>On pose $f(x) = \int_x^{x+1} \frac{\sin(xt)}{t}\\, \mathrm{d}t$. Quel est le domaine de définition de $f$ ? Quelle est la limite en $+\infty$ de $f$, en $0$ ? $f$ est-elle prolongeable par continuité et, si oui, est-elle dérivable en $0$ ?</li>
 <li>Calculer les limites des suites suivantes :
 <ol>
-<li>$u_n = \int_0^1 \frac{x^n}{1+x}\, \mathrm{d}x$ ;</li>
-<li>$u_n = \int_1^{1 + 1/\sqrt{n}} \sqrt{1 + nt}\, \mathrm{d}t$.</li>
+<li>$u_n = \int_0^1 \frac{x^n}{1+x}\\, \mathrm{d}x$ ;</li>
+<li>$u_n = \int_1^{1 + 1/\sqrt{n}} \sqrt{1 + nt}\\, \mathrm{d}t$.</li>
 </ol>
 </li>
 <li>Calculer la limite des suites suivantes :
 <ol>
 <li>$u_n = \sum&#95;{k=0}^{n} \frac{n+k}{k^2 + n^2}$ ;</li>
-<li>$u_n = \frac{1}{n}\Big( 2n\,(2n-1)\cdots(n+2)(n+1) \Big)^{1/n}$ ;</li>
-<li>$u_n = \sum&#95;{k=1}^{n} rac{k}{n^2} \sin\!\left( \frac{k\pi}{n+1} \right)$ ;</li>
-<li>$u_n = \left( \frac{(2n)!}{n!\, n!} \right)^{1/n}$ ;</li>
-<li>$u_n = \sum&#95;{k=1}^{n} \sin\!\left(\frac{k}{n}\right) \sin\!\left(\frac{k}{n^2}\right)$.</li>
+<li>$u_n = \frac{1}{n}\Big( 2n\\,(2n-1)\cdots(n+2)(n+1) \Big)^{1/n}$ ;</li>
+<li>$u_n = \sum&#95;{k=1}^{n} rac{k}{n^2} \sin\\!\left( \frac{k\pi}{n+1} \right)$ ;</li>
+<li>$u_n = \left( \frac{(2n)!}{n!\\, n!} \right)^{1/n}$ ;</li>
+<li>$u_n = \sum&#95;{k=1}^{n} \sin\\!\left(\frac{k}{n}\right) \sin\\!\left(\frac{k}{n^2}\right)$.</li>
 </ol>
 </li>
 <li>Montrer que la quantité $\int&#95;{-1/x}^{x} \frac{\mathrm{d}t}{\sqrt{1 - t^2 + t^4}}$ ne dépend que du signe de $x$.</li>
 <li>Soit $f$ une application $T$-périodique. Montrer que
-$\int_a^{a+T} f(t)\, \mathrm{d}t = \int_0^T f(t)\, \mathrm{d}t$.</li>
+$\int_a^{a+T} f(t)\\, \mathrm{d}t = \int_0^T f(t)\\, \mathrm{d}t$.</li>
 <li>Calculer les intégrales suivantes :
 <ol>
-<li>$\int_0^1 \ln(1 + t^2)\, \mathrm{d}t$ ;</li>
-<li>$\int&#95;{1/2}^{2} \left( 1 + \frac{1}{t^2} \right) \arctan t\, \mathrm{d}t$ ;</li>
-<li>$\int_0^1 \frac{\sqrt{1+t}}{\sqrt{t} + \sqrt{2+t}}\, \mathrm{d}t$.</li>
+<li>$\int_0^1 \ln(1 + t^2)\\, \mathrm{d}t$ ;</li>
+<li>$\int&#95;{1/2}^{2} \left( 1 + \frac{1}{t^2} \right) \arctan t\\, \mathrm{d}t$ ;</li>
+<li>$\int_0^1 \frac{\sqrt{1+t}}{\sqrt{t} + \sqrt{2+t}}\\, \mathrm{d}t$.</li>
 </ol>
 </li>
 <li>Soit $f$ continue positive sur $[0, 1]$. Montrer que
@@ -771,7 +771,7 @@ $$\lim_{n \to +\infty} \left( \int_0^1 f^n(t)\, \mathrm{d}t \right)^{1/n} = \sup
 <li>
 <ol>
 <li>Soit $f$ de classe $\mathcal{C}^1$ sur $[a, b]$. Montrer que
-$\lim&#95;{\lambda \to +\infty} \int_a^b \sin(\lambda t)\, f(t)\, \mathrm{d}t = 0$.</li>
+$\lim&#95;{\lambda \to +\infty} \int_a^b \sin(\lambda t)\\, f(t)\\, \mathrm{d}t = 0$.</li>
 <li>Montrer le même résultat si l'on suppose $f$ seulement continue (commencer par $f$ constante, puis $f$ en escalier...).</li>
 </ol>
 </li>

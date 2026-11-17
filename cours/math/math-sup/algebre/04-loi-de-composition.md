@@ -278,7 +278,7 @@ Exemples :
 - montrer la commutativité par le symétrique de $ab$ ;
 - démontrer que $P$ : soit 1), on sait 2) (on suppose non 1 et on montre 2) ; 1er cas : non 1, donc j'ai 2 ; 2e cas : donc j'ai $P$ ;
 - pour montrer que $f$ est injective : partir de $f(a) = f(b)$ et remonter les implications pour aboutir à $x = y$ ;
-- les démonstrations avec $\mathbb{Z}$ : celles où intervient $\mathrm{Im}\, f$, qui serait de la forme $n\mathbb{Z}$ ;
+- les démonstrations avec $\mathbb{Z}$ : celles où intervient $\mathrm{Im}\\, f$, qui serait de la forme $n\mathbb{Z}$ ;
 - pour montrer que deux ensembles ont leur cardinal égal, utiliser une bijection entre les deux ;
 - pour l'associativité ou la commutativité : insérer le rôle des variables.
 
@@ -314,7 +314,7 @@ $$
 <span class="bloc-titre">Feuille d'exercices n° 7 — Lois internes, groupes (énoncés)</span>
 
 <ol class="enonces">
-<li>Soit dans $E$ la loi interne $\tau$ qui vérifie : $\tau$ est associative, commutative et : $\forall a \in E,\ a \,\tau\, a = a$. On définit sur $E$ la relation binaire $R$ par $(x R y \iff x \,\tau\, y = y)$. Montrer que $R$ est une relation d'ordre et que $\{x, y\}$ admet une borne supérieure et une borne inférieure pour cet ordre.</li>
+<li>Soit dans $E$ la loi interne $\tau$ qui vérifie : $\tau$ est associative, commutative et : $\forall a \in E,\ a \\,\tau\\, a = a$. On définit sur $E$ la relation binaire $R$ par $(x R y \iff x \\,\tau\\, y = y)$. Montrer que $R$ est une relation d'ordre et que $\\{x, y\\}$ admet une borne supérieure et une borne inférieure pour cet ordre.</li>
 <li>Soit $E$ un ensemble fini muni d'une loi interne $&#42;$ associative, d'élément neutre $e$. Soit $a$ fixé dans $E$ et $T_a$ l'application :
 $$T_a : E \to E, \quad x \mapsto a * x$$
 <ol>
@@ -325,7 +325,7 @@ $$T_a : E \to E, \quad x \mapsto a * x$$
 <li>Soit $(G, &#42;)$ un groupe, $E$ un ensemble non vide. Montrer que $G^E$ est un groupe pour la loi $\times$ définie par : pour $f$ et $g$ dans $G^E$, $f \times g$ est l'application $(f \times g)(x) = f(x) &#42; g(x)$. À quelle condition $G^E$ est-il abélien ?</li>
 <li>Montrer que la réunion de deux sous-groupes est un sous-groupe de $G$ si et seulement si l'un des deux sous-groupes est inclus dans l'autre.</li>
 <li>Soit $(E, &#42;)$ un magma associatif ; on suppose que $e$ est élément neutre à gauche et que tout élément admet un symétrique à gauche. Montrer que $E$ est un groupe.</li>
-<li>Soit $(G, .)$ un groupe. Montrer que $C = \{x \in G \mid \forall y \in G,\ xy = yx\}$ est un sous-groupe de $E$ (appelé centre de $G$). Que vaut $C$ lorsque le groupe est abélien ? Quel est le centre de l'ensemble des bijections de $E$, si $E$ est un ensemble à $n$ éléments ?</li>
+<li>Soit $(G, .)$ un groupe. Montrer que $C = \\{x \in G \mid \forall y \in G,\ xy = yx\\}$ est un sous-groupe de $E$ (appelé centre de $G$). Que vaut $C$ lorsque le groupe est abélien ? Quel est le centre de l'ensemble des bijections de $E$, si $E$ est un ensemble à $n$ éléments ?</li>
 <li>On considère le diagramme suivant :
 $$
 \begin{array}{ccccccccc}
@@ -334,7 +334,7 @@ A & \xrightarrow{f} & B & \xrightarrow{g} & C & \xrightarrow{h} & D & \xrightarr
 A' & \xrightarrow{f'} & B' & \xrightarrow{g'} & C' & \xrightarrow{h'} & D' & \xrightarrow{k'} & E'
 \end{array}
 $$
-On suppose que tous les ensembles sont des groupes et les applications des morphismes de groupes. On suppose que le diagramme est commutatif, c'est-à-dire que si deux applications vont d'un même ensemble de départ vers un même ensemble d'arrivée, elles sont égales (ex $q \circ f = f' \circ p$). On suppose de plus que les deux suites $(f, g, h, k)$ et $(f', g', h', k')$ sont exactes, c'est-à-dire que l'image d'une application est égale au noyau de l'application suivante (ex $\mathrm{Im}\, g = \ker h$). Montrer que :
+On suppose que tous les ensembles sont des groupes et les applications des morphismes de groupes. On suppose que le diagramme est commutatif, c'est-à-dire que si deux applications vont d'un même ensemble de départ vers un même ensemble d'arrivée, elles sont égales (ex $q \circ f = f' \circ p$). On suppose de plus que les deux suites $(f, g, h, k)$ et $(f', g', h', k')$ sont exactes, c'est-à-dire que l'image d'une application est égale au noyau de l'application suivante (ex $\mathrm{Im}\\, g = \ker h$). Montrer que :
 <ol>
 <li>Si $p$ est surjective et si $q$ et $s$ sont injectives alors $r$ est injective.</li>
 <li>Si $t$ est injective et si $q$ et $s$ sont surjectives alors $r$ est surjective.</li>
@@ -342,7 +342,7 @@ On suppose que tous les ensembles sont des groupes et les applications des morph
 </ol>
 </li>
 <li>Soit $G$ un groupe tel que : $\forall a \in G,\ a^2 = 1$. Montrer que $G$ est commutatif.</li>
-<li>Montrer que $G = \{p\sqrt{2} + q\sqrt{3} \mid p, q \in \mathbb{Z}\}$ est un groupe.</li>
+<li>Montrer que $G = \\{p\sqrt{2} + q\sqrt{3} \mid p, q \in \mathbb{Z}\\}$ est un groupe.</li>
 <li>Quelles sont les tables possibles pour un groupe d'ordre 4 ? d'ordre 6 ?</li>
 <li>Soit $(a, b) \subset G$, $G$ groupe. On suppose que $a$ et $b$ vérifient les relations :
 $$
@@ -352,7 +352,7 @@ a^2 = b^2 \\
 aba = b
 \end{cases}
 $$
-Soit $H$ le groupe engendré par $\{a, b\}$. Montrer que $H$ est d'ordre 8. Dresser la table de $H$.</li>
+Soit $H$ le groupe engendré par $\\{a, b\\}$. Montrer que $H$ est d'ordre 8. Dresser la table de $H$.</li>
 <li>Soit $a$ un élément d'un groupe, $a$ d'ordre $n$. Montrer que $a^{-1}$ est d'ordre $n$, ainsi que $bab^{-1}$.</li>
 <li>Soit $H$ et $K$, deux sous-groupes de $(G, .)$. Montrer que les 4 propositions suivantes sont équivalentes :
 <ol>

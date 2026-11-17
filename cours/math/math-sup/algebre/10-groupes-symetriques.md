@@ -11,7 +11,7 @@ source: "Math/Math Sup/Algèbre/10 Groupes symétriques"
 pages: 42
 ---
 
-Soit $E$ un ensemble. On rappelle que l'ensemble $\mathfrak{S}(E)$ des bijections de $E$ dans $E$, muni de la composition $\circ$, est un **groupe**, non commutatif dès que $\mathrm{Card}\ E \geq 3$. On considère ici $E$ de **cardinal fini** $n$. Si $\mathrm{Card}\ E = n$, une bijection de $E$ dans $E$ s'appelle une **permutation** ; $\mathfrak{S}(E)$ s'appelle alors le **groupe symétrique** et $\mathrm{Card}\ \mathfrak{S}(E) = n!$. Enfin, $\mathfrak{S}(E)$ et $\mathfrak{S}(n)$ sont **isomorphes** : si $E = \{a_1, \dots, a_n\}$, on pose $\varphi : \mathfrak{S}(E) \to \mathfrak{S}(n)$, $\sigma \mapsto \varphi(\sigma)$, avec $\varphi(\sigma)(i) = j$ lorsque $\sigma(a_i) = a_j$. **Conclusion** : on s'intéressera uniquement à $\mathfrak{S}(n)$.
+Soit $E$ un ensemble. On rappelle que l'ensemble $\mathfrak{S}(E)$ des bijections de $E$ dans $E$, muni de la composition $\circ$, est un **groupe**, non commutatif dès que $\mathrm{Card}\ E \geq 3$. On considère ici $E$ de **cardinal fini** $n$. Si $\mathrm{Card}\ E = n$, une bijection de $E$ dans $E$ s'appelle une **permutation** ; $\mathfrak{S}(E)$ s'appelle alors le **groupe symétrique** et $\mathrm{Card}\ \mathfrak{S}(E) = n!$. Enfin, $\mathfrak{S}(E)$ et $\mathfrak{S}(n)$ sont **isomorphes** : si $E = \\{a_1, \dots, a_n\\}$, on pose $\varphi : \mathfrak{S}(E) \to \mathfrak{S}(n)$, $\sigma \mapsto \varphi(\sigma)$, avec $\varphi(\sigma)(i) = j$ lorsque $\sigma(a_i) = a_j$. **Conclusion** : on s'intéressera uniquement à $\mathfrak{S}(n)$.
 
 ## I. Orbites d'une permutation
 
@@ -56,16 +56,16 @@ $$\mathcal{O}(x) = \{x, \sigma(x), \sigma^2(x), \dots, \sigma^k(x)\}$$
 <div class="bloc demo" markdown="1">
 <span class="bloc-titre">Démonstration</span>
 
-Soit $d = \{m \in \mathbb{N}^&#42; \mid \sigma^m(x) = x\}$.
+Soit $d = \\{m \in \mathbb{N}^&#42; \mid \sigma^m(x) = x\\}$.
 
-- **1er cas** : $\sigma(x) = x$. Alors $\mathcal{O}(x) = \{x\}$ ($k = 0$, constant).
-- **2ème cas** : $\sigma(x) \neq x$. Alors $\sigma \neq \mathrm{Id}&#95;E$, et soit $p$ l'ordre de $x$ : $\sigma^p(x) = x$, donc $p \neq 1$. $d$ est une partie non vide de $\mathbb{N}$, donc admet un plus petit élément $m \in \mathbb{N}^&#42;$. Posons $k = m - 1 \in \mathbb{N}$ : $\{x, \sigma(x), \dots, \sigma^k(x)\} \subset \mathcal{O}(x)$.
+- **1er cas** : $\sigma(x) = x$. Alors $\mathcal{O}(x) = \\{x\\}$ ($k = 0$, constant).
+- **2ème cas** : $\sigma(x) \neq x$. Alors $\sigma \neq \mathrm{Id}&#95;E$, et soit $p$ l'ordre de $x$ : $\sigma^p(x) = x$, donc $p \neq 1$. $d$ est une partie non vide de $\mathbb{N}$, donc admet un plus petit élément $m \in \mathbb{N}^&#42;$. Posons $k = m - 1 \in \mathbb{N}$ : $\\{x, \sigma(x), \dots, \sigma^k(x)\\} \subset \mathcal{O}(x)$.
 
 Soit $y \in \mathcal{O}(x)$ : $y = \sigma^i(x)$ avec $i \in \mathbb{Z}$. Écrivons $i = mq + r$ avec $0 \leq r < m$. Alors
 
 $$\sigma^i(x) = \sigma^{mq+r}(x) = (\sigma^m)^q\big(\sigma^r(x)\big) = \sigma^r(x)$$
 
-car $\sigma^m(x) = x$, d'où par une simple récurrence $\forall q \in \mathbb{N}^&#42;,\ \sigma^{qm}(x) = x$. Comme $0 \leq r \leq k$ : $\sigma^i(x) = \sigma^r(x)$, donc $y \in \{x, \dots, \sigma^k(x)\}$.
+car $\sigma^m(x) = x$, d'où par une simple récurrence $\forall q \in \mathbb{N}^&#42;,\ \sigma^{qm}(x) = x$. Comme $0 \leq r \leq k$ : $\sigma^i(x) = \sigma^r(x)$, donc $y \in \\{x, \dots, \sigma^k(x)\\}$.
 
 </div>
 
@@ -141,12 +141,12 @@ Ceci signifie que les transpositions **engendrent** $\mathfrak{S}&#95;n$.
 <div class="bloc demo" markdown="1">
 <span class="bloc-titre">Démonstration</span>
 
-Récurrence sur $n$. Pour $n = 2$ : $E = \{1,2\}$, $\mathfrak{S}&#95;2 = \{\mathrm{Id}, \tau\}$ avec $	au = (1\ 2)$ la transposition, et $\mathrm{Id} = (1\ 2) \circ (1\ 2)$ : le résultat est vrai.
+Récurrence sur $n$. Pour $n = 2$ : $E = \\{1,2\\}$, $\mathfrak{S}&#95;2 = \\{\mathrm{Id}, \tau\\}$ avec $	au = (1\ 2)$ la transposition, et $\mathrm{Id} = (1\ 2) \circ (1\ 2)$ : le résultat est vrai.
 
 Supposons la propriété vraie pour $\mathfrak{S}&#95;n$, et soit $\sigma \in \mathfrak{S}&#95;{n+1}$.
 
-- **1er cas** : $\sigma(n+1) = n+1$. Alors $\sigma$ se restreint en une permutation de $\{1,\dots,n\}$, produit de transpositions de $\mathfrak{S}&#95;n$ (donc de $\mathfrak{S}&#95;{n+1}$).
-- **2ème cas** : $\sigma(n+1) = i \in \{1,\dots,n\}$. Soit $\tau = (i\ n+1)$ ; alors $\tau \circ \sigma$ fixe $n+1$, donc $\tau \circ \sigma = \tau_1 \circ \dots \circ \tau_r$ avec les $\tau_j$ transpositions de $\mathfrak{S}&#95;n$. D'où $\sigma = \tau \circ \tau_1 \circ \dots \circ \tau_r$ : $\sigma$ est le produit de $r+1$ transpositions.
+- **1er cas** : $\sigma(n+1) = n+1$. Alors $\sigma$ se restreint en une permutation de $\\{1,\dots,n\\}$, produit de transpositions de $\mathfrak{S}&#95;n$ (donc de $\mathfrak{S}&#95;{n+1}$).
+- **2ème cas** : $\sigma(n+1) = i \in \\{1,\dots,n\\}$. Soit $\tau = (i\ n+1)$ ; alors $\tau \circ \sigma$ fixe $n+1$, donc $\tau \circ \sigma = \tau_1 \circ \dots \circ \tau_r$ avec les $\tau_j$ transpositions de $\mathfrak{S}&#95;n$. D'où $\sigma = \tau \circ \tau_1 \circ \dots \circ \tau_r$ : $\sigma$ est le produit de $r+1$ transpositions.
 
 </div>
 
@@ -187,20 +187,20 @@ est un **morphisme de groupe**.
 <div class="bloc demo" markdown="1">
 <span class="bloc-titre">Démonstration</span>
 
-Il suffit de montrer que $\varepsilon(\sigma \circ \tau) = \varepsilon(\sigma)\,\varepsilon(\tau)$ (la loi du groupe $\{\pm 1\}$ étant multiplicative).
+Il suffit de montrer que $\varepsilon(\sigma \circ \tau) = \varepsilon(\sigma)\\,\varepsilon(\tau)$ (la loi du groupe $\\{\pm 1\\}$ étant multiplicative).
 
 **1er cas** : $\tau$ est une transposition $t = (a\ b)$.
 
 - si $a$ et $b$ sont dans la **même orbite** de $\sigma$ : la composition par $(a\ b)$ « casse » cette orbite en deux, le nombre d'orbites augmente de $1$ : $\varepsilon(\sigma \circ t) = -\varepsilon(\sigma)$ ;
 - si $a$ et $b$ n'appartiennent **pas à la même orbite** de $\sigma$ : la composition par $(a\ b)$ « joint » les deux orbites en une, le nombre d'orbites diminue de $1$ : $\varepsilon(\sigma \circ t) = -\varepsilon(\sigma)$.
 
-Dans les deux cas, $\varepsilon(\sigma \circ t) = -\varepsilon(\sigma) = \varepsilon(\sigma)\,\varepsilon(t)$.
+Dans les deux cas, $\varepsilon(\sigma \circ t) = -\varepsilon(\sigma) = \varepsilon(\sigma)\\,\varepsilon(t)$.
 
 Soit maintenant $\sigma \in \mathfrak{S}&#95;n$ quelconque ; d'après le théorème 2, $\sigma = t_1 \circ \dots \circ t_r$, d'où
 
 $$\varepsilon(t_1 \circ \dots \circ t_r) = \varepsilon(t_1) \cdots \varepsilon(t_r) = (-1)^r$$
 
-**Conclusion** : $\varepsilon(\sigma \circ \tau) = \varepsilon(\sigma)\,\varepsilon(\tau)$.
+**Conclusion** : $\varepsilon(\sigma \circ \tau) = \varepsilon(\sigma)\\,\varepsilon(\tau)$.
 
 </div>
 
@@ -240,7 +240,7 @@ Dans tout ce cours, $\mathbb{K}$ désigne un **sous-corps de $\mathbb{C}$ ou de 
 
 <span class="bloc-titre">Définition</span>
 
-Soit $f : E \to F$. On dit que $f$ est **$n$-linéaire** si $f$ est linéaire par rapport à chacune de ses coordonnées : pour tout $i \in \{1,\dots,n\}$ et tout $(a_1,\dots,a&#95;{i-1},a&#95;{i+1},\dots,a_n)$ fixé, l'application
+Soit $f : E \to F$. On dit que $f$ est **$n$-linéaire** si $f$ est linéaire par rapport à chacune de ses coordonnées : pour tout $i \in \\{1,\dots,n\\}$ et tout $(a_1,\dots,a&#95;{i-1},a&#95;{i+1},\dots,a_n)$ fixé, l'application
 
 $$a_i \longmapsto f(a_1,\dots,a_i,\dots,a_n)$$
 
@@ -252,7 +252,7 @@ est linéaire.
 
 <span class="bloc-titre">Exemple</span>
 
-$E_1 = E_2 = F = \mathbb{R}$ : $(f,g) \mapsto \int_0^1 f(t)\, g(t)\, \mathrm{d}t$ est $2$-linéaire (on dit aussi **bilinéaire**).
+$E_1 = E_2 = F = \mathbb{R}$ : $(f,g) \mapsto \int_0^1 f(t)\\, g(t)\\, \mathrm{d}t$ est $2$-linéaire (on dit aussi **bilinéaire**).
 
 </div>
 
@@ -260,7 +260,7 @@ $E_1 = E_2 = F = \mathbb{R}$ : $(f,g) \mapsto \int_0^1 f(t)\, g(t)\, \mathrm{d}t
 
 <span class="bloc-titre">Propriété</span>
 
-L'ensemble $\mathcal{L}&#95;n(E;F)$ des applications $n$-linéaires de $E$ dans $F$ est un **sous-espace vectoriel** de $F^E$ (non réduit à $\{0\}$, stable par combinaisons linéaires).
+L'ensemble $\mathcal{L}&#95;n(E;F)$ des applications $n$-linéaires de $E$ dans $F$ est un **sous-espace vectoriel** de $F^E$ (non réduit à $\\{0\\}$, stable par combinaisons linéaires).
 
 Dans la suite, on supposera $E_1 = E_2 = \dots = E_n = E$. On note encore $\mathcal{L}&#95;n(E, F)$ l'ensemble $\mathcal{L}&#95;n(E^n, F)$.
 
@@ -317,7 +317,7 @@ Si $\mathbb{K}$ est un corps de **caractéristique $\neq 2$** : $f$ alternée $\
 
 $$f(a_1,\dots,a_n) = \varepsilon(\tau)\, f(a_{\tau(1)},\dots,a_{\tau(n)}) = -f(a_1,\dots,a_n)$$
 
-donc $2 f(a_1,\dots,a_n) = 0$, d'où $f(a_1,\dots,a_n) = 0$ puisque $\mathrm{car}\,\mathbb{K} \neq 2$.
+donc $2 f(a_1,\dots,a_n) = 0$, d'où $f(a_1,\dots,a_n) = 0$ puisque $\mathrm{car}\\,\mathbb{K} \neq 2$.
 
 **Réciproque.** Si $f$ est alternée :
 
@@ -325,7 +325,7 @@ $$0 = f(\dots, a_i + a_j, \dots, a_i + a_j, \dots) = f(\dots,a_i,\dots,a_i,\dots
 
 $$= f(\dots,a_i,\dots,a_j,\dots) + f(\dots,a_j,\dots,a_i,\dots)$$
 
-donc $f(\dots,a_j,\dots,a_i,\dots) = -f(\dots,a_i,\dots,a_j,\dots)$ ; en décomposant $\sigma$ en transpositions, on en déduit $f(a&#95;{\sigma(1)},\dots,a&#95;{\sigma(n)}) = \varepsilon(\sigma)\, f(a_1,\dots,a_n)$.
+donc $f(\dots,a_j,\dots,a_i,\dots) = -f(\dots,a_i,\dots,a_j,\dots)$ ; en décomposant $\sigma$ en transpositions, on en déduit $f(a&#95;{\sigma(1)},\dots,a&#95;{\sigma(n)}) = \varepsilon(\sigma)\\, f(a_1,\dots,a_n)$.
 
 </div>
 
@@ -345,13 +345,13 @@ On note $\mathcal{A}&#95;n(E)$ l'espace des **formes $n$-linéaires alternées**
 
 #### Cas m = 2
 
-Soit $(e_1, e_2)$ une base de $E$. Supposons que $\mathcal{A}&#95;2(E) \neq \{0\}$ et soit $f \in \mathcal{A}&#95;2(E)$, $f \neq 0$. Quels que soient $v_1, v_2 \in E$, avec $v_1 = x&#95;{11} e_1 + x&#95;{12} e_2$ et $v_2 = x&#95;{21} e_1 + x&#95;{22} e_2$ :
+Soit $(e_1, e_2)$ une base de $E$. Supposons que $\mathcal{A}&#95;2(E) \neq \\{0\\}$ et soit $f \in \mathcal{A}&#95;2(E)$, $f \neq 0$. Quels que soient $v_1, v_2 \in E$, avec $v_1 = x&#95;{11} e_1 + x&#95;{12} e_2$ et $v_2 = x&#95;{21} e_1 + x&#95;{22} e_2$ :
 
 $$f(v_1, v_2) = f(x_{11} e_1 + x_{12} e_2,\ x_{21} e_1 + x_{22} e_2) = (x_{11} x_{22} - x_{12} x_{21})\, f(e_1, e_2)$$
 
 (car $f(e_1,e_1) = f(e_2,e_2) = 0$ et $f(e_2,e_1) = -f(e_1,e_2)$). Comme $f \neq 0$, $f(e_1, e_2) \neq 0$.
 
-Soit $\Delta_e$ l'application $(E \times E \to \mathbb{K})$ définie par $\Delta_e(v_1, v_2) = x&#95;{11} x&#95;{22} - x&#95;{12} x&#95;{21}$. $\Delta_e$ est **bilinéaire**, **antisymétrique**, **non nulle** ($\Delta_e(e_1, e_2) = 1$) : $\Delta_e \in \mathcal{A}&#95;2(E)$, $\Delta_e \neq 0$. De plus, $\forall f \in \mathcal{A}&#95;2(E)$ : $f = d\, \Delta_e$ avec $d = f(e_1, e_2)$.
+Soit $\Delta_e$ l'application $(E \times E \to \mathbb{K})$ définie par $\Delta_e(v_1, v_2) = x&#95;{11} x&#95;{22} - x&#95;{12} x&#95;{21}$. $\Delta_e$ est **bilinéaire**, **antisymétrique**, **non nulle** ($\Delta_e(e_1, e_2) = 1$) : $\Delta_e \in \mathcal{A}&#95;2(E)$, $\Delta_e \neq 0$. De plus, $\forall f \in \mathcal{A}&#95;2(E)$ : $f = d\\, \Delta_e$ avec $d = f(e_1, e_2)$.
 
 <div class="bloc propriete" markdown="1">
 
@@ -401,7 +401,7 @@ $$f(v_1,\dots,v_n) = \sum_{\sigma \in \mathfrak{S}_n} \varepsilon(\sigma)\, x_{1
 
 <span class="bloc-titre">Lemme</span>
 
-$\mathcal{S} = \{\sigma \in \mathfrak{S}&#95;n \mid \sigma(i) < \sigma(j)\}$ et $\mathcal{S}' = \{\sigma \in \mathfrak{S}&#95;n \mid \sigma(i) > \sigma(j)\}$ sont **complémentaires** dans $\mathfrak{S}&#95;n$, et $T : \sigma \mapsto \sigma \circ (i\ j)$ est une **bijection** de $\mathcal{S}$ dans $\mathcal{S}'$ (c'est une involution).
+$\mathcal{S} = \\{\sigma \in \mathfrak{S}&#95;n \mid \sigma(i) < \sigma(j)\\}$ et $\mathcal{S}' = \\{\sigma \in \mathfrak{S}&#95;n \mid \sigma(i) > \sigma(j)\\}$ sont **complémentaires** dans $\mathfrak{S}&#95;n$, et $T : \sigma \mapsto \sigma \circ (i\ j)$ est une **bijection** de $\mathcal{S}$ dans $\mathcal{S}'$ (c'est une involution).
 
 </div>
 
@@ -458,7 +458,7 @@ $$\det_e(v_{\sigma(1)},\dots,v_{\sigma(n)}) = \varepsilon(\sigma)\, \det_e(v_1,\
 <div class="bloc demo" markdown="1">
 <span class="bloc-titre">Démonstration</span>
 
-La première formule n'est que la propriété 2 précédente. Pour la seconde : $\det_e(v&#95;{\sigma(1)},\dots,v&#95;{\sigma(n)}) = \sum&#95;{\tau \in \mathfrak{S}&#95;n} \varepsilon(\tau)\, x&#95;{\sigma\tau(1),1} \cdots x&#95;{\sigma\tau(n),n}$ ; comme $|\sigma(1),\dots,\sigma(n)| = \{1,\dots,n\}$, en posant $\rho = \sigma \tau$ et comme $\varepsilon$ est un morphisme, $\varepsilon(\tau) = \varepsilon(\sigma)^{-1}\varepsilon(\rho) = \varepsilon(\sigma)\varepsilon(\rho)$, d'où le résultat.
+La première formule n'est que la propriété 2 précédente. Pour la seconde : $\det_e(v&#95;{\sigma(1)},\dots,v&#95;{\sigma(n)}) = \sum&#95;{\tau \in \mathfrak{S}&#95;n} \varepsilon(\tau)\\, x&#95;{\sigma\tau(1),1} \cdots x&#95;{\sigma\tau(n),n}$ ; comme $|\sigma(1),\dots,\sigma(n)| = \\{1,\dots,n\\}$, en posant $\rho = \sigma \tau$ et comme $\varepsilon$ est un morphisme, $\varepsilon(\tau) = \varepsilon(\sigma)^{-1}\varepsilon(\rho) = \varepsilon(\sigma)\varepsilon(\rho)$, d'où le résultat.
 
 </div>
 
@@ -498,7 +498,7 @@ $(v_1,\dots,v_n)$ est une **base** de $E$ si et seulement si $\det_e(v_1,\dots,v
 
 $$\det_e(v_1,\dots,v_n) = \frac{1}{\lambda_1}\ \det_e\Big(\sum_i \lambda_i v_i,\, v_2, \dots, v_n\Big) = 0$$
 
-- Réciproquement, si $(v_1,\dots,v_n)$ est une base, en prenant $\mathcal{e}' = (v_1,\dots,v_n)$, la formule de changement de base donne $1 = \det&#95;{\mathcal{e}'}(v_1,\dots,v_n) = \det_e(v_1,\dots,v_n)\; \det&#95;{\mathcal{e}'}(e_1,\dots,e_n)$, et $\det&#95;{\mathcal{e}'}(e_1,\dots,e_n) \neq 0$ (matrice de passage inversible) : donc $\det_e(v_1,\dots,v_n) \neq 0$.
+- Réciproquement, si $(v_1,\dots,v_n)$ est une base, en prenant $\mathcal{e}' = (v_1,\dots,v_n)$, la formule de changement de base donne $1 = \det&#95;{\mathcal{e}'}(v_1,\dots,v_n) = \det_e(v_1,\dots,v_n)\\; \det&#95;{\mathcal{e}'}(e_1,\dots,e_n)$, et $\det&#95;{\mathcal{e}'}(e_1,\dots,e_n) \neq 0$ (matrice de passage inversible) : donc $\det_e(v_1,\dots,v_n) \neq 0$.
 
 </div>
 
@@ -506,8 +506,8 @@ $$\det_e(v_1,\dots,v_n) = \frac{1}{\lambda_1}\ \det_e\Big(\sum_i \lambda_i v_i,\
 
 <span class="bloc-titre">Exemples</span>
 
-- Dans $\mathbb{R}^2$ : $(\vec v_1, \vec v_2)$ est une base ssi $\begin{vmatrix} x_1 & y_1 \\ x_2 & y_2 \end{vmatrix} \neq 0$.
-- Dans $\mathbb{R}^3$ : $(v_1, v_2, v_3)$ est une base ssi $\begin{vmatrix} x_1 & y_1 & z_1 \\ x_2 & y_2 & z_2 \\ x_3 & y_3 & z_3 \end{vmatrix} \neq 0$.
+- Dans $\mathbb{R}^2$ : $(\vec v_1, \vec v_2)$ est une base ssi $\begin{vmatrix} x_1 & y_1 \\\ x_2 & y_2 \end{vmatrix} \neq 0$.
+- Dans $\mathbb{R}^3$ : $(v_1, v_2, v_3)$ est une base ssi $\begin{vmatrix} x_1 & y_1 & z_1 \\\ x_2 & y_2 & z_2 \\\ x_3 & y_3 & z_3 \end{vmatrix} \neq 0$.
 
 </div>
 
@@ -528,7 +528,7 @@ $\lambda$ est **indépendant du choix de** $f$ et s'appelle le **déterminant de
 <div class="bloc demo" markdown="1">
 <span class="bloc-titre">Démonstration</span>
 
-Si $g$ est une autre base de $\mathcal{A}&#95;n(E)$ : $g = \lambda f$, donc $g(u(v_1),\dots,u(v_n)) = \lambda f(u(v_1),\dots,u(v_n)) = \lambda \mu\, f(v_1,\dots,v_n) = \mu\, g(v_1,\dots,v_n)$.
+Si $g$ est une autre base de $\mathcal{A}&#95;n(E)$ : $g = \lambda f$, donc $g(u(v_1),\dots,u(v_n)) = \lambda f(u(v_1),\dots,u(v_n)) = \lambda \mu\\, f(v_1,\dots,v_n) = \mu\\, g(v_1,\dots,v_n)$.
 
 </div>
 
@@ -562,7 +562,7 @@ $\det \mathrm{Id} = \det_e(e_1,\dots,e_n) = 1$ ;
 
 $\det(\alpha u) = \det_e(\alpha u(e_1),\dots,\alpha u(e_n)) = \alpha^n \det_e(u(e_1),\dots,u(e_n)) = \alpha^n \det u$ ;
 
-$\det(u \circ v) = \det_e(u(v(e_1)),\dots,u(v(e_n))) = \det u\; \det_e(v(e_1),\dots,v(e_n)) = \det u\, \det v$.
+$\det(u \circ v) = \det_e(u(v(e_1)),\dots,u(v(e_n))) = \det u\\; \det_e(v(e_1),\dots,v(e_n)) = \det u\\, \det v$.
 
 </div>
 
@@ -586,7 +586,7 @@ $u$ est **inversible** si et seulement si $\det u \neq 0$.
 
 <span class="bloc-titre">Propriété</span>
 
-Si $u \in \mathrm{GL}(E)$ : $\det u^{-1} = \dfrac{1}{\det u}$ (car $\det(u \circ u^{-1}) = \det \mathrm{Id} = 1 = \det u\, \det u^{-1}$).
+Si $u \in \mathrm{GL}(E)$ : $\det u^{-1} = \dfrac{1}{\det u}$ (car $\det(u \circ u^{-1}) = \det \mathrm{Id} = 1 = \det u\\, \det u^{-1}$).
 
 </div>
 
@@ -639,7 +639,7 @@ $$\det {}^t\!A = \det A$$
 
 <span class="bloc-titre">Exemple</span>
 
-$A = \begin{pmatrix} a & b \\ c & d \end{pmatrix}$ : $A$ est inversible ssi $\det A = ad - bc \neq 0$.
+$A = \begin{pmatrix} a & b \\\ c & d \end{pmatrix}$ : $A$ est inversible ssi $\det A = ad - bc \neq 0$.
 
 </div>
 
@@ -673,7 +673,7 @@ $A&#95;{ij}$ s'appelle le **cofacteur** de $a&#95;{ij}$.
 
 $$\sum_{\sigma \in \mathfrak{S}_n} \varepsilon(\sigma)\, a_{\sigma(1),1} \cdots a_{\sigma(n-1),n-1}\, b_{\sigma(n),n} = 0 \text{ si } \sigma(n) \neq n, \qquad = 1 \text{ sinon}$$
 
-Donc (bijection $\{\sigma \in \mathfrak{S}&#95;n \mid \sigma(n) = n\} \leftrightarrow \mathfrak{S}&#95;{n-1}$) :
+Donc (bijection $\\{\sigma \in \mathfrak{S}&#95;n \mid \sigma(n) = n\\} \leftrightarrow \mathfrak{S}&#95;{n-1}$) :
 
 $$A_{nn} = \sum_{\sigma \in \mathfrak{S}_{n-1}} \varepsilon(\sigma)\, a_{\sigma(1),1} \cdots a_{\sigma(n-1),n-1} = \det A'$$
 
@@ -833,7 +833,7 @@ $$\begin{pmatrix} 0 & -1 & & \\ -1 & 0 & & \\ & & I_3 & \end{pmatrix} \times \be
 
 <span class="bloc-titre">Théorème</span>
 
-Soit $M$ une matrice carrée décrite par blocs par $M = \begin{pmatrix} A & B \\ 0 & C \end{pmatrix}$, où $A$ et $C$ sont des **blocs carrés**. Alors :
+Soit $M$ une matrice carrée décrite par blocs par $M = \begin{pmatrix} A & B \\\ 0 & C \end{pmatrix}$, où $A$ et $C$ sont des **blocs carrés**. Alors :
 
 $$\det(M) = \det(A)\, \det(C)$$
 
@@ -844,15 +844,15 @@ $$\det(M) = \det(A)\, \det(C)$$
 
 $$\det(M) = \sum_{\sigma \in \mathfrak{S}_n} \varepsilon(\sigma)\, m_{1\sigma(1)} m_{2\sigma(2)} \cdots m_{n\sigma(n)}$$
 
-Soit $p$ la dimension de $A$ ($C$ est alors de dimension $n - p$). Remarquons que pour $k > p$ : si $\sigma(k) \leq p$ alors $m&#95;{k\sigma(k)} = 0$ ; si $\sigma(k) > p$ alors $m&#95;{k\sigma(k)} = c&#95;{k-p,\, \sigma(k)-p}$.
+Soit $p$ la dimension de $A$ ($C$ est alors de dimension $n - p$). Remarquons que pour $k > p$ : si $\sigma(k) \leq p$ alors $m&#95;{k\sigma(k)} = 0$ ; si $\sigma(k) > p$ alors $m&#95;{k\sigma(k)} = c&#95;{k-p,\\, \sigma(k)-p}$.
 
-Soit alors $S = \{\sigma \in \mathfrak{S}&#95;n \mid \sigma(\mathbb{N}&#95;p) \subset \mathbb{N}&#95;p\} = \{\sigma \in \mathfrak{S}&#95;n \mid \sigma(\mathbb{N}&#95;p) = \mathbb{N}&#95;p\} = \{\sigma \in \mathfrak{S}&#95;n \mid \sigma(\{p+1,\dots,n\}) = \{p+1,\dots,n\}\}$, car les éléments du groupe symétrique sont des bijections.
+Soit alors $S = \\{\sigma \in \mathfrak{S}&#95;n \mid \sigma(\mathbb{N}&#95;p) \subset \mathbb{N}&#95;p\\} = \\{\sigma \in \mathfrak{S}&#95;n \mid \sigma(\mathbb{N}&#95;p) = \mathbb{N}&#95;p\\} = \\{\sigma \in \mathfrak{S}&#95;n \mid \sigma(\\{p+1,\dots,n\\}) = \\{p+1,\dots,n\\}\\}$, car les éléments du groupe symétrique sont des bijections.
 
 Donc si $\sigma \notin S$, il existe $k > p$ tel que $\sigma(k) \leq p$, et la participation de $\sigma$ dans l'expression du déterminant est nulle. Finalement :
 
 $$\det(M) = \sum_{\sigma \in S} \varepsilon(\sigma)\, m_{1\sigma(1)} \cdots m_{n\sigma(n)}$$
 
-Étudions $S$ : pour $\sigma \in S$, posons $\sigma_1$ la restriction de $\sigma$ à $\mathbb{N}&#95;p$ et $\sigma_2$ sa restriction à $\{p+1,\dots,n\}$. $\sigma_1$ est une permutation de $\{1,\dots,p\}$ et $\sigma_2$ une permutation de $\{p+1,\dots,n\}$, et $\sigma = \sigma_1 \sigma_2$. Réciproquement, tout produit $\sigma_1 \sigma_2$ de telles permutations est clairement élément de $S$ :
+Étudions $S$ : pour $\sigma \in S$, posons $\sigma_1$ la restriction de $\sigma$ à $\mathbb{N}&#95;p$ et $\sigma_2$ sa restriction à $\\{p+1,\dots,n\\}$. $\sigma_1$ est une permutation de $\\{1,\dots,p\\}$ et $\sigma_2$ une permutation de $\\{p+1,\dots,n\\}$, et $\sigma = \sigma_1 \sigma_2$. Réciproquement, tout produit $\sigma_1 \sigma_2$ de telles permutations est clairement élément de $S$ :
 
 $$S = \{\sigma_1 \sigma_2 \mid \sigma_1 \in \mathfrak{S}(\{1,\dots,p\}),\ \sigma_2 \in \mathfrak{S}(\{p+1,\dots,n\})\}$$
 
@@ -874,7 +874,7 @@ Le résultat s'étend par récurrence aux **matrices triangulaires par blocs** �
 
 <span class="bloc-titre">Exemple</span>
 
-$M$ diagonale par blocs, avec des blocs $\begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pmatrix}$ sur la diagonale : $\det(M) = 1$.
+$M$ diagonale par blocs, avec des blocs $\begin{pmatrix} 0 & 1 \\\ -1 & 0 \end{pmatrix}$ sur la diagonale : $\det(M) = 1$.
 
 </div>
 
@@ -882,7 +882,7 @@ $M$ diagonale par blocs, avec des blocs $\begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pm
 
 #### 1) Diagonalisation
 
-Soit $A \in \mathcal{M}&#95;n(\mathbb{K})$. $\lambda$ est **valeur propre** de $A$ ssi $\ker(A - \lambda I) \neq \{0\}$ ssi $A - \lambda I$ est non inversible ssi $\det(A - \lambda I) = 0$ :
+Soit $A \in \mathcal{M}&#95;n(\mathbb{K})$. $\lambda$ est **valeur propre** de $A$ ssi $\ker(A - \lambda I) \neq \\{0\\}$ ssi $A - \lambda I$ est non inversible ssi $\det(A - \lambda I) = 0$ :
 
 $$\begin{vmatrix} a_{11} - \lambda & \cdots & a_{1n} \\ \vdots & & \vdots \\ a_{n1} & \cdots & a_{nn} - \lambda \end{vmatrix} = 0$$
 
@@ -899,7 +899,7 @@ $\chi_A(\lambda)$ est un **polynôme en $\lambda$ de degré $n$**, dont les raci
 <div class="bloc demo" markdown="1">
 <span class="bloc-titre">Démonstration</span>
 
-$\chi_A(\lambda) = \sum&#95;{\sigma \in \mathfrak{S}&#95;n} \varepsilon(\sigma)\, b&#95;{1\sigma(1)} \cdots b&#95;{n\sigma(n)}$ avec $B = A - \lambda I$. En développant, $\chi_A(\lambda)$ est de degré au plus $n$, et le terme de plus haut degré est obtenu pour $\sigma = \mathrm{Id}$ : $(-\lambda)^n$.
+$\chi_A(\lambda) = \sum&#95;{\sigma \in \mathfrak{S}&#95;n} \varepsilon(\sigma)\\, b&#95;{1\sigma(1)} \cdots b&#95;{n\sigma(n)}$ avec $B = A - \lambda I$. En développant, $\chi_A(\lambda)$ est de degré au plus $n$, et le terme de plus haut degré est obtenu pour $\sigma = \mathrm{Id}$ : $(-\lambda)^n$.
 
 </div>
 
@@ -907,7 +907,7 @@ $\chi_A(\lambda) = \sum&#95;{\sigma \in \mathfrak{S}&#95;n} \varepsilon(\sigma)\
 
 <span class="bloc-titre">Exemple</span>
 
-$A = \begin{pmatrix} 4 & 2 \\ -1 & 1 \end{pmatrix}$ : $A - \lambda I = \begin{pmatrix} 4-\lambda & 2 \\ -1 & 1-\lambda \end{pmatrix}$,
+$A = \begin{pmatrix} 4 & 2 \\\ -1 & 1 \end{pmatrix}$ : $A - \lambda I = \begin{pmatrix} 4-\lambda & 2 \\\ -1 & 1-\lambda \end{pmatrix}$,
 
 $$\det(A - \lambda I) = (4-\lambda)(1-\lambda) + 2 = \lambda^2 - 5\lambda + 6 = (\lambda - 2)(\lambda - 3)$$
 
@@ -951,7 +951,7 @@ $\mathcal{R}$ est une **relation d'équivalence** :
 
 - $\det&#95;{\varepsilon}(\varepsilon) = 1 > 0$ : $\mathcal{R}$ est réflexive ;
 - si $\det&#95;{\varepsilon}(\varepsilon') > 0$ et $\det&#95;{\varepsilon}(\varepsilon'') > 0$, alors
-  $\det&#95;{\varepsilon}(\varepsilon')\, \det&#95;{\varepsilon'}(\varepsilon'') = \det&#95;{\varepsilon}(\varepsilon'') > 0$,
+  $\det&#95;{\varepsilon}(\varepsilon')\\, \det&#95;{\varepsilon'}(\varepsilon'') = \det&#95;{\varepsilon}(\varepsilon'') > 0$,
   donc $\det&#95;{\varepsilon'}(\varepsilon'') > 0$ : $\mathcal{R}$ est transitive ;
 - $\det&#95;{\varepsilon'}(\varepsilon) = \dfrac{1}{\det&#95;{\varepsilon}(\varepsilon')} > 0$ : $\mathcal{R}$ est symétrique.
 
@@ -1014,7 +1014,7 @@ Si le système $\mathcal{S}$ admet une solution $X_0$, alors, pour tout $X$ :
 
 $$X \text{ solution de } \mathcal{S} \iff AX = B \iff A(X - X_0) = 0 \iff X \in X_0 + \mathrm{Ker}\, A$$
 
-L'ensemble des solutions est donc $X_0 + \mathrm{Ker}\, A$ : c'est un **sous-espace affine** de $\mathbb{K}^p$ ; lorsque $B = 0$ (système homogène), c'est le **sous-espace vectoriel** $\mathrm{Ker}\, A$.
+L'ensemble des solutions est donc $X_0 + \mathrm{Ker}\\, A$ : c'est un **sous-espace affine** de $\mathbb{K}^p$ ; lorsque $B = 0$ (système homogène), c'est le **sous-espace vectoriel** $\mathrm{Ker}\\, A$.
 
 </div>
 
@@ -1022,7 +1022,7 @@ L'ensemble des solutions est donc $X_0 + \mathrm{Ker}\, A$ : c'est un **sous-esp
 
 <span class="bloc-titre">Proposition 2</span>
 
-Si $B \in \mathrm{Im}\, A$, alors $\mathcal{S}$ est **compatible**.
+Si $B \in \mathrm{Im}\\, A$, alors $\mathcal{S}$ est **compatible**.
 
 </div>
 
@@ -1030,9 +1030,9 @@ Si $B \in \mathrm{Im}\, A$, alors $\mathcal{S}$ est **compatible**.
 
 <span class="bloc-titre">Proposition 3</span>
 
-Si $n = p$ et $\mathrm{rg}\, A = n$, alors $\mathrm{Ker}\, A = \{0\}$ et $\mathcal{S}$ est réduit à un **singleton** (une unique solution).
+Si $n = p$ et $\mathrm{rg}\\, A = n$, alors $\mathrm{Ker}\\, A = \\{0\\}$ et $\mathcal{S}$ est réduit à un **singleton** (une unique solution).
 
-En effet, $\dim \mathbb{K}^n = n = \dim \mathrm{Im}\, A + \dim \mathrm{Ker}\, A$ avec $\mathrm{Im}\, A \subset \mathbb{K}^n$ ; si $\mathrm{rg}\, A = n$, alors $\mathrm{Im}\, A = \mathbb{K}^n$ et $A$ est injective (car $\mathrm{Ker}\, A = \{0\}$).
+En effet, $\dim \mathbb{K}^n = n = \dim \mathrm{Im}\\, A + \dim \mathrm{Ker}\\, A$ avec $\mathrm{Im}\\, A \subset \mathbb{K}^n$ ; si $\mathrm{rg}\\, A = n$, alors $\mathrm{Im}\\, A = \mathbb{K}^n$ et $A$ est injective (car $\mathrm{Ker}\\, A = \\{0\\}$).
 
 </div>
 
@@ -1056,7 +1056,7 @@ $$\mathcal{S} \text{ est de Cramer} \iff \mathrm{rg}\, A = n \iff \det A \neq 0$
 
 </div>
 
-Alors $A$ est inversible (car $\mathrm{rg}\, A = n$) et $X = A^{-1} B$, soit, composante par composante :
+Alors $A$ est inversible (car $\mathrm{rg}\\, A = n$) et $X = A^{-1} B$, soit, composante par composante :
 
 $$x_i = \frac{1}{\det A} \sum_{k=1}^{n} (A^{-1})_{ik}\, b_k
 = \frac{1}{\det A} \big( (A^{-1})_{i\bullet},\, B \big)$$
@@ -1177,13 +1177,13 @@ $$P_1 = d + x + x^2, \qquad P_2 = 1 + dx + x^2, \qquad P_3 = 1 + x + dx^2$$
 </li>
 <li>Calculer les déterminants suivants :
 <ol>
-<li>$\begin{vmatrix} d & a & b \\ a & d & c \\ b & c & 0 \end{vmatrix}$</li>
-<li>$\begin{vmatrix} a-b-c & 2a & 2a \\ 2b & b-c-a & 2b \\ 2c & 2c & c-a-b \end{vmatrix}$</li>
-<li>$\begin{vmatrix} a+b & ab & a^2+b^2 \\ b+c & bc & b^2+c^2 \\ c+a & ca & c^2+a^2 \end{vmatrix}$</li>
-<li>$D_n = \begin{vmatrix} 2 & \lambda & & 0 \\ \lambda & 2 & \ddots & \\ & \ddots & \ddots & \lambda \\ 0 & & \lambda & 2 \end{vmatrix}$</li>
-<li>$\Delta_n = \begin{vmatrix} 0 & 1 & \cdots & 1 \\ 1 & 0 & \ddots & x \\ \vdots & \ddots & \ddots & \vdots \\ 1 & x & \cdots & 0 \end{vmatrix}$</li>
-<li>$\begin{vmatrix} 1 & 2 & \cdots & n \\ m & 1 & 2 & \cdots & n-1 \\ \vdots & \ddots & \ddots & & \vdots \\ m & \cdots & m & 1 \end{vmatrix}$</li>
-<li>$D_n = \begin{vmatrix} a_1 & 1 & \cdots & a_n \\ -1 & x & \ddots & 0 \\ \vdots & \ddots & \ddots & \vdots \\ 0 & \cdots & -1 & x \end{vmatrix}$</li>
+<li>$\begin{vmatrix} d & a & b \\\ a & d & c \\\ b & c & 0 \end{vmatrix}$</li>
+<li>$\begin{vmatrix} a-b-c & 2a & 2a \\\ 2b & b-c-a & 2b \\\ 2c & 2c & c-a-b \end{vmatrix}$</li>
+<li>$\begin{vmatrix} a+b & ab & a^2+b^2 \\\ b+c & bc & b^2+c^2 \\\ c+a & ca & c^2+a^2 \end{vmatrix}$</li>
+<li>$D_n = \begin{vmatrix} 2 & \lambda & & 0 \\\ \lambda & 2 & \ddots & \\\ & \ddots & \ddots & \lambda \\\ 0 & & \lambda & 2 \end{vmatrix}$</li>
+<li>$\Delta_n = \begin{vmatrix} 0 & 1 & \cdots & 1 \\\ 1 & 0 & \ddots & x \\\ \vdots & \ddots & \ddots & \vdots \\\ 1 & x & \cdots & 0 \end{vmatrix}$</li>
+<li>$\begin{vmatrix} 1 & 2 & \cdots & n \\\ m & 1 & 2 & \cdots & n-1 \\\ \vdots & \ddots & \ddots & & \vdots \\\ m & \cdots & m & 1 \end{vmatrix}$</li>
+<li>$D_n = \begin{vmatrix} a_1 & 1 & \cdots & a_n \\\ -1 & x & \ddots & 0 \\\ \vdots & \ddots & \ddots & \vdots \\\ 0 & \cdots & -1 & x \end{vmatrix}$</li>
 <li>$\det(A)$ avec $a&#95;{ij} = i - j$</li>
 <li>$\det(A)$ avec $a&#95;{ij} = \dbinom{j}{m+i}$, $m \in \mathbb{N}$ fixé</li>
 </ol>
