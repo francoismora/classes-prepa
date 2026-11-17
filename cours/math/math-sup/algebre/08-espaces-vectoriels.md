@@ -59,10 +59,10 @@ Soit $E$ un ensemble. On dit que $(E, +, \times, \cdot)$ est une **$\mathbb{K}$-
   $\lambda(a + ib) = \lambda a + i\,\lambda b$ ;
 - $\mathbb{K}[X]$ est une algèbre commutative :
   $(\mathbb{K}[X], +, \times)$ est un anneau commutatif, et en définissant
-  $\lambda \cdot P = (\lambda a_n)_{n \in \mathbb{N}}$ si $P = (a_n)_{n \in \mathbb{N}}$, on a
-  $(\lambda + \mu) \cdot P = \big((\lambda + \mu) a_n\big)_{n \in \mathbb{N}}
-  = (\lambda a_n)_{n \in \mathbb{N}} + (\mu a_n)_{n \in \mathbb{N}} = \lambda \cdot P + \mu \cdot P$.
-  De même, pour le produit, avec $d_n = \sum_{i=0}^{n} a_i\, b_{n-i}$ :
+  $\lambda \cdot P = (\lambda a_n)\_{n \in \mathbb{N}}$ si $P = (a_n)\_{n \in \mathbb{N}}$, on a
+  $(\lambda + \mu) \cdot P = \big((\lambda + \mu) a_n\big)\_{n \in \mathbb{N}}
+  = (\lambda a_n)\_{n \in \mathbb{N}} + (\mu a_n)\_{n \in \mathbb{N}} = \lambda \cdot P + \mu \cdot P$.
+  De même, pour le produit, avec $d_n = \sum\_{i=0}^{n} a_i\, b\_{n-i}$ :
 
 $$\lambda \cdot (PQ) = \Big( \sum_{i=0}^{n} (\lambda a_i)\, b_{n-i} \Big)_{n \in \mathbb{N}}
 = (\lambda P)\, Q = \Big( \sum_{i=0}^{n} a_i\, (\lambda b_{n-i}) \Big)_{n \in \mathbb{N}}$$
@@ -77,7 +77,7 @@ $$(x_1, \dots, x_n), (y_1, \dots, y_n) \longmapsto (x_1 + y_1, \dots, x_n + y_n)
 
 $(E, +)$ est un groupe ; $\cdot$ est une loi de composition externe de
 $\mathbb{K} \times E \to E$ (où $E = E_1 \times \dots \times E_n$) car les $E_i$ sont
-des $\mathbb{K}$-e.v. ; $1_{\mathbb{K}} \cdot x = x$ ; et si $\lambda, \mu \in \mathbb{K}$
+des $\mathbb{K}$-e.v. ; $1\_{\mathbb{K}} \cdot x = x$ ; et si $\lambda, \mu \in \mathbb{K}$
 et $x, y \in E$ : $\lambda \cdot (x + y) = \lambda \cdot x + \lambda \cdot y$,
 $(\lambda \mu) \cdot x = \lambda \cdot (\mu \cdot x)$, $\lambda \cdot (x+y) = \lambda \cdot (x + y)$.
 
@@ -100,9 +100,9 @@ $\mathbb{R}$-e.v. ; $\mathbb{C}^{\mathbb{N}}$ est un $\mathbb{C}$-e.v.
 
 <span class="bloc-titre">Propriété</span>
 
-- $\forall x \in E$, $0_{\mathbb{K}} \cdot x = 0_E$ ;
+- $\forall x \in E$, $0\_{\mathbb{K}} \cdot x = 0_E$ ;
 - $\forall \lambda \in \mathbb{K}$, $\lambda \cdot 0_E = 0_E$ ;
-- $\lambda x = 0 \Rightarrow \lambda = 0_{\mathbb{K}}$ ou $x = 0_E$ ;
+- $\lambda x = 0 \Rightarrow \lambda = 0\_{\mathbb{K}}$ ou $x = 0_E$ ;
 - $\forall \lambda \in \mathbb{K}$, $\forall x, y \in E$, $\lambda \cdot (x - y) = \lambda x - \lambda y$ ;
 - $\forall x \in E$, $-(\lambda \cdot x) = (-\lambda) \cdot x = \lambda \cdot (-x)$.
 
@@ -111,21 +111,21 @@ $\mathbb{R}$-e.v. ; $\mathbb{C}^{\mathbb{N}}$ est un $\mathbb{C}$-e.v.
 <div class="bloc demo" markdown="1">
 <span class="bloc-titre">Démonstration</span>
 
-$(0_{\mathbb{K}} + \mu) \cdot x = 0_{\mathbb{K}} \cdot x + \mu \cdot x = \mu \cdot x$,
-donc $0_{\mathbb{K}} \cdot x = 0_E$.
+$(0\_{\mathbb{K}} + \mu) \cdot x = 0\_{\mathbb{K}} \cdot x + \mu \cdot x = \mu \cdot x$,
+donc $0\_{\mathbb{K}} \cdot x = 0_E$.
 
 $\lambda \cdot (x + 0_E) = \lambda \cdot x + \lambda \cdot 0_E = \lambda \cdot x$,
 donc $\lambda \cdot 0_E = 0_E$.
 
 Supposons $\lambda \neq 0$, donc $\lambda$ inversible :
-$(\lambda^{-1} \lambda) \cdot x = 1_{\mathbb{K}} \cdot x = x = \lambda^{-1} \cdot (\lambda \cdot x)$ ;
+$(\lambda^{-1} \lambda) \cdot x = 1\_{\mathbb{K}} \cdot x = x = \lambda^{-1} \cdot (\lambda \cdot x)$ ;
 si $\lambda x = 0$, alors $x = \lambda^{-1} \cdot 0_E = 0_E$. Donc $\lambda x = 0$
-implique $\lambda = 0_{\mathbb{K}}$ ou $x = 0_E$.
+implique $\lambda = 0\_{\mathbb{K}}$ ou $x = 0_E$.
 
 $\lambda \cdot (x - y) = \lambda x + \lambda(-y) = 0$ entraîne
 $\lambda \cdot (-y) = -\lambda y$, donc $\lambda \cdot (x - y) = \lambda x - \lambda y$.
 
-$(\lambda - \lambda) \cdot x = 0_{\mathbb{K}} \cdot x = 0 = \lambda x + (-\lambda) \cdot x$,
+$(\lambda - \lambda) \cdot x = 0\_{\mathbb{K}} \cdot x = 0 = \lambda x + (-\lambda) \cdot x$,
 donc $-(\lambda x) = (-\lambda) \cdot x$.
 
 </div>
@@ -136,13 +136,13 @@ donc $-(\lambda x) = (-\lambda) \cdot x$.
 
 <span class="bloc-titre">Définition</span>
 
-Soit $(x_i)_{i \in I}$ une famille de vecteurs de $E$, $I$ quelconque. On appelle
+Soit $(x_i)\_{i \in I}$ une famille de vecteurs de $E$, $I$ quelconque. On appelle
 **combinaison linéaire** des $x_i$ une somme finie
 
 $$\sum_{i \in I} \lambda_i\, x_i$$
 
-avec $(\lambda_i)_{i \in I}$ **famille presque nulle** de scalaires,
-c'est-à-dire $(\lambda_i)_{i \in I} \in \mathbb{K}^{(I)}$.
+avec $(\lambda_i)\_{i \in I}$ **famille presque nulle** de scalaires,
+c'est-à-dire $(\lambda_i)\_{i \in I} \in \mathbb{K}^{(I)}$.
 
 </div>
 
@@ -161,18 +161,18 @@ est une combinaison linéaire de $1$ et $i$.
 
 <span class="bloc-titre">Propriété</span>
 
-La somme de deux C.L. $\sum_{i \in I} \lambda_i x_i$ et $\sum_{i \in I} \mu_i x_i$
-est encore une C.L., et elle vaut $\sum_{i \in I} (\lambda_i + \mu_i) \cdot x_i$.
+La somme de deux C.L. $\sum\_{i \in I} \lambda_i x_i$ et $\sum\_{i \in I} \mu_i x_i$
+est encore une C.L., et elle vaut $\sum\_{i \in I} (\lambda_i + \mu_i) \cdot x_i$.
 
 </div>
 
 <div class="bloc demo" markdown="1">
 <span class="bloc-titre">Démonstration</span>
 
-Posons $D_i = \lambda_i + \mu_i$. Alors $I_\lambda = \{i \mid \lambda_i \neq 0\}$ est
-vide ou fini, $I_\mu = \{i \mid \mu_i \neq 0\}$ de même, donc
-$J = \{i \mid D_i \neq 0\}$ est vide ou fini et $J \subset I_\lambda \cup I_\mu$ ;
-ainsi $\sum_{i \in I} (\lambda_i + \mu_i) x_i$ est une C.L. des $x_i$. De plus
+Posons $D_i = \lambda_i + \mu_i$. Alors $I\_\lambda = \{i \mid \lambda_i \neq 0\}$ est
+vide ou fini, $I\_\mu = \{i \mid \mu_i \neq 0\}$ de même, donc
+$J = \{i \mid D_i \neq 0\}$ est vide ou fini et $J \subset I\_\lambda \cup I\_\mu$ ;
+ainsi $\sum\_{i \in I} (\lambda_i + \mu_i) x_i$ est une C.L. des $x_i$. De plus
 $(\lambda_i + \mu_i) \cdot x_i = \lambda_i x_i + \mu_i x_i$ et, comme la somme est finie :
 
 $$\sum_{i \in I} (\lambda_i + \mu_i) x_i = \sum_{i \in I} \lambda_i x_i + \sum_{i \in I} \mu_i x_i$$
@@ -181,7 +181,7 @@ $$\sum_{i \in I} (\lambda_i + \mu_i) x_i = \sum_{i \in I} \lambda_i x_i + \sum_{
 
 **Applications et exemples.**
 
-- Tout polynôme est C.L. de $(X^n)_{n \in \mathbb{N}}$ ; sommer deux polynômes,
+- Tout polynôme est C.L. de $(X^n)\_{n \in \mathbb{N}}$ ; sommer deux polynômes,
   c'est sommer deux C.L. ;
 - Dans $\mathbb{R}^2$, avec $u = (1, 1)$ et $v = (1, -1)$ : tout vecteur du plan
   est C.L. de $u$ et $v$, car
@@ -273,7 +273,7 @@ Toute **intersection** de s.e.v. est un s.e.v.
 <div class="bloc demo" markdown="1">
 <span class="bloc-titre">Démonstration</span>
 
-Soit $F = \bigcap_{i \in I} F_i$, où les $F_i$ sont des s.e.v. de $E$. Alors $0 \in F$.
+Soit $F = \bigcap\_{i \in I} F_i$, où les $F_i$ sont des s.e.v. de $E$. Alors $0 \in F$.
 Soit $x \in F$, $y \in F$, $\lambda \in \mathbb{K}$ : $x \in F_i$ et $y \in F_i$ pour tout
 $i$, donc $\lambda x + y \in F_i$ pour tout $i$, d'où $\lambda x + y \in F$.
 
@@ -343,12 +343,12 @@ La somme des $F_i$ est directe **si et seulement si** l'écriture de $0$ est uni
 <span class="bloc-titre">Démonstration</span>
 
 Si $F = F_1 + \dots + F_n$ avec $F_1 \oplus \dots \oplus F_n$
-$\iff \Big( \sum_{i=1}^{n} x_i = 0$ et $x_i \in F_i \Rightarrow \forall i \in [1, n]$, $x_i = 0 \Big)$.
+$\iff \Big( \sum\_{i=1}^{n} x_i = 0$ et $x_i \in F_i \Rightarrow \forall i \in [1, n]$, $x_i = 0 \Big)$.
 
 $\Rightarrow$ clair.
 
-$\Leftarrow$ Supposons $x \in F$ s'écrit $\sum_{i \in I} x_i = \sum_{i \in I} y_i$. Alors
-$0 = \sum_{i \in I} (x_i - y_i)$ et $x_i - y_i \in F_i$ ; comme l'écriture de $0$ est
+$\Leftarrow$ Supposons $x \in F$ s'écrit $\sum\_{i \in I} x_i = \sum\_{i \in I} y_i$. Alors
+$0 = \sum\_{i \in I} (x_i - y_i)$ et $x_i - y_i \in F_i$ ; comme l'écriture de $0$ est
 unique, $\forall i \in \{1, \dots, n\}$, $x_i = y_i$.cqfd
 
 </div>
@@ -447,7 +447,7 @@ $E_1, \dots, E_n$ sont en somme directe si et seulement si
 
 $$E_k \cap (E_{k+1} + \dots + E_n) = \{0\} \qquad \text{pour } 1 \leq k \leq n-1$$
 
-(en particulier $E_{n-1} \cap E_n = \{0\}$).
+(en particulier $E\_{n-1} \cap E_n = \{0\}$).
 
 </div>
 
@@ -455,18 +455,18 @@ $$E_k \cap (E_{k+1} + \dots + E_n) = \{0\} \qquad \text{pour } 1 \leq k \leq n-1
 <span class="bloc-titre">Démonstration</span>
 
 Si $F = E_1 \oplus E_2 \oplus \dots \oplus E_n$, alors l'écriture de $0$ est unique.
-Soit $x \in E_k \cap (E_{k+1} + \dots + E_n)$ : $x = x_k = x_{k+1} + \dots + x_n$ avec
+Soit $x \in E_k \cap (E\_{k+1} + \dots + E_n)$ : $x = x_k = x\_{k+1} + \dots + x_n$ avec
 $x_i \in E_i$. Alors
-$0 + 0 + \dots + 0 - x_k + x_{k+1} + \dots + x_n = 0$,
+$0 + 0 + \dots + 0 - x_k + x\_{k+1} + \dots + x_n = 0$,
 d'où $\forall i$, $x_i = 0$, donc $x = x_k = 0$. Ainsi
-$\forall n-1 \geq k \geq 1$, $E_k \cap (E_{k+1} + \dots + E_n) = \{0\}$.
+$\forall n-1 \geq k \geq 1$, $E_k \cap (E\_{k+1} + \dots + E_n) = \{0\}$.
 
 $\Leftarrow$ Supposons $0 = x_1 + x_2 + \dots + x_n$. Alors
 $-x_1 = x_2 + \dots + x_n$, donc
 $-x_1 \in E_1 \cap (E_2 + \dots + E_n) = \{0\}$, d'où $x_1 = 0$. On suppose démontré
 que $x_1 = \dots = x_k = 0$ pour $1 \leq k \leq n - 2$ :
-$x_{k+1} + x_{k+2} + \dots + x_n = 0$, donc
-$-x_{k+1} \in E_{k+1} \cap (E_{k+2} + \dots + E_n)$, d'où $x_{k+1} = 0$.
+$x\_{k+1} + x\_{k+2} + \dots + x_n = 0$, donc
+$-x\_{k+1} \in E\_{k+1} \cap (E\_{k+2} + \dots + E_n)$, d'où $x\_{k+1} = 0$.
 L'hypothèse est récurrente pour $1 \leq k \leq n-1$ : $x_1 = x_2 = \dots = x_n = 0$
 et l'écriture est unique.
 
@@ -480,7 +480,7 @@ et l'écriture est unique.
 
 Soit $A$ une partie de $E$. Il existe un **plus petit sous-espace vectoriel** de $E$
 (au sens de $\subset$) qui contient $A$, et c'est
-$\bigcap_{\substack{H \text{ s.e.v. de } E \\ A \subset H}} H$. On le note $\mathrm{Vect}(A)$.
+$\bigcap\_{\substack{H \text{ s.e.v. de } E \\ A \subset H}} H$. On le note $\mathrm{Vect}(A)$.
 
 </div>
 
@@ -498,7 +498,7 @@ $\mathrm{Vect}(A) = A$.
 
 $E$ est un e.v. sur $\mathbb{K}$ ;
 $\mathcal{R} = \{H \mid H \text{ s.e.v. de } E \text{ et } A \subset H\}$ est non vide.
-On pose $F = \bigcap_{H \in \mathcal{R}} H$ ; pour tout $H$ s.e.v. contenant $A$,
+On pose $F = \bigcap\_{H \in \mathcal{R}} H$ ; pour tout $H$ s.e.v. contenant $A$,
 $H \in \mathcal{R}$ donc $F \subset H$ : $F$ est le plus petit s.e.v. contenant $A$.
 
 </div>
@@ -515,10 +515,10 @@ des vecteurs de $A$.
 <div class="bloc demo" markdown="1">
 <span class="bloc-titre">Démonstration</span>
 
-Soit $F = \Big\{ \sum_{i \in I} \lambda_i x_i \;\Big/\; (x_i)_{i \in I} \in A^I,\ (\lambda_i)_{i \in I} \in \mathbb{K}^{(I)} \Big\}$.
+Soit $F = \Big\{ \sum\_{i \in I} \lambda_i x_i \;\Big/\; (x_i)\_{i \in I} \in A^I,\ (\lambda_i)\_{i \in I} \in \mathbb{K}^{(I)} \Big\}$.
 $F$ contient $A$ (pour $x \in A$, $x = 1 \cdot x$) ; $F$ est un s.e.v. de $E$ : soit
-$x \in F$, $x = \sum_{i \in I} \lambda_i x_i$ avec $x_i \in A$ ; soit $y \in F$,
-$y = \sum_{i \in I} \mu_i x_i$ ; pour tout $\lambda \in \mathbb{K}$ :
+$x \in F$, $x = \sum\_{i \in I} \lambda_i x_i$ avec $x_i \in A$ ; soit $y \in F$,
+$y = \sum\_{i \in I} \mu_i x_i$ ; pour tout $\lambda \in \mathbb{K}$ :
 
 $$\lambda x + y = \sum_{i \in I} (\lambda \lambda_i + \mu_i) x_i \in F$$
 
@@ -574,7 +574,7 @@ note $\mathrm{Vect}(\mathcal{F})$.
 
 ### 1) Famille libre ou liée
 
-Soit $\mathcal{F}$ une famille de vecteurs de $E$, $\mathcal{F} = (x_i)_{i \in I}$.
+Soit $\mathcal{F}$ une famille de vecteurs de $E$, $\mathcal{F} = (x_i)\_{i \in I}$.
 
 <div class="bloc remarque" markdown="1">
 
@@ -590,7 +590,7 @@ Si $\mathcal{F}$ est finie, on parle plutôt de **système de vecteurs**.
 
 Soit $x \in \mathrm{Vect}(\mathcal{F})$ : les 2 propositions suivantes sont équivalentes :
 
-- ① l'écriture de $x$ sous la forme $\sum_{i \in I} \lambda_i x_i$ est unique ;
+- ① l'écriture de $x$ sous la forme $\sum\_{i \in I} \lambda_i x_i$ est unique ;
 - ② l'écriture de $0$ sous la même forme est unique.
 
 </div>
@@ -599,10 +599,10 @@ Soit $x \in \mathrm{Vect}(\mathcal{F})$ : les 2 propositions suivantes sont équ
 
 <span class="bloc-titre">Remarque</span>
 
-Il existe une décomposition de $x$ et de $0$ sous la forme $\sum_{i \in I} \lambda_i x_i$,
+Il existe une décomposition de $x$ et de $0$ sous la forme $\sum\_{i \in I} \lambda_i x_i$,
 car $x$ et $0_E$ sont des vecteurs de $\mathrm{Vect}(\mathcal{F})$.
 
-Si on a ①, écrivons $x = \sum_{i \in I} \mu_i x_i$ et $\sum_{i \in I} \lambda_i x_i = 0$.
+Si on a ①, écrivons $x = \sum\_{i \in I} \mu_i x_i$ et $\sum\_{i \in I} \lambda_i x_i = 0$.
 $0 + x = x = \sum \mu_i x_i = \sum (\mu_i + \lambda_i) x_i$. Pour l'unicité de
 l'écriture de $x$ : $\forall i \in I$, $\mu_i = \mu_i + \lambda_i$, donc
 $\forall i \in I$, $\lambda_i = 0$. Si on a ② et $x = \sum \lambda_i x_i = \sum \mu_i x_i$,
@@ -624,7 +624,7 @@ est **libre**. Si $\mathcal{F}$ n'est pas libre, on dit qu'elle est **liée**.
 <span class="bloc-titre">Énoncé pratique</span>
 
 Pour démontrer qu'une famille est libre, on démontre que si
-$\sum_{i \in I} \lambda_i x_i = 0$ alors $\forall i \in I$, $\lambda_i = 0$.
+$\sum\_{i \in I} \lambda_i x_i = 0$ alors $\forall i \in I$, $\lambda_i = 0$.
 
 </div>
 
@@ -634,9 +634,9 @@ $\sum_{i \in I} \lambda_i x_i = 0$ alors $\forall i \in I$, $\lambda_i = 0$.
 
 - $\mathcal{F}$ est libre si et seulement si l'écriture de $x \in \mathrm{Vect}(\mathcal{F})$
   est unique, et ceci pour $x$ quelconque ;
-- $\mathcal{F}$ est liée si et seulement si il existe $(\lambda_i)_{i \in I}$ famille
+- $\mathcal{F}$ est liée si et seulement si il existe $(\lambda_i)\_{i \in I}$ famille
   presque nulle de scalaires **non tous nuls** telle que
-  $\sum_{i \in I} \lambda_i x_i = 0_E$.
+  $\sum\_{i \in I} \lambda_i x_i = 0_E$.
 
 </div>
 
@@ -650,7 +650,7 @@ considéré comme $\mathbb{Q}$-e.v.).
 
 <span class="bloc-titre">Exemple</span>
 
-Soit $(P_n)_n$ une famille de polynômes de degrés tous distincts ; quitte à la
+Soit $(P_n)\_n$ une famille de polynômes de degrés tous distincts ; quitte à la
 renuméroter, on suppose $\deg P_0 < \deg P_1 < \dots < \deg P_n$. Cette famille
 est libre.
 
@@ -659,11 +659,11 @@ est libre.
 <div class="bloc demo" markdown="1">
 <span class="bloc-titre">Démonstration</span>
 
-Supposons $\sum_{k=0}^{n} \lambda_k P_k = 0$. Le coefficient dominant de
-$\sum_{k=0}^{n} \lambda_k P_k$ est $\lambda_n$, car
+Supposons $\sum\_{k=0}^{n} \lambda_k P_k = 0$. Le coefficient dominant de
+$\sum\_{k=0}^{n} \lambda_k P_k$ est $\lambda_n$, car
 $\deg P_0 < \dots < \deg P_n$. Supposons démontré que
-$\lambda_n = \dots = \lambda_{k+1} = 0$ ; alors pour un certain $k$, $0 \leq k \leq n-1$ :
-$\lambda_k P_k + \lambda_{k-1} P_{k-1} + \dots + \lambda_0 P_0 = 0$, dont le coefficient
+$\lambda_n = \dots = \lambda\_{k+1} = 0$ ; alors pour un certain $k$, $0 \leq k \leq n-1$ :
+$\lambda_k P_k + \lambda\_{k-1} P\_{k-1} + \dots + \lambda_0 P_0 = 0$, dont le coefficient
 dominant est $\lambda_k$, donc $\lambda_k = 0$. La propriété est vraie pour
 $k = n-1$, récurrente (en diminuant) pour $1 \leq k \leq n-1$, donc vraie pour
 $k = -1$ : on obtient $\lambda_n = \dots = \lambda_0 = 0$.
@@ -677,7 +677,7 @@ est unique et $\lambda_k$ vaut $\dfrac{P^{(k)}(a)}{k!}$ d'après Taylor.
 
 <span class="bloc-titre">Propriété</span>
 
-Toute sous-famille $(x_i)_{i \in J}$, $J \subset I$, d'une famille libre $\mathcal{F}$
+Toute sous-famille $(x_i)\_{i \in J}$, $J \subset I$, d'une famille libre $\mathcal{F}$
 est libre.
 
 </div>
@@ -685,8 +685,8 @@ est libre.
 <div class="bloc demo" markdown="1">
 <span class="bloc-titre">Démonstration</span>
 
-Car si $\sum_{i \in J} \lambda_i x_i = 0$, en posant $\lambda_i = 0$ pour
-$i \in I \setminus J$, on a $\sum_{i \in I} \lambda_i x_i = 0$, donc
+Car si $\sum\_{i \in J} \lambda_i x_i = 0$, en posant $\lambda_i = 0$ pour
+$i \in I \setminus J$, on a $\sum\_{i \in I} \lambda_i x_i = 0$, donc
 $\forall i \in I$, $\lambda_i = 0$ car $\mathcal{F}$ est libre.
 
 </div>
@@ -704,8 +704,8 @@ Toute sous-famille d'une famille **liée** est encore liée.
 
 Soit $\mathcal{F}'$ une sous-famille de $\mathcal{F}$, contenant au moins un vecteur
 de $\mathcal{F}$. Si $\mathcal{F}$ est liée, il existe
-$(\lambda_i)_{i \in I} \in \mathbb{K}^{(I)}$, non nulle, telle que
-$\sum_{i \in I} \lambda_i x_i = 0_E$. Alors $\sum_{i \in I'} \lambda_i x_i$ est aussi
+$(\lambda_i)\_{i \in I} \in \mathbb{K}^{(I)}$, non nulle, telle que
+$\sum\_{i \in I} \lambda_i x_i = 0_E$. Alors $\sum\_{i \in I'} \lambda_i x_i$ est aussi
 une C.L. d'éléments de $\mathcal{F}'$, et $\mathcal{F}'$ est liée.
 
 </div>
@@ -731,12 +731,12 @@ sont libres.
 <span class="bloc-titre">Démonstration</span>
 
 $\Rightarrow$ déjà vu. $\Leftarrow$ si toutes les sous-familles sont libres :
-$\forall\, 0_E = \sum_{i \in I} \lambda_i x_i$ avec $\mathcal{F} = (x_i)_{i \in I}$ et
-$(\lambda_i)_{i \in I} \in \mathbb{K}^{(I)}$. Soit
+$\forall\, 0_E = \sum\_{i \in I} \lambda_i x_i$ avec $\mathcal{F} = (x_i)\_{i \in I}$ et
+$(\lambda_i)\_{i \in I} \in \mathbb{K}^{(I)}$. Soit
 $\mathcal{F}' = \{x_i \mid \lambda_i \neq 0\}$ ; $\mathcal{F}'$ est finie ou vide.
 Si $\mathcal{F}'$ est non vide, c'est une sous-famille de $\mathcal{F}$,
-$\mathcal{F}' = (x_i)_{i \in J}$ avec $J \subset I$, et
-$\sum_{j \in J} \lambda_j x_j = 0$ ; or $\mathcal{F}'$ est libre par hypothèse
+$\mathcal{F}' = (x_i)\_{i \in J}$ avec $J \subset I$, et
+$\sum\_{j \in J} \lambda_j x_j = 0$ ; or $\mathcal{F}'$ est libre par hypothèse
 ($\mathcal{F}'$ est finie), donc $\forall j \in J$, $\lambda_j = 0$, absurde.
 $\mathcal{F}'$ est vide, c'est-à-dire $\forall i \in I$, $\lambda_i = 0$. Donc
 $\mathcal{F}$ est libre.
@@ -747,7 +747,7 @@ $\mathcal{F}$ est libre.
 
 <span class="bloc-titre">Propriété</span>
 
-Une famille $\mathcal{F} = (x_i)_{i \in I}$ est **liée** si et seulement si l'un de
+Une famille $\mathcal{F} = (x_i)\_{i \in I}$ est **liée** si et seulement si l'un de
 ses vecteurs est combinaison linéaire des autres.
 
 </div>
@@ -755,13 +755,13 @@ ses vecteurs est combinaison linéaire des autres.
 <div class="bloc demo" markdown="1">
 <span class="bloc-titre">Démonstration</span>
 
-Il existe $(\lambda_i)_{i \in I} \in \mathbb{K}^{(I)}$ non nulle telle que
-$\sum_{i \in I} \lambda_i x_i = 0$. Il existe $i_0 \in I$ avec $\lambda_{i_0} \neq 0$ ;
-alors $\lambda_{i_0}$ est inversible ($\mathbb{K}$ est un corps) et
+Il existe $(\lambda_i)\_{i \in I} \in \mathbb{K}^{(I)}$ non nulle telle que
+$\sum\_{i \in I} \lambda_i x_i = 0$. Il existe $i_0 \in I$ avec $\lambda\_{i_0} \neq 0$ ;
+alors $\lambda\_{i_0}$ est inversible ($\mathbb{K}$ est un corps) et
 
 $$x_{i_0} = -\sum_{\substack{i \in I \\ i \neq i_0}} \left( \lambda_i \lambda_{i_0}^{-1} \right) x_i$$
 
-: $x_{i_0}$ est C.L. des autres vecteurs.
+: $x\_{i_0}$ est C.L. des autres vecteurs.
 
 </div>
 
@@ -769,7 +769,7 @@ $$x_{i_0} = -\sum_{\substack{i \in I \\ i \neq i_0}} \left( \lambda_i \lambda_{i
 
 <span class="bloc-titre">Propriété</span>
 
-Si $\mathcal{F} = (x_i)_{i \in I}$ est libre, alors $\mathcal{F}' = (\mathcal{F}, x)$
+Si $\mathcal{F} = (x_i)\_{i \in I}$ est libre, alors $\mathcal{F}' = (\mathcal{F}, x)$
 est liée si et seulement si $x \in \mathrm{Vect}(\mathcal{F})$.
 
 </div>
@@ -793,9 +793,9 @@ $\Leftarrow$ si $x \in \mathrm{Vect}(\mathcal{F})$, alors $x$ est C.L. des vecte
 $\mathcal{F}$, donc $(\mathcal{F}, x)$ est liée d'après la propriété précédente.
 
 $\Rightarrow$ $(\mathcal{F}, x)$ est liée : il existe $\lambda \in \mathbb{K}$ et
-$(\lambda_i)_{i \in I} \in \mathbb{K}^{(I)}$ non tous nuls tels que
-$\lambda x + \sum_{i \in I} \lambda_i x_i = 0$. Si $\lambda = 0$, alors
-$\sum_{i \in I} \lambda_i x_i = 0$ et, comme $\mathcal{F}$ est libre,
+$(\lambda_i)\_{i \in I} \in \mathbb{K}^{(I)}$ non tous nuls tels que
+$\lambda x + \sum\_{i \in I} \lambda_i x_i = 0$. Si $\lambda = 0$, alors
+$\sum\_{i \in I} \lambda_i x_i = 0$ et, comme $\mathcal{F}$ est libre,
 $\forall i \in I$, $\lambda_i = 0$ : impossible, car sinon $\lambda$ et les
 $\lambda_i$ seraient tous nuls. Donc $\lambda \neq 0$ et
 
@@ -822,37 +822,37 @@ On dira que les vecteurs sont **linéairement dépendants**.
 <div class="bloc demo" markdown="1">
 <span class="bloc-titre">Démonstration (récurrence sur $n$)</span>
 
-$H_n$ : si $(n+1)$ vecteurs $(x_1, x_2, \dots, x_{n+1})$ sont C.L. de
-$y_1, \dots, y_n$, alors $(x_1, \dots, x_{n+1})$ est liée.
+$H_n$ : si $(n+1)$ vecteurs $(x_1, x_2, \dots, x\_{n+1})$ sont C.L. de
+$y_1, \dots, y_n$, alors $(x_1, \dots, x\_{n+1})$ est liée.
 
 $H_1$ : ok. Si $n = 1$ : $x_1, x_2$ sont C.L. de $y$ ;
 $x_1 = \lambda_1 y$, $x_2 = \lambda_2 y$. Si $\lambda_2 = 0$, $x_2 = 0_E$ et
 $(x_1, x_2)$ est liée ; si $\lambda_2 \neq 0$, $y = \lambda_2^{-1} x_2$ et
 $x_1 = (\lambda_1 \lambda_2^{-1}) x_2$ : $(x_1, x_2)$ est liée.
 
-Supposons $H_n$ ($n \geq 1$). Soient $x_1, \dots, x_{n+2}$ $n+2$ vecteurs C.L. de
-$y_1, \dots, y_{n+1}$ :
+Supposons $H_n$ ($n \geq 1$). Soient $x_1, \dots, x\_{n+2}$ $n+2$ vecteurs C.L. de
+$y_1, \dots, y\_{n+1}$ :
 
 $$x_i = \lambda_{i,1} y_1 + \lambda_{i,2} y_2 + \dots + \lambda_{i,n+1} y_{n+1}, \quad 1 \leq i \leq n+2$$
 
-**1er cas** : $\forall 1 \leq i \leq n+2$, $\lambda_{i, n+1} = 0$. Alors
-$x_1, \dots, x_{n+1}$ sont C.L. de $y_1, \dots, y_n$ ; d'après $H_n$,
-$(x_1, \dots, x_{n+1})$ est liée, et $(x_1, \dots, x_{n+1}, x_{n+2})$ est liée comme
+**1er cas** : $\forall 1 \leq i \leq n+2$, $\lambda\_{i, n+1} = 0$. Alors
+$x_1, \dots, x\_{n+1}$ sont C.L. de $y_1, \dots, y_n$ ; d'après $H_n$,
+$(x_1, \dots, x\_{n+1})$ est liée, et $(x_1, \dots, x\_{n+1}, x\_{n+2})$ est liée comme
 sous-famille de la précédente.
 
-**2ème cas** : les $\lambda_{i, n+1}$ sont non tous nuls ; quitte à renuméroter les
-lignes, on suppose $\lambda_{n+2, n+1} \neq 0$. Posons
+**2ème cas** : les $\lambda\_{i, n+1}$ sont non tous nuls ; quitte à renuméroter les
+lignes, on suppose $\lambda\_{n+2, n+1} \neq 0$. Posons
 
 $$z_i = x_i - \frac{\lambda_{i, n+1}}{\lambda_{n+2, n+1}}\, x_{n+2}, \qquad i = 1, \dots, n+1$$
 
-Alors $z_i$ est C.L. de $y_1, \dots, y_n$ (le coefficient de $y_{n+1}$ est nul), donc,
-d'après $H_n$, $z_1, \dots, z_{n+1}$ sont liés : il existe $\mu_1, \dots, \mu_{n+1}$
-non tous nuls tels que $\sum_{i=1}^{n+1} \mu_i z_i = 0$. D'où
+Alors $z_i$ est C.L. de $y_1, \dots, y_n$ (le coefficient de $y\_{n+1}$ est nul), donc,
+d'après $H_n$, $z_1, \dots, z\_{n+1}$ sont liés : il existe $\mu_1, \dots, \mu\_{n+1}$
+non tous nuls tels que $\sum\_{i=1}^{n+1} \mu_i z_i = 0$. D'où
 
 $$\sum_{i=1}^{n+1} \mu_i x_i - \left( \sum_{i=1}^{n+1} \mu_i \frac{\lambda_{i, n+1}}{\lambda_{n+2, n+1}} \right) x_{n+2} = 0_E$$
 
 Les $\mu_i$ étant non tous nuls, on obtient $0$ comme C.L. à coefficients non tous
-nuls de $x_1, \dots, x_{n+2}$ : donc $(x_1, \dots, x_{n+2})$ est liée.
+nuls de $x_1, \dots, x\_{n+2}$ : donc $(x_1, \dots, x\_{n+2})$ est liée.
 
 </div>
 
@@ -914,7 +914,7 @@ On dit qu'une famille $\mathcal{F}$ est une **base** de $E$ si c'est une famille
 
 - $1$ est une base de $\mathbb{R}$ ;
 - $(1, i)$, $(1, j)$ sont des bases de $\mathbb{C}$ en tant que $\mathbb{R}$-e.v. ;
-- $(X^n)_{n \in \mathbb{N}}$ est une base de $\mathbb{K}[X]$.
+- $(X^n)\_{n \in \mathbb{N}}$ est une base de $\mathbb{K}[X]$.
 
 </div>
 
@@ -922,7 +922,7 @@ On dit qu'une famille $\mathcal{F}$ est une **base** de $E$ si c'est une famille
 
 <span class="bloc-titre">Propriété</span>
 
-Si $\mathcal{F} = (x_i)_{i \in I}$ est une base de $E$, tout $x$ de $E$ s'écrit
+Si $\mathcal{F} = (x_i)\_{i \in I}$ est une base de $E$, tout $x$ de $E$ s'écrit
 (existence et) manière **unique**
 
 $$x = \sum_{i \in I} \lambda_i x_i, \qquad (\lambda_i)_{i \in I} \in \mathbb{K}^{(I)}$$
@@ -985,20 +985,20 @@ Si $\mathcal{F}$ est une base, alors c'est une famille **génératrice minimale*
 <span class="bloc-titre">Démonstration</span>
 
 Si $\mathcal{F}$ est une base, $\mathcal{F}$ est génératrice. Soit $\mathcal{F}'$
-une sous-famille stricte de $\mathcal{F}$ : $\mathcal{F}' = (x_i)_{i \in J}$ et
-$\mathcal{F} = (x_i)_{i \in I}$ avec $J \subsetneq I$. Soit $i \in I \setminus J$ non vide :
-$x_i \in E$ donc il est C.L. de $(x_j)_{j \in J}$ ; $(\mathcal{F}', x_i)$ est liée ;
+une sous-famille stricte de $\mathcal{F}$ : $\mathcal{F}' = (x_i)\_{i \in J}$ et
+$\mathcal{F} = (x_i)\_{i \in I}$ avec $J \subsetneq I$. Soit $i \in I \setminus J$ non vide :
+$x_i \in E$ donc il est C.L. de $(x_j)\_{j \in J}$ ; $(\mathcal{F}', x_i)$ est liée ;
 $\mathcal{F}$ est liée comme sous-famille de $(\mathcal{F}', x_i)$ : impossible car
 $\mathcal{F}$ est une base. Donc $\mathcal{F}'$ n'est pas génératrice et $\mathcal{F}$
 est génératrice minimale.
 
 $\Leftarrow$ si $\mathcal{F}$ est génératrice minimale : supposons $\mathcal{F}$ liée ;
-il existe $x_{i_0} \in \mathcal{F}$ C.L. des autres :
-$x_{i_0} = \sum_{\substack{i \in I \\ i \neq i_0}} \lambda_i x_i$. Alors
-$\mathcal{F}' = (x_i)_{i \in I \setminus \{i_0\}}$ est une sous-famille stricte de
+il existe $x\_{i_0} \in \mathcal{F}$ C.L. des autres :
+$x\_{i_0} = \sum\_{\substack{i \in I \\ i \neq i_0}} \lambda_i x_i$. Alors
+$\mathcal{F}' = (x_i)\_{i \in I \setminus \{i_0\}}$ est une sous-famille stricte de
 $\mathcal{F}$, et elle est génératrice : car tout $x$ de $E$ s'écrit
-$x = \sum_{i \in I} \mu_i x_i$ ($\mathcal{F}$ génératrice)
-$= \sum_{i \in I \setminus \{i_0\}} \mu_i x_i + \mu_{i_0} \sum_{i \neq i_0} \lambda_i x_i$,
+$x = \sum\_{i \in I} \mu_i x_i$ ($\mathcal{F}$ génératrice)
+$= \sum\_{i \in I \setminus \{i_0\}} \mu_i x_i + \mu\_{i_0} \sum\_{i \neq i_0} \lambda_i x_i$,
 donc $x \in \mathrm{Vect}(\mathcal{F}')$ et $E = \mathrm{Vect}(\mathcal{F}')$.
 
 Conclusion : si ($\mathcal{F}$ est liée), $\mathcal{F}$ n'est pas génératrice minimale ;
@@ -1012,13 +1012,13 @@ libre, c'est donc une base.
 <span class="bloc-titre">Méthodes (à retenir)</span>
 
 - Pour montrer qu'une famille est **libre** : montrer que
-  $\big( \sum_{i \in I} \lambda_i x_i = 0 \Rightarrow \forall i \in I,\ \lambda_i = 0 \big)$ ;
+  $\big( \sum\_{i \in I} \lambda_i x_i = 0 \Rightarrow \forall i \in I,\ \lambda_i = 0 \big)$ ;
   l'écriture de $x$ est unique, $x$ quelconque ; toutes ses sous-familles sont libres ;
   c'est une sous-famille d'une famille libre.
 - Pour montrer qu'une famille est **liée** : montrer qu'il existe
-  $(\lambda_i)_{i \in I} \in \mathbb{K}^{(I)}$ non nulle telle que
-  $\sum_{i \in I} \lambda_i x_i = 0$ ($x_i \in \mathcal{F}$, $\lambda_i \neq 0$) ;
-  il existe $u \in \mathcal{F}$ tel que $u = \sum_{i \in I} \lambda_i x_i$ ;
+  $(\lambda_i)\_{i \in I} \in \mathbb{K}^{(I)}$ non nulle telle que
+  $\sum\_{i \in I} \lambda_i x_i = 0$ ($x_i \in \mathcal{F}$, $\lambda_i \neq 0$) ;
+  il existe $u \in \mathcal{F}$ tel que $u = \sum\_{i \in I} \lambda_i x_i$ ;
   c'est une sous-famille d'une famille liée.
 - Pour montrer qu'une famille est une **base** : famille libre maximale ;
   famille génératrice minimale.
@@ -1070,7 +1070,7 @@ $$\forall \lambda \in \mathbb{K},\ \forall x, y \in E,\quad
 <span class="bloc-titre">Propriété</span>
 
 Si $u$ est linéaire de $E$ vers $F$ et si $x$ est C.L. des $x_i$ :
-$x = \sum_{i \in I} \lambda_i x_i$, alors
+$x = \sum\_{i \in I} \lambda_i x_i$, alors
 
 $$u(x) = \sum_{i \in I} \lambda_i\, u(x_i)$$
 
@@ -1080,7 +1080,7 @@ $$u(x) = \sum_{i \in I} \lambda_i\, u(x_i)$$
 
 <span class="bloc-titre">Propriété</span>
 
-$\mathcal{L}_{\mathbb{K}}(E, F)$, l'ensemble des applications linéaires du
+$\mathcal{L}\_{\mathbb{K}}(E, F)$, l'ensemble des applications linéaires du
 $\mathbb{K}$-e.v. $E$ vers le $\mathbb{K}$-e.v. $F$, est un $\mathbb{K}$-e.v.
 
 </div>
@@ -1089,7 +1089,7 @@ $\mathbb{K}$-e.v. $E$ vers le $\mathbb{K}$-e.v. $F$, est un $\mathbb{K}$-e.v.
 
 <span class="bloc-titre">Proposition 1</span>
 
-$(\mathcal{L}_{\mathbb{K}}(E, F), +, \cdot)$ est un s.e.v. de $(F^E, +, \cdot)$ :
+$(\mathcal{L}\_{\mathbb{K}}(E, F), +, \cdot)$ est un s.e.v. de $(F^E, +, \cdot)$ :
 si $u, v$ sont deux applications linéaires de $E$ vers $F$ et $\lambda \in \mathbb{K}$,
  alors $\lambda u + v$ est encore linéaire ; l'application nulle $0 : x \mapsto 0$
 est linéaire.
@@ -1100,8 +1100,8 @@ est linéaire.
 
 <span class="bloc-titre">Propriété (composition)</span>
 
-Si $u \in \mathcal{L}_{\mathbb{K}}(E, F)$ et $v \in \mathcal{L}_{\mathbb{K}}(F, G)$,
-alors $v \circ u \in \mathcal{L}_{\mathbb{K}}(E, G)$.
+Si $u \in \mathcal{L}\_{\mathbb{K}}(E, F)$ et $v \in \mathcal{L}\_{\mathbb{K}}(F, G)$,
+alors $v \circ u \in \mathcal{L}\_{\mathbb{K}}(E, G)$.
 
 </div>
 
@@ -1121,11 +1121,11 @@ car $v$ est linéaire.
 
 <span class="bloc-titre">Propriété (distributivité)</span>
 
-Si $u \in \mathcal{L}_{\mathbb{K}}(E, F)$ et $v, w \in \mathcal{L}_{\mathbb{K}}(F, G)$ :
+Si $u \in \mathcal{L}\_{\mathbb{K}}(E, F)$ et $v, w \in \mathcal{L}\_{\mathbb{K}}(F, G)$ :
 
 $$(v + w) \circ u = v \circ u + w \circ u$$
 
-Si de plus $u_1 \in \mathcal{L}_{\mathbb{K}}(E, F)$ :
+Si de plus $u_1 \in \mathcal{L}\_{\mathbb{K}}(E, F)$ :
 $v \circ (u + u_1) = v \circ u + v \circ u_1$ ; et pour tout $\lambda \in \mathbb{K}$ :
 
 $$\lambda (v \circ u) = (\lambda v) \circ u = v \circ (\lambda u)$$
@@ -1145,7 +1145,7 @@ car $v$ est linéaire.
 
 <span class="bloc-titre">Propriété</span>
 
-$\mathcal{L}_{\mathbb{K}}(E)$, l'ensemble des **endomorphismes** du $\mathbb{K}$-e.v. $E$,
+$\mathcal{L}\_{\mathbb{K}}(E)$, l'ensemble des **endomorphismes** du $\mathbb{K}$-e.v. $E$,
 est une $\mathbb{K}$-**algèbre** (non commutative).
 
 </div>
@@ -1153,11 +1153,11 @@ est une $\mathbb{K}$-**algèbre** (non commutative).
 <div class="bloc demo" markdown="1">
 <span class="bloc-titre">Démonstration</span>
 
-$(\mathcal{L}_{\mathbb{K}}(E), +, \cdot)$ est un $\mathbb{K}$-e.v. ;
-$(\mathcal{L}_{\mathbb{K}}(E), +, \circ)$ est un sous-anneau de $E^E$ car
-$\mathrm{Id}_E$ est linéaire ; de plus la composée de deux applications linéaires
+$(\mathcal{L}\_{\mathbb{K}}(E), +, \cdot)$ est un $\mathbb{K}$-e.v. ;
+$(\mathcal{L}\_{\mathbb{K}}(E), +, \circ)$ est un sous-anneau de $E^E$ car
+$\mathrm{Id}\_E$ est linéaire ; de plus la composée de deux applications linéaires
 est linéaire ; enfin
-$\forall \lambda \in \mathbb{K}$, $\forall u, v \in \mathcal{L}_{\mathbb{K}}(E)$ :
+$\forall \lambda \in \mathbb{K}$, $\forall u, v \in \mathcal{L}\_{\mathbb{K}}(E)$ :
 $\lambda (v \circ u) = (\lambda v) \circ u = v \circ (\lambda u)$.
 
 </div>
@@ -1168,7 +1168,7 @@ $\lambda (v \circ u) = (\lambda v) \circ u = v \circ (\lambda u)$.
 
 <span class="bloc-titre">Propriété</span>
 
-Si $u \in \mathcal{L}_{\mathbb{K}}(E, F)$ et $H$ est un s.e.v. de $E$, alors $u(H)$
+Si $u \in \mathcal{L}\_{\mathbb{K}}(E, F)$ et $H$ est un s.e.v. de $E$, alors $u(H)$
 est un s.e.v. de $F$.
 
 </div>
@@ -1189,7 +1189,7 @@ car $u$ est linéaire, et $\lambda x + y \in u(H)$ car $H$ est un s.e.v.
 
 <span class="bloc-titre">Propriété</span>
 
-Si $u \in \mathcal{L}_{\mathbb{K}}(E, F)$ et $H'$ est un s.e.v. de $F$, alors
+Si $u \in \mathcal{L}\_{\mathbb{K}}(E, F)$ et $H'$ est un s.e.v. de $F$, alors
 $u^{-1}(H')$ est un s.e.v. de $E$.
 
 </div>
@@ -1228,7 +1228,7 @@ $u(\lambda x + y) = \lambda u(x) + u(y) \in H'$.
 <span class="bloc-titre">Propriété</span>
 
 Si $\mathcal{F}$ engendre $V$ (avec $V = \mathrm{Vect}(\mathcal{F})$ s.e.v. de $E$)
-et $u \in \mathcal{L}_{\mathbb{K}}(E, F)$, alors $u(\mathcal{F})$ engendre $u(V)$.
+et $u \in \mathcal{L}\_{\mathbb{K}}(E, F)$, alors $u(\mathcal{F})$ engendre $u(V)$.
 
 </div>
 
@@ -1239,7 +1239,7 @@ $\mathcal{F} \subset V$, donc $u(\mathcal{F}) \subset u(V)$ ; $u(V)$ est un s.e.
 $F$, donc $\mathrm{Vect}(u(\mathcal{F})) \subset u(V)$.
 
 Soit $y \in u(V)$ : $y = u(x)$ avec $x \in V$ ; or $V = \mathrm{Vect}(\mathcal{F})$,
-donc $x = \sum_{i \in I} \lambda_i x_i$ avec $\mathcal{F} = (x_i)_{i \in I}$. Alors
+donc $x = \sum\_{i \in I} \lambda_i x_i$ avec $\mathcal{F} = (x_i)\_{i \in I}$. Alors
 
 $$y = u(x) = \sum_{i \in I} \lambda_i\, u(x_i) \in \mathrm{Vect}\big( u(\mathcal{F}) \big)$$
 
@@ -1263,7 +1263,7 @@ L'image d'une famille génératrice engendre $\operatorname{Im} u$.
 
 <span class="bloc-titre">Propriété</span>
 
-L'image d'une famille liée est liée : car si $\sum_{i \in I} \lambda_i x_i = 0$ avec les $\lambda_i$ non tous nuls, alors $\sum_{i \in I} \lambda_i u(x_i) = u(0) = 0$, donc les $(u(x_i))_{i \in I}$ forment une famille liée.
+L'image d'une famille liée est liée : car si $\sum\_{i \in I} \lambda_i x_i = 0$ avec les $\lambda_i$ non tous nuls, alors $\sum\_{i \in I} \lambda_i u(x_i) = u(0) = 0$, donc les $(u(x_i))\_{i \in I}$ forment une famille liée.
 
 </div>
 
@@ -1271,7 +1271,7 @@ L'image d'une famille liée est liée : car si $\sum_{i \in I} \lambda_i x_i = 0
 
 <span class="bloc-titre">Propriété</span>
 
-L'image d'une famille libre par une application linéaire **injective** est libre : si $\sum_{i \in I} \lambda_i u(x_i) = 0$, alors $u\big(\sum_{i \in I} \lambda_i x_i\big) = 0$, donc $\sum_{i \in I} \lambda_i x_i = 0$ car $u$ est injective ; si la famille $(x_i)_{i \in I}$ est libre, on a $\forall i \in I,\ \lambda_i = 0$ ; donc la famille $(u(x_i))_{i \in I}$ est libre.
+L'image d'une famille libre par une application linéaire **injective** est libre : si $\sum\_{i \in I} \lambda_i u(x_i) = 0$, alors $u\big(\sum\_{i \in I} \lambda_i x_i\big) = 0$, donc $\sum\_{i \in I} \lambda_i x_i = 0$ car $u$ est injective ; si la famille $(x_i)\_{i \in I}$ est libre, on a $\forall i \in I,\ \lambda_i = 0$ ; donc la famille $(u(x_i))\_{i \in I}$ est libre.
 
 </div>
 
@@ -1305,7 +1305,7 @@ Soit $u \in \mathcal{L}(E, F)$ ; si $\exists \mathcal{B}$ base de $E$ telle que 
 
 $u(\mathcal{B})$ est une base de $F$. $\operatorname{Vect}(u(\mathcal{B})) = \operatorname{Im} u$ car $\mathcal{B}$ est une base de $E$ ; $\operatorname{Vect}(u(\mathcal{B})) = F$ car $u(\mathcal{B})$ est une base de $F$. Donc $\operatorname{Im} u = F$ : $u$ est surjective.
 
-Soit $x \in \operatorname{Ker} u$ ; écrivons $\mathcal{B} = (x_i)_{i \in I}$, $x = \sum_{i \in I} \lambda_i x_i$. Alors $u(x) = 0 = \sum_{i \in I} \lambda_i u(x_i)$ ; or $(u(x_i))_{i \in I}$ est une base de $F$, donc libre, donc $\forall i,\ \lambda_i = 0$, d'où $x = 0$. Ainsi $\operatorname{Ker} u = \{0_E\}$ : $u$ est injective.
+Soit $x \in \operatorname{Ker} u$ ; écrivons $\mathcal{B} = (x_i)\_{i \in I}$, $x = \sum\_{i \in I} \lambda_i x_i$. Alors $u(x) = 0 = \sum\_{i \in I} \lambda_i u(x_i)$ ; or $(u(x_i))\_{i \in I}$ est une base de $F$, donc libre, donc $\forall i,\ \lambda_i = 0$, d'où $x = 0$. Ainsi $\operatorname{Ker} u = \{0_E\}$ : $u$ est injective.
 
 </div>
 
@@ -1313,7 +1313,7 @@ Soit $x \in \operatorname{Ker} u$ ; écrivons $\mathcal{B} = (x_i)_{i \in I}$, $
 
 <span class="bloc-titre">Propriété</span>
 
-Si $\mathcal{B} = (e_i)_{i \in I}$ est une base de $E$, se donner une application linéaire $u : E \to F$, c'est se donner $(u(e_i))_{i \in I}$.
+Si $\mathcal{B} = (e_i)\_{i \in I}$ est une base de $E$, se donner une application linéaire $u : E \to F$, c'est se donner $(u(e_i))\_{i \in I}$.
 
 </div>
 
@@ -1321,7 +1321,7 @@ Si $\mathcal{B} = (e_i)_{i \in I}$ est une base de $E$, se donner une applicatio
 
 <span class="bloc-titre">Démonstration</span>
 
-$x$ s'écrit de manière unique $x = \sum_{i \in I} \lambda_i e_i$ ; si on connaît $(u(e_i))_{i \in I}$, alors $u(x)$ est parfaitement déterminé et vaut $u(x) = \sum_{i \in I} \lambda_i u(e_i)$.
+$x$ s'écrit de manière unique $x = \sum\_{i \in I} \lambda_i e_i$ ; si on connaît $(u(e_i))\_{i \in I}$, alors $u(x)$ est parfaitement déterminé et vaut $u(x) = \sum\_{i \in I} \lambda_i u(e_i)$.
 
 </div>
 
@@ -1329,7 +1329,7 @@ $x$ s'écrit de manière unique $x = \sum_{i \in I} \lambda_i e_i$ ; si on conna
 
 <span class="bloc-titre">Propriété</span>
 
-Si $u$ est linéaire, $u$ est parfaitement connue par la donnée des $(u(e_i))_{i \in I}$.
+Si $u$ est linéaire, $u$ est parfaitement connue par la donnée des $(u(e_i))\_{i \in I}$.
 
 </div>
 
@@ -1337,7 +1337,7 @@ Si $u$ est linéaire, $u$ est parfaitement connue par la donnée des $(u(e_i))_{
 
 <span class="bloc-titre">Démonstration</span>
 
-Si $(e_i)_{i \in I}$ est une famille de vecteurs de $E$, montrons qu'il existe une application linéaire telle que $u(e_i) = f_i$ pour tout $i$. Posons, pour $x = \sum_{i \in I} \lambda_i x_i$ : $u(x) = \sum_{i \in I} \lambda_i f_i$. Alors $u$ est une application $E \to F$, et elle est bien linéaire : pour $x = \sum \lambda_i x_i$, $y = \sum \mu_i x_i$,
+Si $(e_i)\_{i \in I}$ est une famille de vecteurs de $E$, montrons qu'il existe une application linéaire telle que $u(e_i) = f_i$ pour tout $i$. Posons, pour $x = \sum\_{i \in I} \lambda_i x_i$ : $u(x) = \sum\_{i \in I} \lambda_i f_i$. Alors $u$ est une application $E \to F$, et elle est bien linéaire : pour $x = \sum \lambda_i x_i$, $y = \sum \mu_i x_i$,
 
 $$u(\lambda x + y) = u\Big(\sum_{i \in I} (\lambda \lambda_i + \mu_i) x_i\Big) = \sum_{i \in I} (\lambda \lambda_i + \mu_i) f_i = \lambda \sum_{i \in I} \lambda_i f_i + \sum_{i \in I} \mu_i f_i = \lambda u(x) + u(y)$$
 
@@ -1351,7 +1351,7 @@ Il existe une unique application linéaire telle que $\forall i \in I,\ u(e_i) =
 
 <span class="bloc-titre">Définition</span>
 
-On dit que $\lambda \in \mathbb{K}$ est **valeur propre** d'une application linéaire $u \in \mathcal{L}_{\mathbb{K}}(E)$ s'il existe $x \in E$, **non nul**, tel que $u(x) = \lambda x$. $x$ est alors un **vecteur propre** de $u$ associé à la valeur propre $\lambda$.
+On dit que $\lambda \in \mathbb{K}$ est **valeur propre** d'une application linéaire $u \in \mathcal{L}\_{\mathbb{K}}(E)$ s'il existe $x \in E$, **non nul**, tel que $u(x) = \lambda x$. $x$ est alors un **vecteur propre** de $u$ associé à la valeur propre $\lambda$.
 
 </div>
 
@@ -1393,7 +1393,7 @@ On dit qu'un espace vectoriel $E$ est de **dimension finie** s'il existe une fam
 
 - $\mathbb{R}^n$ est engendré par sa base canonique ;
 - $\mathbb{C}$ (vu comme $\mathbb{R}$-espace vectoriel) est engendré par $(1, i)$ ;
-- $\mathbb{R}_n[X]$ est engendré par $(1, X, \dots, X^n)$.
+- $\mathbb{R}\_n[X]$ est engendré par $(1, X, \dots, X^n)$.
 
 </div>
 
@@ -1418,7 +1418,7 @@ Ce cardinal est appelé **dimension** de $E$ et noté $\dim E$.
 <span class="bloc-titre">Exemples</span>
 
 - $\dim \mathbb{R}^n = n$ ;
-- $\dim \mathbb{R}_n[X] = n + 1$ car $(1, X, \dots, X^n)$ est une base.
+- $\dim \mathbb{R}\_n[X] = n + 1$ car $(1, X, \dots, X^n)$ est une base.
 
 </div>
 
@@ -1426,7 +1426,7 @@ Ce cardinal est appelé **dimension** de $E$ et noté $\dim E$.
 
 <span class="bloc-titre">Démonstration (existence d'une base)</span>
 
-Soit $\mathcal{G} = (x_i)_{i \in I}$ une famille génératrice finie de $E$. Soit $A = \{k \in \mathbb{N} \mid \text{une famille de } k \text{ vecteurs de } \mathcal{G} \text{ est génératrice}\}$. $A$ est une partie de $\mathbb{N}$, non vide ; soit $p$ son plus petit élément. Soit $\mathcal{B}$ une sous-famille de $\mathcal{G}$ de $p$ vecteurs génératrice : $\mathcal{B}$ est une famille génératrice minimale par définition de $p$, d'où $\mathcal{B}$ est une base et son cardinal est fini.
+Soit $\mathcal{G} = (x_i)\_{i \in I}$ une famille génératrice finie de $E$. Soit $A = \{k \in \mathbb{N} \mid \text{une famille de } k \text{ vecteurs de } \mathcal{G} \text{ est génératrice}\}$. $A$ est une partie de $\mathbb{N}$, non vide ; soit $p$ son plus petit élément. Soit $\mathcal{B}$ une sous-famille de $\mathcal{G}$ de $p$ vecteurs génératrice : $\mathcal{B}$ est une famille génératrice minimale par définition de $p$, d'où $\mathcal{B}$ est une base et son cardinal est fini.
 
 **Lemme.** Si $\mathcal{B}$ est une base de $n$ vecteurs et $\mathcal{F}$ une famille libre, alors $\mathcal{F}$ est de cardinal fini et $\operatorname{card} \mathcal{F} \leq n$. En effet, si $\mathcal{F}$ admettait au moins $n+1$ vecteurs, une sous-famille de $n+1$ vecteurs serait combinaison linéaire des $n$ vecteurs de la base, donc liée, donc $\mathcal{F}$ serait liée — absurde.
 
@@ -1464,7 +1464,7 @@ On considère $(\mathcal{F}, x)$ avec $x \notin \mathcal{F}$ : on a $n+1$ vecteu
 
 <span class="bloc-titre">Exemple</span>
 
-Si $(P_0, \dots, P_n)$ sont $n+1$ polynômes tels que $\deg P_i \leq i$, alors $(P_0, \dots, P_n)$ est une base de $\mathbb{R}_n[X]$.
+Si $(P_0, \dots, P_n)$ sont $n+1$ polynômes tels que $\deg P_i \leq i$, alors $(P_0, \dots, P_n)$ est une base de $\mathbb{R}\_n[X]$.
 
 </div>
 
@@ -1504,7 +1504,7 @@ Soit $E$ de dimension $n$, $\mathcal{B} = (e_1, \dots, e_n)$ une base de $E$, et
 
 <span class="bloc-titre">Démonstration</span>
 
-$\mathcal{F} = (x_1, \dots, x_p)$ ; $\mathcal{F}$ libre donc $p \leq n$. Si $p = n$, $\mathcal{F}$ est une base. Supposons $p < n$. Il existe $i \in \{1, \dots, n\}$ tel que $e_i \notin \operatorname{Vect}(\mathcal{F})$ (sinon les vecteurs $e_i$ seraient combinaisons linéaires des $p$ vecteurs de $\mathcal{F}$, et formeraient une famille liée car $p < n$, ce qui est impossible car $\mathcal{B}$ est libre). Alors $(x_1, \dots, x_p, e_{p+1})$ est libre. Premier cas : $p+1 = n$, alors $\mathcal{F}'$ est une base. Deuxième cas : $p+1 < n$, il existe $j \in \mathcal{B}$ tel que $e_j \notin \operatorname{Vect}(\mathcal{F}')$ ; supposons que $e_j = e_{p+2}$ ; alors $(x_1, \dots, x_p, e_{p+1}, e_{p+2})$ est libre. Au bout de $n - p$ étapes, on a une famille $(x_1, \dots, x_p, e_{p+1}, e_{p+2}, \dots, e_{p+(n-p)})$ libre de $n$ vecteurs, donc c'est une base.
+$\mathcal{F} = (x_1, \dots, x_p)$ ; $\mathcal{F}$ libre donc $p \leq n$. Si $p = n$, $\mathcal{F}$ est une base. Supposons $p < n$. Il existe $i \in \{1, \dots, n\}$ tel que $e_i \notin \operatorname{Vect}(\mathcal{F})$ (sinon les vecteurs $e_i$ seraient combinaisons linéaires des $p$ vecteurs de $\mathcal{F}$, et formeraient une famille liée car $p < n$, ce qui est impossible car $\mathcal{B}$ est libre). Alors $(x_1, \dots, x_p, e\_{p+1})$ est libre. Premier cas : $p+1 = n$, alors $\mathcal{F}'$ est une base. Deuxième cas : $p+1 < n$, il existe $j \in \mathcal{B}$ tel que $e_j \notin \operatorname{Vect}(\mathcal{F}')$ ; supposons que $e_j = e\_{p+2}$ ; alors $(x_1, \dots, x_p, e\_{p+1}, e\_{p+2})$ est libre. Au bout de $n - p$ étapes, on a une famille $(x_1, \dots, x_p, e\_{p+1}, e\_{p+2}, \dots, e\_{p+(n-p)})$ libre de $n$ vecteurs, donc c'est une base.
 
 </div>
 
@@ -1582,11 +1582,11 @@ $$\dim(F + G) = \dim F + \dim G - \dim(F \cap G)$$
 
 <span class="bloc-titre">Démonstration</span>
 
-Soit $\mathcal{B} = (e_1, \dots, e_n)$ une base de $F \cap G$. On complète $\mathcal{B}$ en une base de $F$ en puisant dans une base de $F$ ($p = \dim F$) : $\mathcal{F} = (e_1, \dots, e_n, f_{n+1}, \dots, f_p)$ ; de même on complète en une base de $G$ ($q = \dim G$) : $\mathcal{G} = (e_1, \dots, e_n, g_{n+1}, \dots, g_q)$. Posons $\Sigma = (e_1, \dots, e_n, f_{n+1}, \dots, f_p, g_{n+1}, \dots, g_q)$.
+Soit $\mathcal{B} = (e_1, \dots, e_n)$ une base de $F \cap G$. On complète $\mathcal{B}$ en une base de $F$ en puisant dans une base de $F$ ($p = \dim F$) : $\mathcal{F} = (e_1, \dots, e_n, f\_{n+1}, \dots, f_p)$ ; de même on complète en une base de $G$ ($q = \dim G$) : $\mathcal{G} = (e_1, \dots, e_n, g\_{n+1}, \dots, g_q)$. Posons $\Sigma = (e_1, \dots, e_n, f\_{n+1}, \dots, f_p, g\_{n+1}, \dots, g_q)$.
 
 $\Sigma$ est génératrice de $F + G$ : si $x \in F + G$, $x$ s'écrit $x_F + x_G$ avec $x_F \in F$, $x_G \in G$, et $x_F$, $x_G$ sont combinaisons linéaires de vecteurs de $\mathcal{F}$ et $\mathcal{G}$ respectivement.
 
-$\Sigma$ est libre : si $\sum_{i=1}^{n} \lambda_i e_i + \sum_{i=n+1}^{p} \lambda_i f_i + \sum_{i=n+1}^{q} \mu_i g_i = 0$, posons $x = -\sum_{i=1}^{n} \lambda_i e_i - \sum_{i=n+1}^{p} \lambda_i f_i \in F$ ; on a aussi $x = \sum_{i=n+1}^{q} \mu_i g_i \in G$, donc $x \in F \cap G$, donc $x = \sum_{i=1}^{n} \nu_i e_i = \sum_{i=n+1}^{q} \mu_i g_i$ ; la famille $(e_1, \dots, e_n, g_{n+1}, \dots, g_q)$ est libre (sous-famille d'une base de $G$), donc $\nu_i = 0$ et $\mu_i = 0$ pour $i > n$, d'où $x = 0$. Alors $\sum_{i=1}^{n} \lambda_i e_i + \sum_{i=n+1}^{p} \lambda_i f_i = 0$, et $(e_1, \dots, e_n, f_{n+1}, \dots, f_p)$ est une base de $F$, donc libre, donc $\forall i \leq n,\ \lambda_i = 0$. Ainsi $\Sigma$ est libre, c'est une base de $F + G$, et
+$\Sigma$ est libre : si $\sum\_{i=1}^{n} \lambda_i e_i + \sum\_{i=n+1}^{p} \lambda_i f_i + \sum\_{i=n+1}^{q} \mu_i g_i = 0$, posons $x = -\sum\_{i=1}^{n} \lambda_i e_i - \sum\_{i=n+1}^{p} \lambda_i f_i \in F$ ; on a aussi $x = \sum\_{i=n+1}^{q} \mu_i g_i \in G$, donc $x \in F \cap G$, donc $x = \sum\_{i=1}^{n} \nu_i e_i = \sum\_{i=n+1}^{q} \mu_i g_i$ ; la famille $(e_1, \dots, e_n, g\_{n+1}, \dots, g_q)$ est libre (sous-famille d'une base de $G$), donc $\nu_i = 0$ et $\mu_i = 0$ pour $i > n$, d'où $x = 0$. Alors $\sum\_{i=1}^{n} \lambda_i e_i + \sum\_{i=n+1}^{p} \lambda_i f_i = 0$, et $(e_1, \dots, e_n, f\_{n+1}, \dots, f_p)$ est une base de $F$, donc libre, donc $\forall i \leq n,\ \lambda_i = 0$. Ainsi $\Sigma$ est libre, c'est une base de $F + G$, et
 
 $$\dim(F + G) = p + q - n = \dim F + \dim G - \dim(F \cap G)$$
 
@@ -1614,9 +1614,9 @@ Si $\dim E = n$ et $F$ est un sous-espace vectoriel de $E$, alors $F$ admet un s
 
 <span class="bloc-titre">Démonstration</span>
 
-Soit $\mathcal{B} = (e_1, \dots, e_n)$ une base de $E$ et $\mathcal{F} = (f_1, \dots, f_p)$ une base de $F$. On complète $\mathcal{F}$ en une base de $E$ en puisant dans $\mathcal{B}$ : $\mathcal{B}' = (f_1, \dots, f_p, e_{p+1}, \dots, e_n)$ quitte à renuméroter. Soit $G = \operatorname{Vect}(e_{p+1}, \dots, e_n)$.
+Soit $\mathcal{B} = (e_1, \dots, e_n)$ une base de $E$ et $\mathcal{F} = (f_1, \dots, f_p)$ une base de $F$. On complète $\mathcal{F}$ en une base de $E$ en puisant dans $\mathcal{B}$ : $\mathcal{B}' = (f_1, \dots, f_p, e\_{p+1}, \dots, e_n)$ quitte à renuméroter. Soit $G = \operatorname{Vect}(e\_{p+1}, \dots, e_n)$.
 
-$F \cap G = \{0\}$ : si $x = \sum_{i \leq p} \lambda_i f_i = \sum_{i > p} \lambda_i e_i$, alors $\sum_{i \leq p} \lambda_i f_i - \sum_{i > p} \lambda_i e_i = 0$, et comme $\mathcal{B}'$ est libre, tous les coefficients sont nuls, donc $x = 0$.
+$F \cap G = \{0\}$ : si $x = \sum\_{i \leq p} \lambda_i f_i = \sum\_{i > p} \lambda_i e_i$, alors $\sum\_{i \leq p} \lambda_i f_i - \sum\_{i > p} \lambda_i e_i = 0$, et comme $\mathcal{B}'$ est libre, tous les coefficients sont nuls, donc $x = 0$.
 
 $F + G = E$ : $\dim(F + G) = \dim F + \dim G = p + (n - p) = n = \dim E$, donc $F \oplus G = E$.
 
@@ -1773,20 +1773,20 @@ En dimension finie, on connaît l'existence d'un supplémentaire fini de $\opera
 
 <span class="bloc-titre">Application</span>
 
-Soient $a \in \mathbb{C}$, $b \in \mathbb{C}^*$. Posons
+Soient $a \in \mathbb{C}$, $b \in \mathbb{C}^\*$. Posons
 
 $$E = \{(u_n)_n \in \mathbb{C}^{\mathbb{N}} \mid u_{n+2} = a u_{n+1} + b u_n,\ n \geq 0\}$$
 
-- $E$ est un sous-espace vectoriel de $\mathbb{C}^{\mathbb{N}}$ : $(0) \in E$ ; si $(u_n), (v_n) \in E$ et $\lambda \in \mathbb{C}$, alors $(u_{n+2} + \lambda v_{n+2}) = a(u_{n+1} + \lambda v_{n+1}) + b(u_n + \lambda v_n)$.
-- Soit $\varphi : E \to \mathbb{C}^2$, $(u_n)_n \mapsto (u_0, u_1)$.
+- $E$ est un sous-espace vectoriel de $\mathbb{C}^{\mathbb{N}}$ : $(0) \in E$ ; si $(u_n), (v_n) \in E$ et $\lambda \in \mathbb{C}$, alors $(u\_{n+2} + \lambda v\_{n+2}) = a(u\_{n+1} + \lambda v\_{n+1}) + b(u_n + \lambda v_n)$.
+- Soit $\varphi : E \to \mathbb{C}^2$, $(u_n)\_n \mapsto (u_0, u_1)$.
   - $\varphi$ est linéaire ;
   - pour tout couple $(\alpha, \beta) \in \mathbb{C}^2$, il existe une unique suite $(u_n)$ de $E$ telle que $u_0 = \alpha$ et $u_1 = \beta$ ;
   - donc $\varphi$ est bijective : $\varphi$ est un isomorphisme, et $\dim E = 2$.
 
-Cherchons une base de $E$. On cherche des solutions géométriques de $E$ : $(x^n)_n \in E \iff x^{n+2} = a x^{n+1} + b x^n$ pour $n \geq 0$ ; pour $x \neq 0$ : $x^2 = ax + b$ (équation (1), de discriminant $\Delta = a^2 + 4b$), qui admet 2 solutions $x_1$ et $x_2$.
+Cherchons une base de $E$. On cherche des solutions géométriques de $E$ : $(x^n)\_n \in E \iff x^{n+2} = a x^{n+1} + b x^n$ pour $n \geq 0$ ; pour $x \neq 0$ : $x^2 = ax + b$ (équation (1), de discriminant $\Delta = a^2 + 4b$), qui admet 2 solutions $x_1$ et $x_2$.
 
-- **1er cas** $\Delta \neq 0$ : (1) admet 2 solutions distinctes $x_1 \neq x_2$. Posons $(u_n) = (x_1^n)_n$, $(v_n) = (x_2^n)_n$. Si $\forall n,\ \lambda_1 x_1^n = \lambda_2 x_2^n$ : pour $n = 0$, $\lambda_1 = \lambda_2$ ; pour $n = 1$, $\lambda_1 x_1 = \lambda_2 x_2$, incompatible car $x_1 \neq x_2$. Donc $((u_n), (v_n))$ est libre, c'est une base ($\dim E = 2$). Pour tout $(u_n) \in E$, $u_n = \lambda_1 x_1^n + \lambda_2 x_2^n$ ; on détermine $\lambda_1, \lambda_2$ par 2 conditions (en $n = 0$ et $n = 1$).
-- **2ème cas** $\Delta = 0$ : $x_1$ racine double. $(x_1^n)_n \in E$ et $(n x_1^n)_n \in E$ : en effet, avec $x_1 = \frac{a}{2}$,
+- **1er cas** $\Delta \neq 0$ : (1) admet 2 solutions distinctes $x_1 \neq x_2$. Posons $(u_n) = (x_1^n)\_n$, $(v_n) = (x_2^n)\_n$. Si $\forall n,\ \lambda_1 x_1^n = \lambda_2 x_2^n$ : pour $n = 0$, $\lambda_1 = \lambda_2$ ; pour $n = 1$, $\lambda_1 x_1 = \lambda_2 x_2$, incompatible car $x_1 \neq x_2$. Donc $((u_n), (v_n))$ est libre, c'est une base ($\dim E = 2$). Pour tout $(u_n) \in E$, $u_n = \lambda_1 x_1^n + \lambda_2 x_2^n$ ; on détermine $\lambda_1, \lambda_2$ par 2 conditions (en $n = 0$ et $n = 1$).
+- **2ème cas** $\Delta = 0$ : $x_1$ racine double. $(x_1^n)\_n \in E$ et $(n x_1^n)\_n \in E$ : en effet, avec $x_1 = \frac{a}{2}$,
 
 $$(n+2) x_1^{n+2} = (n+2)(a x_1^{n+1} + b x_1^n) = a(n+1) x_1^{n+1} + \big(a x_1 + b(n+2)\big) x_1^n = a(n+1) x_1^{n+1} + nb\, x_1^n$$
 
@@ -1794,11 +1794,11 @@ $(x_1^n)$ et $(n x_1^n)$ sont non proportionnelles, donc forment une base, et
 
 $$E = \big\{\big(\lambda x_1^n + \mu n x_1^n\big)_n \mid \lambda, \mu \in \mathbb{C}\big\}$$
 
-Soit maintenant $a, b \in \mathbb{R}$, $b \neq 0$. $F = \{(u_n)_n \in \mathbb{R}^{\mathbb{N}} \mid u_{n+2} = a u_{n+1} + b u_n\}$ est un sous-espace vectoriel de $\mathbb{R}^{\mathbb{N}}$ (vu comme $\mathbb{R}$-espace vectoriel) de dimension $2$. $x^2 = ax + b$.
+Soit maintenant $a, b \in \mathbb{R}$, $b \neq 0$. $F = \{(u_n)\_n \in \mathbb{R}^{\mathbb{N}} \mid u\_{n+2} = a u\_{n+1} + b u_n\}$ est un sous-espace vectoriel de $\mathbb{R}^{\mathbb{N}}$ (vu comme $\mathbb{R}$-espace vectoriel) de dimension $2$. $x^2 = ax + b$.
 
-- si $\Delta > 0$ : $x_1$ et $x_2$ racines réelles distinctes, $F = \{(\lambda x_1^n + \mu x_2^n)_n \mid \lambda, \mu \in \mathbb{R}\}$ ;
-- si $\Delta = 0$ : $x_1$ racine double, $F = \{((\lambda + n\mu) x_1^n)_n \mid \lambda, \mu \in \mathbb{R}\}$ ;
-- si $\Delta < 0$ : $x_1, \overline{x_1} \in \mathbb{C} \setminus \mathbb{R}$ racines de (1). $E = \{(u_n)_n \in \mathbb{C}^{\mathbb{N}} \mid u_{n+2} = a u_{n+1} + b u_n\} = \{(\lambda x_1^n + \mu \overline{x_1}^n)_n \mid \lambda, \mu \in \mathbb{C}\}$. Posons $u_n = \dfrac{x_1^n + \overline{x_1}^n}{2}$ et $v_n = \dfrac{x_1^n - \overline{x_1}^n}{2i}$ : $x_1^n = u_n + i v_n$, $\overline{x_1}^n = u_n - i v_n$. Tout élément de $E$ est combinaison linéaire de $(x_1^n)_n$ et $(\overline{x_1}^n)_n$, donc de $(u_n)$ et $(v_n)$ : $E \subset \operatorname{Vect}((u_n), (v_n))$ et réciproquement $\operatorname{Vect}((u_n), (v_n)) \subset \operatorname{Vect}((x_1^n), (\overline{x_1}^n)) = E$. $((u_n), (v_n))$ est une base. $u_n = \mathrm{Re}(x_1^n)$ et $v_n = \mathrm{Im}(x_1^n)$ ; $(u_n)$ et $(v_n)$ sont des suites réelles. $\lambda (u_n)_n + \mu (v_n)_n \in \mathbb{R}^{\mathbb{N}} \iff \forall n,\ \overline{\lambda} u_n + \overline{\mu} v_n = \lambda u_n + \mu v_n \iff \overline{\lambda} = \lambda$ et $\overline{\mu} = \mu$ car $((u_n), (v_n))$ est libre. Donc
+- si $\Delta > 0$ : $x_1$ et $x_2$ racines réelles distinctes, $F = \{(\lambda x_1^n + \mu x_2^n)\_n \mid \lambda, \mu \in \mathbb{R}\}$ ;
+- si $\Delta = 0$ : $x_1$ racine double, $F = \{((\lambda + n\mu) x_1^n)\_n \mid \lambda, \mu \in \mathbb{R}\}$ ;
+- si $\Delta < 0$ : $x_1, \overline{x_1} \in \mathbb{C} \setminus \mathbb{R}$ racines de (1). $E = \{(u_n)\_n \in \mathbb{C}^{\mathbb{N}} \mid u\_{n+2} = a u\_{n+1} + b u_n\} = \{(\lambda x_1^n + \mu \overline{x_1}^n)\_n \mid \lambda, \mu \in \mathbb{C}\}$. Posons $u_n = \dfrac{x_1^n + \overline{x_1}^n}{2}$ et $v_n = \dfrac{x_1^n - \overline{x_1}^n}{2i}$ : $x_1^n = u_n + i v_n$, $\overline{x_1}^n = u_n - i v_n$. Tout élément de $E$ est combinaison linéaire de $(x_1^n)\_n$ et $(\overline{x_1}^n)\_n$, donc de $(u_n)$ et $(v_n)$ : $E \subset \operatorname{Vect}((u_n), (v_n))$ et réciproquement $\operatorname{Vect}((u_n), (v_n)) \subset \operatorname{Vect}((x_1^n), (\overline{x_1}^n)) = E$. $((u_n), (v_n))$ est une base. $u_n = \mathrm{Re}(x_1^n)$ et $v_n = \mathrm{Im}(x_1^n)$ ; $(u_n)$ et $(v_n)$ sont des suites réelles. $\lambda (u_n)\_n + \mu (v_n)\_n \in \mathbb{R}^{\mathbb{N}} \iff \forall n,\ \overline{\lambda} u_n + \overline{\mu} v_n = \lambda u_n + \mu v_n \iff \overline{\lambda} = \lambda$ et $\overline{\mu} = \mu$ car $((u_n), (v_n))$ est libre. Donc
 
 $$F = \{\lambda (u_n)_n + \mu (v_n)_n \mid \lambda, \mu \in \mathbb{R}\}$$
 
@@ -1808,11 +1808,11 @@ $$F = \{\lambda (u_n)_n + \mu (v_n)_n \mid \lambda, \mu \in \mathbb{R}\}$$
 
 <span class="bloc-titre">À retenir</span>
 
-Pour $F = \{(u_n)_n \in \mathbb{R}^{\mathbb{N}} \mid u_{n+2} = a u_{n+1} + b u_n\}$ ($b \neq 0$), avec $x^2 - ax - b = 0$ de discriminant $\Delta$ :
+Pour $F = \{(u_n)\_n \in \mathbb{R}^{\mathbb{N}} \mid u\_{n+2} = a u\_{n+1} + b u_n\}$ ($b \neq 0$), avec $x^2 - ax - b = 0$ de discriminant $\Delta$ :
 
 - si $\Delta > 0$ : $F = \{\lambda x_1^n + \mu x_2^n \mid \lambda, \mu \in \mathbb{R}\}$ ;
 - si $\Delta = 0$ : $F = \{(\lambda + n\mu) x_1^n \mid \lambda, \mu \in \mathbb{R}\}$ ;
-- si $\Delta < 0$ et $x_1 = \rho e^{i\theta}$ solution de $x^2 - ax - b = 0$ : $F = \{(( \lambda \cos n\theta + \mu \sin n\theta) \rho^n)_n \mid \lambda, \mu \in \mathbb{R}\}$.
+- si $\Delta < 0$ et $x_1 = \rho e^{i\theta}$ solution de $x^2 - ax - b = 0$ : $F = \{(( \lambda \cos n\theta + \mu \sin n\theta) \rho^n)\_n \mid \lambda, \mu \in \mathbb{R}\}$.
 
 </div>
 
@@ -1894,7 +1894,7 @@ $p(x) = 0 \iff x = x_2 \iff x \in E_2$. Soit $y = p(x) \in E_1$ ; l'écriture $y
 
 <span class="bloc-titre">Remarque</span>
 
-Si $q$ est le projecteur sur $E_2$ parallèlement à $E_1$, alors $p + q = \operatorname{Id}_E$.
+Si $q$ est le projecteur sur $E_2$ parallèlement à $E_1$, alors $p + q = \operatorname{Id}\_E$.
 
 </div>
 
@@ -1990,7 +1990,7 @@ Soit $\tilde{s}$ la symétrie par rapport à $E_1 = \operatorname{Ker}(s - \oper
 
 <span class="bloc-titre">Définition</span>
 
-Une **homothétie** est une application de $E \to E$ de la forme $\lambda \operatorname{Id}$, avec $\lambda \in \mathbb{K}^*$.
+Une **homothétie** est une application de $E \to E$ de la forme $\lambda \operatorname{Id}$, avec $\lambda \in \mathbb{K}^\*$.
 
 </div>
 
@@ -2008,7 +2008,7 @@ Les homothéties forment un sous-groupe de $\operatorname{GL}(E)$.
 
 <span class="bloc-titre">Définition</span>
 
-Une **forme linéaire** est un élément de $\mathcal{L}_{\mathbb{K}}(E, \mathbb{K})$.
+Une **forme linéaire** est un élément de $\mathcal{L}\_{\mathbb{K}}(E, \mathbb{K})$.
 
 </div>
 
@@ -2016,7 +2016,7 @@ Une **forme linéaire** est un élément de $\mathcal{L}_{\mathbb{K}}(E, \mathbb
 
 <span class="bloc-titre">Exemple</span>
 
-Pour $a = (a_1, \dots, a_n) \in \mathbb{K}^n$, l'application $a^* : \mathbb{K}^n \to \mathbb{K}$, $x \mapsto \sum_{i=1}^{n} a_i x_i$, est une forme linéaire.
+Pour $a = (a_1, \dots, a_n) \in \mathbb{K}^n$, l'application $a^\* : \mathbb{K}^n \to \mathbb{K}$, $x \mapsto \sum\_{i=1}^{n} a_i x_i$, est une forme linéaire.
 
 </div>
 
@@ -2024,7 +2024,7 @@ Pour $a = (a_1, \dots, a_n) \in \mathbb{K}^n$, l'application $a^* : \mathbb{K}^n
 
 <span class="bloc-titre">Définition</span>
 
-On note $E^* = \mathcal{L}_{\mathbb{K}}(E, \mathbb{K})$ et on l'appelle **dual** de $E$.
+On note $E^\* = \mathcal{L}\_{\mathbb{K}}(E, \mathbb{K})$ et on l'appelle **dual** de $E$.
 
 </div>
 
@@ -2034,7 +2034,7 @@ On note $E^* = \mathcal{L}_{\mathbb{K}}(E, \mathbb{K})$ et on l'appelle **dual**
 
 <span class="bloc-titre">Exemple</span>
 
-$u^* : \mathbb{R}^3 \to \mathbb{R}$, $(x, y, z) \mapsto 2x + y + z$ est une forme linéaire, et
+$u^\* : \mathbb{R}^3 \to \mathbb{R}$, $(x, y, z) \mapsto 2x + y + z$ est une forme linéaire, et
 
 $$\operatorname{Ker} u^* = \{(x, y, z) \mid 2x + y + z = 0\}$$
 
@@ -2046,7 +2046,7 @@ est un hyperplan vectoriel de base $\big((1, 0, -2), (0, 1, -1)\big)$.
 
 <span class="bloc-titre">Propriété</span>
 
-$H$ sous-espace vectoriel de $E$ : $H$ est un hyperplan de $E$ si et seulement si $\exists u^* \in E^*$ non nulle telle que $H = \operatorname{Ker} u^*$, $u^* \neq 0$.
+$H$ sous-espace vectoriel de $E$ : $H$ est un hyperplan de $E$ si et seulement si $\exists u^\* \in E^\*$ non nulle telle que $H = \operatorname{Ker} u^\*$, $u^\* \neq 0$.
 
 </div>
 
@@ -2054,13 +2054,13 @@ $H$ sous-espace vectoriel de $E$ : $H$ est un hyperplan de $E$ si et seulement s
 
 <span class="bloc-titre">Démonstration</span>
 
-$\Rightarrow$ Si $H = \operatorname{Ker} u^*$ avec $u^* \neq 0$ : $\dim H = \dim \operatorname{Ker} u^* = n - \operatorname{rg} u^*$. Or $\operatorname{Im} u^* \subset \mathbb{K}$, donc $\operatorname{rg} u^* \leq 1$ ; si $\operatorname{rg} u^* = 0$, $\operatorname{Im} u^* = \{0\}$ et $u^* = 0$, impossible. Donc $\operatorname{rg} u^* = 1$ et $\dim H = n - 1$ : $H$ est un hyperplan.
+$\Rightarrow$ Si $H = \operatorname{Ker} u^\*$ avec $u^\* \neq 0$ : $\dim H = \dim \operatorname{Ker} u^\* = n - \operatorname{rg} u^\*$. Or $\operatorname{Im} u^\* \subset \mathbb{K}$, donc $\operatorname{rg} u^\* \leq 1$ ; si $\operatorname{rg} u^\* = 0$, $\operatorname{Im} u^\* = \{0\}$ et $u^\* = 0$, impossible. Donc $\operatorname{rg} u^\* = 1$ et $\dim H = n - 1$ : $H$ est un hyperplan.
 
-$\Leftarrow$ Soit $H$ un hyperplan : soit $\mathcal{B} = (e_1, \dots, e_{n-1})$ une base de $H$ ($\dim H = n - 1$). Complétons $\mathcal{B}$ en une base de $E$ : $(e_1, \dots, e_n)$. Définissons $u^*$ par $u^*(e_i) = 0$ pour $i = 1, \dots, n-1$ et $u^*(e_n) = 1$. J'ai déterminé l'image d'une base, donc une forme linéaire $u^*$. Alors
+$\Leftarrow$ Soit $H$ un hyperplan : soit $\mathcal{B} = (e_1, \dots, e\_{n-1})$ une base de $H$ ($\dim H = n - 1$). Complétons $\mathcal{B}$ en une base de $E$ : $(e_1, \dots, e_n)$. Définissons $u^\*$ par $u^\*(e_i) = 0$ pour $i = 1, \dots, n-1$ et $u^\*(e_n) = 1$. J'ai déterminé l'image d'une base, donc une forme linéaire $u^\*$. Alors
 
 $$\operatorname{Ker} u^* = \Big\{x = \sum_{i=1}^{n} \lambda_i e_i \mid u^*(x) = 0\Big\} = \Big\{\sum_{i=1}^{n-1} \lambda_i e_i \mid \lambda_n = 0\Big\} = \operatorname{Vect}(e_1, \dots, e_{n-1}) = H$$
 
-et $u^*(e_n) = 1$, donc $u^* \neq 0$.
+et $u^\*(e_n) = 1$, donc $u^\* \neq 0$.
 
 </div>
 
@@ -2068,7 +2068,7 @@ et $u^*(e_n) = 1$, donc $u^* \neq 0$.
 
 <span class="bloc-titre">Propriété</span>
 
-Si $H$ est un hyperplan, $\operatorname{Ker} u^* = \operatorname{Ker} v^* = H$, alors $u^* = \lambda v^*$ avec $\lambda \in \mathbb{K}^*$ ($u^*$ et $v^*$ forment une droite non nulle).
+Si $H$ est un hyperplan, $\operatorname{Ker} u^\* = \operatorname{Ker} v^\* = H$, alors $u^\* = \lambda v^\*$ avec $\lambda \in \mathbb{K}^\*$ ($u^\*$ et $v^\*$ forment une droite non nulle).
 
 </div>
 
@@ -2076,7 +2076,7 @@ Si $H$ est un hyperplan, $\operatorname{Ker} u^* = \operatorname{Ker} v^* = H$, 
 
 <span class="bloc-titre">Démonstration</span>
 
-Soit $e_n \in E \setminus H$ ; soit $e_n^*$ la forme linéaire définie en posant $e_n^*(e_i) = 0$ pour $i = 1, \dots, n-1$ et $e_n^*(e_n) = 1$ : $x = \sum x_i e_i \mapsto x_n$. Soit $u^* \in E^*$, $u^* \neq 0$, avec $\operatorname{Ker} u^* = H$. Alors $u^*(e_i) = \lambda e_n^*(e_i) = 0$ pour $i = 1, \dots, n-1$ ($(e_1, \dots, e_{n-1})$ est une base de $H$, donc $u^*$ nulle sur $H$) ; et $u^*(e_n) = \lambda e_n^*(e_n)$ avec $\lambda \in \mathbb{K}$. Si $\lambda = 0$, alors $\forall i,\ u^*(e_i) = 0$ et $u^* = 0$, impossible. Donc $\lambda \neq 0$, et $u^*$ et $\lambda e_n^*$ coïncident sur $e_1, \dots, e_n$, donc sur $E$ (par linéarité) : $u^* = \lambda e_n^*$. Ainsi toute forme linéaire non nulle de noyau $H$ est de la forme $\lambda e_n^*$, $\lambda \in \mathbb{K}^*$.
+Soit $e_n \in E \setminus H$ ; soit $e_n^\*$ la forme linéaire définie en posant $e_n^\*(e_i) = 0$ pour $i = 1, \dots, n-1$ et $e_n^\*(e_n) = 1$ : $x = \sum x_i e_i \mapsto x_n$. Soit $u^\* \in E^\*$, $u^\* \neq 0$, avec $\operatorname{Ker} u^\* = H$. Alors $u^\*(e_i) = \lambda e_n^\*(e_i) = 0$ pour $i = 1, \dots, n-1$ ($(e_1, \dots, e\_{n-1})$ est une base de $H$, donc $u^\*$ nulle sur $H$) ; et $u^\*(e_n) = \lambda e_n^\*(e_n)$ avec $\lambda \in \mathbb{K}$. Si $\lambda = 0$, alors $\forall i,\ u^\*(e_i) = 0$ et $u^\* = 0$, impossible. Donc $\lambda \neq 0$, et $u^\*$ et $\lambda e_n^\*$ coïncident sur $e_1, \dots, e_n$, donc sur $E$ (par linéarité) : $u^\* = \lambda e_n^\*$. Ainsi toute forme linéaire non nulle de noyau $H$ est de la forme $\lambda e_n^\*$, $\lambda \in \mathbb{K}^\*$.
 
 </div>
 
@@ -2084,7 +2084,7 @@ Soit $e_n \in E \setminus H$ ; soit $e_n^*$ la forme linéaire définie en posan
 
 <span class="bloc-titre">Remarque (équations d'hyperplan)</span>
 
-On appelle **équation d'un hyperplan** une équation du type $u^*(x) = 0$ avec $H = \operatorname{Ker} u^*$ ; une telle équation est définie à une constante multiplicative non nulle près.
+On appelle **équation d'un hyperplan** une équation du type $u^\*(x) = 0$ avec $H = \operatorname{Ker} u^\*$ ; une telle équation est définie à une constante multiplicative non nulle près.
 
 </div>
 
@@ -2113,7 +2113,7 @@ $$\forall (x_i)_{i \in I} \in A^I,\ \forall (\lambda_i)_{i \in I} \in \mathbb{K}
 
 $$\lambda(x_0 + k x_1) + \mu(x_0 + k' x_1) = (\lambda + \mu) x_0 + (\lambda k + \mu k') x_1 = x_0 + k'' x_1 \in A$$
 
-- $A = \{(u_n)_n \in \mathbb{R}^{\mathbb{N}} \mid u_{n+1} = 2u_n + a\}$, $a \in \mathbb{R}$.
+- $A = \{(u_n)\_n \in \mathbb{R}^{\mathbb{N}} \mid u\_{n+1} = 2u_n + a\}$, $a \in \mathbb{R}$.
 
 </div>
 
@@ -2163,7 +2163,7 @@ Soit $V$ un sous-espace vectoriel de $E$ et $x_0 \in E$ : il existe un unique so
 
 <span class="bloc-titre">Démonstration</span>
 
-Si $A$ existe, d'après ce qui précède $V = \{x - x_0 \mid x \in A\}$, donc $A = \{x_0 + y \mid y \in V\}$ : unicité. Réciproquement, posons $A = x_0 + V$. $x_0 \in A$ (car $0 \in V$). Soit $(x_i)_{i \in I}$ une famille de vecteurs de $A$ et $(\lambda_i)_{i \in I}$ une famille de scalaires telle que $\sum \lambda_i = 1$. $x_i \in A$, donc $x_i = x_0 + y_i$ avec $y_i \in V$. Alors
+Si $A$ existe, d'après ce qui précède $V = \{x - x_0 \mid x \in A\}$, donc $A = \{x_0 + y \mid y \in V\}$ : unicité. Réciproquement, posons $A = x_0 + V$. $x_0 \in A$ (car $0 \in V$). Soit $(x_i)\_{i \in I}$ une famille de vecteurs de $A$ et $(\lambda_i)\_{i \in I}$ une famille de scalaires telle que $\sum \lambda_i = 1$. $x_i \in A$, donc $x_i = x_0 + y_i$ avec $y_i \in V$. Alors
 
 $$\sum_{i \in I} \lambda_i x_i = x_0 + \sum_{i \in I} \lambda_i y_i \in A$$
 
@@ -2175,7 +2175,7 @@ car $\sum \lambda_i y_i \in V$ ($V$ est un sous-espace vectoriel). Donc $A$ est 
 
 <span class="bloc-titre">Exemple</span>
 
-$V = \{(u_n)_n \in \mathbb{R}^{\mathbb{N}} \mid u_{n+1} = u_n + u_{n-1},\ n \geq 1\}$ est un sous-espace vectoriel de $\mathbb{R}^{\mathbb{N}}$ ; pour $x_0 = (1/n)_n$, $A = x_0 + V$ est l'unique sous-espace affine contenant $x_0$ de direction $V$.
+$V = \{(u_n)\_n \in \mathbb{R}^{\mathbb{N}} \mid u\_{n+1} = u_n + u\_{n-1},\ n \geq 1\}$ est un sous-espace vectoriel de $\mathbb{R}^{\mathbb{N}}$ ; pour $x_0 = (1/n)\_n$, $A = x_0 + V$ est l'unique sous-espace affine contenant $x_0$ de direction $V$.
 
 </div>
 
@@ -2191,7 +2191,7 @@ Soient $A_1$ et $A_2$ deux sous-espaces affines, $A_1 \cap A_2 \neq \varnothing$
 
 <span class="bloc-titre">Démonstration</span>
 
-Soit $(x_i)_{i \in I} \in (A_1 \cap A_2)^I$ et $(\lambda_i)_{i \in I} \in \mathbb{K}^I$ avec $\sum \lambda_i = 1$. $x = \sum \lambda_i x_i$ : comme $(x_i) \in A_1^I$ et $\sum \lambda_i = 1$ et $A_1$ est un sous-espace affine, $x \in A_1$ ; de même $x \in A_2$. Donc $x \in A_1 \cap A_2$.
+Soit $(x_i)\_{i \in I} \in (A_1 \cap A_2)^I$ et $(\lambda_i)\_{i \in I} \in \mathbb{K}^I$ avec $\sum \lambda_i = 1$. $x = \sum \lambda_i x_i$ : comme $(x_i) \in A_1^I$ et $\sum \lambda_i = 1$ et $A_1$ est un sous-espace affine, $x \in A_1$ ; de même $x \in A_2$. Donc $x \in A_1 \cap A_2$.
 
 Supposons $A_1 \cap A_2 \neq \varnothing$ ; soient $V_1$, $V_2$ les espaces directeurs de $A_1$, $A_2$. Soit $x_0 \in A_1 \cap A_2$ : $A_1 = x_0 + V_1$, $A_2 = x_0 + V_2$. Soit $V$ l'espace directeur de $A_1 \cap A_2$ :
 
@@ -2241,7 +2241,7 @@ Dans $\mathbb{R}^3$, $H = \{(x, y, z) \mid x + y + z = a\}$ est un hyperplan aff
 
 <span class="bloc-titre">Propriété</span>
 
-L'équation d'un hyperplan affine est $u^*(x) = a$ avec $a \in \mathbb{K}$, et cette équation est unique à une constante multiplicative près.
+L'équation d'un hyperplan affine est $u^\*(x) = a$ avec $a \in \mathbb{K}$, et cette équation est unique à une constante multiplicative près.
 
 </div>
 
@@ -2249,13 +2249,13 @@ L'équation d'un hyperplan affine est $u^*(x) = a$ avec $a \in \mathbb{K}$, et c
 
 <span class="bloc-titre">Démonstration</span>
 
-**Lemme.** Si $u^*$ est une forme linéaire et $a \in \mathbb{K}$, soit $A = \{x \in E \mid u^*(x) = a\}$. Si $u^* = 0$ : si $a = 0$, $A = E$ ; si $a \neq 0$, $A = \varnothing$. Si $u^* \neq 0$ : d'abord $A \neq \varnothing$ car $\operatorname{rg} u^* = 1$, $\operatorname{Im} u^* = \mathbb{K}$, donc $\exists b \in E$ tel que $u^*(b) = a$ ; alors
+**Lemme.** Si $u^\*$ est une forme linéaire et $a \in \mathbb{K}$, soit $A = \{x \in E \mid u^\*(x) = a\}$. Si $u^\* = 0$ : si $a = 0$, $A = E$ ; si $a \neq 0$, $A = \varnothing$. Si $u^\* \neq 0$ : d'abord $A \neq \varnothing$ car $\operatorname{rg} u^\* = 1$, $\operatorname{Im} u^\* = \mathbb{K}$, donc $\exists b \in E$ tel que $u^\*(b) = a$ ; alors
 
 $$A = \{x \in E \mid u^*(x) = u^*(b)\} = \{x \in E \mid x - b \in \operatorname{Ker} u^*\} = b + \operatorname{Ker} u^*$$
 
-sea affine de direction $\operatorname{Ker} u^*$. Si $\dim E = n$ et $u^* \neq 0$ : $A = \{x \in E \mid u^*(x) = a\}$ est un sous-espace affine de direction l'hyperplan vectoriel $\operatorname{Ker} u^*$, d'équation $u^*(x) = 0$. Donc $A$ est un hyperplan affine.
+sea affine de direction $\operatorname{Ker} u^\*$. Si $\dim E = n$ et $u^\* \neq 0$ : $A = \{x \in E \mid u^\*(x) = a\}$ est un sous-espace affine de direction l'hyperplan vectoriel $\operatorname{Ker} u^\*$, d'équation $u^\*(x) = 0$. Donc $A$ est un hyperplan affine.
 
-Réciproque : si $A$ est un hyperplan affine, $A = b + H$ avec $H$ hyperplan vectoriel. $H$ admet une équation $u^*(x) = 0$, $u^* \in E^*$, $u^* \neq 0$. Alors $x \in A \iff x - b \in H \iff u^*(x - b) = 0 \iff u^*(x) = u^*(b)$. Donc $A$ admet une équation $u^*(x) = a$ avec $a = u^*(b)$.
+Réciproque : si $A$ est un hyperplan affine, $A = b + H$ avec $H$ hyperplan vectoriel. $H$ admet une équation $u^\*(x) = 0$, $u^\* \in E^\*$, $u^\* \neq 0$. Alors $x \in A \iff x - b \in H \iff u^\*(x - b) = 0 \iff u^\*(x) = u^\*(b)$. Donc $A$ admet une équation $u^\*(x) = a$ avec $a = u^\*(b)$.
 
 </div>
 
@@ -2275,11 +2275,11 @@ Soit $u \in \mathcal{L}(E, F)$, $y \in F$, $A_y = \{x \in E \mid u(x) = y\}$. Si
 
 <span class="bloc-titre">Exemple 2</span>
 
-$A = \{(u_n)_n \in \mathbb{C}^{\mathbb{N}} \mid u_{n+2} = a u_{n+1} + b u_n + c\}$. Soient $u^0, u^1, \dots, u^k \in A$ et $\lambda_0, \dots, \lambda_k \in \mathbb{K}$ tels que $\sum_{i=0}^{k} \lambda_i = 1$. Alors
+$A = \{(u_n)\_n \in \mathbb{C}^{\mathbb{N}} \mid u\_{n+2} = a u\_{n+1} + b u_n + c\}$. Soient $u^0, u^1, \dots, u^k \in A$ et $\lambda_0, \dots, \lambda_k \in \mathbb{K}$ tels que $\sum\_{i=0}^{k} \lambda_i = 1$. Alors
 
 $$\Big(\sum_{i=0}^{k} \lambda_i u^i\Big)_{n+2} = \sum_{i=0}^{k} \lambda_i u^i_{n+2} = \sum_{i=0}^{k} \lambda_i \big(a u^i_{n+1} + b u^i_n + c\big) = a\Big(\sum_{i=0}^{k} \lambda_i u^i\Big)_{n+1} + b\Big(\sum_{i=0}^{k} \lambda_i u^i\Big)_n + c$$
 
-donc $\big(\sum_{i=0}^{k} \lambda_i u^i\big) \in A$ : $A$ est un sous-espace affine.
+donc $\big(\sum\_{i=0}^{k} \lambda_i u^i\big) \in A$ : $A$ est un sous-espace affine.
 
 </div>
 
@@ -2287,15 +2287,15 @@ donc $\big(\sum_{i=0}^{k} \lambda_i u^i\big) \in A$ : $A$ est un sous-espace aff
 
 <span class="bloc-titre">Exemple 2 (suite) — espace directeur et direction</span>
 
-$V = \{(u_n - u^0_n)_n \mid (u_n), (u^0_n) \in A\} = \{(v_n)_n \mid v_{n+2} = a v_{n+1} + b v_n\}$ : c'est un sous-espace vectoriel de dimension $2$ ($b \neq 0$), c'est l'espace directeur de $A$.
+$V = \{(u_n - u^0_n)\_n \mid (u_n), (u^0_n) \in A\} = \{(v_n)\_n \mid v\_{n+2} = a v\_{n+1} + b v_n\}$ : c'est un sous-espace vectoriel de dimension $2$ ($b \neq 0$), c'est l'espace directeur de $A$.
 
-Cherchons un élément de $A$, suite constante : $(u_n) = (u)_n \in A$ ssi $u = au + bu + c$, c'est-à-dire $u(1 - a - b) = c$.
+Cherchons un élément de $A$, suite constante : $(u_n) = (u)\_n \in A$ ssi $u = au + bu + c$, c'est-à-dire $u(1 - a - b) = c$.
 
 - **1er cas** : $c = 0$, la suite nulle est dans $A$ ; $A = V$.
-- **2ème cas** : $c \neq 0$ et $a + b \neq 1$ : la suite constante $\big(\frac{c}{1-a-b}\big)_n \in A$ ; $A = \big(\frac{c}{1-a-b}\big)_n + V$.
-- **3ème cas** : $a + b = 1$, $c \neq 0$. Cherchons une solution de la forme $(xn)_n$ : $(n+2)x = a(n+1)x + bnx + c \iff x\big(n + 2 - a(n+1) - bn\big) = c \iff x(2 - a) = c$ (car $a + b = 1$).
-  - si $2 \neq a$ : $x = \frac{c}{2-a}$, $(nx)_n \in A$ ; $A = \big(\frac{c}{2-a} n\big)_n + V$ ;
-  - si $2 = a$, $b = -1$ : cherchons $x$ tel que $(xn^2)_n \in A$ : $(n+2)^2 x = a(n+1)^2 x - n^2 x + c \iff 2nx = c \iff x = \frac{c}{2}$. Alors $A = \big(\frac{c}{2} n^2\big)_n + V$ ($a = 2$, $b = -1$, $c \neq 0$).
+- **2ème cas** : $c \neq 0$ et $a + b \neq 1$ : la suite constante $\big(\frac{c}{1-a-b}\big)\_n \in A$ ; $A = \big(\frac{c}{1-a-b}\big)\_n + V$.
+- **3ème cas** : $a + b = 1$, $c \neq 0$. Cherchons une solution de la forme $(xn)\_n$ : $(n+2)x = a(n+1)x + bnx + c \iff x\big(n + 2 - a(n+1) - bn\big) = c \iff x(2 - a) = c$ (car $a + b = 1$).
+  - si $2 \neq a$ : $x = \frac{c}{2-a}$, $(nx)\_n \in A$ ; $A = \big(\frac{c}{2-a} n\big)\_n + V$ ;
+  - si $2 = a$, $b = -1$ : cherchons $x$ tel que $(xn^2)\_n \in A$ : $(n+2)^2 x = a(n+1)^2 x - n^2 x + c \iff 2nx = c \iff x = \frac{c}{2}$. Alors $A = \big(\frac{c}{2} n^2\big)\_n + V$ ($a = 2$, $b = -1$, $c \neq 0$).
 
 </div>
 
@@ -2334,7 +2334,7 @@ Tout plan qui contient $D$ a une équation de la forme $\alpha(x + y + z) + \bet
 **Structure d'espace vectoriel, sous-espaces.**
 
 <ol class="enonces">
-<li>Soit $E = \mathbb{R}_+^* \times \mathbb{R}$ muni des lois $+$ et $\cdot$ définies ci-dessous. Montrer que $(E, +, \cdot)$ est un $\mathbb{R}$-espace vectoriel.
+<li>Soit $E = \mathbb{R}\_+^\* \times \mathbb{R}$ muni des lois $+$ et $\cdot$ définies ci-dessous. Montrer que $(E, +, \cdot)$ est un $\mathbb{R}$-espace vectoriel.
 $$(a, b) + (c, d) = (ac, b + d) \qquad \lambda(a, b) = (a^\lambda, \lambda b)$$</li>
 <li>Dans $\mathbb{R}^3$ muni des lois usuelles, les ensembles suivants sont-ils des sous-espaces vectoriels ?
 $A = \{x + 2y + 3z \mid (x, y, z) \in \mathbb{R}^3\}$, $B = \{(x, y, z) \mid x^2 + y^2 + z^2 = 1\}$, $C = \{(x, y, z) \mid x \geq 0\}$.</li>
@@ -2365,16 +2365,16 @@ $a = (1, 1, 1, 1)$, $b = (0, 1, 2, -1)$, $c = (1, 0, 1, -2)$, $d = (2, 1, 0, -1)
 </ol>
 </li>
 <li value="12">Montrer que dans $\mathbb{R}^{\mathbb{R}}$, les trois fonctions suivantes forment une famille libre : $f(x) = e^x$, $g(x) = x$, $h(x) = \sin(x)$.</li>
-<li value="13">Montrer que dans $\mathbb{R}^{\mathbb{R}}$, la famille suivante de fonctions est libre : $F = (f_a)_{a \in \mathbb{R}}$ avec $f_a(x) = e^{ax}$.</li>
+<li value="13">Montrer que dans $\mathbb{R}^{\mathbb{R}}$, la famille suivante de fonctions est libre : $F = (f_a)\_{a \in \mathbb{R}}$ avec $f_a(x) = e^{ax}$.</li>
 <li value="14">Montrer que dans $E = \mathbb{R}^{\mathbb{R}}$, pour tout $(p, q) \in \mathbb{R}^2$, la famille $(f, g, h)$ avec $f(x) = \sin(x)$, $g(x) = \cos(p + x)$ et $h(x) = \sin(x + q)$ est liée.</li>
-<li value="15">Soit $E = \mathbb{R}^{\mathbb{N}}$ l'ensemble des suites réelles. Soit $S_x = (x^n)_{n \in \mathbb{N}}$ pour $x$ réel. Montrer que $(S_x)_{x > 0}$ est une famille libre de $E$.</li>
+<li value="15">Soit $E = \mathbb{R}^{\mathbb{N}}$ l'ensemble des suites réelles. Soit $S_x = (x^n)\_{n \in \mathbb{N}}$ pour $x$ réel. Montrer que $(S_x)\_{x > 0}$ est une famille libre de $E$.</li>
 <li value="16">Soit $V$ la partie de $\mathbb{R}^4$ définie par $V = \{(x_1, x_2, x_3, x_4) \in \mathbb{R}^4 \mid x_1 = x_2 - 2x_3 \text{ et } x_3 = 2x_4\}$. Montrer que $V$ est un sous-espace vectoriel de $E$ et trouver une base de $V$.</li>
 </ol>
 
 **Applications linéaires.**
 
 <ol class="enonces">
-<li value="17">Soit $E = \mathcal{C}^\infty(\mathbb{R}^*)$, l'ensemble des fonctions $\mathcal{C}^\infty$ sur $\mathbb{R}^*$. Montrer que $T : f \mapsto f''$ est un endomorphisme de $E$ et déterminer son noyau.</li>
+<li value="17">Soit $E = \mathcal{C}^\infty(\mathbb{R}^\*)$, l'ensemble des fonctions $\mathcal{C}^\infty$ sur $\mathbb{R}^\*$. Montrer que $T : f \mapsto f''$ est un endomorphisme de $E$ et déterminer son noyau.</li>
 <li value="18">Dire si les applications suivantes sont linéaires et si oui déterminer leur noyau et leur image.
 <ol>
 <li>$f : \mathbb{R}[X] \to \mathbb{R}$, $P \mapsto P(0)$ ;</li>

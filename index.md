@@ -58,13 +58,13 @@ Cours de **Math Sup** et **Math Spé** (1993–1995) en **mathématiques**, **ph
   projecteurs/symétries/homothéties/formes linéaires, sous-espaces affines,
   feuilles d'exercices (énoncés).
 - **Math Sup · Algèbre — [Chapitre 9 : Matrices]({{ site.baseurl }}/cours/math/math-sup/algebre/09-matrices/)**
-  définitions, structure de $\mathcal{M}_{n,p}(\mathbb{K})$, produit de matrices,
-  $\mathcal{M}_n(\mathbb{K})$ (inversibles, trace), changement de base, opérations
+  définitions, structure de $\mathcal{M}\_{n,p}(\mathbb{K})$, produit de matrices,
+  $\mathcal{M}\_n(\mathbb{K})$ (inversibles, trace), changement de base, opérations
   sur lignes/colonnes et pivot de Gauss, matrices équivalentes et semblables,
   diagonalisation, feuille d'exercices (énoncés).
 - **Math Sup · Algèbre — [Chapitre 10 : Groupes symétriques]({{ site.baseurl }}/cours/math/math-sup/algebre/10-groupes-symetriques/)**
   orbites d'une permutation (cycles, transpositions), signature ($\varepsilon$
-  morphisme, $\mathfrak{A}_n$), déterminants (formes multilinéaires alternées,
+  morphisme, $\mathfrak{A}\_n$), déterminants (formes multilinéaires alternées,
   calculs, comatrice, Vandermonde, matrices par blocs, polynôme
   caractéristique), orientation, systèmes linéaires (Cramer, Gauss), feuille
   d'exercices (énoncés).

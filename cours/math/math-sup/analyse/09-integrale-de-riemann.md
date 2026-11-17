@@ -27,7 +27,7 @@ croissante
 $$\sigma = (x_0, x_1, \dots, x_n), \qquad a = x_0 < x_1 < \dots < x_n = b$$
 
 Les $x_i$ sont les **points** de la subdivision, les segments
-$[x_{i-1}, x_i]$ (pour $1 \leq i \leq n$) ses **intervalles**.
+$[x\_{i-1}, x_i]$ (pour $1 \leq i \leq n$) ses **intervalles**.
 
 </div>
 
@@ -79,9 +79,9 @@ $$s(\sigma, f) \leq s(\sigma', f) \leq S(\sigma', f) \leq S(\sigma, f)$$
 <span class="bloc-titre">Démonstration</span>
 
 $s(\sigma, f) \leq S(\sigma, f)$ car $m_i \leq M_i$. Si $\sigma'$ est plus fine que
-$\sigma$, chaque intervalle $[x_{i-1}, x_i]$ de $\sigma$ est découpé par $\sigma'$
-en sous-intervalles $[y_{j-1}, y_j]$ ; sur chacun, $\inf_{[y_{j-1},y_j]} f \geq m_i$
-et $\sup_{[y_{j-1},y_j]} f \leq M_i$, d'où en sommant
+$\sigma$, chaque intervalle $[x\_{i-1}, x_i]$ de $\sigma$ est découpé par $\sigma'$
+en sous-intervalles $[y\_{j-1}, y_j]$ ; sur chacun, $\inf\_{[y\_{j-1},y_j]} f \geq m_i$
+et $\sup\_{[y\_{j-1},y_j]} f \leq M_i$, d'où en sommant
 $s(\sigma, f) \leq s(\sigma', f)$ et $S(\sigma', f) \leq S(\sigma, f)$.
 
 </div>
@@ -130,7 +130,7 @@ S(\sigma, f) - s(\sigma, f) \leq \varepsilon$$
 
 <span class="bloc-titre">Démonstration</span>
 
-Notons $I' = \sup_\sigma s(\sigma, f)$ et $I'' = \inf_\sigma S(\sigma, f)$ ; on a
+Notons $I' = \sup\_\sigma s(\sigma, f)$ et $I'' = \inf\_\sigma S(\sigma, f)$ ; on a
 toujours $I' \leq I''$.
 
 **Sens direct.** Si $f$ est intégrable, $I' = I'' = I$. Soit $\varepsilon > 0$ :
@@ -151,14 +151,14 @@ $I' = I''$ : $f$ est intégrable.
 
 <span class="bloc-titre">Propriété (structure d'espace vectoriel, linéarité)</span>
 
-L'ensemble $\mathcal{I}_{[a,b]}$ des fonctions intégrables sur $[a, b]$ est un
+L'ensemble $\mathcal{I}\_{[a,b]}$ des fonctions intégrables sur $[a, b]$ est un
 sous-espace vectoriel de l'espace des fonctions bornées sur $[a, b]$, et
 l'application
 
 $$f \longmapsto \int_a^b f$$
 
-est une **forme linéaire** : si $f, g \in \mathcal{I}_{[a,b]}$ et
-$\lambda \in \mathbb{R}$, alors $f + \lambda g \in \mathcal{I}_{[a,b]}$ et
+est une **forme linéaire** : si $f, g \in \mathcal{I}\_{[a,b]}$ et
+$\lambda \in \mathbb{R}$, alors $f + \lambda g \in \mathcal{I}\_{[a,b]}$ et
 
 $$\int_a^b (f + \lambda g) = \int_a^b f + \lambda \int_a^b g$$
 
@@ -184,7 +184,7 @@ $$\int_a^c f = \int_a^b f + \int_b^c f$$
 
 Toute fonction **en escalier** sur $[a, b]$ est intégrable. Plus précisément, si
 $f$ est constante égale à $\lambda_i$ sur chaque intervalle ouvert
-$\,]x_{i-1}, x_i[$ d'une subdivision $\sigma = (x_0, \dots, x_n)$ de $[a, b]$,
+$\,]x\_{i-1}, x_i[$ d'une subdivision $\sigma = (x_0, \dots, x_n)$ de $[a, b]$,
 alors
 
 $$\int_a^b f = \sum_{i=1}^{n} \lambda_i\, (x_i - x_{i-1})$$
@@ -195,14 +195,14 @@ $$\int_a^b f = \sum_{i=1}^{n} \lambda_i\, (x_i - x_{i-1})$$
 
 <span class="bloc-titre">Démonstration (esquisse)</span>
 
-Sur chaque $[x_{i-1}, x_i]$, $f$ coïncide avec la constante $\lambda_i$ sauf
+Sur chaque $[x\_{i-1}, x_i]$, $f$ coïncide avec la constante $\lambda_i$ sauf
 éventuellement aux extrémités. En posant $h = f - g$ où $g$ vaut $\lambda_i$
-sur $[x_{i-1}, x_i]$, on a $h = 0$ sur $]x_{i-1}, x_i[$ et $h$ bornée
+sur $[x\_{i-1}, x_i]$, on a $h = 0$ sur $]x\_{i-1}, x_i[$ et $h$ bornée
 ($|h| \leq 2M$) : pour la subdivision $\sigma$, $S(\sigma, h) - s(\sigma, h)$
 est arbitrairement petit (les seuls intervalles où $h$ varie sont les
 voisinages des points $x_i$, de longueur totale contrôlée), donc $h$ est
 intégrable d'intégrale nulle. Par Chasles, $f$ est intégrable sur $[a, b]$ et
-$\int_a^b f = \sum \lambda_i (x_i - x_{i-1})$.
+$\int_a^b f = \sum \lambda_i (x_i - x\_{i-1})$.
 
 </div>
 
@@ -246,9 +246,9 @@ Toute fonction **continue par morceaux** sur $[a, b]$ est intégrable.
 
 Si $f$ est continue par morceaux, il existe une subdivision
 $\sigma = (x_0, \dots, x_n)$ telle que $f$ soit continue sur chaque
-$\,]x_{i-1}, x_i[$. En prolongeant $f$ par continuité aux points $x_i$, on
+$\,]x\_{i-1}, x_i[$. En prolongeant $f$ par continuité aux points $x_i$, on
 écrit $f = g + h$ où $g$ est continue sur $[a, b]$ et $h$ en escalier (nulle
-sur chaque $]x_{i-1}, x_i[$). Alors $g$ et $h$ sont intégrables, donc $f$ aussi.
+sur chaque $]x\_{i-1}, x_i[$). Alors $g$ et $h$ sont intégrables, donc $f$ aussi.
 
 </div>
 
@@ -317,7 +317,7 @@ $$\int_a^b f(x)\, g(x)\, \mathrm{d}x = f(c) \int_a^b g(x)\, \mathrm{d}x$$
 
 <span class="bloc-titre">Démonstration</span>
 
-Posons $m = \min_{[a,b]} f$ et $M = \max_{[a,b]} f$ (atteints car $f$ continue sur
+Posons $m = \min\_{[a,b]} f$ et $M = \max\_{[a,b]} f$ (atteints car $f$ continue sur
 le segment $[a, b]$). Si $g \geq 0$ : $m\, g \leq f g \leq M\, g$, donc par
 positivité
 
@@ -366,7 +366,7 @@ $$S(\sigma, \lambda, f) = \sum_{i=1}^{n} (x_i - x_{i-1})\, f(\lambda_i)$$
 
 La subdivision régulière à $n$ intervalles de $[a, b]$ est
 $\sigma_n = (x_0, \dots, x_n)$ avec $x_i = a + i\,\dfrac{b-a}{n}$. Pour une suite
-de points de taguage $\lambda_i^{(n)} \in [x_{i-1}, x_i]$, la somme de Riemann
+de points de taguage $\lambda_i^{(n)} \in [x\_{i-1}, x_i]$, la somme de Riemann
 vaut
 
 $$S_n = S(\sigma_n, \lambda^{(n)}, f)
@@ -379,7 +379,7 @@ $$S_n = S(\sigma_n, \lambda^{(n)}, f)
 <span class="bloc-titre">Théorème (convergence des sommes de Riemann)</span>
 
 Si $f$ est **continue** sur $[a, b]$, alors, pour tout choix de points de
-taguage $\lambda_i^{(n)} \in [x_{i-1}, x_i]$,
+taguage $\lambda_i^{(n)} \in [x\_{i-1}, x_i]$,
 
 $$S_n = \frac{b-a}{n} \sum_{i=1}^{n} f\big(\lambda_i^{(n)}\big)
 \xrightarrow[n \to +\infty]{} \int_a^b f$$
@@ -391,7 +391,7 @@ $$S_n = \frac{b-a}{n} \sum_{i=1}^{n} f\big(\lambda_i^{(n)}\big)
 <span class="bloc-titre">Démonstration</span>
 
 $f$ continue sur $[a, b]$ y est uniformément continue : soit $\varepsilon > 0$ ;
-il existe $N$ tel que, pour $n \geq N$, deux points de $[x_{i-1}, x_i]$ sont à
+il existe $N$ tel que, pour $n \geq N$, deux points de $[x\_{i-1}, x_i]$ sont à
 distance $\leq \dfrac{b-a}{n} \leq \dfrac{b-a}{N}$, donc
 $|f(x) - f(y)| \leq \dfrac{\varepsilon}{b-a}$. Alors $M_i^{(n)} - m_i^{(n)}
 \leq \dfrac{\varepsilon}{b-a}$ et
@@ -414,7 +414,7 @@ d'encadrement conclut que $S_n \to I$.
 $$\frac{1}{n} \sum_{i=1}^{n} f\!\left(a + i\,\frac{b-a}{n}\right)
 \xrightarrow[n\to+\infty]{} \frac{1}{b-a} \int_a^b f$$
 
-- points de taguage à gauche ($\lambda_i^{(n)} = x_{i-1}$) :
+- points de taguage à gauche ($\lambda_i^{(n)} = x\_{i-1}$) :
 
 $$\frac{1}{n} \sum_{i=0}^{n-1} f\!\left(a + i\,\frac{b-a}{n}\right)
 \xrightarrow[n\to+\infty]{} \frac{1}{b-a} \int_a^b f$$
@@ -632,9 +632,9 @@ $$\int_\alpha^\beta (f \circ \varphi)(t)\, \varphi'(t)\, \mathrm{d}t
 <span class="bloc-titre">Propriétés usuelles</span>
 
 - si $f$ est **paire** et intégrable sur $[-a, a]$ :
-  $\displaystyle\int_{-a}^{a} f = 2 \int_0^a f$ ;
+  $\displaystyle\int\_{-a}^{a} f = 2 \int_0^a f$ ;
 - si $f$ est **impaire** et intégrable sur $[-a, a]$ :
-  $\displaystyle\int_{-a}^{a} f = 0$ ;
+  $\displaystyle\int\_{-a}^{a} f = 0$ ;
 - si $f$ est **$T$-périodique** et intégrable sur une période :
   $\displaystyle\int_a^{a+T} f(t)\, \mathrm{d}t = \int_0^T f(t)\, \mathrm{d}t$
   pour tout $a$.
@@ -715,16 +715,16 @@ $$\int_a^b f + \int_b^c f + \int_c^d f + \int_d^a f = 0$$</li>
 $\int_a^b t^k f(t)\, \mathrm{d}t = 0$. Montrer que $f$ admet au moins $n+1$ zéros dans $[a, b]$.</li>
 <li>
 <ol>
-<li>Montrer que si $(f_n)_{n \in \mathbb{N}}$ est une suite de fonctions intégrables qui convergent uniformément vers $f$ sur $[a, b]$, alors $f$ est intégrable et
+<li>Montrer que si $(f_n)\_{n \in \mathbb{N}}$ est une suite de fonctions intégrables qui convergent uniformément vers $f$ sur $[a, b]$, alors $f$ est intégrable et
 $$\lim_{n \to +\infty} \int_a^b f_n(t)\, \mathrm{d}t = \int_a^b f(t)\, \mathrm{d}t$$</li>
 <li>On pose $f_n(t) = 2nt\, e^{-nt^2}$. Calculer
-$\lim_{n \to +\infty} \int_0^1 f_n(t)\, \mathrm{d}t$ et
-$\int_0^1 \left( \lim_{n \to +\infty} f_n(t) \right) \mathrm{d}t$. Que peut-on dire de cette suite de fonctions ?</li>
+$\lim\_{n \to +\infty} \int_0^1 f_n(t)\, \mathrm{d}t$ et
+$\int_0^1 \left( \lim\_{n \to +\infty} f_n(t) \right) \mathrm{d}t$. Que peut-on dire de cette suite de fonctions ?</li>
 </ol>
 </li>
 <li>Soit $f$ définie par $f(x) = 2x \sin\frac{1}{x} - \cos\frac{1}{x}$ pour $x \neq 0$ et $f(0) = 0$. Montrer que $f$ n'est pas continue en $0$ mais admet des primitives sur $\mathbb{R}$.</li>
 <li>Étudier la limite en $0$ de $f : x \mapsto \int_x^{3x} \frac{\cos t}{t}\, \mathrm{d}t$.</li>
-<li>On pose $f(x) = \int_{x - 1/x}^{x + 1/x} \frac{\mathrm{d}t}{\arctan^2 t}$. Quel est le domaine de définition de $f$ ? Quelle est la limite en $+\infty$ de $f$ ?</li>
+<li>On pose $f(x) = \int\_{x - 1/x}^{x + 1/x} \frac{\mathrm{d}t}{\arctan^2 t}$. Quel est le domaine de définition de $f$ ? Quelle est la limite en $+\infty$ de $f$ ?</li>
 <li>Étudier et tracer le graphe de :
 <ol>
 <li>$f : x \mapsto \int_x^{x^2} e^{-t^2}\, \mathrm{d}t$ ;</li>
@@ -734,10 +734,10 @@ $\int_0^1 \left( \lim_{n \to +\infty} f_n(t) \right) \mathrm{d}t$. Que peut-on d
 <li>
 <ol>
 <li>Soit $a > 0$. Soit $f$ une application vérifiant
-$\forall x \in \mathbb{R},\ f(x) = \frac{1}{2a} \int_{x-a}^{x+a} f(t)\, \mathrm{d}t$.
+$\forall x \in \mathbb{R},\ f(x) = \frac{1}{2a} \int\_{x-a}^{x+a} f(t)\, \mathrm{d}t$.
 Montrer que $f$ est définie sur $\mathbb{R}$ et $\mathcal{C}^\infty$ sur $\mathbb{R}$.</li>
 <li>En déduire les applications vérifiant
-$\forall a > 0,\ \forall x \in \mathbb{R},\ f(x) = \frac{1}{2a} \int_{x-a}^{x+a} f(t)\, \mathrm{d}t$.</li>
+$\forall a > 0,\ \forall x \in \mathbb{R},\ f(x) = \frac{1}{2a} \int\_{x-a}^{x+a} f(t)\, \mathrm{d}t$.</li>
 </ol>
 </li>
 <li>On pose $f(x) = \int_x^{x+1} \frac{\sin(xt)}{t}\, \mathrm{d}t$. Quel est le domaine de définition de $f$ ? Quelle est la limite en $+\infty$ de $f$, en $0$ ? $f$ est-elle prolongeable par continuité et, si oui, est-elle dérivable en $0$ ?</li>
@@ -749,20 +749,20 @@ $\forall a > 0,\ \forall x \in \mathbb{R},\ f(x) = \frac{1}{2a} \int_{x-a}^{x+a}
 </li>
 <li>Calculer la limite des suites suivantes :
 <ol>
-<li>$u_n = \sum_{k=0}^{n} \frac{n+k}{k^2 + n^2}$ ;</li>
+<li>$u_n = \sum\_{k=0}^{n} \frac{n+k}{k^2 + n^2}$ ;</li>
 <li>$u_n = \frac{1}{n}\Big( 2n\,(2n-1)\cdots(n+2)(n+1) \Big)^{1/n}$ ;</li>
-<li>$u_n = \sum_{k=1}^{n} rac{k}{n^2} \sin\!\left( \frac{k\pi}{n+1} \right)$ ;</li>
+<li>$u_n = \sum\_{k=1}^{n} rac{k}{n^2} \sin\!\left( \frac{k\pi}{n+1} \right)$ ;</li>
 <li>$u_n = \left( \frac{(2n)!}{n!\, n!} \right)^{1/n}$ ;</li>
-<li>$u_n = \sum_{k=1}^{n} \sin\!\left(\frac{k}{n}\right) \sin\!\left(\frac{k}{n^2}\right)$.</li>
+<li>$u_n = \sum\_{k=1}^{n} \sin\!\left(\frac{k}{n}\right) \sin\!\left(\frac{k}{n^2}\right)$.</li>
 </ol>
 </li>
-<li>Montrer que la quantité $\int_{-1/x}^{x} \frac{\mathrm{d}t}{\sqrt{1 - t^2 + t^4}}$ ne dépend que du signe de $x$.</li>
+<li>Montrer que la quantité $\int\_{-1/x}^{x} \frac{\mathrm{d}t}{\sqrt{1 - t^2 + t^4}}$ ne dépend que du signe de $x$.</li>
 <li>Soit $f$ une application $T$-périodique. Montrer que
 $\int_a^{a+T} f(t)\, \mathrm{d}t = \int_0^T f(t)\, \mathrm{d}t$.</li>
 <li>Calculer les intégrales suivantes :
 <ol>
 <li>$\int_0^1 \ln(1 + t^2)\, \mathrm{d}t$ ;</li>
-<li>$\int_{1/2}^{2} \left( 1 + \frac{1}{t^2} \right) \arctan t\, \mathrm{d}t$ ;</li>
+<li>$\int\_{1/2}^{2} \left( 1 + \frac{1}{t^2} \right) \arctan t\, \mathrm{d}t$ ;</li>
 <li>$\int_0^1 \frac{\sqrt{1+t}}{\sqrt{t} + \sqrt{2+t}}\, \mathrm{d}t$.</li>
 </ol>
 </li>
@@ -771,7 +771,7 @@ $$\lim_{n \to +\infty} \left( \int_0^1 f^n(t)\, \mathrm{d}t \right)^{1/n} = \sup
 <li>
 <ol>
 <li>Soit $f$ de classe $\mathcal{C}^1$ sur $[a, b]$. Montrer que
-$\lim_{\lambda \to +\infty} \int_a^b \sin(\lambda t)\, f(t)\, \mathrm{d}t = 0$.</li>
+$\lim\_{\lambda \to +\infty} \int_a^b \sin(\lambda t)\, f(t)\, \mathrm{d}t = 0$.</li>
 <li>Montrer le même résultat si l'on suppose $f$ seulement continue (commencer par $f$ constante, puis $f$ en escalier...).</li>
 </ol>
 </li>

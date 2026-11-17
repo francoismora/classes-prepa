@@ -47,7 +47,7 @@ $$\mathcal{O}(x) = \{\sigma^k(x) \mid k \in \mathbb{N}\}$$
 
 <span class="bloc-titre">Propriété</span>
 
-Toute orbite est **finie** : soit $m$ le plus petit élément de $\mathbb{N}^*$ tel que $\sigma^m(x) = x$ (avec $m = 1$ si $\sigma(x) = x$) ; en posant $k = m - 1$ :
+Toute orbite est **finie** : soit $m$ le plus petit élément de $\mathbb{N}^\*$ tel que $\sigma^m(x) = x$ (avec $m = 1$ si $\sigma(x) = x$) ; en posant $k = m - 1$ :
 
 $$\mathcal{O}(x) = \{x, \sigma(x), \sigma^2(x), \dots, \sigma^k(x)\}$$
 
@@ -56,16 +56,16 @@ $$\mathcal{O}(x) = \{x, \sigma(x), \sigma^2(x), \dots, \sigma^k(x)\}$$
 <div class="bloc demo" markdown="1">
 <span class="bloc-titre">Démonstration</span>
 
-Soit $d = \{m \in \mathbb{N}^* \mid \sigma^m(x) = x\}$.
+Soit $d = \{m \in \mathbb{N}^\* \mid \sigma^m(x) = x\}$.
 
 - **1er cas** : $\sigma(x) = x$. Alors $\mathcal{O}(x) = \{x\}$ ($k = 0$, constant).
-- **2ème cas** : $\sigma(x) \neq x$. Alors $\sigma \neq \mathrm{Id}_E$, et soit $p$ l'ordre de $x$ : $\sigma^p(x) = x$, donc $p \neq 1$. $d$ est une partie non vide de $\mathbb{N}$, donc admet un plus petit élément $m \in \mathbb{N}^*$. Posons $k = m - 1 \in \mathbb{N}$ : $\{x, \sigma(x), \dots, \sigma^k(x)\} \subset \mathcal{O}(x)$.
+- **2ème cas** : $\sigma(x) \neq x$. Alors $\sigma \neq \mathrm{Id}\_E$, et soit $p$ l'ordre de $x$ : $\sigma^p(x) = x$, donc $p \neq 1$. $d$ est une partie non vide de $\mathbb{N}$, donc admet un plus petit élément $m \in \mathbb{N}^\*$. Posons $k = m - 1 \in \mathbb{N}$ : $\{x, \sigma(x), \dots, \sigma^k(x)\} \subset \mathcal{O}(x)$.
 
 Soit $y \in \mathcal{O}(x)$ : $y = \sigma^i(x)$ avec $i \in \mathbb{Z}$. Écrivons $i = mq + r$ avec $0 \leq r < m$. Alors
 
 $$\sigma^i(x) = \sigma^{mq+r}(x) = (\sigma^m)^q\big(\sigma^r(x)\big) = \sigma^r(x)$$
 
-car $\sigma^m(x) = x$, d'où par une simple récurrence $\forall q \in \mathbb{N}^*,\ \sigma^{qm}(x) = x$. Comme $0 \leq r \leq k$ : $\sigma^i(x) = \sigma^r(x)$, donc $y \in \{x, \dots, \sigma^k(x)\}$.
+car $\sigma^m(x) = x$, d'où par une simple récurrence $\forall q \in \mathbb{N}^\*,\ \sigma^{qm}(x) = x$. Comme $0 \leq r \leq k$ : $\sigma^i(x) = \sigma^r(x)$, donc $y \in \{x, \dots, \sigma^k(x)\}$.
 
 </div>
 
@@ -134,19 +134,19 @@ Toute permutation $\sigma$ s'écrit comme **produit de transpositions**.
 
 <span class="bloc-titre">Remarque</span>
 
-Ceci signifie que les transpositions **engendrent** $\mathfrak{S}_n$.
+Ceci signifie que les transpositions **engendrent** $\mathfrak{S}\_n$.
 
 </div>
 
 <div class="bloc demo" markdown="1">
 <span class="bloc-titre">Démonstration</span>
 
-Récurrence sur $n$. Pour $n = 2$ : $E = \{1,2\}$, $\mathfrak{S}_2 = \{\mathrm{Id}, \tau\}$ avec $	au = (1\ 2)$ la transposition, et $\mathrm{Id} = (1\ 2) \circ (1\ 2)$ : le résultat est vrai.
+Récurrence sur $n$. Pour $n = 2$ : $E = \{1,2\}$, $\mathfrak{S}\_2 = \{\mathrm{Id}, \tau\}$ avec $	au = (1\ 2)$ la transposition, et $\mathrm{Id} = (1\ 2) \circ (1\ 2)$ : le résultat est vrai.
 
-Supposons la propriété vraie pour $\mathfrak{S}_n$, et soit $\sigma \in \mathfrak{S}_{n+1}$.
+Supposons la propriété vraie pour $\mathfrak{S}\_n$, et soit $\sigma \in \mathfrak{S}\_{n+1}$.
 
-- **1er cas** : $\sigma(n+1) = n+1$. Alors $\sigma$ se restreint en une permutation de $\{1,\dots,n\}$, produit de transpositions de $\mathfrak{S}_n$ (donc de $\mathfrak{S}_{n+1}$).
-- **2ème cas** : $\sigma(n+1) = i \in \{1,\dots,n\}$. Soit $\tau = (i\ n+1)$ ; alors $\tau \circ \sigma$ fixe $n+1$, donc $\tau \circ \sigma = \tau_1 \circ \dots \circ \tau_r$ avec les $\tau_j$ transpositions de $\mathfrak{S}_n$. D'où $\sigma = \tau \circ \tau_1 \circ \dots \circ \tau_r$ : $\sigma$ est le produit de $r+1$ transpositions.
+- **1er cas** : $\sigma(n+1) = n+1$. Alors $\sigma$ se restreint en une permutation de $\{1,\dots,n\}$, produit de transpositions de $\mathfrak{S}\_n$ (donc de $\mathfrak{S}\_{n+1}$).
+- **2ème cas** : $\sigma(n+1) = i \in \{1,\dots,n\}$. Soit $\tau = (i\ n+1)$ ; alors $\tau \circ \sigma$ fixe $n+1$, donc $\tau \circ \sigma = \tau_1 \circ \dots \circ \tau_r$ avec les $\tau_j$ transpositions de $\mathfrak{S}\_n$. D'où $\sigma = \tau \circ \tau_1 \circ \dots \circ \tau_r$ : $\sigma$ est le produit de $r+1$ transpositions.
 
 </div>
 
@@ -158,7 +158,7 @@ Supposons la propriété vraie pour $\mathfrak{S}_n$, et soit $\sigma \in \mathf
 
 <span class="bloc-titre">Définition</span>
 
-Soit $\sigma \in \mathfrak{S}_n$. On appelle **signature** de $\sigma$ le nombre
+Soit $\sigma \in \mathfrak{S}\_n$. On appelle **signature** de $\sigma$ le nombre
 
 $$\varepsilon(\sigma) = (-1)^{n-m}$$
 
@@ -196,7 +196,7 @@ Il suffit de montrer que $\varepsilon(\sigma \circ \tau) = \varepsilon(\sigma)\,
 
 Dans les deux cas, $\varepsilon(\sigma \circ t) = -\varepsilon(\sigma) = \varepsilon(\sigma)\,\varepsilon(t)$.
 
-Soit maintenant $\sigma \in \mathfrak{S}_n$ quelconque ; d'après le théorème 2, $\sigma = t_1 \circ \dots \circ t_r$, d'où
+Soit maintenant $\sigma \in \mathfrak{S}\_n$ quelconque ; d'après le théorème 2, $\sigma = t_1 \circ \dots \circ t_r$, d'où
 
 $$\varepsilon(t_1 \circ \dots \circ t_r) = \varepsilon(t_1) \cdots \varepsilon(t_r) = (-1)^r$$
 
@@ -224,7 +224,7 @@ Une permutation qui se décompose en un **nombre pair** de transpositions est di
 
 <span class="bloc-titre">Propriété</span>
 
-L'ensemble des permutations paires est un **sous-groupe** de $\mathfrak{S}_n$, noté $\mathfrak{A}_n$ et appelé **groupe alterné** :
+L'ensemble des permutations paires est un **sous-groupe** de $\mathfrak{S}\_n$, noté $\mathfrak{A}\_n$ et appelé **groupe alterné** :
 
 $$\mathfrak{A}_n = \{\sigma \in \mathfrak{S}_n \mid \varepsilon(\sigma) = 1\} = \ker \varepsilon, \qquad \mathrm{Card}\ \mathfrak{A}_n = \frac{n!}{2}$$
 
@@ -240,7 +240,7 @@ Dans tout ce cours, $\mathbb{K}$ désigne un **sous-corps de $\mathbb{C}$ ou de 
 
 <span class="bloc-titre">Définition</span>
 
-Soit $f : E \to F$. On dit que $f$ est **$n$-linéaire** si $f$ est linéaire par rapport à chacune de ses coordonnées : pour tout $i \in \{1,\dots,n\}$ et tout $(a_1,\dots,a_{i-1},a_{i+1},\dots,a_n)$ fixé, l'application
+Soit $f : E \to F$. On dit que $f$ est **$n$-linéaire** si $f$ est linéaire par rapport à chacune de ses coordonnées : pour tout $i \in \{1,\dots,n\}$ et tout $(a_1,\dots,a\_{i-1},a\_{i+1},\dots,a_n)$ fixé, l'application
 
 $$a_i \longmapsto f(a_1,\dots,a_i,\dots,a_n)$$
 
@@ -260,9 +260,9 @@ $E_1 = E_2 = F = \mathbb{R}$ : $(f,g) \mapsto \int_0^1 f(t)\, g(t)\, \mathrm{d}t
 
 <span class="bloc-titre">Propriété</span>
 
-L'ensemble $\mathcal{L}_n(E;F)$ des applications $n$-linéaires de $E$ dans $F$ est un **sous-espace vectoriel** de $F^E$ (non réduit à $\{0\}$, stable par combinaisons linéaires).
+L'ensemble $\mathcal{L}\_n(E;F)$ des applications $n$-linéaires de $E$ dans $F$ est un **sous-espace vectoriel** de $F^E$ (non réduit à $\{0\}$, stable par combinaisons linéaires).
 
-Dans la suite, on supposera $E_1 = E_2 = \dots = E_n = E$. On note encore $\mathcal{L}_n(E, F)$ l'ensemble $\mathcal{L}_n(E^n, F)$.
+Dans la suite, on supposera $E_1 = E_2 = \dots = E_n = E$. On note encore $\mathcal{L}\_n(E, F)$ l'ensemble $\mathcal{L}\_n(E^n, F)$.
 
 </div>
 
@@ -270,7 +270,7 @@ Dans la suite, on supposera $E_1 = E_2 = \dots = E_n = E$. On note encore $\math
 
 <span class="bloc-titre">Définition (symétrique, alternée)</span>
 
-Soit $f \in \mathcal{L}_n(E, F)$. On dit que $f$ est :
+Soit $f \in \mathcal{L}\_n(E, F)$. On dit que $f$ est :
 
 - **symétrique** si, pour tous $i \neq j$ et tous $(a_1,\dots,a_n) \in E^n$ :
 
@@ -284,11 +284,11 @@ $$f(a_1,\dots,a_i,\dots,a_j,\dots,a_n) = f(a_1,\dots,a_j,\dots,a_i,\dots,a_n)$$
 
 <span class="bloc-titre">Propriété 1</span>
 
-$f$ est symétrique si et seulement si, pour toute permutation $\sigma \in \mathfrak{S}_n$ :
+$f$ est symétrique si et seulement si, pour toute permutation $\sigma \in \mathfrak{S}\_n$ :
 
 $$f(a_{\sigma(1)}, \dots, a_{\sigma(n)}) = f(a_1, \dots, a_n)$$
 
-En fait, il suffit de le vérifier pour les **transpositions** (elles engendrent $\mathfrak{S}_n$).
+En fait, il suffit de le vérifier pour les **transpositions** (elles engendrent $\mathfrak{S}\_n$).
 
 </div>
 
@@ -296,7 +296,7 @@ En fait, il suffit de le vérifier pour les **transpositions** (elles engendrent
 
 <span class="bloc-titre">Propriété 2 (antisymétrique)</span>
 
-$f$ est **antisymétrique** si et seulement si, pour toute permutation $\sigma \in \mathfrak{S}_n$ :
+$f$ est **antisymétrique** si et seulement si, pour toute permutation $\sigma \in \mathfrak{S}\_n$ :
 
 $$f(a_1,\dots,a_n) = \varepsilon(\sigma)\, f(a_{\sigma(1)}, \dots, a_{\sigma(n)})$$
 
@@ -325,19 +325,19 @@ $$0 = f(\dots, a_i + a_j, \dots, a_i + a_j, \dots) = f(\dots,a_i,\dots,a_i,\dots
 
 $$= f(\dots,a_i,\dots,a_j,\dots) + f(\dots,a_j,\dots,a_i,\dots)$$
 
-donc $f(\dots,a_j,\dots,a_i,\dots) = -f(\dots,a_i,\dots,a_j,\dots)$ ; en décomposant $\sigma$ en transpositions, on en déduit $f(a_{\sigma(1)},\dots,a_{\sigma(n)}) = \varepsilon(\sigma)\, f(a_1,\dots,a_n)$.
+donc $f(\dots,a_j,\dots,a_i,\dots) = -f(\dots,a_i,\dots,a_j,\dots)$ ; en décomposant $\sigma$ en transpositions, on en déduit $f(a\_{\sigma(1)},\dots,a\_{\sigma(n)}) = \varepsilon(\sigma)\, f(a_1,\dots,a_n)$.
 
 </div>
 
 ### II. Formes n-linéaires alternées sur E
 
-Désormais $F = \mathbb{K}$ : $\mathcal{L}_n(E, F)$ est l'ensemble des **formes $n$-linéaires**.
+Désormais $F = \mathbb{K}$ : $\mathcal{L}\_n(E, F)$ est l'ensemble des **formes $n$-linéaires**.
 
 <div class="bloc definition" markdown="1">
 
 <span class="bloc-titre">Définition</span>
 
-On note $\mathcal{A}_n(E)$ l'espace des **formes $n$-linéaires alternées** sur $E$.
+On note $\mathcal{A}\_n(E)$ l'espace des **formes $n$-linéaires alternées** sur $E$.
 
 </div>
 
@@ -345,63 +345,63 @@ On note $\mathcal{A}_n(E)$ l'espace des **formes $n$-linéaires alternées** sur
 
 #### Cas m = 2
 
-Soit $(e_1, e_2)$ une base de $E$. Supposons que $\mathcal{A}_2(E) \neq \{0\}$ et soit $f \in \mathcal{A}_2(E)$, $f \neq 0$. Quels que soient $v_1, v_2 \in E$, avec $v_1 = x_{11} e_1 + x_{12} e_2$ et $v_2 = x_{21} e_1 + x_{22} e_2$ :
+Soit $(e_1, e_2)$ une base de $E$. Supposons que $\mathcal{A}\_2(E) \neq \{0\}$ et soit $f \in \mathcal{A}\_2(E)$, $f \neq 0$. Quels que soient $v_1, v_2 \in E$, avec $v_1 = x\_{11} e_1 + x\_{12} e_2$ et $v_2 = x\_{21} e_1 + x\_{22} e_2$ :
 
 $$f(v_1, v_2) = f(x_{11} e_1 + x_{12} e_2,\ x_{21} e_1 + x_{22} e_2) = (x_{11} x_{22} - x_{12} x_{21})\, f(e_1, e_2)$$
 
 (car $f(e_1,e_1) = f(e_2,e_2) = 0$ et $f(e_2,e_1) = -f(e_1,e_2)$). Comme $f \neq 0$, $f(e_1, e_2) \neq 0$.
 
-Soit $\Delta_e$ l'application $(E \times E \to \mathbb{K})$ définie par $\Delta_e(v_1, v_2) = x_{11} x_{22} - x_{12} x_{21}$. $\Delta_e$ est **bilinéaire**, **antisymétrique**, **non nulle** ($\Delta_e(e_1, e_2) = 1$) : $\Delta_e \in \mathcal{A}_2(E)$, $\Delta_e \neq 0$. De plus, $\forall f \in \mathcal{A}_2(E)$ : $f = d\, \Delta_e$ avec $d = f(e_1, e_2)$.
+Soit $\Delta_e$ l'application $(E \times E \to \mathbb{K})$ définie par $\Delta_e(v_1, v_2) = x\_{11} x\_{22} - x\_{12} x\_{21}$. $\Delta_e$ est **bilinéaire**, **antisymétrique**, **non nulle** ($\Delta_e(e_1, e_2) = 1$) : $\Delta_e \in \mathcal{A}\_2(E)$, $\Delta_e \neq 0$. De plus, $\forall f \in \mathcal{A}\_2(E)$ : $f = d\, \Delta_e$ avec $d = f(e_1, e_2)$.
 
 <div class="bloc propriete" markdown="1">
 
 <span class="bloc-titre">Conclusion</span>
 
-$\mathcal{A}_2(E)$ est une **droite vectorielle** de base $\Delta_e$.
+$\mathcal{A}\_2(E)$ est une **droite vectorielle** de base $\Delta_e$.
 
 </div>
 
 #### Cas m = 3
 
-**Analyse.** Soit $f \in \mathcal{A}_3(E)$, $(e_1,e_2,e_3)$ une base de $E$. Avec $v_i = \sum_j x_{ij} e_j$ :
+**Analyse.** Soit $f \in \mathcal{A}\_3(E)$, $(e_1,e_2,e_3)$ une base de $E$. Avec $v_i = \sum_j x\_{ij} e_j$ :
 
 $$f(v_1,v_2,v_3) = \Big( \sum_{\sigma \in \mathfrak{S}_3} \varepsilon(\sigma)\, x_{1\sigma(1)} x_{2\sigma(2)} x_{3\sigma(3)} \Big) f(e_1,e_2,e_3)$$
 
 (tous les autres termes sont nuls car $f$ est alternée ; sous chaque terme figure la permutation $\sigma$ correspondante : id, $(2\ 3)$, $(2\ 1)$, $(1\ 3)$, $(1\ 2\ 3)$, $(1\ 3\ 2)$).
 
-**Synthèse.** On pose $\Delta_e(v_1,v_2,v_3) = \sum_{\sigma \in \mathfrak{S}_3} \varepsilon(\sigma) x_{1\sigma(1)} x_{2\sigma(2)} x_{3\sigma(3)}$. On vérifie que $\Delta_e$ est $3$-linéaire, alternée, non nulle ($\Delta_e(e_1,e_2,e_3) = 1$).
+**Synthèse.** On pose $\Delta_e(v_1,v_2,v_3) = \sum\_{\sigma \in \mathfrak{S}\_3} \varepsilon(\sigma) x\_{1\sigma(1)} x\_{2\sigma(2)} x\_{3\sigma(3)}$. On vérifie que $\Delta_e$ est $3$-linéaire, alternée, non nulle ($\Delta_e(e_1,e_2,e_3) = 1$).
 
 <div class="bloc propriete" markdown="1">
 
 <span class="bloc-titre">Conclusion</span>
 
-$\mathcal{A}_3(E)$ est une **droite vectorielle** sur $\mathbb{K}$, de base $\Delta_e$.
+$\mathcal{A}\_3(E)$ est une **droite vectorielle** sur $\mathbb{K}$, de base $\Delta_e$.
 
 </div>
 
 #### Cas général
 
-Soit $(e_1,\dots,e_n)$ une base de $E$, $v_1,\dots,v_n$ des vecteurs de $E$, $v_i = \sum_{j=1}^n x_{ij} e_j$ ($i = 1,\dots,n$).
+Soit $(e_1,\dots,e_n)$ une base de $E$, $v_1,\dots,v_n$ des vecteurs de $E$, $v_i = \sum\_{j=1}^n x\_{ij} e_j$ ($i = 1,\dots,n$).
 
-**Analyse.** Soit $f \in \mathcal{A}_n(E)$ :
+**Analyse.** Soit $f \in \mathcal{A}\_n(E)$ :
 
 $$f(v_1,\dots,v_n) = \sum_{(i_1,\dots,i_n)} x_{1 i_1} \cdots x_{n i_n}\, f(e_{i_1},\dots,e_{i_n})$$
 
-Mais si $i_\ell = i_k$, alors $f(e_{i_1},\dots,e_{i_n}) = 0$ : on ne conserve dans la somme que les $n$-uplets $(i_1,\dots,i_n)$ tels que $i \mapsto i_k$... c'est-à-dire les permutations $\sigma \in \mathfrak{S}_n$ :
+Mais si $i\_\ell = i_k$, alors $f(e\_{i_1},\dots,e\_{i_n}) = 0$ : on ne conserve dans la somme que les $n$-uplets $(i_1,\dots,i_n)$ tels que $i \mapsto i_k$... c'est-à-dire les permutations $\sigma \in \mathfrak{S}\_n$ :
 
 $$f(v_1,\dots,v_n) = \sum_{\sigma \in \mathfrak{S}_n} \varepsilon(\sigma)\, x_{1\sigma(1)} \cdots x_{n\sigma(n)}\, f(e_1,\dots,e_n)$$
 
-**Synthèse.** Soit $\Delta_e(v_1,\dots,v_n) = \sum_{\sigma \in \mathfrak{S}_n} \varepsilon(\sigma) x_{1\sigma(1)} \cdots x_{n\sigma(n)}$.
+**Synthèse.** Soit $\Delta_e(v_1,\dots,v_n) = \sum\_{\sigma \in \mathfrak{S}\_n} \varepsilon(\sigma) x\_{1\sigma(1)} \cdots x\_{n\sigma(n)}$.
 
 - $\Delta_e$ est $n$-linéaire ;
 - $\Delta_e \neq 0$ car $\Delta_e(e_1,\dots,e_n) = 1$ (le seul terme non nul de la somme correspond à $\sigma = \mathrm{Id}$) ;
-- montrons que $\Delta_e$ est **alternée** : supposons $v_i = v_j$, c'est-à-dire $\forall k,\ x_{ik} = x_{jk}$ ($i \neq j$).
+- montrons que $\Delta_e$ est **alternée** : supposons $v_i = v_j$, c'est-à-dire $\forall k,\ x\_{ik} = x\_{jk}$ ($i \neq j$).
 
 <div class="bloc remarque" markdown="1">
 
 <span class="bloc-titre">Lemme</span>
 
-$\mathcal{S} = \{\sigma \in \mathfrak{S}_n \mid \sigma(i) < \sigma(j)\}$ et $\mathcal{S}' = \{\sigma \in \mathfrak{S}_n \mid \sigma(i) > \sigma(j)\}$ sont **complémentaires** dans $\mathfrak{S}_n$, et $T : \sigma \mapsto \sigma \circ (i\ j)$ est une **bijection** de $\mathcal{S}$ dans $\mathcal{S}'$ (c'est une involution).
+$\mathcal{S} = \{\sigma \in \mathfrak{S}\_n \mid \sigma(i) < \sigma(j)\}$ et $\mathcal{S}' = \{\sigma \in \mathfrak{S}\_n \mid \sigma(i) > \sigma(j)\}$ sont **complémentaires** dans $\mathfrak{S}\_n$, et $T : \sigma \mapsto \sigma \circ (i\ j)$ est une **bijection** de $\mathcal{S}$ dans $\mathcal{S}'$ (c'est une involution).
 
 </div>
 
@@ -409,15 +409,15 @@ Alors :
 
 $$\Delta_e(v_1,\dots,v_n) = \sum_{\sigma \in \mathcal{S}} \Big( \prod_{k \notin \{i,j\}} x_{k\sigma(k)} \Big) \varepsilon(\sigma) \big[ x_{i\sigma(i)} x_{j\sigma(j)} - x_{i\sigma(j)} x_{j\sigma(i)} \big] = 0$$
 
-car $x_{i\sigma(i)} = x_{j\sigma(i)}$ et $x_{j\sigma(j)} = x_{i\sigma(j)}$. Donc $\Delta_e$ est alternée.
+car $x\_{i\sigma(i)} = x\_{j\sigma(i)}$ et $x\_{j\sigma(j)} = x\_{i\sigma(j)}$. Donc $\Delta_e$ est alternée.
 
-$\Delta_e$ est une forme $n$-linéaire alternée non nulle, donc $\forall d \in \mathbb{K},\ d\Delta_e \in \mathcal{A}_n(E)$, et d'après l'analyse $\mathcal{A}_n(E) \subset \mathbb{K}\Delta_e$ :
+$\Delta_e$ est une forme $n$-linéaire alternée non nulle, donc $\forall d \in \mathbb{K},\ d\Delta_e \in \mathcal{A}\_n(E)$, et d'après l'analyse $\mathcal{A}\_n(E) \subset \mathbb{K}\Delta_e$ :
 
 <div class="bloc propriete" markdown="1">
 
 <span class="bloc-titre">Propriété 1</span>
 
-$\mathcal{A}_n(E)$ est une **droite vectorielle** de base $\Delta_e$.
+$\mathcal{A}\_n(E)$ est une **droite vectorielle** de base $\Delta_e$.
 
 </div>
 
@@ -445,7 +445,7 @@ Soit $(v_1,\dots,v_n)$ $n$ vecteurs de $E$. On appelle **déterminant** de $(v_1
 
 <span class="bloc-titre">Propriété 1</span>
 
-Avec $v_i = \sum_j x_{ij} e_j$ :
+Avec $v_i = \sum_j x\_{ij} e_j$ :
 
 $$\det_e(v_1,\dots,v_n) = \sum_{\sigma \in \mathfrak{S}_n} \varepsilon(\sigma)\, x_{1\sigma(1)} x_{2\sigma(2)} \cdots x_{n\sigma(n)}$$
 
@@ -458,7 +458,7 @@ $$\det_e(v_{\sigma(1)},\dots,v_{\sigma(n)}) = \varepsilon(\sigma)\, \det_e(v_1,\
 <div class="bloc demo" markdown="1">
 <span class="bloc-titre">Démonstration</span>
 
-La première formule n'est que la propriété 2 précédente. Pour la seconde : $\det_e(v_{\sigma(1)},\dots,v_{\sigma(n)}) = \sum_{\tau \in \mathfrak{S}_n} \varepsilon(\tau)\, x_{\sigma\tau(1),1} \cdots x_{\sigma\tau(n),n}$ ; comme $|\sigma(1),\dots,\sigma(n)| = \{1,\dots,n\}$, en posant $\rho = \sigma \tau$ et comme $\varepsilon$ est un morphisme, $\varepsilon(\tau) = \varepsilon(\sigma)^{-1}\varepsilon(\rho) = \varepsilon(\sigma)\varepsilon(\rho)$, d'où le résultat.
+La première formule n'est que la propriété 2 précédente. Pour la seconde : $\det_e(v\_{\sigma(1)},\dots,v\_{\sigma(n)}) = \sum\_{\tau \in \mathfrak{S}\_n} \varepsilon(\tau)\, x\_{\sigma\tau(1),1} \cdots x\_{\sigma\tau(n),n}$ ; comme $|\sigma(1),\dots,\sigma(n)| = \{1,\dots,n\}$, en posant $\rho = \sigma \tau$ et comme $\varepsilon$ est un morphisme, $\varepsilon(\tau) = \varepsilon(\sigma)^{-1}\varepsilon(\rho) = \varepsilon(\sigma)\varepsilon(\rho)$, d'où le résultat.
 
 </div>
 
@@ -479,7 +479,7 @@ $$\det_{\mathcal{e}'}(v_1,\dots,v_n) = \det_e(e'_1,\dots,e'_n)\; \det_e(v_1,\dot
 <div class="bloc demo" markdown="1">
 <span class="bloc-titre">Démonstration</span>
 
-$(v_1,\dots,v_n) \mapsto \det_{\mathcal{e}'}(v_1,\dots,v_n)$ est une forme $n$-linéaire alternée sur $E^n \to \mathbb{K}$, donc proportionnelle à $\det_e$ : il existe $\lambda$ tel que $\det_{\mathcal{e}'} = \lambda \det_e$, avec $\lambda = \det_{\mathcal{e}'}(e_1,\dots,e_n) = \det_e(P)$, $P$ matrice de passage de $\mathcal{e}$ à $\mathcal{e}'$.
+$(v_1,\dots,v_n) \mapsto \det\_{\mathcal{e}'}(v_1,\dots,v_n)$ est une forme $n$-linéaire alternée sur $E^n \to \mathbb{K}$, donc proportionnelle à $\det_e$ : il existe $\lambda$ tel que $\det\_{\mathcal{e}'} = \lambda \det_e$, avec $\lambda = \det\_{\mathcal{e}'}(e_1,\dots,e_n) = \det_e(P)$, $P$ matrice de passage de $\mathcal{e}$ à $\mathcal{e}'$.
 
 </div>
 
@@ -498,7 +498,7 @@ $(v_1,\dots,v_n)$ est une **base** de $E$ si et seulement si $\det_e(v_1,\dots,v
 
 $$\det_e(v_1,\dots,v_n) = \frac{1}{\lambda_1}\ \det_e\Big(\sum_i \lambda_i v_i,\, v_2, \dots, v_n\Big) = 0$$
 
-- Réciproquement, si $(v_1,\dots,v_n)$ est une base, en prenant $\mathcal{e}' = (v_1,\dots,v_n)$, la formule de changement de base donne $1 = \det_{\mathcal{e}'}(v_1,\dots,v_n) = \det_e(v_1,\dots,v_n)\; \det_{\mathcal{e}'}(e_1,\dots,e_n)$, et $\det_{\mathcal{e}'}(e_1,\dots,e_n) \neq 0$ (matrice de passage inversible) : donc $\det_e(v_1,\dots,v_n) \neq 0$.
+- Réciproquement, si $(v_1,\dots,v_n)$ est une base, en prenant $\mathcal{e}' = (v_1,\dots,v_n)$, la formule de changement de base donne $1 = \det\_{\mathcal{e}'}(v_1,\dots,v_n) = \det_e(v_1,\dots,v_n)\; \det\_{\mathcal{e}'}(e_1,\dots,e_n)$, et $\det\_{\mathcal{e}'}(e_1,\dots,e_n) \neq 0$ (matrice de passage inversible) : donc $\det_e(v_1,\dots,v_n) \neq 0$.
 
 </div>
 
@@ -517,7 +517,7 @@ $$\det_e(v_1,\dots,v_n) = \frac{1}{\lambda_1}\ \det_e\Big(\sum_i \lambda_i v_i,\
 
 <span class="bloc-titre">Définition</span>
 
-Soit $u \in \mathcal{L}(E)$ et $\mathcal{e} = (e_1,\dots,e_n)$ une base de $E$. Pour $f \in \mathcal{A}_n(E)$, l'application $(v_1,\dots,v_n) \mapsto f(u(v_1),\dots,u(v_n))$ est une forme $n$-linéaire alternée, donc il existe un scalaire $\lambda$ tel que
+Soit $u \in \mathcal{L}(E)$ et $\mathcal{e} = (e_1,\dots,e_n)$ une base de $E$. Pour $f \in \mathcal{A}\_n(E)$, l'application $(v_1,\dots,v_n) \mapsto f(u(v_1),\dots,u(v_n))$ est une forme $n$-linéaire alternée, donc il existe un scalaire $\lambda$ tel que
 
 $$f(u(v_1),\dots,u(v_n)) = \lambda\, f(v_1,\dots,v_n)$$
 
@@ -528,7 +528,7 @@ $\lambda$ est **indépendant du choix de** $f$ et s'appelle le **déterminant de
 <div class="bloc demo" markdown="1">
 <span class="bloc-titre">Démonstration</span>
 
-Si $g$ est une autre base de $\mathcal{A}_n(E)$ : $g = \lambda f$, donc $g(u(v_1),\dots,u(v_n)) = \lambda f(u(v_1),\dots,u(v_n)) = \lambda \mu\, f(v_1,\dots,v_n) = \mu\, g(v_1,\dots,v_n)$.
+Si $g$ est une autre base de $\mathcal{A}\_n(E)$ : $g = \lambda f$, donc $g(u(v_1),\dots,u(v_n)) = \lambda f(u(v_1),\dots,u(v_n)) = \lambda \mu\, f(v_1,\dots,v_n) = \mu\, g(v_1,\dots,v_n)$.
 
 </div>
 
@@ -543,7 +543,7 @@ Si $\mathcal{e}$ est une base de $E$ : $\det u = \det_e(u(e_1),\dots,u(e_n))$.
 <div class="bloc demo" markdown="1">
 <span class="bloc-titre">Démonstration</span>
 
-On prend comme base de $\mathcal{A}_n(E)$ : $v \mapsto \det_e(v)$.
+On prend comme base de $\mathcal{A}\_n(E)$ : $v \mapsto \det_e(v)$.
 
 </div>
 
@@ -596,7 +596,7 @@ Si $u \in \mathrm{GL}(E)$ : $\det u^{-1} = \dfrac{1}{\det u}$ (car $\det(u \circ
 
 <span class="bloc-titre">Définition</span>
 
-Soit $A \in \mathcal{M}_n(\mathbb{K})$. $\det A$ est le déterminant, **relativement à la base canonique de $\mathbb{K}^n$**, des vecteurs colonnes $(C_1;\dots;C_n)$ de $A$ ($\det A$ est indépendant du choix de la base).
+Soit $A \in \mathcal{M}\_n(\mathbb{K})$. $\det A$ est le déterminant, **relativement à la base canonique de $\mathbb{K}^n$**, des vecteurs colonnes $(C_1;\dots;C_n)$ de $A$ ($\det A$ est indépendant du choix de la base).
 
 </div>
 
@@ -613,7 +613,7 @@ $$\det u = \det\big(\mathrm{Mat}_e(u)\big)$$
 <div class="bloc demo" markdown="1">
 <span class="bloc-titre">Démonstration</span>
 
-$\det u = \det_e(u(e_1),\dots,u(e_n))$ ; avec $u(e_j) = \sum_i a_{ij} e_i$ et $C_j$ la $j$-ème colonne de $A = \mathrm{Mat}_e(u)$ : $\det u = \det A$.
+$\det u = \det_e(u(e_1),\dots,u(e_n))$ ; avec $u(e_j) = \sum_i a\_{ij} e_i$ et $C_j$ la $j$-ème colonne de $A = \mathrm{Mat}\_e(u)$ : $\det u = \det A$.
 
 </div>
 
@@ -657,7 +657,7 @@ car $\det$ est alternée ; remplacer $L_i$ par $L_i - \alpha L_j$ ($i \neq j$) (
 
 #### 2°) Développement selon 1 ligne ou 1 colonne
 
-Par linéarité sur la colonne $C_j = \sum_i a_{ij} C_i$ :
+Par linéarité sur la colonne $C_j = \sum_i a\_{ij} C_i$ :
 
 $$\det(C_1,\dots,C_j,\dots,C_n) = \sum_{i=1}^n a_{ij}\, \det(C_1,\dots,C_i,\dots,C_n)$$
 
@@ -665,21 +665,21 @@ $$\det(C_1,\dots,C_j,\dots,C_n) = \sum_{i=1}^n a_{ij}\, \det(C_1,\dots,C_i,\dots
 
 <span class="bloc-titre">Définition (cofacteur)</span>
 
-$A_{ij}$ s'appelle le **cofacteur** de $a_{ij}$.
+$A\_{ij}$ s'appelle le **cofacteur** de $a\_{ij}$.
 
 </div>
 
-**a) Calcul de $A_{nn}$.** Dans la matrice obtenue en remplaçant la dernière colonne de $A$ par $(0,\dots,0,1)$ :
+**a) Calcul de $A\_{nn}$.** Dans la matrice obtenue en remplaçant la dernière colonne de $A$ par $(0,\dots,0,1)$ :
 
 $$\sum_{\sigma \in \mathfrak{S}_n} \varepsilon(\sigma)\, a_{\sigma(1),1} \cdots a_{\sigma(n-1),n-1}\, b_{\sigma(n),n} = 0 \text{ si } \sigma(n) \neq n, \qquad = 1 \text{ sinon}$$
 
-Donc (bijection $\{\sigma \in \mathfrak{S}_n \mid \sigma(n) = n\} \leftrightarrow \mathfrak{S}_{n-1}$) :
+Donc (bijection $\{\sigma \in \mathfrak{S}\_n \mid \sigma(n) = n\} \leftrightarrow \mathfrak{S}\_{n-1}$) :
 
 $$A_{nn} = \sum_{\sigma \in \mathfrak{S}_{n-1}} \varepsilon(\sigma)\, a_{\sigma(1),1} \cdots a_{\sigma(n-1),n-1} = \det A'$$
 
 où $A'$ est la matrice obtenue à partir de $A$ en supprimant la dernière ligne et la dernière colonne.
 
-**b) Calcul de $A_{ij}$.** En échangeant $C_j$ et $C_{j+1}$ (etc.), cas $i = n$ et $j = n$ :
+**b) Calcul de $A\_{ij}$.** En échangeant $C_j$ et $C\_{j+1}$ (etc.), cas $i = n$ et $j = n$ :
 
 $$A_{ij} = (-1)^{i+j}\, \Delta_{ij}$$
 
@@ -689,7 +689,7 @@ $$A_{ij} = (-1)^{i+j}\, \Delta_{ij}$$
 
 $$A_{ij} = (-1)^{i+j} \Delta_{ij}$$
 
-où $\Delta_{ij}$ est le déterminant de la matrice obtenue à partir de $A$ en supprimant la $i$-ème ligne et la $j$-ème colonne.
+où $\Delta\_{ij}$ est le déterminant de la matrice obtenue à partir de $A$ en supprimant la $i$-ème ligne et la $j$-ème colonne.
 
 </div>
 
@@ -697,7 +697,7 @@ où $\Delta_{ij}$ est le déterminant de la matrice obtenue à partir de $A$ en 
 
 <span class="bloc-titre">Définition (mineur)</span>
 
-$\Delta_{ij}$ s'appelle le **mineur** de $a_{ij}$.
+$\Delta\_{ij}$ s'appelle le **mineur** de $a\_{ij}$.
 
 </div>
 
@@ -733,8 +733,8 @@ $$\det A = \sum_{j=1}^n a_{ij} (-1)^{i+j} \Delta_{ij}$$
 
 <span class="bloc-titre">Exemples</span>
 
-- matrice **diagonale** : $D_n = a_1 a_2 \cdots a_n = \prod_{i=1}^n a_i$ ;
-- matrice **triangulaire** : $D_n = a_{11} a_{22} \cdots a_{nn}$.
+- matrice **diagonale** : $D_n = a_1 a_2 \cdots a_n = \prod\_{i=1}^n a_i$ ;
+- matrice **triangulaire** : $D_n = a\_{11} a\_{22} \cdots a\_{nn}$.
 
 </div>
 
@@ -758,7 +758,7 @@ $$\begin{vmatrix} 1 & 1 & 1 & 1 \\ 2 & 3 & 4 & 5 \\ 3 & 6 & 6 & 15 \\ 4 & 16 & 2
 
 $$\Delta_n = \begin{vmatrix} a & b & \cdots & b \\ b & a & \ddots & \vdots \\ \vdots & \ddots & \ddots & b \\ b & \cdots & b & a \end{vmatrix} = (a - b)^{n-1}\big(a + (n-1)b\big)$$
 
-(première méthode : $D_n = (a-b) D_{n-1} + (a-b)^{n-1} b$ ; seconde méthode : $C_1 \leftarrow \sum_j C_j$, on factorise $a + (n-1)b$ sur la première colonne, il reste $a - b$ sur la diagonale du bloc restant).
+(première méthode : $D_n = (a-b) D\_{n-1} + (a-b)^{n-1} b$ ; seconde méthode : $C_1 \leftarrow \sum_j C_j$, on factorise $a + (n-1)b$ sur la première colonne, il reste $a - b$ sur la diagonale du bloc restant).
 
 - **Vandermonde** : pour $x_1, \dots, x_n \in \mathbb{C}$,
 
@@ -773,11 +773,11 @@ Posons $\Delta(X)$ le déterminant de la matrice de Vandermonde où l'on remplac
 
 $$\Delta(X) = \prod_{i=1}^{n-1} (X - x_i) \times Q(X), \qquad \Delta(x_n) = \Delta = \prod_{i=1}^{n-1} (x_n - x_i)\, Q(x_n)$$
 
-**Calcul de $\Delta_n$.** Opérations $C_j \leftarrow C_j - x_n C_{j-1}$ pour $j = n, n-1, \dots, 2$ : chaque ligne $x_i^k$ devient $x_i^{k-1}(x_i - x_n)$, d'où
+**Calcul de $\Delta_n$.** Opérations $C_j \leftarrow C_j - x_n C\_{j-1}$ pour $j = n, n-1, \dots, 2$ : chaque ligne $x_i^k$ devient $x_i^{k-1}(x_i - x_n)$, d'où
 
 $$\Delta_n = (-1)^{n-1} \prod_{i=1}^{n-1} (x_i - x_n)\; \Delta_{n-1} = \prod_{1 \leq i < j \leq n} (x_j - x_i)$$
 
-**2ème méthode.** Soit $P(X) = (X - x_1)\cdots(X - x_{n-1}) = \sum_{k=0}^{n-1} a_k X^k$ avec $a_{n-1} = 1$. Dans $\Delta_n$, remplaçons la dernière ligne $L_n$ par $L_n \leftarrow \sum_{k=0}^{n-1} a_k L_{k+1}$ : la $i$-ème entrée de la nouvelle dernière ligne vaut $\sum_{k=0}^{n-1} a_k x_i^k = P(x_i) = 0$ pour $i = 1,\dots,n-1$. En développant selon cette dernière ligne, il ne reste que le cofacteur de $P(x_n)$ :
+**2ème méthode.** Soit $P(X) = (X - x_1)\cdots(X - x\_{n-1}) = \sum\_{k=0}^{n-1} a_k X^k$ avec $a\_{n-1} = 1$. Dans $\Delta_n$, remplaçons la dernière ligne $L_n$ par $L_n \leftarrow \sum\_{k=0}^{n-1} a_k L\_{k+1}$ : la $i$-ème entrée de la nouvelle dernière ligne vaut $\sum\_{k=0}^{n-1} a_k x_i^k = P(x_i) = 0$ pour $i = 1,\dots,n-1$. En développant selon cette dernière ligne, il ne reste que le cofacteur de $P(x_n)$ :
 
 $$\Delta_n = P(x_n)\, \Delta_{n-1} = \prod_{i=1}^{n-1} (x_n - x_i)\; \Delta_{n-1} = \prod_{1 \leq i < j \leq n} (x_j - x_i)$$
 
@@ -787,11 +787,11 @@ $$\Delta_n = P(x_n)\, \Delta_{n-1} = \prod_{i=1}^{n-1} (x_n - x_i)\; \Delta_{n-1
 
 #### 1. Définition d'une matrice par blocs
 
-Soit $A$ une matrice de $\mathcal{M}_{n,p}(\mathbb{K})$ de terme général $a_{ij}$. On peut écrire $A$ sous la forme
+Soit $A$ une matrice de $\mathcal{M}\_{n,p}(\mathbb{K})$ de terme général $a\_{ij}$. On peut écrire $A$ sous la forme
 
 $$A = \begin{pmatrix} A_1 & A_2 \\ A_3 & A_4 \end{pmatrix}$$
 
-avec $A_1 = (a_{ij})_{1 \leq i \leq m,\ 1 \leq j \leq q} \in \mathcal{M}_{m,q}(\mathbb{K})$, $A_2 \in \mathcal{M}_{m, p-q}(\mathbb{K})$, $A_3 \in \mathcal{M}_{n-m, q}(\mathbb{K})$, $A_4 \in \mathcal{M}_{n-m, p-q}(\mathbb{K})$. On parle alors de **description par blocs**.
+avec $A_1 = (a\_{ij})\_{1 \leq i \leq m,\ 1 \leq j \leq q} \in \mathcal{M}\_{m,q}(\mathbb{K})$, $A_2 \in \mathcal{M}\_{m, p-q}(\mathbb{K})$, $A_3 \in \mathcal{M}\_{n-m, q}(\mathbb{K})$, $A_4 \in \mathcal{M}\_{n-m, p-q}(\mathbb{K})$. On parle alors de **description par blocs**.
 
 <div class="bloc remarque" markdown="1">
 
@@ -799,7 +799,7 @@ avec $A_1 = (a_{ij})_{1 \leq i \leq m,\ 1 \leq j \leq q} \in \mathcal{M}_{m,q}(\
 
 Les dimensions de $A_1$ imposent celles des quatre autres sous-matrices.
 
-Soient $n_1, \dots, n_k$ et $p_1, \dots, p_\ell$ des entiers strictement positifs tels que $n = n_1 + \dots + n_k$ et $p = p_1 + \dots + p_\ell$. On peut alors découper $A$ en $k\ell$ blocs :
+Soient $n_1, \dots, n_k$ et $p_1, \dots, p\_\ell$ des entiers strictement positifs tels que $n = n_1 + \dots + n_k$ et $p = p_1 + \dots + p\_\ell$. On peut alors découper $A$ en $k\ell$ blocs :
 
 $$A = \begin{pmatrix} A_{11} & \cdots & A_{1\ell} \\ \vdots & & \vdots \\ A_{k1} & \cdots & A_{k\ell} \end{pmatrix}, \qquad A_{ij} \in \mathcal{M}_{n_i, p_j}(\mathbb{K})$$
 
@@ -807,11 +807,11 @@ $$A = \begin{pmatrix} A_{11} & \cdots & A_{1\ell} \\ \vdots & & \vdots \\ A_{k1}
 
 #### 2. Multiplication par blocs
 
-Soient à multiplier les deux matrices $A \in \mathcal{M}_{n,p}(\mathbb{K})$ et $B \in \mathcal{M}_{p,q}(\mathbb{K})$ :
+Soient à multiplier les deux matrices $A \in \mathcal{M}\_{n,p}(\mathbb{K})$ et $B \in \mathcal{M}\_{p,q}(\mathbb{K})$ :
 
 $$A = \begin{pmatrix} A_1 & A_2 \\ A_3 & A_4 \end{pmatrix}, \qquad B = \begin{pmatrix} B_1 & B_2 \\ B_3 & B_4 \end{pmatrix}$$
 
-avec $A_1 \in \mathcal{M}_{m,r}(\mathbb{K})$ et $B_1 \in \mathcal{M}_{r,s}(\mathbb{K})$. Alors :
+avec $A_1 \in \mathcal{M}\_{m,r}(\mathbb{K})$ et $B_1 \in \mathcal{M}\_{r,s}(\mathbb{K})$. Alors :
 
 $$AB = \begin{pmatrix} A_1 B_1 + A_2 B_3 & A_1 B_2 + A_2 B_4 \\ A_3 B_1 + A_4 B_3 & A_3 B_2 + A_4 B_4 \end{pmatrix}$$
 
@@ -823,7 +823,7 @@ Tout se passe donc comme si l'on multipliait des matrices de dimensions $(2,2)$ 
 
 $$\begin{pmatrix} 0 & -1 & & \\ -1 & 0 & & \\ & & I_3 & \end{pmatrix} \times \begin{pmatrix} I_2 & & \\ & -I_3 & \end{pmatrix} = \begin{pmatrix} 0 & -1 & & \\ -1 & 0 & & \\ & & & -I_3 \end{pmatrix}$$
 
-**Généralisation** : $A$ matrice à $k \times l$ blocs par $B$ à $l \times d$ blocs (le premier indice désigne le nombre de blocs sur les indices de lignes — « en hauteur » — et le second le nombre de blocs construits sur les indices de colonnes — « en largeur »). Il faut que le nombre de colonnes $p_j$ des blocs $A_{ij}$ soit égal au nombre de lignes $n_j$ des blocs $B_{ji}$ (quel que soit $i$). On calcule alors le produit $AB$ comme si on multipliait deux matrices de dimensions $(k, l)$ et $(l, d)$ dont les coefficients sont des... matrices !
+**Généralisation** : $A$ matrice à $k \times l$ blocs par $B$ à $l \times d$ blocs (le premier indice désigne le nombre de blocs sur les indices de lignes — « en hauteur » — et le second le nombre de blocs construits sur les indices de colonnes — « en largeur »). Il faut que le nombre de colonnes $p_j$ des blocs $A\_{ij}$ soit égal au nombre de lignes $n_j$ des blocs $B\_{ji}$ (quel que soit $i$). On calcule alors le produit $AB$ comme si on multipliait deux matrices de dimensions $(k, l)$ et $(l, d)$ dont les coefficients sont des... matrices !
 
 </div>
 
@@ -844,19 +844,19 @@ $$\det(M) = \det(A)\, \det(C)$$
 
 $$\det(M) = \sum_{\sigma \in \mathfrak{S}_n} \varepsilon(\sigma)\, m_{1\sigma(1)} m_{2\sigma(2)} \cdots m_{n\sigma(n)}$$
 
-Soit $p$ la dimension de $A$ ($C$ est alors de dimension $n - p$). Remarquons que pour $k > p$ : si $\sigma(k) \leq p$ alors $m_{k\sigma(k)} = 0$ ; si $\sigma(k) > p$ alors $m_{k\sigma(k)} = c_{k-p,\, \sigma(k)-p}$.
+Soit $p$ la dimension de $A$ ($C$ est alors de dimension $n - p$). Remarquons que pour $k > p$ : si $\sigma(k) \leq p$ alors $m\_{k\sigma(k)} = 0$ ; si $\sigma(k) > p$ alors $m\_{k\sigma(k)} = c\_{k-p,\, \sigma(k)-p}$.
 
-Soit alors $S = \{\sigma \in \mathfrak{S}_n \mid \sigma(\mathbb{N}_p) \subset \mathbb{N}_p\} = \{\sigma \in \mathfrak{S}_n \mid \sigma(\mathbb{N}_p) = \mathbb{N}_p\} = \{\sigma \in \mathfrak{S}_n \mid \sigma(\{p+1,\dots,n\}) = \{p+1,\dots,n\}\}$, car les éléments du groupe symétrique sont des bijections.
+Soit alors $S = \{\sigma \in \mathfrak{S}\_n \mid \sigma(\mathbb{N}\_p) \subset \mathbb{N}\_p\} = \{\sigma \in \mathfrak{S}\_n \mid \sigma(\mathbb{N}\_p) = \mathbb{N}\_p\} = \{\sigma \in \mathfrak{S}\_n \mid \sigma(\{p+1,\dots,n\}) = \{p+1,\dots,n\}\}$, car les éléments du groupe symétrique sont des bijections.
 
 Donc si $\sigma \notin S$, il existe $k > p$ tel que $\sigma(k) \leq p$, et la participation de $\sigma$ dans l'expression du déterminant est nulle. Finalement :
 
 $$\det(M) = \sum_{\sigma \in S} \varepsilon(\sigma)\, m_{1\sigma(1)} \cdots m_{n\sigma(n)}$$
 
-Étudions $S$ : pour $\sigma \in S$, posons $\sigma_1$ la restriction de $\sigma$ à $\mathbb{N}_p$ et $\sigma_2$ sa restriction à $\{p+1,\dots,n\}$. $\sigma_1$ est une permutation de $\{1,\dots,p\}$ et $\sigma_2$ une permutation de $\{p+1,\dots,n\}$, et $\sigma = \sigma_1 \sigma_2$. Réciproquement, tout produit $\sigma_1 \sigma_2$ de telles permutations est clairement élément de $S$ :
+Étudions $S$ : pour $\sigma \in S$, posons $\sigma_1$ la restriction de $\sigma$ à $\mathbb{N}\_p$ et $\sigma_2$ sa restriction à $\{p+1,\dots,n\}$. $\sigma_1$ est une permutation de $\{1,\dots,p\}$ et $\sigma_2$ une permutation de $\{p+1,\dots,n\}$, et $\sigma = \sigma_1 \sigma_2$. Réciproquement, tout produit $\sigma_1 \sigma_2$ de telles permutations est clairement élément de $S$ :
 
 $$S = \{\sigma_1 \sigma_2 \mid \sigma_1 \in \mathfrak{S}(\{1,\dots,p\}),\ \sigma_2 \in \mathfrak{S}(\{p+1,\dots,n\})\}$$
 
-En remarquant que pour $i > p$ et $j > p$, $m_{ij} = c_{i-p, j-p}$, et que la signature est un morphisme, il vient :
+En remarquant que pour $i > p$ et $j > p$, $m\_{ij} = c\_{i-p, j-p}$, et que la signature est un morphisme, il vient :
 
 $$\det(M) = \Big( \sum_{\sigma_1 \in \mathfrak{S}_p} \varepsilon(\sigma_1)\, a_{1\sigma_1(1)} \cdots a_{p\sigma_1(p)} \Big) \Big( \sum_{\sigma_2 \in \mathfrak{S}_{n-p}} \varepsilon(\sigma_2)\, c_{1\sigma_2(1)} \cdots c_{(n-p)\sigma_2(n-p)} \Big) = \det(A)\, \det(C)$$
 
@@ -882,7 +882,7 @@ $M$ diagonale par blocs, avec des blocs $\begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pm
 
 #### 1) Diagonalisation
 
-Soit $A \in \mathcal{M}_n(\mathbb{K})$. $\lambda$ est **valeur propre** de $A$ ssi $\ker(A - \lambda I) \neq \{0\}$ ssi $A - \lambda I$ est non inversible ssi $\det(A - \lambda I) = 0$ :
+Soit $A \in \mathcal{M}\_n(\mathbb{K})$. $\lambda$ est **valeur propre** de $A$ ssi $\ker(A - \lambda I) \neq \{0\}$ ssi $A - \lambda I$ est non inversible ssi $\det(A - \lambda I) = 0$ :
 
 $$\begin{vmatrix} a_{11} - \lambda & \cdots & a_{1n} \\ \vdots & & \vdots \\ a_{n1} & \cdots & a_{nn} - \lambda \end{vmatrix} = 0$$
 
@@ -899,7 +899,7 @@ $\chi_A(\lambda)$ est un **polynôme en $\lambda$ de degré $n$**, dont les raci
 <div class="bloc demo" markdown="1">
 <span class="bloc-titre">Démonstration</span>
 
-$\chi_A(\lambda) = \sum_{\sigma \in \mathfrak{S}_n} \varepsilon(\sigma)\, b_{1\sigma(1)} \cdots b_{n\sigma(n)}$ avec $B = A - \lambda I$. En développant, $\chi_A(\lambda)$ est de degré au plus $n$, et le terme de plus haut degré est obtenu pour $\sigma = \mathrm{Id}$ : $(-\lambda)^n$.
+$\chi_A(\lambda) = \sum\_{\sigma \in \mathfrak{S}\_n} \varepsilon(\sigma)\, b\_{1\sigma(1)} \cdots b\_{n\sigma(n)}$ avec $B = A - \lambda I$. En développant, $\chi_A(\lambda)$ est de degré au plus $n$, et le terme de plus haut degré est obtenu pour $\sigma = \mathrm{Id}$ : $(-\lambda)^n$.
 
 </div>
 
@@ -915,7 +915,7 @@ $$\det(A - \lambda I) = (4-\lambda)(1-\lambda) + 2 = \lambda^2 - 5\lambda + 6 = 
 
 #### 2°) Calcul de $A^{-1}$
 
-Par développement selon la $j$-ème colonne : $\det A = \sum_{j=1}^n a_{ij} A_{ij}$. De même, $\sum_i a_{ik} A_{ij} = \delta_{jk} \det A$ (le déterminant $\det(C_1,\dots,C_j,\dots,C_n)$ vaut $0$ dès que deux colonnes sont égales), avec ${}^t\widetilde{A}_{ij} = A_{ji}$ (${}^t\widetilde{A}$ est la transposée de la matrice des cofacteurs, appelée **comatrice**) :
+Par développement selon la $j$-ème colonne : $\det A = \sum\_{j=1}^n a\_{ij} A\_{ij}$. De même, $\sum_i a\_{ik} A\_{ij} = \delta\_{jk} \det A$ (le déterminant $\det(C_1,\dots,C_j,\dots,C_n)$ vaut $0$ dès que deux colonnes sont égales), avec ${}^t\widetilde{A}\_{ij} = A\_{ji}$ (${}^t\widetilde{A}$ est la transposée de la matrice des cofacteurs, appelée **comatrice**) :
 
 $${}^t\widetilde{A}\, A = (\det A)\, I_n$$
 
@@ -941,7 +941,7 @@ Soit $\mathcal{E}$ l'ensemble des bases orientées de $E$. On définit sur $\mat
 
 $$\varepsilon \mathrel{\mathcal{R}} \varepsilon' \iff \det\nolimits_{\varepsilon}(\varepsilon') > 0$$
 
-où $\det_{\varepsilon}(\varepsilon')$ désigne le déterminant de la matrice de passage de la base $\varepsilon$ à la base $\varepsilon'$.
+où $\det\_{\varepsilon}(\varepsilon')$ désigne le déterminant de la matrice de passage de la base $\varepsilon$ à la base $\varepsilon'$.
 
 <div class="bloc propriete" markdown="1">
 
@@ -949,11 +949,11 @@ où $\det_{\varepsilon}(\varepsilon')$ désigne le déterminant de la matrice de
 
 $\mathcal{R}$ est une **relation d'équivalence** :
 
-- $\det_{\varepsilon}(\varepsilon) = 1 > 0$ : $\mathcal{R}$ est réflexive ;
-- si $\det_{\varepsilon}(\varepsilon') > 0$ et $\det_{\varepsilon}(\varepsilon'') > 0$, alors
-  $\det_{\varepsilon}(\varepsilon')\, \det_{\varepsilon'}(\varepsilon'') = \det_{\varepsilon}(\varepsilon'') > 0$,
-  donc $\det_{\varepsilon'}(\varepsilon'') > 0$ : $\mathcal{R}$ est transitive ;
-- $\det_{\varepsilon'}(\varepsilon) = \dfrac{1}{\det_{\varepsilon}(\varepsilon')} > 0$ : $\mathcal{R}$ est symétrique.
+- $\det\_{\varepsilon}(\varepsilon) = 1 > 0$ : $\mathcal{R}$ est réflexive ;
+- si $\det\_{\varepsilon}(\varepsilon') > 0$ et $\det\_{\varepsilon}(\varepsilon'') > 0$, alors
+  $\det\_{\varepsilon}(\varepsilon')\, \det\_{\varepsilon'}(\varepsilon'') = \det\_{\varepsilon}(\varepsilon'') > 0$,
+  donc $\det\_{\varepsilon'}(\varepsilon'') > 0$ : $\mathcal{R}$ est transitive ;
+- $\det\_{\varepsilon'}(\varepsilon) = \dfrac{1}{\det\_{\varepsilon}(\varepsilon')} > 0$ : $\mathcal{R}$ est symétrique.
 
 </div>
 
@@ -1161,18 +1161,18 @@ Pour trouver $A'$, on résout les $n$ systèmes $AX = E_i$ ($E_i$ colonne, $i = 
 <li>
 <ol>
 <li>Montrer que la transposition $(i\ j)$ s'écrit comme produit de transpositions du type $(1, k)$.</li>
-<li>En déduire que $(\tau_k = (1, k))_{k = 2, \dots, n}$ engendre $\mathfrak{S}_n$.</li>
-<li>Démontrer de même que les transpositions $(i, i+1)$ engendrent $\mathfrak{S}_n$.</li>
+<li>En déduire que $(\tau_k = (1, k))\_{k = 2, \dots, n}$ engendre $\mathfrak{S}\_n$.</li>
+<li>Démontrer de même que les transpositions $(i, i+1)$ engendrent $\mathfrak{S}\_n$.</li>
 </ol>
 </li>
-<li>Montrer que $\mathfrak{S}_n$ est engendré par les cycles de longueur 3 ($n \geq 3$).</li>
+<li>Montrer que $\mathfrak{S}\_n$ est engendré par les cycles de longueur 3 ($n \geq 3$).</li>
 </ol>
 
 **Déterminants**
 
 <ol class="enonces">
 <li>Calculer le déterminant d'une matrice antisymétrique.</li>
-<li>Trouver $d \in \mathbb{R}$ pour que $(P_1, P_2, P_3)$ forment une base de $\mathbb{R}_3[X]$, avec
+<li>Trouver $d \in \mathbb{R}$ pour que $(P_1, P_2, P_3)$ forment une base de $\mathbb{R}\_3[X]$, avec
 $$P_1 = d + x + x^2, \qquad P_2 = 1 + dx + x^2, \qquad P_3 = 1 + x + dx^2$$
 </li>
 <li>Calculer les déterminants suivants :
@@ -1184,8 +1184,8 @@ $$P_1 = d + x + x^2, \qquad P_2 = 1 + dx + x^2, \qquad P_3 = 1 + x + dx^2$$
 <li>$\Delta_n = \begin{vmatrix} 0 & 1 & \cdots & 1 \\ 1 & 0 & \ddots & x \\ \vdots & \ddots & \ddots & \vdots \\ 1 & x & \cdots & 0 \end{vmatrix}$</li>
 <li>$\begin{vmatrix} 1 & 2 & \cdots & n \\ m & 1 & 2 & \cdots & n-1 \\ \vdots & \ddots & \ddots & & \vdots \\ m & \cdots & m & 1 \end{vmatrix}$</li>
 <li>$D_n = \begin{vmatrix} a_1 & 1 & \cdots & a_n \\ -1 & x & \ddots & 0 \\ \vdots & \ddots & \ddots & \vdots \\ 0 & \cdots & -1 & x \end{vmatrix}$</li>
-<li>$\det(A)$ avec $a_{ij} = i - j$</li>
-<li>$\det(A)$ avec $a_{ij} = \dbinom{j}{m+i}$, $m \in \mathbb{N}$ fixé</li>
+<li>$\det(A)$ avec $a\_{ij} = i - j$</li>
+<li>$\det(A)$ avec $a\_{ij} = \dbinom{j}{m+i}$, $m \in \mathbb{N}$ fixé</li>
 </ol>
 </li>
 <li>Soit
@@ -1208,7 +1208,7 @@ Introduire $D_n(x)$, le déterminant obtenu en ajoutant $x$ à tous les coeffici
 <span class="bloc-titre">Feuille d'exercices n° 24 (suite) — Déterminants, systèmes linéaires (énoncés)</span>
 
 <ol class="enonces">
-<li>Soit $a_1, \dots, a_n, b_1, \dots, b_n$ $2n$ complexes tels que $\forall i, j,\ a_i + b_j \neq 0$. Calculer $\det M$ où $M$ est la matrice de terme général $m_{ij} = a_i + b_j$ (on pourra introduire une fraction rationnelle astucieusement choisie).</li>
+<li>Soit $a_1, \dots, a_n, b_1, \dots, b_n$ $2n$ complexes tels que $\forall i, j,\ a_i + b_j \neq 0$. Calculer $\det M$ où $M$ est la matrice de terme général $m\_{ij} = a_i + b_j$ (on pourra introduire une fraction rationnelle astucieusement choisie).</li>
 <li>Pour quelles valeurs de $a$ la matrice suivante est-elle diagonalisable ? inversible ?
 $$A = \begin{pmatrix} 6 & 2 & 0 \\ 2 & 3 & 0 \\ a^2 - 7a & a - 7 & a \end{pmatrix}$$</li>
 <li>Résoudre le système selon les valeurs du réel $m$ :

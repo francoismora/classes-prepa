@@ -69,7 +69,7 @@ $$a \mid \sum_{i=1}^{n} u_i\, x_i$$
 
 <span class="bloc-titre">Théorème (division euclidienne dans $\mathbb{Z}$)</span>
 
-Pour tout couple $(a, b) \in \mathbb{Z} \times \mathbb{N}^*$, il existe un unique couple $(q, r) \in \mathbb{Z}^2$ tel que
+Pour tout couple $(a, b) \in \mathbb{Z} \times \mathbb{N}^\*$, il existe un unique couple $(q, r) \in \mathbb{Z}^2$ tel que
 
 $$a = bq + r, \qquad 0 \leq r < b$$
 
@@ -137,7 +137,7 @@ Le pgcd de $a_1, \dots, a_n$ est le **plus grand diviseur commun au sens de la d
 
 <span class="bloc-titre">Démonstration</span>
 
-Posons $\Delta = \operatorname{pgcd}(a_1, \dots, a_n)$ et $\delta = \operatorname{pgcd}(a_2, \dots, a_n)$. On a $\Delta\mathbb{Z} = a_1\mathbb{Z} + \dots + a_n\mathbb{Z}$. Chaque $a_i$ s'écrit $a_i = 0 + \dots + a_i \times 1 + \dots + 0 \in \Delta\mathbb{Z}$, donc $\Delta \mid a_i$ : $\Delta$ est un diviseur commun. D'autre part $\Delta = \sum_{i=1}^{n} u_i a_i$ avec $u_i \in \mathbb{Z}$ ; si $d' \mid a_i$ pour tout $i$, alors $d' \mid \sum u_i a_i = \Delta$. Enfin, si $a_1 = 0$ : $\Delta\mathbb{Z} = \{0\} + a_2\mathbb{Z} + \dots + a_n\mathbb{Z} = \delta\mathbb{Z}$, donc $\Delta = \delta$ au signe près ; on se ramène ainsi à des nombres positifs non nuls.
+Posons $\Delta = \operatorname{pgcd}(a_1, \dots, a_n)$ et $\delta = \operatorname{pgcd}(a_2, \dots, a_n)$. On a $\Delta\mathbb{Z} = a_1\mathbb{Z} + \dots + a_n\mathbb{Z}$. Chaque $a_i$ s'écrit $a_i = 0 + \dots + a_i \times 1 + \dots + 0 \in \Delta\mathbb{Z}$, donc $\Delta \mid a_i$ : $\Delta$ est un diviseur commun. D'autre part $\Delta = \sum\_{i=1}^{n} u_i a_i$ avec $u_i \in \mathbb{Z}$ ; si $d' \mid a_i$ pour tout $i$, alors $d' \mid \sum u_i a_i = \Delta$. Enfin, si $a_1 = 0$ : $\Delta\mathbb{Z} = \{0\} + a_2\mathbb{Z} + \dots + a_n\mathbb{Z} = \delta\mathbb{Z}$, donc $\Delta = \delta$ au signe près ; on se ramène ainsi à des nombres positifs non nuls.
 
 </div>
 
@@ -157,7 +157,7 @@ $$\operatorname{pgcd}(a_1, \dots, a_n) = \operatorname{pgcd}\big(\operatorname{p
 
 <span class="bloc-titre">Démonstration</span>
 
-$a_1\mathbb{Z} + \dots + a_n\mathbb{Z}$ ne dépend pas de l'ordre des $a_i$. Posons $\Delta = \operatorname{pgcd}(a_1, \dots, a_n)$, $\delta = \operatorname{pgcd}(a_1, \dots, a_p)$ et $\Delta' = \operatorname{pgcd}(\delta, a_{p+1}, \dots, a_n)$. Comme $\Delta \mid a_i$ pour tout $i$, en particulier $\Delta \mid \delta$ (car $\delta = \operatorname{pgcd}(a_1, \dots, a_p)$), donc $\Delta$ divise $\delta, a_{p+1}, \dots, a_n$, d'où $\Delta \mid \Delta'$. Réciproquement, $\Delta' \mid \delta$ et $\Delta' \mid a_i$ pour $i > p$ ; par transitivité $\Delta' \mid a_i$ pour tout $i$, donc $\Delta' \mid \Delta$. Ainsi $\Delta = \Delta'$.
+$a_1\mathbb{Z} + \dots + a_n\mathbb{Z}$ ne dépend pas de l'ordre des $a_i$. Posons $\Delta = \operatorname{pgcd}(a_1, \dots, a_n)$, $\delta = \operatorname{pgcd}(a_1, \dots, a_p)$ et $\Delta' = \operatorname{pgcd}(\delta, a\_{p+1}, \dots, a_n)$. Comme $\Delta \mid a_i$ pour tout $i$, en particulier $\Delta \mid \delta$ (car $\delta = \operatorname{pgcd}(a_1, \dots, a_p)$), donc $\Delta$ divise $\delta, a\_{p+1}, \dots, a_n$, d'où $\Delta \mid \Delta'$. Réciproquement, $\Delta' \mid \delta$ et $\Delta' \mid a_i$ pour $i > p$ ; par transitivité $\Delta' \mid a_i$ pour tout $i$, donc $\Delta' \mid \Delta$. Ainsi $\Delta = \Delta'$.
 
 </div>
 
@@ -193,7 +193,7 @@ $$\operatorname{pgcd}\left(\frac{a_1}{d}, \frac{a_2}{d}, \dots, \frac{a_n}{d}\ri
 
 <span class="bloc-titre">Propriété 4</span>
 
-Soient $a, b \in \mathbb{N} \times \mathbb{N}^*$, $d = a \wedge b$, $a = da'$ et $b = db'$. Alors
+Soient $a, b \in \mathbb{N} \times \mathbb{N}^\*$, $d = a \wedge b$, $a = da'$ et $b = db'$. Alors
 
 $$\operatorname{pgcd}(a, b) = \operatorname{pgcd}(b, r)$$
 
@@ -215,11 +215,11 @@ Posons $d' = b \wedge r$, avec $a = bq + r$, $0 \leq r < b$. Comme $d = a \wedge
 
 <span class="bloc-titre">Algorithme d'Euclide</span>
 
-Soient $a > 0$, $b > 0$. On initialise $r_0 = a$, $r_1 = b$ ; tant que $r_i > 0$, on définit $r_{i+1}$ comme le reste de la division euclidienne de $r_{i-1}$ par $r_i$ (pour $i \geq 1$) :
+Soient $a > 0$, $b > 0$. On initialise $r_0 = a$, $r_1 = b$ ; tant que $r_i > 0$, on définit $r\_{i+1}$ comme le reste de la division euclidienne de $r\_{i-1}$ par $r_i$ (pour $i \geq 1$) :
 
 $$r_{i-1} = r_i q_i + r_{i+1}, \qquad 0 \leq r_{i+1} < r_i$$
 
-L'algorithme s'arrête lorsque $r_{k+1} = 0$ ; alors
+L'algorithme s'arrête lorsque $r\_{k+1} = 0$ ; alors
 
 $$\operatorname{pgcd}(a, b) = r_k$$
 
@@ -231,7 +231,7 @@ le pgcd est le **dernier reste non nul**.
 
 <span class="bloc-titre">Démonstration</span>
 
-Tant qu'elle ne s'annule pas, la suite $(r_i)$ est strictement décroissante ($r_{i+1} < r_i$) et à valeurs dans $\mathbb{N}$ : elle atteint donc $0$ en un nombre fini d'étapes (au bout d'au plus $b$ étapes, puisque $r_k \leq b - k$). Alors $r_{k+1} = 0$, et d'après la propriété 4 :
+Tant qu'elle ne s'annule pas, la suite $(r_i)$ est strictement décroissante ($r\_{i+1} < r_i$) et à valeurs dans $\mathbb{N}$ : elle atteint donc $0$ en un nombre fini d'étapes (au bout d'au plus $b$ étapes, puisque $r_k \leq b - k$). Alors $r\_{k+1} = 0$, et d'après la propriété 4 :
 
 $$\operatorname{pgcd}(a, b) = \operatorname{pgcd}(r_0, r_1) = \operatorname{pgcd}(r_1, r_2) = \dots = \operatorname{pgcd}(r_k, r_{k+1}) = \operatorname{pgcd}(r_k, 0) = r_k$$
 
@@ -295,11 +295,11 @@ Si $a$ est premier avec $a_1, \dots, a_n$ (chacun), alors $a$ est premier avec l
 
 <span class="bloc-titre">Démonstration</span>
 
-Récurrence $H_k$ : $a \wedge (a_1 \cdots a_k) = 1$ ($k \geq 1$). $H_1$ est vrai : $a \wedge a_1 = 1$. Supposons $H_k$ pour $1 \leq k \leq n - 1$ ($n \geq 2$) : par Bézout, $au + (a_1 \cdots a_k)v = 1$ avec $u, v \in \mathbb{Z}$ ; de même $a \wedge a_{k+1} = 1$ donne $au' + a_{k+1}v' = 1$. En développant le produit :
+Récurrence $H_k$ : $a \wedge (a_1 \cdots a_k) = 1$ ($k \geq 1$). $H_1$ est vrai : $a \wedge a_1 = 1$. Supposons $H_k$ pour $1 \leq k \leq n - 1$ ($n \geq 2$) : par Bézout, $au + (a_1 \cdots a_k)v = 1$ avec $u, v \in \mathbb{Z}$ ; de même $a \wedge a\_{k+1} = 1$ donne $au' + a\_{k+1}v' = 1$. En développant le produit :
 
 $$(au' + a_{k+1}v')(au + (a_1 \cdots a_k)v) = 1$$
 
-on obtient $a \times (\dots) + a_{k+1}(a_1 \cdots a_k)(vv') = 1$, donc $a \wedge (a_1 \cdots a_{k+1}) = 1$.
+on obtient $a \times (\dots) + a\_{k+1}(a_1 \cdots a_k)(vv') = 1$, donc $a \wedge (a_1 \cdots a\_{k+1}) = 1$.
 
 </div>
 
@@ -307,7 +307,7 @@ on obtient $a \times (\dots) + a_{k+1}(a_1 \cdots a_k)(vv') = 1$, donc $a \wedge
 
 <span class="bloc-titre">Corollaire</span>
 
-Si $a \wedge b = 1$, alors pour tous $p, q \in \mathbb{N}^*$ : $a^p \wedge b^q = 1$.
+Si $a \wedge b = 1$, alors pour tous $p, q \in \mathbb{N}^\*$ : $a^p \wedge b^q = 1$.
 
 </div>
 
@@ -347,7 +347,7 @@ Si $a_1, \dots, a_n$ divisent $a$ et sont premiers entre eux deux à deux, alors
 
 <span class="bloc-titre">Démonstration</span>
 
-Récurrence $H_k$ : $a_1 \cdots a_k \mid a$. Si $H_k$ est vrai ($1 \leq k \leq n - 1$) : $a = (a_1 \cdots a_k) q$ avec $q \in \mathbb{Z}$. Comme $a_{k+1} \mid a$, on a $a_{k+1} \mid (a_1 \cdots a_k) q$ ; or $a_{k+1}$ est premier avec $a_1, \dots, a_k$, donc avec leur produit, et par le théorème de Gauss $a_{k+1} \mid q$ : $q = a_{k+1} m$ avec $m \in \mathbb{Z}$, donc $a = (a_1 \cdots a_{k+1}) m$, ce qui prouve $H_{k+1}$.
+Récurrence $H_k$ : $a_1 \cdots a_k \mid a$. Si $H_k$ est vrai ($1 \leq k \leq n - 1$) : $a = (a_1 \cdots a_k) q$ avec $q \in \mathbb{Z}$. Comme $a\_{k+1} \mid a$, on a $a\_{k+1} \mid (a_1 \cdots a_k) q$ ; or $a\_{k+1}$ est premier avec $a_1, \dots, a_k$, donc avec leur produit, et par le théorème de Gauss $a\_{k+1} \mid q$ : $q = a\_{k+1} m$ avec $m \in \mathbb{Z}$, donc $a = (a_1 \cdots a\_{k+1}) m$, ce qui prouve $H\_{k+1}$.
 
 </div>
 
@@ -826,7 +826,7 @@ Si $n$ n'est pas premier : $n = qr$ avec $2 \leq q \leq n$, $2 \leq r \leq n$ (e
 
 <span class="bloc-titre">Corollaire</span>
 
-Si $p$ est premier, $(\mathbb{Z}/p\mathbb{Z})^*$ est un **groupe commutatif**.
+Si $p$ est premier, $(\mathbb{Z}/p\mathbb{Z})^\*$ est un **groupe commutatif**.
 
 </div>
 
@@ -858,7 +858,7 @@ Injectivité : soit $\overline{q} \in \ker \varphi$, c'est-à-dire $a^q = 1$ ; o
 
 <span class="bloc-titre">Définition</span>
 
-Une racine $n$-ième de l'unité est dite **primitive** si elle est génératrice du groupe $\mathcal{U}_n$ des racines $n$-ièmes de l'unité.
+Une racine $n$-ième de l'unité est dite **primitive** si elle est génératrice du groupe $\mathcal{U}\_n$ des racines $n$-ièmes de l'unité.
 
 </div>
 
@@ -938,7 +938,7 @@ Avec $n = a_0 + 10 a_1 + \dots + 10^k a_k$ et $10 \equiv -1 \pmod{11}$ :
 
 $$n \equiv a_0 - a_1 + a_2 - \dots + (-1)^k a_k \pmod{11}$$
 
-donc $11 \mid n \iff 11 \mid \sum_{i=0}^{k} (-1)^i a_i$.
+donc $11 \mid n \iff 11 \mid \sum\_{i=0}^{k} (-1)^i a_i$.
 
 </div>
 
@@ -1042,7 +1042,7 @@ donc $173 \equiv 2 \pmod{9}$.
 </ol>
 </li>
 <li>Calculer $a^n \wedge b^n$.</li>
-<li>Montrer que $a_1 \wedge a_2 \wedge \dots \wedge a_n = r_1 \wedge r_2 \wedge \dots \wedge r_{n-1} \wedge a_n$, où les $r_i$ sont les restes respectifs de la division euclidienne de $a_i$ par $a_n$. Application : trouver le pgcd de $(350,\ 375,\ 275,\ 100)$.</li>
+<li>Montrer que $a_1 \wedge a_2 \wedge \dots \wedge a_n = r_1 \wedge r_2 \wedge \dots \wedge r\_{n-1} \wedge a_n$, où les $r_i$ sont les restes respectifs de la division euclidienne de $a_i$ par $a_n$. Application : trouver le pgcd de $(350,\ 375,\ 275,\ 100)$.</li>
 <li>Trouver $n$ sachant que les restes de la division euclidienne de $4373$ et $826$ par $n$ sont respectivement $8$ et $7$.</li>
 <li>Soit $G$ un groupe fini et $a$ un élément d'ordre $n$. Montrer que $a^d$ est d'ordre $\dfrac{n}{n \wedge d}$. En déduire les sous-groupes d'un groupe d'ordre $p$ premier.</li>
 <li>Soit $F$ et $H$ deux sous-groupes d'un groupe $G$, d'ordres respectifs $r$ et $s$. Montrer que si $r \wedge s = 1$ alors $F \cap H = \{e\}$. On suppose de plus $G$ abélien : montrer que si $x$ est d'ordre $r$ et $y$ d'ordre $s$, alors $xy$ est d'ordre $rs$. Contre-exemple si $r$ et $s$ ne sont pas premiers entre eux.</li>
@@ -1053,7 +1053,7 @@ $$\begin{cases} x + y = 10 \\ x \vee y = 21 \end{cases} \qquad \text{et} \qquad 
 <li>On veut décomposer $n!$ en facteurs premiers :
 <ol>
 <li>Quels sont les nombres premiers intervenant dans cette décomposition ?</li>
-<li>Soit $p$ l'un d'eux. On construit la suite suivante : $q_0 := n$ et $q_{i+1}$ est le quotient de la division euclidienne de $q_i$ par $p$. Soit $k$ le premier entier tel que $q_{k+1} = 0$. Montrer que $q_1$ est le nombre d'entiers non nuls divisibles par $p$ et inférieurs à $n$. Puis que $q_1 + q_2 + \dots + q_k$ est la puissance de $p$ dans la décomposition de $n!$.</li>
+<li>Soit $p$ l'un d'eux. On construit la suite suivante : $q_0 := n$ et $q\_{i+1}$ est le quotient de la division euclidienne de $q_i$ par $p$. Soit $k$ le premier entier tel que $q\_{k+1} = 0$. Montrer que $q_1$ est le nombre d'entiers non nuls divisibles par $p$ et inférieurs à $n$. Puis que $q_1 + q_2 + \dots + q_k$ est la puissance de $p$ dans la décomposition de $n!$.</li>
 <li>Décomposer $100!$. Par combien de zéros se termine $100!$ ?</li>
 </ol>
 </li>
@@ -1115,17 +1115,17 @@ $$\begin{cases} x \equiv 4 \ [7] \\ x \equiv 9 \ [11] \end{cases} \qquad \text{e
 **Algorithme d'Euclide.** On considère deux entiers $a$ et $b$ tels que $0 \leq b < a$, et l'algorithme suivant :
 
 - 1ère étape : $r_0 := a$, $r_1 := b$ ;
-- 2ème étape : pour $i \geq 1$, tant que $r_i$ est non nul, calculer $r_{i+1}$ tel que
+- 2ème étape : pour $i \geq 1$, tant que $r_i$ est non nul, calculer $r\_{i+1}$ tel que
 $$r_{i-1} = r_i\, q_i + r_{i+1} \qquad \text{et} \qquad 0 \leq r_{i+1} < r_i$$
 
 On note $r_k$ le dernier reste non nul ; on rappelle que $r_k = \operatorname{pgcd}(a, b)$.
 
 <ol class="enonces">
-<li>Montrer à l'aide de cet algorithme que deux termes consécutifs de la suite de Fibonacci sont premiers entre eux. (Rappel : la suite de Fibonacci est définie par $F_0 = 0$, $F_1 = 1$, et pour $i \geq 1$ : $F_{i+1} = F_{i-1} + F_i$.)</li>
-<li>Montrer que $r_k \geq F_2$ et en déduire, à l'aide d'une récurrence, que $b \geq F_{k+1}$.</li>
+<li>Montrer à l'aide de cet algorithme que deux termes consécutifs de la suite de Fibonacci sont premiers entre eux. (Rappel : la suite de Fibonacci est définie par $F_0 = 0$, $F_1 = 1$, et pour $i \geq 1$ : $F\_{i+1} = F\_{i-1} + F_i$.)</li>
+<li>Montrer que $r_k \geq F_2$ et en déduire, à l'aide d'une récurrence, que $b \geq F\_{k+1}$.</li>
 <li>On rappelle que
 $$F_n = \frac{1}{\sqrt{5}}\big(\alpha^n - \beta^n\big), \qquad \alpha = \frac{1+\sqrt{5}}{2}, \quad \beta = \frac{1-\sqrt{5}}{2}$$
-Montrer que $F_{k+1} \geq \alpha^{k-1}$ et en déduire que $k - 1 \leq 5\log_{10} b$ (le nombre d'étapes de l'algorithme d'Euclide est majoré par 5 fois le nombre de chiffres de l'écriture décimale de $b$).</li>
+Montrer que $F\_{k+1} \geq \alpha^{k-1}$ et en déduire que $k - 1 \leq 5\log\_{10} b$ (le nombre d'étapes de l'algorithme d'Euclide est majoré par 5 fois le nombre de chiffres de l'écriture décimale de $b$).</li>
 <li>**Coefficients de Bézout.** On introduit, pour $i \leq k$, les quantités $u_i$ et $v_i$ définies par $u_0 = v_1 := 1$, $u_1 = v_0 := 0$ et la formule de récurrence
 $$\begin{cases} u_{i+1} = u_{i-1} - q_i\, u_i \\ v_{i+1} = v_{i-1} - q_i\, v_i \end{cases}$$
 Montrer que, pour tout $i \geq 0$, $r_i = u_i\, a + v_i\, b$, et que $\operatorname{pgcd}(a, b) = u_k\, a + v_k\, b$.</li>

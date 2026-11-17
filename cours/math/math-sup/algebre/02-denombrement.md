@@ -110,7 +110,7 @@ Soit $A = \{n \in \mathbb{N} \mid P(n) \text{ est vrai}\}$. $A$ contient $0$ ; s
 
 <span class="bloc-titre">Exemple</span>
 
-Application de la récurrence à une propriété $H_n$ portant sur « une boîte de $n$ crayons » ($H_1$ vraie ; de $H_n$ on déduit $H_{n+1}$ en considérant les paquets ① ② ③ d'une boîte de $n+1$ crayons). *Passage partiellement illisible sur le scan.*
+Application de la récurrence à une propriété $H_n$ portant sur « une boîte de $n$ crayons » ($H_1$ vraie ; de $H_n$ on déduit $H\_{n+1}$ en considérant les paquets ① ② ③ d'une boîte de $n+1$ crayons). *Passage partiellement illisible sur le scan.*
 
 </div>
 
@@ -182,7 +182,7 @@ Or $4^n + 2$ est multiple de $3$ (récurrence immédiate : $4^{n+1} + 2 = 3 \cdo
 
 <span class="bloc-titre">Théorème (division euclidienne)</span>
 
-Soit $(a, b) \in \mathbb{N} \times \mathbb{N}^*$. Il existe un unique couple $(q, r) \in \mathbb{N}^2$ tel que
+Soit $(a, b) \in \mathbb{N} \times \mathbb{N}^\*$. Il existe un unique couple $(q, r) \in \mathbb{N}^2$ tel que
 
 $$a = bq + r \quad \text{et} \quad 0 \leq r < b$$
 
@@ -204,7 +204,7 @@ $q$ s'appelle le **quotient** et $r$ le **reste** de la division euclidienne de 
 
 <span class="bloc-titre">Corollaire</span>
 
-Si $(a, b) \in \mathbb{N} \times \mathbb{N}^*$, alors $b \mid a$ si et seulement si le reste de la division euclidienne de $a$ par $b$ est nul.
+Si $(a, b) \in \mathbb{N} \times \mathbb{N}^\*$, alors $b \mid a$ si et seulement si le reste de la division euclidienne de $a$ par $b$ est nul.
 
 </div>
 
@@ -224,7 +224,7 @@ Si $b \mid a$ : $a = bq$ avec $q \in \mathbb{N}$, et $a = bq + 0$ avec $0 \leq 0
 
 <span class="bloc-titre">Définition</span>
 
-Un ensemble $E$ est **fini** s'il existe une bijection avec un ensemble $\mathbb{N}_n = \{0, 1, \dots, n-1\}$. On admet que $n$ est unique et on l'appelle le **cardinal** de $E$, noté $\mathrm{Card}\,E = n$ (par convention, $\mathrm{Card}\,\varnothing = 0$).
+Un ensemble $E$ est **fini** s'il existe une bijection avec un ensemble $\mathbb{N}\_n = \{0, 1, \dots, n-1\}$. On admet que $n$ est unique et on l'appelle le **cardinal** de $E$, noté $\mathrm{Card}\,E = n$ (par convention, $\mathrm{Card}\,\varnothing = 0$).
 
 </div>
 
@@ -261,7 +261,7 @@ $$\mathrm{Card}(A \times B) = \mathrm{Card}\,A \times \mathrm{Card}\,B$$
 
 <span class="bloc-titre">Démonstration</span>
 
-Écrivons $E = \{a_0, a_1, \dots, a_{n-1}\}$ ; si $f$ est injective, $F$ contient $\{f(a_0), f(a_1), \dots, f(a_{n-1})\}$, qui a $n$ éléments distincts, donc $F$ contient au moins $n$ éléments : $\mathrm{Card}\,F \geq n$. Si de plus $\mathrm{Card}\,F = n$, alors $\mathrm{Card}\,E \leq \mathrm{Card}\,F = n$.
+Écrivons $E = \{a_0, a_1, \dots, a\_{n-1}\}$ ; si $f$ est injective, $F$ contient $\{f(a_0), f(a_1), \dots, f(a\_{n-1})\}$, qui a $n$ éléments distincts, donc $F$ contient au moins $n$ éléments : $\mathrm{Card}\,F \geq n$. Si de plus $\mathrm{Card}\,F = n$, alors $\mathrm{Card}\,E \leq \mathrm{Card}\,F = n$.
 
 </div>
 
@@ -278,7 +278,7 @@ $$\mathrm{Card}(A \times B) = \mathrm{Card}\,A \times \mathrm{Card}\,B$$
 
 <span class="bloc-titre">Démonstration</span>
 
-Si $f$ est surjective, $f(E) = F = \{f(a_i) \mid i \in \mathbb{N}_n\}$, donc $F$ a au plus $n$ éléments : $\mathrm{Card}\,F \leq n$. Si de plus $\mathrm{Card}\,F = n$, alors $\mathrm{Card}\,E \geq n$ (sinon on aurait $\mathrm{Card}\,F \leq \mathrm{Card}\,E < n$, contradiction).
+Si $f$ est surjective, $f(E) = F = \{f(a_i) \mid i \in \mathbb{N}\_n\}$, donc $F$ a au plus $n$ éléments : $\mathrm{Card}\,F \leq n$. Si de plus $\mathrm{Card}\,F = n$, alors $\mathrm{Card}\,E \geq n$ (sinon on aurait $\mathrm{Card}\,F \leq \mathrm{Card}\,E < n$, contradiction).
 
 </div>
 
@@ -310,8 +310,8 @@ Si $\mathrm{Card}\,E = n = \mathrm{Card}\,F$ et si $f : E \to F$ est **injective
 
 <span class="bloc-titre">Démonstration</span>
 
-- Si $f$ est injective : écrivons $E = \{a_0, \dots, a_{n-1}\}$ ; alors $f(E) = \{f(a_0), \dots, f(a_{n-1})\}$ et $\mathrm{Card}\,f(E) = n$. Or $\mathrm{Card}\,F = n$ et $f(E) \subset F$, donc $f(E) = F$ : $f$ est surjective, donc bijective.
-- Si $f$ est surjective : $f(E) = F = \{f(a_i) \mid i \in \mathbb{N}_n\}$ et $\mathrm{Card}\,F = n$ ; donc on a $n$ éléments de la forme $f(a_i)$, d'où $a_i \neq a_j \Rightarrow f(a_i) \neq f(a_j)$ (sinon $\{f(a_i) \mid i \in \mathbb{N}_n\}$ aurait au plus $n-1$ éléments) : $f$ est injective.
+- Si $f$ est injective : écrivons $E = \{a_0, \dots, a\_{n-1}\}$ ; alors $f(E) = \{f(a_0), \dots, f(a\_{n-1})\}$ et $\mathrm{Card}\,f(E) = n$. Or $\mathrm{Card}\,F = n$ et $f(E) \subset F$, donc $f(E) = F$ : $f$ est surjective, donc bijective.
+- Si $f$ est surjective : $f(E) = F = \{f(a_i) \mid i \in \mathbb{N}\_n\}$ et $\mathrm{Card}\,F = n$ ; donc on a $n$ éléments de la forme $f(a_i)$, d'où $a_i \neq a_j \Rightarrow f(a_i) \neq f(a_j)$ (sinon $\{f(a_i) \mid i \in \mathbb{N}\_n\}$ aurait au plus $n-1$ éléments) : $f$ est injective.
 
 </div>
 
@@ -379,9 +379,9 @@ $$C_n^p = \frac{n!}{p!\,(n-p)!} = \frac{n(n-1)\cdots(n-p+1)}{p!}$$
 
 **a)** Se donner une partie de $E$, c'est se donner son application caractéristique, c'est-à-dire une application de $E$ vers $\{0, 1\}$ ; il y en a $2^n$ d'après la propriété 5.
 
-**b)** Si je me donne une partie de cardinal $p$, $P = \{a_1, \dots, a_p\}$, et l'injection $i : \{1, \dots, p\} \to E$ telle que $i(\mathbb{N}_p) = P$, alors toute autre injection $f : \mathbb{N}_p \to E$ d'image $P$ s'écrit $f = i \circ g$, où $g = i^{-1} \circ f$ est une bijection de $\mathbb{N}_p$ (par composition) ; réciproquement, si $g$ est une bijection de $\mathbb{N}_p \to \mathbb{N}_p$, alors $i \circ g$ est une injection de $\mathbb{N}_p \to E$ d'image $P$.
+**b)** Si je me donne une partie de cardinal $p$, $P = \{a_1, \dots, a_p\}$, et l'injection $i : \{1, \dots, p\} \to E$ telle que $i(\mathbb{N}\_p) = P$, alors toute autre injection $f : \mathbb{N}\_p \to E$ d'image $P$ s'écrit $f = i \circ g$, où $g = i^{-1} \circ f$ est une bijection de $\mathbb{N}\_p$ (par composition) ; réciproquement, si $g$ est une bijection de $\mathbb{N}\_p \to \mathbb{N}\_p$, alors $i \circ g$ est une injection de $\mathbb{N}\_p \to E$ d'image $P$.
 
-Ainsi, **à une partie $P$ de cardinal $p$ correspondent exactement $p!$ injections de $\mathbb{N}_p$ dans $E$ d'image $P$** (il y a $p!$ bijections de $\mathbb{N}_p$). Or il y a $n(n-1)\cdots(n-p+1)$ injections de $\mathbb{N}_p \to E$ (propriété 6), donc il y a
+Ainsi, **à une partie $P$ de cardinal $p$ correspondent exactement $p!$ injections de $\mathbb{N}\_p$ dans $E$ d'image $P$** (il y a $p!$ bijections de $\mathbb{N}\_p$). Or il y a $n(n-1)\cdots(n-p+1)$ injections de $\mathbb{N}\_p \to E$ (propriété 6), donc il y a
 
 $$\frac{n(n-1)\cdots(n-p+1)}{p!}$$
 
@@ -406,7 +406,7 @@ parties de cardinal $p$.
 
 - $2^n = C_n^0 + C_n^1 + \cdots + C_n^n$ ;
 - $C_n^p = C_n^{n-p}$ ;
-- $C_{n+1}^{p+1} = C_n^p + C_n^{p+1}$ pour $p \leq n - 1$ (relation de Pascal).
+- $C\_{n+1}^{p+1} = C_n^p + C_n^{p+1}$ pour $p \leq n - 1$ (relation de Pascal).
 
 </div>
 
@@ -419,7 +419,7 @@ parties de cardinal $p$.
 
 $$\mathrm{Card}\{P \mid \mathrm{Card}\,P = p\} = \mathrm{Card}\{P \mid \mathrm{Card}\,P = n-p\}$$
 
-- Soit $a \in E$. Je cherche les parties de $E$ de cardinal $p+1$. À une telle partie $A$ : si $A$ contient $a$, il reste à choisir $p$ éléments de $E \setminus \{a\}$, ce qui peut se faire de $C_n^p$ façons ; si $A$ ne contient pas $a$, il y a $C_n^{p+1}$ façons de la choisir. Au total, il y a $C_{n+1}^{p+1} = C_n^p + C_n^{p+1}$ parties à $p+1$ éléments de $E$.
+- Soit $a \in E$. Je cherche les parties de $E$ de cardinal $p+1$. À une telle partie $A$ : si $A$ contient $a$, il reste à choisir $p$ éléments de $E \setminus \{a\}$, ce qui peut se faire de $C_n^p$ façons ; si $A$ ne contient pas $a$, il y a $C_n^{p+1}$ façons de la choisir. Au total, il y a $C\_{n+1}^{p+1} = C_n^p + C_n^{p+1}$ parties à $p+1$ éléments de $E$.
 
 </div>
 
@@ -479,9 +479,9 @@ La formule s'en déduit par récurrence sur $n$, en écrivant $(a+b)^{n+1} = (a+
 $$n = a_1\, 1! + a_2\, 2! + \cdots + a_k\, k!, \qquad \text{avec } 0 \leq a_i \leq i \text{ et } a_k \neq 0$$</li>
 <li>Problème des cocus de Bagdad. Le khâlife de Bagdad, irrité par la présence de cocus dans sa ville, fit paraître l'édit suivant : « Tout habitant de Bagdad qui se rendra compte que sa femme le trompe devra l'égorger la nuit suivant le jour où il s'en sera rendu compte ». Il y avait 32 cocus dans la ville. Il admit qu'il ne se passa rien pendant 32 jours et que le 33ème matin après la parution de l'édit, les 32 femmes indignes avaient été égorgées. Expliquer le raisonnement qu'ont suivi les habitants, sachant qu'ils sont d'excellents logiciens et que chacun peut dire avec certitude si un autre que lui est cocu mais n'a aucun moyen matériel de statuer sur son propre sort. (La présence de cocus est connue de tous.)</li>
 <li>Avec les 5 caractères d'imprimerie 1, 3, 4, 6, 7, combien de nombres de 5 chiffres peut-on former ? Quelle est leur somme ? Même question avec 0, 1, 3, 4, 5.</li>
-<li>Montrer que pour $n \in \mathbb{N}^*$ et $p \in \mathbb{N}^*$, le nombre de façons d'écrire
+<li>Montrer que pour $n \in \mathbb{N}^\*$ et $p \in \mathbb{N}^\*$, le nombre de façons d'écrire
 $$x_1 + x_2 + \cdots + x_p = n$$
-avec les $x_i$ entiers naturels est $C_{n+p-1}^{n}$ :
+avec les $x_i$ entiers naturels est $C\_{n+p-1}^{n}$ :
 <ol>
 <li>par un raisonnement combinatoire direct ;</li>
 <li>par récurrence.</li>
@@ -502,15 +502,15 @@ avec les $x_i$ entiers naturels est $C_{n+p-1}^{n}$ :
 <li>Combien a-t-on de tétraèdres ayant pour sommets les points tracés (employer 2 méthodes) ?</li>
 </ol>
 </li>
-<li>Soit $F_n$ la suite de Fibonacci : $F_0 = F_1 = 1$ et pour $n \geq 2$, $F_n = F_{n-1} + F_{n-2}$. On pose
+<li>Soit $F_n$ la suite de Fibonacci : $F_0 = F_1 = 1$ et pour $n \geq 2$, $F_n = F\_{n-1} + F\_{n-2}$. On pose
 $$\alpha = \frac{1-\sqrt{5}}{2}, \qquad \beta = \frac{1+\sqrt{5}}{2}$$
 <ol>
 <li>Montrer que $\forall n \in \mathbb{N}$, $F_n = \dfrac{\sqrt{5}}{5}\big(\beta^{n+1} - \alpha^{n+1}\big)$.</li>
-<li>Montrer que $\forall n \in \mathbb{N}$, $F_n = C_n^0 + C_{n-1}^1 + \cdots + \dots$</li>
-<li>Soit $G_n$ le nombre de parties (y compris le vide) de $\{1, \dots, n\}$ ne contenant pas deux entiers consécutifs. Montrer que $\forall n \geq 2$, $G_n = G_{n-1} + G_{n-2}$, puis que $G_n = F_{n+1}$.</li>
+<li>Montrer que $\forall n \in \mathbb{N}$, $F_n = C_n^0 + C\_{n-1}^1 + \cdots + \dots$</li>
+<li>Soit $G_n$ le nombre de parties (y compris le vide) de $\{1, \dots, n\}$ ne contenant pas deux entiers consécutifs. Montrer que $\forall n \geq 2$, $G_n = G\_{n-1} + G\_{n-2}$, puis que $G_n = F\_{n+1}$.</li>
 </ol>
 </li>
-<li>Résoudre dans $\mathbb{N}^* \times \mathbb{N}^*$ l'équation $x^y = y^x$.</li>
+<li>Résoudre dans $\mathbb{N}^\* \times \mathbb{N}^\*$ l'équation $x^y = y^x$.</li>
 <li>En utilisant le produit $(a+b)^n (b+a)^n$, démontrer l'égalité
 $$S = (C_n^0)^2 + (C_n^1)^2 + \cdots + (C_n^n)^2 = C_{2n}^n$$
 Retrouver le résultat par un raisonnement combinatoire.</li>
@@ -546,7 +546,7 @@ $$X = C_n^0 + C_n^3 + C_n^6 + \cdots, \qquad Y = C_n^1 + C_n^4 + C_n^7 + \cdots,
 **II.** On pose $S_k(n) = 1^k + 2^k + \cdots + n^k$.
 
 <ol class="enonces">
-<li>À partir de $P_{k+1}(x)$ pour $x = 1, 2, \dots, n$, trouver une relation entre les $S_k(n)$.</li>
+<li>À partir de $P\_{k+1}(x)$ pour $x = 1, 2, \dots, n$, trouver une relation entre les $S_k(n)$.</li>
 <li>Calculer $S_1(n)$, $S_2(n)$, $S_3(n)$.</li>
 </ol>
 
