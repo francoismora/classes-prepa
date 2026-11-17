@@ -19,7 +19,7 @@ $\mathbb{C}$.
 
 ### 1) Construction
 
-Sur $\mathbb{K}[X] \times \mathbb{K}[X]^\*$, on définit la relation $\mathcal{R}$ :
+Sur $\mathbb{K}[X] \times \mathbb{K}[X]^&#42;$, on définit la relation $\mathcal{R}$ :
 
 $$(P, Q)\ \mathcal{R}\ (P', Q') \iff P Q' = P' Q$$
 
@@ -99,7 +99,7 @@ $P \neq 0$), alors $F$ admet pour inverse $\dfrac{Q}{P}$.
 Toute fraction $F \in \mathbb{K}(X)$ admet un représentant **irréductible**
 $\dfrac{P}{Q}$ (avec $P \wedge Q = 1$). De plus, si $\dfrac{P'}{Q'}$ est un
 autre représentant irréductible de $F$, alors il existe un unique
-$\lambda \in \mathbb{K}^\*$ tel que $P = \lambda P'$ et $Q = \lambda Q'$.
+$\lambda \in \mathbb{K}^&#42;$ tel que $P = \lambda P'$ et $Q = \lambda Q'$.
 
 </div>
 
@@ -252,10 +252,10 @@ $U B_1 + V B_2 = 1$. Alors
 $\dfrac{A}{B_1 B_2} = \dfrac{A V}{B_2} + \dfrac{A U}{B_1}$, et en réduisant
 $AV$ modulo $B_2$ et $AU$ modulo $B_1$ on obtient $A_2$ et $A_1$.
 
-**Unicité** : si $\dfrac{A_1}{B_1} + \dfrac{A_2}{B_2} = \dfrac{A'\_1}{B_1} +
-\dfrac{A'\_2}{B_2}$, alors $(A_1 - A'\_1) B_2 = (A'\_2 - A_2) B_1$ ; comme
-$B_1 \wedge B_2 = 1$, $B_1$ divise $A_1 - A'\_1$, mais
-$\deg(A_1 - A'\_1) < \deg B_1$, donc $A_1 = A'\_1$ (et $A_2 = A'\_2$).
+**Unicité** : si $\dfrac{A_1}{B_1} + \dfrac{A_2}{B_2} = \dfrac{A'&#95;1}{B_1} +
+\dfrac{A'&#95;2}{B_2}$, alors $(A_1 - A'&#95;1) B_2 = (A'&#95;2 - A_2) B_1$ ; comme
+$B_1 \wedge B_2 = 1$, $B_1$ divise $A_1 - A'&#95;1$, mais
+$\deg(A_1 - A'&#95;1) < \deg B_1$, donc $A_1 = A'&#95;1$ (et $A_2 = A'&#95;2$).
 
 </div>
 
@@ -290,7 +290,7 @@ $\deg A < \deg P^n$. Alors $\dfrac{A}{P^n}$ s'écrit de manière **unique**
 $$\frac{A}{P^n} = \sum_{j=1}^{n} \frac{A_j}{P^j}, \qquad \deg A_j < \deg P$$
 
 **Pratiquement** : divisions euclidiennes successives
-$A = A_n + P Q_n$, $Q_n = A\_{n-1} + P Q\_{n-1}$, \dots, $Q_1 = A_1 + P Q_0$
+$A = A_n + P Q_n$, $Q_n = A&#95;{n-1} + P Q&#95;{n-1}$, \dots, $Q_1 = A_1 + P Q_0$
 (avec $\deg A_i < \deg P$).
 
 </div>
@@ -309,7 +309,7 @@ Alors $F$ s'écrit de manière **unique**
 $$F = E + \sum_{i=1}^{n} \sum_{j=1}^{\alpha_i} \frac{A_{ij}}{P_i^{\,j}}$$
 
 avec $E \in \mathbb{K}[X]$ (partie entière de $F$) et
-$\deg A\_{ij} < \deg P_i$ pour tout $i, j$.
+$\deg A&#95;{ij} < \deg P_i$ pour tout $i, j$.
 
 </div>
 
@@ -320,7 +320,7 @@ $\deg A\_{ij} < \deg P_i$ pour tout $i, j$.
 On écrit $F = E + \dfrac{C}{B}$ avec $\deg C < \deg B$ (partie entière). Le
 lemme 2 décompose $\dfrac{C}{B}$ en $\sum_i \dfrac{A_i}{P_i^{\alpha_i}}$, puis le
 lemme 3 décompose chaque $\dfrac{A_i}{P_i^{\alpha_i}}$ en
-$\sum_j \dfrac{A\_{ij}}{P_i^j}$. L'unicité découle de celle des lemmes.
+$\sum_j \dfrac{A&#95;{ij}}{P_i^j}$. L'unicité découle de celle des lemmes.
 
 </div>
 
@@ -388,7 +388,7 @@ Alors
 $$F = \frac{Q(X-a)}{(X-a)^p} + \frac{R(X)}{C(X)}$$
 
 et la **partie polaire relative à $a$** est
-$\dfrac{Q(X-a)}{(X-a)^p} = \displaystyle\sum\_{j=0}^{p-1} \frac{q_j}{(X-a)^{p-j}}$.
+$\dfrac{Q(X-a)}{(X-a)^p} = \displaystyle\sum&#95;{j=0}^{p-1} \frac{q_j}{(X-a)^{p-j}}$.
 
 <div class="bloc exemple" markdown="1">
 
@@ -524,13 +524,13 @@ machine : la décomposition est une identité exacte.
 <li>Soit $a_1, a_2, \dots, a_n$ $n$ complexes distincts et $P(X) = (X-a_1)(X-a_2)\cdots(X-a_n)$.
 <ol>
 <li>Décomposer $F = \dfrac{P'}{P}$ en éléments simples sur $\mathbb{C}(X)$.</li>
-<li>En déduire $S = \displaystyle\sum\_{k=0}^{n} \frac{1}{X-\omega^k}$ où $\omega = e^{2i\pi/n}$, et $S = \displaystyle\sum\_{k=0}^{n} \frac{1}{(X-\omega^k)^2}$.</li>
+<li>En déduire $S = \displaystyle\sum&#95;{k=0}^{n} \frac{1}{X-\omega^k}$ où $\omega = e^{2i\pi/n}$, et $S = \displaystyle\sum&#95;{k=0}^{n} \frac{1}{(X-\omega^k)^2}$.</li>
 </ol>
 </li>
-<li>Calculer $S = \displaystyle\sum\_{k=1}^{n} \frac{1}{k(k+1)(k+2)}$.</li>
-<li>Soit $a_1, \dots, a_n$ et $b_1, \dots, b_n$ des complexes deux à deux distincts. On pose $c\_{ij} = a_i + b_j$ et on suppose de plus que, pour tous $i, j$, $c\_{ij} \neq 0$. Soit $M_n$ la matrice de terme général $\dfrac{1}{c\_{ij}}$.
+<li>Calculer $S = \displaystyle\sum&#95;{k=1}^{n} \frac{1}{k(k+1)(k+2)}$.</li>
+<li>Soit $a_1, \dots, a_n$ et $b_1, \dots, b_n$ des complexes deux à deux distincts. On pose $c&#95;{ij} = a_i + b_j$ et on suppose de plus que, pour tous $i, j$, $c&#95;{ij} \neq 0$. Soit $M_n$ la matrice de terme général $\dfrac{1}{c&#95;{ij}}$.
 <ol>
-<li>En utilisant la fraction rationnelle $F(X) = \dfrac{(X-a_1)\cdots(X-a\_{n-1})}{(X+b_1)\cdots(X+b_n)}$ et les opérations élémentaires sur les lignes et les colonnes, montrer que $\operatorname{rg}(M_n) = \operatorname{rg}(M\_{n-1}) + 1$ ($n \geq 2$).</li>
+<li>En utilisant la fraction rationnelle $F(X) = \dfrac{(X-a_1)\cdots(X-a&#95;{n-1})}{(X+b_1)\cdots(X+b_n)}$ et les opérations élémentaires sur les lignes et les colonnes, montrer que $\operatorname{rg}(M_n) = \operatorname{rg}(M&#95;{n-1}) + 1$ ($n \geq 2$).</li>
 <li>En déduire que $M_n$ est inversible.</li>
 </ol>
 </li>

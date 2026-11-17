@@ -20,7 +20,7 @@ interactif: true
 
 Soit $f$ une fonction définie sur un voisinage $V$ de $a$. On dit que $f$ admet en $a$
 un **développement limité à l'ordre $n$** (DL) s'il existe un polynôme
-$P \in \mathbb{R}\_n[X]$ (polynômes de degré $\leq n$) tel que
+$P \in \mathbb{R}&#95;n[X]$ (polynômes de degré $\leq n$) tel que
 
 $$
 f(x) = P(x-a) + (x-a)^n \varepsilon(x), \qquad \text{avec } \varepsilon(x) \xrightarrow[x \to a]{} 0
@@ -69,8 +69,8 @@ $$\sin x = x - \frac{x^3}{6} + \mathrm{o}(x^3)$$
 <span class="bloc-titre">Démonstration</span>
 
 Si $f$ admet un DL d'ordre $0$ en $a$ : $f(x) = P(x-a) + \mathrm{o}(1)$ avec $P$ constante,
-égale à $a_0$. Mais $f(a) = P(0) = a_0$, et $\lim\_{x\to a} f(x) = a_0$ car
-$\varepsilon(x) \to 0$. Donc $\lim\_{x\to a} f(x) = f(a)$ : $f$ est continue en $a$.
+égale à $a_0$. Mais $f(a) = P(0) = a_0$, et $\lim&#95;{x\to a} f(x) = a_0$ car
+$\varepsilon(x) \to 0$. Donc $\lim&#95;{x\to a} f(x) = f(a)$ : $f$ est continue en $a$.
 
 Réciproquement, si $f$ est continue en $a$ :
 $f(x) = f(a) + \big(f(x)-f(a)\big) = f(a) + \varepsilon(x)$ avec
@@ -128,9 +128,9 @@ Si $f$ admet un DL d'ordre $n$ en $a$, alors le polynôme $P$ est **unique**.
 <span class="bloc-titre">Démonstration</span>
 
 Supposons $f(x) = P(x-a) + (x-a)^n\varepsilon(x) = Q(x-a) + (x-a)^n\eta(x)$ avec
-$P = \sum\_{k=0}^{n} a_k X^k$ et $Q = \sum\_{k=0}^{n} b_k X^k$.
+$P = \sum&#95;{k=0}^{n} a_k X^k$ et $Q = \sum&#95;{k=0}^{n} b_k X^k$.
 
-- $a_0 = \lim\_{x\to a} f(x) = b_0$.
+- $a_0 = \lim&#95;{x\to a} f(x) = b_0$.
 - Hypothèse de récurrence : $a_i = b_i$ pour $0 \leq i < k$, avec $k \leq n$. Alors
 
 $$
@@ -145,7 +145,7 @@ a_{k+1} + (x-a)a_{k+2} + \dots + (x-a)^{n-k-1}a_n + (x-a)^{n-k-1}\varepsilon(x)
 = b_{k+1} + (x-a)b_{k+2} + \dots + (x-a)^{n-k-1}\eta(x)
 $$
 
-Par passage à la limite quand $x \to a$ : $a\_{k+1} = b\_{k+1}$.
+Par passage à la limite quand $x \to a$ : $a&#95;{k+1} = b&#95;{k+1}$.
 
 La propriété est donc récurrente pour $0 \leq k \leq n$ : $P = Q$.
 
@@ -310,8 +310,8 @@ $$
 f(x)g(x) = P(x)Q(x) + x^n\Big(\varepsilon(x)Q(x) + \eta(x)P(x) + x^n\varepsilon(x)\eta(x)\Big)
 $$
 
-En écrivant $P Q (X) = \sum\_{k=0}^{n} a_k X^k + R(X)$ avec
-$R(X) = X^n \sum\_{k > n} a_k X^{k-n}$, le reste est bien de la forme $x^n\theta(x)$
+En écrivant $P Q (X) = \sum&#95;{k=0}^{n} a_k X^k + R(X)$ avec
+$R(X) = X^n \sum&#95;{k > n} a_k X^{k-n}$, le reste est bien de la forme $x^n\theta(x)$
 avec $\theta(x) \to 0$.
 
 </div>
@@ -539,16 +539,16 @@ $$
 (pour une fonction $f$ admettant un DL d'ordre $n \geq p$), ce qui donne directement
 l'équivalent $f(x) \sim a_p x^p$ si $a_p \neq 0$.
 
-Autres exemples : $\lim\_{x\to 0}\left(\dfrac{1}{\sin x} - \dfrac{1}{x}\right)$ ;
+Autres exemples : $\lim&#95;{x\to 0}\left(\dfrac{1}{\sin x} - \dfrac{1}{x}\right)$ ;
 $\dfrac{x - \sin x}{x \sin x} \sim \dfrac{x^3/6}{x^2} = \dfrac{x}{6}$, donc
-$\lim\_{x\to 0} \dfrac{x-\sin x}{x\sin x} = 0$.
+$\lim&#95;{x\to 0} \dfrac{x-\sin x}{x\sin x} = 0$.
 
 </div>
 
 ### 2) Étude locale d'une fonction
 
 **a) Continuité — dérivabilité.** Si $f(x) = a_0 + a_1 x + \mathrm{o}(x)$, alors
-$\lim\_{x\to 0} f(x) = a_0$ ; si $f$ n'est pas définie en $0$, on peut la prolonger
+$\lim&#95;{x\to 0} f(x) = a_0$ ; si $f$ n'est pas définie en $0$, on peut la prolonger
 en $0$ par continuité en posant $f(0) = a_0$. $f$ ainsi prolongée est dérivable en $0$
 et $f'(0) = a_1$.
 

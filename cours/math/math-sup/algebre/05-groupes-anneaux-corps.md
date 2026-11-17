@@ -19,13 +19,13 @@ pages: 48
 
 <span class="bloc-titre">Définition</span>
 
-$(G, \*)$ est un **groupe** si :
+$(G, &#42;)$ est un **groupe** si :
 
-- $\*$ admet un élément neutre ;
-- $\*$ est associative ;
-- tout $x \in G$ est symétrisable pour $\*$ (admet un symétrique).
+- $&#42;$ admet un élément neutre ;
+- $&#42;$ est associative ;
+- tout $x \in G$ est symétrisable pour $&#42;$ (admet un symétrique).
 
-Si de plus $\*$ est commutative, on dit que $G$ est un **groupe commutatif** (ou **abélien**).
+Si de plus $&#42;$ est commutative, on dit que $G$ est un **groupe commutatif** (ou **abélien**).
 
 </div>
 
@@ -36,7 +36,7 @@ Si de plus $\*$ est commutative, on dit que $G$ est un **groupe commutatif** (ou
 - $(\mathbb{Z}, +)$, $(\mathbb{R}, +)$, $(\mathbb{C}, +)$ sont des groupes abéliens ;
 - $(\mathbb{N}, +)$ n'est pas un groupe car seul $0$ est symétrisable ;
 - le groupe des isométries du plan ou de l'espace, pour la loi $\circ$ : $\circ$ est associative, $\mathrm{Id}$ est neutre, et si $f$ est une isométrie alors $f^{-1}$ est une isométrie, qui est le symétrique de $f$ ;
-- $\sigma(E) = \{ f \mid f \text{ bijection de } E \text{ dans } E \}$, muni de $\circ$ (permutations si $E$ est fini) : son élément neutre est $\mathrm{Id}\_E$ ;
+- $\sigma(E) = \{ f \mid f \text{ bijection de } E \text{ dans } E \}$, muni de $\circ$ (permutations si $E$ est fini) : son élément neutre est $\mathrm{Id}&#95;E$ ;
 
 $$(f \circ g) \circ h = f \circ (g \circ h), \qquad f^{-1} : E \to E \text{ donc } f^{-1} \in \sigma(E) \text{ et } f \circ f^{-1} = f^{-1} \circ f = \mathrm{Id}_E$$
 
@@ -56,8 +56,8 @@ alors $(f \circ g)(a) = c \neq (g \circ f)(a) = b$ : $\circ$ n'est pas commutati
 
 <span class="bloc-titre">Conventions</span>
 
-- a) $(x \* y)^{-1} = y^{-1} \* x^{-1}$ (un groupe est un magma associatif unitaire) ;
-- b) convention $a^0 = 1$ ; pour $n \in \mathbb{N}^\*$ :
+- a) $(x &#42; y)^{-1} = y^{-1} &#42; x^{-1}$ (un groupe est un magma associatif unitaire) ;
+- b) convention $a^0 = 1$ ; pour $n \in \mathbb{N}^&#42;$ :
 
 $$a^n = \underbrace{a * a * \dots * a}_{n \text{ fois}}$$
 
@@ -85,7 +85,7 @@ $$\forall n \in \mathbb{Z}, \qquad a^n = (a^{-n})^{-1} = (a^{-1})^{-n}$$
 **Deuxième point** : $a^n = (a^{-1})^{-n}$.
 
 - $n = 0$ : OK ;
-- $n > 0$ : $(a^n)^{-1} = \underbrace{a^{-1} \* \dots \* a^{-1}}\_{n \text{ fois}} = (a^{-1})^n$, donc $a^n = \big[(a^{-1})^n\big]^{-1} = (a^{-1})^{-n}$ d'après le 1<sup>er</sup> point ;
+- $n > 0$ : $(a^n)^{-1} = \underbrace{a^{-1} &#42; \dots &#42; a^{-1}}&#95;{n \text{ fois}} = (a^{-1})^n$, donc $a^n = \big[(a^{-1})^n\big]^{-1} = (a^{-1})^{-n}$ d'après le 1<sup>er</sup> point ;
 - $n \leq 0$ : $a^n = a^{-(-n)} = (a^{-n})^{-1}$ avec $-n \geq 0$, donc $a^{-n} = (a^{-1})^{n}$ d'après le cas précédent, et $a^n = \big[(a^{-1})^n\big]^{-1} = (a^{-1})^{-n}$ d'après le 1<sup>er</sup> point.
 
 </div>
@@ -94,7 +94,7 @@ $$\forall n \in \mathbb{Z}, \qquad a^n = (a^{-n})^{-1} = (a^{-1})^{-n}$$
 
 <span class="bloc-titre">Propriété</span>
 
-- c) $\forall (n, m) \in \mathbb{Z}^2$, $a^n \* a^m = a^{n+m}$ ;
+- c) $\forall (n, m) \in \mathbb{Z}^2$, $a^n &#42; a^m = a^{n+m}$ ;
 - d) $\forall (n, m) \in \mathbb{Z}^2$, $(a^n)^m = a^{nm}$.
 
 </div>
@@ -124,17 +124,17 @@ Tout élément d'un groupe est **régulier** (cas inversible).
 
 </div>
 
-**Application : table de composition d'un groupe fini.** Si $G = \{1, a_1, a_2, \dots, a\_{n-1}\}$ :
+**Application : table de composition d'un groupe fini.** Si $G = \{1, a_1, a_2, \dots, a&#95;{n-1}\}$ :
 
-| $\*$ | $1$ | $a_1$ | $a_2$ | $\dots$ | $a\_{n-1}$ |
+| $&#42;$ | $1$ | $a_1$ | $a_2$ | $\dots$ | $a&#95;{n-1}$ |
 |---|---|---|---|---|---|
-| $1$ | $1$ | $a_1$ | $a_2$ | $\dots$ | $a\_{n-1}$ |
+| $1$ | $1$ | $a_1$ | $a_2$ | $\dots$ | $a&#95;{n-1}$ |
 | $a_1$ | $a_1$ | | | | |
 | $a_2$ | $a_2$ | | | | |
 | $\vdots$ | $\vdots$ | | | | |
-| $a\_{n-1}$ | $a\_{n-1}$ | | | | |
+| $a&#95;{n-1}$ | $a&#95;{n-1}$ | | | | |
 
-Les éléments $a_i \* x$ d'une même ligne sont deux à deux distincts : dans chaque ligne (resp. chaque colonne) du tableau figure chaque élément du groupe, une et une seule fois.
+Les éléments $a_i &#42; x$ d'une même ligne sont deux à deux distincts : dans chaque ligne (resp. chaque colonne) du tableau figure chaque élément du groupe, une et une seule fois.
 
 <div class="bloc exemple" markdown="1">
 
@@ -155,7 +155,7 @@ $\circ$ est une loi interne sur $G$ ; $\mathrm{Id}$ est neutre ; $\circ$ est ass
 
 <span class="bloc-titre">Propriété (produit de groupes)</span>
 
-Si $G_1, \dots, G_n$ sont des groupes munis de $\*$, alors $G = G_1 \times G_2 \times \dots \times G_n$ est un groupe pour la loi $\*$ définie par : si $X = (x_1, \dots, x_n)$ et $Y = (y_1, \dots, y_n)$,
+Si $G_1, \dots, G_n$ sont des groupes munis de $&#42;$, alors $G = G_1 \times G_2 \times \dots \times G_n$ est un groupe pour la loi $&#42;$ définie par : si $X = (x_1, \dots, x_n)$ et $Y = (y_1, \dots, y_n)$,
 
 $$X * Y = (x_1 * y_1,\ x_2 * y_2,\ \dots,\ x_n * y_n)$$
 
@@ -181,10 +181,10 @@ Soit $H$ une partie non vide de $G$. $H$ est un **sous-groupe** de $G$ si $H$ es
 
 <span class="bloc-titre">Proposition 1</span>
 
-$H$ est un sous-groupe de $(G, \*)$ si et seulement si :
+$H$ est un sous-groupe de $(G, &#42;)$ si et seulement si :
 
 1) $H$ est non vide ;
-2) $\forall (x, y) \in H^2$, $x \* y \in H$ ;
+2) $\forall (x, y) \in H^2$, $x &#42; y \in H$ ;
 3) $\forall x \in H$, $x^{-1} \in H$.
 
 </div>
@@ -192,17 +192,17 @@ $H$ est un sous-groupe de $(G, \*)$ si et seulement si :
 <div class="bloc demo" markdown="1">
 <span class="bloc-titre">Démonstration</span>
 
-**Sens direct.** Si $H$ est un sous-groupe de $G$ : 1) par définition d'un sous-groupe ; 2) parce que la loi s'induit sur $H$, donc $H$ est stable pour $\*$. $H$ est un groupe pour $\*$, notons $1_H$ son neutre. Alors
+**Sens direct.** Si $H$ est un sous-groupe de $G$ : 1) par définition d'un sous-groupe ; 2) parce que la loi s'induit sur $H$, donc $H$ est stable pour $&#42;$. $H$ est un groupe pour $&#42;$, notons $1_H$ son neutre. Alors
 
 $$\forall a \in H,\ a * 1_H = 1_H * a = a, \qquad \forall a \in G,\ a * 1_G = 1_G * a = a$$
 
-et pour $a \in H$ : $a \* 1_G = 1_G \* a = a = a \* 1_H$, donc par régularité $1_G = 1_H$. Soit $a \in H$, $a'$ son symétrique dans $H$ et $a^{-1}$ son inverse dans $G$ : $a' \* a = a \* a' = 1_H$ et $a^{-1} \* a = a \* a^{-1} = 1_G = 1_H$, donc $a \* a' = a \* a^{-1}$, d'où $a' = a^{-1} \in H$ d'après 2).
+et pour $a \in H$ : $a &#42; 1_G = 1_G &#42; a = a = a &#42; 1_H$, donc par régularité $1_G = 1_H$. Soit $a \in H$, $a'$ son symétrique dans $H$ et $a^{-1}$ son inverse dans $G$ : $a' &#42; a = a &#42; a' = 1_H$ et $a^{-1} &#42; a = a &#42; a^{-1} = 1_G = 1_H$, donc $a &#42; a' = a &#42; a^{-1}$, d'où $a' = a^{-1} \in H$ d'après 2).
 
-**Réciproque.** On suppose 1), 2), 3). $H$ non vide ; la loi s'induit sur $H$, stable pour $\*$ d'après 2) ; $\bar{\*}$ est associative : $\forall (a, b, c) \in H^3$,
+**Réciproque.** On suppose 1), 2), 3). $H$ non vide ; la loi s'induit sur $H$, stable pour $&#42;$ d'après 2) ; $\bar{&#42;}$ est associative : $\forall (a, b, c) \in H^3$,
 
 $$a \bar{*} (b \bar{*} c) = a * (b * c) = (a * b) * c = (a \bar{*} b) \bar{*} c$$
 
-De plus, $a \in H$ et $a^{-1} \in H$ (3) donnent $1_G = a \* a^{-1} \in H$ (2), et $\forall a \in H$, $a \bar{\*} 1_G = a \* 1_G = 1_G \* a = 1_G \bar{\*} a$ : $1_G$ est neutre pour $\bar{\*}$. Enfin, soit $a \in H$ : $a$ est inversible dans $G$ pour $\*$, d'inverse $a^{-1}$, et $a^{-1} \in H$ d'après 3) ; comme $a \* a^{-1} = 1_G = a^{-1} \* a$, $a$ admet un inverse dans $H$ pour $\bar{\*}$. Donc $H$ est un sous-groupe de $G$, ce qui prouve aussi la caractérisation équivalente : $H$ sous-groupe de $G$ ssi $H$ non vide et $\forall (x, y) \in H^2$, $x \* y^{-1} \in H$ (si $H$ est un sous-groupe, on a 1), 2), 3), donc $y^{-1} \in H$ puis $x \* y^{-1} \in H$ ; réciproquement, si $H$ non vide et $x \* y^{-1} \in H$ pour tous $x, y \in H$, alors avec $x = y = a \in H$ : $1_G = a \* a^{-1} \in H$, puis $1_G \* y^{-1} \in H$ donne 3), puis $x \* (y^{-1})^{-1} = x \* y \in H$ donne 2), et la proposition 1 conclut).
+De plus, $a \in H$ et $a^{-1} \in H$ (3) donnent $1_G = a &#42; a^{-1} \in H$ (2), et $\forall a \in H$, $a \bar{&#42;} 1_G = a &#42; 1_G = 1_G &#42; a = 1_G \bar{&#42;} a$ : $1_G$ est neutre pour $\bar{&#42;}$. Enfin, soit $a \in H$ : $a$ est inversible dans $G$ pour $&#42;$, d'inverse $a^{-1}$, et $a^{-1} \in H$ d'après 3) ; comme $a &#42; a^{-1} = 1_G = a^{-1} &#42; a$, $a$ admet un inverse dans $H$ pour $\bar{&#42;}$. Donc $H$ est un sous-groupe de $G$, ce qui prouve aussi la caractérisation équivalente : $H$ sous-groupe de $G$ ssi $H$ non vide et $\forall (x, y) \in H^2$, $x &#42; y^{-1} \in H$ (si $H$ est un sous-groupe, on a 1), 2), 3), donc $y^{-1} \in H$ puis $x &#42; y^{-1} \in H$ ; réciproquement, si $H$ non vide et $x &#42; y^{-1} \in H$ pour tous $x, y \in H$, alors avec $x = y = a \in H$ : $1_G = a &#42; a^{-1} \in H$, puis $1_G &#42; y^{-1} \in H$ donne 3), puis $x &#42; (y^{-1})^{-1} = x &#42; y \in H$ donne 2), et la proposition 1 conclut).
 
 </div>
 
@@ -213,7 +213,7 @@ De plus, $a \in H$ et $a^{-1} \in H$ (3) donnent $1_G = a \* a^{-1} \in H$ (2), 
 <span class="bloc-titre">Exemples</span>
 
 - $(\mathbb{Q}, \cdot)$ est un sous-groupe de $(\mathbb{C}, \cdot)$ ;
-- $\mathbb{U}\_n = \left\{ e^{2 i k \pi / n} \mid 0 \leq k \leq n-1 \right\}$ est un sous-groupe de $(\mathbb{C}, \cdot)$ : $1 \in \mathbb{U}\_n$ (non vide) ; si $\zeta_1 = e^{2ik\pi/n}$ et $\zeta_2 = e^{2ik'\pi/n}$, alors $\zeta_1 \cdot \zeta_2 = e^{2i(k+k')\pi/n}$ et $(\zeta_1 \times \zeta_2)^n = \zeta_1^n \cdot \zeta_2^n = 1$, donc $\zeta_1 \times \zeta_2^{-1}$ est encore une racine $n$-ième de l'unité ;
+- $\mathbb{U}&#95;n = \left\{ e^{2 i k \pi / n} \mid 0 \leq k \leq n-1 \right\}$ est un sous-groupe de $(\mathbb{C}, \cdot)$ : $1 \in \mathbb{U}&#95;n$ (non vide) ; si $\zeta_1 = e^{2ik\pi/n}$ et $\zeta_2 = e^{2ik'\pi/n}$, alors $\zeta_1 \cdot \zeta_2 = e^{2i(k+k')\pi/n}$ et $(\zeta_1 \times \zeta_2)^n = \zeta_1^n \cdot \zeta_2^n = 1$, donc $\zeta_1 \times \zeta_2^{-1}$ est encore une racine $n$-ième de l'unité ;
 - $G = \{\mathrm{Id}, S_0, S_d, S_r\}$ est un sous-groupe du groupe des isométries de l'espace.
 
 </div>
@@ -231,7 +231,7 @@ Les sous-groupes de $(\mathbb{Z}, +)$ sont exactement les $n\mathbb{Z} = \{ nk \
 
 Soit $n \in \mathbb{N}$ et $H = n\mathbb{Z}$ : $0 \in H$ (H non vide) ; si $x = na$ et $y = nb$ avec $a, b \in \mathbb{Z}$, alors $x - y = n(a - b) \in H$ : $H$ est stable par $-$, d'où $H$ est un sous-groupe de $(\mathbb{Z}, +)$.
 
-Réciproquement, soit $H$ un sous-groupe de $(\mathbb{Z}, +)$. Si $H = \{0\}$, alors $H = 0\mathbb{Z}$. Sinon, $H$ contient $a \neq 0$ et $-a$, donc $H \cap \mathbb{N}^\*$ est non vide et admet un plus petit élément $b$, $b \neq 0$. Pour $x \in H \cap \mathbb{N}$ : $x = bq + r$ avec $0 \leq r < b$ (division euclidienne dans $\mathbb{N}$, $b \neq 0$) ; $b \in H$ et $bq \in H$ (H stable par $+$), donc $r = x - bq \in H$ (H stable par $-$) ; comme $r < b$ et que $b$ est le plus petit élément de $H \cap \mathbb{N}^\*$, on a $r = 0$, soit $x = bq \in b\mathbb{Z}$. Si $x \in H$ avec $x < 0$, alors $-x > 0$ et $-x \in H$, donc $-x \in b\mathbb{Z}$ et $x \in b\mathbb{Z}$. Finalement $H \subset b\mathbb{Z}$ ; or $b \in H$ donc $b\mathbb{Z} \subset H$ (car $H$ est stable par $+$ et par $-$, tout élément $bq$ avec $q \geq 0$ est dans $H$ par stabilité par $+$, et si $q < 0$, $-bq \in H$ donc $bq \in H$). Donc $H = b\mathbb{Z}$.
+Réciproquement, soit $H$ un sous-groupe de $(\mathbb{Z}, +)$. Si $H = \{0\}$, alors $H = 0\mathbb{Z}$. Sinon, $H$ contient $a \neq 0$ et $-a$, donc $H \cap \mathbb{N}^&#42;$ est non vide et admet un plus petit élément $b$, $b \neq 0$. Pour $x \in H \cap \mathbb{N}$ : $x = bq + r$ avec $0 \leq r < b$ (division euclidienne dans $\mathbb{N}$, $b \neq 0$) ; $b \in H$ et $bq \in H$ (H stable par $+$), donc $r = x - bq \in H$ (H stable par $-$) ; comme $r < b$ et que $b$ est le plus petit élément de $H \cap \mathbb{N}^&#42;$, on a $r = 0$, soit $x = bq \in b\mathbb{Z}$. Si $x \in H$ avec $x < 0$, alors $-x > 0$ et $-x \in H$, donc $-x \in b\mathbb{Z}$ et $x \in b\mathbb{Z}$. Finalement $H \subset b\mathbb{Z}$ ; or $b \in H$ donc $b\mathbb{Z} \subset H$ (car $H$ est stable par $+$ et par $-$, tout élément $bq$ avec $q \geq 0$ est dans $H$ par stabilité par $+$, et si $q < 0$, $-bq \in H$ donc $bq \in H$). Donc $H = b\mathbb{Z}$.
 
 </div>
 
@@ -248,7 +248,7 @@ Toute intersection de sous-groupes est un sous-groupe.
 <div class="bloc demo" markdown="1">
 <span class="bloc-titre">Démonstration</span>
 
-Soit $\mathcal{F}$ un ensemble de sous-groupes de $G$ et $H = \bigcap\_{F \in \mathcal{F}} F$. $H$ est non vide car $\forall F \in \mathcal{F}$, $1_G \in F$, donc $1_G \in H$. Soit $(x, y) \in H^2$ : pour tout $F \in \mathcal{F}$, $x \in F$ et $y \in F$, et comme $F$ est un sous-groupe, $x \* y^{-1} \in F$ ; donc $x \* y^{-1} \in H$ pour tout $F \in \mathcal{F}$, c'est-à-dire $x \* y^{-1} \in H$.
+Soit $\mathcal{F}$ un ensemble de sous-groupes de $G$ et $H = \bigcap&#95;{F \in \mathcal{F}} F$. $H$ est non vide car $\forall F \in \mathcal{F}$, $1_G \in F$, donc $1_G \in H$. Soit $(x, y) \in H^2$ : pour tout $F \in \mathcal{F}$, $x \in F$ et $y \in F$, et comme $F$ est un sous-groupe, $x &#42; y^{-1} \in F$ ; donc $x &#42; y^{-1} \in H$ pour tout $F \in \mathcal{F}$, c'est-à-dire $x &#42; y^{-1} \in H$.
 
 </div>
 
@@ -283,7 +283,7 @@ car $x_i - y_i \in H_i$ pour tout $i$. Donc $H$ est un sous-groupe de $(G, +)$.
 
 <span class="bloc-titre">Définition</span>
 
-Soient $(G, \*)$ et $(G', \star)$ deux groupes et $f : G \to G'$ une application. $f$ est un **morphisme de groupes** si c'est un morphisme de magma $(G, \*)$ dans le magma $(G', \star)$.
+Soient $(G, &#42;)$ et $(G', \star)$ deux groupes et $f : G \to G'$ une application. $f$ est un **morphisme de groupes** si c'est un morphisme de magma $(G, &#42;)$ dans le magma $(G', \star)$.
 
 </div>
 
@@ -293,9 +293,9 @@ Extension du vocabulaire : **endomorphisme**, **isomorphisme**, **automorphisme*
 
 <span class="bloc-titre">Exemples</span>
 
-- $\varphi : (\mathbb{Z}, +) 	o (G, \*)$, $n \mapsto a^n$ (avec $a \in G$ fixé) : $\varphi(n + m) = a^{n+m} = a^n \* a^m$ ;
-- $(\mathbb{C}, +) 	o (\mathcal{T}, \circ)$, $b \mapsto t_b$, où $\mathcal{T}$ est le groupe des translations du plan et $t_b$ la translation d'affixe $b$ : $t_b \circ t\_{b'} = t\_{b + b'}$, $(t_b)^{-1} = t\_{-b}$, $\mathrm{Id} = t_0$ ; $t_b$ correspond à la transformation $z \mapsto z + b$. $\varphi(a + b)$ est la transformation $z \mapsto z + (a + b) = (z + a) + b = (z + b) + a$, qui correspond à $t_b \circ t_a$. Soit $t_b$ une translation du plan, correspondant à $z \mapsto z + b$ : $b$ est un antécédent de $t_b$ par $\varphi$, et c'est le seul ;
-- $\psi : (\mathbb{C}^\*, \cdot) \xrightarrow{\ \sim\ } (\mathcal{S}, \circ)$, $a \mapsto s$ similitude directe d'angle $\mathrm{Arg}\, a$ et de rapport $|a|$.
+- $\varphi : (\mathbb{Z}, +) 	o (G, &#42;)$, $n \mapsto a^n$ (avec $a \in G$ fixé) : $\varphi(n + m) = a^{n+m} = a^n &#42; a^m$ ;
+- $(\mathbb{C}, +) 	o (\mathcal{T}, \circ)$, $b \mapsto t_b$, où $\mathcal{T}$ est le groupe des translations du plan et $t_b$ la translation d'affixe $b$ : $t_b \circ t&#95;{b'} = t&#95;{b + b'}$, $(t_b)^{-1} = t&#95;{-b}$, $\mathrm{Id} = t_0$ ; $t_b$ correspond à la transformation $z \mapsto z + b$. $\varphi(a + b)$ est la transformation $z \mapsto z + (a + b) = (z + a) + b = (z + b) + a$, qui correspond à $t_b \circ t_a$. Soit $t_b$ une translation du plan, correspondant à $z \mapsto z + b$ : $b$ est un antécédent de $t_b$ par $\varphi$, et c'est le seul ;
+- $\psi : (\mathbb{C}^&#42;, \cdot) \xrightarrow{\ \sim\ } (\mathcal{S}, \circ)$, $a \mapsto s$ similitude directe d'angle $\mathrm{Arg}\, a$ et de rapport $|a|$.
 
 </div>
 
@@ -314,9 +314,9 @@ $$f(1_G) = 1_{G'}, \qquad [f(x)]^{-1} = f(x^{-1}), \qquad \forall n \in \mathbb{
 <div class="bloc demo" markdown="1">
 <span class="bloc-titre">Démonstration</span>
 
-- $f(x) \star f(1_G \* x) = f(x \* 1_G) = f(x) \star f(1_G) = f(1_G \* x) = 1\_{G'} \star f(x)$ ; comme $f(x) \in G'$ et que $G'$ est un groupe, $f(x)$ est régulier, donc $1\_{G'} = f(1_G)$ ;
-- $f(x) \star f(x^{-1}) = f(x \* x^{-1}) = f(1_G) = 1\_{G'}$ et $f(x^{-1}) \star f(x) = f(x^{-1} \* x) = f(1_G) = 1\_{G'}$ : donc $f(x^{-1}) = [f(x)]^{-1}$ ;
-- pour $n \geq 0$ : $n = 0$ et $n = 1$ sont OK ; pour $n \geq 2$, par récurrence, $f(a^{n+1}) = f(a^n \* a) = f(a^n) \star f(a) = (f(a))^n \star f(a) = (f(a))^{n+1}$ ;
+- $f(x) \star f(1_G &#42; x) = f(x &#42; 1_G) = f(x) \star f(1_G) = f(1_G &#42; x) = 1&#95;{G'} \star f(x)$ ; comme $f(x) \in G'$ et que $G'$ est un groupe, $f(x)$ est régulier, donc $1&#95;{G'} = f(1_G)$ ;
+- $f(x) \star f(x^{-1}) = f(x &#42; x^{-1}) = f(1_G) = 1&#95;{G'}$ et $f(x^{-1}) \star f(x) = f(x^{-1} &#42; x) = f(1_G) = 1&#95;{G'}$ : donc $f(x^{-1}) = [f(x)]^{-1}$ ;
+- pour $n \geq 0$ : $n = 0$ et $n = 1$ sont OK ; pour $n \geq 2$, par récurrence, $f(a^{n+1}) = f(a^n &#42; a) = f(a^n) \star f(a) = (f(a))^n \star f(a) = (f(a))^{n+1}$ ;
 - pour $n < 0$ : $f(a^n) = f\big((a^{-n})^{-1}\big) = \big[f(a^{-n})\big]^{-1} = \big[(f(a))^{-n}\big]^{-1} = (f(a))^n$.
 
 </div>
@@ -332,11 +332,11 @@ L'image d'un sous-groupe $H$ de $G$ par un morphisme de groupes $f : G \to G'$ e
 <div class="bloc demo" markdown="1">
 <span class="bloc-titre">Démonstration</span>
 
-Soit $H' = f(H)$. $H'$ est non vide car $1_G \in H$ et $f(1_G) = 1\_{G'}$. Soient $x', y' \in H'$ : $x' = f(x)$ avec $x \in H$ et $y' = f(y)$ avec $y \in H$ ; alors
+Soit $H' = f(H)$. $H'$ est non vide car $1_G \in H$ et $f(1_G) = 1&#95;{G'}$. Soient $x', y' \in H'$ : $x' = f(x)$ avec $x \in H$ et $y' = f(y)$ avec $y \in H$ ; alors
 
 $$x' \star y'^{-1} = f(x) \star f(y)^{-1} = f(x) \star f(y^{-1}) = f(x * y^{-1})$$
 
-et $x \* y^{-1} \in H$ car $H$ est un sous-groupe, donc $x' \star y'^{-1} \in f(H) = H'$.
+et $x &#42; y^{-1} \in H$ car $H$ est un sous-groupe, donc $x' \star y'^{-1} \in f(H) = H'$.
 
 </div>
 
@@ -352,18 +352,18 @@ L'image de $G$ tout entier par le morphisme $f$ est un sous-groupe de $G'$, appe
 
 <span class="bloc-titre">Proposition 3</span>
 
-Si $G$ est un groupe, $(G', \star)$ un magma et $f$ un isomorphisme du magma $(G, \*)$ dans $(G', \star)$, alors $G'$ est un groupe.
+Si $G$ est un groupe, $(G', \star)$ un magma et $f$ un isomorphisme du magma $(G, &#42;)$ dans $(G', \star)$, alors $G'$ est un groupe.
 
 </div>
 
 <div class="bloc demo" markdown="1">
 <span class="bloc-titre">Démonstration</span>
 
-Soit $y \in G'$ : $y = f(x)$ car $f$ est surjective. $f(1_G) \star f(x) = f(1_G \* x) = f(x)$ et $f(x) \star f(1_G) = f(x \* 1_G) = f(x)$ : $f(1_G)$ est neutre pour $G'$. Soient $x', y', z' \in G'$ avec $f(x) = x'$, $f(y) = y'$, $f(z) = z'$ :
+Soit $y \in G'$ : $y = f(x)$ car $f$ est surjective. $f(1_G) \star f(x) = f(1_G &#42; x) = f(x)$ et $f(x) \star f(1_G) = f(x &#42; 1_G) = f(x)$ : $f(1_G)$ est neutre pour $G'$. Soient $x', y', z' \in G'$ avec $f(x) = x'$, $f(y) = y'$, $f(z) = z'$ :
 
 $$x' \star (y' \star z') = f(x) \star \big(f(y) \star f(z)\big) = f\big(x * (y * z)\big) = f\big((x * y) * z\big) = \big(f(x) \star f(y)\big) \star f(z) = (x' \star y') \star z'$$
 
-donc $\star$ est associative. Enfin, soit $x' = f(x) \in G'$ : $f(x^{-1}) \star f(x) = f(x^{-1} \* x) = f(1_G)$ et $f(x) \star f(x^{-1}) = f(x \* x^{-1}) = f(1_G)$ : $f(x^{-1})$ est le symétrique de $x'$. Donc $G'$ est un groupe.
+donc $\star$ est associative. Enfin, soit $x' = f(x) \in G'$ : $f(x^{-1}) \star f(x) = f(x^{-1} &#42; x) = f(1_G)$ et $f(x) \star f(x^{-1}) = f(x &#42; x^{-1}) = f(1_G)$ : $f(x^{-1})$ est le symétrique de $x'$. Donc $G'$ est un groupe.
 
 </div>
 
@@ -380,11 +380,11 @@ L'image réciproque d'un sous-groupe $H'$ du groupe $G'$ par un morphisme de gro
 <div class="bloc demo" markdown="1">
 <span class="bloc-titre">Démonstration</span>
 
-$f(1_G) = 1\_{G'}$ et $1\_{G'} \in H'$, donc $1_G \in f^{-1}(H')$. Soient $x, y \in G$ tels que $f(x) \in H'$ et $f(y) \in H'$ :
+$f(1_G) = 1&#95;{G'}$ et $1&#95;{G'} \in H'$, donc $1_G \in f^{-1}(H')$. Soient $x, y \in G$ tels que $f(x) \in H'$ et $f(y) \in H'$ :
 
 $$f(x * y^{-1}) = f(x) \star f(y)^{-1}$$
 
-avec $f(x) \in H'$ et $f(y)^{-1} \in H'$, donc $f(x \* y^{-1}) \in H'$, c'est-à-dire $x \* y^{-1} \in f^{-1}(H')$ : $f^{-1}(H')$ est un sous-groupe de $G$.
+avec $f(x) \in H'$ et $f(y)^{-1} \in H'$, donc $f(x &#42; y^{-1}) \in H'$, c'est-à-dire $x &#42; y^{-1} \in f^{-1}(H')$ : $f^{-1}(H')$ est un sous-groupe de $G$.
 
 </div>
 
@@ -392,7 +392,7 @@ avec $f(x) \in H'$ et $f(y)^{-1} \in H'$, donc $f(x \* y^{-1}) \in H'$, c'est-à
 
 <span class="bloc-titre">Corollaire (noyau)</span>
 
-$f^{-1}(\{1\_{G'}\})$ est un sous-groupe de $G$, appelé **noyau** de $f$ et noté $\mathrm{Ker}\, f$.
+$f^{-1}(\{1&#95;{G'}\})$ est un sous-groupe de $G$, appelé **noyau** de $f$ et noté $\mathrm{Ker}\, f$.
 
 </div>
 
@@ -408,15 +408,15 @@ Un morphisme de groupes $f$ est injectif si et seulement si $\mathrm{Ker}\, f = 
 
 <span class="bloc-titre">Remarque</span>
 
-On a toujours $1_G \in \mathrm{Ker}\, f$ car $f(1_G) = 1\_{G'}$.
+On a toujours $1_G \in \mathrm{Ker}\, f$ car $f(1_G) = 1&#95;{G'}$.
 
 </div>
 
 <div class="bloc demo" markdown="1">
 <span class="bloc-titre">Démonstration</span>
 
-- Si $f$ est injective et $a \in \mathrm{Ker}\, f$ : $f(a) = 1\_{G'} = f(1_G)$, donc $a = 1_G$ car $f$ est injective ;
-- si $\mathrm{Ker}\, f = \{1_G\}$ et $f(x) = f(y)$ : $f(x) \star [f(y)]^{-1} = 1\_{G'}$, donc $f(x \* y^{-1}) = 1\_{G'}$, soit $x \* y^{-1} \in \mathrm{Ker}\, f = \{1_G\}$ ; donc $x = y$ et $f$ est injective.
+- Si $f$ est injective et $a \in \mathrm{Ker}\, f$ : $f(a) = 1&#95;{G'} = f(1_G)$, donc $a = 1_G$ car $f$ est injective ;
+- si $\mathrm{Ker}\, f = \{1_G\}$ et $f(x) = f(y)$ : $f(x) \star [f(y)]^{-1} = 1&#95;{G'}$, donc $f(x &#42; y^{-1}) = 1&#95;{G'}$, soit $x &#42; y^{-1} \in \mathrm{Ker}\, f = \{1_G\}$ ; donc $x = y$ et $f$ est injective.
 
 </div>
 
@@ -458,7 +458,7 @@ Soit $A$ une partie d'un groupe $G$ : il existe un plus petit sous-groupe (au se
 <div class="bloc demo" markdown="1">
 <span class="bloc-titre">Démonstration (de l'existence)</span>
 
-Soit $\mathcal{F} = \{ F \mid F \text{ sous-groupe de } G \text{ et } A \subset F \}$ ; $G \in \mathcal{F}$ donc $\mathcal{F}$ est non vide. Posons $H = \bigcap\_{F \in \mathcal{F}} F$ : $H$ est un sous-groupe (opérations sur les sous-groupes) ; pour tout $F \in \mathcal{F}$, $A \subset F$, donc $A \subset H$ : $H$ est un sous-groupe contenant $A$ ; enfin, si $F$ est un sous-groupe contenant $A$, alors $F \in \mathcal{F}$ donc $H \subset F$ : $H$ est le plus petit sous-groupe contenant $A$.
+Soit $\mathcal{F} = \{ F \mid F \text{ sous-groupe de } G \text{ et } A \subset F \}$ ; $G \in \mathcal{F}$ donc $\mathcal{F}$ est non vide. Posons $H = \bigcap&#95;{F \in \mathcal{F}} F$ : $H$ est un sous-groupe (opérations sur les sous-groupes) ; pour tout $F \in \mathcal{F}$, $A \subset F$, donc $A \subset H$ : $H$ est un sous-groupe contenant $A$ ; enfin, si $F$ est un sous-groupe contenant $A$, alors $F \in \mathcal{F}$ donc $H \subset F$ : $H$ est le plus petit sous-groupe contenant $A$.
 
 </div>
 
@@ -475,13 +475,13 @@ $$\mathrm{gr}(A) = \left\{ u_1 * u_2 * \dots * u_k \mid k \in \mathbb{N},\ u_i \
 <div class="bloc demo" markdown="1">
 <span class="bloc-titre">Démonstration</span>
 
-Notons $H = \{ u_1 \* u_2 \* \dots \* u_k \mid k \in \mathbb{N},\ u_i \in A \text{ ou } u_i^{-1} \in A \}$. Si $a \in A$, alors $a \in H$ (prendre $k = 1$, $u_1 = a$) : $A \subset H$, et $H$ est non vide. Soient $x, y \in H$, $x = u_1 \* \dots \* u_k$, $y = v_1 \* \dots \* v_m$ :
+Notons $H = \{ u_1 &#42; u_2 &#42; \dots &#42; u_k \mid k \in \mathbb{N},\ u_i \in A \text{ ou } u_i^{-1} \in A \}$. Si $a \in A$, alors $a \in H$ (prendre $k = 1$, $u_1 = a$) : $A \subset H$, et $H$ est non vide. Soient $x, y \in H$, $x = u_1 &#42; \dots &#42; u_k$, $y = v_1 &#42; \dots &#42; v_m$ :
 
 $$x * y^{-1} = u_1 * \dots * u_k * \big(v_m^{-1} * v_{m-1}^{-1} * \dots * v_1^{-1}\big) = w_1 * \dots * w_{k+m}$$
 
-avec, pour chaque $w_i$ : si $w_i = u_j$, $w_i \in A$ ou $w_i^{-1} \in A$ ; si $w_i = v_j^{-1}$, $v_j^{-1} \in A$ ou $(v_j^{-1})^{-1} = v_j \in A$ (car $v_j \in A$ ou $v_j^{-1} \in A$). Donc $x \* y^{-1} \in H$ : $H$ est un sous-groupe contenant $A$.
+avec, pour chaque $w_i$ : si $w_i = u_j$, $w_i \in A$ ou $w_i^{-1} \in A$ ; si $w_i = v_j^{-1}$, $v_j^{-1} \in A$ ou $(v_j^{-1})^{-1} = v_j \in A$ (car $v_j \in A$ ou $v_j^{-1} \in A$). Donc $x &#42; y^{-1} \in H$ : $H$ est un sous-groupe contenant $A$.
 
-Soit $F$ un sous-groupe contenant $A$ : si $u \in A$, $u \in F$ ; si $u^{-1} \in A$, $u^{-1} \in F$ donc $u \in F$ (car $F$ est un sous-groupe) ; un produit $u_1 \* \dots \* u_k$ où $u_i \in A$ ou $u_i^{-1} \in A$ est donc un produit d'éléments de $F$, et il appartient à $F$ car $F$ est stable pour $\*$. Donc $H \subset F$.
+Soit $F$ un sous-groupe contenant $A$ : si $u \in A$, $u \in F$ ; si $u^{-1} \in A$, $u^{-1} \in F$ donc $u \in F$ (car $F$ est un sous-groupe) ; un produit $u_1 &#42; \dots &#42; u_k$ où $u_i \in A$ ou $u_i^{-1} \in A$ est donc un produit d'éléments de $F$, et il appartient à $F$ car $F$ est stable pour $&#42;$. Donc $H \subset F$.
 
 </div>
 
@@ -565,17 +565,17 @@ Si $G$ est un groupe fini d'ordre $n$, l'ordre (le cardinal) d'un sous-groupe $H
 <div class="bloc demo" markdown="1">
 <span class="bloc-titre">Démonstration</span>
 
-Soit $\mathcal{R}$ la relation sur $G$ définie par $x \mathcal{R} y \iff x^{-1} \* y \in H$. C'est une relation d'équivalence :
+Soit $\mathcal{R}$ la relation sur $G$ définie par $x \mathcal{R} y \iff x^{-1} &#42; y \in H$. C'est une relation d'équivalence :
 
-- $x^{-1} \* x = 1_G \in H$ car $H$ est un sous-groupe (réflexivité) ;
-- si $x \mathcal{R} y$, alors $x^{-1} \* y \in H$, donc $(x^{-1} \* y)^{-1} = y^{-1} \* x \in H$ car $H$ est un sous-groupe : $y \mathcal{R} x$ (symétrie) ;
-- si $x \mathcal{R} y$ et $y \mathcal{R} z$, alors $x^{-1} \* y \in H$ et $y^{-1} \* z \in H$, donc $(x^{-1} \* y) \* (y^{-1} \* z) = x^{-1} \* z \in H$ car $H$ est stable pour $\*$ (transitivité).
+- $x^{-1} &#42; x = 1_G \in H$ car $H$ est un sous-groupe (réflexivité) ;
+- si $x \mathcal{R} y$, alors $x^{-1} &#42; y \in H$, donc $(x^{-1} &#42; y)^{-1} = y^{-1} &#42; x \in H$ car $H$ est un sous-groupe : $y \mathcal{R} x$ (symétrie) ;
+- si $x \mathcal{R} y$ et $y \mathcal{R} z$, alors $x^{-1} &#42; y \in H$ et $y^{-1} &#42; z \in H$, donc $(x^{-1} &#42; y) &#42; (y^{-1} &#42; z) = x^{-1} &#42; z \in H$ car $H$ est stable pour $&#42;$ (transitivité).
 
 La classe de $x$ est :
 
 $$C_x = \{ y \in G \mid x^{-1} * y \in H \} = \{ y \in G \mid y = x * h,\ h \in H \} = x * H = \{ x * h \mid h \in H \}$$
 
-Soit $x$ fixé ; $\varphi_x : H 	o x \* H$, $h \mapsto x \* h$ est surjective (si $y \in xH$, $y = x \* h$ avec $h \in H$, et $h$ est un antécédent) et injective (si $x \* h_1 = x \* h_2$, alors $h_1 = h_2$ car $x$ est régulier) : $\varphi_x$ est bijective, donc $\mathrm{card}\, H = \mathrm{card}\, C_x$. Les classes $C_x$ forment une partition de $G$ ; en choisissant un représentant et un seul de chaque classe :
+Soit $x$ fixé ; $\varphi_x : H 	o x &#42; H$, $h \mapsto x &#42; h$ est surjective (si $y \in xH$, $y = x &#42; h$ avec $h \in H$, et $h$ est un antécédent) et injective (si $x &#42; h_1 = x &#42; h_2$, alors $h_1 = h_2$ car $x$ est régulier) : $\varphi_x$ est bijective, donc $\mathrm{card}\, H = \mathrm{card}\, C_x$. Les classes $C_x$ forment une partition de $G$ ; en choisissant un représentant et un seul de chaque classe :
 
 $$n = \mathrm{card}\, G = \sum_{C_x \in G/\mathcal{R}} \mathrm{card}(C_x) = \mathrm{card}\, H \times \mathrm{card}(G/\mathcal{R})$$
 
@@ -595,7 +595,7 @@ L'ordre d'un élément divise l'ordre du groupe (prendre $H = \mathrm{gr}(a)$ da
 
 <span class="bloc-titre">Exemples de groupes engendrés par une partie</span>
 
-- Groupes monogènes : $\mathbb{Z}$ est engendré par $1$ ; $2\mathbb{Z} \cap 3\mathbb{Z}$ est engendré par $6$ (c'est $6\mathbb{Z}$) ; $\mathbb{U}\_n = \{ e^{2ik\pi/n} \mid k \in [\![0, n-1]\!] \}$ est cyclique, un générateur en est $e^{2i\pi/n}$ ; pour $n = 4$ : $i$ est un générateur de $\mathbb{U}\_4$, mais $-1$ n'en est pas un car $\mathrm{gr}\{-1\} = \{1, -1\}$ ; $-i$ est un générateur de $\mathbb{U}\_4$ ;
+- Groupes monogènes : $\mathbb{Z}$ est engendré par $1$ ; $2\mathbb{Z} \cap 3\mathbb{Z}$ est engendré par $6$ (c'est $6\mathbb{Z}$) ; $\mathbb{U}&#95;n = \{ e^{2ik\pi/n} \mid k \in [\![0, n-1]\!] \}$ est cyclique, un générateur en est $e^{2i\pi/n}$ ; pour $n = 4$ : $i$ est un générateur de $\mathbb{U}&#95;4$, mais $-1$ n'en est pas un car $\mathrm{gr}\{-1\} = \{1, -1\}$ ; $-i$ est un générateur de $\mathbb{U}&#95;4$ ;
 - le groupe des isométries (du plan) est engendré par les symétries, car toute isométrie s'écrit comme un produit de symétries ; si $a$ et $b$ sont deux éléments d'ordre $n$, l'application $\varphi : a^k \mapsto b^k$ est un isomorphisme de $\mathrm{gr}\{a\}$ sur $\mathrm{gr}\{b\}$.
 
 </div>
@@ -654,7 +654,7 @@ eq 0$).
 
 <span class="bloc-titre">Proposition 2 (formule du binôme)</span>
 
-Si $x$ et $y$ commutent, alors $\forall n \in \mathbb{N}^\*$ :
+Si $x$ et $y$ commutent, alors $\forall n \in \mathbb{N}^&#42;$ :
 
 $$(x + y)^n = \sum_{k=0}^{n} \binom{n}{k} x^k y^{n-k}$$
 
@@ -766,7 +766,7 @@ $(K, +, \times)$ est un **corps** si :
 
 <span class="bloc-titre">Exemples</span>
 
-- les éléments inversibles de $\mathbb{Z}$ sont $\{-1, 1\} = \mathbb{Z}^\*$ ;
+- les éléments inversibles de $\mathbb{Z}$ sont $\{-1, 1\} = \mathbb{Z}^&#42;$ ;
 - $(\mathbb{Q}, +, \cdot)$, $(\mathbb{R}, +, \cdot)$, $(\mathbb{C}, +, \cdot)$ sont des corps.
 
 </div>
@@ -785,7 +785,7 @@ Un corps est un anneau intègre (car tout élément non nul y est inversible, do
 
 <span class="bloc-titre">Proposition 2</span>
 
-$K^\*$ (l'ensemble des éléments inversibles de $K$) vaut $K \setminus \{0\}$, et $(K^\*, \times)$ est un groupe commutatif.
+$K^&#42;$ (l'ensemble des éléments inversibles de $K$) vaut $K \setminus \{0\}$, et $(K^&#42;, \times)$ est un groupe commutatif.
 
 </div>
 
@@ -793,7 +793,7 @@ $K^\*$ (l'ensemble des éléments inversibles de $K$) vaut $K \setminus \{0\}$, 
 
 <span class="bloc-titre">Exemple</span>
 
-$(\mathbb{C}^\*, \cdot)$ est un groupe : $1 \in \mathbb{C}^\*$ car $1 \neq 0$ est neutre pour $\cdot$ ; $\cdot$ est associative ; tout élément de $\mathbb{C}^\*$ est inversible car $0 \notin \mathbb{C}^\*$.
+$(\mathbb{C}^&#42;, \cdot)$ est un groupe : $1 \in \mathbb{C}^&#42;$ car $1 \neq 0$ est neutre pour $\cdot$ ; $\cdot$ est associative ; tout élément de $\mathbb{C}^&#42;$ est inversible car $0 \notin \mathbb{C}^&#42;$.
 
 </div>
 
@@ -883,7 +883,7 @@ Réciproquement, si 1), 2), 3) : $(B, +)$ est un sous-groupe de $(A, +)$, donc u
 <div class="bloc demo" markdown="1">
 <span class="bloc-titre">Démonstration</span>
 
-Soit $\mathcal{F}$ une famille de sous-anneaux de $A$ et $B = \bigcap\_{F \in \mathcal{F}} F$ : pour tout $F \in \mathcal{F}$, $1_A \in F$, donc $1_A \in B$.
+Soit $\mathcal{F}$ une famille de sous-anneaux de $A$ et $B = \bigcap&#95;{F \in \mathcal{F}} F$ : pour tout $F \in \mathcal{F}$, $1_A \in F$, donc $1_A \in B$.
 
 </div>
 
@@ -962,9 +962,9 @@ Soit $I$ un idéal de $K$ tel que $I \neq \{0\}$ : il existe $x \in I$ tel que $
 <div class="bloc demo" markdown="1">
 <span class="bloc-titre">Démonstration</span>
 
-$\*$ Soit $\mathcal{J}$ une famille d'idéaux de $A$ et $D = \bigcap\_{I \in \mathcal{J}} I$. Alors $D$ est un sous-groupe de $(A, +)$. Soit $a \in A$ et $x \in D$ : pour tout $I \in \mathcal{J}$, on a $x \in I$, et comme $I$ est un idéal, $a x \in I$ ; donc $a x \in \bigcap\_{I \in \mathcal{J}} I$, c'est-à-dire $a x \in D$ : $D$ est un idéal.
+$&#42;$ Soit $\mathcal{J}$ une famille d'idéaux de $A$ et $D = \bigcap&#95;{I \in \mathcal{J}} I$. Alors $D$ est un sous-groupe de $(A, +)$. Soit $a \in A$ et $x \in D$ : pour tout $I \in \mathcal{J}$, on a $x \in I$, et comme $I$ est un idéal, $a x \in I$ ; donc $a x \in \bigcap&#95;{I \in \mathcal{J}} I$, c'est-à-dire $a x \in D$ : $D$ est un idéal.
 
-$\*\*$ Soient $I_1, \dots, I_n$ des idéaux de $A$ et $I = I_1 + I_2 + \dots + I_n$. C'est un sous-groupe de $(A, +)$ (somme de sous-groupes). Soit $a \in A$ et $x = x_1 + x_2 + \dots + x_n \in I$ (avec $x_i \in I_i$) :
+$&#42;&#42;$ Soient $I_1, \dots, I_n$ des idéaux de $A$ et $I = I_1 + I_2 + \dots + I_n$. C'est un sous-groupe de $(A, +)$ (somme de sous-groupes). Soit $a \in A$ et $x = x_1 + x_2 + \dots + x_n \in I$ (avec $x_i \in I_i$) :
 
 $$a x = a x_1 + a x_2 + \dots + a x_n$$
 
@@ -1127,11 +1127,11 @@ Soit $f : K \to K'$ un morphisme de corps : $\operatorname{Ker} f$ est un idéal
 
 #### 1) Définitions
 
-Vocabulaire, pour une loi $\*$ sur un ensemble $E$ :
+Vocabulaire, pour une loi $&#42;$ sur un ensemble $E$ :
 
 - **loi de composition interne** sur $E$ ;
-- $(E, \*)$ est un **magma** ;
-- $\*$ **commutative** ;
+- $(E, &#42;)$ est un **magma** ;
+- $&#42;$ **commutative** ;
 - **magma associatif** ;
 - **magma unifère** (existence d'un élément neutre) ;
 - élément **symétrisable** (puis **symétrique**) ;
@@ -1141,14 +1141,14 @@ Vocabulaire, pour une loi $\*$ sur un ensemble $E$ :
 #### 2) Propriétés
 
 1. unicité de l'élément neutre ;
-2. unicité du symétrique si $(E, \*)$ est associatif et unifère ;
-3. si $(E, \*)$ est associatif et unifère : $(x \* y)^{-1} = y^{-1} \* x^{-1}$ ;
-4. si $(E, \*)$ est associatif et unifère, et si $x$ est symétrisable, alors $x$ est régulier.
+2. unicité du symétrique si $(E, &#42;)$ est associatif et unifère ;
+3. si $(E, &#42;)$ est associatif et unifère : $(x &#42; y)^{-1} = y^{-1} &#42; x^{-1}$ ;
+4. si $(E, &#42;)$ est associatif et unifère, et si $x$ est symétrisable, alors $x$ est régulier.
 
 #### 3) Loi de composition externe
 
-- si $\*$ est stable sur une partie de $E$, c'est une loi de composition interne sur cette partie ;
-- si $\*$ n'est pas stable : $\*$ est une opération de $A \times E \to E$, appelée **loi de composition externe**.
+- si $&#42;$ est stable sur une partie de $E$, c'est une loi de composition interne sur cette partie ;
+- si $&#42;$ n'est pas stable : $&#42;$ est une opération de $A \times E \to E$, appelée **loi de composition externe**.
 
 ### III. Morphismes
 
@@ -1201,8 +1201,8 @@ $H$ est un **sous-groupe** de $G$ si $H$ est un groupe pour la loi induite et si
 
 $H$ est un sous-groupe de $G$ si et seulement si :
 
-- $H$ non vide, $\forall (x, y) \in H^2,\ x \* y \in H$ et $\forall x \in H,\ x^{-1} \in H$ ;
-- ou encore : $H$ non vide et $\forall (x, y) \in H^2,\ x \* y^{-1} \in H$.
+- $H$ non vide, $\forall (x, y) \in H^2,\ x &#42; y \in H$ et $\forall x \in H,\ x^{-1} \in H$ ;
+- ou encore : $H$ non vide et $\forall (x, y) \in H^2,\ x &#42; y^{-1} \in H$.
 
 </div>
 
@@ -1308,7 +1308,7 @@ $(u_n) + (v_n) = (u_n + v_n)$ et $(u_n) \cdot (v_n) = (u_n \cdot v_n)$.
 </li>
 <li>Soit $A$ un anneau intègre et $(I_n)$ une suite croissante (pour l'inclusion) d'idéaux.
 <ol>
-<li>Soit $I = \bigcup\_{n \in \mathbb{N}} I_n$. Montrer que $I$ est un idéal.</li>
+<li>Soit $I = \bigcup&#95;{n \in \mathbb{N}} I_n$. Montrer que $I$ est un idéal.</li>
 <li>On suppose que $A$ est principal. Montrer que la suite $(I_n)$ est stationnaire.</li>
 </ol>
 </li>

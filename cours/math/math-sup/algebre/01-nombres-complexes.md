@@ -167,7 +167,7 @@ Il y a égalité si $|\mathrm{Re}(z)| = |z|$ et $|\mathrm{Im}(z)| = 0$, donc $z 
 
 $$|z + z'| \leq |z| + |z'|$$
 
-et il y a égalité si et seulement si $z$ ou $z'$ est nul, ou bien $z' = \lambda z$ avec $\lambda \in \mathbb{R}\_+$.
+et il y a égalité si et seulement si $z$ ou $z'$ est nul, ou bien $z' = \lambda z$ avec $\lambda \in \mathbb{R}&#95;+$.
 
 </div>
 
@@ -182,11 +182,11 @@ D'où $|z| \geq |\mathrm{Re}(z)| \geq \mathrm{Re}(z)$, on a $|z+z'|^2 \leq (|z|+
 
 **Cas d'égalité** : $|z+z'|^2 = (|z|+|z'|)^2$ si et seulement si $|z'\overline{z}| = \mathrm{Re}(z'\overline{z})$, soit $|z'\overline{z}| = |\mathrm{Re}(z'\overline{z})|$, donc $z'\overline{z} \in \mathbb{R}$, avec $z'\overline{z} = \lambda |z|^2$, $\lambda \in \mathbb{R}$.
 
-Si $z \neq 0$, $z' = \dfrac{\lambda}{|z|^2}\,z = \mu z$ avec $\mu \in \mathbb{R}$. De plus $z'\overline{z} = \mu|z|^2$ et $|\mu|\,|z|^2 = \mathrm{Re}(\mu|z|^2) = \mu|z|^2$ ; comme $z \neq 0$, $|\mu| = \mu$, donc $\mu \in \mathbb{R}\_+$.
+Si $z \neq 0$, $z' = \dfrac{\lambda}{|z|^2}\,z = \mu z$ avec $\mu \in \mathbb{R}$. De plus $z'\overline{z} = \mu|z|^2$ et $|\mu|\,|z|^2 = \mathrm{Re}(\mu|z|^2) = \mu|z|^2$ ; comme $z \neq 0$, $|\mu| = \mu$, donc $\mu \in \mathbb{R}&#95;+$.
 
-Il y a égalité si et seulement si $z = 0$ ou $z' = \mu z$ avec $\mu \in \mathbb{R}\_+$.
+Il y a égalité si et seulement si $z = 0$ ou $z' = \mu z$ avec $\mu \in \mathbb{R}&#95;+$.
 
-**Réciproque** : si $z = 0$ ou $z' = 0$ ; si $z' = \mu z$ avec $\mu \in \mathbb{R}\_+$,
+**Réciproque** : si $z = 0$ ou $z' = 0$ ; si $z' = \mu z$ avec $\mu \in \mathbb{R}&#95;+$,
 
 $$|z+z'| = |z|\,|1+\mu| = |z|(1+\mu) \ \text{car } \mu \geq 0, = |z| + |\mu z| = |z| + |z'|$$
 
@@ -369,24 +369,24 @@ Posons $r = |z|^{1/n}$ et $u_k = r e^{i(\frac{\theta}{n} + \frac{2k\pi}{n})}$ po
 
 $$\frac{\theta}{n} + \frac{2k\pi}{n} = \frac{\theta}{n} + \frac{2k'\pi}{n} \ [2\pi] \Leftrightarrow \frac{2(k-k')\pi}{n} = 0 \ [2\pi] \Leftrightarrow k = k'$$
 
-donc $u_k \neq u\_{k'}$ pour $0 \leq k \neq k' \leq n-1$ : on a $n$ racines distinctes.
+donc $u_k \neq u&#95;{k'}$ pour $0 \leq k \neq k' \leq n-1$ : on a $n$ racines distinctes.
 
 D'après l'équivalence ci-dessus, si $u$ est racine $n$-ième, $u$ est de la forme
 $|z|^{1/n} e^{i(\frac{\theta}{n} + \frac{2k\pi}{n})} = u_k$, $k \in \mathbb{Z}$. En écrivant $q = \left\lfloor \dfrac{k}{n} \right\rfloor$ (donc $q \leq \dfrac{k}{n} < q+1$) et $k = qn + r$ avec $0 \leq r \leq n-1$ :
 
 $$u_k = |z|^{\frac{1}{n}} e^{i\left(\frac{\theta}{n} + \frac{2(qn+r)\pi}{n}\right)} = |z|^{\frac{1}{n}} e^{i\left(\frac{\theta}{n} + \frac{2r\pi}{n} + 2q\pi\right)} = |z|^{\frac{1}{n}} e^{i(\frac{\theta}{n} + \frac{2r\pi}{n})} = u_r$$
 
-d'où $u_k \in \{u_0, u_1, \dots, u\_{n-1}\}$.
+d'où $u_k \in \{u_0, u_1, \dots, u&#95;{n-1}\}$.
 
 </div>
 
-**Conclusion** : $\{u_0, u_1, \dots, u\_{n-1}\}$ sont les $n$ racines $n$-ièmes de $z$.
+**Conclusion** : $\{u_0, u_1, \dots, u&#95;{n-1}\}$ sont les $n$ racines $n$-ièmes de $z$.
 
 <div class="bloc propriete" markdown="1">
 
 <span class="bloc-titre">Corollaire</span>
 
-- Les racines $n$-ièmes de l'unité ($1$) sont $\omega_0 = 1$, $\omega_1 = e^{2i\pi/n}$, $\omega_2 = e^{2\cdot 2i\pi/n} = \omega_1^2$, $\omega_3 = e^{3\cdot 2i\pi/n} = \omega_1^3$, \dots, $\omega\_{n-1} = e^{(n-1)2i\pi/n}$ (en notant $\omega = e^{2i\pi/n}$ : $\omega_k = \omega^k$) ;
+- Les racines $n$-ièmes de l'unité ($1$) sont $\omega_0 = 1$, $\omega_1 = e^{2i\pi/n}$, $\omega_2 = e^{2\cdot 2i\pi/n} = \omega_1^2$, $\omega_3 = e^{3\cdot 2i\pi/n} = \omega_1^3$, \dots, $\omega&#95;{n-1} = e^{(n-1)2i\pi/n}$ (en notant $\omega = e^{2i\pi/n}$ : $\omega_k = \omega^k$) ;
 - si $z_0$ est une racine $n$-ième de $z$, les racines $n$-ièmes de $z$ sont
 
 $$\{z_0\omega^k,\ 0 \leq k \leq n-1\} = \{z_0,\ z_0\omega,\ z_0\omega^2,\ \dots,\ z_0\omega^{n-1}\}$$
@@ -433,7 +433,7 @@ $$u^2 = z \Leftrightarrow \alpha^2 - \beta^2 + 2i\alpha\beta = A + iB \Leftright
 
 On a $\alpha^2 + \beta^2 = |u|^2 = |u^2| = |z| = \sqrt{A^2 + B^2}$. On en déduit $\alpha^2$ et $\beta^2$ ; d'après (2), on connaît le signe de $\alpha \times \beta$ ; on en déduit les deux couples $(\alpha, \beta)$ et $(-\alpha, -\beta)$.
 
-**b) Équation du second degré.** Soit $T = az^2 + bz + c$, avec $a \in \mathbb{C}^\*$, $b, c \in \mathbb{C}$ :
+**b) Équation du second degré.** Soit $T = az^2 + bz + c$, avec $a \in \mathbb{C}^&#42;$, $b, c \in \mathbb{C}$ :
 
 $$T = a\left(z^2 + \frac{b}{a}z + \frac{c}{a}\right) = a\left(\left(z + \frac{b}{2a}\right)^2 + \frac{c}{a} - \frac{b^2}{4a^2}\right) = a\left(\left(z + \frac{b}{2a}\right)^2 - \frac{\Delta}{4a^2}\right)$$
 
@@ -541,8 +541,8 @@ La transformation $z \mapsto jz - 7$ est la rotation $\mathrm{Rot}\!\left(\Omega
 <li>$a + b < (1 + a^2)(1 + b^2)$.</li>
 </ol>
 </li>
-<li>Montrer que $\forall a, b, c \in \mathbb{R}\_+^\*,\ \dfrac{a}{b+c} + \dfrac{b}{a+c} + \dfrac{c}{b+a} \geq \dfrac{3}{2}$. Étudier les cas d'égalité.</li>
-<li>Soient $x_1, x_2, \dots, x_n \in \mathbb{R}$ tels que $\displaystyle\sum\_{i=1}^{n} x_i^2 = x_1x_2 + x_2x_3 + \dots + x\_{n-1}x_n + x_nx_1$. Montrer que tous les $x_i$ sont égaux.</li>
+<li>Montrer que $\forall a, b, c \in \mathbb{R}&#95;+^&#42;,\ \dfrac{a}{b+c} + \dfrac{b}{a+c} + \dfrac{c}{b+a} \geq \dfrac{3}{2}$. Étudier les cas d'égalité.</li>
+<li>Soient $x_1, x_2, \dots, x_n \in \mathbb{R}$ tels que $\displaystyle\sum&#95;{i=1}^{n} x_i^2 = x_1x_2 + x_2x_3 + \dots + x&#95;{n-1}x_n + x_nx_1$. Montrer que tous les $x_i$ sont égaux.</li>
 <li>Résoudre dans $\mathbb{R}$ les systèmes suivants :
 $$\begin{cases} x + y = 2 \\ \dfrac{1}{x} + \dfrac{1}{y} = \dfrac{1}{2} \end{cases} \qquad \text{et} \qquad \begin{cases} x + y + z = 2 \\ \dfrac{1}{x} + \dfrac{1}{y} + \dfrac{1}{z} = \dfrac{1}{3} \end{cases}$$</li>
 <li>Résoudre : $\cos x - \sin x < 1$.</li>
@@ -613,7 +613,7 @@ Expliquer alors la méthode de résolution de (1).</li>
 <ol>
 <li>Montrer que si $\Delta > 0$, il y a une racine réelle et 2 complexes ; on donnera son expression algébrique.</li>
 <li>Si $\Delta = 0$, il y a 2 racines réelles dont 1 double — donner les expressions.</li>
-<li>Si $\Delta < 0$, il y a 3 racines réelles, que l'on exprimera en fonction de $\rho$ et $\theta$ avec $a = \rho\, e^{i\theta}$, $\rho \in \mathbb{R}\_+$. Comment détermine-t-on $\rho$ et $\theta$ ?</li>
+<li>Si $\Delta < 0$, il y a 3 racines réelles, que l'on exprimera en fonction de $\rho$ et $\theta$ avec $a = \rho\, e^{i\theta}$, $\rho \in \mathbb{R}&#95;+$. Comment détermine-t-on $\rho$ et $\theta$ ?</li>
 </ol>
 </li>
 <li>Expliquer comment ramener l'équation suivante à une équation du type (1) :

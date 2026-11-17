@@ -21,7 +21,7 @@ Dans tout ce cours, $\mathbb{K}$ désigne un corps commutatif (en fait, on consi
 
 <span class="bloc-titre">Définition 1 (suite presque nulle)</span>
 
-Soit $(a_n)\_{n \in \mathbb{N}}$ une suite d'éléments de $\mathbb{K}$. On dit que $(a_n)$ est **presque nulle** si $\{n \in \mathbb{N} \mid a_n \neq 0\}$ est fini (ou vide).
+Soit $(a_n)&#95;{n \in \mathbb{N}}$ une suite d'éléments de $\mathbb{K}$. On dit que $(a_n)$ est **presque nulle** si $\{n \in \mathbb{N} \mid a_n \neq 0\}$ est fini (ou vide).
 
 </div>
 
@@ -45,7 +45,7 @@ $(0, 1, 0, \dots, 0) \in \mathbb{K}[X]$.
 
 <span class="bloc-titre">Définition 3 (degré, valuation, coefficient dominant)</span>
 
-Soit $P = (a_n)\_{n \in \mathbb{N}}$ un polynôme.
+Soit $P = (a_n)&#95;{n \in \mathbb{N}}$ un polynôme.
 
 - si $P = 0$, c'est-à-dire si $\forall n \in \mathbb{N},\ a_n = 0$, on pose $\deg(P) = -\infty$ (noté $\deg(0) = -\infty$) ;
 - sinon, $\{n \in \mathbb{N} \mid a_n \neq 0\}$ est une partie de $\mathbb{N}$ non vide (car $P \neq 0$) : elle admet un plus grand élément, appelé **degré de $P$** ; elle admet aussi un plus petit élément, appelé **valuation de $P$**.
@@ -58,7 +58,7 @@ Si $p = \deg P$, alors $a_p$ s'appelle le **coefficient dominant** de $P$.
 
 <span class="bloc-titre">Remarque (égalité de deux polynômes)</span>
 
-Soient $P = (a_n)\_{n \in \mathbb{N}}$ et $Q = (b_n)\_{n \in \mathbb{N}}$ : $P = Q$ si et seulement si $\forall n \in \mathbb{N},\ a_n = b_n$.
+Soient $P = (a_n)&#95;{n \in \mathbb{N}}$ et $Q = (b_n)&#95;{n \in \mathbb{N}}$ : $P = Q$ si et seulement si $\forall n \in \mathbb{N},\ a_n = b_n$.
 
 </div>
 
@@ -106,13 +106,13 @@ Soit $A = \{n \in \mathbb{N} \mid c_n \neq 0\}$.
 Pour le produit :
 
 - si $P = 0$ ou $Q = 0$ : $\forall n \in \mathbb{N},\ d_n = 0$, donc $PQ = 0 \in \mathbb{K}[X]$ ;
-- si $P$ et $Q$ sont non nuls, soit $n > \deg P + \deg Q$ : $d_n = \sum\_{k=0}^{n} a_k b\_{n-k}$. Si $k > p$, $a_k = 0$ ; si $k \leq p$, alors $n - k \geq n - p > q$ donc $b\_{n-k} = 0$. Dans tous les cas $d_n = 0$, et $D = \{n \in \mathbb{N} \mid d_n \neq 0\}$ est soit vide soit majoré par $p + q$ : donc $PQ \in \mathbb{K}[X]$.
+- si $P$ et $Q$ sont non nuls, soit $n > \deg P + \deg Q$ : $d_n = \sum&#95;{k=0}^{n} a_k b&#95;{n-k}$. Si $k > p$, $a_k = 0$ ; si $k \leq p$, alors $n - k \geq n - p > q$ donc $b&#95;{n-k} = 0$. Dans tous les cas $d_n = 0$, et $D = \{n \in \mathbb{N} \mid d_n \neq 0\}$ est soit vide soit majoré par $p + q$ : donc $PQ \in \mathbb{K}[X]$.
 
 $(\mathbb{K}[X], +)$ est un groupe, c'est un sous-groupe de $(\mathbb{K}^{\mathbb{N}}, +)$.
 
-$(1, 0, \dots)$ est un élément neutre pour $\times$ : notons $E = (e_n)\_{n \in \mathbb{N}}$ cet élément ($e_0 = 1$) ; pour $P = (a_n)\_{n \in \mathbb{N}}$, $P \times E = (d_n)\_{n \in \mathbb{N}}$ avec $d_n = \sum\_{k=0}^{n} a_k e\_{n-k} = a_n$, donc $P \times E = P$.
+$(1, 0, \dots)$ est un élément neutre pour $\times$ : notons $E = (e_n)&#95;{n \in \mathbb{N}}$ cet élément ($e_0 = 1$) ; pour $P = (a_n)&#95;{n \in \mathbb{N}}$, $P \times E = (d_n)&#95;{n \in \mathbb{N}}$ avec $d_n = \sum&#95;{k=0}^{n} a_k e&#95;{n-k} = a_n$, donc $P \times E = P$.
 
-$\times$ est commutative car $\sum\_{k=0}^{n} a_k b\_{n-k} = \sum\_{k'=0}^{n} a\_{n-k'} b\_{k'} = \sum\_{k'=0}^{n} b\_{k'} a\_{n-k'}$.
+$\times$ est commutative car $\sum&#95;{k=0}^{n} a_k b&#95;{n-k} = \sum&#95;{k'=0}^{n} a&#95;{n-k'} b&#95;{k'} = \sum&#95;{k'=0}^{n} b&#95;{k'} a&#95;{n-k'}$.
 
 $\times$ est associative : soient $P = (a_n)$, $Q = (b_n)$, $R = (c_n)$ dans $\mathbb{K}[X]$, et posons $PQ = (d_n)$, $(QR) = (e_n)$, $P(QR) = (f_n)$, $(PQ)R = (g_n)$. Alors
 
@@ -120,7 +120,7 @@ $$e_n = \sum_{k+l=n} b_k c_l$$
 
 $$f_n = \sum_{i+j=n} a_i e_j = \sum_{i+j=n} a_i \Big( \sum_{k+l=j} b_k c_l \Big) = \sum_{\substack{i+j=n \\ k+l=j}} a_i b_k c_l = \sum_{i+k+l=n} a_i b_k c_l$$
 
-et de même $g_n = \sum\_{i+k+l=n} c_i a_k b_l$ ; en posant $i = l'$, $k = i'$, $l = k'$ :
+et de même $g_n = \sum&#95;{i+k+l=n} c_i a_k b_l$ ; en posant $i = l'$, $k = i'$, $l = k'$ :
 
 $$g_n = \sum_{i'+k'+l'=n} a_{i'} b_{k'} c_{l'} = f_n$$
 
@@ -132,7 +132,7 @@ donc $(PQ)R = P(QR)$.
 
 <span class="bloc-titre">Remarque</span>
 
-$\mathbb{K}[X]$ n'est **pas un corps** : $P = (0, 1, 0, \dots)$ n'est pas inversible. En effet, pour tout $Q = (b_n)$, $PQ = (d_n)$ avec $d_n = b\_{n-1}$ et $d_0 = 0$ : donc $PQ \neq E = (1, 0, \dots)$.
+$\mathbb{K}[X]$ n'est **pas un corps** : $P = (0, 1, 0, \dots)$ n'est pas inversible. En effet, pour tout $Q = (b_n)$, $PQ = (d_n)$ avec $d_n = b&#95;{n-1}$ et $d_0 = 0$ : donc $PQ \neq E = (1, 0, \dots)$.
 
 </div>
 
@@ -142,7 +142,7 @@ $\mathbb{K}[X]$ n'est **pas un corps** : $P = (0, 1, 0, \dots)$ n'est pas invers
 
 <span class="bloc-titre">Définition 5 (loi externe)</span>
 
-Pour tout $\lambda \in \mathbb{K}$, on définit $\lambda P$ par $\lambda P = (\lambda a_n)\_{n \in \mathbb{N}}$.
+Pour tout $\lambda \in \mathbb{K}$, on définit $\lambda P$ par $\lambda P = (\lambda a_n)&#95;{n \in \mathbb{N}}$.
 
 </div>
 
@@ -172,7 +172,7 @@ $$X^n = (\underbrace{0, \dots, 0}_{n \text{ zéros}}, 1, 0, \dots)$$
 
 <span class="bloc-titre">Proposition</span>
 
-Tout polynôme $P = (a_n)\_{n \in \mathbb{N}} \in \mathbb{K}[X]$ s'écrit
+Tout polynôme $P = (a_n)&#95;{n \in \mathbb{N}} \in \mathbb{K}[X]$ s'écrit
 
 $$P = \sum_{k \in \mathbb{N}} a_k X^k$$
 
@@ -184,9 +184,9 @@ et l'écriture est **unique**.
 
 <span class="bloc-titre">Remarque</span>
 
-$\sum\_{k \in \mathbb{N}} a_k X^k$ désigne la somme finie $S = 0$ si $P = 0$, et sinon $S = \sum\_{k=0}^{\deg P} a_k X^k$ si $P \neq 0$ : c'est bien une somme finie de polynômes.
+$\sum&#95;{k \in \mathbb{N}} a_k X^k$ désigne la somme finie $S = 0$ si $P = 0$, et sinon $S = \sum&#95;{k=0}^{\deg P} a_k X^k$ si $P \neq 0$ : c'est bien une somme finie de polynômes.
 
-- si $P = 0$ : $P = \sum\_{k \in \mathbb{N}} 0\, X^k$ ;
+- si $P = 0$ : $P = \sum&#95;{k \in \mathbb{N}} 0\, X^k$ ;
 - si $P \neq 0$, soit $p = \deg P$ :
 
 $$P = (a_0, a_1, \dots, a_p, 0, \dots) = (a_0, 0, \dots) + a_1 (0, 1, 0, \dots) + \dots + a_p (\underbrace{0, \dots, 0}_{p \text{ zéros}}, 1, 0, \dots) = a_0 X^0 + a_1 X^1 + \dots + a_p X^p$$
@@ -197,11 +197,11 @@ $$P = (a_0, a_1, \dots, a_p, 0, \dots) = (a_0, 0, \dots) + a_1 (0, 1, 0, \dots) 
 
 <span class="bloc-titre">Démonstration (unicité de l'écriture)</span>
 
-Si $P = \sum\_{k \in \mathbb{N}} a_k X^k = \sum\_{i \in \mathbb{N}} b_i X^i$ (les deux sommes désignant une somme finie), écrivons $P = \sum\_{k=0}^{p} a_k X^k = \sum\_{i=0}^{q} b_i X^i$. Soit $m = \min(p, q)$ ; supposons par exemple $m = p$. Alors
+Si $P = \sum&#95;{k \in \mathbb{N}} a_k X^k = \sum&#95;{i \in \mathbb{N}} b_i X^i$ (les deux sommes désignant une somme finie), écrivons $P = \sum&#95;{k=0}^{p} a_k X^k = \sum&#95;{i=0}^{q} b_i X^i$. Soit $m = \min(p, q)$ ; supposons par exemple $m = p$. Alors
 
 $$\sum_{k=0}^{m} a_k X^k - \sum_{i=0}^{m} b_i X^i - \sum_{i=m+1}^{q} b_i X^i = 0, \qquad \text{soit} \qquad \sum_{i=0}^{m} (a_i - b_i) X^i - \sum_{i=m+1}^{q} b_i X^i = 0$$
 
-Le polynôme $S = (a_0 - b_0, \dots, a_m - b_m, -b\_{m+1}, \dots, -b_q, 0, \dots)$ est nul, donc $\forall i \leq m,\ a_i = b_i$ ; $\forall i \geq m+1,\ b_i = 0$ ; or $\forall i \geq m+1,\ a_i = 0$. Finalement $\forall i \in \mathbb{N},\ a_i = b_i$.
+Le polynôme $S = (a_0 - b_0, \dots, a_m - b_m, -b&#95;{m+1}, \dots, -b_q, 0, \dots)$ est nul, donc $\forall i \leq m,\ a_i = b_i$ ; $\forall i \geq m+1,\ b_i = 0$ ; or $\forall i \geq m+1,\ a_i = 0$. Finalement $\forall i \in \mathbb{N},\ a_i = b_i$.
 
 </div>
 
@@ -213,13 +213,13 @@ $P = 1 + X + \dots + X^n$ : calculer $P^2$.
 
 </div>
 
-On écrira désormais un polynôme $P = \sum\_{k=0}^{n} a_k X^k$ :
+On écrira désormais un polynôme $P = \sum&#95;{k=0}^{n} a_k X^k$ :
 
 - les $a_k$ s'appellent les **coefficients** de $P$ ;
 - si $P \neq 0$ et $n = \deg P$, alors $a_n$ s'appelle le **coefficient dominant** de $P$ ;
 - $a_0$ s'appelle le **coefficient constant** de $P$.
 
-Écrire $P = a_n X^n + a\_{n-1} X^{n-1} + \dots + a_0$, c'est ordonner le polynôme selon les puissances **décroissantes** ; écrire $P = a_0 + a_1 X + \dots + a_n X^n$, c'est l'ordonner selon les puissances **croissantes**.
+Écrire $P = a_n X^n + a&#95;{n-1} X^{n-1} + \dots + a_0$, c'est ordonner le polynôme selon les puissances **décroissantes** ; écrire $P = a_0 + a_1 X + \dots + a_n X^n$, c'est l'ordonner selon les puissances **croissantes**.
 
 ### 5) Calcul du degré
 
@@ -241,7 +241,7 @@ $$\deg(PQ) = \deg P + \deg Q$$
 
 <span class="bloc-titre">Démonstration</span>
 
-**1) deg$(P+Q)$.** Si $P = 0$ ou $Q = 0$, c'est évident. Désormais $P \neq 0$, $Q \neq 0$, et supposons par exemple $\deg Q \geq \deg P$. Soit $n > \deg Q = \max(\deg P, \deg Q)$ : alors $c_n = 0$ (en écrivant $P + Q = \sum\_{k \geq 0} c_k X^k$), donc $\deg(P+Q) \leq \max(\deg P, \deg Q)$.
+**1) deg$(P+Q)$.** Si $P = 0$ ou $Q = 0$, c'est évident. Désormais $P \neq 0$, $Q \neq 0$, et supposons par exemple $\deg Q \geq \deg P$. Soit $n > \deg Q = \max(\deg P, \deg Q)$ : alors $c_n = 0$ (en écrivant $P + Q = \sum&#95;{k \geq 0} c_k X^k$), donc $\deg(P+Q) \leq \max(\deg P, \deg Q)$.
 
 Supposons $\deg P < \deg Q = q$ : alors $c_q = a_q + b_q = b_q$ car $a_q = 0$ (car $q > \deg P$), et $b_q \neq 0$ car $q = \deg Q$. Donc $c_q \neq 0$ et $\deg(P+Q) \geq \deg Q$, d'où l'égalité.
 
@@ -249,7 +249,7 @@ Supposons $\deg P < \deg Q = q$ : alors $c_q = a_q + b_q = b_q$ car $a_q = 0$ (c
 
 $$c_{p+q} = \sum_{k=0}^{p+q} a_k b_{p+q-k}$$
 
-: si $k > p$, $a_k = 0$ ; si $p + q - k > q$, $b\_{p+q-k} = 0$. Il reste $c\_{p+q} = a_p b_q$. Or $a_p \neq 0$, $b_q \neq 0$ et $a_p, b_q \in \mathbb{K}$ : $\mathbb{K}$ étant un corps est intègre, donc $a_p b_q \neq 0$. Ainsi $c\_{p+q} \neq 0$ et $\deg(PQ) \geq p + q$, d'où l'égalité.
+: si $k > p$, $a_k = 0$ ; si $p + q - k > q$, $b&#95;{p+q-k} = 0$. Il reste $c&#95;{p+q} = a_p b_q$. Or $a_p \neq 0$, $b_q \neq 0$ et $a_p, b_q \in \mathbb{K}$ : $\mathbb{K}$ étant un corps est intègre, donc $a_p b_q \neq 0$. Ainsi $c&#95;{p+q} \neq 0$ et $\deg(PQ) \geq p + q$, d'où l'égalité.
 
 </div>
 
@@ -435,7 +435,7 @@ La relation $\mid$ est réflexive, transitive, mais **non antisymétrique** : si
 
 <span class="bloc-titre">Démonstration</span>
 
-Si $A \mid B$ et $B \mid A$ : $A = PQ$ et $B = QR$. Si $A \neq 0$, $\mathbb{K}[X]$ étant intègre, on obtient $QR = 1$ : $Q$ et $R$ sont inversibles dans $\mathbb{K}[X]$, donc $Q = \alpha$ avec $\alpha \in \mathbb{K}^\*$, et $B = \alpha A$. Si $A = 0$, alors $B = 0$ et $B = \lambda A$ convient.
+Si $A \mid B$ et $B \mid A$ : $A = PQ$ et $B = QR$. Si $A \neq 0$, $\mathbb{K}[X]$ étant intègre, on obtient $QR = 1$ : $Q$ et $R$ sont inversibles dans $\mathbb{K}[X]$, donc $Q = \alpha$ avec $\alpha \in \mathbb{K}^&#42;$, et $B = \alpha A$. Si $A = 0$, alors $B = 0$ et $B = \lambda A$ convient.
 
 </div>
 
@@ -560,7 +560,7 @@ $$(A \wedge B) = (B \wedge R)$$
 
 <span class="bloc-titre">Algorithme d'Euclide</span>
 
-$R_0 = A$, $R_1 = B$. Tant que $R_k \neq 0$, poser $R\_{k-1} = Q_k R_k + R\_{k+1}$ avec $\deg R\_{k+1} < \deg R_k$. Si $R\_{n+1}$ est le premier reste nul, alors $D = R_n$.
+$R_0 = A$, $R_1 = B$. Tant que $R_k \neq 0$, poser $R&#95;{k-1} = Q_k R_k + R&#95;{k+1}$ avec $\deg R&#95;{k+1} < \deg R_k$. Si $R&#95;{n+1}$ est le premier reste nul, alors $D = R_n$.
 
 </div>
 
@@ -576,7 +576,7 @@ On pourra multiplier à chaque étape de division les restes par une constante c
 
 <span class="bloc-titre">Exemple</span>
 
-Application de l'algorithme d'Euclide : divisions posées successives de $R\_{k-1}$ par $R_k$ jusqu'au premier reste nul (les calculs intermédiaires font apparaître des fractions, d'où l'intérêt de la méthode pratique ci-dessus).
+Application de l'algorithme d'Euclide : divisions posées successives de $R&#95;{k-1}$ par $R_k$ jusqu'au premier reste nul (les calculs intermédiaires font apparaître des fractions, d'où l'intérêt de la méthode pratique ci-dessus).
 
 </div>
 
@@ -776,7 +776,7 @@ donc $D A' B' \mid M'$ : ainsi $A \vee B = D A' B'$.
 
 <span class="bloc-titre">Définition 1 (diviseur strict)</span>
 
-On dit que $D$ est un **diviseur strict** de $P$ si $D \mid P$ et si $D$ n'est pas de la forme $\alpha P$ ou $\alpha$, avec $\alpha \in \mathbb{K}^\*$.
+On dit que $D$ est un **diviseur strict** de $P$ si $D \mid P$ et si $D$ n'est pas de la forme $\alpha P$ ou $\alpha$, avec $\alpha \in \mathbb{K}^&#42;$.
 
 </div>
 
@@ -842,7 +842,7 @@ Si $P$ est unitaire irréductible, si les $P_i$ sont irréductibles unitaires, e
 
 <span class="bloc-titre">Démonstration</span>
 
-$P \mid P_i$ pour un certain $i$, mais $P_i$ est irréductible, donc $P = \alpha$ ou $P = \alpha P_i$ avec $\alpha \in \mathbb{K}^\*$ ; comme $P$ et $P_i$ sont unitaires, $P = P_i$.
+$P \mid P_i$ pour un certain $i$, mais $P_i$ est irréductible, donc $P = \alpha$ ou $P = \alpha P_i$ avec $\alpha \in \mathbb{K}^&#42;$ ; comme $P$ et $P_i$ sont unitaires, $P = P_i$.
 
 </div>
 
@@ -856,7 +856,7 @@ Tout polynôme $P$ de degré $\geq 1$ s'écrit
 
 $$P = \alpha\, P_1^{\alpha_1} P_2^{\alpha_2} \cdots P_n^{\alpha_n}$$
 
-avec $\alpha \in \mathbb{K}^\*$, $\alpha_i \in \mathbb{N}^\*$, les $P_i$ irréductibles unitaires de $\mathbb{K}[X]$ deux à deux distincts, et l'écriture est **unique à l'ordre des termes près**.
+avec $\alpha \in \mathbb{K}^&#42;$, $\alpha_i \in \mathbb{N}^&#42;$, les $P_i$ irréductibles unitaires de $\mathbb{K}[X]$ deux à deux distincts, et l'écriture est **unique à l'ordre des termes près**.
 
 </div>
 
@@ -921,8 +921,8 @@ $$X^4 - 1 = (X - 1)(X + 1)(X - i)(X + i) \quad \text{dans } \mathbb{C}[X]$$
 <span class="bloc-titre">Définition</span>
 
 On appelle **fonction polynôme** associée à $P$ la fonction
-$x \mapsto \widetilde{P}(x) = \displaystyle\sum\_{k=0}^{n} a_k x^k$, où
-$P = \displaystyle\sum\_{k=0}^{n} a_k X^k$.
+$x \mapsto \widetilde{P}(x) = \displaystyle\sum&#95;{k=0}^{n} a_k x^k$, où
+$P = \displaystyle\sum&#95;{k=0}^{n} a_k X^k$.
 
 </div>
 
@@ -938,7 +938,7 @@ $P = X^2 + X + 1$ : $\widetilde{P}(1) = 0$.
 
 <span class="bloc-titre">Définition</span>
 
-On notera $\mathcal{P}\_n$ l'ensemble des fonctions polynômes sur $\mathbb{K}$
+On notera $\mathcal{P}&#95;n$ l'ensemble des fonctions polynômes sur $\mathbb{K}$
 de degré $\leq n$.
 
 </div>
@@ -1082,10 +1082,10 @@ $\varphi : K[X] \to \mathcal{P}$, $P \mapsto \widetilde{P}$ est un
 Il faut montrer que $\varphi$ est injective ; $\varphi$ est un morphisme de
 groupes de $(K[X], +)$ dans $(\mathcal{P}, +)$. On a
 $\operatorname{Ker}\varphi = \varphi^{-1}(\{\widetilde{0}\})$ ; il faut montrer
-que $\operatorname{Ker}\varphi = \{0\_{K[X]}\}$. Soit $P \in \operatorname{Ker}\varphi$ :
+que $\operatorname{Ker}\varphi = \{0&#95;{K[X]}\}$. Soit $P \in \operatorname{Ker}\varphi$ :
 $\forall x \in K$, $\widetilde{P}(x) = 0$, donc tout $x$ de $K$ est racine de
 $P$ : $P$ admet une infinité de racines, or $P = 0$ (car si $\deg P = n \neq 0$,
-$P$ admet au plus $n$ racines). Donc $\operatorname{Ker}\varphi = \{0\_{K[X]}\}$ :
+$P$ admet au plus $n$ racines). Donc $\operatorname{Ker}\varphi = \{0&#95;{K[X]}\}$ :
 $\varphi$ est injective.
 
 </div>
@@ -1151,7 +1151,7 @@ Les polynômes **irréductibles** de $\mathbb{R}[X]$ sont :
 - si $\deg P = 1$ : OK ;
 - si $P = aX^2 + bX + c$ avec $a \neq 0$ et $b^2 - 4ac < 0$ : si $D$ est un
   diviseur strict de $P$ dans $\mathbb{R}[X]$, $D$ est de la forme
-  $a(X - x_0)$, $a \in \mathbb{R}^\*$, $x_0 \in \mathbb{R}$ (remarque :
+  $a(X - x_0)$, $a \in \mathbb{R}^&#42;$, $x_0 \in \mathbb{R}$ (remarque :
   $\deg D = 1$, car $0 < \deg D < \deg P = 2$) ; mais $x_0$ est solution de
   $P(x) = 0$, or $P(x) = 0$ n'a pas de solution réelle car $\Delta < 0$ : donc
   $P$ n'admet pas de diviseur strict, $P$ est irréductible dans $\mathbb{R}[X]$.
@@ -1170,7 +1170,7 @@ racine $z \in \mathbb{C}$, alors $\overline{z}$ est aussi racine.
 <div class="bloc demo" markdown="1">
 <span class="bloc-titre">Démonstration</span>
 
-$P = \sum\_{k=0}^{n} a_k X^k$ et $\widetilde{P}(z) = \sum\_{k=0}^{n} a_k z^k = 0$ ;
+$P = \sum&#95;{k=0}^{n} a_k X^k$ et $\widetilde{P}(z) = \sum&#95;{k=0}^{n} a_k z^k = 0$ ;
 en conjuguant et comme $\overline{a_k} = a_k$ (car $P \in \mathbb{R}[X]$) :
 
 $$\sum_{k=0}^{n} a_k \overline{z}^k = 0, \qquad \text{c'est-à-dire } \widetilde{P}(\overline{z}) = 0$$
@@ -1222,8 +1222,8 @@ $$X^4 + X^2 + 1 = (X^2 + X + 1)(X^2 - X + 1) = (X^2+1)^2 - X^2$$
 
 <span class="bloc-titre">Définition</span>
 
-Si $P$ a pour coefficients $(a_n)\_{n \in \mathbb{N}}$, on appelle **polynôme
-dérivé** le polynôme $P'$ de coefficients $((n+1)a\_{n+1})\_{n \in \mathbb{N}}$.
+Si $P$ a pour coefficients $(a_n)&#95;{n \in \mathbb{N}}$, on appelle **polynôme
+dérivé** le polynôme $P'$ de coefficients $((n+1)a&#95;{n+1})&#95;{n \in \mathbb{N}}$.
 
 </div>
 
@@ -1248,7 +1248,7 @@ $$(P+Q)' = P' + Q', \qquad (\lambda P)' = \lambda P' \quad (\forall \lambda \in 
 <span class="bloc-titre">Démonstration</span>
 
 Si $P$ ou $Q$ est constant, on obtient (2). Sinon, avec
-$P = \sum\_{k=0}^{n} a_k X^k$ et $Q = \sum\_{i=0}^{p} b_i X^i$ :
+$P = \sum&#95;{k=0}^{n} a_k X^k$ et $Q = \sum&#95;{i=0}^{p} b_i X^i$ :
 
 $$PQ = \sum_{i=0}^{p+q}\Big(\sum_{j=0}^{i} a_j b_{i-j}\Big)X^i, \qquad
 (PQ)' = \sum_{i=0}^{p+q-1}(i+1)\Big(\sum_{j=0}^{i+1} a_j b_{i+1-j}\Big)X^i$$
@@ -1260,8 +1260,8 @@ PQ' = \sum_{i=0}^{p+q-1}\Big(\sum_{j=0}^{i} a_j(i-j+1)b_{i-j+1}\Big)X^i$$
 
 En regroupant les deux sommes, on trouve, dans $P'Q + PQ' = (PQ)'$, le
 coefficient de $X^i$ :
-$(i+1)\big(a_j b\_{i+1-j} + a\_{j+1}b\_{i-j}\big)$ sommé, ce qui redonne bien
-$(i+1)\sum\_{j=0}^{i+1} a_j b\_{i+1-j}$.
+$(i+1)\big(a_j b&#95;{i+1-j} + a&#95;{j+1}b&#95;{i-j}\big)$ sommé, ce qui redonne bien
+$(i+1)\sum&#95;{j=0}^{i+1} a_j b&#95;{i+1-j}$.
 
 </div>
 
@@ -1291,7 +1291,7 @@ $$\Big(\sum_{k=0}^{n} a_k x^k\Big)' = \sum_{k=1}^{n} k a_k x^{k-1} = \sum_{k=0}^
 
 On définit de même la dérivée $k$-ième de $P$ : pour tout $k \geq 1$,
 $P^{(k)}(X)$ a pour coefficients
-$\big((n+1)(n+2)\cdots(n+k)\,a\_{n+k}\big)\_{n \in \mathbb{N}}$ :
+$\big((n+1)(n+2)\cdots(n+k)\,a&#95;{n+k}\big)&#95;{n \in \mathbb{N}}$ :
 
 $$P^{(k)}(X) = \sum_{n=0}^{\infty} (n+k)(n+k-1)\cdots(n+1)\,a_{n+k}\,X^n$$
 
@@ -1316,15 +1316,15 @@ $$P(X) = \widetilde{P}(a) + \widetilde{P'}(a)(X-a) + \dots + \frac{\widetilde{P^
 $$\sum_{k=0}^{n} \frac{P^{(k)}(0)}{k!}X^k = \sum_{k=0}^{n} a_k X^k = P(X)$$
 
 **2ème cas : $a$ quelconque.** On pose $Q(X) = P(X+a)$. D'après le 1er cas,
-$Q(X) = \sum\_{k=0}^{n} \frac{Q^{(k)}(0)}{k!}X^k$.
+$Q(X) = \sum&#95;{k=0}^{n} \frac{Q^{(k)}(0)}{k!}X^k$.
 
 Il faut montrer que, pour tout $k \geq 0$,
 $Q^{(k)}(0) = P^{(k)}(a)$, c'est-à-dire
 $[P(X+a)]^{(k)} = P^{(k)}(X+a)$.
 
 - $k = 0$ : OK.
-- $k = 1$ : $P = \sum\_{k=0}^{n} a_k X^k$, donc
-  $Q(X) = P(X+a) = \sum\_{k=0}^{n} a_k (X+a)^k$. Or
+- $k = 1$ : $P = \sum&#95;{k=0}^{n} a_k X^k$, donc
+  $Q(X) = P(X+a) = \sum&#95;{k=0}^{n} a_k (X+a)^k$. Or
   $[(X+a)^k]' = k(X+a)^{k-1}$ pour $k \geq 1$, d'où
 
 $$Q'(X) = \sum_{k=1}^{n} a_k\,k\,(X+a)^{k-1}
@@ -1333,12 +1333,12 @@ $$Q'(X) = \sum_{k=1}^{n} a_k\,k\,(X+a)^{k-1}
 - Supposons la propriété démontrée pour un certain $k \geq 1$ :
   $Q_k(X) = [P(X+a)]^{(k)} = P^{(k)}(X+a)$. Alors
   $[P(X+a)]^{(k+1)} = Q_k'(X) = [P^{(k)}(X+a)]'$. En posant
-  $R_k = P^{(k)}(X+a)$, d'après $(\*)$ :
+  $R_k = P^{(k)}(X+a)$, d'après $(&#42;)$ :
   $R_k'(X) = (P^{(k)})'(X+a) = P^{(k+1)}(X+a)$.
 
 Finalement, pour tout $k \geq 1$, $Q^{(k)}(X) = P^{(k)}(X+a)$, et
 $Q^{(k)}(0) = P^{(k)}(a)$. Or
-$P(X+a) = Q(X) = \sum\_{k=0}^{n} \frac{P^{(k)}(a)}{k!}X^k$. En posant
+$P(X+a) = Q(X) = \sum&#95;{k=0}^{n} \frac{P^{(k)}(a)}{k!}X^k$. En posant
 $Y = X+a$ :
 
 $$P(Y) = \sum_{k=0}^{n} \frac{P^{(k)}(a)}{k!}(Y-a)^k$$
@@ -1518,7 +1518,7 @@ $$(X-a)(X-b)(X-c) = X^3 - (a+b+c)X^2 + (bc+ca+ab)X - abc$$
 
 </div>
 
-Pour calculer $a\_{n-k}$ : je choisis $(n-k)$ parenthèses où je prends le terme
+Pour calculer $a&#95;{n-k}$ : je choisis $(n-k)$ parenthèses où je prends le terme
 $X$ du produit, et dans les $k$ parenthèses restantes je prends les constantes :
 
 $$a_{n-k} = (-1)^k \sum_{1 \leq i_1 < i_2 < \dots < i_k \leq n} x_{i_1} x_{i_2} \cdots x_{i_k}
@@ -1552,8 +1552,8 @@ $$\sigma_k = (-1)^k \frac{a_{n-k}}{a_n}$$
 
 On applique la relation trouvée ci-dessus à $\dfrac{P}{a_n}$, qui est unitaire.
 
-Si $P = a_n X^n + a\_{n-1}X^{n-1} + \dots + a_0$ :
-$\sigma_1 = -\dfrac{a\_{n-1}}{a_n}$, $\sigma_2 = \dfrac{a\_{n-2}}{a_n}$,
+Si $P = a_n X^n + a&#95;{n-1}X^{n-1} + \dots + a_0$ :
+$\sigma_1 = -\dfrac{a&#95;{n-1}}{a_n}$, $\sigma_2 = \dfrac{a&#95;{n-2}}{a_n}$,
 $\dots$, $\sigma_n = (-1)^n \dfrac{a_0}{a_n}$.
 
 </div>
@@ -1629,8 +1629,8 @@ $R = R'$ et $Q = Q'$ (car $B \neq 0$ et $K[X]$ est intègre).
 Si $\mathrm{val}(A) \geq h+1$ : $A = X^{h+1}R$ car $X^{h+1} \mid A$, et
 $(0, R)$ convient. (Remarque : si $P$ a pour valuation $k \geq 0$, $P$ est
 divisible par $X^k$ : $P = a_k X^k + \dots + a_n X^n$ avec $a_k \neq 0$, donc
-$P = a_k X^k\big(1 + \frac{a\_{k+1}}{a_k}X + \dots + \frac{a_n}{a_k}X^{n-k}\big)$.)
-Si $A = a_h X^h + a\_{h+1}X^{h+1}$ et $B = b_0 + b_1 X + \dots$ :
+$P = a_k X^k\big(1 + \frac{a&#95;{k+1}}{a_k}X + \dots + \frac{a_n}{a_k}X^{n-k}\big)$.)
+Si $A = a_h X^h + a&#95;{h+1}X^{h+1}$ et $B = b_0 + b_1 X + \dots$ :
 
 $$A - B\,\frac{a_h}{b_0}X^h = \Big(a_{h+1} - \frac{b_1 a_h}{b_0}\Big)X^{h+1} + \dots$$
 
@@ -1639,19 +1639,19 @@ $A = B\big(Q' + \frac{a_h}{b_0}X^h\big) + R'X^{h+1}$, ce qui est la forme
 souhaitée car $\deg\big(Q' + \frac{a_h}{b_0}X^h\big) \leq h$.
 
 **Algorithme.** $A = BQ_1 + R_1$ avec
-$Q_1 = -\dfrac{a\_{\mathrm{val}(A)}}{b_0}X^{\mathrm{val}(A)}$ et
+$Q_1 = -\dfrac{a&#95;{\mathrm{val}(A)}}{b_0}X^{\mathrm{val}(A)}$ et
 $\mathrm{val}(R_1) \geq \mathrm{val}(A)+1$ ; puis $R_1 = BQ_2 + R_2$ avec
-$Q_2 = -\dfrac{a\_{\mathrm{val}(R_1)}}{b_0}X^{\mathrm{val}(R_1)}$ et
+$Q_2 = -\dfrac{a&#95;{\mathrm{val}(R_1)}}{b_0}X^{\mathrm{val}(R_1)}$ et
 $\mathrm{val}(R_2) \geq \mathrm{val}(A)+2$ ; etc. jusqu'à
-$R_k = BQ\_{k+1} + R\_{k+1}$ avec $\mathrm{val}(R\_{k+1}) \geq h+1$ :
-$R\_{k+1}$ est le premier reste dont la valuation dépasse $h+1$. Alors
+$R_k = BQ&#95;{k+1} + R&#95;{k+1}$ avec $\mathrm{val}(R&#95;{k+1}) \geq h+1$ :
+$R&#95;{k+1}$ est le premier reste dont la valuation dépasse $h+1$. Alors
 
 $$A = B(Q_1 + Q_2 + \dots + Q_{k+1}) + R_{k+1}$$
 
-avec $\deg(Q_1 + \dots + Q\_{k+1}) \leq \max_i \deg Q_i \leq h$ (car
+avec $\deg(Q_1 + \dots + Q&#95;{k+1}) \leq \max_i \deg Q_i \leq h$ (car
 $\mathrm{val}(R_i) \leq h$ en posant $R_0 = A$, et $\deg Q_i =
-\mathrm{val}(R\_{i-1})$). On pose $Q = Q_1 + \dots + Q\_{k+1}$ ; comme
-$X^{h+1} \mid R\_{k+1}$, on écrit $R\_{k+1} = X^{h+1}R$ :
+\mathrm{val}(R&#95;{i-1})$). On pose $Q = Q_1 + \dots + Q&#95;{k+1}$ ; comme
+$X^{h+1} \mid R&#95;{k+1}$, on écrit $R&#95;{k+1} = X^{h+1}R$ :
 
 $$A = BQ + X^{h+1}R \quad \text{avec} \quad \deg Q \leq h$$
 
@@ -1683,7 +1683,7 @@ $P \in K[X]$ tel que $\forall i$, $P(a_i) = b_i$ ?
 
 $(a_1, \dots, a_n) \in K^n$ deux à deux distincts et
 $(b_1, \dots, b_n) \in K^n$ étant donnés, alors il existe un **unique**
-$P \in K\_{n-1}[X]$ tel que $\forall i$, $P(a_i) = b_i$.
+$P \in K&#95;{n-1}[X]$ tel que $\forall i$, $P(a_i) = b_i$.
 
 </div>
 
@@ -1697,9 +1697,9 @@ $P-Q$ admet $n$ racines et $P \in K[X]$ avec $K$ corps : alors $P = Q$.
 
 **Existence.**
 
-1) On cherche $P = \sum\_{k=0}^{n-1} \lambda_k X^k$ :
+1) On cherche $P = \sum&#95;{k=0}^{n-1} \lambda_k X^k$ :
 $\forall i$, $P(a_i) = b_i \iff \forall i$,
-$\sum\_{k=0}^{n-1} \lambda_k a_i^k = b_i$, soit le système
+$\sum&#95;{k=0}^{n-1} \lambda_k a_i^k = b_i$, soit le système
 
 $$\begin{pmatrix}
 1 & a_1 & \cdots & a_1^{n-1} \\
@@ -1713,7 +1713,7 @@ On reconnaît $\det V \neq 0$ (matrice de **Vandermonde**) : c'est un système
 de Cramer, donc $\exists!\,P$ tel que $\forall i$, $P(a_i) = b_i$.
 
 2) L'application
-$\varphi : K\_{n-1}[X] \to K^n$, $P \mapsto \big(P(a_1), \dots, P(a_n)\big)$
+$\varphi : K&#95;{n-1}[X] \to K^n$, $P \mapsto \big(P(a_1), \dots, P(a_n)\big)$
 est **linéaire**, et **injective** d'après l'unicité : c'est donc un
 **isomorphisme** (mêmes dimensions).
 
@@ -1722,8 +1722,8 @@ est **linéaire**, et **injective** d'après l'unicité : c'est donc un
 **Expression analytique du polynôme d'interpolation.**
 
 *1ère version.* $\forall i$, $P(a_i) = b_i$. Posons $L_i$ (de Lagrange) :
-$\forall j$, $L_i(a_j) = \delta\_{ij}$ ; pour $i$ fixé,
-$\lambda = \prod\_{j \neq i} \frac{X-a_j}{a_i-a_j}$ et $L_i(a_i) = 1$. Donc,
+$\forall j$, $L_i(a_j) = \delta&#95;{ij}$ ; pour $i$ fixé,
+$\lambda = \prod&#95;{j \neq i} \frac{X-a_j}{a_i-a_j}$ et $L_i(a_i) = 1$. Donc,
 pour tout $i \in \{1, \dots, n\}$ :
 
 $$L_i(X) = \prod_{j \neq i} \frac{X-a_j}{a_i-a_j}$$
@@ -1733,13 +1733,13 @@ et
 $$P = \sum_{i=1}^{n} P(a_i)\, L_i$$
 
 *2ème version.* Pour tout $i \in \{1, \dots, n\}$, soit
-$\varphi_i : K\_{n-1}[X] \to K$, $P \mapsto \varphi_i(P) = P(a_i)$ ;
-$\varphi_i \in (K\_{n-1}[X])^\*$. Le théorème de la **base duale** annonce que
-$(\varphi_1, \dots, \varphi_n)$ est une base de $(K\_{n-1}[X])^\*$ : si
-$(\varphi_1, \dots, \varphi_n)$ est une base de $E^\*$, alors il existe une
+$\varphi_i : K&#95;{n-1}[X] \to K$, $P \mapsto \varphi_i(P) = P(a_i)$ ;
+$\varphi_i \in (K&#95;{n-1}[X])^&#42;$. Le théorème de la **base duale** annonce que
+$(\varphi_1, \dots, \varphi_n)$ est une base de $(K&#95;{n-1}[X])^&#42;$ : si
+$(\varphi_1, \dots, \varphi_n)$ est une base de $E^&#42;$, alors il existe une
 unique $(e_1, \dots, e_n)$ base de $E$ telle que
-$\varphi_i(e_j) = \delta\_{ij}$. On cherche $(L_1, \dots, L_n)$ telle que
-$\varphi_i(L_j) = \delta\_{ij}$, c'est-à-dire $L_i(a_j) = \delta\_{ij}$, et l'on
+$\varphi_i(e_j) = \delta&#95;{ij}$. On cherche $(L_1, \dots, L_n)$ telle que
+$\varphi_i(L_j) = \delta&#95;{ij}$, c'est-à-dire $L_i(a_j) = \delta&#95;{ij}$, et l'on
 retrouve $P = \sum P(a_i) L_i$.
 
 ## VI. Exercices — feuille n° 15
@@ -1805,13 +1805,13 @@ $$Q = P - P(a) - \frac{1}{6}(X-a)\Big(P''(a) + P'(a) + 4P'\Big(\frac{X+a}{2}\Big
 <ol class="enonces" start="19">
 <li>Soit $a, b, c$ les racines dans $\mathbb{C}$ de $x^3 - 5x^2 + 4x - 1 = 0$. Calculer $S = a^2b^2 + b^2c^2 + c^2a^2$.</li>
 <li>Résoudre $x^4 + 12x - 5 = 0$ sachant que la somme de deux des racines est $2$.</li>
-<li>Soit $z$ une racine complexe de $P = \sum\_{k=0}^{n} a_k X^k$ ; montrer que
+<li>Soit $z$ une racine complexe de $P = \sum&#95;{k=0}^{n} a_k X^k$ ; montrer que
 $$|z| \leq \max\!\left(1,\ \sum_{k=0}^{n-1} \frac{a_k}{a_n}\right)$$
 </li>
 <li>Soit $f(x) = \arctan(x)$.
 <ol>
 <li>Montrer que $f^{(n)}$ est de la forme $\dfrac{P_n(x)}{(1+x^2)^n}$. Quel est le degré de $P_n$, son coefficient dominant, et sa parité ?</li>
-<li>Trouver une relation de récurrence liant $P\_{n+1}$, $P_n$ et $P\_{n-1}$.</li>
+<li>Trouver une relation de récurrence liant $P&#95;{n+1}$, $P_n$ et $P&#95;{n-1}$.</li>
 <li>En déduire une équation différentielle linéaire du second ordre satisfaite par $P_n$.</li>
 <li>En déduire les coefficients de $P_n$.</li>
 <li>Montrer que $P_n$ a $n$ racines réelles distinctes.</li>
@@ -1841,7 +1841,7 @@ $$\sum_{0 \leq i,\, j \leq n} \iff \sum_{0 \leq j \leq i \leq n} \iff \sum_{0 \l
 - $$X^a - 1 \wedge X^b - 1 = X^{a \wedge b} - 1$$
 - si $A = QB + R$ et $P = Q'B + R'$ sont deux divisions euclidiennes par le même polynôme $B$, alors $A + P = B\,(Q + Q') + (R + R')$, avec
 $$\deg(R + R') \leq \max(\deg R,\ \deg R') \leq \deg B$$
-- si $P \mid P'$, alors $P = \lambda (X-a)^n$, avec $\lambda \in \mathbb{K}^\*$.
+- si $P \mid P'$, alors $P = \lambda (X-a)^n$, avec $\lambda \in \mathbb{K}^&#42;$.
 
 </div>
 

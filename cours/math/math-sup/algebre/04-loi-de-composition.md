@@ -25,15 +25,15 @@ Soit $E$ un ensemble non vide : une **loi de composition interne** sur $E$ est u
 
 Exemples : $+$, $\times$ dans $\mathbb{R}$, $\mathbb{N}$, $\mathbb{Z}$.
 
-- $(E, \*)$ s'appelle un **magma**.
-- $\*$ est **commutative** si $(\forall (x,y) \in E^2),\ x \* y = y \* x$.
-- $\*$ est **associative** si $(\forall (x,y,z) \in E^3),\ x \* (y \* z) = (x \* y) \* z$ ; et $(E, \*)$ est un **magma associatif**.
-- On dit que $\*$ admet un **élément neutre** s'il existe un élément $e \in E$ tel que $\forall x \in E,\ e \* x = x \* e = x$. $(E, \*)$ est un **magma unifère**.
+- $(E, &#42;)$ s'appelle un **magma**.
+- $&#42;$ est **commutative** si $(\forall (x,y) \in E^2),\ x &#42; y = y &#42; x$.
+- $&#42;$ est **associative** si $(\forall (x,y,z) \in E^3),\ x &#42; (y &#42; z) = (x &#42; y) &#42; z$ ; et $(E, &#42;)$ est un **magma associatif**.
+- On dit que $&#42;$ admet un **élément neutre** s'il existe un élément $e \in E$ tel que $\forall x \in E,\ e &#42; x = x &#42; e = x$. $(E, &#42;)$ est un **magma unifère**.
 
 Exemples : dans $(\mathbb{R}, \times)$, $e = 1$ ; dans $(\mathbb{Z}, +)$, $e = 0$.
 
-- Si $(E, \*)$ est un magma unifère, on dit que $x$ est **symétrisable** s'il existe $x' \in E$ tel que $x \* x' = x' \* x = e$. $x'$ s'appelle un **symétrique** de $x$.
-- On dit que $a \in E$ est **régulier** pour $\*$ si
+- Si $(E, &#42;)$ est un magma unifère, on dit que $x$ est **symétrisable** s'il existe $x' \in E$ tel que $x &#42; x' = x' &#42; x = e$. $x'$ s'appelle un **symétrique** de $x$.
+- On dit que $a \in E$ est **régulier** pour $&#42;$ si
 
 $$
 a * x = a * y \Rightarrow x = y \quad \text{(régulier à gauche)}, \qquad
@@ -46,7 +46,7 @@ Exemple : le symétrique de $x$ dans $(\mathbb{Z}, +)$ est $-x$ ; dans $(\mathbb
 
 <span class="bloc-titre">Notations</span>
 
-- pour une loi quelconque, on utilisera la notation $\*$ ; « l'élément neutre » est noté $1$, un symétrique de $x$ est noté $x^{-1}$ ;
+- pour une loi quelconque, on utilisera la notation $&#42;$ ; « l'élément neutre » est noté $1$, un symétrique de $x$ est noté $x^{-1}$ ;
 - pour une loi commutative, on utilise $+$ ; « l'élément neutre » est noté $0$.
 
 </div>
@@ -58,7 +58,7 @@ Exemple : le symétrique de $x$ dans $(\mathbb{Z}, +)$ est $-x$ ; dans $(\mathbb
 <span class="bloc-titre">Propriété 1</span>
 
 - S'il y a un élément neutre, il est **unique**.
-- Si $(E, \*)$ est associatif et unifère, si $x$ admet un symétrique, il est **unique**.
+- Si $(E, &#42;)$ est associatif et unifère, si $x$ admet un symétrique, il est **unique**.
 
 </div>
 
@@ -73,9 +73,9 @@ Cela justifie l'emploi de la notation $x^{-1}$.
 <div class="bloc demo" markdown="1">
 <span class="bloc-titre">Démonstration</span>
 
-Si $e$ et $e'$ sont deux éléments neutres : $e \* e' = e$ ($e'$ neutre) et $e \* e' = e'$ ($e$ neutre), donc $e = e'$.
+Si $e$ et $e'$ sont deux éléments neutres : $e &#42; e' = e$ ($e'$ neutre) et $e &#42; e' = e'$ ($e$ neutre), donc $e = e'$.
 
-Si $x'$ et $x''$ sont deux symétriques de $x$ : $x' \* x = x \* x' = e = x \* x'' = x'' \* x$, et
+Si $x'$ et $x''$ sont deux symétriques de $x$ : $x' &#42; x = x &#42; x' = e = x &#42; x'' = x'' &#42; x$, et
 
 $$
 x' = x' * e = x' * (x * x'') = (x' * x) * x'' = e * x'' = x''
@@ -89,16 +89,16 @@ $$
 
 <span class="bloc-titre">Propriété 2</span>
 
-Si $x$ admet un symétrique (inverse), alors $x$ est **régulier**. ($(E, \*)$ associatif unifère.)
+Si $x$ admet un symétrique (inverse), alors $x$ est **régulier**. ($(E, &#42;)$ associatif unifère.)
 
 </div>
 
 <div class="bloc demo" markdown="1">
 <span class="bloc-titre">Démonstration</span>
 
-Si $x \* y = x \* z$ : $x^{-1} \* (x \* y) = x^{-1} \* (x \* z)$, donc
-$(x^{-1} \* x) \* y = (x^{-1} \* x) \* z$, soit $1 \* y = 1 \* z$, d'où $y = z$.
-De même $y \* x = z \* x \Rightarrow y = z$.
+Si $x &#42; y = x &#42; z$ : $x^{-1} &#42; (x &#42; y) = x^{-1} &#42; (x &#42; z)$, donc
+$(x^{-1} &#42; x) &#42; y = (x^{-1} &#42; x) &#42; z$, soit $1 &#42; y = 1 &#42; z$, d'où $y = z$.
+De même $y &#42; x = z &#42; x \Rightarrow y = z$.
 
 </div>
 
@@ -106,7 +106,7 @@ De même $y \* x = z \* x \Rightarrow y = z$.
 
 <span class="bloc-titre">Propriété 3</span>
 
-$(E, \*)$ associatif unifère :
+$(E, &#42;)$ associatif unifère :
 
 $$(x * y)^{-1} = y^{-1} * x^{-1}$$
 
@@ -131,24 +131,24 @@ $$
 
 <span class="bloc-titre">Définition (partie stable)</span>
 
-Soit $A \subset E$. $A$ est **stable** pour $\*$ si
+Soit $A \subset E$. $A$ est **stable** pour $&#42;$ si
 
 $$\forall (x,y) \in A^2,\quad x * y \in A$$
 
 </div>
 
-Exemple : $(\mathcal{U}, \times)$, où $\mathcal{U}$ est l'ensemble des complexes de module $1$, est stable pour $\times$ : $z \in \mathcal{U} \Rightarrow |z| = 1$, $z' \in \mathcal{U} \Rightarrow |z'| = 1$ $\Rightarrow$ $|z z'| = 1$, donc $z \* z' \in \mathcal{U}$.
+Exemple : $(\mathcal{U}, \times)$, où $\mathcal{U}$ est l'ensemble des complexes de module $1$, est stable pour $\times$ : $z \in \mathcal{U} \Rightarrow |z| = 1$, $z' \in \mathcal{U} \Rightarrow |z'| = 1$ $\Rightarrow$ $|z z'| = 1$, donc $z &#42; z' \in \mathcal{U}$.
 
 <div class="bloc propriete" markdown="1">
 
 <span class="bloc-titre">Propriété (loi induite)</span>
 
-Si $A$ est stable pour $\*$, l'application $\*$ restreinte à $A \times A \to A$ et à valeurs dans $A$,
+Si $A$ est stable pour $&#42;$, l'application $&#42;$ restreinte à $A \times A \to A$ et à valeurs dans $A$,
 
 $$\widetilde{*} : A \times A \to A, \qquad (x,y) \mapsto x * y$$
 
-définit une loi de composition interne dans $A$, appelée **loi induite** (par $\*$ sur $A$).
-Quand il n'y aura pas d'ambiguïté, $\widetilde{\*}$ sera encore notée $\*$.
+définit une loi de composition interne dans $A$, appelée **loi induite** (par $&#42;$ sur $A$).
+Quand il n'y aura pas d'ambiguïté, $\widetilde{&#42;}$ sera encore notée $&#42;$.
 
 </div>
 
@@ -172,7 +172,7 @@ $$\mathbb{N} \times \mathbb{R}^* \to \mathbb{R}^*, \quad (n, x) \mapsto x^n$$
 
 <span class="bloc-titre">Définition 2 (distributivité d'une loi externe)</span>
 
-Soit $(E, \*)$ un magma et $\top$ une loi externe sur $E$ d'ensemble d'opérateurs $\Omega$. On dit que $\top$ est **distributive par rapport à $\*$** si
+Soit $(E, &#42;)$ un magma et $\top$ une loi externe sur $E$ d'ensemble d'opérateurs $\Omega$. On dit que $\top$ est **distributive par rapport à $&#42;$** si
 
 $$\forall \alpha \in \Omega,\ \forall (x,y) \in E^2,\quad \alpha \top (x * y) = (\alpha \top x) * (\alpha \top y)$$
 
@@ -197,7 +197,7 @@ $$\forall (x,y) \in E^2,\quad f(x \top y) = f(x) \top' f(y)$$
 
 </div>
 
-Exemple : $\ln$ de $(\mathbb{R}\_+^\*, \times)$ sur $(\mathbb{R}, +)$.
+Exemple : $\ln$ de $(\mathbb{R}&#95;+^&#42;, \times)$ sur $(\mathbb{R}, +)$.
 
 - si $E = E'$, on parle d'**endomorphisme** ;
 - si $f$ est bijective, on dit que $f$ est un **isomorphisme** ;
@@ -252,7 +252,7 @@ donc $(g \circ f)(x \top y) = (g \circ f)(x) \top'' (g \circ f)(y)$.
 
 ## IV. Lois internes (suite) : distributivité de deux lois internes
 
-Soit $E$ un ensemble, $\*$ et $\top$ deux lois internes sur $E$. On dit que $\top$ est **distributive par rapport à $\*$** si
+Soit $E$ un ensemble, $&#42;$ et $\top$ deux lois internes sur $E$. On dit que $\top$ est **distributive par rapport à $&#42;$** si
 
 $$\forall (x,y,z) \in E^3,\quad x \top (y * z) = (x \top y) * (x \top z)$$
 
@@ -315,16 +315,16 @@ $$
 
 <ol class="enonces">
 <li>Soit dans $E$ la loi interne $\tau$ qui vérifie : $\tau$ est associative, commutative et : $\forall a \in E,\ a \,\tau\, a = a$. On définit sur $E$ la relation binaire $R$ par $(x R y \iff x \,\tau\, y = y)$. Montrer que $R$ est une relation d'ordre et que $\{x, y\}$ admet une borne supérieure et une borne inférieure pour cet ordre.</li>
-<li>Soit $E$ un ensemble fini muni d'une loi interne $\*$ associative, d'élément neutre $e$. Soit $a$ fixé dans $E$ et $T_a$ l'application :
+<li>Soit $E$ un ensemble fini muni d'une loi interne $&#42;$ associative, d'élément neutre $e$. Soit $a$ fixé dans $E$ et $T_a$ l'application :
 $$T_a : E \to E, \quad x \mapsto a * x$$
 <ol>
-<li>Montrer que $a$ admet un symétrique pour $\*$ si et seulement si $T_a$ est bijective.</li>
-<li>Montrer que $\varphi : E \to E^E$, $a \mapsto T_a$, est un morphisme de $(E, \*)$ dans $(F, \circ)$.</li>
+<li>Montrer que $a$ admet un symétrique pour $&#42;$ si et seulement si $T_a$ est bijective.</li>
+<li>Montrer que $\varphi : E \to E^E$, $a \mapsto T_a$, est un morphisme de $(E, &#42;)$ dans $(F, \circ)$.</li>
 </ol>
 </li>
-<li>Soit $(G, \*)$ un groupe, $E$ un ensemble non vide. Montrer que $G^E$ est un groupe pour la loi $\times$ définie par : pour $f$ et $g$ dans $G^E$, $f \times g$ est l'application $(f \times g)(x) = f(x) \* g(x)$. À quelle condition $G^E$ est-il abélien ?</li>
+<li>Soit $(G, &#42;)$ un groupe, $E$ un ensemble non vide. Montrer que $G^E$ est un groupe pour la loi $\times$ définie par : pour $f$ et $g$ dans $G^E$, $f \times g$ est l'application $(f \times g)(x) = f(x) &#42; g(x)$. À quelle condition $G^E$ est-il abélien ?</li>
 <li>Montrer que la réunion de deux sous-groupes est un sous-groupe de $G$ si et seulement si l'un des deux sous-groupes est inclus dans l'autre.</li>
-<li>Soit $(E, \*)$ un magma associatif ; on suppose que $e$ est élément neutre à gauche et que tout élément admet un symétrique à gauche. Montrer que $E$ est un groupe.</li>
+<li>Soit $(E, &#42;)$ un magma associatif ; on suppose que $e$ est élément neutre à gauche et que tout élément admet un symétrique à gauche. Montrer que $E$ est un groupe.</li>
 <li>Soit $(G, .)$ un groupe. Montrer que $C = \{x \in G \mid \forall y \in G,\ xy = yx\}$ est un sous-groupe de $E$ (appelé centre de $G$). Que vaut $C$ lorsque le groupe est abélien ? Quel est le centre de l'ensemble des bijections de $E$, si $E$ est un ensemble à $n$ éléments ?</li>
 <li>On considère le diagramme suivant :
 $$

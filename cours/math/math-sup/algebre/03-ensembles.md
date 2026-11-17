@@ -163,18 +163,18 @@ $\forall x \in E$, $\varphi_A(x) = f(x)$ : $\varphi_A$ et $f$ coïncident partou
 
 <span class="bloc-titre">Propriétés des applications caractéristiques</span>
 
-- $\varphi\_{A \cap B} = \varphi_A \times \varphi_B$ ;
-- $\varphi\_{A \cup B} = \varphi_A + \varphi_B - \varphi_A \times \varphi_B$ ;
-- $\varphi\_{\overline{A}} = 1 - \varphi_A$ ;
-- $\varphi\_{A \setminus B} = \varphi_A\,(1 - \varphi_B)$.
+- $\varphi&#95;{A \cap B} = \varphi_A \times \varphi_B$ ;
+- $\varphi&#95;{A \cup B} = \varphi_A + \varphi_B - \varphi_A \times \varphi_B$ ;
+- $\varphi&#95;{\overline{A}} = 1 - \varphi_A$ ;
+- $\varphi&#95;{A \setminus B} = \varphi_A\,(1 - \varphi_B)$.
 
 Ces formules se lisent sur la table de valeurs :
 
 | $\varphi_A(x)$ | 1 | 1 | 0 | 0 |
 |---|---|---|---|---|
 | $\varphi_B(x)$ | 1 | 0 | 1 | 0 |
-| $\varphi\_{A \cap B}(x)$ | 1 | 0 | 0 | 0 |
-| $\varphi\_{A \cup B}(x)$ | 1 | 1 | 1 | 0 |
+| $\varphi&#95;{A \cap B}(x)$ | 1 | 0 | 0 | 0 |
+| $\varphi&#95;{A \cup B}(x)$ | 1 | 1 | 1 | 0 |
 
 </div>
 
@@ -310,7 +310,7 @@ $f^{-1}$ est bijective.
 <div class="bloc demo" markdown="1">
 <span class="bloc-titre">Démonstration</span>
 
-$f^{-1} \circ f = \mathrm{Id}\_E$ et $f \circ f^{-1} = \mathrm{Id}\_F$ (car $\mathrm{Id}\_E$ et $\mathrm{Id}\_F$ sont bijectives), donc $f^{-1}$ est surjective et $f^{-1}$ est injective : $f^{-1}$ est bijective.
+$f^{-1} \circ f = \mathrm{Id}&#95;E$ et $f \circ f^{-1} = \mathrm{Id}&#95;F$ (car $\mathrm{Id}&#95;E$ et $\mathrm{Id}&#95;F$ sont bijectives), donc $f^{-1}$ est surjective et $f^{-1}$ est injective : $f^{-1}$ est bijective.
 
 </div>
 
@@ -318,7 +318,7 @@ $f^{-1} \circ f = \mathrm{Id}\_E$ et $f \circ f^{-1} = \mathrm{Id}\_F$ (car $\ma
 
 <span class="bloc-titre">Corollaire</span>
 
-Si $f : E \to F$ et $g : F \to E$ vérifient $g \circ f = \mathrm{Id}\_E$ et $f \circ g = \mathrm{Id}\_F$, alors $f$ et $g$ sont bijectives et $g = f^{-1}$.
+Si $f : E \to F$ et $g : F \to E$ vérifient $g \circ f = \mathrm{Id}&#95;E$ et $f \circ g = \mathrm{Id}&#95;F$, alors $f$ et $g$ sont bijectives et $g = f^{-1}$.
 
 </div>
 
@@ -328,8 +328,8 @@ Si $f : E \to F$ et $g : F \to E$ vérifient $g \circ f = \mathrm{Id}\_E$ et $f 
 $g \circ f$ est bijective $\Rightarrow$ $g$ est surjective et $f$ est injective ;
 $f \circ g$ est bijective $\Rightarrow$ $g$ est injective et $f$ est surjective ;
 donc $f$ et $g$ sont bijectives. De plus
-$f^{-1} \circ (f \circ g) = f^{-1} \circ \mathrm{Id}\_F = f^{-1}$
-et $(f^{-1} \circ f) \circ g = \mathrm{Id}\_E \circ g = g$, donc $f^{-1} = g$.
+$f^{-1} \circ (f \circ g) = f^{-1} \circ \mathrm{Id}&#95;F = f^{-1}$
+et $(f^{-1} \circ f) \circ g = \mathrm{Id}&#95;E \circ g = g$, donc $f^{-1} = g$.
 
 </div>
 
@@ -484,7 +484,7 @@ Soit $I$ non vide, appelé **ensemble d'indices**. On appelle **famille de parti
 
 $$I \to \mathcal{P}(E), \qquad i \mapsto A_i$$
 
-où $A_i$ est une partie de $E$. On la note $(A_i)\_{i \in I}$.
+où $A_i$ est une partie de $E$. On la note $(A_i)&#95;{i \in I}$.
 
 On définit :
 
@@ -499,9 +499,9 @@ $$\bigcup_{i \in I} A_i = \{x \in E \mid \exists i \in I,\ x \in A_i\}, \qquad
 
 <span class="bloc-titre">Propriétés</span>
 
-- $\displaystyle E \setminus \bigcup\_{i \in I} A_i = \bigcap\_{i \in I} (E \setminus A_i)$ ;
-- $\displaystyle\left(\bigcup\_{i \in I'} A_i\right) \cup \left(\bigcup\_{i \in I''} A_i\right) = \bigcup\_{i \in I' \cup I''} A_i$, avec $I', I''$ non vides ;
-- $\displaystyle\left(\bigcap\_{i \in I'} A_i\right) \cap \left(\bigcap\_{i \in I''} A_i\right) = \bigcap\_{i \in I' \cup I''} A_i$ ;
+- $\displaystyle E \setminus \bigcup&#95;{i \in I} A_i = \bigcap&#95;{i \in I} (E \setminus A_i)$ ;
+- $\displaystyle\left(\bigcup&#95;{i \in I'} A_i\right) \cup \left(\bigcup&#95;{i \in I''} A_i\right) = \bigcup&#95;{i \in I' \cup I''} A_i$, avec $I', I''$ non vides ;
+- $\displaystyle\left(\bigcap&#95;{i \in I'} A_i\right) \cap \left(\bigcap&#95;{i \in I''} A_i\right) = \bigcap&#95;{i \in I' \cup I''} A_i$ ;
 - si $I \neq \varnothing$ et $J \neq \varnothing$ :
 
 $$\left(\bigcup_{i \in I} A_i\right) \cap \left(\bigcup_{j \in J} B_j\right) = \bigcup_{\substack{i \in I \\ j \in J}} (A_i \cap B_j)$$
@@ -526,7 +526,7 @@ D'où :
 
 $$\text{non}\left(x \in \bigcup_{i \in I} A_i\right) = \text{non}(\exists i \in I,\ x \in A_i) = (\forall i \in I,\ x \notin A_i) = \left(\forall i \in I,\ x \in E \setminus A_i\right) = x \in \bigcap_{i \in I} (E \setminus A_i)$$
 
-**Réunions et intersections indexées.** Posons $U' = \bigcup\_{i \in I'} A_i$ et $U'' = \bigcup\_{i \in I''} A_i$ (avec $I' \cup I'' \neq \varnothing$ car $I'$ et $I''$ sont non vides) :
+**Réunions et intersections indexées.** Posons $U' = \bigcup&#95;{i \in I'} A_i$ et $U'' = \bigcup&#95;{i \in I''} A_i$ (avec $I' \cup I'' \neq \varnothing$ car $I'$ et $I''$ sont non vides) :
 
 $$x \in U' \cup U'' \iff (x \in U') \text{ ou } (x \in U'') \iff (\exists i \in I',\ x \in A_i) \text{ ou } (\exists i \in I'',\ x \in A_i) \iff \exists i \in I' \cup I'',\ x \in A_i \iff x \in \bigcup_{i \in I' \cup I''} A_i$$
 
@@ -534,14 +534,14 @@ Pour le produit de réunions, on montre d'abord que, pour $i \in I$ fixé :
 
 $$A_i \cap \bigcup_{j \in J} B_j = \bigcup_{j \in J} (A_i \cap B_j)$$
 
-car $x \in A_i \cap \bigcup\_{j \in J} B_j \iff x \in A_i$ et $(\exists j \in J,\ x \in B_j)
+car $x \in A_i \cap \bigcup&#95;{j \in J} B_j \iff x \in A_i$ et $(\exists j \in J,\ x \in B_j)
 \iff \exists j \in J\ (x \in A_i \text{ et } x \in B_j)$,
 
 et de même
 
 $$A_i \cup \bigcap_{j \in J} B_j = \bigcap_{j \in J} (A_i \cup B_j)$$
 
-(car si $x \in A_i \cup \bigcap\_{j} B_j$ et $x \notin A_i$, alors $\forall j \in J,\ x \in B_j$, donc $\forall j \in J,\ x \in A_i \cup B_j$ ; réciproquement, si $x \in \bigcap\_{j \in J} (A_i \cup B_j)$ et $x \notin \bigcap\_{j \in J} B_j$, il existe $j_0 \in J$ avec $x \notin B\_{j_0}$, donc $x \in A_i$).
+(car si $x \in A_i \cup \bigcap&#95;{j} B_j$ et $x \notin A_i$, alors $\forall j \in J,\ x \in B_j$, donc $\forall j \in J,\ x \in A_i \cup B_j$ ; réciproquement, si $x \in \bigcap&#95;{j \in J} (A_i \cup B_j)$ et $x \notin \bigcap&#95;{j \in J} B_j$, il existe $j_0 \in J$ avec $x \notin B&#95;{j_0}$, donc $x \in A_i$).
 
 En réunissant sur $i \in I$ :
 
@@ -620,7 +620,7 @@ Les classes d'équivalence forment une **partition** de $E$ (c'est-à-dire : ell
 <div class="bloc demo" markdown="1">
 <span class="bloc-titre">Démonstration</span>
 
-Soit $x \in E$ : $x \in C_x$ donc $C_x \neq \varnothing$. Si $C_a \cap C_b \neq \varnothing$ : soit $x \in C_a \cap C_b$ ; alors $x \in C_a$ et $x \in C_b$, donc d'après ce qui précède $C_a = C_b$ : deux classes distinctes sont disjointes. Enfin $E = \bigcup\_{a \in E} C_a$ : on a $C_a \subset E$ donc $\bigcup\_{a \in E} C_a \subset E$ ; et si $x \in E$, $x \in C_x$ donc $x \in \bigcup\_{a \in E} C_a$, d'où $E \subset \bigcup\_{a \in E} C_a$.
+Soit $x \in E$ : $x \in C_x$ donc $C_x \neq \varnothing$. Si $C_a \cap C_b \neq \varnothing$ : soit $x \in C_a \cap C_b$ ; alors $x \in C_a$ et $x \in C_b$, donc d'après ce qui précède $C_a = C_b$ : deux classes distinctes sont disjointes. Enfin $E = \bigcup&#95;{a \in E} C_a$ : on a $C_a \subset E$ donc $\bigcup&#95;{a \in E} C_a \subset E$ ; et si $x \in E$, $x \in C_x$ donc $x \in \bigcup&#95;{a \in E} C_a$, d'où $E \subset \bigcup&#95;{a \in E} C_a$.
 
 </div>
 
@@ -838,7 +838,7 @@ $$(\sup A \geq x) \underset{?}{\Leftarrow} (\exists a \in A,\ a \geq x) \qquad (
 $$\sup(A \cup B) = \sup(\sup A, \sup B), \qquad \inf(A \cup B) = \inf(\inf A, \inf B)$$
 $$\sup(A \cap B) \leq \inf(\sup A, \sup B), \qquad \inf(A \cap B) \geq \sup(\inf A, \inf B)$$
 Prouver qu'il peut y avoir des inégalités strictes dans les deux dernières inégalités, même pour un ordre total.</li>
-<li>Soit $A = \left\{ \dfrac{1}{p} + \dfrac{1}{q^2},\ p, q \in \mathbb{N}^\* \right\}$.
+<li>Soit $A = \left\{ \dfrac{1}{p} + \dfrac{1}{q^2},\ p, q \in \mathbb{N}^&#42; \right\}$.
 <ol>
 <li>Étudier l'existence et calculer éventuellement $\sup A$, $\inf A$, ppe $A$, pge $A$.</li>
 <li>A-t-on $1/3 \in A$ ? $1/4 \in A$ ?</li>
