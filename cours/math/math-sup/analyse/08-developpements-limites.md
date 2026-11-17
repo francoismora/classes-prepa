@@ -106,7 +106,7 @@ $$
 f(x) = \begin{cases} x^2 \sin \dfrac{1}{x} & \text{si } x \neq 0 \\ 0 & \text{si } x = 0 \end{cases}
 $$
 
-Comme $|f(x)| \leq x^2 = \mathrm{o}(x)$, on a $f(x) = 0 + 0\cdot x + \mathrm{o}(x)$ :
+Comme $&#124;f(x)&#124; \leq x^2 = \mathrm{o}(x)$, on a $f(x) = 0 + 0\cdot x + \mathrm{o}(x)$ :
 $f$ admet un DL d'ordre $1$ en $0$ (et $f$ est dérivable en $0$, avec $f'(0) = 0$).
 
 **Mais** $f$ n'admet pas de DL d'ordre $2$ en $0$ : on aurait sinon
@@ -259,7 +259,7 @@ avec $\left(\dfrac{1}{1+x}\right)^{(n)} = \dfrac{(-1)^n&#92;&#44; n!}{(1+x)^{n+1
 
 Choisis une fonction usuelle et fais varier l'ordre $n$ du DL en $0$ : la courbe bleue
 est $f$, la courbe rouge en tirets est le polynôme de Taylor-Young $P_n$ (affiché en
-LaTeX sous le graphique). Le second graphique montre l'erreur $|f(x) - P_n(x)|$ en
+LaTeX sous le graphique). Le second graphique montre l'erreur $&#124;f(x) - P_n(x)&#124;$ en
 échelle logarithmique — on y lit directement le $\mathrm{o}(x^n)$ : plus $n$ est grand,
 plus la courbe rouge épouse la bleue longtemps au voisinage de $0$.
 
@@ -455,8 +455,8 @@ $$
 
 Posons $\varphi(x) = f(x) - f(0) - b_0 x - \dots - \dfrac{b_n}{n+1}x^{n+1}$. Alors
 $\varphi'(x) = f'(x) - b_0 - b_1 x - \dots - b_n x^n = x^n\varepsilon(x)$ avec
-$\varepsilon(x) \to 0$. Pour $|x| < \alpha$ assez petit, $|\varphi'(x)| \leq \varepsilon&#92;&#44;|x|^n$ ;
-par l'inégalité des accroissements finis, $|\varphi(x)| \leq \varepsilon \dfrac{|x|^{n+1}}{n+1}$,
+$\varepsilon(x) \to 0$. Pour $&#124;x&#124; < \alpha$ assez petit, $&#124;\varphi'(x)&#124; \leq \varepsilon&#92;&#44;&#124;x&#124;^n$ ;
+par l'inégalité des accroissements finis, $&#124;\varphi(x)&#124; \leq \varepsilon \dfrac{&#124;x&#124;^{n+1}}{n+1}$,
 d'où $\varphi(x) = \mathrm{o}(x^{n+1})$.
 
 </div>
@@ -713,7 +713,7 @@ au-dessus de $(D)$ (signe de $a_2 = 4 > 0$), et en $-\infty$ au-dessous.
 <li>Étudier les branches infinies de :
 <ol>
 <li>$f(x) = x\sqrt{1+\dfrac{1}{x}}$</li>
-<li>$f(x) = x^2 \ln\left|\dfrac{1+x}{x}\right|$</li>
+<li>$f(x) = x^2 \ln\left&#124;\dfrac{1+x}{x}\right&#124;$</li>
 <li>$f(x) = (x-1)&#92;&#44;e^{\frac{1}{x^2-3x+2}}$</li>
 <li>$f(x) = x^3\left(e^{1/x} - \cos\frac{1}{x}\right)$</li>
 </ol>

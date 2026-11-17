@@ -497,7 +497,7 @@ Choisis une fraction rationnelle parmi les exemples du cours : le composant
 divisions successives — comme dans les lemmes 1 à 3) et l'affiche en LaTeX. Le
 premier graphique montre la courbe de $f$ avec les asymptotes verticales aux
 pôles réels (et l'asymptote oblique, qui est la partie entière) ; le second
-montre l'erreur $|f(x) - \text{décomposition}(x)|$, nulle à la précision
+montre l'erreur $&#124;f(x) - \text{décomposition}(x)&#124;$, nulle à la précision
 machine : la décomposition est une identité exacte.
 
 ## VI. Exercices — feuille n° 21

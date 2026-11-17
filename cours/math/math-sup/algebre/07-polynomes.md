@@ -1188,12 +1188,12 @@ $$P = a_n (X-\alpha_1)\cdots(X-\alpha_k)(X-\beta_1)(X-\overline{\beta_1})\cdots(
 $$P = a_n (X-\alpha_1)\cdots(X-\alpha_k)\big(X^2 - 2\,\mathrm{Re}(\beta_1)X + |\beta_1|^2\big)\cdots\big(X^2 - 2\,\mathrm{Re}(\beta_p)X + |\beta_p|^2\big)$$
 
 Ceci est une décomposition en facteurs irréductibles dans $\mathbb{R}[X]$,
-car les $X^2 - 2&#92;&#44;\mathrm{Re}(\beta_i)X + |\beta_i|^2$ ont un $\Delta < 0$
-(leur discriminant vaut $4&#92;&#44;\mathrm{Re}(\beta_i)^2 - 4|\beta_i|^2
+car les $X^2 - 2&#92;&#44;\mathrm{Re}(\beta_i)X + &#124;\beta_i&#124;^2$ ont un $\Delta < 0$
+(leur discriminant vaut $4&#92;&#44;\mathrm{Re}(\beta_i)^2 - 4&#124;\beta_i&#124;^2
 = -4(\mathrm{Im}&#92;&#44;\beta_i)^2 < 0$). Si $P \neq 0$ est irréductible, la
 décomposition ci-dessus admet un seul terme, donc $P$ est de la forme
 $X - \alpha_i$, $\alpha_i \in \mathbb{R}$, ou
-$X^2 - 2&#92;&#44;\mathrm{Re}(\beta_i)X + |\beta_i|^2$, $\beta_i \in \mathbb{C}\setminus\mathbb{R}$ :
+$X^2 - 2&#92;&#44;\mathrm{Re}(\beta_i)X + &#124;\beta_i&#124;^2$, $\beta_i \in \mathbb{C}\setminus\mathbb{R}$ :
 $P$ est bien de la forme annoncée.
 
 <div class="bloc remarque" markdown="1">

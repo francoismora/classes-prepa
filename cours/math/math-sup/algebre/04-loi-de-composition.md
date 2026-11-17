@@ -137,7 +137,7 @@ $$\forall (x,y) \in A^2,\quad x * y \in A$$
 
 </div>
 
-Exemple : $(\mathcal{U}, \times)$, où $\mathcal{U}$ est l'ensemble des complexes de module $1$, est stable pour $\times$ : $z \in \mathcal{U} \Rightarrow |z| = 1$, $z' \in \mathcal{U} \Rightarrow |z'| = 1$ $\Rightarrow$ $|z z'| = 1$, donc $z &#42; z' \in \mathcal{U}$.
+Exemple : $(\mathcal{U}, \times)$, où $\mathcal{U}$ est l'ensemble des complexes de module $1$, est stable pour $\times$ : $z \in \mathcal{U} \Rightarrow &#124;z&#124; = 1$, $z' \in \mathcal{U} \Rightarrow &#124;z'&#124; = 1$ $\Rightarrow$ $&#124;z z'&#124; = 1$, donc $z &#42; z' \in \mathcal{U}$.
 
 <div class="bloc propriete" markdown="1">
 

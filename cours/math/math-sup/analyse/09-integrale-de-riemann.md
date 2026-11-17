@@ -198,7 +198,7 @@ $$\int_a^b f = \sum_{i=1}^{n} \lambda_i\, (x_i - x_{i-1})$$
 Sur chaque $[x&#95;{i-1}, x_i]$, $f$ coïncide avec la constante $\lambda_i$ sauf
 éventuellement aux extrémités. En posant $h = f - g$ où $g$ vaut $\lambda_i$
 sur $[x&#95;{i-1}, x_i]$, on a $h = 0$ sur $]x&#95;{i-1}, x_i[$ et $h$ bornée
-($|h| \leq 2M$) : pour la subdivision $\sigma$, $S(\sigma, h) - s(\sigma, h)$
+($&#124;h&#124; \leq 2M$) : pour la subdivision $\sigma$, $S(\sigma, h) - s(\sigma, h)$
 est arbitrairement petit (les seuls intervalles où $h$ varie sont les
 voisinages des points $x_i$, de longueur totale contrôlée), donc $h$ est
 intégrable d'intégrale nulle. Par Chasles, $f$ est intégrable sur $[a, b]$ et
@@ -393,7 +393,7 @@ $$S_n = \frac{b-a}{n} \sum_{i=1}^{n} f\big(\lambda_i^{(n)}\big)
 $f$ continue sur $[a, b]$ y est uniformément continue : soit $\varepsilon > 0$ ;
 il existe $N$ tel que, pour $n \geq N$, deux points de $[x&#95;{i-1}, x_i]$ sont à
 distance $\leq \dfrac{b-a}{n} \leq \dfrac{b-a}{N}$, donc
-$|f(x) - f(y)| \leq \dfrac{\varepsilon}{b-a}$. Alors $M_i^{(n)} - m_i^{(n)}
+$&#124;f(x) - f(y)&#124; \leq \dfrac{\varepsilon}{b-a}$. Alors $M_i^{(n)} - m_i^{(n)}
 \leq \dfrac{\varepsilon}{b-a}$ et
 
 $$S(\sigma_n, f) - s(\sigma_n, f) \leq \varepsilon$$
@@ -440,7 +440,7 @@ Choisis une fonction sur $[0,1]$, une méthode de rectangles (gauche, droite, po
 milieu, ou sommes de Darboux inférieure/supérieure) et fais varier le nombre $n$
 de subdivisions : les rectangles visualisent la somme $S_n$, comparée à
 l'intégrale exacte (ligne verte), et le second graphique montre la vitesse de
-convergence de l'erreur $|S_n - \int_0^1 f|$.
+convergence de l'erreur $&#124;S_n - \int_0^1 f&#124;$.
 
 ## VII. Intégrale fonction de la borne supérieure — primitives
 
@@ -455,7 +455,7 @@ Soit $f$ intégrable sur $[a, b]$ et $c \in [a, b]$. Alors
 $$g : x \longmapsto \int_c^x f(t)\, \mathrm{d}t$$
 
 est bien définie et **continue** sur $[a, b]$. Si de plus $f$ est bornée sur
-$[a, b]$ ($|f| \leq M$), alors $g$ est $M$-lipschitzienne :
+$[a, b]$ ($&#124;f&#124; \leq M$), alors $g$ est $M$-lipschitzienne :
 
 $$\forall x, y \in [a, b],\quad |g(x) - g(y)| \leq M\, |x - y|$$
 
@@ -468,8 +468,8 @@ $$\forall x, y \in [a, b],\quad |g(x) - g(y)| \leq M\, |x - y|$$
 $g$ est bien définie car $[c, x]$ et $[x, c]$ sont contenus dans $[a, b]$.
 Quels que soient $x, y \in [a, b]$, Chasles donne
 $g(x) - g(y) = \int_y^x f$, d'où
-$|g(x) - g(y)| = \left|\int_y^x f\right| \leq \left|\int_y^x |f|\right|
-\leq M&#92;&#44;|x - y|$.
+$&#124;g(x) - g(y)&#124; = \left&#124;\int_y^x f\right&#124; \leq \left&#124;\int_y^x &#124;f&#124;\right&#124;
+\leq M&#92;&#44;&#124;x - y&#124;$.
 
 </div>
 

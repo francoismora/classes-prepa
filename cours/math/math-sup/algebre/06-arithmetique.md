@@ -94,7 +94,7 @@ et le couple $(-q - 1,&#92;&#44; b - r)$ convient.
 <span class="bloc-titre">Remarques</span>
 
 - $b$ divise $a$ (avec $b \neq 0$) si et seulement si le reste de la division euclidienne de $a$ par $b$ est nul ;
-- si l'on multiplie $a$ et $b$ par $d \in \mathbb{Z}$ : si $a = bq + r$ avec $0 \leq r < b$, alors $ad = (bd)q + rd$ avec $0 \leq rd < |bd|$ ; par unicité de la division euclidienne, le quotient de la division de $ad$ par $bd$ est $q$ et le reste est $rd$ (multiplié par $d$).
+- si l'on multiplie $a$ et $b$ par $d \in \mathbb{Z}$ : si $a = bq + r$ avec $0 \leq r < b$, alors $ad = (bd)q + rd$ avec $0 \leq rd < &#124;bd&#124;$ ; par unicité de la division euclidienne, le quotient de la division de $ad$ par $bd$ est $q$ et le reste est $rd$ (multiplié par $d$).
 
 </div>
 
@@ -400,7 +400,7 @@ $$(2 \times 178 + 5k,\ -11 \times 178 - 27k), \qquad k \in \mathbb{Z}$$
 
 <span class="bloc-titre">Définition</span>
 
-Soit $(a_1, \dots, a_n) \in \mathbb{Z}^n$. Alors $a_1\mathbb{Z} \cap a_2\mathbb{Z} \cap \dots \cap a_n\mathbb{Z}$ est un sous-groupe de $\mathbb{Z}$ de la forme $m\mathbb{Z}$ ; $m$ est défini au signe près et $|m|$ est le plus petit multiple commun positif des $a_i$. On appelle $|m|$ le **ppcm** des $a_i$, noté
+Soit $(a_1, \dots, a_n) \in \mathbb{Z}^n$. Alors $a_1\mathbb{Z} \cap a_2\mathbb{Z} \cap \dots \cap a_n\mathbb{Z}$ est un sous-groupe de $\mathbb{Z}$ de la forme $m\mathbb{Z}$ ; $m$ est défini au signe près et $&#124;m&#124;$ est le plus petit multiple commun positif des $a_i$. On appelle $&#124;m&#124;$ le **ppcm** des $a_i$, noté
 
 $$|m| = a_1 \vee a_2 \vee \dots \vee a_n = \operatorname{ppcm}(a_1, \dots, a_n)$$
 
@@ -486,7 +486,7 @@ $\pm 1$ ne sont pas premiers.
 
 <span class="bloc-titre">Propriété 1</span>
 
-Tout entier relatif $n$ avec $|n| \geq 2$ admet un diviseur premier.
+Tout entier relatif $n$ avec $&#124;n&#124; \geq 2$ admet un diviseur premier.
 
 </div>
 
@@ -654,7 +654,7 @@ $x \equiv y \pmod{n}$ si et seulement si $x$ et $y$ ont le même reste dans la d
 
 <span class="bloc-titre">Démonstration</span>
 
-Écrivons $x = qn + r$ et $y = q'n + r'$ avec $0 \leq r < n$, $0 \leq r' < n$. Alors $x - y = n(q - q') + (r - r')$ ; comme $n \mid n(q - q')$, on a $n \mid (x - y) \iff n \mid (r - r')$. Or $|r - r'| < n$, donc $n \mid (r - r') \iff r = r'$.
+Écrivons $x = qn + r$ et $y = q'n + r'$ avec $0 \leq r < n$, $0 \leq r' < n$. Alors $x - y = n(q - q') + (r - r')$ ; comme $n \mid n(q - q')$, on a $n \mid (x - y) \iff n \mid (r - r')$. Or $&#124;r - r'&#124; < n$, donc $n \mid (r - r') \iff r = r'$.
 
 </div>
 
@@ -1008,7 +1008,7 @@ donc $173 \equiv 2 \pmod{9}$.
 
 **Nombres premiers**
 
-- $\forall n \in \mathbb{Z}$ avec $|n| \geq 2$, il existe $p \in \mathcal{P}$ tel que $p \mid n$ ;
+- $\forall n \in \mathbb{Z}$ avec $&#124;n&#124; \geq 2$, il existe $p \in \mathcal{P}$ tel que $p \mid n$ ;
 - $n \geq 2$ est premier si et seulement si il n'admet pas de diviseur premier $p$ avec $p^2 \leq n$ ;
 - $\mathcal{P}$ est infini ;
 - $x \wedge p = 1$ avec $p \in \mathcal{P}$ $\iff$ $p \nmid x$ ;

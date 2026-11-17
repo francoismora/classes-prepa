@@ -295,7 +295,7 @@ Extension du vocabulaire : **endomorphisme**, **isomorphisme**, **automorphisme*
 
 - $\varphi : (\mathbb{Z}, +) 	o (G, &#42;)$, $n \mapsto a^n$ (avec $a \in G$ fixé) : $\varphi(n + m) = a^{n+m} = a^n &#42; a^m$ ;
 - $(\mathbb{C}, +) 	o (\mathcal{T}, \circ)$, $b \mapsto t_b$, où $\mathcal{T}$ est le groupe des translations du plan et $t_b$ la translation d'affixe $b$ : $t_b \circ t&#95;{b'} = t&#95;{b + b'}$, $(t_b)^{-1} = t&#95;{-b}$, $\mathrm{Id} = t_0$ ; $t_b$ correspond à la transformation $z \mapsto z + b$. $\varphi(a + b)$ est la transformation $z \mapsto z + (a + b) = (z + a) + b = (z + b) + a$, qui correspond à $t_b \circ t_a$. Soit $t_b$ une translation du plan, correspondant à $z \mapsto z + b$ : $b$ est un antécédent de $t_b$ par $\varphi$, et c'est le seul ;
-- $\psi : (\mathbb{C}^&#42;, \cdot) \xrightarrow{\ \sim\ } (\mathcal{S}, \circ)$, $a \mapsto s$ similitude directe d'angle $\mathrm{Arg}&#92;&#44; a$ et de rapport $|a|$.
+- $\psi : (\mathbb{C}^&#42;, \cdot) \xrightarrow{\ \sim\ } (\mathcal{S}, \circ)$, $a \mapsto s$ similitude directe d'angle $\mathrm{Arg}&#92;&#44; a$ et de rapport $&#124;a&#124;$.
 
 </div>
 

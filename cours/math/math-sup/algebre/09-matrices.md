@@ -395,7 +395,7 @@ $\mathrm{GL}&#95;n(\mathbb{K})$ est isomorphe à $\mathrm{GL}(E)$ si $E$ est un 
 
 <span class="bloc-titre">Démonstration</span>
 
-Posons $\varphi = \varphi|&#95;{\mathrm{GL}(E)} : \mathrm{GL}(E) \to \mathcal{M}&#95;n(\mathbb{K})$, $u \mapsto \mathrm{Mat}&#95;{\mathcal{e}}(u)$ ; $\varphi$ reste injective. Si $A \in \varphi(\mathrm{GL}(E))$, $A$ est la matrice de $u$ automorphisme ; $u \circ u^{-1} = \mathrm{Id}$, soit $B$ la matrice de $u^{-1}$ ; $AB$ est la matrice de $u \circ u^{-1}$ : $AB = I_n$ ; de même $BA = I_n$ (matrice de $u^{-1} \circ u$) ; donc $A$ est inversible d'inverse $B$ : $\varphi(\mathrm{GL}(E)) \subset \mathrm{GL}&#95;n(\mathbb{K})$. Réciproquement, si $A \in \mathrm{GL}&#95;n(\mathbb{K})$, soit $u = \varphi^{-1}(A)$ ; $u$ est bijective $\Leftrightarrow A \in \varphi(\mathrm{GL}(E))$ ; donc $\varphi(\mathrm{GL}(E)) = \mathrm{GL}&#95;n(\mathbb{K})$ : $\varphi$ est bijective de $\mathrm{GL}(E)$ sur $\mathrm{GL}&#95;n(\mathbb{K})$, et $\mathrm{GL}(E) \simeq \mathrm{GL}&#95;n(\mathbb{K})$.
+Posons $\varphi = \varphi&#124;&#95;{\mathrm{GL}(E)} : \mathrm{GL}(E) \to \mathcal{M}&#95;n(\mathbb{K})$, $u \mapsto \mathrm{Mat}&#95;{\mathcal{e}}(u)$ ; $\varphi$ reste injective. Si $A \in \varphi(\mathrm{GL}(E))$, $A$ est la matrice de $u$ automorphisme ; $u \circ u^{-1} = \mathrm{Id}$, soit $B$ la matrice de $u^{-1}$ ; $AB$ est la matrice de $u \circ u^{-1}$ : $AB = I_n$ ; de même $BA = I_n$ (matrice de $u^{-1} \circ u$) ; donc $A$ est inversible d'inverse $B$ : $\varphi(\mathrm{GL}(E)) \subset \mathrm{GL}&#95;n(\mathbb{K})$. Réciproquement, si $A \in \mathrm{GL}&#95;n(\mathbb{K})$, soit $u = \varphi^{-1}(A)$ ; $u$ est bijective $\Leftrightarrow A \in \varphi(\mathrm{GL}(E))$ ; donc $\varphi(\mathrm{GL}(E)) = \mathrm{GL}&#95;n(\mathbb{K})$ : $\varphi$ est bijective de $\mathrm{GL}(E)$ sur $\mathrm{GL}&#95;n(\mathbb{K})$, et $\mathrm{GL}(E) \simeq \mathrm{GL}&#95;n(\mathbb{K})$.
 
 </div>
 
@@ -1294,7 +1294,7 @@ $$A = \begin{pmatrix} \operatorname{ch} x & \operatorname{sh} x \\ \operatorname
 **Matrices inversibles**
 
 <ol class="enonces" start="9">
-<li>Soit $n \geq 2$ et $\omega = e^{2i\pi/n}$. Soit $A$ la matrice de terme général $a&#95;{ij} = \omega^{|i-j|}$ et $\overline{A}$ la matrice de terme général $\overline{a&#95;{ij}}$. Calculer $A^2$, $\overline{A}^2$, $A\overline{A}$, $\overline{A}A$, et $A^{-1}$ si $A$ est inversible.</li>
+<li>Soit $n \geq 2$ et $\omega = e^{2i\pi/n}$. Soit $A$ la matrice de terme général $a&#95;{ij} = \omega^{&#124;i-j&#124;}$ et $\overline{A}$ la matrice de terme général $\overline{a&#95;{ij}}$. Calculer $A^2$, $\overline{A}^2$, $A\overline{A}$, $\overline{A}A$, et $A^{-1}$ si $A$ est inversible.</li>
 <li>Montrer que pour $(a, b, c) \in \mathbb{C}^3$, la matrice
 $$M = \begin{pmatrix} 1 & 1 & 1 \\ a & b & c \\ a^2 & b^2 & c^2 \end{pmatrix}$$
 est inversible si et seulement si $a, b, c$ sont deux à deux distincts, et calculer alors $M^{-1}$.</li>

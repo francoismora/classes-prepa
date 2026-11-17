@@ -139,13 +139,13 @@ $$|z| = \sqrt{N(z)}$$
 
 <span class="bloc-titre">Propriétés</span>
 
-- $|z \cdot z'| = |z| \cdot |z'|$ ;
-- $|z \cdot z'|^2 = |z|^2 \cdot |z'|^2$ ;
-- $N(z) = z&#92;&#44;\overline{z}$, soit $|z|^2 = z&#92;&#44;\overline{z}$ ;
-- $|z| = 0 \Leftrightarrow z = 0$ ;
-- tout complexe non nul a un inverse dans $\mathbb{C}$, car $\dfrac{z&#92;&#44;\overline{z}}{|z|^2} = 1$, d'où $\dfrac{\overline{z}}{|z|^2} = \dfrac{a - ib}{a^2 + b^2}$ est l'inverse de $z$ ;
-- $|z^{-1}| = |z|^{-1}$ ;
-- $|\overline{z}| = |z|$.
+- $&#124;z \cdot z'&#124; = &#124;z&#124; \cdot &#124;z'&#124;$ ;
+- $&#124;z \cdot z'&#124;^2 = &#124;z&#124;^2 \cdot &#124;z'&#124;^2$ ;
+- $N(z) = z&#92;&#44;\overline{z}$, soit $&#124;z&#124;^2 = z&#92;&#44;\overline{z}$ ;
+- $&#124;z&#124; = 0 \Leftrightarrow z = 0$ ;
+- tout complexe non nul a un inverse dans $\mathbb{C}$, car $\dfrac{z&#92;&#44;\overline{z}}{&#124;z&#124;^2} = 1$, d'où $\dfrac{\overline{z}}{&#124;z&#124;^2} = \dfrac{a - ib}{a^2 + b^2}$ est l'inverse de $z$ ;
+- $&#124;z^{-1}&#124; = &#124;z&#124;^{-1}$ ;
+- $&#124;\overline{z}&#124; = &#124;z&#124;$.
 
 </div>
 
@@ -155,9 +155,9 @@ $$|z| = \sqrt{N(z)}$$
 
 $$|\mathrm{Re}(z)| \leq |z| \quad \text{et} \quad |\mathrm{Im}(z)| \leq |z|$$
 
-car $|z|^2 = \mathrm{Re}(z)^2 + \mathrm{Im}(z)^2$, avec égalité si $z \in \mathbb{R}$.
+car $&#124;z&#124;^2 = \mathrm{Re}(z)^2 + \mathrm{Im}(z)^2$, avec égalité si $z \in \mathbb{R}$.
 
-Il y a égalité si $|\mathrm{Re}(z)| = |z|$ et $|\mathrm{Im}(z)| = 0$, donc $z \in \mathbb{R}$ ; réciproquement, si $z \in \mathbb{R}$, $|z| = \sqrt{a^2} = |\mathrm{Re}(z)|$.
+Il y a égalité si $&#124;\mathrm{Re}(z)&#124; = &#124;z&#124;$ et $&#124;\mathrm{Im}(z)&#124; = 0$, donc $z \in \mathbb{R}$ ; réciproquement, si $z \in \mathbb{R}$, $&#124;z&#124; = \sqrt{a^2} = &#124;\mathrm{Re}(z)&#124;$.
 
 </div>
 
@@ -178,11 +178,11 @@ $$|z+z'|^2 = (z+z')(\overline{z}+\overline{z'}) = |z|^2 + |z'|^2 + z'\overline{z
 
 $$(|z|+|z'|)^2 = |z|^2 + |z'|^2 + 2|z|\,|z'|$$
 
-D'où $|z| \geq |\mathrm{Re}(z)| \geq \mathrm{Re}(z)$, on a $|z+z'|^2 \leq (|z|+|z'|)^2$, soit $|z+z'| \leq |z| + |z'|$.
+D'où $&#124;z&#124; \geq &#124;\mathrm{Re}(z)&#124; \geq \mathrm{Re}(z)$, on a $&#124;z+z'&#124;^2 \leq (&#124;z&#124;+&#124;z'&#124;)^2$, soit $&#124;z+z'&#124; \leq &#124;z&#124; + &#124;z'&#124;$.
 
-**Cas d'égalité** : $|z+z'|^2 = (|z|+|z'|)^2$ si et seulement si $|z'\overline{z}| = \mathrm{Re}(z'\overline{z})$, soit $|z'\overline{z}| = |\mathrm{Re}(z'\overline{z})|$, donc $z'\overline{z} \in \mathbb{R}$, avec $z'\overline{z} = \lambda |z|^2$, $\lambda \in \mathbb{R}$.
+**Cas d'égalité** : $&#124;z+z'&#124;^2 = (&#124;z&#124;+&#124;z'&#124;)^2$ si et seulement si $&#124;z'\overline{z}&#124; = \mathrm{Re}(z'\overline{z})$, soit $&#124;z'\overline{z}&#124; = &#124;\mathrm{Re}(z'\overline{z})&#124;$, donc $z'\overline{z} \in \mathbb{R}$, avec $z'\overline{z} = \lambda &#124;z&#124;^2$, $\lambda \in \mathbb{R}$.
 
-Si $z \neq 0$, $z' = \dfrac{\lambda}{|z|^2}&#92;&#44;z = \mu z$ avec $\mu \in \mathbb{R}$. De plus $z'\overline{z} = \mu|z|^2$ et $|\mu|&#92;&#44;|z|^2 = \mathrm{Re}(\mu|z|^2) = \mu|z|^2$ ; comme $z \neq 0$, $|\mu| = \mu$, donc $\mu \in \mathbb{R}&#95;+$.
+Si $z \neq 0$, $z' = \dfrac{\lambda}{&#124;z&#124;^2}&#92;&#44;z = \mu z$ avec $\mu \in \mathbb{R}$. De plus $z'\overline{z} = \mu&#124;z&#124;^2$ et $&#124;\mu&#124;&#92;&#44;&#124;z&#124;^2 = \mathrm{Re}(\mu&#124;z&#124;^2) = \mu&#124;z&#124;^2$ ; comme $z \neq 0$, $&#124;\mu&#124; = \mu$, donc $\mu \in \mathbb{R}&#95;+$.
 
 Il y a égalité si et seulement si $z = 0$ ou $z' = \mu z$ avec $\mu \in \mathbb{R}&#95;+$.
 
@@ -203,7 +203,7 @@ $$|z - z'| \geq \big||z| - |z'|\big|, \qquad |z + z'| \geq \big||z| - |z'|\big|$
 <div class="bloc demo" markdown="1">
 <span class="bloc-titre">Démonstration</span>
 
-Posons $Z = z + z'$, soit $z = Z - z'$, donc $|z| = |Z - z'| \leq |Z| + |z'|$, soit $|Z - z'| \leq |Z| + |z'|$ ; en échangeant $z$ et $z'$ : $|z'| - |z| \leq |Z|$, d'où $|Z| \geq \big||z| - |z'|\big|$.
+Posons $Z = z + z'$, soit $z = Z - z'$, donc $&#124;z&#124; = &#124;Z - z'&#124; \leq &#124;Z&#124; + &#124;z'&#124;$, soit $&#124;Z - z'&#124; \leq &#124;Z&#124; + &#124;z'&#124;$ ; en échangeant $z$ et $z'$ : $&#124;z'&#124; - &#124;z&#124; \leq &#124;Z&#124;$, d'où $&#124;Z&#124; \geq \big&#124;&#124;z&#124; - &#124;z'&#124;\big&#124;$.
 
 </div>
 
@@ -231,16 +231,16 @@ On appelle **argument** de $z \neq 0$ l'angle $(\overrightarrow{Ox}, \overrighta
 
 <span class="bloc-titre">Propriétés</span>
 
-- $\mathrm{Re}(z) = OM\cos\theta = |z|\cos\theta$ et $\mathrm{Im}(z) = |z|\sin\theta$, d'où
+- $\mathrm{Re}(z) = OM\cos\theta = &#124;z&#124;\cos\theta$ et $\mathrm{Im}(z) = &#124;z&#124;\sin\theta$, d'où
 
 $$z = |z|(\cos\theta + i\sin\theta) = |z|\,e^{i\theta}$$
 
-$|z|&#92;&#44;e^{i\theta}$ est l'**écriture trigonométrique** de $z$ ; elle est **unique**, car si $z = r e^{i\alpha}$ avec $r > 0$, alors $|z| = r$ et $\alpha = \mathrm{Arg}&#92;&#44;z$ $[2\pi]$.
+$&#124;z&#124;&#92;&#44;e^{i\theta}$ est l'**écriture trigonométrique** de $z$ ; elle est **unique**, car si $z = r e^{i\alpha}$ avec $r > 0$, alors $&#124;z&#124; = r$ et $\alpha = \mathrm{Arg}&#92;&#44;z$ $[2\pi]$.
 
 - $e^{i\theta} = 1$ si et seulement si $\theta = 0$ $[2\pi]$ ;
 - $e^{i\theta} = e^{i\theta'}$ si et seulement si $e^{i(\theta-\theta')} = 1$, soit $\theta - \theta' = 0$ $[2\pi]$, donc $\theta = \theta'$ $[2\pi]$.
 
-**Application** : si $z = r e^{i\alpha}$ avec $r > 0$, de $|z| = |r e^{i\alpha}| = |r|&#92;&#44;|e^{i\alpha}| = |r| = r$, alors $z = |z|e^{i\theta} = |z|e^{i\alpha}$ avec $\theta = \mathrm{Arg}&#92;&#44;z$ ; pour $z \neq 0$, $|z| > 0$, donc $e^{i\theta} = e^{i\alpha}$, d'où $e^{i(\theta-\alpha)} = 1$, et $\theta - \alpha = 0$ $[2\pi]$ : $\theta = \alpha$ $[2\pi]$.
+**Application** : si $z = r e^{i\alpha}$ avec $r > 0$, de $&#124;z&#124; = &#124;r e^{i\alpha}&#124; = &#124;r&#124;&#92;&#44;&#124;e^{i\alpha}&#124; = &#124;r&#124; = r$, alors $z = &#124;z&#124;e^{i\theta} = &#124;z&#124;e^{i\alpha}$ avec $\theta = \mathrm{Arg}&#92;&#44;z$ ; pour $z \neq 0$, $&#124;z&#124; > 0$, donc $e^{i\theta} = e^{i\alpha}$, d'où $e^{i(\theta-\alpha)} = 1$, et $\theta - \alpha = 0$ $[2\pi]$ : $\theta = \alpha$ $[2\pi]$.
 
 </div>
 
@@ -263,7 +263,7 @@ d'après l'unicité de la forme trigonométrique : $\mathrm{Arg}(zz') = \theta +
 
 **Corollaire** : avec $z' = z^{-1}$, $z \neq 0$ : $\mathrm{Arg}(1) = \mathrm{Arg}(z) + \mathrm{Arg}(z^{-1}) = 0$.
 
-De plus $-z = -|z|e^{i\theta} = |z|e^{i\pi}e^{i\theta} = |z|e^{i(\theta+\pi)}$, d'où $\mathrm{Arg}(-z) = \theta + \pi$.
+De plus $-z = -&#124;z&#124;e^{i\theta} = &#124;z&#124;e^{i\pi}e^{i\theta} = &#124;z&#124;e^{i(\theta+\pi)}$, d'où $\mathrm{Arg}(-z) = \theta + \pi$.
 
 </div>
 
@@ -271,7 +271,7 @@ De plus $-z = -|z|e^{i\theta} = |z|e^{i\pi}e^{i\theta} = |z|e^{i(\theta+\pi)}$, 
 
 <span class="bloc-titre">Définition (complexes de module 1)</span>
 
-Soit $z \in \mathbb{C}$ tel que $|z| = 1$. Alors $z \neq 0$ et $z = |z|e^{i\theta} = e^{i\theta}$ ; réciproquement, tout $e^{i\theta}$ est de module $1$ :
+Soit $z \in \mathbb{C}$ tel que $&#124;z&#124; = 1$. Alors $z \neq 0$ et $z = &#124;z&#124;e^{i\theta} = e^{i\theta}$ ; réciproquement, tout $e^{i\theta}$ est de module $1$ :
 
 $$U = \{z \in \mathbb{C} \mid |z| = 1\} = \{e^{i\theta} \mid \theta \in [0, 2\pi[\}$$
 
@@ -316,7 +316,7 @@ $$(e^{i\theta})^n = (e^{i\theta})^{-(-n)} = \Big[e^{i(-n)\theta}\Big]^{-1} = \Bi
 
 <span class="bloc-titre">Application (Moivre)</span>
 
-Si $z = |z|e^{i\theta}$, alors $z^n = |z|^n e^{in\theta}$.
+Si $z = &#124;z&#124;e^{i\theta}$, alors $z^n = &#124;z&#124;^n e^{in\theta}$.
 
 </div>
 
@@ -362,17 +362,17 @@ Soit $u \neq 0$, $u = r'e^{i\alpha}$ avec $r' > 0$. Alors
 $$u^n = z \Leftrightarrow r'^n e^{in\alpha} = |z|e^{i\theta} \Leftrightarrow \begin{cases} r'^n = |z| \\ n\alpha = \theta \ [2\pi] \end{cases} \Leftrightarrow \begin{cases} r' = \sqrt[n]{|z|} \\ \alpha = \dfrac{\theta}{n} + \dfrac{2k\pi}{n},\ k \in \mathbb{Z} \end{cases}$$
 
 Si $u$ est racine $n$-ième, $u$ est de la forme
-$u = |z|^{\frac{1}{n}} e^{i\left(\frac{\theta}{n} + \frac{2k\pi}{n}\right)}$, $k \in \mathbb{Z}$ ; réciproquement, les
-$|z|^{\frac{1}{n}} e^{i(\frac{\theta}{n} + \frac{2k\pi}{n})}$ pour $k \in [0, n-1]$ sont $n$ racines distinctes, et ce sont les seules.
+$u = &#124;z&#124;^{\frac{1}{n}} e^{i\left(\frac{\theta}{n} + \frac{2k\pi}{n}\right)}$, $k \in \mathbb{Z}$ ; réciproquement, les
+$&#124;z&#124;^{\frac{1}{n}} e^{i(\frac{\theta}{n} + \frac{2k\pi}{n})}$ pour $k \in [0, n-1]$ sont $n$ racines distinctes, et ce sont les seules.
 
-Posons $r = |z|^{1/n}$ et $u_k = r e^{i(\frac{\theta}{n} + \frac{2k\pi}{n})}$ pour $0 \leq k \leq n-1$. Alors
+Posons $r = &#124;z&#124;^{1/n}$ et $u_k = r e^{i(\frac{\theta}{n} + \frac{2k\pi}{n})}$ pour $0 \leq k \leq n-1$. Alors
 
 $$\frac{\theta}{n} + \frac{2k\pi}{n} = \frac{\theta}{n} + \frac{2k'\pi}{n} \ [2\pi] \Leftrightarrow \frac{2(k-k')\pi}{n} = 0 \ [2\pi] \Leftrightarrow k = k'$$
 
 donc $u_k \neq u&#95;{k'}$ pour $0 \leq k \neq k' \leq n-1$ : on a $n$ racines distinctes.
 
 D'après l'équivalence ci-dessus, si $u$ est racine $n$-ième, $u$ est de la forme
-$|z|^{1/n} e^{i(\frac{\theta}{n} + \frac{2k\pi}{n})} = u_k$, $k \in \mathbb{Z}$. En écrivant $q = \left\lfloor \dfrac{k}{n} \right\rfloor$ (donc $q \leq \dfrac{k}{n} < q+1$) et $k = qn + r$ avec $0 \leq r \leq n-1$ :
+$&#124;z&#124;^{1/n} e^{i(\frac{\theta}{n} + \frac{2k\pi}{n})} = u_k$, $k \in \mathbb{Z}$. En écrivant $q = \left\lfloor \dfrac{k}{n} \right\rfloor$ (donc $q \leq \dfrac{k}{n} < q+1$) et $k = qn + r$ avec $0 \leq r \leq n-1$ :
 
 $$u_k = |z|^{\frac{1}{n}} e^{i\left(\frac{\theta}{n} + \frac{2(qn+r)\pi}{n}\right)} = |z|^{\frac{1}{n}} e^{i\left(\frac{\theta}{n} + \frac{2r\pi}{n} + 2q\pi\right)} = |z|^{\frac{1}{n}} e^{i(\frac{\theta}{n} + \frac{2r\pi}{n})} = u_r$$
 
@@ -431,7 +431,7 @@ On recherche les racines sous forme algébrique. Soit $z \neq 0$, $z = A + iB$, 
 
 $$u^2 = z \Leftrightarrow \alpha^2 - \beta^2 + 2i\alpha\beta = A + iB \Leftrightarrow \begin{cases} \alpha^2 - \beta^2 = A & (1)\\ 2\alpha\beta = B & (2) \end{cases}$$
 
-On a $\alpha^2 + \beta^2 = |u|^2 = |u^2| = |z| = \sqrt{A^2 + B^2}$. On en déduit $\alpha^2$ et $\beta^2$ ; d'après (2), on connaît le signe de $\alpha \times \beta$ ; on en déduit les deux couples $(\alpha, \beta)$ et $(-\alpha, -\beta)$.
+On a $\alpha^2 + \beta^2 = &#124;u&#124;^2 = &#124;u^2&#124; = &#124;z&#124; = \sqrt{A^2 + B^2}$. On en déduit $\alpha^2$ et $\beta^2$ ; d'après (2), on connaît le signe de $\alpha \times \beta$ ; on en déduit les deux couples $(\alpha, \beta)$ et $(-\alpha, -\beta)$.
 
 **b) Équation du second degré.** Soit $T = az^2 + bz + c$, avec $a \in \mathbb{C}^&#42;$, $b, c \in \mathbb{C}$ :
 
@@ -457,7 +457,7 @@ $$z_1 + z_2 = -\frac{b}{a}, \qquad z_1 z_2 = \frac{c}{a}$$
 
 ### 1) Rappels
 
-- une distance s'écrit comme un module : $|AB| = |b - a|$ pour $A(a)$, $B(b)$ ;
+- une distance s'écrit comme un module : $&#124;AB&#124; = &#124;b - a&#124;$ pour $A(a)$, $B(b)$ ;
 - un angle de vecteurs s'écrit comme un argument (relation de Chasles) :
 
 $$(\overrightarrow{MA}, \overrightarrow{MB}) = (\overrightarrow{MA}, \vec{u}) + (\vec{u}, \overrightarrow{MB}) \ [2\pi]$$
@@ -480,16 +480,16 @@ Ajouter un complexe $b$ revient à faire subir à $M(z)$ la **translation** de v
 
 ### 3) Multiplication par un scalaire
 
-Soit $z \mapsto z' = az$ avec $a \neq 0$ ; on écrit $a = |a|e^{i\theta}$ avec $\theta = \mathrm{Arg}&#92;&#44;a$.
+Soit $z \mapsto z' = az$ avec $a \neq 0$ ; on écrit $a = &#124;a&#124;e^{i\theta}$ avec $\theta = \mathrm{Arg}&#92;&#44;a$.
 
 - si $z = 0$, alors $z' = 0$ ;
-- si $z \neq 0$, $z = |z|e^{i\alpha}$, donc $z' = az = |a|&#92;&#44;|z|&#92;&#44;e^{i(\alpha+\theta)}$, soit $|z'| = |a|&#92;&#44;|z|$ et $\mathrm{Arg}&#92;&#44;z' = \alpha + \theta$ $[2\pi]$.
+- si $z \neq 0$, $z = &#124;z&#124;e^{i\alpha}$, donc $z' = az = &#124;a&#124;&#92;&#44;&#124;z&#124;&#92;&#44;e^{i(\alpha+\theta)}$, soit $&#124;z'&#124; = &#124;a&#124;&#92;&#44;&#124;z&#124;$ et $\mathrm{Arg}&#92;&#44;z' = \alpha + \theta$ $[2\pi]$.
 
 <div class="bloc propriete" markdown="1">
 
 <span class="bloc-titre">Propriété</span>
 
-Multiplier $z$ par $a$ revient à faire subir à $M(z)$ la **similitude** $s\big(O, |a|, \mathrm{Arg}(a)\big)$.
+Multiplier $z$ par $a$ revient à faire subir à $M(z)$ la **similitude** $s\big(O, &#124;a&#124;, \mathrm{Arg}(a)\big)$.
 
 </div>
 
@@ -508,7 +508,7 @@ $$Z' = z' - \omega = az + b - (a\omega + b) = a(z - \omega) = aZ$$
 
 <span class="bloc-titre">Propriété</span>
 
-Si $a \neq 1$, effectuer la transformation $z \mapsto az + b$ revient à faire subir à $M(z)$ la similitude $s\big(\Omega, |a|, \mathrm{Arg}&#92;&#44;a\big)$, où $\Omega$ est l'unique point invariant.
+Si $a \neq 1$, effectuer la transformation $z \mapsto az + b$ revient à faire subir à $M(z)$ la similitude $s\big(\Omega, &#124;a&#124;, \mathrm{Arg}&#92;&#44;a\big)$, où $\Omega$ est l'unique point invariant.
 
 </div>
 
@@ -567,8 +567,8 @@ $$\begin{cases} x + y = 2 \\ \dfrac{1}{x} + \dfrac{1}{y} = \dfrac{1}{2} \end{cas
 <ol class="enonces">
 <li>Soit $z$ et $z'$, deux complexes de module 1. Montrer alors que :
 $$Z = \frac{z + z'}{1 + zz'} \in \mathbb{R}$$</li>
-<li>Montrer que : $\forall u, v \in \mathbb{C}$, $|u + v|^2 + |u - v|^2 = 2(|u|^2 + |v|^2)$. Interpréter.</li>
-<li>Trouver tous les complexes $z$ tels que $|z| = |z - 4|$ et $\arg(z) = \arg(z + 1 - i) \mod 2\pi$.</li>
+<li>Montrer que : $\forall u, v \in \mathbb{C}$, $&#124;u + v&#124;^2 + &#124;u - v&#124;^2 = 2(&#124;u&#124;^2 + &#124;v&#124;^2)$. Interpréter.</li>
+<li>Trouver tous les complexes $z$ tels que $&#124;z&#124; = &#124;z - 4&#124;$ et $\arg(z) = \arg(z + 1 - i) \mod 2\pi$.</li>
 <li>Calculer le module et l'argument de $\dfrac{1 + \sin a + i\cos a}{1 + \sin a - i\cos a}$ ($a \in \mathbb{R}$).</li>
 <li>Calculer les deux quantités suivantes :
 $$C_n = 1 + \cos x + \cos 2x + \dots + \cos nx$$

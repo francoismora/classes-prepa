@@ -458,7 +458,7 @@ $$\det_e(v_{\sigma(1)},\dots,v_{\sigma(n)}) = \varepsilon(\sigma)\, \det_e(v_1,\
 <div class="bloc demo" markdown="1">
 <span class="bloc-titre">Démonstration</span>
 
-La première formule n'est que la propriété 2 précédente. Pour la seconde : $\det_e(v&#95;{\sigma(1)},\dots,v&#95;{\sigma(n)}) = \sum&#95;{\tau \in \mathfrak{S}&#95;n} \varepsilon(\tau)&#92;&#44; x&#95;{\sigma\tau(1),1} \cdots x&#95;{\sigma\tau(n),n}$ ; comme $|\sigma(1),\dots,\sigma(n)| = &#92;&#123;1,\dots,n&#92;&#125;$, en posant $\rho = \sigma \tau$ et comme $\varepsilon$ est un morphisme, $\varepsilon(\tau) = \varepsilon(\sigma)^{-1}\varepsilon(\rho) = \varepsilon(\sigma)\varepsilon(\rho)$, d'où le résultat.
+La première formule n'est que la propriété 2 précédente. Pour la seconde : $\det_e(v&#95;{\sigma(1)},\dots,v&#95;{\sigma(n)}) = \sum&#95;{\tau \in \mathfrak{S}&#95;n} \varepsilon(\tau)&#92;&#44; x&#95;{\sigma\tau(1),1} \cdots x&#95;{\sigma\tau(n),n}$ ; comme $&#124;\sigma(1),\dots,\sigma(n)&#124; = &#92;&#123;1,\dots,n&#92;&#125;$, en posant $\rho = \sigma \tau$ et comme $\varepsilon$ est un morphisme, $\varepsilon(\tau) = \varepsilon(\sigma)^{-1}\varepsilon(\rho) = \varepsilon(\sigma)\varepsilon(\rho)$, d'où le résultat.
 
 </div>
 

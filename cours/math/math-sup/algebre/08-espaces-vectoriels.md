@@ -2422,7 +2422,7 @@ $$\operatorname{Im}(p \circ q) = \operatorname{Im}(p) \cap \operatorname{Im}(q) 
 <li>Soit $u \in \mathcal{L}(\mathbb{R}^3)$ définie par
 $$u(e_1) = \frac{2}{3}(e_1 + e_2 - e_3) \qquad u(e_2) = \frac{1}{3}(-e_1 - e_2 + e_3) \qquad u(e_3) = 2e_3$$
 Déterminer les valeurs propres de $u$ et les sous-espaces propres associés.</li>
-<li>Montrer que $|\operatorname{rg} f - \operatorname{rg} g| \leq \operatorname{rg}(f \circ g) \leq \operatorname{rg}(f) + \operatorname{rg}(g)$. En déduire $\operatorname{rg} f + \operatorname{rg} g \leq n$ si $f \circ g = 0$, et $\operatorname{rg} f + \operatorname{rg} g \geq n$ si $f \circ g$ est inversible.</li>
+<li>Montrer que $&#124;\operatorname{rg} f - \operatorname{rg} g&#124; \leq \operatorname{rg}(f \circ g) \leq \operatorname{rg}(f) + \operatorname{rg}(g)$. En déduire $\operatorname{rg} f + \operatorname{rg} g \leq n$ si $f \circ g = 0$, et $\operatorname{rg} f + \operatorname{rg} g \geq n$ si $f \circ g$ est inversible.</li>
 <li>Soit $f \in \mathcal{L}(E)$. On suppose que $(\forall x \in E,\ \exists q \in \mathbb{N} \mid f^q(x) = 0)$. Montrer qu'il existe $p \in \mathbb{N}$ tel que $f^p = 0$.</li>
 <li>Soit $E$ de dimension $2$. Caractériser les endomorphismes de $E$ dont l'image et le noyau ne sont pas en somme directe.</li>
 <li>Soit $u \in \mathcal{L}(E)$ telle que $\exists p \in \mathbb{N},\ u^p = 0$. Montrer que $u^n = 0$ (où $n = \dim E$). (On pourra supposer $u^{n-1}(x) \neq 0$ et étudier $(x, u(x), \dots, u^{n-1}(x))$.)</li>

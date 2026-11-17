@@ -18,7 +18,7 @@ pages: 26
 - Un **ensemble** est formé d'éléments distincts ; on écrit $a \in A$ (« $A$ ensemble, $a$ élément »).
 - **Écriture** :
   - en extension : $E = &#92;&#123;1, 2, 4, 6&#92;&#125;$ ;
-  - en compréhension : $E = &#92;&#123;x \mid P(x)&#92;&#125;$, par exemple $&#92;&#123;-1, 1&#92;&#125; = &#92;&#123;x \in \mathbb{Z} \mid |x| = 1&#92;&#125;$.
+  - en compréhension : $E = &#92;&#123;x \mid P(x)&#92;&#125;$, par exemple $&#92;&#123;-1, 1&#92;&#125; = &#92;&#123;x \in \mathbb{Z} \mid &#124;x&#124; = 1&#92;&#125;$.
 - **Quantificateurs** :
   - $\exists z \in E,\ P(z)$ : il existe un élément de $E$ qui vérifie la propriété $P$ ;
   - $\forall x \in E,\ P(x)$ : pour tout $x$ de $E$, $x$ vérifie la propriété $P$.
@@ -445,7 +445,7 @@ alors $x \in f^{-1}(B)$ donc $y \in f(f^{-1}(B))$.
 
 <span class="bloc-titre">Contre-exemple</span>
 
-$f : \mathbb{R} \to \mathbb{R}$, $x \mapsto |x|$ ; avec $A = \mathbb{N}$ :
+$f : \mathbb{R} \to \mathbb{R}$, $x \mapsto &#124;x&#124;$ ; avec $A = \mathbb{N}$ :
 $f(A) = \mathbb{N}$ mais $f^{-1}(f(A)) = \mathbb{Z}$, donc $A \neq f^{-1}(f(A))$.
 
 </div>
@@ -829,7 +829,7 @@ Trouver une CNS portant sur $A$ et $B$ pour que $f$ soit injective, puis pour qu
 $$(z\,\mathcal{R}\,z') \iff \left(\exists t \in \mathbb{R},\ z' = \frac{z \cos t - \sin t}{z \sin t + \cos t}\right)$$
 <ol>
 <li>Montrer que $\mathcal{R}$ est bien définie sur $E$, et que c'est une relation d'équivalence.</li>
-<li>Montrer que $(z&#92;&#44;\mathcal{R}&#92;&#44;z') \iff \left|\dfrac{z - i}{z + i}\right| = \left|\dfrac{z' - i}{z' + i}\right|$. Traduire géométriquement cette propriété et trouver les classes d'équivalence modulo $\mathcal{R}$.</li>
+<li>Montrer que $(z&#92;&#44;\mathcal{R}&#92;&#44;z') \iff \left&#124;\dfrac{z - i}{z + i}\right&#124; = \left&#124;\dfrac{z' - i}{z' + i}\right&#124;$. Traduire géométriquement cette propriété et trouver les classes d'équivalence modulo $\mathcal{R}$.</li>
 </ol>
 </li>
 <li>Soit $E$ un ensemble ordonné et $A \subset E$ tels que $A$ admette une borne supérieure dans $E$. Soit $x \in E$. Étudier les 4 implications suivantes dans le cas d'un ordre partiel ou total :
