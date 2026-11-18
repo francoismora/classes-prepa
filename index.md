@@ -11,7 +11,7 @@ Cours de **Math Sup** et **Math Spé** (1993–1995) en **mathématiques**, **ph
 
 | Matière | Niveaux | Chapitres transcrits |
 |---|---|---|
-| [Mathématiques]({{ site.baseurl }}/cours/math/) | Math Sup, Math Spé | 14 — *Algèbre* (10 chapitres) et *Analyse* (4 chapitres), Math Sup |
+| [Mathématiques]({{ site.baseurl }}/cours/math/) | Math Sup, Math Spé | 16 — *Algèbre* (10 chapitres) et *Analyse* (6 chapitres), Math Sup |
 | Physique | Math Sup, Math Spé | — (à venir) |
 | Chimie | Math Sup, Math Spé | — (à venir) |
 
@@ -75,6 +75,17 @@ Cours de **Math Sup** et **Math Spé** (1993–1995) en **mathématiques**, **ph
   d'adhérence (Bolzano-Weierstrass), suites récurrentes $u_{n+1}=f(u_n)$, suites
   complexes, notions sur les séries, approximation et écriture décimales des réels,
   feuilles d'exercices et TD (énoncés).
+- **Math Sup · Analyse — [Chapitre 2 : Topologie des réels]({{ site.baseurl }}/cours/math/math-sup/analyse/02-topologie-des-reels/)**
+  ouverts, voisinages et fermés de $\mathbb{R}$, intérieur et adhérence, parties
+  denses, suites et topologie (caractérisation séquentielle de l'adhérence et des
+  fermés, compacts = fermés bornés), droite numérique achevée, fiche résumé,
+  feuille d'exercices et technique (énoncés).
+- **Math Sup · Analyse — [Chapitre 3 : Limites]({{ site.baseurl }}/cours/math/math-sup/analyse/03-limites/)**
+  définition de la limite dans $\bar{\mathbb{R}}$ (unicité, caractérisation
+  séquentielle, limites à gauche/droite, composition), ordre et limite (gendarmes,
+  limite monotone), opérations sur les limites, relations de prépondérance
+  ($o$, $O$) et équivalents de fonctions, relations de comparaison classiques,
+  comparaison de suites, feuille d'exercices et technique (énoncés).
 - **Math Sup · Analyse — [Chapitre 8 : Développements limités]({{ site.baseurl }}/cours/math/math-sup/analyse/08-developpements-limites/)**
   définition et unicité, formule de Taylor-Young, opérations sur les DL
   (somme, produit, quotient, composée, primitive, dérivée), applications aux
